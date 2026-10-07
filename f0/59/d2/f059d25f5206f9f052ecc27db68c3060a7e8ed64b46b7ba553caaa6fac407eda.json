@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "f059d25f5206f9f052ecc27db68c3060a7e8ed64b46b7ba553caaa6fac407eda",
+  "key": "chum/5.2_i486/i486/harbour-counter-debugsource-1.0.26-1.7.1.bso.i486.rpm",
+  "name": "harbour-counter-debugsource",
+  "rpm_version": "1.0.26",
+  "release": "1.7.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

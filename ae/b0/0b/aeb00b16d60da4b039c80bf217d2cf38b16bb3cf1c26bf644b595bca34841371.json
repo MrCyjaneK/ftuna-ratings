@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "aeb00b16d60da4b039c80bf217d2cf38b16bb3cf1c26bf644b595bca34841371",
+  "key": "mirror/openrepos/kan/personal/main/d/dnscrypt-proxy-2.1.5-4.aarch64.rpm",
+  "name": "dnscrypt-proxy",
+  "rpm_version": "2.1.5",
+  "release": "4",
+  "arch": "aarch64",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 == 2 ];then; rm -f /etc/resolv.conf; \\; ln -s /var/run/connman/resolv.conf /etc/resolv.conf"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -f /var/lib/dnscrypt-proxy/resolv.conf ]; then; rm -f /etc/resolv.conf; \\; ln -s /var/lib/dnscrypt-proxy/resolv.conf /etc/resolv.conf"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=echo \"Stoping service \"; \\; systemctl stop dnscrypt-proxy || true; systemctl disable dnscrypt-proxy || true"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=echo \"Reloading services\"; systemctl daemon-reload; \\; systemctl restart connman; \\"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "version": 6,
+  "sha256": "6d8f8d7de52d9f005dde04a486d146702731fba3916338a4054464e9b0c1815e",
+  "key": "mirror/openrepos/unmaintained/personal/main/h/harbour-s1p-0.9.13-1.armv7hl.rpm",
+  "name": "harbour-s1p",
+  "rpm_version": "0.9.13",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 93,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 85
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/harbour-s1p-daemon.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/s1p"
+    },
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/harbour-s1p-ui.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/sailjail -p harbour-s1p.desktop /usr/bin/sailfish-qml harbour-s1p"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-s1p.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-s1p.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-s1p.desktop",
+      "code": "sailjail.permission",
+      "detail": "Microphone"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-s1p.desktop",
+      "code": "sailjail.permission",
+      "detail": "Contacts"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-s1p.desktop",
+      "code": "sailjail.permission",
+      "detail": "CommunicationHistory"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-s1p.desktop",
+      "code": "sailjail.permission",
+      "detail": "Privileged"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "f414be14a6dd961dcee60e5f6b75ef0c48e9e90f1e347eeb89d963ce25b977c0",
+  "key": "mirror/openrepos/ade/personal/main/h/harbour-crest-1.9-3.i486.rpm",
+  "name": "harbour-crest",
+  "rpm_version": "1.9",
+  "release": "3",
+  "arch": "i486",
+  "verdict": 55,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-crest.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    }
+  ]
+}

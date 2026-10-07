@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "bcce99a4d81d36107d75859ab0731d298b0872a62e93a5c5d2b2a68633cee0b4",
+  "key": "mirror/openrepos/ade/personal/main/l/libsidplayfp6-2.6.0-0.armv7hl.rpm",
+  "name": "libsidplayfp6",
+  "rpm_version": "2.6.0",
+  "release": "0",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

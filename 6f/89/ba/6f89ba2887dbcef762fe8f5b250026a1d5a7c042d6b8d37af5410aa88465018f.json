@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "6f89ba2887dbcef762fe8f5b250026a1d5a7c042d6b8d37af5410aa88465018f",
+  "key": "mirror/openrepos/adel/personal/main/h/harbour-multi-keyboard-layouts-0.8.0-0.armv7hl.rpm",
+  "name": "harbour-multi-keyboard-layouts",
+  "rpm_version": "0.8.0",
+  "release": "0",
+  "arch": "armv7hl",
+  "verdict": 53,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-multi-keyboard-layouts.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=killall maliit-server"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=killall maliit-server"
+    }
+  ]
+}

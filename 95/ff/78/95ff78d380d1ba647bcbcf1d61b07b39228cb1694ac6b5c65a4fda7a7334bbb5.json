@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "95ff78d380d1ba647bcbcf1d61b07b39228cb1694ac6b5c65a4fda7a7334bbb5",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-biddy-bff-debugsource-0.92+main.20250111162800.f805769-1.3.1.bso.armv7hl.rpm",
+  "name": "harbour-biddy-bff-debugsource",
+  "rpm_version": "0.92+main.20250111162800.f805769",
+  "release": "1.3.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

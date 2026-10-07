@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "74e22047df28b87b5a434728f4c8bc7d637878b3bde7b16886e6800966d1a804",
+  "key": "mirror/openrepos/glitchapp/personal/main/l/lovelauncher-0.2.1-1.noarch.rpm",
+  "name": "lovelauncher",
+  "rpm_version": "0.2.1",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/lovelauncher.desktop",
+      "code": "sailjail.permission",
+      "detail": "Love2D"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/lovelauncher.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    }
+  ]
+}

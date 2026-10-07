@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "bc49ed8f092d5594ad54a5f2527dca5004b58c6e28f460b9cccf41a2979e7100",
+  "key": "chum/5.1_i486/i486/i2pd-2.59.0+git1-1.7.1.bso.i486.rpm",
+  "name": "i2pd",
+  "rpm_version": "2.59.0+git1",
+  "release": "1.7.1.bso",
+  "arch": "i486",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; if [ \"$1\" -ge 1 ]; then; systemctl daemon-reload || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; if [ \"$1\" -eq 0 ]; then; systemctl stop i2pd.service || :"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/i2pd.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=inet exec=/usr/bin/i2pd --datadir /home/.system/var/lib/i2pd --conf=/home/.system/var/lib/i2pd/i2pd.conf --tunconf=/home/.system/var/lib/i2pd/tunnels.conf --tunnelsdir=/home/.system/var/lib/i2pd/tunnels.conf.d --pidfile=/run/i2pd/i2pd.pid --daemon --service sandbox=none"
+    }
+  ]
+}

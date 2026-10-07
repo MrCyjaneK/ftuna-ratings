@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "6965a99d40c68a7d6ca1d0fbe1bba16e507976f4a0d3aea0ff560ab0a5672279",
+  "key": "mirror/openrepos/mad_dev/personal/main/c/contactfill-0.1-2.armv7hl.rpm",
+  "name": "ContactFill",
+  "rpm_version": "0.1",
+  "release": "2",
+  "arch": "armv7hl",
+  "verdict": 75,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/ContactFill.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    }
+  ]
+}

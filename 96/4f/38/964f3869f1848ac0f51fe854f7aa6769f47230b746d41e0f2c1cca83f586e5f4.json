@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "964f3869f1848ac0f51fe854f7aa6769f47230b746d41e0f2c1cca83f586e5f4",
+  "key": "mirror/openrepos/lpr/personal/main/g/gstreamer1.0-plugins-bad-musepack-1.20.6-2.aarch64.rpm",
+  "name": "gstreamer1.0-plugins-bad-musepack",
+  "rpm_version": "1.20.6",
+  "release": "2",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

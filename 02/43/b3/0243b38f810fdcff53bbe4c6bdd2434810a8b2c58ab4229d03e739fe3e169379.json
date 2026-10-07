@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "0243b38f810fdcff53bbe4c6bdd2434810a8b2c58ab4229d03e739fe3e169379",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/mrcyjanek/gpspicturetagd/gpspicturetagd-0.1-2.i486.rpm",
+  "name": "gpspicturetagd",
+  "rpm_version": "0.1",
+  "release": "2",
+  "arch": "i486",
+  "verdict": 78,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": 100
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/gpspicturetagd.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/gpspicturetagd",
+      "code": "ftuna.built",
+      "detail": "clean"
+    }
+  ]
+}

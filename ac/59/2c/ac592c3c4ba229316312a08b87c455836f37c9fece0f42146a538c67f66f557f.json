@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "ac592c3c4ba229316312a08b87c455836f37c9fece0f42146a538c67f66f557f",
+  "key": "chum/5.2_aarch64/aarch64/units-2.27-1.1.1.bso.aarch64.rpm",
+  "name": "units",
+  "rpm_version": "2.27",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "verdict": 41,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 52
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl --no-reload preset units-update.service \u003e/dev/null 2\u003e\u00261 || :; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload disable --now units-update.service \u003e /dev/null 2\u003e\u00261 || :; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=%systemd_postun_restart units-update.service; if [ $1 -ge 1 ] ; then; systemctl try-restart units-update.timer \u003e/dev/null 2\u003e\u00261 || :"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/units-update.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/bin/units_cur --source ${UNITS_SOURCE} --base ${UNITS_CURRENCY} ${UNITS_VARDIR}/currency.units ${UNITS_VARDIR}/crypto.units ${UNITS_VARDIR}/metal_prices.units ${UNITS_VARDIR}/cpi.units sandbox=ProtectSystem=strict,ProtectHome,PrivateTmp"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/units-update.timer",
+      "code": "systemd.timer",
+      "detail": "scope=system activates=units-update.service"
+    }
+  ]
+}

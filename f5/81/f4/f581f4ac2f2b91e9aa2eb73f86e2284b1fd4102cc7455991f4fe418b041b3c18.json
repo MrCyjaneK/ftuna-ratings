@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "f581f4ac2f2b91e9aa2eb73f86e2284b1fd4102cc7455991f4fe418b041b3c18",
+  "key": "mirror/openrepos/toxip/personal/main/s/sailhanzi-1.0.0-1.noarch.rpm",
+  "name": "sailhanzi",
+  "rpm_version": "1.0.0",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 75,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/sailhanzi.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    }
+  ]
+}

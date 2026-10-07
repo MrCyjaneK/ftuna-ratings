@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "cb5887a2f41c26cabe49be4bf6489e03bdc6253c01daa313b23e894e27a9640d",
+  "key": "mirror/openrepos/r0kk3rz/personal/main/q/qt5-qtquickcontrols-5.6.0git0-10.1.1.jolla_.armv7hl.rpm",
+  "name": "qt5-qtquickcontrols",
+  "rpm_version": "5.6.0+git0",
+  "release": "10.1.1.jolla",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig"
+    }
+  ]
+}

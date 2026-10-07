@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "c2d442ce2d5b58f3a6b9d951446002e4b32cb3c8569545e35202f93366a782c9",
+  "key": "mirror/openrepos/JulienBlanc/personal/main/h/harbour-kontroller-0.21-2.i486.rpm",
+  "name": "harbour-kontroller",
+  "rpm_version": "0.21",
+  "release": "2",
+  "arch": "i486",
+  "verdict": 75,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-kontroller.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    }
+  ]
+}

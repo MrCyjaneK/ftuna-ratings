@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "821a972321d531623dedbb9d6e7685f664a0ee0c6bdcaaf75011e83f0e701b59",
+  "key": "mirror/openrepos/nicosouv/personal/main/h/harbour-zoo-0.5.3-1.armv7hl.rpm",
+  "name": "harbour-zoo",
+  "rpm_version": "0.5.3",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "807ba9f70963f38da3d1b698415d09f55afdb8c5f67d4104b95a9883f87a3547",
+  "key": "mirror/openrepos/lpr/personal/main/l/libdrm-nouveau-2.4.107git1-1.6.1.jolla_.armv7hl.rpm",
+  "name": "libdrm-nouveau",
+  "rpm_version": "2.4.107+git1",
+  "release": "1.6.1.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

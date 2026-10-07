@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "e37cd49c27cf767ade0cd189273e990d64e34c4e916e58a102e6cebc87d99fb7",
+  "key": "mirror/openrepos/wanggjghost/personal/main/s/sailfishdoubanfm-1.0-1.armv7hl.rpm",
+  "name": "SailfishDoubanFm",
+  "rpm_version": "1.0",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 75,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/SailfishDoubanFm.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    }
+  ]
+}

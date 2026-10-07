@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "822f10ec2b10c74b6c27e9488917caa319eff88f7333fa5f676855dbc8cf9f9d",
+  "key": "mirror/openrepos/carmenfdezb/personal/main/l/libopusfile-0.12-1.i486.rpm",
+  "name": "libopusfile",
+  "rpm_version": "0.12",
+  "release": "1",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

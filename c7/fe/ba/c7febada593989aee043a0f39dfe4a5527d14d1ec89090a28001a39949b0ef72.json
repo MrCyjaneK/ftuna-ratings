@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "c7febada593989aee043a0f39dfe4a5527d14d1ec89090a28001a39949b0ef72",
+  "key": "mirror/openrepos/martonmiklos/personal/main/u/unofficial-jolla-language-pack-nl-2.0.5-0.0.3.noarch.rpm",
+  "name": "unofficial-jolla-language-pack-nl",
+  "rpm_version": "2.0.5",
+  "release": "0.0.3",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=localedef --replace -i nl_NL -f UTF-8 nl_NL.utf8 --prefix=/"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=localedef --delete-from-archive nl_NL.utf8"
+    }
+  ]
+}

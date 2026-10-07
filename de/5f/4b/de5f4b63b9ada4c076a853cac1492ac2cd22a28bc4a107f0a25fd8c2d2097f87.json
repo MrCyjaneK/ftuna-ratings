@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "de5f4b63b9ada4c076a853cac1492ac2cd22a28bc4a107f0a25fd8c2d2097f87",
+  "key": "chum/5.1_i486/i486/harbour-sailimgur-0.11.1-1.3.1.bso.i486.rpm",
+  "name": "harbour-sailimgur",
+  "rpm_version": "0.11.1",
+  "release": "1.3.1.bso",
+  "arch": "i486",
+  "verdict": 75,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailimgur.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    }
+  ]
+}

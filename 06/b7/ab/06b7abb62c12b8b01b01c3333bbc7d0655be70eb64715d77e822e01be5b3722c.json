@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "06b7abb62c12b8b01b01c3333bbc7d0655be70eb64715d77e822e01be5b3722c",
+  "key": "chum/5.2_aarch64/aarch64/irssi-perl-1.4.5-1.2.1.bso.aarch64.rpm",
+  "name": "irssi-perl",
+  "rpm_version": "1.4.5",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

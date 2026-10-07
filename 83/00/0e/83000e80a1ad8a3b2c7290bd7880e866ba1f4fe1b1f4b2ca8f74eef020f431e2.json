@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "83000e80a1ad8a3b2c7290bd7880e866ba1f4fe1b1f4b2ca8f74eef020f431e2",
+  "key": "mirror/openrepos/jabbounet/personal/main/h/harbour-upnpplayer-0.1-12.armv7hl.rpm",
+  "name": "harbour-upnpplayer",
+  "rpm_version": "0.1",
+  "release": "12",
+  "arch": "armv7hl",
+  "verdict": 75,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-upnpplayer.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    }
+  ]
+}

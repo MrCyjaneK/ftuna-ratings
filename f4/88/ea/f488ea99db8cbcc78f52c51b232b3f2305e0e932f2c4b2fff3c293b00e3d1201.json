@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "f488ea99db8cbcc78f52c51b232b3f2305e0e932f2c4b2fff3c293b00e3d1201",
+  "key": "mirror/openrepos/smurfy/personal/main/h/harbour-fahrplan2-openrepos-2.0.30-1.armv7hl.rpm",
+  "name": "harbour-fahrplan2",
+  "rpm_version": "2.0.30",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 75,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fahrplan2.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    }
+  ]
+}

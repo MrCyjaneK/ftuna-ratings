@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "55d039bd129705d6c3d7f10b8ec7f7128c73bf34a38765a65861a60be63d04b5",
+  "key": "chum/5.1_aarch64/aarch64/systemd-journal-viewer-0.6.0+git1-1.1.1.bso.aarch64.rpm",
+  "name": "systemd-journal-viewer",
+  "rpm_version": "0.6.0+git1",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "verdict": 68,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 85
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": 0
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.coderus.systemd.journal.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/bin/false systemd=systemd-journal-daemon.service"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/systemd-journal-viewer.desktop",
+      "code": "sailjail.permission",
+      "detail": "Documents"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/systemd-journal-daemon",
+      "code": "setuid",
+      "detail": "/usr/bin/systemd-journal-daemon mode 0104755 user root group root file"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/systemd-journal-daemon.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/invoker -s --type=generic /usr/bin/systemd-journal-daemon sandbox=none"
+    }
+  ]
+}

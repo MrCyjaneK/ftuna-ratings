@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "77f282493593ff95ee7153e20864d7c650c8dc2c0b1cb0d9cdb1bd08c63f0faa",
+  "key": "chum/5.1_armv7hl/noarch/hunspell-lang-ru_RU-22.01.01-1.2.1.bso.noarch.rpm",
+  "name": "hunspell-lang-ru_RU",
+  "rpm_version": "22.01.01",
+  "release": "1.2.1.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

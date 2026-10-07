@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "d125a1d8595bbb256dce90213cec4f880b84966e75cff142817b337d592537e7",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-communi-0.11-1.1.1.bso.armv7hl.rpm",
+  "name": "harbour-communi",
+  "rpm_version": "0.11",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-communi.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    }
+  ]
+}

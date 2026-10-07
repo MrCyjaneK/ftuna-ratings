@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "58dba37ab699ca4c5c45eebef87161d714fcd513d56a985bd79048a32108ff0f",
+  "key": "mirror/openrepos/mautz/personal/main/o/okboard-german-0.3-1.armv7hl.rpm",
+  "name": "okboard-german",
+  "rpm_version": "0.3",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; rm -rf /usr/share/okboard/de.tre.gz"
+    }
+  ]
+}

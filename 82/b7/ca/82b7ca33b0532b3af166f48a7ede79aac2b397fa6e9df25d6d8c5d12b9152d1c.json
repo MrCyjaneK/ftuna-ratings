@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "82b7ca33b0532b3af166f48a7ede79aac2b397fa6e9df25d6d8c5d12b9152d1c",
+  "key": "chum/5.2_i486/i486/python3-websockets-13.1-1.1.1.bso.i486.rpm",
+  "name": "python3-websockets",
+  "rpm_version": "13.1",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

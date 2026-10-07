@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "dff569a94ba0a04b9d31b88ded2aa5efe9bf1c3f687da3e6092fe61df2e0d0b7",
+  "key": "chum/5.2_i486/i486/kdb-debugsource-3.2.0-1.1.1.bso.i486.rpm",
+  "name": "kdb-debugsource",
+  "rpm_version": "3.2.0",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

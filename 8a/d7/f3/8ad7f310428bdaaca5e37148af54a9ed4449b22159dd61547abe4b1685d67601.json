@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "8ad7f310428bdaaca5e37148af54a9ed4449b22159dd61547abe4b1685d67601",
+  "key": "mirror/openrepos/aviarus/personal/main/h/harbour-teams-0.1.0-73.noarch.rpm",
+  "name": "harbour-teams",
+  "rpm_version": "0.1.0",
+  "release": "73",
+  "arch": "noarch",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-teams.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-teams.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-teams.desktop",
+      "code": "sailjail.permission",
+      "detail": "Secrets"
+    }
+  ]
+}

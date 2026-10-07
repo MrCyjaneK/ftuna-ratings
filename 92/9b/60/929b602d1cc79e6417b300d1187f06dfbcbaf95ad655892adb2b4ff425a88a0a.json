@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "929b602d1cc79e6417b300d1187f06dfbcbaf95ad655892adb2b4ff425a88a0a",
+  "key": "mirror/openrepos/Maledictus/personal/main/h/harbour-getpocketshareplugin-1.5.2-1.armv7hl.rpm",
+  "name": "harbour-getpocketshareplugin",
+  "rpm_version": "1.5.2",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

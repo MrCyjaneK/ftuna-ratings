@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "9e27d634e668f2b17f536f6b2ddc722a18c6f3add78a236110d659c95898df08",
+  "key": "mirror/openrepos/alina/personal/main/c/colemak-en-keyboard-0.1-1.noarch.rpm",
+  "name": "colemak-en-keyboard",
+  "rpm_version": "0.1",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 53,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/colemak-en-keyboard.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=killall maliit-server"
+    }
+  ]
+}

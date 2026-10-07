@@ -1,0 +1,98 @@
+{
+  "version": 6,
+  "sha256": "114f7a252df96fee1976804fe2f2774f75f1f41cf0828b9c5e17fde8d714f66d",
+  "key": "mirror/openrepos/omnight/personal/main/p/phonehook-0.3.0-1.armv7hl.rpm",
+  "name": "phonehook",
+  "rpm_version": "0.3.0",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 63,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/phonehook.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if more /usr/share/lipstick-jolla-home-qt5/compositor.qml | grep com.omnight.lipstickIf; then; patch -r - -R -N /usr/share/lipstick-jolla-home-qt5/compositor.qm"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=patch -r - -d /usr/share/lipstick-jolla-home-qt5/ -R -N -p4 \u003c /usr/share/phonehook/phonehook-lipstick-v3.patch || :;"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; killall phonehook-daemon || :; killall phonehook || true"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%posttrans",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=killall phonehook-daemon; patch -r - -d /usr/share/lipstick-jolla-home-qt5/ -N -p4  \u003c /usr/share/phonehook/phonehook-lipstick-v3.patch || :;; ln -s -f /usr/lib/"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/phonehook-daemon.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/phonehook-daemon sandbox=none"
+    }
+  ]
+}

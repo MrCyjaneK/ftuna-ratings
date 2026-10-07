@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "d35f694d58e305d354092fa0acb97992b2834229144b8885098f979566b7efd2",
+  "key": "chum/5.1_i486/noarch/waydroid-gbinder-config-hybris-1.4.3+git3-1.10.1.bso.noarch.rpm",
+  "name": "waydroid-gbinder-config-hybris",
+  "rpm_version": "1.4.3+git3",
+  "release": "1.10.1.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

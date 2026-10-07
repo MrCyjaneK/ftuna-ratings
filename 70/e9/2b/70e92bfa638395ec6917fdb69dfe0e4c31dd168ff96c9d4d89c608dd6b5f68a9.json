@@ -1,0 +1,98 @@
+{
+  "version": 6,
+  "sha256": "70e92bfa638395ec6917fdb69dfe0e4c31dd168ff96c9d4d89c608dd6b5f68a9",
+  "key": "mirror/openrepos/lpr/personal/main/n/nscd-2.30git7-8.armv7hl.rpm",
+  "name": "nscd",
+  "rpm_version": "2.30+git7",
+  "release": "8",
+  "arch": "armv7hl",
+  "verdict": 20,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": 0
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=getent group nscd \u003e/dev/null || /usr/sbin/groupadd -g 28 -r nscd; getent passwd nscd \u003e/dev/null ||; /usr/sbin/useradd -M -o -r -d / -s /sbin/nologin \\"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl --no-reload preset nscd.service \u003e/dev/null 2\u003e\u00261 || :; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload disable --now nscd.service \u003e /dev/null 2\u003e\u00261 || :; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if test $1 = 0; then; /usr/sbin/userdel nscd \u003e /dev/null 2\u003e\u00261 || :; fi"
+    },
+    {
+      "module": "systemd",
+      "path": "/lib/systemd/system/nscd.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/sbin/nscd sandbox=none"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/var/run/nscd/socket",
+      "code": "worldwrite",
+      "detail": "/var/run/nscd/socket mode 0100666 user root group root file"
+    }
+  ]
+}

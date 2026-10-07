@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "6ba8a658ab229207f814a9aa142b67b4bc40fc3c6f581900f5b990f3cdaa4c34",
+  "key": "chum/5.1_i486/noarch/presage-lang-es_ES-22.01.01-1.2.1.bso.noarch.rpm",
+  "name": "presage-lang-es_ES",
+  "rpm_version": "22.01.01",
+  "release": "1.2.1.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "43fae56f0b295234ca9de92e3b94b1a2656c4a0955266532bc506045dc3cb6b0",
+  "key": "mirror/openrepos/vevgeniev/personal/main/l/libpcsclite1-1.8.3-2.1.3.armv7hl.rpm",
+  "name": "libpcsclite1",
+  "rpm_version": "1.8.3",
+  "release": "2.1.3",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

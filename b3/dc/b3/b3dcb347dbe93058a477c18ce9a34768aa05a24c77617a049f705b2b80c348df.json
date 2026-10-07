@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "b3dcb347dbe93058a477c18ce9a34768aa05a24c77617a049f705b2b80c348df",
+  "key": "mirror/openrepos/slava/personal/main/o/openrepos-logger-nfc-1.0.19-1.aarch64.rpm",
+  "name": "openrepos-logger-nfc",
+  "rpm_version": "1.0.19",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": 55,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/openrepos-logger-nfc.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "831e6c49653ae145ed3df39cc87ea3e0ca228bf75c1e229e4e6ee3c07a50d0f1",
+  "key": "mirror/openrepos/nephros/personal/main/o/openrepos-mbedtls-devel-2.25.0-4.aarch64.rpm",
+  "name": "openrepos-mbedtls-devel",
+  "rpm_version": "2.25.0",
+  "release": "4",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

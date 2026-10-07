@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "751443e36d88e95fc683c4ea6d26d11e379f35c420039bf833c76b511bf7053f",
+  "key": "chum/5.2_armv7hl/armv7hl/djvulibre-libs-3.5.28+obs1-1.1.1.bso.armv7hl.rpm",
+  "name": "djvulibre-libs",
+  "rpm_version": "3.5.28+obs1",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

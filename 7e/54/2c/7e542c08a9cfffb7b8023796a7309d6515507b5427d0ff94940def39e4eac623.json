@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "7e542c08a9cfffb7b8023796a7309d6515507b5427d0ff94940def39e4eac623",
+  "key": "mirror/openrepos/nephros/personal/main/d/dconfjson-0.2.4-1.8.1.bso_.noarch.rpm",
+  "name": "dconfjson",
+  "rpm_version": "0.2.4",
+  "release": "1.8.1.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

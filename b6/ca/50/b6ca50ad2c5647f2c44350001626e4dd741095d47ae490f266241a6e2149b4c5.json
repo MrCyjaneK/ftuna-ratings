@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "b6ca50ad2c5647f2c44350001626e4dd741095d47ae490f266241a6e2149b4c5",
+  "key": "mirror/openrepos/mihlit/personal/main/c/calendarbience-0.1.6-1.armv7hl.rpm",
+  "name": "calendarbience",
+  "rpm_version": "0.1.6",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 53,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 75
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/bin/systemctl daemon-reload; if [ $1 -eq 1 ] ; then; /bin/systemctl enable calendarbienced.service"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload disable calendarbienced.service \u003e /dev/null 2\u003e\u00261 || :; systemctl stop calendarbienced.service \u003e /dev/null 2\u003e\u00261 || "
+    },
+    {
+      "module": "systemd",
+      "path": "/lib/systemd/system/calendarbienced.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=nemo group=privileged exec=/usr/bin/python3 /usr/bin/calendarbience sandbox=none"
+    }
+  ]
+}

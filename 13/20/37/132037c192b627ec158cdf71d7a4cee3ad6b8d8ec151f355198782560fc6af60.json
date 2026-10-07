@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "132037c192b627ec158cdf71d7a4cee3ad6b8d8ec151f355198782560fc6af60",
+  "key": "mirror/openrepos/lpr_next/personal/main/l/libcurl-devel-8.5.0-2.armv7hl.rpm",
+  "name": "libcurl-devel",
+  "rpm_version": "8.5.0",
+  "release": "2",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "8d7aa042e9c79df844de4768c0d66c8bed011b2d4dffdec71e64233a894974ec",
+  "key": "chum/5.2_aarch64/aarch64/djvulibre-debugsource-3.5.28+obs1-1.1.1.bso.aarch64.rpm",
+  "name": "djvulibre-debugsource",
+  "rpm_version": "3.5.28+obs1",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

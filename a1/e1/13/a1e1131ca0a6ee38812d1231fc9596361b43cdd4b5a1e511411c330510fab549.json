@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "a1e1131ca0a6ee38812d1231fc9596361b43cdd4b5a1e511411c330510fab549",
+  "key": "mirror/openrepos/lpr/personal/main/l/libgcc-10.3.1-1.8.4.jolla_.armv7hl.rpm",
+  "name": "libgcc",
+  "rpm_version": "10.3.1",
+  "release": "1.8.4.jolla",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=\u003clua\u003e body=if posix.access (\"/sbin/ldconfig\", \"x\") then; local pid = posix.fork (); if pid == 0 then"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=\u003clua\u003e body=if posix.access (\"/sbin/ldconfig\", \"x\") then; local pid = posix.fork (); if pid == 0 then"
+    }
+  ]
+}

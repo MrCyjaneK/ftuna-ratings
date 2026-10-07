@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "5ef583616619965f11f5a8d7f778f9fae41b6971cdf9088299b7d692e964c96b",
+  "key": "chum/5.1_aarch64/aarch64/mozjs-debugsource-1.8.5-1.2.1.bso.aarch64.rpm",
+  "name": "mozjs-debugsource",
+  "rpm_version": "1.8.5",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

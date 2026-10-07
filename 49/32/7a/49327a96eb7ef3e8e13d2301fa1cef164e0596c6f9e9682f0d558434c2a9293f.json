@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "49327a96eb7ef3e8e13d2301fa1cef164e0596c6f9e9682f0d558434c2a9293f",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/michal-szczepaniak/nanofiles/nanofiles-debuginfo-1.4.4-1.i486.rpm",
+  "name": "nanofiles-debuginfo",
+  "rpm_version": "1.4.4",
+  "release": "1",
+  "arch": "i486",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": 100
+    }
+  ],
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/nanofiles",
+      "code": "ftuna.built",
+      "detail": "clean"
+    }
+  ]
+}

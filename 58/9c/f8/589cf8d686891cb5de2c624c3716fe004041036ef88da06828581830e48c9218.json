@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "589cf8d686891cb5de2c624c3716fe004041036ef88da06828581830e48c9218",
+  "key": "mirror/openrepos/inte/personal/main/m/mutt-1.5.23-2.armv7hl.rpm",
+  "name": "mutt",
+  "rpm_version": "1.5.23",
+  "release": "2",
+  "arch": "armv7hl",
+  "verdict": 25,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": 25
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "setuid",
+      "path": "/usr/local/bin/mutt_dotlock",
+      "code": "setgid",
+      "detail": "/usr/local/bin/mutt_dotlock mode 0102755 user root group root file"
+    }
+  ]
+}

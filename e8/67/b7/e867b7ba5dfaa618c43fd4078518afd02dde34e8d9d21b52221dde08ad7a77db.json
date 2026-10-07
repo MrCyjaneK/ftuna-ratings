@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "e867b7ba5dfaa618c43fd4078518afd02dde34e8d9d21b52221dde08ad7a77db",
+  "key": "mirror/openrepos/ade/personal/main/h/harbour-welkweer-0.43-1.armv7hl.rpm",
+  "name": "harbour-welkweer",
+  "rpm_version": "0.43",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-welkweer.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    }
+  ]
+}

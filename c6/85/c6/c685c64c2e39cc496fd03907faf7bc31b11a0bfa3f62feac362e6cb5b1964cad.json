@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "c685c64c2e39cc496fd03907faf7bc31b11a0bfa3f62feac362e6cb5b1964cad",
+  "key": "mirror/openrepos/alina/personal/main/h/harbour-themepack-cardo-0.1-1.noarch.rpm",
+  "name": "harbour-themepack-cardo",
+  "rpm_version": "0.1",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

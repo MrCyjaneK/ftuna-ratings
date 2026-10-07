@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "394663005d5850c5223d527c58a2ceeb2d88f8c515655b48b8f4735e86c646b7",
+  "key": "mirror/openrepos/tmi/personal/main/a/arrowboard-cs-1.0-1.noarch.rpm",
+  "name": "arrowboard-cs",
+  "rpm_version": "1.0",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 1 ]; then; echo \"Thanks for installing Czech Keyboard with Arrows!\"; echo \"\""
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; echo \"Uninstalled Czech Keyboard with Arrows.; echo \"Restarting keyboard service...\""
+    }
+  ]
+}

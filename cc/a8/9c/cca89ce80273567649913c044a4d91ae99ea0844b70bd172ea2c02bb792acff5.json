@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "cca89ce80273567649913c044a4d91ae99ea0844b70bd172ea2c02bb792acff5",
+  "key": "chum/5.1_aarch64/aarch64/harbour-ordercorrect-0.1.4-1.2.1.bso.aarch64.rpm",
+  "name": "harbour-ordercorrect",
+  "rpm_version": "0.1.4",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

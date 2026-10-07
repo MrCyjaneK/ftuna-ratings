@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "e2b514f303ef63c84a409e0b349e84afbbfc8e099c2f9d68e8d5cd55d17e3960",
+  "key": "mirror/openrepos/slava/personal/main/o/openrepos-swissclock-1.0.10-1.aarch64.rpm",
+  "name": "openrepos-swissclock",
+  "rpm_version": "1.0.10",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": 55,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/openrepos-swissclock.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    }
+  ]
+}

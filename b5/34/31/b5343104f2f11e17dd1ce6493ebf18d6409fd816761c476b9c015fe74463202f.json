@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "b5343104f2f11e17dd1ce6493ebf18d6409fd816761c476b9c015fe74463202f",
+  "key": "chum/5.2_i486/i486/s3fs-fuse-debuginfo-1.94+git2-1.1.1.bso.i486.rpm",
+  "name": "s3fs-fuse-debuginfo",
+  "rpm_version": "1.94+git2",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

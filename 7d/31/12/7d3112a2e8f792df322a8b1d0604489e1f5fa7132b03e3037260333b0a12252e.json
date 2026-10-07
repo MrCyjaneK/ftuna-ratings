@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "7d3112a2e8f792df322a8b1d0604489e1f5fa7132b03e3037260333b0a12252e",
+  "key": "chum/5.1_i486/i486/python3-fido2-debugsource-0.9.1-1.1.1.bso.i486.rpm",
+  "name": "python3-fido2-debugsource",
+  "rpm_version": "0.9.1",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

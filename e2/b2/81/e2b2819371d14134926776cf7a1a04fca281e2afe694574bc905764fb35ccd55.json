@@ -1,0 +1,98 @@
+{
+  "version": 6,
+  "sha256": "e2b2819371d14134926776cf7a1a04fca281e2afe694574bc905764fb35ccd55",
+  "key": "mirror/openrepos/abranson/personal/main/h/harbour-systemmonitor-0.6-21.i486.rpm",
+  "name": "harbour-systemmonitor",
+  "rpm_version": "0.6",
+  "release": "21",
+  "arch": "i486",
+  "verdict": 63,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-systemmonitor.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user stop harbour-systemmonitord\"; exit 0"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user daemon-reload\"; su nemo -c \"systemctl --user enable harbour-systemmonitord\"; su nemo -c \"systemctl --user start harbour-systemmonit"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user disable harbour-systemmonitord\"; su nemo -c \"systemctl --user stop harbour-systemmonitord\""
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user daemon-reload\""
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-systemmonitord.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-systemmonitord sandbox=none"
+    }
+  ]
+}

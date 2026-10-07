@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "c5312a0c89a3a069304d64bafa3714b77ff8fa9bb670d2bfa3ca7eaf11024d9c",
+  "key": "mirror/openrepos/ichthyosaurus/personal/main/s/sfos-patch-keyboard-wider-spacebar-1.0.1-1.noarch.rpm",
+  "name": "sfos-patch-keyboard-wider-spacebar",
+  "rpm_version": "1.0.1",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-keyboard-wider-spacebar ]; then; /usr/sbin/patchmanager -u sfos-patch-keyboard-wider-spacebar || true; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-keyboard-wider-spacebar ]; then; /usr/sbin/patchmanager -u sfos-patch-keyboard-wider-spacebar || true; fi"
+    }
+  ]
+}

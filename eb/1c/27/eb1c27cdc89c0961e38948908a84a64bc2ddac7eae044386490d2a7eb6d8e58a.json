@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "eb1c27cdc89c0961e38948908a84a64bc2ddac7eae044386490d2a7eb6d8e58a",
+  "key": "mirror/openrepos/martonmiklos/personal/main/u/unofficial-jolla-language-pack-el-2.1.0-0.0.3.noarch.rpm",
+  "name": "unofficial-jolla-language-pack-el",
+  "rpm_version": "2.1.0",
+  "release": "0.0.3",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=localedef --replace -i el_GR -f UTF-8 el_GR.utf8 --prefix=/"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=localedef --delete-from-archive el_GR.utf8"
+    }
+  ]
+}

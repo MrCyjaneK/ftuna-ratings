@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "ab4781ea86a7dd392cf97d5d160de94174e97c60a322ee5e39235d7b42038f04",
+  "key": "mirror/openrepos/artur_/personal/main/l/libxcb-dri3-1.15-1.aarch64.rpm",
+  "name": "libxcb-dri3",
+  "rpm_version": "1.15",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

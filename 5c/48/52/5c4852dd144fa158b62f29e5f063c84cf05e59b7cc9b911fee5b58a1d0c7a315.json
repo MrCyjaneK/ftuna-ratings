@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "5c4852dd144fa158b62f29e5f063c84cf05e59b7cc9b911fee5b58a1d0c7a315",
+  "key": "mirror/openrepos/shadowfish/personal/main/l/libsodium-devel-1.0.13-1.8.3.jolla_.i486.rpm",
+  "name": "libsodium-devel",
+  "rpm_version": "1.0.13",
+  "release": "1.8.3.jolla",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

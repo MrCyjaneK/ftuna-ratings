@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "126bfb0d22245fad5121a429fb8451f67c726f33675d2ded7ceacd939df665ca",
+  "key": "chum/5.1_aarch64/aarch64/opt-qt5-qttools-devel-5.15.14+kde4-1.4.1.bso.aarch64.rpm",
+  "name": "opt-qt5-qttools-devel",
+  "rpm_version": "5.15.14+kde4",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "85f7a68ebdc5359f5ac9f1081bb17dea5ccb482ddb5ab77f1b7bfc75b7980ea4",
+  "key": "chum/5.1_armv7hl/armv7hl/fsarchiver-debuginfo-0.8.6.2-1.4.1.bso.armv7hl.rpm",
+  "name": "fsarchiver-debuginfo",
+  "rpm_version": "0.8.6.2",
+  "release": "1.4.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

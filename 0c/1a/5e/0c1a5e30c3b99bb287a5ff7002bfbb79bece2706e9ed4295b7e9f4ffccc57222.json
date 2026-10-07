@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "0c1a5e30c3b99bb287a5ff7002bfbb79bece2706e9ed4295b7e9f4ffccc57222",
+  "key": "chum/5.2_aarch64/aarch64/harbour-osmscout-debuginfo-3.1-1.25.1.bso.aarch64.rpm",
+  "name": "harbour-osmscout-debuginfo",
+  "rpm_version": "3.1",
+  "release": "1.25.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

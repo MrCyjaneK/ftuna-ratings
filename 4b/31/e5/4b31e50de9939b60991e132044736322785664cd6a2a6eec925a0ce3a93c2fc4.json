@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "4b31e50de9939b60991e132044736322785664cd6a2a6eec925a0ce3a93c2fc4",
+  "key": "chum/5.2_armv7hl/armv7hl/libstrophe-devel-0.14.0+git1-1.2.1.bso.armv7hl.rpm",
+  "name": "libstrophe-devel",
+  "rpm_version": "0.14.0+git1",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

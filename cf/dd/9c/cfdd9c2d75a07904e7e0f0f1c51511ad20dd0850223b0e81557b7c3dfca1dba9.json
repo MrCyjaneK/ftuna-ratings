@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "cfdd9c2d75a07904e7e0f0f1c51511ad20dd0850223b0e81557b7c3dfca1dba9",
+  "key": "mirror/openrepos/ichthyosaurus/personal/main/h/harbour-captains-log-2.0.1-0.noarch.rpm",
+  "name": "harbour-captains-log",
+  "rpm_version": "2.0.1",
+  "release": "0",
+  "arch": "noarch",
+  "verdict": 75,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-captains-log.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    }
+  ]
+}

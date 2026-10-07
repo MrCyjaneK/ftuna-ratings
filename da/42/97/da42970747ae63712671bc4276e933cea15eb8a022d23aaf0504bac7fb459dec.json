@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "da42970747ae63712671bc4276e933cea15eb8a022d23aaf0504bac7fb459dec",
+  "key": "mirror/openrepos/lpr/personal/main/g/gstreamer1.0-plugins-bad-resindvd-1.18.5git2-3.aarch64.rpm",
+  "name": "gstreamer1.0-plugins-bad-resindvd",
+  "rpm_version": "1.18.5+git2",
+  "release": "3",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

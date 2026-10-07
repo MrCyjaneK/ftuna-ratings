@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "6b9c51240013c3a50efe49d06ba4f17b65debcc917b6643c279d10d091d36214",
+  "key": "mirror/openrepos/Thaodan/personal/main/s/sailfishos-patch-pulldown-covers-0.5rpm.20190218121955.d9a340f-1.3.1.noarch.rpm",
+  "name": "sailfishos-patch-pulldown-covers",
+  "rpm_version": "0.5+rpm.20190218121955.d9a340f",
+  "release": "1.3.1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-pulldown-covers ]; then; /usr/sbin/patchmanager -u sailfishos-patch-pulldown-covers || true; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-pulldown-covers ]; then; /usr/sbin/patchmanager -u sailfishos-patch-pulldown-covers || true; fi"
+    }
+  ]
+}

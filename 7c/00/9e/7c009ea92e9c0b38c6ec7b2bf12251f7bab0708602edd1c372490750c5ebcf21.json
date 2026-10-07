@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "7c009ea92e9c0b38c6ec7b2bf12251f7bab0708602edd1c372490750c5ebcf21",
+  "key": "chum/5.2_armv7hl/armv7hl/screencast-debuginfo-0.4.5+git2-1.5.1.bso.armv7hl.rpm",
+  "name": "screencast-debuginfo",
+  "rpm_version": "0.4.5+git2",
+  "release": "1.5.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "af3879140976ae3032e201520931b8f858f4055d80e5da37cc48154f062d553f",
+  "key": "mirror/openrepos/stuiterveer/personal/main/d/davfs2-1.5.6-1.armv7hl.rpm",
+  "name": "davfs2",
+  "rpm_version": "1.5.6",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 15,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": 0
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=getent group davfs2 \u003e/dev/null || groupadd -r davfs2; getent passwd davfs2 \u003e/dev/null || \\; useradd -r -g davfs2 -d / -s /sbin/nologin davfs2"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/local/sbin/mount.davfs",
+      "code": "setuid",
+      "detail": "/usr/local/sbin/mount.davfs mode 0104755 user root group root file"
+    }
+  ]
+}

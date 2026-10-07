@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "7959ab4332261aa68f7e36f80ac99a27a51ba8847d0caaef51613eecd1910af5",
+  "key": "chum/5.1_i486/i486/wl-clipboard-debugsource-2.1.0+master.20230121233131.885e565-1.1.1.bso.i486.rpm",
+  "name": "wl-clipboard-debugsource",
+  "rpm_version": "2.1.0+master.20230121233131.885e565",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

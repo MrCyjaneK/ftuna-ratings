@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "50c27f3c08533db234c46bca7330bea423e507e5266e269bdc3e2a58a00a95ac",
+  "key": "mirror/openrepos/nobodyinperson/personal/main/o/opensensemap-font-0.0.1-jolla.noarch.rpm",
+  "name": "opensensemap-font",
+  "rpm_version": "0.0.1",
+  "release": "jolla",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

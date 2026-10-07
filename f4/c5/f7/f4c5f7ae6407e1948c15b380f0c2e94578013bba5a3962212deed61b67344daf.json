@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "f4c5f7ae6407e1948c15b380f0c2e94578013bba5a3962212deed61b67344daf",
+  "key": "chum/5.2_armv7hl/armv7hl/collectd-debugsource-5.12.0.sfos.7-1.6.1.bso.armv7hl.rpm",
+  "name": "collectd-debugsource",
+  "rpm_version": "5.12.0.sfos.7",
+  "release": "1.6.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "33cee3344eeb4bc4f95552997a2f231688c7b4f6354af941f813b86faadcc1d3",
+  "key": "mirror/openrepos/ichthyosaurus/personal/main/h/harbour-dictionary-1.4.2-1.armv7hl.rpm",
+  "name": "harbour-dictionary",
+  "rpm_version": "1.4.2",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 55,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-dictionary.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    }
+  ]
+}

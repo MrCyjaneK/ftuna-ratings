@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "ccd9e06eac11429a53977940964830abe74b57a6cd119eb68664dc7a0984ee13",
+  "key": "chum/5.1_armv7hl/armv7hl/opt-qt5-qtvirtualkeyboard-debuginfo-5.15.14-1.4.2.bso.armv7hl.rpm",
+  "name": "opt-qt5-qtvirtualkeyboard-debuginfo",
+  "rpm_version": "5.15.14",
+  "release": "1.4.2.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

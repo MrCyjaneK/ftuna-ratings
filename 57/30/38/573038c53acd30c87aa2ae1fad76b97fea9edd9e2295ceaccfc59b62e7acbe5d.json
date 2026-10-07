@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "573038c53acd30c87aa2ae1fad76b97fea9edd9e2295ceaccfc59b62e7acbe5d",
+  "key": "mirror/openrepos/Mister_Magister/personal/main/n/nanofiles-1.1-1.i486.rpm",
+  "name": "nanofiles",
+  "rpm_version": "1.1",
+  "release": "1",
+  "arch": "i486",
+  "verdict": 38,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": 0
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/nanofiles.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin",
+      "code": "setuid",
+      "detail": "/usr/bin mode 044755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/nanofiles",
+      "code": "setuid",
+      "detail": "/usr/bin/nanofiles mode 0104755 user root group root file"
+    }
+  ]
+}

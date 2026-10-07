@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "22105584dd7404f3b5c6f3821951c8f742c1299b93a8aca455fb5b8dbfaa9991",
+  "key": "mirror/openrepos/Rikudou_Sennin/personal/main/h/harbour-bitsailor-0.2.0-1.i486.rpm",
+  "name": "harbour-bitsailor",
+  "rpm_version": "0.2.0",
+  "release": "1",
+  "arch": "i486",
+  "verdict": 55,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-bitsailor.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "2b53a100c0b9657721e0c1ea14bc90b26620f04bd2258633a37c168ac32680c7",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-falldown-debugsource-0.2.0+master.20210927124206.1.g0a9943a-1.1.2.bso.armv7hl.rpm",
+  "name": "harbour-falldown-debugsource",
+  "rpm_version": "0.2.0+master.20210927124206.1.g0a9943a",
+  "release": "1.1.2.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

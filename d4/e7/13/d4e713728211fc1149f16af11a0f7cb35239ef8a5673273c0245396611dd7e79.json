@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "d4e713728211fc1149f16af11a0f7cb35239ef8a5673273c0245396611dd7e79",
+  "key": "chum/5.1_aarch64/aarch64/libmad-debuginfo-0.15.1b-1.1.1.bso.aarch64.rpm",
+  "name": "libmad-debuginfo",
+  "rpm_version": "0.15.1b",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

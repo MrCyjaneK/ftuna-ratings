@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "763ffcea40e18a733e3c9e3fe16cfba783d484563eb27ca08908cad1f972b66a",
+  "key": "mirror/openrepos/shadowfish/personal/main/c/c-ares-devel-1.14.0-1.6.4.jolla_.armv7hl.rpm",
+  "name": "c-ares-devel",
+  "rpm_version": "1.14.0",
+  "release": "1.6.4.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

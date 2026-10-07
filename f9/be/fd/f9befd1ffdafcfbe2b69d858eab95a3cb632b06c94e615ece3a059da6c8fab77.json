@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "f9befd1ffdafcfbe2b69d858eab95a3cb632b06c94e615ece3a059da6c8fab77",
+  "key": "mirror/openrepos/lpr/personal/main/i/imagemagick-devel-7.1.1.28-7.1.armv7hl.rpm",
+  "name": "ImageMagick-devel",
+  "rpm_version": "7.1.1.28",
+  "release": "7.1",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

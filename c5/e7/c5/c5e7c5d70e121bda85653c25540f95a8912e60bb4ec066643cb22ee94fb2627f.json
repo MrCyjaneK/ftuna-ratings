@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "c5e7c5d70e121bda85653c25540f95a8912e60bb4ec066643cb22ee94fb2627f",
+  "key": "mirror/openrepos/Tomin/personal/main/p/patience-deck-0.9-1.i486.rpm",
+  "name": "patience-deck",
+  "rpm_version": "0.9",
+  "release": "1",
+  "arch": "i486",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

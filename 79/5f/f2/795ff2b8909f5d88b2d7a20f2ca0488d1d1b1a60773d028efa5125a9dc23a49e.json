@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "795ff2b8909f5d88b2d7a20f2ca0488d1d1b1a60773d028efa5125a9dc23a49e",
+  "key": "chum/5.2_armv7hl/armv7hl/units-debugsource-2.27-1.1.1.bso.armv7hl.rpm",
+  "name": "units-debugsource",
+  "rpm_version": "2.27",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

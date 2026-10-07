@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "195b6f76ce9e3e46f1c14ab33bf6e6deeb5aae2ebd14d46f273f4c26c5ba3db7",
+  "key": "chum/5.2_aarch64/aarch64/harbour-apocalypse-debuginfo-0.4.3-1.1.1.bso.aarch64.rpm",
+  "name": "harbour-apocalypse-debuginfo",
+  "rpm_version": "0.4.3",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "8c16b42b820f06f2ae3ab796b631be85415b57ca886a74e273e22a16f7a75510",
+  "key": "chum/5.1_armv7hl/armv7hl/libneon-debuginfo-0.33.0+git2-1.5.1.bso.armv7hl.rpm",
+  "name": "libneon-debuginfo",
+  "rpm_version": "0.33.0+git2",
+  "release": "1.5.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

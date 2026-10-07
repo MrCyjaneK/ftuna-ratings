@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "a3e216f7177a442b7a4c2f6ed7d4964ae83f8f32985336f6eacbf6c5418e4013",
+  "key": "chum/5.1_aarch64/aarch64/opt-kf5-kservice-devel-5.116.0-1.6.1.bso.aarch64.rpm",
+  "name": "opt-kf5-kservice-devel",
+  "rpm_version": "5.116.0",
+  "release": "1.6.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

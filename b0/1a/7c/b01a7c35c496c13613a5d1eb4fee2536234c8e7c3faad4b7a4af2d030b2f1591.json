@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "b01a7c35c496c13613a5d1eb4fee2536234c8e7c3faad4b7a4af2d030b2f1591",
+  "key": "mirror/openrepos/Mister_Magister/personal/main/n/nanofiles-1.4.2-1.armv7hl.rpm",
+  "name": "nanofiles",
+  "rpm_version": "1.4.2",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 28,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": 0
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/nanofiles.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/nanofiles",
+      "code": "setuid",
+      "detail": "/usr/bin/nanofiles mode 0104755 user root group root file"
+    }
+  ]
+}

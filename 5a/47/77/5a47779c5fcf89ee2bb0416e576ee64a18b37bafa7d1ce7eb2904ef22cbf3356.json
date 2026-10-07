@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "5a47779c5fcf89ee2bb0416e576ee64a18b37bafa7d1ce7eb2904ef22cbf3356",
+  "key": "mirror/openrepos/Feathers_McGraw/personal/main/p/perl-xml-sax-expat-0.51-1.noarch.rpm",
+  "name": "perl-XML-SAX-Expat",
+  "rpm_version": "0.51",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

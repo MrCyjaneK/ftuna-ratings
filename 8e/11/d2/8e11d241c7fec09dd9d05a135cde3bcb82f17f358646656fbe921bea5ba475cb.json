@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "8e11d241c7fec09dd9d05a135cde3bcb82f17f358646656fbe921bea5ba475cb",
+  "key": "mirror/openrepos/yurabeznos/personal/main/h/harbour-info.you_ra.screen_recorder-0.1.302818-1.aarch64.rpm",
+  "name": "harbour-info.you_ra.screen_recorder",
+  "rpm_version": "0.1.302818",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": 75,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-info.you_ra.screen_recorder.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    }
+  ]
+}

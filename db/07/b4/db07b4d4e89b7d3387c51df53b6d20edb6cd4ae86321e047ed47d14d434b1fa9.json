@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "db07b4d4e89b7d3387c51df53b6d20edb6cd4ae86321e047ed47d14d434b1fa9",
+  "key": "mirror/openrepos/nobodyinperson/personal/main/p/python3-numpy-1.16.2-rokua.armv7hl.rpm",
+  "name": "python3-numpy",
+  "rpm_version": "1.16.2",
+  "release": "rokua",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

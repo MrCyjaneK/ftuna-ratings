@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "ce1e7d03c8e80efece2ef6165d927ce0d46c4009e79b15fabee1d0528e7b3c19",
+  "key": "mirror/openrepos/krnlyng/personal/main/k/kodi-18.7-leia.armv7hl.rpm",
+  "name": "kodi",
+  "rpm_version": "18.7",
+  "release": "Leia",
+  "arch": "armv7hl",
+  "verdict": 53,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/kodi-wayland.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/bin/touch --no-create /usr/share/icons/hicolor \u0026\u003e/dev/null || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; /bin/touch --no-create /usr/share/icons/hicolor \u0026\u003e/dev/null; /usr/bin/gtk-update-icon-cache /usr/share/icons/hicolor \u0026\u003e/dev/null || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%posttrans",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/bin/gtk-update-icon-cache /usr/share/icons/hicolor \u0026\u003e/dev/null || :; if [ ! -L /usr/lib/xbmc ] ; then; rmdir /usr/lib/xbmc /usr/share/xbmc"
+    }
+  ]
+}

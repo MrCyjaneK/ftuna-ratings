@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "f487be835f41e00e1d0161fcb9fc2ce965783f41181cf49011d271156a07aab7",
+  "key": "chum/5.2_armv7hl/armv7hl/python3-makefun-debuginfo-1.11.3-1.1.1.bso.armv7hl.rpm",
+  "name": "python3-makefun-debuginfo",
+  "rpm_version": "1.11.3",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

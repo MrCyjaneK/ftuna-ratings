@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "6d9575810d9df53df6dd62dc421bba6037c18ddf952cd64535c285d51da215f3",
+  "key": "mirror/openrepos/kan/personal/main/z/zstd-0.1.4.10-0.aarch64.rpm",
+  "name": "zstd",
+  "rpm_version": "0.1.4.10",
+  "release": "0",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

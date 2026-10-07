@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "9395c7478fcb1c4ed7a276c8809c54a56de2ff2b512bbd8bc5c392e480f988fd",
+  "key": "chum/5.2_i486/noarch/python3-packaging-21.3+master.20230409154829.4.gd515213-1.2.1.bso.noarch.rpm",
+  "name": "python3-packaging",
+  "rpm_version": "21.3+master.20230409154829.4.gd515213",
+  "release": "1.2.1.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "62a027a8171fbf26487fb1b1e2b52c6e3cc2c710383528f31df96f4ace94213e",
+  "key": "mirror/openrepos/KeeperoftheKeys/personal/main/h/harbour-org.gpodder.sailfish-4.9.0-1.noarch.rpm",
+  "name": "harbour-org.gpodder.sailfish",
+  "rpm_version": "4.9.0",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 75,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-org.gpodder.sailfish.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    }
+  ]
+}

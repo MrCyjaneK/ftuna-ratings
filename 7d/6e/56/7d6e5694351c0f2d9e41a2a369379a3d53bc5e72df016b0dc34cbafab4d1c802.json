@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "7d6e5694351c0f2d9e41a2a369379a3d53bc5e72df016b0dc34cbafab4d1c802",
+  "key": "mirror/openrepos/V10lator/personal/main/f/fbcat-0.4.1-0.armv7hl.rpm",
+  "name": "fbcat",
+  "rpm_version": "0.4.1",
+  "release": "0",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; rm -f /usr/bin/fbcat"
+    }
+  ]
+}

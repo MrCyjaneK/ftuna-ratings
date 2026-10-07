@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "0099e5e3463ccb997c8d3dda539396a373d6e97b0c4f68457de91b985083f369",
+  "key": "mirror/openrepos/6uvNPR/personal/main/h/harbour-io.edin_.projects.sailsync-owncloud-0.8.4-1.armv7hl.rpm",
+  "name": "harbour-io.edin.projects.sailsync-owncloud",
+  "rpm_version": "0.8.4+master.20190520041159.a8f4ad4",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 75,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-io.edin.projects.sailsync-owncloud.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    }
+  ]
+}

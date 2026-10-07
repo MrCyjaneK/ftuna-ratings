@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "075456a6601313531bf11750b51d53379adb79650ab2104d7105e6925dc76102",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-yubigo-debuginfo-0.4.1-1.1.1.bso.armv7hl.rpm",
+  "name": "harbour-yubigo-debuginfo",
+  "rpm_version": "0.4.1",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

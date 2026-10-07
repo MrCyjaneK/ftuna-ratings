@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "c21b118c6b7fe53a996f3960c409785b56043d03b1f8ed5134150806106e8e56",
+  "key": "mirror/openrepos/Mister_Magister/personal/main/y/youtube-dl-2016.04.19-1.21.1.i486.rpm",
+  "name": "youtube-dl",
+  "rpm_version": "2016.04.19",
+  "release": "1.21.1",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

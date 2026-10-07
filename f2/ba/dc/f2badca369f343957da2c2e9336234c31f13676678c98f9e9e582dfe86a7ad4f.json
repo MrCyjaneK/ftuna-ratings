@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "f2badca369f343957da2c2e9336234c31f13676678c98f9e9e582dfe86a7ad4f",
+  "key": "mirror/openrepos/Patchmanager/personal/main/p/patchmanager-2.3.3-10.41.1.jolla_.armv7hl.rpm",
+  "name": "patchmanager",
+  "rpm_version": "2.3.3",
+  "release": "10.41.1.jolla",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 30
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/system-services/org.SfietKonstantin.patchmanager.service",
+      "code": "dbus.service",
+      "detail": "scope=system user=root exec=/usr/sbin/patchmanager"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=case \"$*\" in; 1); echo Installing package"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=case \"$*\" in; 1); echo Installing package"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=case \"$*\" in; 0); echo Uninstalling package"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=case \"$*\" in; 0); echo Uninstalling package"
+    }
+  ]
+}

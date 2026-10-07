@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "7ddef8d9fef4c40be786b5f5eda66d0e202f6f47ea14bf922b25f753826ab7d6",
+  "key": "chum/5.1_aarch64/aarch64/libevent-debuginfo-2.1.12-1.4.1.bso.aarch64.rpm",
+  "name": "libevent-debuginfo",
+  "rpm_version": "2.1.12",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

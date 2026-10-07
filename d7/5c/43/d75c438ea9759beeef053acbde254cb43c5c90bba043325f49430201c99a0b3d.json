@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "d75c438ea9759beeef053acbde254cb43c5c90bba043325f49430201c99a0b3d",
+  "key": "mirror/openrepos/Kabouik/personal/main/l/lynx-2.8.9rel.1-1.1.9.jolla_.armv7hl.rpm",
+  "name": "lynx",
+  "rpm_version": "2.8.9rel.1",
+  "release": "1.1.9.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

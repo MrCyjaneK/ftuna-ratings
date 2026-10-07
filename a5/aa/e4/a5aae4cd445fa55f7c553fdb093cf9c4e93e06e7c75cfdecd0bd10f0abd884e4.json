@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "a5aae4cd445fa55f7c553fdb093cf9c4e93e06e7c75cfdecd0bd10f0abd884e4",
+  "key": "chum/5.2_aarch64/aarch64/harbour-shakkikello-debugsource-0.9.9-1.1.2.bso.aarch64.rpm",
+  "name": "harbour-shakkikello-debugsource",
+  "rpm_version": "0.9.9",
+  "release": "1.1.2.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

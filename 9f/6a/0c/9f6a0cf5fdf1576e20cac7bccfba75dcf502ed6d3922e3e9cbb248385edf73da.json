@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "9f6a0cf5fdf1576e20cac7bccfba75dcf502ed6d3922e3e9cbb248385edf73da",
+  "key": "mirror/openrepos/mkiol/personal/main/h/harbour-dsnote-1.6.1-1.armv7hl.rpm",
+  "name": "harbour-dsnote",
+  "rpm_version": "1.6.1",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 69,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 85
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.mkiol.Stt.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/bin/false systemd=harbour-dsnote.service"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-dsnote.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user stop harbour-dsnote.service \u003e/dev/null 2\u003e\u00261 || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user stop harbour-dsnote.service \u003e/dev/null 2\u003e\u00261 || :"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-dsnote.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-dsnote --daemon sandbox=none"
+    }
+  ]
+}

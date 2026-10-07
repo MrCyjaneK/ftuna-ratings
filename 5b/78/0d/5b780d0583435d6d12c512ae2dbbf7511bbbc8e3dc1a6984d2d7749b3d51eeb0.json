@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "5b780d0583435d6d12c512ae2dbbf7511bbbc8e3dc1a6984d2d7749b3d51eeb0",
+  "key": "mirror/openrepos/black_sheep_dev/personal/main/h/harbour-zollstock-0.1.1-1.noarch.rpm",
+  "name": "harbour-zollstock",
+  "rpm_version": "0.1.1",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

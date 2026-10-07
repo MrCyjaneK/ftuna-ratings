@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "a6d3341e70e5c8a3a3171f9e20c9da2e2b7864f80d028da387a1e1f7500a6ba1",
+  "key": "chum/5.2_i486/i486/kcodecs-debugsource-5.34.0-1.1.1.bso.i486.rpm",
+  "name": "kcodecs-debugsource",
+  "rpm_version": "5.34.0",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

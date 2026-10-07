@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "c926613d2bbc71fe4a2045fbdb631d67e350936ceb11904dea8d5fa8e8fe50db",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-sailconnect4-debugsource-0.5.4-1.4.1.bso.armv7hl.rpm",
+  "name": "harbour-sailconnect4-debugsource",
+  "rpm_version": "0.5.4",
+  "release": "1.4.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

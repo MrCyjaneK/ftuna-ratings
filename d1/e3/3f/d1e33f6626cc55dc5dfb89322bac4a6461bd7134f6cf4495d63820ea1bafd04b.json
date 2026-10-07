@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "d1e33f6626cc55dc5dfb89322bac4a6461bd7134f6cf4495d63820ea1bafd04b",
+  "key": "mirror/openrepos/ade/personal/main/z/zint-2.9.1-2.i486.rpm",
+  "name": "zint",
+  "rpm_version": "2.9.1",
+  "release": "2",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

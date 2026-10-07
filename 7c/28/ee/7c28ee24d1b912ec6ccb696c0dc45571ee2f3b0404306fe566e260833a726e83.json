@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "7c28ee24d1b912ec6ccb696c0dc45571ee2f3b0404306fe566e260833a726e83",
+  "key": "mirror/openrepos/direc85/personal/main/h/harbour-picross2-2.5.0-1.noarch.rpm",
+  "name": "harbour-picross2",
+  "rpm_version": "2.5.0",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

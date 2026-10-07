@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "ba2f0104f48f6f5b18a2dd9a74521dafe11ad642748bd756045dd1c8641182c0",
+  "key": "chum/5.2_aarch64/noarch/harbour-multi-coords-2.1+master.20211031085629.17.g7e23e76-1.1.1.bso.noarch.rpm",
+  "name": "harbour-multi-coords",
+  "rpm_version": "2.1+master.20211031085629.17.g7e23e76",
+  "release": "1.1.1.bso",
+  "arch": "noarch",
+  "verdict": 75,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-multi-coords.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    }
+  ]
+}

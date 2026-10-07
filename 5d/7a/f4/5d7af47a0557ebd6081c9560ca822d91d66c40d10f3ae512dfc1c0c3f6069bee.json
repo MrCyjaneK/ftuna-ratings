@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "5d7af47a0557ebd6081c9560ca822d91d66c40d10f3ae512dfc1c0c3f6069bee",
+  "key": "mirror/openrepos/lpr/personal/main/l/libvpx-devel-1.10.0-1.armv7hl.rpm",
+  "name": "libvpx-devel",
+  "rpm_version": "1.10.0",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

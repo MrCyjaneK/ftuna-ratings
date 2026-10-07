@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "742a1d5ce9a82a85035c095170820ab45b6c5d680331b0ac37178ec958e78bf0",
+  "key": "mirror/openrepos/slava/personal/main/o/openrepos-clock-settings-1.1.4-55.1.aarch64.rpm",
+  "name": "openrepos-clock-settings",
+  "rpm_version": "1.1.4",
+  "release": "4.1",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

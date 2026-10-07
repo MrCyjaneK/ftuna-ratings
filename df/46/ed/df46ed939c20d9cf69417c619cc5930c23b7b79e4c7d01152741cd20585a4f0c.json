@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "df46ed939c20d9cf69417c619cc5930c23b7b79e4c7d01152741cd20585a4f0c",
+  "key": "mirror/openrepos/lpr/personal/main/l/libjpeg-turbo-tools-3.0.0-1.armv7hl.rpm",
+  "name": "libjpeg-turbo-tools",
+  "rpm_version": "3.0.0",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

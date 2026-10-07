@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "1f89bf37f21e843036596ea697980e70c9c03057640cbe84f982d1f2dbf1e952",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-dailycomics-1.9.97-1.2.1.bso.armv7hl.rpm",
+  "name": "harbour-dailycomics",
+  "rpm_version": "1.9.97",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "verdict": 55,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-dailycomics.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    }
+  ]
+}

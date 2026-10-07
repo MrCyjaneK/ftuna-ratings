@@ -1,0 +1,110 @@
+{
+  "version": 6,
+  "sha256": "cdfa278a02cfb9dac919b1e382c38545b722c9952319b716da01e2e936f66ae6",
+  "key": "mirror/openrepos/birdzhang/personal/main/s/shadowsocks-libev-3.2.3-1.5.1.jolla_.i486.rpm",
+  "name": "shadowsocks-libev",
+  "rpm_version": "3.2.3",
+  "release": "1.5.1.jolla",
+  "arch": "i486",
+  "verdict": 58,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user stop shadowsocks-libev-client.service; systemctl-user stop shadowsocks-libev-nat.service; systemctl-user stop shadowsocks-libev-redir.service"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/shadowsocks-libev-client.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/ss-local -c /home/nemo/.shadowsocks/shadowsocks-libev-config.json -f /var/run/user-session/shadowsocks-libev-client.pid -u sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/shadowsocks-libev-nat.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/ss-nat -c /home/nemo/.shadowsocks/shadowsocks-libev-config.json -f /var/run/user-session/shadowsocks-libev-nat.pid -u sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/shadowsocks-libev-redir.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/ss-redir -c /home/nemo/.shadowsocks/shadowsocks-libev-config.json -f /var/run/user-session/shadowsocks-libev-redir.pid -u sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/shadowsocks-libev-server.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/ss-server -c /home/nemo/.shadowsocks/shadowsocks-libev-config.json -f /var/run/user-session/shadowsocks-libev-server.pid -u sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/shadowsocks-libev-tunnel.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/ss-tunnel -c /home/nemo/.shadowsocks/shadowsocks-libev-config.json -f /var/run/user-session/shadowsocks-libev-tunnel.pid -u sandbox=none"
+    }
+  ]
+}

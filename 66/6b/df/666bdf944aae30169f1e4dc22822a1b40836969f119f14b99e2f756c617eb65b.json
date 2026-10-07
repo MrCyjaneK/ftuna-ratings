@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "666bdf944aae30169f1e4dc22822a1b40836969f119f14b99e2f756c617eb65b",
+  "key": "chum/5.1_armv7hl/armv7hl/patchmanager-debuginfo-3.2.12-1.4.1.bso.armv7hl.rpm",
+  "name": "patchmanager-debuginfo",
+  "rpm_version": "3.2.12",
+  "release": "1.4.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

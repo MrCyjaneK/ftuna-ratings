@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "851e857d3bae4db154a0dcf804b51724869138b9df3f3acf0fd0ef2b1fe4581a",
+  "key": "mirror/openrepos/olf/personal/main/s/sfos-upgrade-3.11.4-release4.noarch.rpm",
+  "name": "sfos-upgrade",
+  "rpm_version": "3.11.4",
+  "release": "release4",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

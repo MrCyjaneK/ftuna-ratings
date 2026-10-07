@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "90c60d4fe3acbbaaec7c9db6aea8e6645f3cc5fbd5fa44defdc5fee9262aedf6",
+  "key": "chum/5.2_i486/i486/davfs2-1.7.0+git4-1.7.1.bso.i486.rpm",
+  "name": "davfs2",
+  "rpm_version": "1.7.0+git4",
+  "release": "1.7.1.bso",
+  "arch": "i486",
+  "verdict": 0,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": 0
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "setuid",
+      "path": "/usr/sbin/mount.davfs",
+      "code": "setuid",
+      "detail": "/usr/sbin/mount.davfs mode 0104755 user root group root file"
+    }
+  ]
+}

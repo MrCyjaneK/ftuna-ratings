@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "2f35e420bfac78891997b62358e71a96088347aa40440a1cb186eb793a4c9322",
+  "key": "chum/5.2_armv7hl/armv7hl/i2pd-debuginfo-2.56.0+git1-1.6.2.bso.armv7hl.rpm",
+  "name": "i2pd-debuginfo",
+  "rpm_version": "2.56.0+git1",
+  "release": "1.6.2.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

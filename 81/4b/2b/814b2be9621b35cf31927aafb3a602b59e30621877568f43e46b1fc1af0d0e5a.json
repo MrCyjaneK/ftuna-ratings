@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "814b2be9621b35cf31927aafb3a602b59e30621877568f43e46b1fc1af0d0e5a",
+  "key": "chum/5.1_armv7hl/armv7hl/libsodium-devel-1.0.20+git1-1.3.1.bso.armv7hl.rpm",
+  "name": "libsodium-devel",
+  "rpm_version": "1.0.20+git1",
+  "release": "1.3.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

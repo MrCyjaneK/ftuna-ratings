@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "9ab7b259f3a042510a1da64c01da30f18458adabfebf850249c8620ea3ad4c48",
+  "key": "mirror/openrepos/halftux/personal/main/c/cemu-1.3.0-2.i486.rpm",
+  "name": "CEmu",
+  "rpm_version": "1.3.0",
+  "release": "2",
+  "arch": "i486",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/CEmu.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs"
+    }
+  ]
+}

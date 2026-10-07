@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "541174c4a4dbed61facc44318a160f38e6208b83417e6c7ff02469d4db85e30e",
+  "key": "mirror/openrepos/eugenio/personal/main/j/jolla-settings-screenmonitor-1.0.3-1.armv7hl.rpm",
+  "name": "jolla-settings-screenmonitor",
+  "rpm_version": "1.0.3",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 30
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/system-services/eu.medesimo.ScreenMonitor.service",
+      "code": "dbus.service",
+      "detail": "scope=system user=root exec=/usr/bin/ScreenMonitor"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/bin/systemctl enable ScreenMonitor.service"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/bin/systemctl disable ScreenMonitor.service"
+    },
+    {
+      "module": "systemd",
+      "path": "/lib/systemd/system/ScreenMonitor.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/bin/ScreenMonitor --dbus sandbox=none"
+    }
+  ]
+}

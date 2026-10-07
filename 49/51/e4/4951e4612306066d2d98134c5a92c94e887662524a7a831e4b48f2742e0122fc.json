@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "4951e4612306066d2d98134c5a92c94e887662524a7a831e4b48f2742e0122fc",
+  "key": "chum/5.1_i486/noarch/harbour-sailord-0.9.16-1.3.1.bso.noarch.rpm",
+  "name": "harbour-sailord",
+  "rpm_version": "0.9.16",
+  "release": "1.3.1.bso",
+  "arch": "noarch",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailord.desktop",
+      "code": "sailjail.permission",
+      "detail": "Notifications"
+    }
+  ]
+}

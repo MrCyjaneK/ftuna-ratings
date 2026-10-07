@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "9e95dc5d64c7149049689592bbc51495fb28e1a27fcf9fc6d01bcf26278f30a1",
+  "key": "mirror/openrepos/Mister_Magister/personal/main/t/tdlib-1.7.0-1.armv7hl.rpm",
+  "name": "tdlib",
+  "rpm_version": "1.7.0",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

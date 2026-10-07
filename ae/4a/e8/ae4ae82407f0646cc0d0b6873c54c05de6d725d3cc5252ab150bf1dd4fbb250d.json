@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "ae4ae82407f0646cc0d0b6873c54c05de6d725d3cc5252ab150bf1dd4fbb250d",
+  "key": "mirror/openrepos/rubdos/personal/main/s/sailfish-components-webview-qt5-1.2.14jb53103.20210304094636.f48fd13-1.armv7hl.rpm",
+  "name": "sailfish-components-webview-qt5",
+  "rpm_version": "1.2.14+jb53103.20210304094636.f48fd13",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig"
+    }
+  ]
+}

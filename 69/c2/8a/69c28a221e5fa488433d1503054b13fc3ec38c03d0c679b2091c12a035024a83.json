@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "69c28a221e5fa488433d1503054b13fc3ec38c03d0c679b2091c12a035024a83",
+  "key": "mirror/openrepos/ade/personal/main/l/libnpupnp13-6.1.2-0.aarch64.rpm",
+  "name": "libnpupnp13",
+  "rpm_version": "6.1.2",
+  "release": "0",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

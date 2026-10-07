@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "622b1031671e00debf2dc34cceccb8eb009aa55921b2116035d410bcc4aeeffa",
+  "key": "chum/5.1_armv7hl/armv7hl/noson-devel-2.12.18+git2-1.4.2.bso.armv7hl.rpm",
+  "name": "noson-devel",
+  "rpm_version": "2.12.18+git2",
+  "release": "1.4.2.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

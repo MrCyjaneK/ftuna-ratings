@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "d9e5e8b31cb0959769314c437dd3be20a7e84db48580b8134a5c8c7297a5cca9",
+  "key": "mirror/openrepos/eugenio/personal/main/s/sailfishos-patch-restore-swipe-to-lock-1.1.9.28-1.noarch.rpm",
+  "name": "sailfishos-patch-restore-swipe-to-lock",
+  "rpm_version": "1.1.9.28",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -x /usr/sbin/patchmanager ]; then; /usr/sbin/patchmanager -u eugenio-restore-swipe-to-lock || true; fi"
+    }
+  ]
+}

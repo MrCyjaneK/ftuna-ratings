@@ -1,0 +1,128 @@
+{
+  "version": 6,
+  "sha256": "626d40b3e3b2174c716beee8a7b20693338d43b713431637d775ce34cca7a2ea",
+  "key": "mirror/openrepos/Patchmanager/personal/main/p/patchmanager-3.0.62-1.136.1.jolla_.i486.rpm",
+  "name": "patchmanager",
+  "rpm_version": "3.0.62",
+  "release": "1.136.1.jolla",
+  "arch": "i486",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 30
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.SfietKonstantin.patchmanager.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/bin/false systemd=dbus-org.SfietKonstantin.patchmanager.service"
+    },
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/system-services/org.SfietKonstantin.patchmanager.service",
+      "code": "dbus.service",
+      "detail": "scope=system user=root exec=/bin/false systemd=dbus-org.SfietKonstantin.patchmanager.service"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=export NO_PM_PRELOAD=1; case \"$*\" in; 1)"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=export NO_PM_PRELOAD=1; case \"$*\" in; 1)"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=export NO_PM_PRELOAD=1; case \"$*\" in; 0)"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=export NO_PM_PRELOAD=1; case \"$*\" in; 0)"
+    },
+    {
+      "module": "systemd",
+      "path": "/lib/systemd/system/checkForUpdates-org.SfietKonstantin.patchmanager.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/bin/dbus-send --system --print-reply --dest=org.SfietKonstantin.patchmanager /org/SfietKonstantin/patchmanager org.SfietKonstantin.patchmanager.checkForUpdates sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/lib/systemd/system/checkForUpdates-org.SfietKonstantin.patchmanager.timer",
+      "code": "systemd.timer",
+      "detail": "scope=system activates=checkForUpdates-org.SfietKonstantin.patchmanager.service"
+    },
+    {
+      "module": "systemd",
+      "path": "/lib/systemd/system/dbus-org.SfietKonstantin.patchmanager.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/sbin/patchmanager --daemon sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/dbus-org.SfietKonstantin.patchmanager.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/invoker -o -s --type=silica-qt5 /usr/bin/patchmanager-dialog sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/lipstick-patchmanager.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/bin/sleep infinity sandbox=none"
+    }
+  ]
+}

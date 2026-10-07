@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "fec26a72f3980a4573873c531b9e25eb050ca1029c46f6bcee0ea6377a11479e",
+  "key": "mirror/openrepos/lpr/personal/main/o/openexr-devel-2.5.7-0.armv7hl.rpm",
+  "name": "openexr-devel",
+  "rpm_version": "2.5.7",
+  "release": "0",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

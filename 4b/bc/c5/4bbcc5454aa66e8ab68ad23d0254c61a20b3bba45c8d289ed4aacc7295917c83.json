@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "4bbcc5454aa66e8ab68ad23d0254c61a20b3bba45c8d289ed4aacc7295917c83",
+  "key": "chum/5.1_aarch64/aarch64/libneon-0.33.0+git2-1.5.1.bso.aarch64.rpm",
+  "name": "libneon",
+  "rpm_version": "0.33.0+git2",
+  "release": "1.5.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

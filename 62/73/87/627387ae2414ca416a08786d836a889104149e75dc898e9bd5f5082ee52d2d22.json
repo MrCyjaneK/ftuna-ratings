@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "627387ae2414ca416a08786d836a889104149e75dc898e9bd5f5082ee52d2d22",
+  "key": "chum/5.1_aarch64/aarch64/zsh-debuginfo-5.9-1.7.1.bso.aarch64.rpm",
+  "name": "zsh-debuginfo",
+  "rpm_version": "5.9",
+  "release": "1.7.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

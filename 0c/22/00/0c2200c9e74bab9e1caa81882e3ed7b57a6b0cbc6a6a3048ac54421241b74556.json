@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "0c2200c9e74bab9e1caa81882e3ed7b57a6b0cbc6a6a3048ac54421241b74556",
+  "key": "mirror/openrepos/pamoedo/personal/main/t/tmux-3.1b-1.armv7hl.rpm",
+  "name": "tmux",
+  "rpm_version": "3.1b",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

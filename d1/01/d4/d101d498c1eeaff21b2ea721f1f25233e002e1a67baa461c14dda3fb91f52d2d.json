@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "d101d498c1eeaff21b2ea721f1f25233e002e1a67baa461c14dda3fb91f52d2d",
+  "key": "chum/5.2_armv7hl/noarch/sfos-upgrade-3.11.4-1.12.1.bso.noarch.rpm",
+  "name": "sfos-upgrade",
+  "rpm_version": "3.11.4",
+  "release": "1.12.1.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

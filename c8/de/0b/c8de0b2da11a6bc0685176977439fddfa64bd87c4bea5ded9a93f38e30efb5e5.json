@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "c8de0b2da11a6bc0685176977439fddfa64bd87c4bea5ded9a93f38e30efb5e5",
+  "key": "mirror/openrepos/lpr/personal/main/p/pulseaudio-12.2git9-2.armv7hl.rpm",
+  "name": "pulseaudio",
+  "rpm_version": "12.2+git9",
+  "release": "2",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=getent group pulse-access \u003e/dev/null || groupadd -r pulse-access; getent group pulse \u003e/dev/null || groupadd -f -g 171 -r pulse; if ! getent passwd pulse \u003e/dev/n"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/pulseaudio.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/bin/pulseaudio --daemonize=no --system --disallow-module-loading $CONFIG sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/pulseaudio.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/pulseaudio --daemonize=no $CONFIG sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/pulseaudio.socket",
+      "code": "systemd.socket",
+      "detail": "scope=user activates=pulseaudio.service"
+    }
+  ]
+}

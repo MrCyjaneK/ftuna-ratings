@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "4174e3b686a91370294e8e835f3ee338f68b16e2d9b7371dd5218f0d5e5218d0",
+  "key": "chum/5.2_i486/noarch/harbour-multimodal-0.98-1.9.1.bso.noarch.rpm",
+  "name": "harbour-multimodal",
+  "rpm_version": "0.98",
+  "release": "1.9.1.bso",
+  "arch": "noarch",
+  "verdict": 65,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-multimodal.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-multimodal.desktop",
+      "code": "sailjail.permission",
+      "detail": "Location"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=sed -i 's/CLIENT-ID/c832e0d20b3d711bd456b8dad388a7a1/' /usr/share/harbour-multimodal/src/dbahn_client/dbahn_client.py; sed -i 's/API-ID/5067e18b90aa7c7f6b9b45c3"
+    }
+  ]
+}

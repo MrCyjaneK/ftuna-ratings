@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "5cf8e1d9f01e49cd039f6f19b0280fe4a39caf59ee8f9f10135414cc19eab168",
+  "key": "mirror/openrepos/DeSamurai/personal/main/l/libcdio-2.1.0-15.aarch64.rpm",
+  "name": "libcdio",
+  "rpm_version": "2.1.0",
+  "release": "15",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

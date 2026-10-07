@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "1c3a186cc002a33e0cbecccc8e6258587fd6aa41464b804cda38a92e0d684255",
+  "key": "chum/5.1_i486/i486/tokodon-23.08.5+git1-1.5.1.bso.i486.rpm",
+  "name": "tokodon",
+  "rpm_version": "23.08.5+git1",
+  "release": "1.5.1.bso",
+  "arch": "i486",
+  "verdict": 55,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/org.kde.tokodon.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    }
+  ]
+}

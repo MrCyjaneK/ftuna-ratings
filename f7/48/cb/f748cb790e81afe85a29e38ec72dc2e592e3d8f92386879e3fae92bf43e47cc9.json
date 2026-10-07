@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "f748cb790e81afe85a29e38ec72dc2e592e3d8f92386879e3fae92bf43e47cc9",
+  "key": "mirror/openrepos/martonmiklos/personal/main/u/unofficial-jolla-language-pack-hu-2.1.0-0.0.1.noarch.rpm",
+  "name": "unofficial-jolla-language-pack-hu",
+  "rpm_version": "2.1.0",
+  "release": "0.0.1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=localedef --replace -i hu_HU -f UTF-8 hu_HU.utf8 --prefix=/"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=localedef --delete-from-archive hu_HU.utf8"
+    }
+  ]
+}

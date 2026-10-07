@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "2d3b774d5e2143d20bd02bd2a40093d280f3c0281693a0e28373f132b5ea6762",
+  "key": "mirror/openrepos/glitchapp/personal/main/s/solarsystem-0.9-1.noarch.rpm",
+  "name": "solarsystem",
+  "rpm_version": "0.9",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/solarsystem.desktop",
+      "code": "sailjail.permission",
+      "detail": "Love2D"
+    }
+  ]
+}

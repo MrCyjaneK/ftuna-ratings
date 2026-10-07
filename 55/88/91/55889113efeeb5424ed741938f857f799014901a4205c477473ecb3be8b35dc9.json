@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "55889113efeeb5424ed741938f857f799014901a4205c477473ecb3be8b35dc9",
+  "key": "mirror/openrepos/nephros/personal/main/h/harbour-privoxy-tools-3.0.32-1.1.noarch.rpm",
+  "name": "harbour-privoxy-tools",
+  "rpm_version": "3.0.32",
+  "release": "1.1",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

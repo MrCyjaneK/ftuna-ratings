@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "8e9275ede459e73ab160a3f36297bafa4e08dbf282b4d8750d3ccff4bb1c4d4f",
+  "key": "mirror/openrepos/Rikudou_Sennin/personal/main/g/go-1.25.5-2.fc42.aarch64.rpm",
+  "name": "go",
+  "rpm_version": "1.25.5",
+  "release": "2.fc42",
+  "arch": "aarch64",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=ln -sfn /home/.go/1.25.5/bin/go /usr/bin/go || true"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; if [ -L /usr/bin/go ] \u0026\u0026 [ \"$(readlink /usr/bin/go)\" = \"/home/.go/1.25.5/bin/go\" ]; then; rm -f /usr/bin/go"
+    }
+  ]
+}

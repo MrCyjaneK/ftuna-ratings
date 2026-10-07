@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "be261dcab3112efa2eb9fdc929d51f758775f4872ea43aa3eff9c41dbbb0ea92",
+  "key": "mirror/openrepos/carmenfdezb/personal/main/d/deadbeef-1.8.4-3.i486.rpm",
+  "name": "deadbeef",
+  "rpm_version": "1.8.4",
+  "release": "3",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

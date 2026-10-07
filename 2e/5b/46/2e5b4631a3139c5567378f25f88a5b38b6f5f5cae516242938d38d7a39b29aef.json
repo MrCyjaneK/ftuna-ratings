@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "2e5b4631a3139c5567378f25f88a5b38b6f5f5cae516242938d38d7a39b29aef",
+  "key": "mirror/openrepos/Mister_Magister/personal/main/y/yottagram-transferengine-plugin-0.5.2-1.aarch64.rpm",
+  "name": "yottagram-transferengine-plugin",
+  "rpm_version": "0.5.2",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "f85cf7aa97e5348af7a991666e74c8d0a6629af4e01c4779f2d282b36d4f1716",
+  "key": "mirror/openrepos/blizzz/personal/main/h/harbour-nextcloud-talk-1.0.0-alpha.5.armv7hl.rpm",
+  "name": "harbour-nextcloud-talk",
+  "rpm_version": "1.0.0",
+  "release": "alpha.5",
+  "arch": "armv7hl",
+  "verdict": 75,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-nextcloud-talk.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    }
+  ]
+}

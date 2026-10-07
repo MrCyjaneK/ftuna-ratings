@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "fe65286cd424f89974296fdbb7126de487265b32d6e2c8dd1251d1d0579def94",
+  "key": "chum/5.1_aarch64/noarch/peekfilter-button-0.12.0+git2-1.7.2.bso.noarch.rpm",
+  "name": "peekfilter-button",
+  "rpm_version": "0.12.0+git2",
+  "release": "1.7.2.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

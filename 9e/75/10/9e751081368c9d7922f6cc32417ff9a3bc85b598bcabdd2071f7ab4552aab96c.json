@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "9e751081368c9d7922f6cc32417ff9a3bc85b598bcabdd2071f7ab4552aab96c",
+  "key": "mirror/openrepos/birdzhang/personal/main/u/unofficial-jolla-language-pack-zh_cn-2.1.2-0.0.2.noarch.rpm",
+  "name": "unofficial-jolla-language-pack-zh_cn",
+  "rpm_version": "2.1.2",
+  "release": "0.0.2",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/bin/localedef --force --replace --verbose -i zh_CN -f UTF-8 zh_CN.utf8; exit 0"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/bin/localedef --delete-from-archive zh_CN.utf8"
+    }
+  ]
+}

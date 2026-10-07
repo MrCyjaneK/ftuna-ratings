@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "5e11191d28e439bc3f381e22fc10162d871f3d1dd45fd72dbdf92d9bc7b77dc8",
+  "key": "mirror/openrepos/cornerman/personal/main/s/sailfishos-patch-dont-steal-focus-0.1.0-1.noarch.rpm",
+  "name": "sailfishos-patch-dont-steal-focus",
+  "rpm_version": "0.1.0",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-dont-steal-focus ]; then; /usr/sbin/patchmanager -u sailfishos-patch-dont-steal-focus || true; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-dont-steal-focus ]; then; /usr/sbin/patchmanager -u sailfishos-patch-dont-steal-focus || true; fi"
+    }
+  ]
+}

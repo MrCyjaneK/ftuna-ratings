@@ -1,0 +1,98 @@
+{
+  "version": 6,
+  "sha256": "0d3cbb1a2891d86e35d7c141f9f1e08b0648aa3a766cccbe779e17b3e517faeb",
+  "key": "mirror/openrepos/Dax/personal/main/h/harbour-sailorgram-0.79-1.armv7hl.rpm",
+  "name": "harbour-sailorgram",
+  "rpm_version": "0.79",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 69,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 85
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.harbour.sailorgram.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/invoker --type=generic /usr/bin/harbour-sailorgram systemd=org.harbour.sailorgram"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailorgram.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user stop harbour-sailorgram-notifications.service; if /sbin/pidof harbour-sailorgram \u003e /dev/null; then; killall harbour-sailorgram || true"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user restart mce.service; systemctl-user restart ngfd.service; systemctl-user restart harbour-sailorgram-notifications.service"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user stop harbour-sailorgram-notifications.service; if /sbin/pidof harbour-sailorgram \u003e /dev/null; then; killall harbour-sailorgram || true"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-sailorgram-notifications.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/invoker --type=generic /usr/bin/harbour-sailorgram -daemon sandbox=none"
+    }
+  ]
+}

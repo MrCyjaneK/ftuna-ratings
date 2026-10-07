@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "6511ecb73dfe9c542233b9a3b4f90013fda6e3e020f7da1d2371ab9d7f157a53",
+  "key": "chum/5.1_armv7hl/armv7hl/libtirpc-1.3.2+git1-1.4.1.bso.armv7hl.rpm",
+  "name": "libtirpc",
+  "rpm_version": "1.3.2+git1",
+  "release": "1.4.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

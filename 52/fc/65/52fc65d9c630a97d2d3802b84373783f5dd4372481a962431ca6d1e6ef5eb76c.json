@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "52fc65d9c630a97d2d3802b84373783f5dd4372481a962431ca6d1e6ef5eb76c",
+  "key": "chum/5.2_aarch64/aarch64/libcollectdclient-5.12.0.sfos.7-1.6.1.bso.aarch64.rpm",
+  "name": "libcollectdclient",
+  "rpm_version": "5.12.0.sfos.7",
+  "release": "1.6.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

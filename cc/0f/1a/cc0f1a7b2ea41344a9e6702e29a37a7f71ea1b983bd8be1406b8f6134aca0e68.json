@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "cc0f1a7b2ea41344a9e6702e29a37a7f71ea1b983bd8be1406b8f6134aca0e68",
+  "key": "chum/5.2_i486/i486/harbour-pgz-jewelrush-0.7.0-1.1.1.bso.i486.rpm",
+  "name": "harbour-pgz-jewelrush",
+  "rpm_version": "0.7.0",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "verdict": 75,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-pgz-jewelrush.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    }
+  ]
+}

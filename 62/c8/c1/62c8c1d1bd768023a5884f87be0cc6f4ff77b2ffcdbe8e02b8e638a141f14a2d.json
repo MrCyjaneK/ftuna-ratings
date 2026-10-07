@@ -1,0 +1,98 @@
+{
+  "version": 6,
+  "sha256": "62c8c1d1bd768023a5884f87be0cc6f4ff77b2ffcdbe8e02b8e638a141f14a2d",
+  "key": "chum/5.2_i486/noarch/harbour-find-my-device-daemon-2.1-1.2.1.bso.noarch.rpm",
+  "name": "harbour-find-my-device-daemon",
+  "rpm_version": "2.1",
+  "release": "1.2.1.bso",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl --global enable harbour-find-my-device-daemon-gps.service \u003e/dev/null 2\u003e\u00261 || :; systemctl --global enable harbour-find-my-device-daemon-cmd.service \u003e/"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"0\" ]; then; systemctl --global disable harbour-find-my-device-daemon-gps.service \u003e/dev/null 2\u003e\u00261 || :; systemctl --global disable harbour-find-my-d"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/harbour-find-my-device-priv.path",
+      "code": "systemd.path",
+      "detail": "scope=system activates=harbour-find-my-device-priv.service"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/harbour-find-my-device-priv.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/bin/python3 /usr/share/harbour-find-my-device-daemon/priv_service.py sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-find-my-device-daemon-cmd.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/python3 /usr/share/harbour-find-my-device-daemon/daemon_cmd.py sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-find-my-device-daemon-gps.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/python3 /usr/share/harbour-find-my-device-daemon/daemon_gps.py sandbox=none"
+    }
+  ]
+}

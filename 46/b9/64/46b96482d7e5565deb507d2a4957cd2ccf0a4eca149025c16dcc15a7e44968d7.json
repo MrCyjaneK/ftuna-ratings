@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "46b96482d7e5565deb507d2a4957cd2ccf0a4eca149025c16dcc15a7e44968d7",
+  "key": "mirror/openrepos/ade/personal/main/l/libfmt11-11.0.2-1.aarch64.rpm",
+  "name": "libfmt11",
+  "rpm_version": "11.0.2",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

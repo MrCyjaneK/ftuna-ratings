@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "b1b6adc4719a460aafa0cb3236b40d949577fb25c11bdd4a29b11c2addb9d684",
+  "key": "mirror/openrepos/artur_/personal/main/o/opt-maui-mauiman-devel-1.0.1-1.aarch64.rpm",
+  "name": "opt-maui-mauiman-devel",
+  "rpm_version": "1.0.1",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "f441befe6f51246dcffcf0e8645957103b237e29360f3edd054fdd9d8110241b",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-privoxy-debuginfo-4.2.0+wolfssl2-1.4.1.bso.armv7hl.rpm",
+  "name": "harbour-privoxy-debuginfo",
+  "rpm_version": "4.2.0+wolfssl2",
+  "release": "1.4.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

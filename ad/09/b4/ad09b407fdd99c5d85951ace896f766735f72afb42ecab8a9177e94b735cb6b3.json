@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "ad09b407fdd99c5d85951ace896f766735f72afb42ecab8a9177e94b735cb6b3",
+  "key": "mirror/openrepos/mkiol/personal/main/h/harbour-dskeyboard-1.2.0-1.noarch.rpm",
+  "name": "harbour-dskeyboard",
+  "rpm_version": "1.2.0",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user restart maliit-server \u003e/dev/null 2\u003e\u00261 || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user restart maliit-server \u003e/dev/null 2\u003e\u00261 || :"
+    }
+  ]
+}

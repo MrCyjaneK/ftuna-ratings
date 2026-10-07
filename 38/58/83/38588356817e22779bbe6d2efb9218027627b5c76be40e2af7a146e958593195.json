@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "38588356817e22779bbe6d2efb9218027627b5c76be40e2af7a146e958593195",
+  "key": "chum/5.1_aarch64/aarch64/pilot-2.26+obs4-1.5.2.bso.aarch64.rpm",
+  "name": "pilot",
+  "rpm_version": "2.26+obs4",
+  "release": "1.5.2.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

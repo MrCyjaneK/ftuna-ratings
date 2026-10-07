@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "bc8273d2a38d13e621f72ff5142cd82f4c850be38193322d35846ee5f078a17b",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-amazfish-debuginfo-2.9.0-1.16.1.bso.armv7hl.rpm",
+  "name": "harbour-amazfish-debuginfo",
+  "rpm_version": "2.9.0",
+  "release": "1.16.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

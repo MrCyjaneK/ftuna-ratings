@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "9b12f9e64f18585fff84883756287c419592b65eaf6d9dd4aaa833298a256b17",
+  "key": "mirror/openrepos/lpr/personal/main/g/glibc-static-2.30git8-9.3.armv7hl.rpm",
+  "name": "glibc-static",
+  "rpm_version": "2.30+git8",
+  "release": "9.3",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

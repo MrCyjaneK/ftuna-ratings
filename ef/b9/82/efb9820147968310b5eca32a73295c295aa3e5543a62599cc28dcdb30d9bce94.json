@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "efb9820147968310b5eca32a73295c295aa3e5543a62599cc28dcdb30d9bce94",
+  "key": "mirror/openrepos/lpr/personal/main/p/python3-moviepy-0.2.3.5-0.noarch.rpm",
+  "name": "python3-moviepy",
+  "rpm_version": "0.2.3.5",
+  "release": "0",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

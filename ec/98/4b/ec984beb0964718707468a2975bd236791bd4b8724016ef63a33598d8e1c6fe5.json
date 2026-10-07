@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "ec984beb0964718707468a2975bd236791bd4b8724016ef63a33598d8e1c6fe5",
+  "key": "chum/5.2_aarch64/aarch64/harbour-kasa-debuginfo-0.2.2+master.20220203173821.9.g438fe6a-1.1.1.bso.aarch64.rpm",
+  "name": "harbour-kasa-debuginfo",
+  "rpm_version": "0.2.2+master.20220203173821.9.g438fe6a",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

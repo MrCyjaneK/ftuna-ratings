@@ -1,0 +1,110 @@
+{
+  "version": 6,
+  "sha256": "3a4450a4dc40fd88485049799b21a9facf0a07578e6a4ccb56b678f8e7900cac",
+  "key": "mirror/openrepos/edp17/personal/main/h/harbour-sailvideo-1.1.0.9-1.armv7hl.rpm",
+  "name": "harbour-sailvideo",
+  "rpm_version": "1.1.0.9",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailvideo.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailvideo.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailvideo.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailvideo.desktop",
+      "code": "sailjail.permission",
+      "detail": "Videos"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailvideo.desktop",
+      "code": "sailjail.permission",
+      "detail": "Downloads"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailvideo.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailvideo.desktop",
+      "code": "sailjail.permission",
+      "detail": "MediaIndexing"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailvideo.desktop",
+      "code": "sailjail.permission",
+      "detail": "Secrets"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "cddbdb7107f390a4487f47f5ea0842d6a696b59d0bc73178fc2966d946c34c97",
+  "key": "mirror/openrepos/BillyHalley/personal/main/b/b-halley-custom-power-menu-0.4.1-4.noarch.rpm",
+  "name": "b-halley-custom-power-menu",
+  "rpm_version": "0.4.1",
+  "release": "4",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

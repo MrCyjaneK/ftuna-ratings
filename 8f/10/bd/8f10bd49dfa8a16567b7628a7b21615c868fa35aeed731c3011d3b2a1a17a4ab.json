@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "8f10bd49dfa8a16567b7628a7b21615c868fa35aeed731c3011d3b2a1a17a4ab",
+  "key": "chum/5.1_armv7hl/armv7hl/libkyotocabinet-tools-1.2.77-1.2.1.bso.armv7hl.rpm",
+  "name": "libkyotocabinet-tools",
+  "rpm_version": "1.2.77",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

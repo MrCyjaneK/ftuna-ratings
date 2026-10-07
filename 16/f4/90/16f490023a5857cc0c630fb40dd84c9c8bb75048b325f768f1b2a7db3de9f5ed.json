@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "16f490023a5857cc0c630fb40dd84c9c8bb75048b325f768f1b2a7db3de9f5ed",
+  "key": "mirror/openrepos/Rikudou_Sennin/personal/main/h/harbour-bitsailor-1.2.2-1.i486.rpm",
+  "name": "harbour-bitsailor",
+  "rpm_version": "1.2.2",
+  "release": "1",
+  "arch": "i486",
+  "verdict": 70,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 85
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/cz.chrastecky.bitsailor.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/invoker --type=silica-qt5 --id=harbour-bitsailor --single-instance harbour-bitsailor"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-bitsailor.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    }
+  ]
+}

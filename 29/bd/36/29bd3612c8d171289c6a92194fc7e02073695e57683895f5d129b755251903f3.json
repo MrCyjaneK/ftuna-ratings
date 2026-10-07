@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "29bd3612c8d171289c6a92194fc7e02073695e57683895f5d129b755251903f3",
+  "key": "chum/5.2_i486/noarch/linktoclip-0.9.2-1.1.1.bso.noarch.rpm",
+  "name": "linktoclip",
+  "rpm_version": "0.9.2",
+  "release": "1.1.1.bso",
+  "arch": "noarch",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

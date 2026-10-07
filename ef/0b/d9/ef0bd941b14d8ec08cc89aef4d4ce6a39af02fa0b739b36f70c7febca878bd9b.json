@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "ef0bd941b14d8ec08cc89aef4d4ce6a39af02fa0b739b36f70c7febca878bd9b",
+  "key": "chum/5.2_i486/i486/pcsc-ccid-debugsource-1.4.35-1.2.1.bso.i486.rpm",
+  "name": "pcsc-ccid-debugsource",
+  "rpm_version": "1.4.35",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

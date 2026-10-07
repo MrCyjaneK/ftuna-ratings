@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "d9787b1d9b1e0e1212bfecdd04678c82ee2af7902f5462854fe14dade0bf2ecd",
+  "key": "mirror/openrepos/ichthyosaurus/personal/main/h/harbour-todolist-1.3.1-1.armv7hl.rpm",
+  "name": "harbour-todolist",
+  "rpm_version": "1.3.1",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

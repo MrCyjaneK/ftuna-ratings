@@ -1,0 +1,98 @@
+{
+  "version": 6,
+  "sha256": "7b1ab043ed9913bbdf770dbb291c094ed9a1558e93bf4e8cc3bb19c00dad4ad3",
+  "key": "mirror/openrepos/szopin/personal/main/h/harbour-sfos-forum-viewer-1.16.5-1.noarch.rpm",
+  "name": "harbour-sfos-forum-viewer",
+  "rpm_version": "1.16.5",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sfos-forum-viewer.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sfos-forum-viewer.desktop",
+      "code": "sailjail.permission",
+      "detail": "WebView"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sfos-forum-viewer.desktop",
+      "code": "sailjail.permission",
+      "detail": "Secrets"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sfos-forum-viewer.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sfos-forum-viewer.desktop",
+      "code": "sailjail.permission",
+      "detail": "MediaIndexing"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sfos-forum-viewer.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia"
+    }
+  ]
+}

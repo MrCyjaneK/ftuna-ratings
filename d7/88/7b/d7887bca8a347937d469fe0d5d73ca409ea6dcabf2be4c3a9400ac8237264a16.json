@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "d7887bca8a347937d469fe0d5d73ca409ea6dcabf2be4c3a9400ac8237264a16",
+  "key": "mirror/openrepos/Nokius/personal/main/a/ambience-puppy-0.0.1-10.12.1.jolla_.armv7hl.rpm",
+  "name": "ambience-puppy",
+  "rpm_version": "0.0.1",
+  "release": "10.12.1.jolla",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user restart ambienced.service"
+    }
+  ]
+}

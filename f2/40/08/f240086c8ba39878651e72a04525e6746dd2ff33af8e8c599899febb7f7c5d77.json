@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "f240086c8ba39878651e72a04525e6746dd2ff33af8e8c599899febb7f7c5d77",
+  "key": "mirror/openrepos/abranson/personal/main/r/rockpool-1.12-1.9.1.i486.rpm",
+  "name": "rockpool",
+  "rpm_version": "1.12",
+  "release": "1.9.1.jolla",
+  "arch": "i486",
+  "verdict": 63,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/rockpool.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=su nemo -c 'systemctl --user daemon-reload'; su nemo -c 'systemctl --user try-restart rockpoold.service'; update-desktop-database"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/rockpoold.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/invoker -o --type=qt5 /usr/bin/rockpoold sandbox=none"
+    }
+  ]
+}

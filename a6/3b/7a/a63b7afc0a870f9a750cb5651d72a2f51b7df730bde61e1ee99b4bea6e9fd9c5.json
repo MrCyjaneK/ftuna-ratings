@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "a63b7afc0a870f9a750cb5651d72a2f51b7df730bde61e1ee99b4bea6e9fd9c5",
+  "key": "mirror/openrepos/aerique/personal/main/l/libargon2-2019.03.26.87e5513-1.aarch64.rpm",
+  "name": "libargon2",
+  "rpm_version": "2019.03.26.87e5513",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig"
+    }
+  ]
+}

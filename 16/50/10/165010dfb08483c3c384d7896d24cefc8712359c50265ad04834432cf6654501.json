@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "165010dfb08483c3c384d7896d24cefc8712359c50265ad04834432cf6654501",
+  "key": "mirror/openrepos/shadowfish/personal/main/c/c-ares-1.14.0-1.6.3.jolla_.i486.rpm",
+  "name": "c-ares",
+  "rpm_version": "1.14.0",
+  "release": "1.6.3.jolla",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

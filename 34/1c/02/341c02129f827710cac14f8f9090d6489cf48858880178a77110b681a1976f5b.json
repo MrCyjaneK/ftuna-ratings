@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "341c02129f827710cac14f8f9090d6489cf48858880178a77110b681a1976f5b",
+  "key": "chum/5.1_i486/i486/slang-debugsource-2.3.2-1.2.1.bso.i486.rpm",
+  "name": "slang-debugsource",
+  "rpm_version": "2.3.2",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

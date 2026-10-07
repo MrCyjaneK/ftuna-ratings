@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "9943a4088ee5ef6323b69293daefda1538ff2e6fed022a501b2a446521174a04",
+  "key": "chum/5.2_armv7hl/armv7hl/nload-debuginfo-0.7.4.180309+obs8-1.5.1.bso.armv7hl.rpm",
+  "name": "nload-debuginfo",
+  "rpm_version": "0.7.4.180309+obs8",
+  "release": "1.5.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

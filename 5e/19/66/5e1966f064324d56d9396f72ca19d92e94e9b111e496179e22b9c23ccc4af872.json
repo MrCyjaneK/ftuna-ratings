@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "5e1966f064324d56d9396f72ca19d92e94e9b111e496179e22b9c23ccc4af872",
+  "key": "mirror/openrepos/wrzof/personal/main/p/python3-dateutil-2.2-10.5.1.jolla_.noarch.rpm",
+  "name": "python3-dateutil",
+  "rpm_version": "2.2",
+  "release": "10.5.1.jolla",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

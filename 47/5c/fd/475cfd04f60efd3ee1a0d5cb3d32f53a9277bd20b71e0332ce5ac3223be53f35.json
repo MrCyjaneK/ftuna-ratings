@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "475cfd04f60efd3ee1a0d5cb3d32f53a9277bd20b71e0332ce5ac3223be53f35",
+  "key": "mirror/openrepos/lpr/personal/main/d/dav1d-1.5.0-0.armv7hl.rpm",
+  "name": "dav1d",
+  "rpm_version": "1.5.0",
+  "release": "0",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

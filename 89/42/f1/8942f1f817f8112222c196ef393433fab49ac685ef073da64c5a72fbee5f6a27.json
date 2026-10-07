@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "8942f1f817f8112222c196ef393433fab49ac685ef073da64c5a72fbee5f6a27",
+  "key": "mirror/openrepos/lpr_next/personal/main/p/python-gst-1.26.11-2.51.aarch64.rpm",
+  "name": "python-gst",
+  "rpm_version": "1.26.11",
+  "release": "2.51",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

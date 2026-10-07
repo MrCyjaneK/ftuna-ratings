@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "a2b11c31922cded49ac60bf1df5eff35483a5402f3a7a59ba8d936f690fa9dd2",
+  "key": "mirror/openrepos/nephros/personal/main/o/openrepos-olsrd-0.9.8-1.armv7hl.rpm",
+  "name": "openrepos-olsrd",
+  "rpm_version": "0.9.8",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 32,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 34
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/bin/systemctl --no-reload disable openrepos-olsrd.service \u003e/dev/null 2\u003e\u00261 || :; /usr/bin/systemctl stop openrepos-olsrd.service \u003e/dev/null 2\u003e\u00261 || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=update-desktop-database -q || :; /usr/bin/systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 ||:"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/openrepos-olsrd.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/sbin/openrepos-olsrd -f /etc/olsrd/olsrd.conf.sailfishos -d 0 -pidfile /run/openrepos-olsrd.pid sandbox=PrivateTmp"
+    }
+  ]
+}

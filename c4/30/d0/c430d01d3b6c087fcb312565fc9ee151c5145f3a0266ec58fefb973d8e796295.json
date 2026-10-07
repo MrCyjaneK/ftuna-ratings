@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "c430d01d3b6c087fcb312565fc9ee151c5145f3a0266ec58fefb973d8e796295",
+  "key": "mirror/openrepos/direc85/personal/main/h/harbour-batterybuddy-4.3.0-1.armv7hl.rpm",
+  "name": "harbour-batterybuddy",
+  "rpm_version": "4.3.0",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 53,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-batterybuddy.desktop",
+      "code": "sailjail.permission",
+      "detail": "AppLaunch"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; systemctl-user stop harbour-batterybuddy.service; systemctl-user disable harbour-batterybuddy.service"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%posttrans",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl stop harbour-batterybuddy.service \u0026\u003e/dev/null; systemctl disable harbour-batterybuddy.service \u0026\u003e/dev/null; rm -f /usr/lib/systemd/system/harbour-batte"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/harbour-batterybuddy-oneshot.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/bin/bash /usr/share/harbour-batterybuddy/service/set-write-permissions.sh sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-batterybuddy.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-batterybuddy-daemon --logfile sandbox=none"
+    }
+  ]
+}

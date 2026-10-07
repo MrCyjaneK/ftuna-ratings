@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "b5e1f52b9fc6bc7127de98dcca2e125172d5a64ddeb098a68a94cf8b9c36ee4a",
+  "key": "chum/5.2_armv7hl/noarch/mlocate-service-system-0.26+git4-1.1.1.bso.noarch.rpm",
+  "name": "mlocate-service-system",
+  "rpm_version": "0.26+git4",
+  "release": "1.1.1.bso",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl --no-reload preset mlocate-updatedb.service ||: \u003e/dev/null 2\u003e\u00261 || :; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; rm -f /var/cache/mlocate.db ||:; rm -f /var/cache/harbour-mlocate.db ||:"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/mlocate-updatedb.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/bin/updatedb sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/mlocate-updatedb.timer",
+      "code": "systemd.timer",
+      "detail": "scope=system activates=mlocate-updatedb.service"
+    }
+  ]
+}

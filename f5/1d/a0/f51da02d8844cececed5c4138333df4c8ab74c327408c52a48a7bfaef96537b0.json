@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "f51da02d8844cececed5c4138333df4c8ab74c327408c52a48a7bfaef96537b0",
+  "key": "mirror/openrepos/ade/personal/main/l/libwavpack1-5.9.0-0.i486.rpm",
+  "name": "libwavpack1",
+  "rpm_version": "5.9.0",
+  "release": "0",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

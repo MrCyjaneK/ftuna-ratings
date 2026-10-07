@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "4eb3ea5e10ee70f41369fac08da2cbdfdd8a49741243f202d30fce745f9fc87e",
+  "key": "chum/5.1_armv7hl/noarch/python3-xmltodict-0.14.2-1.2.1.bso.noarch.rpm",
+  "name": "python3-xmltodict",
+  "rpm_version": "0.14.2",
+  "release": "1.2.1.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

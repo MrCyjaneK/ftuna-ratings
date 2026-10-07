@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "3aab0d52bcd3fdb3e7cd8a34665fceed7a65f8e8cb529ecdfd9be76895244228",
+  "key": "mirror/openrepos/lpr/personal/main/g/gstreamer1.0-plugins-bad-apps-1.18.4-5.armv7hl.rpm",
+  "name": "gstreamer1.0-plugins-bad-apps",
+  "rpm_version": "1.18.4",
+  "release": "5",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "b28d1df2b52e611cd61f6380515ab0754f9886e036e23c0bd6474d108041e574",
+  "key": "mirror/openrepos/AndyWuest/personal/main/h/harbour-vvs-incidents-0.1.0-1.armv7hl.rpm",
+  "name": "harbour-vvs-incidents",
+  "rpm_version": "0.1.0",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-vvs-incidents.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "35eb2db722ecfb32bbfe00b811b260ab652e102fa62e8f5df299a30000c61991",
+  "key": "chum/5.1_armv7hl/noarch/moreutils-perl-0.70+git2-1.3.1.bso.noarch.rpm",
+  "name": "moreutils-perl",
+  "rpm_version": "0.70+git2",
+  "release": "1.3.1.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

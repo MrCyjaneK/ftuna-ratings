@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "7a233fa1a917f65600ed9e9fb51106bb750838793bc443c6513e0ad4f34b0b6d",
+  "key": "chum/5.2_aarch64/aarch64/nfs-utils-debuginfo-2.9.1+git1-1.7.1.bso.aarch64.rpm",
+  "name": "nfs-utils-debuginfo",
+  "rpm_version": "2.9.1+git1",
+  "release": "1.7.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

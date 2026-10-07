@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "b0e4ebcb9e73996d247854e793f0bed5d936bccdaa7dcf3a9c370e343c410631",
+  "key": "mirror/openrepos/skyjumper/personal/main/o/okboard-full-0.5.12-1.armv7hl.rpm",
+  "name": "okboard-full",
+  "rpm_version": "0.5.12",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 53,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/okboard.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=rm -f /home/nemo/.config/maliit.org/server.conf; killall maliit-server 2\u003e/dev/null || true; killall okboard-settings 2\u003e/dev/null || true"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=rm -f /home/nemo/.config/maliit.org/server.conf; killall maliit-server 2\u003e/dev/null || true; killall okboard-settings 2\u003e/dev/null || true"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "ae66aecc958616701ca01a36da57e09f884f3049356437ddf08491ea7bfa280f",
+  "key": "mirror/openrepos/kan/personal/main/t/tor-0.4.7.13-1.aarch64.rpm",
+  "name": "tor",
+  "rpm_version": "0.4.7.13",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/tor ]; then; rm -rf /var/lib/tor; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=PUSER=$(getent passwd 100000 | cut -d: -f1 ); chown -R $PUSER:inet /var/lib/tor; chown -R $PUSER:inet /var/run/tor"
+    }
+  ]
+}

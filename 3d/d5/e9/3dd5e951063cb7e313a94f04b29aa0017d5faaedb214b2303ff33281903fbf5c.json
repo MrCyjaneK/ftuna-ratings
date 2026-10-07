@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "3dd5e951063cb7e313a94f04b29aa0017d5faaedb214b2303ff33281903fbf5c",
+  "key": "chum/5.1_armv7hl/armv7hl/nethack-debugsource-3.6.7+obs4-1.3.2.bso.armv7hl.rpm",
+  "name": "nethack-debugsource",
+  "rpm_version": "3.6.7+obs4",
+  "release": "1.3.2.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

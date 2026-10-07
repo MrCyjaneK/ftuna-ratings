@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "e7d3c785a5fae5a44fba03ad641721c9608a0532817e1f6f1c9f22eb6144a2e9",
+  "key": "mirror/openrepos/kokorins/personal/main/h/harbour-dodos-planner-0.7-1.aarch64.rpm",
+  "name": "harbour-dodos-planner",
+  "rpm_version": "0.7",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-dodos-planner.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    }
+  ]
+}

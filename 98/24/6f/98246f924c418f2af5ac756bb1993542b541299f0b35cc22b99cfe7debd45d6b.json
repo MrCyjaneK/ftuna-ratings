@@ -1,0 +1,110 @@
+{
+  "version": 6,
+  "sha256": "98246f924c418f2af5ac756bb1993542b541299f0b35cc22b99cfe7debd45d6b",
+  "key": "mirror/openrepos/ilpianista/personal/main/h/harbour-blocky-0.0.11-1.armv7hl.rpm",
+  "name": "harbour-blocky",
+  "rpm_version": "0.0.11",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 29,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": 0
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-blocky.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if ! getent passwd blocky \u003e/dev/null ; then; useradd -r -s /sbin/nologin blocky; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl daemon-reload; if [ $1 -eq 1 ]; then; systemctl enable blocky.service"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; systemctl stop blocky.service; systemctl disable blocky.service"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; systemctl daemon-reload; rm /etc/resolv.conf"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/harbour-blocky",
+      "code": "setuid",
+      "detail": "/usr/bin/harbour-blocky mode 0104755 user root group root file"
+    },
+    {
+      "module": "systemd",
+      "path": "/etc/systemd/system/connman.service.d/override.conf",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/sbin/connmand -n -W nl80211 --nobacktrace --noplugin=wifi --nodnsproxy $SYSCONF_ARGS $CONNMAN_ARGS sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/blocky.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=blocky group=root exec=/usr/bin/blocky --config /etc/blocky.yaml ambient=CAP_NET_BIND_SERVICE sandbox=none"
+    }
+  ]
+}

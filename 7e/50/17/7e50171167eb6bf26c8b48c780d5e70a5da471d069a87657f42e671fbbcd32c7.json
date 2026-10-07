@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "7e50171167eb6bf26c8b48c780d5e70a5da471d069a87657f42e671fbbcd32c7",
+  "key": "mirror/openrepos/stoefelz/personal/main/p/python3-soupsieve-2.8.4-1.noarch.rpm",
+  "name": "python3-soupsieve",
+  "rpm_version": "2.8.4",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

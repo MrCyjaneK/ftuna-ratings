@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "de475b6cfb34bdfcd1ca3c10e791c5e44571e6ed01f2f1bc6efac8b4272af08a",
+  "key": "mirror/openrepos/lpr_A7/personal/main/d/diffutils-2.8.1-1.1.1.armv7hl.rpm",
+  "name": "diffutils",
+  "rpm_version": "2.8.1",
+  "release": "1.1.1",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=[ -e /usr/share/info/diff.info.gz ] \u0026\u0026 /sbin/install-info /usr/share/info/diff.info.gz /usr/share/info/dir --entry=\"* diff: (diff).                 The GNU diff"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; [ -e /usr/share/info/diff.info.gz ] \u0026\u0026 /sbin/install-info --delete /usr/share/info/diff.info.gz /usr/share/info/dir --entry=\"* diff: (diff)"
+    }
+  ]
+}

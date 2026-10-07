@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "f90dcbc0113b5d597f0f49bb81819d0c772501598ff80e0959d920991724f1ed",
+  "key": "mirror/openrepos/adel/personal/main/h/harbour-health-1.0-1.armv7hl.rpm",
+  "name": "harbour-health",
+  "rpm_version": "1.0",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-health.desktop",
+      "code": "sailjail.permission",
+      "detail": "Documents"
+    }
+  ]
+}

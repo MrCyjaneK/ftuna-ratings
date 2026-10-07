@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "6e23a06a646361944f92bfdd0061d95b7d1b3521569aa1299c4ca835d5259a4a",
+  "key": "chum/5.2_armv7hl/armv7hl/detox-debugsource-1.4.5+git1-1.4.1.bso.armv7hl.rpm",
+  "name": "detox-debugsource",
+  "rpm_version": "1.4.5+git1",
+  "release": "1.4.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

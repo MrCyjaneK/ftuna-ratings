@@ -1,0 +1,24 @@
+{
+  "version": 6,
+  "sha256": "ba009d630ce0b21af615654d22143ca7524db3879d99f41178c7bc600d9a6fa2",
+  "key": "mirror/openrepos/nick8325/personal/main/a/appsupport-lockscreen_0.1.2_noarch.rpm",
+  "name": "appsupport-lockscreen",
+  "rpm_version": "0.1.2",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "rpm",
+      "path": "mirror/openrepos/nick8325/personal/main/a/appsupport-lockscreen_0.1.2_noarch.rpm",
+      "code": "rpm.read",
+      "detail": "bad magic"
+    }
+  ]
+}

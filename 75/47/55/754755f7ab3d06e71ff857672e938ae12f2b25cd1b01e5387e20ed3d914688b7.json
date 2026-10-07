@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "754755f7ab3d06e71ff857672e938ae12f2b25cd1b01e5387e20ed3d914688b7",
+  "key": "chum/5.1_aarch64/aarch64/rsc-c-debuginfo-0.2.2+sailfish.20260622194115.c62d191-1.4.1.bso.aarch64.rpm",
+  "name": "rsc-c-debuginfo",
+  "rpm_version": "0.2.2+sailfish.20260622194115.c62d191",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

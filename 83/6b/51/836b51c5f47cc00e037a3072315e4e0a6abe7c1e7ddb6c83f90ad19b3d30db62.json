@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "836b51c5f47cc00e037a3072315e4e0a6abe7c1e7ddb6c83f90ad19b3d30db62",
+  "key": "mirror/openrepos/lpr_next/personal/main/p/poppler-qt5-0.84.0git3-2.armv7hl.rpm",
+  "name": "poppler-qt5",
+  "rpm_version": "0.84.0+git3",
+  "release": "2",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

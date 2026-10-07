@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "f7c9a830391c22c0b342828eaf4b824e6b1d3dc38a941d5a486bbdebd4ce68d2",
+  "key": "mirror/openrepos/Carolus/personal/main/h/harbour-podcatcher-debuginfo-1.9.8-1.i486.rpm",
+  "name": "harbour-podcatcher-debuginfo",
+  "rpm_version": "1.9.8",
+  "release": "1",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

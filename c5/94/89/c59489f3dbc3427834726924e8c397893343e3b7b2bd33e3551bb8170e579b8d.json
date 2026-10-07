@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "c59489f3dbc3427834726924e8c397893343e3b7b2bd33e3551bb8170e579b8d",
+  "key": "mirror/openrepos/Mister_Magister/personal/main/m/microtube-debuginfo-3.8.18-1.aarch64.rpm",
+  "name": "microtube-debuginfo",
+  "rpm_version": "3.8.18",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

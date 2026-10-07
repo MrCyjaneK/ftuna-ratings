@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "4978a15946792c029f2d57d00001f68bb1b0e2b85ffe87be5d2dcd44fb1456ed",
+  "key": "mirror/openrepos/BlackSailer/personal/main/d/depecher-0.4-2.i486.rpm",
+  "name": "depecher",
+  "rpm_version": "0.4",
+  "release": "2",
+  "arch": "i486",
+  "verdict": 69,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 85
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.blacksailer.depecher.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=nemo exec=/bin/false systemd=org.blacksailer.depecher.service"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/depecher.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user stop org.blacksailer.depecher.service || true; if /sbin/pidof depecher \u003e /dev/null; then; killall depecher || true"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user stop depecher || true; systemctl-user disable depecher || true; systemctl-user daemon-reload"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/org.blacksailer.depecher.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/depecher sandbox=none"
+    }
+  ]
+}

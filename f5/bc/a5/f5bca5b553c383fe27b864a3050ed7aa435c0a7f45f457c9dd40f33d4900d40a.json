@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "f5bca5b553c383fe27b864a3050ed7aa435c0a7f45f457c9dd40f33d4900d40a",
+  "key": "chum/5.1_i486/i486/libzmq-devel-4.3.4-1.2.1.bso.i486.rpm",
+  "name": "libzmq-devel",
+  "rpm_version": "4.3.4",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

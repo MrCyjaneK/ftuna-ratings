@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "8e43a94b3761771d208e1144886b560eab09214003ebe4e42cb60857b1ee7827",
+  "key": "mirror/openrepos/ruff/personal/main/r/rockpool-0.9-2gecko4.armv7hl.rpm",
+  "name": "rockpool",
+  "rpm_version": "0.9",
+  "release": "2gecko4",
+  "arch": "armv7hl",
+  "verdict": 63,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/rockpool.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=grep -q \"^/usr/bin/rockpoold\" /usr/share/mapplauncherd/privileges || echo \"/usr/bin/rockpoold,cehlmnpu\" \u003e\u003e /usr/share/mapplauncherd/privileges; su nemo -c 'syst"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/rockpoold.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/invoker -o --type=qt5 /usr/bin/rockpoold sandbox=none"
+    }
+  ]
+}

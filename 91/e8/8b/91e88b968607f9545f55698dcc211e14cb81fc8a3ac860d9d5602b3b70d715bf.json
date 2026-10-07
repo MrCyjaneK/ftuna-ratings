@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "91e88b968607f9545f55698dcc211e14cb81fc8a3ac860d9d5602b3b70d715bf",
+  "key": "chum/5.1_aarch64/aarch64/opt-kf5-sonnet-ui-5.116.0-1.6.2.bso.aarch64.rpm",
+  "name": "opt-kf5-sonnet-ui",
+  "rpm_version": "5.116.0",
+  "release": "1.6.2.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

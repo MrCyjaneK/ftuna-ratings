@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "0ee2306eecc23e17d0f1c4a4c28bea05edafe1d1f53ed29f95eb088a9e54a7df",
+  "key": "chum/5.2_armv7hl/armv7hl/unbound-1.17.1+git2-1.1.1.bso.armv7hl.rpm",
+  "name": "unbound",
+  "rpm_version": "1.17.1+git2",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl --no-reload preset unbound.service \u003e/dev/null 2\u003e\u00261 || :; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload disable --now unbound.service \u003e /dev/null 2\u003e\u00261 || :; fi"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/unbound-anchor.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/sbin/unbound-anchor sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/unbound.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/sbin/unbound -d -c /etc/unbound/sailfishos.conf sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/unbound.socket",
+      "code": "systemd.socket",
+      "detail": "scope=system activates=unbound.service"
+    }
+  ]
+}

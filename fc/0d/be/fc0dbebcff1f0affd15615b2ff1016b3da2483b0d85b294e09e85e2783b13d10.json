@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "fc0dbebcff1f0affd15615b2ff1016b3da2483b0d85b294e09e85e2783b13d10",
+  "key": "mirror/openrepos/lpr/personal/main/g/gstreamer1.0-plugins-bad-aom-1.18.5git2-3.aarch64.rpm",
+  "name": "gstreamer1.0-plugins-bad-aom",
+  "rpm_version": "1.18.5+git2",
+  "release": "3",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

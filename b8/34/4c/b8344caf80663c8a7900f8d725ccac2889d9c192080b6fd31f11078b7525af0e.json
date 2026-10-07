@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "b8344caf80663c8a7900f8d725ccac2889d9c192080b6fd31f11078b7525af0e",
+  "key": "chum/5.2_aarch64/noarch/cacert-ca-certificates-260606-1.1.1.bso.noarch.rpm",
+  "name": "cacert-ca-certificates",
+  "rpm_version": "260606",
+  "release": "1.1.1.bso",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=certutil -A -n \"CAcert.org Root CA\" -t TC -d /etc/pki/nssdb -i /etc/pki/ca-trust/source/anchors/root_X0F.crt; certutil -A -n \"CAcert.org Class 3\" -t TC -d /etc/"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; certutil -D -n \"CAcert.org Root CA\" -d /etc/pki/nssdb; certutil -D -n \"CAcert.org Class 3\" -d /etc/pki/nssdb"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "5b8550012df648d1ca9bc84150d3268f5688e3f3c2cfd4dd9a246844181b54b0",
+  "key": "chum/5.1_aarch64/aarch64_ilp32/libupnp-debuginfo-1.6.21-1.1.1.bso.aarch64_ilp32.rpm",
+  "name": "libupnp-debuginfo",
+  "rpm_version": "1.6.21",
+  "release": "1.1.1.bso",
+  "arch": "aarch64_ilp32",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

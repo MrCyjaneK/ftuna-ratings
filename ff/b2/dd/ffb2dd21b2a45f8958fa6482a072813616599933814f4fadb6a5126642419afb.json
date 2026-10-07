@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "ffb2dd21b2a45f8958fa6482a072813616599933814f4fadb6a5126642419afb",
+  "key": "mirror/openrepos/lpr_next/personal/main/p/poppler-glib-devel-0.68.00ubuntu1.6-9.armv7hl.rpm",
+  "name": "poppler-glib-devel",
+  "rpm_version": "0.68.0+0ubuntu1.6",
+  "release": "9",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

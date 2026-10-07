@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "c6901fb72646c81b26eaa10217558d752864e668d5b8b8b1cd91f8ab80c22cd6",
+  "key": "mirror/openrepos/r0kk3rz/personal/main/l/libglacierapp-0.1.1-10.1.1.jolla_.armv7hl.rpm",
+  "name": "libglacierapp",
+  "rpm_version": "0.1.1",
+  "release": "10.1.1.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

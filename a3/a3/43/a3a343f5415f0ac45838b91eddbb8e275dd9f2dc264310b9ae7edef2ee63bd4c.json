@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "a3a343f5415f0ac45838b91eddbb8e275dd9f2dc264310b9ae7edef2ee63bd4c",
+  "key": "mirror/openrepos/artur_/personal/main/l/libx11-xcb-1.8.4-1.aarch64.rpm",
+  "name": "libX11-xcb",
+  "rpm_version": "1.8.4",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

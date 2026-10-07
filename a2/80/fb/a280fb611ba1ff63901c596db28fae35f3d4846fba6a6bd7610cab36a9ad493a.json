@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "a280fb611ba1ff63901c596db28fae35f3d4846fba6a6bd7610cab36a9ad493a",
+  "key": "mirror/openrepos/lpr/personal/main/b/boost-wave-1.66.0git2-1.2.6.jolla_.armv7hl.rpm",
+  "name": "boost-wave",
+  "rpm_version": "1.66.0+git2",
+  "release": "1.2.6.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

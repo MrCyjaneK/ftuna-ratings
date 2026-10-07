@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "697aa71dfa75b8b0c44e80506a6f60a7342232815777ad9a4c79eab4375faa34",
+  "key": "mirror/openrepos/nobodyinperson/personal/main/p/python3-urllib3-1.25.6-rokua.noarch.rpm",
+  "name": "python3-urllib3",
+  "rpm_version": "1.25.6",
+  "release": "rokua",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

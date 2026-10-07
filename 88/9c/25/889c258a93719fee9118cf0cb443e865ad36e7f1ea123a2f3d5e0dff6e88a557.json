@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "889c258a93719fee9118cf0cb443e865ad36e7f1ea123a2f3d5e0dff6e88a557",
+  "key": "mirror/openrepos/abranson/personal/main/s/sailfish-account-mastodon-1.0.2-1.aarch64.rpm",
+  "name": "sailfish-account-mastodon",
+  "rpm_version": "1.0.2",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; /usr/libexec/manage-groups add account-mastodon || :; systemctl-user try-restart msyncd.service || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; if [ \"$1\" -eq 0 ]; then; theme_dir=/usr/share/themes/sailfish-default"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%posttrans",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=theme_dir=/usr/share/themes/sailfish-default; legacy_dir=\"$theme_dir/meegotouch\"; if [ -d \"$legacy_dir\" ]; then"
+    }
+  ]
+}

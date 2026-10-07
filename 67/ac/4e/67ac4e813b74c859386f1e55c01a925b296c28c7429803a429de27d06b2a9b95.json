@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "67ac4e813b74c859386f1e55c01a925b296c28c7429803a429de27d06b2a9b95",
+  "key": "mirror/openrepos/lpr/personal/main/p/python3-pylineclip-1.0.0-0.noarch.rpm",
+  "name": "python3-pylineclip",
+  "rpm_version": "1.0.0",
+  "release": "0",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

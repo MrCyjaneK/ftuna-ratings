@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "c9b6aecd6e6400853ce1836932db75749c49a5e1a71ef3f3552601c6ff07dc00",
+  "key": "chum/5.2_aarch64/aarch64/w3m-docs-0.5.3-1.1.1.bso.aarch64.rpm",
+  "name": "w3m-docs",
+  "rpm_version": "0.5.3",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

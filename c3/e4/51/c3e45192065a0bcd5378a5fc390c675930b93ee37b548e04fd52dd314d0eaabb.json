@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "c3e45192065a0bcd5378a5fc390c675930b93ee37b548e04fd52dd314d0eaabb",
+  "key": "mirror/openrepos/DomiH/personal/main/h/harbour-ferry-0.4-1.i486.rpm",
+  "name": "harbour-ferry",
+  "rpm_version": "0.4",
+  "release": "1",
+  "arch": "i486",
+  "verdict": 57,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-ferry.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-ferry-sync.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/python3 /usr/share/harbour-ferry/helper/sync_helper.py sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-ferry-sync.timer",
+      "code": "systemd.timer",
+      "detail": "scope=user activates=harbour-ferry-sync.service"
+    }
+  ]
+}

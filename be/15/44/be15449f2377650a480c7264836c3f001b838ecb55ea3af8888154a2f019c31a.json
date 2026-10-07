@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "be15449f2377650a480c7264836c3f001b838ecb55ea3af8888154a2f019c31a",
+  "key": "chum/5.2_aarch64/aarch64/harbour-lighthouse-debuginfo-1.7.1-1.6.1.bso.aarch64.rpm",
+  "name": "harbour-lighthouse-debuginfo",
+  "rpm_version": "1.7.1",
+  "release": "1.6.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

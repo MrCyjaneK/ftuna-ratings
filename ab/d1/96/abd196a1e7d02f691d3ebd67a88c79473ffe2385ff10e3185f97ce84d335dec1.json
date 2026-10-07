@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "abd196a1e7d02f691d3ebd67a88c79473ffe2385ff10e3185f97ce84d335dec1",
+  "key": "mirror/openrepos/abranson/personal/main/q/qt5-qtconnectivity-qtbluetooth-5.6.2git3-1.1.2.jolla_.aarch64.rpm",
+  "name": "qt5-qtconnectivity-qtbluetooth",
+  "rpm_version": "5.6.2+git3",
+  "release": "1.1.2.jolla",
+  "arch": "aarch64",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig"
+    }
+  ]
+}

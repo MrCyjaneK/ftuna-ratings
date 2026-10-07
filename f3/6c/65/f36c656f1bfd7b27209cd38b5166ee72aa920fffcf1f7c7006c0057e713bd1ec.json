@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "f36c656f1bfd7b27209cd38b5166ee72aa920fffcf1f7c7006c0057e713bd1ec",
+  "key": "mirror/openrepos/lpr/personal/main/g/gstreamer1.0-1.20.7git1-2.aarch64.rpm",
+  "name": "gstreamer1.0",
+  "rpm_version": "1.20.7+git1",
+  "release": "2",
+  "arch": "aarch64",
+  "verdict": 0,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": 0
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "setuid",
+      "path": "/usr/libexec/gstreamer-1.0/gst-ptp-helper",
+      "code": "setuid",
+      "detail": "/usr/libexec/gstreamer-1.0/gst-ptp-helper mode 0104755 user root group root file"
+    }
+  ]
+}

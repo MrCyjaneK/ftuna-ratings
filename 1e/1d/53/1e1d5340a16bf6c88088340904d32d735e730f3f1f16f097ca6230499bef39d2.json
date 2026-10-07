@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "1e1d5340a16bf6c88088340904d32d735e730f3f1f16f097ca6230499bef39d2",
+  "key": "mirror/openrepos/mkiol/personal/main/h/harbour-dskeyboard-1.6.1-1.noarch.rpm",
+  "name": "harbour-dskeyboard",
+  "rpm_version": "1.6.1",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /usr/share/maliit/plugins/com/jolla/handlers ]; then; cd /usr/share/maliit/plugins/com/jolla/handlers \\; \u0026\u0026 ln -sf ../SttInputHandler.qml SttInputHandle"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /usr/share/maliit/plugins/com/jolla/handlers ]; then; cd /usr/share/maliit/plugins/com/jolla/handlers \\; \u0026\u0026 rm -f SttInputHandler.qml \\"
+    }
+  ]
+}

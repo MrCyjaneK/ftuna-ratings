@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "f58ccef1531628af57af8f08777c59c5302f9000f81064c906a9d40f3da1c485",
+  "key": "mirror/openrepos/Thaodan/personal/main/p/purple-skypeweb-03062016-10.15.1.jolla_.armv7hl.rpm",
+  "name": "purple-skypeweb",
+  "rpm_version": "03062016",
+  "release": "10.15.1.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

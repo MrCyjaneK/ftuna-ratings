@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "ecd639c85c1d220ed6727b237a2c6be301e86cdb70a24f2249d9e6a2eb8eef2a",
+  "key": "chum/5.1_i486/noarch/pinegpg-0.18.0-1.2.1.bso.noarch.rpm",
+  "name": "pinegpg",
+  "rpm_version": "0.18.0",
+  "release": "1.2.1.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

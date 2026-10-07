@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "9918d25f7b3eedc0485c8f7eb1cb5f9530f0298de6884e75df9b4a0d9cfdabab",
+  "key": "mirror/openrepos/aviarus/personal/main/s/sailfish-browser-darkmode-2.0.1-1.noarch1.rpm",
+  "name": "sailfish-browser-darkmode",
+  "rpm_version": "2.0.1",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 85,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/browser-darkmode-detect.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/browser-darkmode detect sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/browser-darkmode@.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/bin/sh -c '/usr/bin/browser-darkmode \"$(echo %i | cut -d: -f1)\" \"$(echo %i | cut -d: -f2)\"' sandbox=none"
+    }
+  ]
+}

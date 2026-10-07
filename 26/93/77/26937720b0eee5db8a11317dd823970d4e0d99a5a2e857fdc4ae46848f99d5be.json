@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "26937720b0eee5db8a11317dd823970d4e0d99a5a2e857fdc4ae46848f99d5be",
+  "key": "chum/5.1_aarch64/aarch64/mpv-debuginfo-0.35.1+git1-1.1.2.bso.aarch64.rpm",
+  "name": "mpv-debuginfo",
+  "rpm_version": "0.35.1+git1",
+  "release": "1.1.2.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

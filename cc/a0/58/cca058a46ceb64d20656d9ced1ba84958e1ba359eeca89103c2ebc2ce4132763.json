@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "cca058a46ceb64d20656d9ced1ba84958e1ba359eeca89103c2ebc2ce4132763",
+  "key": "chum/5.2_armv7hl/armv7hl/openrepos-logger-nfc-debugsource-1.1.0-1.5.1.bso.armv7hl.rpm",
+  "name": "openrepos-logger-nfc-debugsource",
+  "rpm_version": "1.1.0",
+  "release": "1.5.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

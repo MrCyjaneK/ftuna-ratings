@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "b933eb25bf1750b40417b0d3f7a9602338d9294cd3501041d731d08c34ed0b04",
+  "key": "mirror/openrepos/PawelSpoon/personal/main/o/olive-goes-shopping-0.7-5.armv7hl.rpm",
+  "name": "olive-goes-shopping",
+  "rpm_version": "0.7",
+  "release": "5",
+  "arch": "armv7hl",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/olive-goes-shopping.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/olive-goes-shopping.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia"
+    }
+  ]
+}

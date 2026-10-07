@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "3c94fa24622204b43f40f8b576251d051c7fc6848f37ab2a8116897bd9560517",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-pitot-debugsource-1.0.5+master.20260903232820.1.g9c79c49-1.1.1.bso.armv7hl.rpm",
+  "name": "harbour-pitot-debugsource",
+  "rpm_version": "1.0.5+master.20260903232820.1.g9c79c49",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

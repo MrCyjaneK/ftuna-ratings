@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "547a812cb7f97805e1de5874ee5f4b25d80139d1f966d7b702be5f87a1c526eb",
+  "key": "chum/5.1_armv7hl/armv7hl/qmaplibregl-3.0.0+git2-1.8.1.bso.armv7hl.rpm",
+  "name": "qmaplibregl",
+  "rpm_version": "3.0.0+git2",
+  "release": "1.8.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

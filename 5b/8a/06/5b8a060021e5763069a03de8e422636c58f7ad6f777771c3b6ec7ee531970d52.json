@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "5b8a060021e5763069a03de8e422636c58f7ad6f777771c3b6ec7ee531970d52",
+  "key": "mirror/openrepos/Nokius/personal/main/a/ambience-autumnday-0.0.1-10.12.2.jolla_.armv7hl.rpm",
+  "name": "ambience-autumnday",
+  "rpm_version": "0.0.1",
+  "release": "10.12.2.jolla",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user restart ambienced.service"
+    }
+  ]
+}

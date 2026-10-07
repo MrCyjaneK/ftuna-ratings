@@ -1,0 +1,140 @@
+{
+  "version": 6,
+  "sha256": "8eefa277f29950d391e4a59afbbf977400a11ce7f17fdac7a52192365e1a484c",
+  "key": "chum/5.2_armv7hl/noarch/harbour-musicex-0.49-1.5.1.bso.noarch.rpm",
+  "name": "harbour-musicex",
+  "rpm_version": "0.49",
+  "release": "1.5.1.bso",
+  "arch": "noarch",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-musicex.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-musicex.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-musicex.desktop",
+      "code": "sailjail.permission",
+      "detail": "Bluetooth"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-musicex.desktop",
+      "code": "sailjail.permission",
+      "detail": "Downloads"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-musicex.desktop",
+      "code": "sailjail.permission",
+      "detail": "MediaIndexing"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-musicex.desktop",
+      "code": "sailjail.permission",
+      "detail": "Microphone"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-musicex.desktop",
+      "code": "sailjail.permission",
+      "detail": "Music"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-musicex.desktop",
+      "code": "sailjail.permission",
+      "detail": "NFC"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-musicex.desktop",
+      "code": "sailjail.permission",
+      "detail": "PublicDir"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-musicex.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-musicex.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-musicex.desktop",
+      "code": "sailjail.permission",
+      "detail": "Videos"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-musicex.desktop",
+      "code": "sailjail.permission",
+      "detail": "WebView"
+    }
+  ]
+}

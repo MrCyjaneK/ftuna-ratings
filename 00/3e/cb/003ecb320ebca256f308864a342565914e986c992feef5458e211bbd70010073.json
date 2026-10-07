@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "003ecb320ebca256f308864a342565914e986c992feef5458e211bbd70010073",
+  "key": "chum/5.2_aarch64/noarch/yt-dlp-shell-completions-2023.12.30+obs2-1.4.2.bso.noarch.rpm",
+  "name": "yt-dlp-shell-completions",
+  "rpm_version": "2023.12.30+obs2",
+  "release": "1.4.2.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

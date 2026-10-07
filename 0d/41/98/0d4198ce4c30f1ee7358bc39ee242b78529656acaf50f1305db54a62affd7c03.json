@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "0d4198ce4c30f1ee7358bc39ee242b78529656acaf50f1305db54a62affd7c03",
+  "key": "mirror/openrepos/smoku/personal/main/p/pebble-1.1-1.armv7hl.rpm",
+  "name": "pebble",
+  "rpm_version": "1.1",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 63,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/pebble.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=su nemo -c 'systemctl --user daemon-reload'; su nemo -c 'systemctl --user try-restart pebbled.service'; update-desktop-database"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/pebbled.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/pebbled sandbox=none"
+    }
+  ]
+}

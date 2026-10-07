@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "f5d77ff1cda83904c384acd181e4a7766e4e3c89d656fe22f5df2d1a7c859e27",
+  "key": "chum/5.2_i486/i486/harbour-crossfishwatch-1.0.0-1.1.1.bso.i486.rpm",
+  "name": "harbour-crossfishwatch",
+  "rpm_version": "1.0.0",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

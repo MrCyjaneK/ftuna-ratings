@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "c586443f55c8f01d7b654c04fde248ca4dacfa8fa9e8afde26c68313d9115c98",
+  "key": "chum/5.2_armv7hl/armv7hl/qxmpp-devel-1.7.2-1.2.1.bso.armv7hl.rpm",
+  "name": "qxmpp-devel",
+  "rpm_version": "1.7.2",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

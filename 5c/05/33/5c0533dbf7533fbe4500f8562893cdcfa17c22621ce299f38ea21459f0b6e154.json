@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "5c0533dbf7533fbe4500f8562893cdcfa17c22621ce299f38ea21459f0b6e154",
+  "key": "mirror/openrepos/Feathers_McGraw/personal/main/p/perl-xml-sax-0.99-1.noarch.rpm",
+  "name": "perl-XML-SAX",
+  "rpm_version": "0.99",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

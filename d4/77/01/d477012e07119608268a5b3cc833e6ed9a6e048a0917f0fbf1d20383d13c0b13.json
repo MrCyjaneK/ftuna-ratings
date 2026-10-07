@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "d477012e07119608268a5b3cc833e6ed9a6e048a0917f0fbf1d20383d13c0b13",
+  "key": "mirror/openrepos/V10lator/personal/main/s/sd-utils-0.0.18.1-2.noarch.rpm",
+  "name": "sd-utils",
+  "rpm_version": "0.0.18.1",
+  "release": "2",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "systemd",
+      "path": "/lib/systemd/system/mount-sd@.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/sbin/mount-sd.sh add %i sandbox=none"
+    }
+  ]
+}

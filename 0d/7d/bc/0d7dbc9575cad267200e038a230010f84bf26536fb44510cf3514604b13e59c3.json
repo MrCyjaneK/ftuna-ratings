@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "0d7dbc9575cad267200e038a230010f84bf26536fb44510cf3514604b13e59c3",
+  "key": "mirror/openrepos/lpr_next/personal/main/p/poppler-devel-0.68.00ubuntu1.4-7.armv7hl.rpm",
+  "name": "poppler-devel",
+  "rpm_version": "0.68.0+0ubuntu1.4",
+  "release": "7",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

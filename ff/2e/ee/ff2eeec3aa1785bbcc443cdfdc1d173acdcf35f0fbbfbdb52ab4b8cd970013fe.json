@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "ff2eeec3aa1785bbcc443cdfdc1d173acdcf35f0fbbfbdb52ab4b8cd970013fe",
+  "key": "chum/5.2_aarch64/aarch64/sysstat-debugsource-12.7.7+git1-1.4.1.bso.aarch64.rpm",
+  "name": "sysstat-debugsource",
+  "rpm_version": "12.7.7+git1",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "58789e07269125df41a74128f96b4a2e4b9dbde4cc37406e44fe27c5a55e9260",
+  "key": "mirror/openrepos/hanhsuan/personal/main/j/jolla-chewing-0.1-2.i486.rpm",
+  "name": "jolla-chewing",
+  "rpm_version": "0.1",
+  "release": "2",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

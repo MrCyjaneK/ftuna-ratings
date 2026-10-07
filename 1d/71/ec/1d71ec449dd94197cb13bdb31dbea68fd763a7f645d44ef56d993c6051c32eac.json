@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "1d71ec449dd94197cb13bdb31dbea68fd763a7f645d44ef56d993c6051c32eac",
+  "key": "mirror/openrepos/Polleke/personal/main/s/slang-2.3.3-10.aarch64.rpm",
+  "name": "slang",
+  "rpm_version": "2.3.3",
+  "release": "10",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

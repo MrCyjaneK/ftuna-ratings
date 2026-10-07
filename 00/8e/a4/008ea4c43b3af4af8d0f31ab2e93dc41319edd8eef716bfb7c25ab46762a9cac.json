@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "008ea4c43b3af4af8d0f31ab2e93dc41319edd8eef716bfb7c25ab46762a9cac",
+  "key": "chum/5.1_i486/i486/opt-qt5-qt3d-debugsource-5.15.14-1.6.1.bso.i486.rpm",
+  "name": "opt-qt5-qt3d-debugsource",
+  "rpm_version": "5.15.14",
+  "release": "1.6.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

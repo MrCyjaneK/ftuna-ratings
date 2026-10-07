@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "1a2fdee181ec95e2fb6b3b9b8f7ea3c1560f9fac75b00f029ada614669ffa009",
+  "key": "mirror/openrepos/kan/personal/main/d/dnscrypt-proxy-2.1.15-0.armv7hl.rpm",
+  "name": "dnscrypt-proxy",
+  "rpm_version": "2.1.15",
+  "release": "0",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -gt 1 ] ; then; rm -f /etc/resolv.conf; \\; ln -s /var/run/connman/resolv.conf /etc/resolv.conf"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ ! -e /var/log/dnscrypt-proxy/dnscrypt-proxy.log.txt ]; then; curmask=\"$(umask)\""
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 == 0 ] ; then; echo \"Stoping service \"; \\; systemctl stop dnscrypt-proxy || true"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 == 0 ] ; then; if [ -f /var/lib/environment/connman/nodnsproxy.conf ]; then; rm -f /var/lib/environment/connman/nodnsproxy.conf"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%posttrans",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=umask 113; setsid --fork sh -c '(/var/lib/dnscrypt-proxy/dnscrypt-proxy-install-service.sh \"$1\" \"$2\")' sh_call_inst-dnscrypt-proxy-service \"$$\" \"/var/log/dnscry"
+    }
+  ]
+}

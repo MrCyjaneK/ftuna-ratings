@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "7a229f3964056d530fdb90faf85930ac21ff808553ff674a1c6fac59cfd69517",
+  "key": "chum/5.1_i486/i486/ncdu-1.22+git1-1.4.1.bso.i486.rpm",
+  "name": "ncdu",
+  "rpm_version": "1.22+git1",
+  "release": "1.4.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

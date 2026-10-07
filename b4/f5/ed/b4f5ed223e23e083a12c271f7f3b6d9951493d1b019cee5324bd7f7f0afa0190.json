@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "b4f5ed223e23e083a12c271f7f3b6d9951493d1b019cee5324bd7f7f0afa0190",
+  "key": "mirror/openrepos/cizi/personal/main/o/okboard-cs-0.1-1.armv7hl.rpm",
+  "name": "okboard-cs",
+  "rpm_version": "0.1",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=rm -f /home/nemo/.local/share/okboard/predict-cs.db; rm -f /home/nemo/.local/share/okboard/predict-cs.ng; rm -f /home/nemo/.local/share/okboard/cs.tre"
+    }
+  ]
+}

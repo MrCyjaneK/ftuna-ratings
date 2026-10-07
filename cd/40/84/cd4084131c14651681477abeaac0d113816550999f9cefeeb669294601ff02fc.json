@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "cd4084131c14651681477abeaac0d113816550999f9cefeeb669294601ff02fc",
+  "key": "chum/5.1_armv7hl/armv7hl/kwindowsystem-debugsource-5.34.0-1.1.1.bso.armv7hl.rpm",
+  "name": "kwindowsystem-debugsource",
+  "rpm_version": "5.34.0",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

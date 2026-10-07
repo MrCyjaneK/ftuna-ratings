@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "7b89dfcfb8206abc86ff8c8656beaa49e5f631fa5d1d8e11edc6d6c718cb270f",
+  "key": "mirror/openrepos/lpr/personal/main/g/glibc-common-2.30git8-9.2.armv7hl.rpm",
+  "name": "glibc-common",
+  "rpm_version": "2.30+git8",
+  "release": "9.2",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%transfiletriggerin /lib, %transfiletriggerin /lib64, %transfiletriggerin /usr/lib, %transfiletriggerin /usr/lib64",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%transfiletriggerpostun /lib, %transfiletriggerpostun /lib64, %transfiletriggerpostun /usr/lib, %transfiletriggerpostun /usr/lib64",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig"
+    }
+  ]
+}

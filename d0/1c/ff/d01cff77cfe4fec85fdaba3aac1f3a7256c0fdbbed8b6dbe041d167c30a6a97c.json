@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "d01cff77cfe4fec85fdaba3aac1f3a7256c0fdbbed8b6dbe041d167c30a6a97c",
+  "key": "mirror/openrepos/Tomin/personal/main/l/libunistring-0.9.10-8.aarch64.rpm",
+  "name": "libunistring",
+  "rpm_version": "0.9.10",
+  "release": "8",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

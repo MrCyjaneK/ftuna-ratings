@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "bf03c2d875d066e0b5915d5b221f9c7efecfc48294d7c0cda4ee9f8292621b53",
+  "key": "chum/5.2_armv7hl/armv7hl/lame-mp3rtp-3.100-1.1.1.bso.armv7hl.rpm",
+  "name": "lame-mp3rtp",
+  "rpm_version": "3.100",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

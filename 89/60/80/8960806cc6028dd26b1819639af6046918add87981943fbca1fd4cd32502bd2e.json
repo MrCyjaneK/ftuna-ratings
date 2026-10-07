@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "8960806cc6028dd26b1819639af6046918add87981943fbca1fd4cd32502bd2e",
+  "key": "chum/5.2_armv7hl/armv7hl/picotts-debuginfo-17.08.10.1-1.2.1.bso.armv7hl.rpm",
+  "name": "picotts-debuginfo",
+  "rpm_version": "17.08.10.1",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

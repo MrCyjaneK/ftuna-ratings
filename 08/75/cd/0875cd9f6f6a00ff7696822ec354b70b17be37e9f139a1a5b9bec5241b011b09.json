@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "0875cd9f6f6a00ff7696822ec354b70b17be37e9f139a1a5b9bec5241b011b09",
+  "key": "chum/5.1_armv7hl/armv7hl/opt-kf5-kirigami-addons-dateandtime-0.11.0-1.6.1.bso.armv7hl.rpm",
+  "name": "opt-kf5-kirigami-addons-dateandtime",
+  "rpm_version": "0.11.0",
+  "release": "1.6.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

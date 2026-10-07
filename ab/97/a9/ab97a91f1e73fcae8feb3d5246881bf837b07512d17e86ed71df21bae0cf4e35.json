@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "ab97a91f1e73fcae8feb3d5246881bf837b07512d17e86ed71df21bae0cf4e35",
+  "key": "mirror/openrepos/lpr/personal/main/l/libaom3-3.1.0-0.armv7hl.rpm",
+  "name": "libaom3",
+  "rpm_version": "3.1.0",
+  "release": "0",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "ddeefcf46732fd3ab4c83ffd8ae30478e126017f06cde96470b253cc179b3971",
+  "key": "mirror/openrepos/hanhsuan/personal/main/u/unofficial-jolla-language-pack-zh_tw-0.0.1-0.0.4.jolla_.noarch.rpm",
+  "name": "unofficial-jolla-language-pack-zh_TW",
+  "rpm_version": "0.0.1",
+  "release": "0.0.4.jolla_",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

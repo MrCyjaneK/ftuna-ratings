@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "ba71e570d62e7639e010427676a5f8779ed1e9774a8d9d8a00193ed8126cba73",
+  "key": "chum/5.2_armv7hl/noarch/yt-dlp-wrapper-2023.12.30+obs2-1.4.2.bso.noarch.rpm",
+  "name": "yt-dlp-wrapper",
+  "rpm_version": "2023.12.30+obs2",
+  "release": "1.4.2.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "31438464d139796a16046532b637b8090a1fbf52640d7de4d2b4d3b06bf08924",
+  "key": "chum/5.1_i486/noarch/python3-wheel-tools-0.37.1-1.1.1.bso.noarch.rpm",
+  "name": "python3-wheel-tools",
+  "rpm_version": "0.37.1",
+  "release": "1.1.1.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

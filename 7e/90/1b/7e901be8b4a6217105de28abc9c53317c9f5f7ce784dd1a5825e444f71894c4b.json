@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "7e901be8b4a6217105de28abc9c53317c9f5f7ce784dd1a5825e444f71894c4b",
+  "key": "chum/5.1_i486/i486/kconfigwidgets-debugsource-5.34.0-1.1.1.bso.i486.rpm",
+  "name": "kconfigwidgets-debugsource",
+  "rpm_version": "5.34.0",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

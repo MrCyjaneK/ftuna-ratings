@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "440b049f73e83c8534ed8074ac0e48cc17b9bcb2ca40aef920795b71d3bfda2b",
+  "key": "mirror/openrepos/hb9hei/personal/main/h/harbour-gpslocator-0.22-1.armv7hl.rpm",
+  "name": "harbour-gpslocator",
+  "rpm_version": "0.22",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-gpslocator.desktop",
+      "code": "sailjail.permission",
+      "detail": "Location"
+    }
+  ]
+}

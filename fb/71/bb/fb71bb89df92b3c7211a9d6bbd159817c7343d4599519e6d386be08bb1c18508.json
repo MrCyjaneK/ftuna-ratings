@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "fb71bb89df92b3c7211a9d6bbd159817c7343d4599519e6d386be08bb1c18508",
+  "key": "chum/5.2_i486/i486/wolfssl-debugsource-5.8.4+git3-1.1.1.bso.i486.rpm",
+  "name": "wolfssl-debugsource",
+  "rpm_version": "5.8.4+git3",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "5b1aaf7d5518995f7d2c99aebdffaca9ce5de6112e1f53902c984141c6b7a387",
+  "key": "chum/5.1_i486/i486/harbour-sailtuner-0.1.2+master.20260330115707.2a89b2c-1.1.1.bso.i486.rpm",
+  "name": "harbour-sailtuner",
+  "rpm_version": "0.1.2+master.20260330115707.2a89b2c",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "verdict": 75,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailtuner.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    }
+  ]
+}

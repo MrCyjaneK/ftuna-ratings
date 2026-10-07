@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "ad98a2ee923ad7a71d24030ac3e86fee5cd3e4d5d8afcb1c4f3e915725f0ca12",
+  "key": "mirror/openrepos/glitchapp/personal/main/m/madwheelz-0.4-1.noarch.rpm",
+  "name": "madwheelz",
+  "rpm_version": "0.4",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/madwheelz.desktop",
+      "code": "sailjail.permission",
+      "detail": "Love2D"
+    }
+  ]
+}

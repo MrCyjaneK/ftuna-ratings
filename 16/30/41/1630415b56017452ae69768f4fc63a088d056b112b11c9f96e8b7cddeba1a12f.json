@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "1630415b56017452ae69768f4fc63a088d056b112b11c9f96e8b7cddeba1a12f",
+  "key": "mirror/openrepos/olf/personal/main/m/mount-sdcard-1.5.0-1.sfos321.noarch.rpm",
+  "name": "mount-sdcard",
+  "rpm_version": "1.5.0",
+  "release": "1.sfos321",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "systemd",
+      "path": "/etc/systemd/system/mount-sd@.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/bin/udisksctl-user mount $UDISKS2_MOUNT_OPTIONS -b /dev/%i sandbox=none"
+    }
+  ]
+}

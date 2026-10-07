@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "29b92d1d7d8c4559b5de56b2b1237897a9cd92757b81bc8b80ef6292df03a64f",
+  "key": "mirror/openrepos/lpr_next/personal/main/n/nscd-2.25.6git1-1.armv7hl.rpm",
+  "name": "nscd",
+  "rpm_version": "2.25.6+git1",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 15,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": 0
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/sbin/useradd -M -o -r -d / -s /sbin/nologin \\; -c \"NSCD Daemon\" -u 28 nscd \u003e /dev/null 2\u003e\u00261 || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ] ; then; /usr/sbin/userdel nscd \u003e /dev/null 2\u003e\u00261 || :; fi"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/var/run/nscd/socket",
+      "code": "worldwrite",
+      "detail": "/var/run/nscd/socket mode 0100666 user root group root file"
+    }
+  ]
+}

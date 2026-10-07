@@ -1,0 +1,104 @@
+{
+  "version": 6,
+  "sha256": "721068e45e22cfbb0afd12d02e65ab1b6fb9a9fac1687f98b8179e0d23ebbf89",
+  "key": "mirror/openrepos/poetaster/personal/main/h/harbour-stopmotion-0.4.1-1.i486.rpm",
+  "name": "harbour-stopmotion",
+  "rpm_version": "0.4.1",
+  "release": "1",
+  "arch": "i486",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-stopmotion.desktop",
+      "code": "sailjail.permission",
+      "detail": "Compatibility"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-stopmotion.desktop",
+      "code": "sailjail.permission",
+      "detail": "Camera"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-stopmotion.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-stopmotion.desktop",
+      "code": "sailjail.permission",
+      "detail": "Microphone"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-stopmotion.desktop",
+      "code": "sailjail.permission",
+      "detail": "MediaIndexing"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-stopmotion.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-stopmotion.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs"
+    }
+  ]
+}

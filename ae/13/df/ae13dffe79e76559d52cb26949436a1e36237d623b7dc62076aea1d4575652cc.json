@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "ae13dffe79e76559d52cb26949436a1e36237d623b7dc62076aea1d4575652cc",
+  "key": "chum/5.2_aarch64/noarch/keychain-2.8.5+git1-1.1.1.bso.noarch.rpm",
+  "name": "keychain",
+  "rpm_version": "2.8.5+git1",
+  "release": "1.1.1.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

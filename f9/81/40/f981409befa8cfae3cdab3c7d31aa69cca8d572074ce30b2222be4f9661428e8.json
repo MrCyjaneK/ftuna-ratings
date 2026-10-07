@@ -1,0 +1,146 @@
+{
+  "version": 6,
+  "sha256": "f981409befa8cfae3cdab3c7d31aa69cca8d572074ce30b2222be4f9661428e8",
+  "key": "mirror/openrepos/V10lator/personal/main/v/v10filesystems-0.1-0.armv7hl.rpm",
+  "name": "V10filesystems",
+  "rpm_version": "0.1",
+  "release": "0",
+  "arch": "armv7hl",
+  "verdict": 20,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": 10
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "hooks",
+      "path": "/lib/modules/3.10.49+0.0.52.3/extra/fs/cifs/cifs.ko",
+      "code": "hooks.module",
+      "detail": "mode 0100744 user root group root"
+    },
+    {
+      "module": "hooks",
+      "path": "/lib/modules/3.10.49+0.0.52.3/extra/fs/exfat/exfat.ko",
+      "code": "hooks.module",
+      "detail": "mode 0100744 user root group root"
+    },
+    {
+      "module": "hooks",
+      "path": "/lib/modules/3.10.49+0.0.52.3/extra/fs/f2fs/f2fs.ko",
+      "code": "hooks.module",
+      "detail": "mode 0100744 user root group root"
+    },
+    {
+      "module": "hooks",
+      "path": "/lib/modules/3.10.49+0.0.52.3/extra/fs/lockd/lockd.ko",
+      "code": "hooks.module",
+      "detail": "mode 0100744 user root group root"
+    },
+    {
+      "module": "hooks",
+      "path": "/lib/modules/3.10.49+0.0.52.3/extra/fs/nfs/blocklayout/blocklayoutdriver.ko",
+      "code": "hooks.module",
+      "detail": "mode 0100744 user root group root"
+    },
+    {
+      "module": "hooks",
+      "path": "/lib/modules/3.10.49+0.0.52.3/extra/fs/nfs/nfs.ko",
+      "code": "hooks.module",
+      "detail": "mode 0100744 user root group root"
+    },
+    {
+      "module": "hooks",
+      "path": "/lib/modules/3.10.49+0.0.52.3/extra/fs/nfs/nfs_layout_nfsv41_files.ko",
+      "code": "hooks.module",
+      "detail": "mode 0100744 user root group root"
+    },
+    {
+      "module": "hooks",
+      "path": "/lib/modules/3.10.49+0.0.52.3/extra/fs/nfs/nfsv2.ko",
+      "code": "hooks.module",
+      "detail": "mode 0100744 user root group root"
+    },
+    {
+      "module": "hooks",
+      "path": "/lib/modules/3.10.49+0.0.52.3/extra/fs/nfs/nfsv3.ko",
+      "code": "hooks.module",
+      "detail": "mode 0100744 user root group root"
+    },
+    {
+      "module": "hooks",
+      "path": "/lib/modules/3.10.49+0.0.52.3/extra/fs/nfs/nfsv4.ko",
+      "code": "hooks.module",
+      "detail": "mode 0100744 user root group root"
+    },
+    {
+      "module": "hooks",
+      "path": "/lib/modules/3.10.49+0.0.52.3/extra/net/dns_resolver/dns_resolver.ko",
+      "code": "hooks.module",
+      "detail": "mode 0100744 user root group root"
+    },
+    {
+      "module": "hooks",
+      "path": "/lib/modules/3.10.49+0.0.52.3/extra/net/sunrpc/sunrpc.ko",
+      "code": "hooks.module",
+      "detail": "mode 0100744 user root group root"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=depmod -a"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; rm -rf /lib/modules/3.10.49+0.0.52.3/extra/fs/lockd"
+    }
+  ]
+}

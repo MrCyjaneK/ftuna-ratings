@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "ae3ced2b502efbb052e2a7774167de68a079a0cda2b17a4785a342abcd5933a8",
+  "key": "mirror/openrepos/Rikudou_Sennin/personal/main/n/nodejs-22.22.0-2.armv7hl.rpm",
+  "name": "nodejs",
+  "rpm_version": "22.22.0",
+  "release": "2",
+  "arch": "armv7hl",
+  "verdict": 40,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": 40
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "hooks",
+      "path": "/etc/profile.d/nodejs.sh",
+      "code": "hooks.profile",
+      "detail": "mode 0100644 user root group root"
+    }
+  ]
+}

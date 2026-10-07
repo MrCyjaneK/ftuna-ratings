@@ -1,0 +1,104 @@
+{
+  "version": 6,
+  "sha256": "49346f36de462083019582ff7b3f8d8621c4d617e77857200fc2b673ec23e607",
+  "key": "mirror/openrepos/datakurre/personal/main/h/harbour-pyletoh-0.4.0-10.27.1.jolla_.noarch.rpm",
+  "name": "harbour-pyletoh",
+  "rpm_version": "0.4.0",
+  "release": "10.27.1.jolla",
+  "arch": "noarch",
+  "verdict": 63,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-pyletoh.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user stop harbour-pyletoh\"; su nemo -c \"systemctl --user stop harbour-pyletoh-eavesdropper\"; exit 0"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user daemon-reload\"; su nemo -c \"systemctl --user enable harbour-pyletoh\"; su nemo -c \"systemctl --user enable harbour-pyletoh-eavesdrop"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user disable harbour-pyletoh\"; su nemo -c \"systemctl --user disable harbour-pyletoh-eavesdropper\"; su nemo -c \"systemctl --user stop har"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user daemon-reload\""
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-pyletoh-eavesdropper.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/python3 /usr/share/harbour-pyletoh/qml/eavesdropper.py sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-pyletoh.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/python3 /usr/share/harbour-pyletoh/qml/daemon.py sandbox=none"
+    }
+  ]
+}

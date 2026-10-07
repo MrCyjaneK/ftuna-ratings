@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "0ded83b1af04867a56a9f5fc301dd599775e3248abfa443ad977dc4c47c9d0c4",
+  "key": "mirror/openrepos/alina/personal/main/s/sailfishos-patch-contacts-cover-2.1.4-1.noarch.rpm",
+  "name": "sailfishos-patch-contacts-cover",
+  "rpm_version": "2.1.4",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-contacts-cover ]; then; /usr/sbin/patchmanager -u sailfishos-patch-contacts-cover || true; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-contacts-cover ]; then; /usr/sbin/patchmanager -u sailfishos-patch-contacts-cover || true; fi"
+    }
+  ]
+}

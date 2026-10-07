@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "19fde293657f5f4b46706065211f7ae829d62e62671ce8c38863a95261cd651f",
+  "key": "mirror/openrepos/lpr_A7/personal/main/l/libne10_test10-1.2.1git0c9f576-0.armv7hl.rpm",
+  "name": "libNE10_test10",
+  "rpm_version": "1.2.1+git0c9f576",
+  "release": "0",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

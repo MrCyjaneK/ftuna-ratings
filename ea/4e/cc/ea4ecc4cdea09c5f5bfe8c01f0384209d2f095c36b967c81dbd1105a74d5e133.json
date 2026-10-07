@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "ea4ecc4cdea09c5f5bfe8c01f0384209d2f095c36b967c81dbd1105a74d5e133",
+  "key": "mirror/openrepos/nephros/personal/main/i/imagemagick-7.0.10.61-1.aarch64.rpm",
+  "name": "ImageMagick",
+  "rpm_version": "7.0.10.61",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

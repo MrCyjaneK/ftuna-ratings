@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "c73c2881611c12fb1975cdf741d5711df42da5e3e95391828cd109f0abaff3c8",
+  "key": "chum/5.2_armv7hl/armv7hl/tinyxml2-devel-9.0.0.1-1.2.1.bso.armv7hl.rpm",
+  "name": "tinyxml2-devel",
+  "rpm_version": "9.0.0.1",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

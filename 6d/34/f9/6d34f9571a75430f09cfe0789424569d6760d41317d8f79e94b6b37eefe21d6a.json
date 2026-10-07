@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "6d34f9571a75430f09cfe0789424569d6760d41317d8f79e94b6b37eefe21d6a",
+  "key": "mirror/openrepos/Rikudou_Sennin/personal/main/h/harbour-chatgpt-0.9.5-1.armv7hl.rpm",
+  "name": "harbour-chatgpt",
+  "rpm_version": "0.9.5",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-chatgpt.desktop",
+      "code": "sailjail.permission",
+      "detail": "Secrets"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-chatgpt.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-chatgpt.desktop",
+      "code": "sailjail.permission",
+      "detail": "Documents"
+    }
+  ]
+}

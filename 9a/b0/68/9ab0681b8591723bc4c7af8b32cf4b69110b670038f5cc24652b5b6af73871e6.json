@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "9ab0681b8591723bc4c7af8b32cf4b69110b670038f5cc24652b5b6af73871e6",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/piggz/harbour-advanced-camera/harbour-advanced-camera-debuginfo-0.9.5-1.i486.rpm",
+  "name": "harbour-advanced-camera-debuginfo",
+  "rpm_version": "0.9.5",
+  "release": "1",
+  "arch": "i486",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": 100
+    }
+  ],
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/piggz/harbour-advanced-camera",
+      "code": "ftuna.built",
+      "detail": "clean"
+    }
+  ]
+}

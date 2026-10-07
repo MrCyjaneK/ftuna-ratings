@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "54bea6b8de015b93c7a1a601f86c34f65995afd372ab0a42bd961c44dcb5dfa9",
+  "key": "mirror/openrepos/eugenio/personal/main/s/sailfishos-patch-ambience-select-colorscheme-3.0.0.5-1.noarch.rpm",
+  "name": "sailfishos-patch-ambience-select-colorscheme",
+  "rpm_version": "3.0.0.5",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -x /usr/sbin/patchmanager ]; then; /usr/sbin/patchmanager -u eugenio-ambience-select-colorscheme || true; fi"
+    }
+  ]
+}

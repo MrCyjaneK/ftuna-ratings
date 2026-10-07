@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "5f638f72c4f412a293b005c5524a43a67df095fb85213bc1e02addda03c3ea59",
+  "key": "mirror/openrepos/nephros/personal/main/h/harbour-uptimed-0.4.2-9.armv7hl.rpm",
+  "name": "harbour-uptimed",
+  "rpm_version": "0.4.2",
+  "release": "9",
+  "arch": "armv7hl",
+  "verdict": 53,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-uptimed-uprecords.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/bin/systemctl --user daemon-reload \u003e/dev/null 2\u003e\u00261 || :; /usr/bin/update-desktop-database -q || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/bin/systemctl --user --no-reload disable harbour-uptimed.service \u003e/dev/null 2\u003e\u00261 || :; /usr/bin/systemctl stop --user harbour-uptimed.service \u003e/dev/null 2\u003e"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/bin/systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 ||:; /usr/bin/update-desktop-database -q || :"
+    }
+  ]
+}

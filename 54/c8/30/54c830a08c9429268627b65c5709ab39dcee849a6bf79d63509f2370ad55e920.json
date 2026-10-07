@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "54c830a08c9429268627b65c5709ab39dcee849a6bf79d63509f2370ad55e920",
+  "key": "chum/5.1_i486/noarch/generaluser-soundfont-docs-1.44-1.1.1.bso.noarch.rpm",
+  "name": "generaluser-soundfont-docs",
+  "rpm_version": "1.44",
+  "release": "1.1.1.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

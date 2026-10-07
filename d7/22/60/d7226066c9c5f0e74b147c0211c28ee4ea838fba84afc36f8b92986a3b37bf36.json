@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "d7226066c9c5f0e74b147c0211c28ee4ea838fba84afc36f8b92986a3b37bf36",
+  "key": "mirror/openrepos/alina/personal/main/h/harbour-themepack-texgyreschola-0.1-1.noarch.rpm",
+  "name": "harbour-themepack-texgyreschola",
+  "rpm_version": "0.1",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

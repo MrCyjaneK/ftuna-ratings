@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "f8f001f031aa42fe4713d40c530c389f5e9202b17c8448fdfcdce7e56308ae9d",
+  "key": "mirror/openrepos/glitchapp/personal/main/f/flappybird-0.1-1.noarch.rpm",
+  "name": "flappybird",
+  "rpm_version": "0.1",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/flappybird.desktop",
+      "code": "sailjail.permission",
+      "detail": "Love2D"
+    }
+  ]
+}

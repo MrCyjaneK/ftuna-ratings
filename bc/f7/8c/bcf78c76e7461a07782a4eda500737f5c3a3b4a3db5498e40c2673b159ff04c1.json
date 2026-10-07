@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "bcf78c76e7461a07782a4eda500737f5c3a3b4a3db5498e40c2673b159ff04c1",
+  "key": "mirror/openrepos/slava/personal/main/h/harbour-clipshare-1.0.1-1.aarch64.rpm",
+  "name": "harbour-clipshare",
+  "rpm_version": "1.0.1",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

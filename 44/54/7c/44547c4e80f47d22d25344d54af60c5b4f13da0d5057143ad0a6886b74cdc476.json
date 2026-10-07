@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "44547c4e80f47d22d25344d54af60c5b4f13da0d5057143ad0a6886b74cdc476",
+  "key": "mirror/openrepos/anarchy_in_the_uk/personal/main/h/harbour-multimodal-0.91-1.noarch.rpm",
+  "name": "harbour-multimodal",
+  "rpm_version": "0.91",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-multimodal.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-multimodal.desktop",
+      "code": "sailjail.permission",
+      "detail": "Location"
+    }
+  ]
+}

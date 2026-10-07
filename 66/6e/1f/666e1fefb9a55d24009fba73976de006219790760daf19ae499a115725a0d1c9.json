@@ -1,0 +1,122 @@
+{
+  "version": 6,
+  "sha256": "666e1fefb9a55d24009fba73976de006219790760daf19ae499a115725a0d1c9",
+  "key": "mirror/openrepos/lpr_A7/personal/main/o/openssh-server-5.6p1-1.1.2.armv7hl.rpm",
+  "name": "openssh-server",
+  "rpm_version": "5.6p1",
+  "release": "1.1.2",
+  "arch": "armv7hl",
+  "verdict": 25,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": 15
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "hooks",
+      "path": "/etc/pam.d/sshd",
+      "code": "hooks.pam",
+      "detail": "mode 0100644 user root group root"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/sbin/useradd -c \"Privilege-separated SSH\" -u 74 \\; -s /sbin/nologin -r -d /var/empty/sshd sshd 2\u003e /dev/null || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl daemon-reload"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl daemon-reload"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%triggerun ssh-server",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" != 0 -a -r /var/run/sshd.pid ] ; then; touch /var/run/sshd.restart; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%triggerun openssh-server",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=gawk\t'BEGIN {IGNORECASE=1}; /^hostkey/ || /^hostdsakey/ {sawhostkey = sawhostkey + 1}; END {exit sawhostkey}' /etc/ssh/sshd_config"
+    },
+    {
+      "module": "systemd",
+      "path": "/lib/systemd/system/sshd-keys.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/sbin/sshd-hostkeys sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/lib/systemd/system/sshd.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/sbin/sshd -D $SSHD_PARAMETERS sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/lib/systemd/system/sshd.socket",
+      "code": "systemd.socket",
+      "detail": "scope=system activates=sshd.service"
+    },
+    {
+      "module": "systemd",
+      "path": "/lib/systemd/system/sshd@.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=-/usr/sbin/sshd -i $SSHD_PARAMETERS sandbox=none"
+    }
+  ]
+}

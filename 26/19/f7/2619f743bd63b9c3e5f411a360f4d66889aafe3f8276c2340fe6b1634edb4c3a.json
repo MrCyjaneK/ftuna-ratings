@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "2619f743bd63b9c3e5f411a360f4d66889aafe3f8276c2340fe6b1634edb4c3a",
+  "key": "mirror/openrepos/artur_/personal/main/l/libxcb-xf86dri-1.15-1.armv7hl.rpm",
+  "name": "libxcb-xf86dri",
+  "rpm_version": "1.15",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "d491fb745011503df858c5275880d000de468feff6b715cb1f843be1cc922553",
+  "key": "mirror/openrepos/p2501/personal/main/o/openrepos-certificatemanager-helper-0.1-1.armv7hl.rpm",
+  "name": "openrepos-certificatemanager-helper",
+  "rpm_version": "0.1",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 0,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": 0
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "setuid",
+      "path": "/usr/bin/openrepos-certificatemanager-helper",
+      "code": "setuid",
+      "detail": "/usr/bin/openrepos-certificatemanager-helper mode 0104755 user root group root file"
+    }
+  ]
+}

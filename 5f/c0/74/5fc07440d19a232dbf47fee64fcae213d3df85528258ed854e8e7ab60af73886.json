@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "5fc07440d19a232dbf47fee64fcae213d3df85528258ed854e8e7ab60af73886",
+  "key": "mirror/openrepos/virgi/personal/main/v/virgi-sailfish-patch-statusbarfonts-0.4-1.noarch.rpm",
+  "name": "virgi-sailfish-patch-statusbarfonts",
+  "rpm_version": "0.4",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/virgi-sailfish-patch-statusbarfonts ]; then; /usr/sbin/patchmanager -u virgi-sailfish-patch-statusbarfonts || true; "
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/virgi-sailfish-patch-statusbarfonts ]; then; /usr/sbin/patchmanager -u virgi-sailfish-patch-statusbarfonts || true; "
+    }
+  ]
+}

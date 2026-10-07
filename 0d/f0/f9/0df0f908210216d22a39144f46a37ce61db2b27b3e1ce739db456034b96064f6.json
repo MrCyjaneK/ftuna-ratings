@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "0df0f908210216d22a39144f46a37ce61db2b27b3e1ce739db456034b96064f6",
+  "key": "mirror/openrepos/beidl/personal/main/i/isodrive-0.2-1.armv7hl.rpm",
+  "name": "ISODrive",
+  "rpm_version": "0.2",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 38,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": 0
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/ISODrive.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/ISODrive",
+      "code": "setuid",
+      "detail": "/usr/bin/ISODrive mode 0104755 user root group root file"
+    }
+  ]
+}

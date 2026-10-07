@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "471846330efcf0e017159dfc8c70fd32ca4b2336fc9f40f51758d360d031525f",
+  "key": "chum/5.2_aarch64/aarch64/fsarchiver-debugsource-0.8.6.2-1.4.1.bso.aarch64.rpm",
+  "name": "fsarchiver-debugsource",
+  "rpm_version": "0.8.6.2",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

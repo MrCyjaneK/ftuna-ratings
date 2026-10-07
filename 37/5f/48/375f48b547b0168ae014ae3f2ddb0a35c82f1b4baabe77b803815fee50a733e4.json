@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "375f48b547b0168ae014ae3f2ddb0a35c82f1b4baabe77b803815fee50a733e4",
+  "key": "chum/5.1_armv7hl/armv7hl/ecl-devel-24.5.10-1.3.2.bso.armv7hl.rpm",
+  "name": "ecl-devel",
+  "rpm_version": "24.5.10",
+  "release": "1.3.2.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

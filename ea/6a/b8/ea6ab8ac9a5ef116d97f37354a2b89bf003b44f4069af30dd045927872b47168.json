@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "ea6ab8ac9a5ef116d97f37354a2b89bf003b44f4069af30dd045927872b47168",
+  "key": "chum/5.1_i486/i486/mlocate-0.26+git4-1.1.1.bso.i486.rpm",
+  "name": "mlocate",
+  "rpm_version": "0.26+git4",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "verdict": 38,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": 45
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/libexec/manage-groups add privileged ||:"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload disable --now mlocate-updatedb.service \u003e /dev/null 2\u003e\u00261 || :; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; /usr/libexec/manage-groups remove privileged ||:; fi"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/locate",
+      "code": "setgid",
+      "detail": "/usr/bin/locate mode 0102711 user root group privileged file"
+    }
+  ]
+}

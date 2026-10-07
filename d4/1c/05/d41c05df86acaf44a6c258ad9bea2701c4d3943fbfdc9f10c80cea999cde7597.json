@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "d41c05df86acaf44a6c258ad9bea2701c4d3943fbfdc9f10c80cea999cde7597",
+  "key": "mirror/openrepos/alina/personal/main/s/sailfishos-patch-settings-cover-2.1.4-1.noarch.rpm",
+  "name": "sailfishos-patch-settings-cover",
+  "rpm_version": "2.1.4",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-settings-cover ]; then; /usr/sbin/patchmanager -u sailfishos-patch-settings-cover || true; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-settings-cover ]; then; /usr/sbin/patchmanager -u sailfishos-patch-settings-cover || true; fi"
+    }
+  ]
+}

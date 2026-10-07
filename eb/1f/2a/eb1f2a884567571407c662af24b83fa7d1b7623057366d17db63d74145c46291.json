@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "eb1f2a884567571407c662af24b83fa7d1b7623057366d17db63d74145c46291",
+  "key": "mirror/openrepos/stoefelz/personal/main/h/harbour-kleinanzeigen-viewer-26.6-1.armv7hl.rpm",
+  "name": "harbour-kleinanzeigen-viewer",
+  "rpm_version": "26.6",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 93,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 85
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/com.stoefelz.kleinanzeigende.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/harbour-kleinanzeigen-viewer"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/com.stoefelz.kleinanzeigende.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    }
+  ]
+}

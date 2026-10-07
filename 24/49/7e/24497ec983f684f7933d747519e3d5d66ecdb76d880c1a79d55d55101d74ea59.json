@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "24497ec983f684f7933d747519e3d5d66ecdb76d880c1a79d55d55101d74ea59",
+  "key": "mirror/openrepos/nobodyinperson/personal/main/p/python3-base91-1.0.1-rokua.noarch.rpm",
+  "name": "python3-base91",
+  "rpm_version": "1.0.1",
+  "release": "rokua",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "75856207f36f577da4fe0fc89b0a3736ace04d1957459b03df20094c8259cf2a",
+  "key": "chum/5.1_i486/i486/opt-kf5-kcompletion-devel-5.116.0-1.6.1.bso.i486.rpm",
+  "name": "opt-kf5-kcompletion-devel",
+  "rpm_version": "5.116.0",
+  "release": "1.6.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

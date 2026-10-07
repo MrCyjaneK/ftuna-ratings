@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "dd5a49ae555ad72aa5e1cc55c5e311c0a90c076bf69fd09f0f32c6d6bc70e395",
+  "key": "mirror/openrepos/llelectronics_dev/personal/main/q/qt5-qtqml-import-webkitplugin-5.212.0-1.114.1.jolla_.armv7hl.rpm",
+  "name": "qt5-qtqml-import-webkitplugin",
+  "rpm_version": "5.212.0",
+  "release": "1.114.1.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

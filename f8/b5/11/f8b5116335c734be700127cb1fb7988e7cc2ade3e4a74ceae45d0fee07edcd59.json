@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "f8b5116335c734be700127cb1fb7988e7cc2ade3e4a74ceae45d0fee07edcd59",
+  "key": "chum/5.2_armv7hl/armv7hl/waydroid-runner-debuginfo-0.3.1-1.4.2.bso.armv7hl.rpm",
+  "name": "waydroid-runner-debuginfo",
+  "rpm_version": "0.3.1",
+  "release": "1.4.2.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

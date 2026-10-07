@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "d08eb333fdfbd612adbd838cc15f7a9290e503e06e3cab03683ed067b98c00c0",
+  "key": "mirror/openrepos/lpr/personal/main/g/gstreamer1.0-plugins-bad-fluidsynth-1.20.6git1-2.armv7hl.rpm",
+  "name": "gstreamer1.0-plugins-bad-fluidsynth",
+  "rpm_version": "1.20.6+git1",
+  "release": "2",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

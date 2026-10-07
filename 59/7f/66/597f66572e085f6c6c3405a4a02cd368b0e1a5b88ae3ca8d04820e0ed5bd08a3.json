@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "597f66572e085f6c6c3405a4a02cd368b0e1a5b88ae3ca8d04820e0ed5bd08a3",
+  "key": "chum/5.2_i486/i486/python-zmq-debuginfo-22.3.0+master.20220510192831.90d4698-1.1.1.bso.i486.rpm",
+  "name": "python-zmq-debuginfo",
+  "rpm_version": "22.3.0+master.20220510192831.90d4698",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "e8c6ecdacad945c82b16f5f5e90c5b542237bb56fbb46ed81990382840555128",
+  "key": "mirror/openrepos/olf/personal/main/h/harbour-storeman-installer-2.2.7-release8.noarch.rpm",
+  "name": "harbour-storeman-installer",
+  "rpm_version": "2.2.7",
+  "release": "release8",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ ! -e /var/log/harbour-storeman-installer.log.txt ]; then; curmask=\"$(umask)\""
+    },
+    {
+      "module": "scriptlet",
+      "path": "%posttrans",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=umask 113; setsid --fork sh -c '(/usr/bin/harbour-storeman-installer \"$1\" \"$2\")' sh_call_inst-storeman \"$$\" \"/var/log/harbour-storeman-installer.log.txt\" \u003e\u003e \"/v"
+    }
+  ]
+}

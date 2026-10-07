@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "db41125a2caafe67ed7da8d98e981311c4b46d83fa43291d41be625f86f76ccd",
+  "key": "mirror/openrepos/lpr/personal/main/p/python3-pandas-1.0.5-0.aarch64.rpm",
+  "name": "python3-pandas",
+  "rpm_version": "1.0.5",
+  "release": "0",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

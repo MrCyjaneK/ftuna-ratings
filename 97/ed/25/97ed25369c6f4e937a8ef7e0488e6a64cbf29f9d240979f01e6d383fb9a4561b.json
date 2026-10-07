@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "97ed25369c6f4e937a8ef7e0488e6a64cbf29f9d240979f01e6d383fb9a4561b",
+  "key": "mirror/openrepos/lpr/personal/main/c/calligra-sheets-templates-3.2.1git4-1.11.6.jolla_.armv7hl.rpm",
+  "name": "calligra-sheets-templates",
+  "rpm_version": "3.2.1+git4",
+  "release": "1.11.6.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

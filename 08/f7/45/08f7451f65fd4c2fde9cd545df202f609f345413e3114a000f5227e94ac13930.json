@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "08f7451f65fd4c2fde9cd545df202f609f345413e3114a000f5227e94ac13930",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-tidings-debugsource-1.5.1-1.17.1.bso.armv7hl.rpm",
+  "name": "harbour-tidings-debugsource",
+  "rpm_version": "1.5.1",
+  "release": "1.17.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

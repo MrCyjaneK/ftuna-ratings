@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "86710c9a80e1d3ddeb17b58ad1acf88b21a4b38e736ada23d78d62c9592484f8",
+  "key": "mirror/openrepos/rubdos/personal/main/r/rescrobbled-0.10.0-1.aarch64.rpm",
+  "name": "rescrobbled",
+  "rpm_version": "0.10.0",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": 85,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/rescrobbled.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/rescrobbled sandbox=none"
+    }
+  ]
+}

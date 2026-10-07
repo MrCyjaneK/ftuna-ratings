@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "51ec7a8f929af4ab4ce03ba273e9bc0ecb9fb19cebd39b7bc9d17377b19c37fb",
+  "key": "mirror/openrepos/aviarus/personal/main/x/xulrunner-qt5-next153-153.2.0-10.aarch64.rpm",
+  "name": "xulrunner-qt5-next153",
+  "rpm_version": "153.2.0",
+  "release": "10",
+  "arch": "aarch64",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=touch /var/lib/_MOZEMBED_CACHE_CLEAN_; for moz in /home/*/.local/share/org.sailfishos/browser-next153/.mozilla; do; [ -d \"$moz\" ] || continue"
+    }
+  ]
+}

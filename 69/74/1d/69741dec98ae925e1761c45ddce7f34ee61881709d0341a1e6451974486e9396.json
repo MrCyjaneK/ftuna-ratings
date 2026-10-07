@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "69741dec98ae925e1761c45ddce7f34ee61881709d0341a1e6451974486e9396",
+  "key": "mirror/openrepos/lpr/personal/main/l/libilmimfutil-2_5-25-2.5.7-0.armv7hl.rpm",
+  "name": "libIlmImfUtil-2_5-25",
+  "rpm_version": "2.5.7",
+  "release": "0",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

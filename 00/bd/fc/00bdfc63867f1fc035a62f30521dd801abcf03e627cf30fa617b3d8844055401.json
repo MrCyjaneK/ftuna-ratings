@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "00bdfc63867f1fc035a62f30521dd801abcf03e627cf30fa617b3d8844055401",
+  "key": "mirror/openrepos/DomiH/personal/main/h/harbour-find-my-device-2.0-3.i486.rpm",
+  "name": "harbour-find-my-device",
+  "rpm_version": "2.0",
+  "release": "3",
+  "arch": "i486",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-find-my-device.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-find-my-device.desktop",
+      "code": "sailjail.permission",
+      "detail": "Location"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-find-my-device.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-find-my-device.desktop",
+      "code": "sailjail.permission",
+      "detail": "Downloads"
+    }
+  ]
+}

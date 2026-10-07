@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "c6cc2bb49e3a035e4a7a25a055719f7d2906d2ab7b906a9f47cc9a16c2a12e5e",
+  "key": "chum/5.2_aarch64/aarch64/harbour-expenditure-debuginfo-2.0.1-1.4.2.bso.aarch64.rpm",
+  "name": "harbour-expenditure-debuginfo",
+  "rpm_version": "2.0.1",
+  "release": "1.4.2.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

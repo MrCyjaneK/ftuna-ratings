@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "f00c8fba50ab87cd9df8b388e36e8d85f453522b1780ea6e63dd2d8ae2cafd3f",
+  "key": "chum/5.2_i486/noarch/graphviz-demo-graphs-12.2.1+git3-1.3.1.bso.noarch.rpm",
+  "name": "graphviz-demo-graphs",
+  "rpm_version": "12.2.1+git3",
+  "release": "1.3.1.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

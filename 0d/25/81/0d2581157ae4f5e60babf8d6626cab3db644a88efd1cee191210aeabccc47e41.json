@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "0d2581157ae4f5e60babf8d6626cab3db644a88efd1cee191210aeabccc47e41",
+  "key": "mirror/openrepos/nobodyinperson/personal/main/p/python3-idna-2.8-seitseminen.noarch.rpm",
+  "name": "python3-idna",
+  "rpm_version": "2.8",
+  "release": "seitseminen",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

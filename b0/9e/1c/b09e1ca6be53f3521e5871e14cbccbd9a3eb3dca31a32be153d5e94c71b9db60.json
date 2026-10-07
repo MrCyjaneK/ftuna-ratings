@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "b09e1ca6be53f3521e5871e14cbccbd9a3eb3dca31a32be153d5e94c71b9db60",
+  "key": "mirror/openrepos/llelectronics_dev/personal/main/g/gstreamer1.0-1.10.5master.20180301182831.3.g2c12f9f-10.30.1.jolla_.i486.rpm",
+  "name": "gstreamer1.0",
+  "rpm_version": "1.10.5+master.20180301182831.3.g2c12f9f",
+  "release": "10.30.1.jolla",
+  "arch": "i486",
+  "verdict": 0,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": 0
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "setuid",
+      "path": "/usr/libexec/gstreamer-1.0/gst-ptp-helper",
+      "code": "setuid",
+      "detail": "/usr/libexec/gstreamer-1.0/gst-ptp-helper mode 0104755 user root group root file"
+    }
+  ]
+}

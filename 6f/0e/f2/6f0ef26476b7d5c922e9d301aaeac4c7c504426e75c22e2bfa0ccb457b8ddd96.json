@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "6f0ef26476b7d5c922e9d301aaeac4c7c504426e75c22e2bfa0ccb457b8ddd96",
+  "key": "mirror/openrepos/zuyev/personal/main/h/harbour-bible-1.8-1.i486.rpm",
+  "name": "harbour-bible",
+  "rpm_version": "1.8",
+  "release": "1",
+  "arch": "i486",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-bible.desktop",
+      "code": "sailjail.permission",
+      "detail": "PublicDir"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-bible.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-bible.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "91891eba87dcdc00576caddb3406d7dfe7b894d2c60a69bd256fdef8b486b6bd",
+  "key": "mirror/openrepos/mad_dev/personal/main/u/unofficial-jolla-language-pack-ar_sa-1.1.0-1.2.5.noarch.rpm",
+  "name": "unofficial-jolla-language-pack-ar_sa",
+  "rpm_version": "1.1.0",
+  "release": "1.2.5",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/bin/localedef --force --replace --verbose -i ar_SA -f UTF-8 ar_SA.utf8; exit 0"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/bin/localedef --delete-from-archive ar_SA.utf8"
+    }
+  ]
+}

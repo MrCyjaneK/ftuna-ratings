@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "a194d634798e52a5f249df62407a26876d31d3e5f39b26b70eeb66601aca7917",
+  "key": "chum/5.1_armv7hl/armv7hl/soundfont-vintagedreamwaves-2.4.2+git4-1.1.1.bso.armv7hl.rpm",
+  "name": "soundfont-vintagedreamwaves",
+  "rpm_version": "2.4.2+git4",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

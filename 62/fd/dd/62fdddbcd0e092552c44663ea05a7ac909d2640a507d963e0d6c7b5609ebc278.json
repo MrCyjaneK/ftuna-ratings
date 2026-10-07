@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "62fdddbcd0e092552c44663ea05a7ac909d2640a507d963e0d6c7b5609ebc278",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-phototools-debugsource-0.4.0+master.20210726194605.2.ge6fb35d-1.1.1.bso.armv7hl.rpm",
+  "name": "harbour-phototools-debugsource",
+  "rpm_version": "0.4.0+master.20210726194605.2.ge6fb35d",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

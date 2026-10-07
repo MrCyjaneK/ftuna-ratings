@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "e60c122fc716eef4cbbfd454cf3caae585931a2f75ed59666add423613f16f1e",
+  "key": "mirror/openrepos/piggz/personal/main/q/qca-qt5-2.0.3.1git1-1.12.nemo_.armv7hl.rpm",
+  "name": "qca-qt5",
+  "rpm_version": "2.0.3.1+git1",
+  "release": "1.12.Nemo",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "bbf02123ed4f763df10c4b9b2f44db838fea191a74f0a0eeeff3a55dd9b55b3c",
+  "key": "mirror/openrepos/247/personal/main/a/ambience-pingu-0.1-1.armv7hl.rpm",
+  "name": "ambience-pingu",
+  "rpm_version": "0.1",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=chmod 755 /usr/share/ambience/{name}; chmod 755 /usr/share/ambience/{name}/images; chmod 644 /usr/share/ambience/{name}/*.*"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; rm -rf /usr/share/ambience/{name}"
+    }
+  ]
+}

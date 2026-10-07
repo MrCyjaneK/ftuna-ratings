@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "b9bb74fe32a6a55476b3d9823251798b989209d5dd6a4887fdd6c2d72cf85dc7",
+  "key": "mirror/openrepos/ichthyosaurus/personal/main/s/sfos-patch-keyboard-for-long-phones-1.0.1-1.noarch.rpm",
+  "name": "sfos-patch-keyboard-for-long-phones",
+  "rpm_version": "1.0.1",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-keyboard-for-long-phones ]; then; /usr/sbin/patchmanager -u sfos-patch-keyboard-for-long-phones || true; "
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-keyboard-for-long-phones ]; then; /usr/sbin/patchmanager -u sfos-patch-keyboard-for-long-phones || true; "
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "7b453e0c1f376b3e4f90f6579ba2fdc497b13ff2dc572afbededc16e74e417b2",
+  "key": "chum/5.2_i486/i486/wget-debugsource-1.21.1-1.7.1.bso.i486.rpm",
+  "name": "wget-debugsource",
+  "rpm_version": "1.21.1",
+  "release": "1.7.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

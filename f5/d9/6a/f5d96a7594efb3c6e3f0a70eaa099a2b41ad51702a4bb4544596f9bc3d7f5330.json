@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "f5d96a7594efb3c6e3f0a70eaa099a2b41ad51702a4bb4544596f9bc3d7f5330",
+  "key": "mirror/openrepos/nephros/personal/main/y/youtube-dl-2021.04.01-1.0nep.noarch.rpm",
+  "name": "youtube-dl",
+  "rpm_version": "2021.04.01",
+  "release": "1.0nep",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

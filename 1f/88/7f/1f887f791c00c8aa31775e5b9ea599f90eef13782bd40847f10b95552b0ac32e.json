@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "1f887f791c00c8aa31775e5b9ea599f90eef13782bd40847f10b95552b0ac32e",
+  "key": "chum/5.1_i486/i486/opt-kf5-kio-debuginfo-5.116.0-1.9.1.bso.i486.rpm",
+  "name": "opt-kf5-kio-debuginfo",
+  "rpm_version": "5.116.0",
+  "release": "1.9.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

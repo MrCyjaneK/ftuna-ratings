@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "3162f53082d9f27c8907dd10604afc54c9bcae4855a4dcc8b0b9270c5abb0dc0",
+  "key": "mirror/openrepos/ichthyosaurus/personal/main/h/harbour-captains-log-4.1.1-1.i486.rpm",
+  "name": "harbour-captains-log",
+  "rpm_version": "4.1.1",
+  "release": "1",
+  "arch": "i486",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-captains-log.desktop",
+      "code": "sailjail.permission",
+      "detail": "Documents"
+    }
+  ]
+}

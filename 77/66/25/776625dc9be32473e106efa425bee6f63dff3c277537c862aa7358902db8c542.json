@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "776625dc9be32473e106efa425bee6f63dff3c277537c862aa7358902db8c542",
+  "key": "chum/5.1_armv7hl/armv7hl/rsc-c-0.2.2+sailfish.20260622194115.c62d191-1.4.1.bso.armv7hl.rpm",
+  "name": "rsc-c",
+  "rpm_version": "0.2.2+sailfish.20260622194115.c62d191",
+  "release": "1.4.1.bso",
+  "arch": "armv7hl",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/rsc-c.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/rsc-c.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/rsc-c.desktop",
+      "code": "sailjail.permission",
+      "detail": "Secrets"
+    }
+  ]
+}

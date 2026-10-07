@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "4787950932722063d746dfb165396308ed31912b20f48cdbb022578b510b65b3",
+  "key": "chum/5.1_aarch64/aarch64/castanets-0.2-1.1.1.bso.aarch64.rpm",
+  "name": "castanets",
+  "rpm_version": "0.2",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "verdict": 43,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/castanets.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=cd /usr/share/castanets; python3 -m venv venv; venv/bin/pip install -r requirements.txt"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=rm -rf /usr/share/castanets/venv/"
+    }
+  ]
+}

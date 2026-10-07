@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "b76cf9316d7117300d26515b28a5af74766a04bff7a07976bc5196dd2d93d701",
+  "key": "mirror/openrepos/theyosh/personal/main/z/zerotier-one-1.2.99-1.armv7hl.rpm",
+  "name": "zerotier-one",
+  "rpm_version": "1.2.99",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/bin/getent passwd zerotier-one || /usr/sbin/useradd -r -d /var/lib/zerotier-one -s /sbin/nologin zerotier-one"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl enable zerotier-one.service; systemctl start zerotier-one.service; sleep 5"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl stop zerotier-one.service; if [ $1 -eq 0 ] ; then; systemctl --no-reload disable zerotier-one.service \u003e /dev/null 2\u003e\u00261 || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl disable zerotier-one.service; systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :; if [ $1 -ge 1 ] ; then"
+    },
+    {
+      "module": "systemd",
+      "path": "/lib/systemd/system/zerotier-one.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/sbin/zerotier-one sandbox=none"
+    }
+  ]
+}

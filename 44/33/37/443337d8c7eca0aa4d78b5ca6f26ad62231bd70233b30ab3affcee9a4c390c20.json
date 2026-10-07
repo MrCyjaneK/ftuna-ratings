@@ -1,0 +1,98 @@
+{
+  "version": 6,
+  "sha256": "443337d8c7eca0aa4d78b5ca6f26ad62231bd70233b30ab3affcee9a4c390c20",
+  "key": "mirror/openrepos/nephros/personal/main/h/harbour-privoxy-3.0.29-12.armv7hl.rpm",
+  "name": "harbour-privoxy",
+  "rpm_version": "3.0.29",
+  "release": "12",
+  "arch": "armv7hl",
+  "verdict": 45,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-privoxy-config.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-privoxy-toggle.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=update-desktop-database /usr/share/applications \u0026\u003e /dev/null || :; systemctl enable harbour-privoxy.service \u003e/dev/null 2\u003e\u00261 ||:; ln -s /etc/pki/tls/cert.pem /us"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl --no-reload disable harbour-privoxy.service \u003e/dev/null 2\u003e\u00261 || :; systemctl stop harbour-privoxy.service \u003e/dev/null 2\u003e\u00261 ||:"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=update-desktop-database /usr/share/applications \u0026\u003e /dev/null || :; systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 ||:"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/harbour-privoxy.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/sbin/harbour-privoxy                  --pidfile ${PIDFILE}  --user ${PUSER}.inet /usr/share/harbour-privoxy/conf/config.sailfish sandbox=none"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "445c88eda2dcd9f7198dab4a6b481975b8ca25ff240705a6f595f1579d18aed7",
+  "key": "mirror/openrepos/lpr/personal/main/l/libhalf-2_5-25-2.5.2-0.armv7hl.rpm",
+  "name": "libHalf-2_5-25",
+  "rpm_version": "2.5.2",
+  "release": "0",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

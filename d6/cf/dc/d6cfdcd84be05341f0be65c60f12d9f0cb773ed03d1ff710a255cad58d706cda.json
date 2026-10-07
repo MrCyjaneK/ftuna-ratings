@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "d6cfdcd84be05341f0be65c60f12d9f0cb773ed03d1ff710a255cad58d706cda",
+  "key": "chum/5.2_i486/i486/filecase-debugsource-0.4.5-1.2.1.bso.i486.rpm",
+  "name": "filecase-debugsource",
+  "rpm_version": "0.4.5",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

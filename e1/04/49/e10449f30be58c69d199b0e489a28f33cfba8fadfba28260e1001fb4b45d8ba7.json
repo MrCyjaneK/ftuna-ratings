@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "e10449f30be58c69d199b0e489a28f33cfba8fadfba28260e1001fb4b45d8ba7",
+  "key": "mirror/openrepos/lpr_A7/personal/main/o/openssl-1.1.1lgit1-1.10.4.jolla_.i486.rpm",
+  "name": "openssl",
+  "rpm_version": "1.1.1l+git1",
+  "release": "1.10.4.jolla",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

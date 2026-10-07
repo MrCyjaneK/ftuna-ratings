@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "733b34a40079b2fab376cfe262b2a69b90e200bc5b386eb1120c260c4fffa95a",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-barcode-debugsource-1.0.58-1.17.1.bso.armv7hl.rpm",
+  "name": "harbour-barcode-debugsource",
+  "rpm_version": "1.0.58",
+  "release": "1.17.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

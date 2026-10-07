@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "474b284ce985d5dc173a711711962190832c69bc7f8f24c253cafc0e2c6b799a",
+  "key": "mirror/openrepos/lpr/personal/main/a/amber-qml-plugin-mpris-1.1.1.3-1.5.2.jolla_.i486.rpm",
+  "name": "amber-qml-plugin-mpris",
+  "rpm_version": "1.1.1.3",
+  "release": "1.5.2.jolla",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

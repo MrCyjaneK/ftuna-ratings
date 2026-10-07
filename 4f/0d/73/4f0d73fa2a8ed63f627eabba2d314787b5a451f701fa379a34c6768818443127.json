@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "4f0d73fa2a8ed63f627eabba2d314787b5a451f701fa379a34c6768818443127",
+  "key": "mirror/openrepos/ade/personal/main/l/libmpdclient2-2.22-0.i486.rpm",
+  "name": "libmpdclient2",
+  "rpm_version": "2.22",
+  "release": "0",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

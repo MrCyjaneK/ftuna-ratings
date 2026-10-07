@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "3e70eddcaf16f584ce436cfc062b0236f5f1cfe36804c1aef210078d93079a62",
+  "key": "mirror/openrepos/eekkelund/personal/main/h/harbour-tide-0.2.10-1.i486.rpm",
+  "name": "harbour-tide",
+  "rpm_version": "0.2.10",
+  "release": "1",
+  "arch": "i486",
+  "verdict": 35,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": 0
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-tide-root.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-tide.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user restart maliit-server.service; install -g nemo -o nemo -d /home/nemo/tIDE/; install -g nemo -o nemo -d /home/nemo/tIDE/Projects/"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/harbour-tide-root",
+      "code": "setuid",
+      "detail": "/usr/bin/harbour-tide-root mode 0104755 user root group root file"
+    }
+  ]
+}

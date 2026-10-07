@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "c6025272e0381758863cf1e8c6b3ed4c2852b05ab18da3b3be129b273c6f9f90",
+  "key": "mirror/openrepos/lpr/personal/main/g/gdk-pixbuf-2.42.12-2.armv7hl.rpm",
+  "name": "gdk-pixbuf",
+  "rpm_version": "2.42.12",
+  "release": "2",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%transfiletriggerin /usr/lib/gdk-pixbuf-2.0/2.10.0/loaders",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=gdk-pixbuf-query-loaders-32 --update-cache"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%transfiletriggerpostun /usr/lib/gdk-pixbuf-2.0/2.10.0/loaders",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=gdk-pixbuf-query-loaders-32 --update-cache"
+    }
+  ]
+}

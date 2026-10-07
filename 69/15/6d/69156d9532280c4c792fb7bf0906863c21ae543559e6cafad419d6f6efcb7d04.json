@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "69156d9532280c4c792fb7bf0906863c21ae543559e6cafad419d6f6efcb7d04",
+  "key": "chum/5.1_i486/i486/opt-kf5-kquickcharts-debuginfo-5.116.0-1.7.1.bso.i486.rpm",
+  "name": "opt-kf5-kquickcharts-debuginfo",
+  "rpm_version": "5.116.0",
+  "release": "1.7.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

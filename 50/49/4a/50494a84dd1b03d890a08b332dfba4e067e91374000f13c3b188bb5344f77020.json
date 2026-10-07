@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "50494a84dd1b03d890a08b332dfba4e067e91374000f13c3b188bb5344f77020",
+  "key": "mirror/openrepos/lpr/personal/main/p/polkit-0.105git8-1.armv7hl.rpm",
+  "name": "polkit",
+  "rpm_version": "0.105+git8",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 19,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 30
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": 15
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": 0
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/system-services/org.freedesktop.PolicyKit1.service",
+      "code": "dbus.service",
+      "detail": "scope=system user=root exec=/bin/false systemd=polkit.service"
+    },
+    {
+      "module": "hooks",
+      "path": "/etc/pam.d/polkit-1",
+      "code": "hooks.pam",
+      "detail": "mode 0100644 user root group root"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/pkexec",
+      "code": "setuid",
+      "detail": "/usr/bin/pkexec mode 0104755 user root group root file"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/libexec/polkit-1/polkit-agent-helper-1",
+      "code": "setuid",
+      "detail": "/usr/libexec/polkit-1/polkit-agent-helper-1 mode 0104755 user root group root file"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/polkit.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/libexec/polkit-1/polkitd --no-debug sandbox=none"
+    }
+  ]
+}

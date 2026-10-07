@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "ed3a47c67729a4005de41395c3a1ef6b2e393f7800a07a7f70e71f3239253865",
+  "key": "chum/5.1_armv7hl/armv7hl/opt-kf5-kconfig-core-5.116.0-1.7.1.bso.armv7hl.rpm",
+  "name": "opt-kf5-kconfig-core",
+  "rpm_version": "5.116.0",
+  "release": "1.7.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

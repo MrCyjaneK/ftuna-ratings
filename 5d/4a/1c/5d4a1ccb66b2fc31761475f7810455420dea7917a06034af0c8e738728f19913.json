@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "5d4a1ccb66b2fc31761475f7810455420dea7917a06034af0c8e738728f19913",
+  "key": "chum/5.1_aarch64/aarch64/fluidsynth-debugsource-2.4.2+git4-1.1.1.bso.aarch64.rpm",
+  "name": "fluidsynth-debugsource",
+  "rpm_version": "2.4.2+git4",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

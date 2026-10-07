@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "e8719bde370f7a4793bfc8ade4219e8e4be4d1c8c8eda3da71fe2cc41ceac541",
+  "key": "chum/5.1_aarch64/aarch64/dnsmasq-2.86-1.4.1.bso.aarch64.rpm",
+  "name": "dnsmasq",
+  "rpm_version": "2.86",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl --no-reload preset dnsmasq.service \u003e/dev/null 2\u003e\u00261 || :; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload disable --now dnsmasq.service \u003e /dev/null 2\u003e\u00261 || :; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -ge 1 ] ; then; systemctl try-restart dnsmasq.service \u003e/dev/null 2\u003e\u00261 || :; fi"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/dnsmasq.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/sbin/dnsmasq -k sandbox=none"
+    }
+  ]
+}

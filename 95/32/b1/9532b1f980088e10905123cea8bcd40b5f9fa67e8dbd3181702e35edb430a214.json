@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "9532b1f980088e10905123cea8bcd40b5f9fa67e8dbd3181702e35edb430a214",
+  "key": "chum/5.1_armv7hl/armv7hl/kconfigwidgets-debuginfo-5.34.0-1.1.1.bso.armv7hl.rpm",
+  "name": "kconfigwidgets-debuginfo",
+  "rpm_version": "5.34.0",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

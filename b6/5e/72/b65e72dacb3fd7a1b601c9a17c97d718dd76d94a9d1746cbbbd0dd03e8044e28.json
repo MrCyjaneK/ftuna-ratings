@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "b65e72dacb3fd7a1b601c9a17c97d718dd76d94a9d1746cbbbd0dd03e8044e28",
+  "key": "chum/5.1_aarch64/aarch64_ilp32/libmpeg2-0-64bit-0.5.1-1.13.1.bso.aarch64_ilp32.rpm",
+  "name": "libmpeg2-0-64bit",
+  "rpm_version": "0.5.1",
+  "release": "1.13.1.bso",
+  "arch": "aarch64_ilp32",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig"
+    }
+  ]
+}

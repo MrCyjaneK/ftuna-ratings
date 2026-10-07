@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "07d4c6b71c82ee9da713037313fb290c79f15c80dd12c6a334ea7821de37059a",
+  "key": "chum/5.1_i486/i486/inotify-tools-4.23.9.0+git1-1.4.1.bso.i486.rpm",
+  "name": "inotify-tools",
+  "rpm_version": "4.23.9.0+git1",
+  "release": "1.4.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

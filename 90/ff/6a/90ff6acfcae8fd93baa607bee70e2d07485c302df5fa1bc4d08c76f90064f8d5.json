@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "90ff6acfcae8fd93baa607bee70e2d07485c302df5fa1bc4d08c76f90064f8d5",
+  "key": "mirror/openrepos/lpr_next/personal/main/g/gstreamer1.0-plugins-ugly-1.10.3-1.armv7hl.rpm",
+  "name": "gstreamer1.0-plugins-ugly",
+  "rpm_version": "1.10.3",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "5e2798f39dcf6071a449c939122ee261d23a424d7aeb6d5140396ca7fcdf3c55",
+  "key": "chum/5.1_aarch64/aarch64/libsodium-devel-1.0.20+git1-1.3.1.bso.aarch64.rpm",
+  "name": "libsodium-devel",
+  "rpm_version": "1.0.20+git1",
+  "release": "1.3.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

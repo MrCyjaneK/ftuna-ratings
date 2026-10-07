@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "f2bd2380b5079540b60aa09e2de937f9254e5d5a76e81ec05b496cd3f5c4cbe8",
+  "key": "chum/5.1_armv7hl/armv7hl/socat-1.7.4.2.2-1.2.1.bso.armv7hl.rpm",
+  "name": "socat",
+  "rpm_version": "1.7.4.2.2",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

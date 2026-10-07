@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "ada50d67d96cc49b04ded887b501de75250dfed954046b62a10de9047d54635e",
+  "key": "chum/5.1_i486/i486/qmaplibregl-3.0.0+git2-1.8.1.bso.i486.rpm",
+  "name": "qmaplibregl",
+  "rpm_version": "3.0.0+git2",
+  "release": "1.8.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

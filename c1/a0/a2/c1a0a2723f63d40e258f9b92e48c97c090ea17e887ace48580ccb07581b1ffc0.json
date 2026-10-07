@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "c1a0a2723f63d40e258f9b92e48c97c090ea17e887ace48580ccb07581b1ffc0",
+  "key": "mirror/openrepos/JimKnopfIoT/personal/main/h/harbour-catchercatcher-0.1.2-1.aarch64.rpm",
+  "name": "harbour-catchercatcher",
+  "rpm_version": "0.1.2",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": 40,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": 25
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "polkit",
+      "path": "/usr/share/polkit-1/actions/catchercatcher.policy",
+      "code": "polkit.policy",
+      "detail": "catchercatcher.diag allow_active=yes"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-catchercatcher.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "cdfc0ecd4a91e5563f278cad003deac050e4eddaf06807d72dede44eae09494d",
+  "key": "chum/5.1_aarch64/aarch64/mapnik-debuginfo-3.1.0.1-1.6.2.bso.aarch64.rpm",
+  "name": "mapnik-debuginfo",
+  "rpm_version": "3.1.0.1",
+  "release": "1.6.2.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

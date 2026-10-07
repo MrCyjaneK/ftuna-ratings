@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "3374b0528bbb2bb7f4656007d301de9fbd352c6cd77581ca6b9efe5f0f79a46c",
+  "key": "mirror/openrepos/IlyaVysotsky/personal/main/y/yasailmusic-0.1-1.aarch64.rpm",
+  "name": "YaSailMusic",
+  "rpm_version": "0.1",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

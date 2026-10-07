@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "c92fa433c98dce14331ffeb4cf17d541573bf1cf10128f76b43dadad655d7949",
+  "key": "mirror/openrepos/DeSamurai/personal/main/l/libmpeg2-0.5.1-31.aarch64.rpm",
+  "name": "libmpeg2",
+  "rpm_version": "0.5.1",
+  "release": "31",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

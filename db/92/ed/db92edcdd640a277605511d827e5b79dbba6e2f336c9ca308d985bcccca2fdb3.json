@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "db92edcdd640a277605511d827e5b79dbba6e2f336c9ca308d985bcccca2fdb3",
+  "key": "mirror/openrepos/theyosh/personal/main/z/zerotier-one-1.4.6-1.armv7hl.rpm",
+  "name": "zerotier-one",
+  "rpm_version": "1.4.6",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/bin/getent passwd zerotier-one || /usr/sbin/useradd -r -d /var/lib/zerotier-one -s /sbin/nologin zerotier-one"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 1 ]; then; echo \"It's first time install\"; systemctl daemon-reload"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; echo \"Going to uninstall\"; systemctl stop zerotier-one"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl daemon-reload; systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :; if [ $1 -ge 1 ] ; then"
+    },
+    {
+      "module": "systemd",
+      "path": "/lib/systemd/system/zerotier-one.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/sbin/zerotier-one sandbox=none"
+    }
+  ]
+}

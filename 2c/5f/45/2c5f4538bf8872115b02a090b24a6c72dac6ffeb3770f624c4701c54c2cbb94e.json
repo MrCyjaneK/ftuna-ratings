@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "2c5f4538bf8872115b02a090b24a6c72dac6ffeb3770f624c4701c54c2cbb94e",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-foilauth-debugsource-1.1.20-1.21.1.bso.armv7hl.rpm",
+  "name": "harbour-foilauth-debugsource",
+  "rpm_version": "1.1.20",
+  "release": "1.21.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

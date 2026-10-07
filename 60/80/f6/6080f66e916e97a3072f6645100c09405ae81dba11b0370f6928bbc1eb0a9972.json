@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "6080f66e916e97a3072f6645100c09405ae81dba11b0370f6928bbc1eb0a9972",
+  "key": "chum/5.2_i486/noarch/youtube-dl-bash-completion-2025.11.26+git1-1.5.1.bso.noarch.rpm",
+  "name": "youtube-dl-bash-completion",
+  "rpm_version": "2025.11.26+git1",
+  "release": "1.5.1.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

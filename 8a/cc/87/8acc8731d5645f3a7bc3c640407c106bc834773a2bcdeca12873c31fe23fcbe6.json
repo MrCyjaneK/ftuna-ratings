@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "8acc8731d5645f3a7bc3c640407c106bc834773a2bcdeca12873c31fe23fcbe6",
+  "key": "mirror/openrepos/saidinesh5/personal/main/h/harbour-droplet-0.1master.20170129233749.1.g5e3b1a1-10.10.1.jolla_.armv7hl.rpm",
+  "name": "harbour-droplet",
+  "rpm_version": "0.1+master.20170129233749.1.g5e3b1a1",
+  "release": "10.10.1.jolla",
+  "arch": "armv7hl",
+  "verdict": 80,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 85
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/net.garageresearch.droplet.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/invoker -s --type=silica-qt5 /usr/bin/harbour-droplet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-droplet.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "3846926cef2a7cf901271252dd597bd3130bdf18b27f4162bb76c6fd34520b86",
+  "key": "repo/ftuna-oss/5.1.0.11/armv7hl/github.com/yast-client/harbour-yast-client/harbour-yast-client-debugsource-0.3.1-custom.armv7hl.rpm",
+  "name": "harbour-yast-client-debugsource",
+  "rpm_version": "0.3.1",
+  "release": "custom",
+  "arch": "armv7hl",
+  "verdict": 45,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": 45
+    }
+  ],
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/yast-client/harbour-yast-client",
+      "code": "ftuna.built",
+      "detail": "hooks"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/yast-client/harbour-yast-client",
+      "code": "ftuna.image",
+      "detail": "20-tdlib.sh\n21-tg_owt.sh\n22-rnnoise-model.sh\n23-rust.sh\n24-tlottie-cargo.sh"
+    }
+  ]
+}

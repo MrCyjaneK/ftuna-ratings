@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "9c1709c54172a3053c6a8ce89122f3383f1d0468fe23f7c53bd609684a3a54c3",
+  "key": "mirror/openrepos/tellihichem/personal/main/a/arabic-keyboard-plugin-1.0.0-1.noarch.rpm",
+  "name": "arabic-keyboard-plugin",
+  "rpm_version": "1.0.0",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=QMLDIR=/usr/share/maliit/plugins/com/jolla/qmldir; HWKBD=/usr/share/maliit/plugins/com/jolla/hwkbdlayouts/hwkbdlayouts.conf; if ! grep -qF \"ArabicContextAwareCo"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"0\" ]; then; QMLDIR=/usr/share/maliit/plugins/com/jolla/qmldir; HWKBD=/usr/share/maliit/plugins/com/jolla/hwkbdlayouts/hwkbdlayouts.conf"
+    }
+  ]
+}

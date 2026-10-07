@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "86f85c6fcc58c27193d4f6b7273a578f9c9bb8e30975fbb7f3a37321930e5c46",
+  "key": "chum/5.1_armv7hl/armv7hl/opt-qt5-qt3d-5.15.14-1.6.1.bso.armv7hl.rpm",
+  "name": "opt-qt5-qt3d",
+  "rpm_version": "5.15.14",
+  "release": "1.6.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

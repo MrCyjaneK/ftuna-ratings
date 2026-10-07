@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "fd558fc1604d99ca014f567e77bfd083ebca09f6b1de658fa41893d0cb0a9d6f",
+  "key": "chum/5.2_aarch64/aarch64/kitemviews-debuginfo-5.34.0-1.1.1.bso.aarch64.rpm",
+  "name": "kitemviews-debuginfo",
+  "rpm_version": "5.34.0",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

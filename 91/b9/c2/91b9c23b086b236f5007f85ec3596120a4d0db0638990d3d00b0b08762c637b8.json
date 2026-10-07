@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "91b9c23b086b236f5007f85ec3596120a4d0db0638990d3d00b0b08762c637b8",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-sailfin-debuginfo-0.6.0-1.1.1.bso.armv7hl.rpm",
+  "name": "harbour-sailfin-debuginfo",
+  "rpm_version": "0.6.0",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

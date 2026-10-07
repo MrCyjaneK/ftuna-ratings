@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "88e88f14ec487cfe0dcd21dfa3e4c48cd2decd3f311fae725bb713cc732a5656",
+  "key": "chum/5.2_aarch64/aarch64/geoclue2to1-0.1.1-1.1.1.bso.aarch64.rpm",
+  "name": "geoclue2to1",
+  "rpm_version": "0.1.1",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "verdict": 45,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 20
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/system.d/geoclue2to1.conf",
+      "code": "dbus.policy",
+      "detail": "context=default own"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"2\" ]; then; systemctl-user disable geoclue2to1 || true; systemctl-user stop geoclue2to1 || true"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || true; systemctl-user start geoclue2to1 || true; systemctl-user enable geoclue2to1 || true"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"0\" ]; then; systemctl-user disable geoclue2to1 || true; systemctl-user stop geoclue2to1 || true"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/geoclue2to1.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/geoclue2to1 sandbox=none"
+    }
+  ]
+}

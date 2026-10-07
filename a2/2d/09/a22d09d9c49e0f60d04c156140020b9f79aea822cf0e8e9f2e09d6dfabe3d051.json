@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "a22d09d9c49e0f60d04c156140020b9f79aea822cf0e8e9f2e09d6dfabe3d051",
+  "key": "chum/5.2_i486/i486/aria2-devel-1.37.0+git1-1.3.1.bso.i486.rpm",
+  "name": "aria2-devel",
+  "rpm_version": "1.37.0+git1",
+  "release": "1.3.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

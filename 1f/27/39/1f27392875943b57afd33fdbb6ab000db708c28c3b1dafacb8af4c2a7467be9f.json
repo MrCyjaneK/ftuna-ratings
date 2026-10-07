@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "1f27392875943b57afd33fdbb6ab000db708c28c3b1dafacb8af4c2a7467be9f",
+  "key": "mirror/openrepos/karin_zhao/personal/main/g/glquake2-0.3.3harmattan2-3.21r0.16.armv7hl.rpm",
+  "name": "glquake2",
+  "rpm_version": "0.3.3harmattan2",
+  "release": "3.21+r0.16",
+  "arch": "armv7hl",
+  "verdict": 53,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/glquake2.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=INSTALL_DIR=/usr/share/quake2; QUAKE2_HOME=/home/nemo/.quake2; BASEQ2=baseq2"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=QUAKE2_HOME=/home/nemo/.quake2; REF_SO=ref_*.so; GAME_SO=game*.so"
+    }
+  ]
+}

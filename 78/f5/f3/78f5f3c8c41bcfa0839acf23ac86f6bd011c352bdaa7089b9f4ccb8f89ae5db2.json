@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "78f5f3c8c41bcfa0839acf23ac86f6bd011c352bdaa7089b9f4ccb8f89ae5db2",
+  "key": "chum/5.1_aarch64/aarch64/mozjs-1.8.5-1.2.1.bso.aarch64.rpm",
+  "name": "mozjs",
+  "rpm_version": "1.8.5",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

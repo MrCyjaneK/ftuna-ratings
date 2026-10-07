@@ -1,0 +1,182 @@
+{
+  "version": 6,
+  "sha256": "f82fbfe7a621cfa2e625d00daa73e8ffda6a63fcb169f3ec2b663412d1110eca",
+  "key": "mirror/openrepos/dvratil/personal/main/h/harbour-passilic-0.3-1.armv7hl.rpm",
+  "name": "harbour-passilic",
+  "rpm_version": "0.3",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 38,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": 0
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-passilic.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/applications/harbour-passilic.desktop",
+      "code": "worldwrite",
+      "detail": "/usr/share/applications/harbour-passilic.desktop mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-passilic/qml/components/GlobalPullDownMenu.qml",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-passilic/qml/components/GlobalPullDownMenu.qml mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-passilic/qml/components/PasswordDelegate.qml",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-passilic/qml/components/PasswordDelegate.qml mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-passilic/qml/cover/CoverPage.qml",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-passilic/qml/cover/CoverPage.qml mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-passilic/qml/harbour-passilic.qml",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-passilic/qml/harbour-passilic.qml mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-passilic/qml/images/cover.png",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-passilic/qml/images/cover.png mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-passilic/qml/images/icon.png",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-passilic/qml/images/icon.png mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-passilic/qml/pages/AboutPage.qml",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-passilic/qml/pages/AboutPage.qml mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-passilic/qml/pages/PassphraseRequester.qml",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-passilic/qml/pages/PassphraseRequester.qml mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-passilic/qml/pages/PasswordListPage.qml",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-passilic/qml/pages/PasswordListPage.qml mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-passilic/qml/pages/SearchPage.qml",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-passilic/qml/pages/SearchPage.qml mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-passilic/qml/pages/SettingsPage.qml",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-passilic/qml/pages/SettingsPage.qml mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-passilic/translations/harbour-passilic-cs.qm",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-passilic/translations/harbour-passilic-cs.qm mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-passilic/translations/harbour-passilic-zh.qm",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-passilic/translations/harbour-passilic-zh.qm mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-passilic/translations/harbour-passilic.qm",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-passilic/translations/harbour-passilic.qm mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/icons/hicolor/108x108/apps/harbour-passilic.png",
+      "code": "worldwrite",
+      "detail": "/usr/share/icons/hicolor/108x108/apps/harbour-passilic.png mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/icons/hicolor/128x128/apps/harbour-passilic.png",
+      "code": "worldwrite",
+      "detail": "/usr/share/icons/hicolor/128x128/apps/harbour-passilic.png mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/icons/hicolor/172x172/apps/harbour-passilic.png",
+      "code": "worldwrite",
+      "detail": "/usr/share/icons/hicolor/172x172/apps/harbour-passilic.png mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/icons/hicolor/86x86/apps/harbour-passilic.png",
+      "code": "worldwrite",
+      "detail": "/usr/share/icons/hicolor/86x86/apps/harbour-passilic.png mode 0100666 user root group root file"
+    }
+  ]
+}

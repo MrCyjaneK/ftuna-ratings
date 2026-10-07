@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "8443c8e1c010fb87f033307bdd7b697a7ed404c555140eb73b38d12a6e599599",
+  "key": "chum/5.1_armv7hl/armv7hl/protobuf-c-devel-1.5.2-1.1.1.bso.armv7hl.rpm",
+  "name": "protobuf-c-devel",
+  "rpm_version": "1.5.2",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

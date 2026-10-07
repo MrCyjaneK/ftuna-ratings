@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "77249efb60cb9f1e31a4fd40968773e1f6737189749518e53d9a43d42fbd0c71",
+  "key": "mirror/openrepos/abranson/personal/main/s/sailfish-account-mastodon-1.0.0-1.armv7hl.rpm",
+  "name": "sailfish-account-mastodon",
+  "rpm_version": "1.0.0",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; /usr/libexec/manage-groups add account-mastodon || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; if [ \"$1\" -eq 0 ]; then; /usr/libexec/manage-groups remove account-mastodon || :"
+    }
+  ]
+}

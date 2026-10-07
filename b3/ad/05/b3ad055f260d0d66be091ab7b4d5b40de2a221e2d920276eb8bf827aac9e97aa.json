@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "b3ad055f260d0d66be091ab7b4d5b40de2a221e2d920276eb8bf827aac9e97aa",
+  "key": "chum/5.2_aarch64/aarch64/mapnik-3.1.0.1-1.6.2.bso.aarch64.rpm",
+  "name": "mapnik",
+  "rpm_version": "3.1.0.1",
+  "release": "1.6.2.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

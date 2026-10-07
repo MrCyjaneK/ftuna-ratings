@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "89e3fdb8001d573dd192bf6d0ccee22bb623373d23f928fc6171060dc0efc39e",
+  "key": "chum/5.2_i486/noarch/python3-tomli-w-1.0.0+git1-1.1.1.bso.noarch.rpm",
+  "name": "python3-tomli-w",
+  "rpm_version": "1.0.0+git1",
+  "release": "1.1.1.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

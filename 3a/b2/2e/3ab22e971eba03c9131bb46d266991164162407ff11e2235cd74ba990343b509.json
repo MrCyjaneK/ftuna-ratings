@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "3ab22e971eba03c9131bb46d266991164162407ff11e2235cd74ba990343b509",
+  "key": "mirror/openrepos/lpr_A7/personal/main/c/ca-certificates-2023.2.62_v7.0.401-1.6.1.jolla_.noarch.rpm",
+  "name": "ca-certificates",
+  "rpm_version": "2023.2.62_v7.0.401",
+  "release": "1.6.1.jolla",
+  "arch": "noarch",
+  "verdict": 15,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": 0
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -gt 1 ] ; then; if ! test -e /etc/pki/java/cacerts.rpmsave; then; if test -e /etc/pki/java/cacerts; then"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -x /usr/bin/ln ]; then; /usr/bin/ca-legacy install; /usr/bin/update-ca-trust"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%posttrans",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/bin/ca-legacy install; /usr/bin/update-ca-trust"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/etc/pki/ca-trust/source/ca-bundle.legacy.crt",
+      "code": "worldwrite",
+      "detail": "/etc/pki/ca-trust/source/ca-bundle.legacy.crt mode 0120777 user root group root exec"
+    }
+  ]
+}

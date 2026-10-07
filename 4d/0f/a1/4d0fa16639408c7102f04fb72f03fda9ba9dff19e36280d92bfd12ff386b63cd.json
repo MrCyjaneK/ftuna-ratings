@@ -1,0 +1,98 @@
+{
+  "version": 6,
+  "sha256": "4d0fa16639408c7102f04fb72f03fda9ba9dff19e36280d92bfd12ff386b63cd",
+  "key": "mirror/openrepos/lpr/personal/main/t/tracker-miners-2.3.5git3-1.3.5.jolla_.armv7hl.rpm",
+  "name": "tracker-miners",
+  "rpm_version": "2.3.5+git3",
+  "release": "1.3.5.jolla",
+  "arch": "armv7hl",
+  "verdict": 67,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 85
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.freedesktop.Tracker1.Miner.Extract.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/libexec/tracker-extract systemd=tracker-extract.service"
+    },
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.freedesktop.Tracker1.Miner.Files.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/libexec/tracker-miner-fs systemd=tracker-miner-fs.service"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; glib-compile-schemas   /usr/share/glib-2.0/schemas/; if [ \"$1\" -ge 1 ]; then"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; glib-compile-schemas   /usr/share/glib-2.0/schemas/; if [ \"$1\" -eq 0 ]; then"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/tracker-extract.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/libexec/tracker-extract sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/tracker-miner-fs.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/libexec/tracker-miner-fs sandbox=none"
+    }
+  ]
+}

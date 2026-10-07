@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "f94dcbf4472ced27e4324cb9aa52512f7e8371f304c5b9dc0a7ff65b4e9fafdd",
+  "key": "chum/5.2_aarch64/aarch64/harbour-contrac-tests-0.7.10-1.3.2.bso.aarch64.rpm",
+  "name": "harbour-contrac-tests",
+  "rpm_version": "0.7.10",
+  "release": "1.3.2.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "4cebacdd713fd0119e217828388ffd863dfa2cd701870661e4184efbeb33f4c7",
+  "key": "chum/5.1_armv7hl/noarch/harbour-cogs-0.12.0+git2-1.6.1.bso.noarch.rpm",
+  "name": "harbour-cogs",
+  "rpm_version": "0.12.0+git2",
+  "release": "1.6.1.bso",
+  "arch": "noarch",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-cogs.desktop",
+      "code": "sailjail.permission",
+      "detail": "Downloads"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-cogs.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    }
+  ]
+}

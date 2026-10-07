@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "c107b54336be61fb8be71fba963d6835a2f0d6575395ab4f3079c6b6ae62c979",
+  "key": "chum/5.2_armv7hl/armv7hl/kservice-debuginfo-5.34.0-1.1.1.bso.armv7hl.rpm",
+  "name": "kservice-debuginfo",
+  "rpm_version": "5.34.0",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

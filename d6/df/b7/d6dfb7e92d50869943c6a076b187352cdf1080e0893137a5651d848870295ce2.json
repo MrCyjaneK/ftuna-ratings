@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "d6dfb7e92d50869943c6a076b187352cdf1080e0893137a5651d848870295ce2",
+  "key": "mirror/openrepos/aviarus/personal/main/s/sailfish-components-webview-qt5-next153-pickers-1.7.0-2.aarch64.rpm",
+  "name": "sailfish-components-webview-qt5-next153-pickers",
+  "rpm_version": "1.7.0",
+  "release": "2",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

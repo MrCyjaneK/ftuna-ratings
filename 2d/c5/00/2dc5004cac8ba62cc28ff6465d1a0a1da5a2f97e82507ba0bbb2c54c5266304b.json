@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "2dc5004cac8ba62cc28ff6465d1a0a1da5a2f97e82507ba0bbb2c54c5266304b",
+  "key": "chum/5.2_i486/i486/harbour-sailgo-0.5.0-1.6.1.bso.i486.rpm",
+  "name": "harbour-sailgo",
+  "rpm_version": "0.5.0",
+  "release": "1.6.1.bso",
+  "arch": "i486",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

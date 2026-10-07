@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "b1504cbc4c823bc51f19c68797f249ec2cac4e8a125fe9b4ebca35d7b1c0b0a4",
+  "key": "chum/5.2_i486/i486/elinks-0.19.1-1.2.1.bso.i486.rpm",
+  "name": "elinks",
+  "rpm_version": "0.19.1",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

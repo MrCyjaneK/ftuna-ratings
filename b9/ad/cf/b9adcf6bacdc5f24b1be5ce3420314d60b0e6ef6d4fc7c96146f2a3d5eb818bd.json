@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "b9adcf6bacdc5f24b1be5ce3420314d60b0e6ef6d4fc7c96146f2a3d5eb818bd",
+  "key": "mirror/openrepos/ade/personal/main/u/upmpdcli-1.9.3-0.aarch64.rpm",
+  "name": "upmpdcli",
+  "rpm_version": "1.9.3",
+  "release": "0",
+  "arch": "aarch64",
+  "verdict": 38,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": 0
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%posttrans",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/upmpdcli.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/upmpdcli -c /etc/upmpdcli.conf sandbox=none"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/etc/upmpdcli.conf",
+      "code": "worldwrite",
+      "detail": "/etc/upmpdcli.conf mode 0100666 user root group root file"
+    }
+  ]
+}

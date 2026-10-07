@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "0666e179b6b4bd9b721a76afc9c1fc83959a59bd75be1c44a658badc46363596",
+  "key": "mirror/openrepos/lpr/personal/main/p/python3-wand-0.6.11-0.noarch.rpm",
+  "name": "python3-Wand",
+  "rpm_version": "0.6.11",
+  "release": "0",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

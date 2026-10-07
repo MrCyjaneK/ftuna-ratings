@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "d42ad17037b0c2dbae33f71c866d53e8da48b58cf8633df1ed636eca5ca2f987",
+  "key": "chum/5.1_armv7hl/armv7hl/opt-qt5-qtdeclarative-debuginfo-5.15.14+kde28-1.4.1.bso.armv7hl.rpm",
+  "name": "opt-qt5-qtdeclarative-debuginfo",
+  "rpm_version": "5.15.14+kde28",
+  "release": "1.4.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

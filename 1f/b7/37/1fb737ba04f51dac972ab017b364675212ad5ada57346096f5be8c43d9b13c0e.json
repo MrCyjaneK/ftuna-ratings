@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "1fb737ba04f51dac972ab017b364675212ad5ada57346096f5be8c43d9b13c0e",
+  "key": "mirror/openrepos/cornerman/personal/main/s/sailfishos-patch-no-home-carousel-0.0.2-1.noarch.rpm",
+  "name": "sailfishos-patch-no-home-carousel",
+  "rpm_version": "0.0.2",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-no-home-carousel ]; then; /usr/sbin/patchmanager -u sailfishos-patch-no-home-carousel || true; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-no-home-carousel ]; then; /usr/sbin/patchmanager -u sailfishos-patch-no-home-carousel || true; fi"
+    }
+  ]
+}

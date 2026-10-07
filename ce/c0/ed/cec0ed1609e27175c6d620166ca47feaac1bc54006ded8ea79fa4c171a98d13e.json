@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "cec0ed1609e27175c6d620166ca47feaac1bc54006ded8ea79fa4c171a98d13e",
+  "key": "mirror/openrepos/toxip/personal/main/d/disable-kalman-filter-inoir7-0.1-2.noarch.rpm",
+  "name": "disable-kalman-filter-inoir7",
+  "rpm_version": "0.1",
+  "release": "2",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /usr/share/patchmanager/patches/disable-kalman-filter-inoir7 ]; then; /usr/sbin/patchmanager -u disable-kalman-filter-inoir7 || true; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/sbin/patchmanager -u disable-kalman-filter-inoir7 || true"
+    }
+  ]
+}

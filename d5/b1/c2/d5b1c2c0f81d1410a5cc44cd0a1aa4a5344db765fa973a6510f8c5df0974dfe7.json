@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "d5b1c2c0f81d1410a5cc44cd0a1aa4a5344db765fa973a6510f8c5df0974dfe7",
+  "key": "mirror/openrepos/Mister_Magister/personal/main/m/musikilo-debuginfo-2.4.0-1.armv7hl.rpm",
+  "name": "musikilo-debuginfo",
+  "rpm_version": "2.4.0",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

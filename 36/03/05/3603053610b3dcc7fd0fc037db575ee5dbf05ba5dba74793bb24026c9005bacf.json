@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "3603053610b3dcc7fd0fc037db575ee5dbf05ba5dba74793bb24026c9005bacf",
+  "key": "mirror/openrepos/nobodyinperson/personal/main/p/python3-xdgspec-0.2.0-jolla.noarch.rpm",
+  "name": "python3-xdgspec",
+  "rpm_version": "0.2.0",
+  "release": "jolla",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

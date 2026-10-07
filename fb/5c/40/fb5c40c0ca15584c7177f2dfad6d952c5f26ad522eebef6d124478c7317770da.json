@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "fb5c40c0ca15584c7177f2dfad6d952c5f26ad522eebef6d124478c7317770da",
+  "key": "mirror/openrepos/glitchapp/personal/main/s/starphase-0.3.3-1.noarch.rpm",
+  "name": "starphase",
+  "rpm_version": "0.3.3",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/starphase.desktop",
+      "code": "sailjail.permission",
+      "detail": "Love2D"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/starphase.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    }
+  ]
+}

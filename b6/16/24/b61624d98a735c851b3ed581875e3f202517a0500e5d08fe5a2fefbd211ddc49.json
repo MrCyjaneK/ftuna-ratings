@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "b61624d98a735c851b3ed581875e3f202517a0500e5d08fe5a2fefbd211ddc49",
+  "key": "mirror/openrepos/DeSamurai/personal/main/x/x264-libs-0.164-16.aarch64.rpm",
+  "name": "x264-libs",
+  "rpm_version": "0.164",
+  "release": "16",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

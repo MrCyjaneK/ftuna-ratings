@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "614366d16ab1dbbfd14e0cf5808fd99fe7e720301db65b060ed339bb4ba1b291",
+  "key": "mirror/openrepos/arustg/personal/main/h/harbour-frome-0.2-0.i486.rpm",
+  "name": "harbour-frome",
+  "rpm_version": "0.2",
+  "release": "0",
+  "arch": "i486",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

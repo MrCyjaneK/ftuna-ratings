@@ -1,0 +1,122 @@
+{
+  "version": 6,
+  "sha256": "445cd0c5e8d6ce312ed5f4f5d73a51258c387efca9ddd4a1dea445e2099b3a40",
+  "key": "mirror/openrepos/datakurre/personal/main/h/harbour-pyletoh-0.6.2-10.33.1.jolla_.noarch.rpm",
+  "name": "harbour-pyletoh",
+  "rpm_version": "0.6.2",
+  "release": "10.33.1.jolla",
+  "arch": "noarch",
+  "verdict": 48,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": 0
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-pyletoh.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user --no-reload enable harbour-pyletoh\"; su nemo -c \"systemctl --user --no-reload enable harbour-pyletoh-eavesdropper\"; su nemo -c \"sys"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user stop harbour-pyletoh\"; su nemo -c \"systemctl --user stop harbour-pyletoh-eavesdropper\"; su nemo -c \"systemctl --user --no-reload di"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user daemon-reload\""
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-pyletoh-eavesdropper.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/python3 /usr/share/harbour-pyletoh/qml/eavesdropper.py sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-pyletoh.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/python3 /usr/share/harbour-pyletoh/qml/service.py sandbox=none"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-pyletoh/lib/PyTweening-1.0.1-py3.4.egg/EGG-INFO/PKG-INFO",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-pyletoh/lib/PyTweening-1.0.1-py3.4.egg/EGG-INFO/PKG-INFO mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-pyletoh/lib/PyTweening-1.0.1-py3.4.egg/EGG-INFO/SOURCES.txt",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-pyletoh/lib/PyTweening-1.0.1-py3.4.egg/EGG-INFO/SOURCES.txt mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-pyletoh/lib/PyTweening-1.0.1-py3.4.egg/EGG-INFO/dependency_links.txt",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-pyletoh/lib/PyTweening-1.0.1-py3.4.egg/EGG-INFO/dependency_links.txt mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-pyletoh/lib/PyTweening-1.0.1-py3.4.egg/EGG-INFO/top_level.txt",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-pyletoh/lib/PyTweening-1.0.1-py3.4.egg/EGG-INFO/top_level.txt mode 0100666 user root group root file"
+    }
+  ]
+}

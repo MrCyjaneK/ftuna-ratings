@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "43950935327d75a38cc00a22e5bf5ea8820452184cfedcf64e544ce302ba6d47",
+  "key": "chum/5.1_aarch64/aarch64/patchmanager-debugsource-3.2.12-1.4.1.bso.aarch64.rpm",
+  "name": "patchmanager-debugsource",
+  "rpm_version": "3.2.12",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "559b8a23bc8f8d87cea4867f4d886c9be1d300056923d385d46b7fce858bc052",
+  "key": "chum/5.2_aarch64/aarch64/libzmq-debuginfo-4.3.4-1.2.1.bso.aarch64.rpm",
+  "name": "libzmq-debuginfo",
+  "rpm_version": "4.3.4",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

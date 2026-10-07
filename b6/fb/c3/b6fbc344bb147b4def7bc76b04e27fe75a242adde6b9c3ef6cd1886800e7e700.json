@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "b6fbc344bb147b4def7bc76b04e27fe75a242adde6b9c3ef6cd1886800e7e700",
+  "key": "chum/5.2_armv7hl/armv7hl/mapnik-3.1.0.1-1.6.2.bso.armv7hl.rpm",
+  "name": "mapnik",
+  "rpm_version": "3.1.0.1",
+  "release": "1.6.2.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

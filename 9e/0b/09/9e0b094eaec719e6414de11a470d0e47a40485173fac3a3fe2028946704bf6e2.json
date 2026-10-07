@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "9e0b094eaec719e6414de11a470d0e47a40485173fac3a3fe2028946704bf6e2",
+  "key": "chum/5.1_aarch64/aarch64/harbour-ownkeepass-debuginfo-2.0.4-1.5.1.bso.aarch64.rpm",
+  "name": "harbour-ownkeepass-debuginfo",
+  "rpm_version": "2.0.4",
+  "release": "1.5.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

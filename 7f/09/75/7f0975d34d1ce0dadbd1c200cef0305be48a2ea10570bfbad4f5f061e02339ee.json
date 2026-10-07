@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "7f0975d34d1ce0dadbd1c200cef0305be48a2ea10570bfbad4f5f061e02339ee",
+  "key": "chum/5.2_armv7hl/armv7hl/plocate-debuginfo-1.1.23-1.1.1.bso.armv7hl.rpm",
+  "name": "plocate-debuginfo",
+  "rpm_version": "1.1.23",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

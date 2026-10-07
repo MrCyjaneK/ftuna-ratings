@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "1bf3ea85784adf6db9e6cbd0eb9993972837f254fc2e832eb16bbba1afdafd9c",
+  "key": "mirror/openrepos/SailFisherMan/personal/main/u/unofficial-jolla-language-pack-pt_br-2.2.0-0.0.1.noarch.rpm",
+  "name": "unofficial-jolla-language-pack-pt_br",
+  "rpm_version": "2.2.0",
+  "release": "0.0.1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/bin/localedef --force --replace --verbose -i pt_BR -f UTF-8 pt_BR.utf8; exit 0"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/bin/localedef --delete-from-archive pt_BR.utf8"
+    }
+  ]
+}

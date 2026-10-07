@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "e0b96384722fbca1ea7dde8b204e0e3bc3d349080b198dae1587a485b2b0a2bc",
+  "key": "mirror/openrepos/nephros/personal/main/o/openrepos-nethogs-0.8.6-1.armv7hl.rpm",
+  "name": "openrepos-nethogs",
+  "rpm_version": "0.8.6",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 53,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/openrepos-nethogs.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -x /usr/sbin/setcap ]; then; /usr/sbin/setcap cap_net_admin,cap_net_raw+pe /usr/sbin/nethogs || :; else"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/bin/update-desktop-database -q || :"
+    }
+  ]
+}

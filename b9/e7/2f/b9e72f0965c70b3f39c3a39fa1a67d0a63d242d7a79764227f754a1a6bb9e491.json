@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "b9e72f0965c70b3f39c3a39fa1a67d0a63d242d7a79764227f754a1a6bb9e491",
+  "key": "mirror/openrepos/lpr/personal/main/p/python3-typing_extensions-3.10.0.2-0.noarch.rpm",
+  "name": "python3-typing_extensions",
+  "rpm_version": "3.10.0.2",
+  "release": "0",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

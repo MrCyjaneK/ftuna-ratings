@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "35455fbab1c8a6953dc41ce73f2b7b0444c21b226dc7e6935284da585666ba12",
+  "key": "mirror/openrepos/sailfish_keyboard/personal/main/h/hunspell-lang-et_ee-0.1.0-1.noarch.rpm",
+  "name": "hunspell-lang-et_EE",
+  "rpm_version": "0.1.0",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

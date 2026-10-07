@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "67eb9deb9b2947fcc8207e8c890a061717f677bcc50ff32b4e6b4ce8ee1d37a1",
+  "key": "chum/5.2_armv7hl/noarch/install-history-0.11.5+git3-1.9.1.bso.noarch.rpm",
+  "name": "install-history",
+  "rpm_version": "0.11.5+git3",
+  "release": "1.9.1.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

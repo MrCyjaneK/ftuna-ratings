@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "4c0558d37f0602e57947ba6c54c24dc75074aa84bb8fc073fe2c1fef578bfd73",
+  "key": "chum/5.2_armv7hl/armv7hl/libmicrohttpd-devel-0.9.77-1.3.1.bso.armv7hl.rpm",
+  "name": "libmicrohttpd-devel",
+  "rpm_version": "0.9.77",
+  "release": "1.3.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

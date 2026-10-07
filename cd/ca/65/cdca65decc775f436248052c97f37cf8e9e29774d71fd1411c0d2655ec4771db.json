@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "cdca65decc775f436248052c97f37cf8e9e29774d71fd1411c0d2655ec4771db",
+  "key": "chum/5.1_armv7hl/armv7hl/libidn2-2.3.8+sfos.20260525144920.10ea077-1.1.1.bso.armv7hl.rpm",
+  "name": "libidn2",
+  "rpm_version": "2.3.8+sfos.20260525144920.10ea077",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": 80,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 80
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/sbin/ldconfig"
+    }
+  ]
+}

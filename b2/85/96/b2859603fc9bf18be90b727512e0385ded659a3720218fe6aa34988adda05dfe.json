@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "b2859603fc9bf18be90b727512e0385ded659a3720218fe6aa34988adda05dfe",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-phototools-0.4.0+master.20210726194605.2.ge6fb35d-1.1.1.bso.armv7hl.rpm",
+  "name": "harbour-phototools",
+  "rpm_version": "0.4.0+master.20210726194605.2.ge6fb35d",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": 75,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-phototools.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    }
+  ]
+}

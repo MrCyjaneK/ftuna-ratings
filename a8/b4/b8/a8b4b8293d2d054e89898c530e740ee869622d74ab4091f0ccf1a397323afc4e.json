@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "a8b4b8293d2d054e89898c530e740ee869622d74ab4091f0ccf1a397323afc4e",
+  "key": "mirror/openrepos/lpr/personal/main/l/libphonenumber-8.12.6git2-2.2.armv7hl.rpm",
+  "name": "libphonenumber",
+  "rpm_version": "8.12.6+git2",
+  "release": "2.2",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

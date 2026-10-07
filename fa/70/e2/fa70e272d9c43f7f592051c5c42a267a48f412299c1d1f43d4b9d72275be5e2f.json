@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "fa70e272d9c43f7f592051c5c42a267a48f412299c1d1f43d4b9d72275be5e2f",
+  "key": "chum/5.2_aarch64/aarch64/python3-fido2-debuginfo-0.9.1-1.1.1.bso.aarch64.rpm",
+  "name": "python3-fido2-debuginfo",
+  "rpm_version": "0.9.1",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

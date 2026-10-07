@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "4d06d0e0e74c247bb14301c99bb478e51f59da4551d23230887290e54c6f447a",
+  "key": "chum/5.1_armv7hl/armv7hl/opt-kf5-kauth-debugsource-5.116.0-1.6.1.bso.armv7hl.rpm",
+  "name": "opt-kf5-kauth-debugsource",
+  "rpm_version": "5.116.0",
+  "release": "1.6.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

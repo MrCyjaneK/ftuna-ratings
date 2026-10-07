@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "e74118b503248a0b9ea5568f78a41496b457eb4765513d55b182f08cb8d10a22",
+  "key": "mirror/openrepos/beidl/personal/main/i/isodrive-0.5.1-1.i486.rpm",
+  "name": "ISODrive",
+  "rpm_version": "0.5.1",
+  "release": "1",
+  "arch": "i486",
+  "verdict": 38,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": 0
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/ISODrive.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/ISODrive",
+      "code": "setuid",
+      "detail": "/usr/bin/ISODrive mode 0104755 user root group root file"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "ddff20f928fedd7085efcd24a63f0c99b08c62a8605d2ab91b40d2d472206dd9",
+  "key": "chum/5.1_aarch64/aarch64/waydroid-sensors-0.2.0+git2-1.2.1.bso.aarch64.rpm",
+  "name": "waydroid-sensors",
+  "rpm_version": "0.2.0+git2",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

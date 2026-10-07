@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "d012ceecdcab62a7e4dd75e4a8a43034a390cd81caf6da1d7ec9d6bdcda71a6d",
+  "key": "mirror/openrepos/sfos_ja/personal/main/j/jolla-kbd-flick-jp-1.0.0-1.noarch.rpm",
+  "name": "jolla-kbd-flick-jp",
+  "rpm_version": "1.0.0",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /usr/share/patchmanager/patches/jolla-kbd-flick-jp ]; then; /usr/sbin/patchmanager -u jolla-kbd-flick-jp || true; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/sbin/patchmanager -u jolla-kbd-flick-jp || true"
+    }
+  ]
+}

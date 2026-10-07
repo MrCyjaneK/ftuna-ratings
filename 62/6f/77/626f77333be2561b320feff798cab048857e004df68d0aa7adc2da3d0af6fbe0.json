@@ -1,0 +1,98 @@
+{
+  "version": 6,
+  "sha256": "626f77333be2561b320feff798cab048857e004df68d0aa7adc2da3d0af6fbe0",
+  "key": "chum/5.1_aarch64/aarch64/pcsc-lite-1.8.10-1.1.1.bso.aarch64.rpm",
+  "name": "pcsc-lite",
+  "rpm_version": "1.8.10",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=getent group scard \u003e/dev/null || groupadd -r scard; getent passwd scard \u003e/dev/null || useradd -r -g scard -s /usr/sbin/nologin -c \"Smart Card Reader\" -d /run/pc"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl --no-reload preset pcscd.service pcscd.socket \u003e/dev/null 2\u003e\u00261 || :; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; systemctl stop pcscd.service || :; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; systemctl daemon-reload || :; if [ $1 -ge 1 ] ; then"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/pcscd.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/sbin/pcscd --foreground --auto-exit sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/pcscd.socket",
+      "code": "systemd.socket",
+      "detail": "scope=system activates=pcscd.service"
+    }
+  ]
+}

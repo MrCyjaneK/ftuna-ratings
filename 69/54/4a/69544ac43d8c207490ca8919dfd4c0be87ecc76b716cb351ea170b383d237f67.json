@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "69544ac43d8c207490ca8919dfd4c0be87ecc76b716cb351ea170b383d237f67",
+  "key": "mirror/openrepos/nephros/personal/main/o/openrepos-olsrd-0.9.8-4.aarch64.rpm",
+  "name": "openrepos-olsrd",
+  "rpm_version": "0.9.8",
+  "release": "4",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

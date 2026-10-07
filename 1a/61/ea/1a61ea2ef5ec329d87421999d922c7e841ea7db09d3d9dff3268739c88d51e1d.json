@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "1a61ea2ef5ec329d87421999d922c7e841ea7db09d3d9dff3268739c88d51e1d",
+  "key": "chum/5.1_aarch64/aarch64/collectd-5.12.0.sfos.7-1.6.1.bso.aarch64.rpm",
+  "name": "collectd",
+  "rpm_version": "5.12.0.sfos.7",
+  "release": "1.6.1.bso",
+  "arch": "aarch64",
+  "verdict": 58,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user stop collectd.service\" || systemctl-user stop collectd.service || true; exit 0"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user daemon-reload\" || systemctl-user daemon-reload || true"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user disable collectd.service\" || systemctl-user disable collectd.service || true; su nemo -c \"systemctl --user stop collectd.service\" |"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user daemon-reload\" || systemctl-user daemon-reload || true"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/collectd.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/sbin/collectd sandbox=none"
+    }
+  ]
+}

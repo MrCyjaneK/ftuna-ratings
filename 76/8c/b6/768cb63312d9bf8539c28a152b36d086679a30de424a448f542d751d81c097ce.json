@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "768cb63312d9bf8539c28a152b36d086679a30de424a448f542d751d81c097ce",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-meecast-lockscreen-1.12.22-1.33.1.bso.armv7hl.rpm",
+  "name": "harbour-meecast-lockscreen",
+  "rpm_version": "1.12.22",
+  "release": "1.33.1.bso",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -f /usr/sbin/patchmanager ]; then; /usr/sbin/patchmanager -u sailfishos-lockscreen-meecast-patch || true; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=pkill -x meecastd; systemctl-user enable meecastd.service; systemctl-user start meecastd.service"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -f /usr/sbin/patchmanager ]; then; /usr/sbin/patchmanager -u sailfishos-lockscreen-meecast-patch || true; fi"
+    }
+  ]
+}

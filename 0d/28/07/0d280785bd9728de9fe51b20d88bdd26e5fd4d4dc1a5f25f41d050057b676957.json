@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "0d280785bd9728de9fe51b20d88bdd26e5fd4d4dc1a5f25f41d050057b676957",
+  "key": "chum/5.1_armv7hl/noarch/fluid-soundfont-gm-3.1-1.1.1.bso.noarch.rpm",
+  "name": "fluid-soundfont-gm",
+  "rpm_version": "3.1",
+  "release": "1.1.1.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

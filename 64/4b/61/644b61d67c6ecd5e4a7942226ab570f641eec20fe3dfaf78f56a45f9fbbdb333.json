@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "644b61d67c6ecd5e4a7942226ab570f641eec20fe3dfaf78f56a45f9fbbdb333",
+  "key": "chum/5.2_aarch64/aarch64/libqxmpp-debugsource-1.5-1.1.1.bso.aarch64.rpm",
+  "name": "libqxmpp-debugsource",
+  "rpm_version": "1.5",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "6a8010ff0fe2eb9c9924786bf7a729a0bfa28f17b680a828cb64cc46005988d3",
+  "key": "mirror/openrepos/jlaakkonen/personal/main/h/harbour-subsail-0.5-1.armv7hl.rpm",
+  "name": "harbour-subsail",
+  "rpm_version": "0.5",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-subsail.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-subsail.desktop",
+      "code": "sailjail.permission",
+      "detail": "MediaIndexing"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-subsail.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia"
+    }
+  ]
+}

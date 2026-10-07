@@ -1,0 +1,104 @@
+{
+  "version": 6,
+  "sha256": "34384300732f0bca1d121f17e9f4058e9bbce8b0e75d31b0e10540aacf23cc65",
+  "key": "mirror/openrepos/ade/personal/main/h/harbour-systemmonitor-0.6-47.armv7hl.rpm",
+  "name": "harbour-systemmonitor",
+  "rpm_version": "0.6",
+  "release": "47",
+  "arch": "armv7hl",
+  "verdict": 63,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-systemmonitor.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user stop harbour-systemmonitord || true"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || true; systemctl-user enable harbour-systemmonitord || true; systemctl-user start harbour-systemmonitord || true"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user disable harbour-systemmonitord || true; systemctl-user stop harbour-systemmonitord || true"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || true"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%posttrans",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || true; systemctl-user enable harbour-systemmonitord || true; systemctl-user start harbour-systemmonitord || true"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-systemmonitord.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-systemmonitord sandbox=none"
+    }
+  ]
+}

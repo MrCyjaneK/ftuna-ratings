@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "8a1ce040cfc6a5da4debb27c3ad3115dbdd6be17a75bdb3183bb99ee9e800164",
+  "key": "mirror/openrepos/Bobsikus/personal/main/h/harbour-webpirate_test-debugsource-2.4-1.i486.rpm",
+  "name": "harbour-webpirate_test-debugsource",
+  "rpm_version": "2.4",
+  "release": "1",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "28ff7ceb2d4f6a15a760cd1d24d74a6290fa4b6edb3ed5f6a9a11451b293d638",
+  "key": "mirror/openrepos/aviarus/personal/main/q/qtmozembed-qt5-next153-1.56.0-2.armv7hl.rpm",
+  "name": "qtmozembed-qt5-next153",
+  "rpm_version": "1.56.0",
+  "release": "2",
+  "arch": "armv7hl",
+  "verdict": 55,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": 55
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "setuid",
+      "path": "/usr/share/licenses/qtmozembed-qt5-next153-1.56.0",
+      "code": "setgid",
+      "detail": "/usr/share/licenses/qtmozembed-qt5-next153-1.56.0 mode 042755 user root group root dir"
+    }
+  ]
+}

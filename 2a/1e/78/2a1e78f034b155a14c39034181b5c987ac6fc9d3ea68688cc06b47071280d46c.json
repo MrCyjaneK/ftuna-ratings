@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "2a1e78f034b155a14c39034181b5c987ac6fc9d3ea68688cc06b47071280d46c",
+  "key": "mirror/openrepos/Rikujolla/personal/main/h/harbour-shakkikello-0.9.6-1.i486.rpm",
+  "name": "harbour-shakkikello",
+  "rpm_version": "0.9.6",
+  "release": "1",
+  "arch": "i486",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-shakkikello.desktop",
+      "code": "sailjail.permission",
+      "detail": "Documents"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-shakkikello.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "68fd02a5523a6520a381cee5e46c22c64965a6464f1dd4abd3c21a82608e7915",
+  "key": "chum/5.1_armv7hl/armv7hl/davfs2-1.7.0+git4-1.7.1.bso.armv7hl.rpm",
+  "name": "davfs2",
+  "rpm_version": "1.7.0+git4",
+  "release": "1.7.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

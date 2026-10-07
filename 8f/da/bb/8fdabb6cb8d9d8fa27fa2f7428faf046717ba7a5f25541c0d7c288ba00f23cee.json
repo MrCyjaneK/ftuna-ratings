@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "8fdabb6cb8d9d8fa27fa2f7428faf046717ba7a5f25541c0d7c288ba00f23cee",
+  "key": "mirror/openrepos/mavipasi/personal/main/e/easytouristv5-0.1-1.i586.rpm",
+  "name": "EasyTouristV5",
+  "rpm_version": "0.1",
+  "release": "1",
+  "arch": "i586",
+  "verdict": 75,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/EasyTouristV5.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    }
+  ]
+}

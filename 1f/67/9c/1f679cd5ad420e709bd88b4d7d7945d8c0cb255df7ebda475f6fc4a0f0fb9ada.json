@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "1f679cd5ad420e709bd88b4d7d7945d8c0cb255df7ebda475f6fc4a0f0fb9ada",
+  "key": "mirror/openrepos/black_sheep_dev/personal/main/h/harbour-hafenschau-0.5.2-1.i486.rpm",
+  "name": "harbour-hafenschau",
+  "rpm_version": "0.5.2",
+  "release": "1",
+  "arch": "i486",
+  "verdict": 80,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 85
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/harbour.hafenschau.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/invoker --type=silica-qt5 -s /usr/bin/harbour-hafenschau"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-hafenschau.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    }
+  ]
+}

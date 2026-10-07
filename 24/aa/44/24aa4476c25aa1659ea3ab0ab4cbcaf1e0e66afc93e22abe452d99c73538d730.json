@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "24aa4476c25aa1659ea3ab0ab4cbcaf1e0e66afc93e22abe452d99c73538d730",
+  "key": "chum/5.2_aarch64/aarch64_ilp32/lame-debuginfo-3.100-1.1.1.bso.aarch64_ilp32.rpm",
+  "name": "lame-debuginfo",
+  "rpm_version": "3.100",
+  "release": "1.1.1.bso",
+  "arch": "aarch64_ilp32",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

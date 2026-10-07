@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "635cf3db4279d5e94fcc780a75af6e2e8e605b2dbc0d62b6918cd4b01fe9e5a4",
+  "key": "mirror/openrepos/alina/personal/main/s/sailfishos-patch-clock-weekstart-sat-0.1-1.noarch.rpm",
+  "name": "sailfishos-patch-clock-weekstart-sat",
+  "rpm_version": "0.1",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/alina/patches/sailfishos-patch-clock-weekstart-sat ]; then; /usr/sbin/patchmanager -u sailfishos-patch-clock-weekstart-sat || true"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/alina/patches/sailfishos-patch-clock-weekstart-sat ]; then; /usr/sbin/patchmanager -u sailfishos-patch-clock-weekstart-sat || true"
+    }
+  ]
+}

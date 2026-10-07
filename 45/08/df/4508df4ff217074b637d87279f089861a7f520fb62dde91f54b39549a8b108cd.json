@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "4508df4ff217074b637d87279f089861a7f520fb62dde91f54b39549a8b108cd",
+  "key": "chum/5.1_aarch64/aarch64/opt-qt5-qtsvg-5.15.14+kde5-1.4.1.bso.aarch64.rpm",
+  "name": "opt-qt5-qtsvg",
+  "rpm_version": "5.15.14+kde5",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

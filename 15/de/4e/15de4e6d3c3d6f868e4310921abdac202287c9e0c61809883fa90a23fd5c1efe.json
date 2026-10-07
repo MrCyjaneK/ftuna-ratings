@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "15de4e6d3c3d6f868e4310921abdac202287c9e0c61809883fa90a23fd5c1efe",
+  "key": "mirror/openrepos/Carolus/personal/main/h/harbour-podcatcher-debuginfo-1.9.5-1.armv7hl.rpm",
+  "name": "harbour-podcatcher-debuginfo",
+  "rpm_version": "1.9.5",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,104 @@
+{
+  "version": 6,
+  "sha256": "f2c99148e072e981862c179e3dc35f79c586f5db0df060e32597c580c1828de6",
+  "key": "mirror/openrepos/planetos_store/personal/main/h/harbour-audiocut-1.4.2-1.noarch.rpm",
+  "name": "harbour-audiocut",
+  "rpm_version": "1.4.2",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-audiocut.desktop",
+      "code": "sailjail.permission",
+      "detail": "Camera"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-audiocut.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-audiocut.desktop",
+      "code": "sailjail.permission",
+      "detail": "Microphone"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-audiocut.desktop",
+      "code": "sailjail.permission",
+      "detail": "MediaIndexing"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-audiocut.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-audiocut.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-audiocut.desktop",
+      "code": "sailjail.permission",
+      "detail": "Compatibility"
+    }
+  ]
+}

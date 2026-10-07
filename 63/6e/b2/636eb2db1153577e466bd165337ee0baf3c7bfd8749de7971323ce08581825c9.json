@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "636eb2db1153577e466bd165337ee0baf3c7bfd8749de7971323ce08581825c9",
+  "key": "chum/5.1_i486/i486/harbour-fillari-debuginfo-1.0.11-1.7.1.bso.i486.rpm",
+  "name": "harbour-fillari-debuginfo",
+  "rpm_version": "1.0.11",
+  "release": "1.7.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

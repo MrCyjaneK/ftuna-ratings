@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "740cdfadbe749dfb70dce2d8a74499a055704174abf873095926a4b57979e0c2",
+  "key": "mirror/openrepos/sail_ffmpg/personal/main/f/ffmpeg-5.1.2git2-2.aarch64.rpm",
+  "name": "ffmpeg",
+  "rpm_version": "5.1.2+git2",
+  "release": "2",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "90ceb53b1e666d5572b05329f554653a539d23ef38cc6cf802987ac5a0ecbdaf",
+  "key": "mirror/openrepos/birdzhang/personal/main/g/gost-2.4-4.armv7hl.rpm",
+  "name": "gost",
+  "rpm_version": "2.4",
+  "release": "4",
+  "arch": "armv7hl",
+  "verdict": 85,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/gost.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/gost -C /home/nemo/.config/gost/gost.json sandbox=none"
+    }
+  ]
+}

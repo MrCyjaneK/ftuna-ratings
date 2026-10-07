@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "70ea9febf4299242d2ae20bbcbb2dde4ad6e5baf6f9a8344418272a1be65edc2",
+  "key": "mirror/openrepos/lpr/personal/main/l/libvpx-doc-1.15.2-1.armv7hl.rpm",
+  "name": "libvpx-doc",
+  "rpm_version": "1.15.2",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

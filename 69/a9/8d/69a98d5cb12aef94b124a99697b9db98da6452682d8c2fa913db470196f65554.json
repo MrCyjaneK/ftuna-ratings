@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "69a98d5cb12aef94b124a99697b9db98da6452682d8c2fa913db470196f65554",
+  "key": "mirror/openrepos/abertschi/personal/main/h/headless-keyboard-0.3-1.armv7hl.rpm",
+  "name": "headless-keyboard",
+  "rpm_version": "0.3",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 63,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 85
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/headless-keyboard.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=nemo exec=/usr/bin/invoker --type=generic -s /usr/bin/headless_keyboard.py"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/headless-keyboard.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=chmod 755 /usr/bin/headless_keyboard.py; patch -p0 \u003c /usr/share/maliit/plugins/com/jolla/custom_headless/KeyboardBase.patch"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=patch -R -p0 \u003c /usr/share/maliit/plugins/com/jolla/custom_headless/KeyboardBase.patch"
+    }
+  ]
+}

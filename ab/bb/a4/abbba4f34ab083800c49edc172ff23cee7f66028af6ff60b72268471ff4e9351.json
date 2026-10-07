@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "abbba4f34ab083800c49edc172ff23cee7f66028af6ff60b72268471ff4e9351",
+  "key": "mirror/openrepos/sailfish_keyboard/personal/main/p/presage-lang-sv_se-0.2.0-1.noarch.rpm",
+  "name": "presage-lang-sv_SE",
+  "rpm_version": "0.2.0",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

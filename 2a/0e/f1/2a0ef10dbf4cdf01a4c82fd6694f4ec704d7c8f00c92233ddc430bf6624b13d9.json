@@ -1,0 +1,24 @@
+{
+  "version": 6,
+  "sha256": "2a0ef10dbf4cdf01a4c82fd6694f4ec704d7c8f00c92233ddc430bf6624b13d9",
+  "key": "mirror/openrepos/jaimeMF/personal/main/n/neofetch-7.1.0-0.aarch64.rpm",
+  "name": "neofetch",
+  "rpm_version": "7.1.0",
+  "release": "0",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "rpm",
+      "path": "mirror/openrepos/jaimeMF/personal/main/n/neofetch-7.1.0-0.aarch64.rpm",
+      "code": "rpm.read",
+      "detail": "No such entry 1037"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "25f451051891fefa5c77fd6770e77571b74aff10a4437a7433946132490d8227",
+  "key": "mirror/openrepos/lpr_A7/personal/main/l/libmpg123-1.26.1-2.0.0.armv7hl.rpm",
+  "name": "libmpg123",
+  "rpm_version": "1.26.1",
+  "release": "2.0.0",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

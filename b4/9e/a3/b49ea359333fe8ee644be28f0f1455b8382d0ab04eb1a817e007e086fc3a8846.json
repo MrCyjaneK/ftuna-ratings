@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "b49ea359333fe8ee644be28f0f1455b8382d0ab04eb1a817e007e086fc3a8846",
+  "key": "mirror/openrepos/ade/personal/main/h/harbour-solarsystem-2.2-1.aarch64.rpm",
+  "name": "harbour-solarsystem",
+  "rpm_version": "2.2",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-solarsystem.desktop",
+      "code": "sailjail.permission",
+      "detail": "Location"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "63c31152f8ef357a3e45c07f082dda505fdf5db309872ea1de4a5e1be59b728f",
+  "key": "mirror/openrepos/kravich/personal/main/d/deadbeef-0.7.2-10.22.1.jolla_.armv7hl.rpm",
+  "name": "deadbeef",
+  "rpm_version": "0.7.2",
+  "release": "10.22.1.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

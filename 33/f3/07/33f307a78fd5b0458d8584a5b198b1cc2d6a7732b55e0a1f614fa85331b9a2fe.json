@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "33f307a78fd5b0458d8584a5b198b1cc2d6a7732b55e0a1f614fa85331b9a2fe",
+  "key": "mirror/openrepos/halftux/personal/main/t/ti85emu-0.0.9-16.aarch64.rpm",
+  "name": "ti85emu",
+  "rpm_version": "0.0.9",
+  "release": "16",
+  "arch": "aarch64",
+  "verdict": 65,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/ti85emu.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/share/ti85emu/ti85emu_inst.sh"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; if [ -d \"/usr/share/ti85emu\" ]; then; rm -rf /usr/share/ti85emu"
+    }
+  ]
+}

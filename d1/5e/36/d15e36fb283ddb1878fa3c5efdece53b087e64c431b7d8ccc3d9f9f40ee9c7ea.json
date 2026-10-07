@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "d15e36fb283ddb1878fa3c5efdece53b087e64c431b7d8ccc3d9f9f40ee9c7ea",
+  "key": "mirror/openrepos/lpr/personal/main/g/gstreamer1.0-plugins-bad-x265-1.18.5git2-2.aarch64.rpm",
+  "name": "gstreamer1.0-plugins-bad-x265",
+  "rpm_version": "1.18.5+git2",
+  "release": "2",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

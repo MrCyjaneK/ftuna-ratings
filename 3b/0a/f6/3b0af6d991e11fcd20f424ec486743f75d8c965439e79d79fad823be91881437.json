@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "3b0af6d991e11fcd20f424ec486743f75d8c965439e79d79fad823be91881437",
+  "key": "chum/5.1_aarch64/noarch/rsnapshot-sailfish-config-1.5.1+git1-1.2.2.bso.noarch.rpm",
+  "name": "rsnapshot-sailfish-config",
+  "rpm_version": "1.5.1+git1",
+  "release": "1.2.2.bso",
+  "arch": "noarch",
+  "verdict": 85,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/rsnapshot-user-daily.timer",
+      "code": "systemd.timer",
+      "detail": "scope=user activates=rsnapshot-user@daily.service"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/rsnapshot-user-monthly.timer",
+      "code": "systemd.timer",
+      "detail": "scope=user activates=rsnapshot-user@monthly.service"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/rsnapshot-user-weekly.timer",
+      "code": "systemd.timer",
+      "detail": "scope=user activates=rsnapshot-user@weekly.service"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/rsnapshot-user@.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/rsnapshot -c ${RS_CONFIG_FILE} %I sandbox=ProtectSystem=strict,PrivateTmp,NoNewPrivileges"
+    }
+  ]
+}

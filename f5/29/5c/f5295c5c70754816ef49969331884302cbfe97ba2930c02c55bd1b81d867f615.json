@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "f5295c5c70754816ef49969331884302cbfe97ba2930c02c55bd1b81d867f615",
+  "key": "mirror/openrepos/V10lator/personal/main/e/exfat-nofuse-1.2.10-0.armv7hl.rpm",
+  "name": "exfat-nofuse",
+  "rpm_version": "1.2.10",
+  "release": "0",
+  "arch": "armv7hl",
+  "verdict": 20,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": 10
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "hooks",
+      "path": "/lib/modules/3.4.106.20150416.1/extra/fs/exfat/exfat.ko",
+      "code": "hooks.module",
+      "detail": "mode 0100744 user root group root"
+    },
+    {
+      "module": "hooks",
+      "path": "/lib/modules/3.4.108.20150901.1/extra/fs/exfat/exfat.ko",
+      "code": "hooks.module",
+      "detail": "mode 0100744 user root group root"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=depmod -a"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; rm -rf /lib/modules/3.4.106.20150416.1/extra/fs/exfat"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "21c8aef4c1b29b9cb18a9c785ed41a1f1887459b5ca55ada34428a7c3a0ed415",
+  "key": "mirror/openrepos/lpr/personal/main/b/boost-chrono-1.66.0git2-1.2.6.jolla_.armv7hl.rpm",
+  "name": "boost-chrono",
+  "rpm_version": "1.66.0+git2",
+  "release": "1.2.6.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

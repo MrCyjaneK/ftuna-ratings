@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "723701edcbc8ea71d7e405a214e3bfbec15a2855c42121e0574bf69a966365d3",
+  "key": "chum/5.1_aarch64/aarch64/pcsc-lite-devel-1.8.10-1.1.1.bso.aarch64.rpm",
+  "name": "pcsc-lite-devel",
+  "rpm_version": "1.8.10",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

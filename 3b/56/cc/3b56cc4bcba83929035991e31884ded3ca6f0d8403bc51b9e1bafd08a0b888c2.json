@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "3b56cc4bcba83929035991e31884ded3ca6f0d8403bc51b9e1bafd08a0b888c2",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-sailmines-debugsource-0.8+main.20260829104512.1.g84ec3b8-1.1.1.bso.armv7hl.rpm",
+  "name": "harbour-sailmines-debugsource",
+  "rpm_version": "0.8+main.20260829104512.1.g84ec3b8",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

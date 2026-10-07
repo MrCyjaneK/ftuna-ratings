@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "700f01187f6a9d01b5df1311d5a036a36c48e5b91e80e9d55564f0ed1ebbf60e",
+  "key": "chum/5.2_aarch64/aarch64/mpv-libs-0.35.1+git1-1.1.2.bso.aarch64.rpm",
+  "name": "mpv-libs",
+  "rpm_version": "0.35.1+git1",
+  "release": "1.1.2.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

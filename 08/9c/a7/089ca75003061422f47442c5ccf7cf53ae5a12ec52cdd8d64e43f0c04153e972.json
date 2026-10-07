@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "089ca75003061422f47442c5ccf7cf53ae5a12ec52cdd8d64e43f0c04153e972",
+  "key": "mirror/openrepos/aviarus/personal/main/h/harbour-briar-0.42.0-1.armv7hl.rpm",
+  "name": "harbour-briar",
+  "rpm_version": "0.42.0",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 64,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 85
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/harbour.harbour-briar.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/harbour-briar"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-briar-share.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-briar.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=for d in /proc/[0-9]*; do; [ -r \"$d/cmdline\" ] || continue; erstes=$(tr '\\0' '\\n' \u003c \"$d/cmdline\" 2\u003e/dev/null | head -n 1)"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-briar-briard.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-briar-briard sandbox=none"
+    }
+  ]
+}

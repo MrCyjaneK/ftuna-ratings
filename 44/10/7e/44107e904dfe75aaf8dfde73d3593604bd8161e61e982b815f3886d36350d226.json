@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "44107e904dfe75aaf8dfde73d3593604bd8161e61e982b815f3886d36350d226",
+  "key": "mirror/openrepos/Kabouik/personal/main/k/kakoune-2020.01.16master8b36969-2.armv7hl.rpm",
+  "name": "kakoune",
+  "rpm_version": "2020.01.16+master8b36969",
+  "release": "2",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

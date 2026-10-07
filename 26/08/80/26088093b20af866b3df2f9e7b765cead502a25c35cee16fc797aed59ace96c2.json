@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "26088093b20af866b3df2f9e7b765cead502a25c35cee16fc797aed59ace96c2",
+  "key": "chum/5.1_i486/i486/opt-kf5-karchive-5.116.0-1.7.1.bso.i486.rpm",
+  "name": "opt-kf5-karchive",
+  "rpm_version": "5.116.0",
+  "release": "1.7.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "d3f60a3b2a6063ec93538ec2e246012bd5922b28d93bb5ef0e52e2b12036a07d",
+  "key": "mirror/openrepos/ade/personal/main/l/libnpupnp13-6.3.0-0.i486.rpm",
+  "name": "libnpupnp13",
+  "rpm_version": "6.3.0",
+  "release": "0",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

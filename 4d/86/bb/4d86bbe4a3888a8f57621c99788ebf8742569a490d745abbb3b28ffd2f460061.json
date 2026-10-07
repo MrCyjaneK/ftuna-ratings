@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "4d86bbe4a3888a8f57621c99788ebf8742569a490d745abbb3b28ffd2f460061",
+  "key": "mirror/openrepos/foolsbazar/personal/main/s/sailfish-ease-vkb-0.1.4-1.noarch.rpm",
+  "name": "sailfish-ease-vkb",
+  "rpm_version": "0.1.4",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 1 ]; then; /usr/sbin/patchmanager -u sailfish-ease-vkb || true; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/sbin/patchmanager -a sailfish-ease-vkb || true; systemctl-user restart maliit-server.service"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; /usr/sbin/patchmanager -u sailfish-ease-vkb || true; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user restart maliit-server.service"
+    }
+  ]
+}

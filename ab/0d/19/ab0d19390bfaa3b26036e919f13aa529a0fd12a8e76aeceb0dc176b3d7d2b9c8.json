@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "ab0d19390bfaa3b26036e919f13aa529a0fd12a8e76aeceb0dc176b3d7d2b9c8",
+  "key": "mirror/openrepos/Rikudou_Sennin/personal/main/n/nodejs-22.21.1-1.aarch64.rpm",
+  "name": "nodejs",
+  "rpm_version": "22.21.1",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

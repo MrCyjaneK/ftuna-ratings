@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "dd69b4e1f7143661b01a3d78acb4559b2160810f4962fee151f6e2b7d87fb9b1",
+  "key": "mirror/openrepos/kan/personal/main/d/dnscrypt-proxy-blocklist-2.1.12-250607.noarch.rpm",
+  "name": "dnscrypt-proxy-blocklist",
+  "rpm_version": "2.1.12",
+  "release": "250607",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=cp -T -r /var/lib/dnscrypt-proxy/dnscrypt-proxy.toml.dnsmasq /var/lib/dnscrypt-proxy/dnscrypt-proxy.toml.noblock; \\; rpm -ef dnscrypt-proxy-blocklist-2.1.4-1.no"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -gt 1 ] ; then; systemctl restart dnscrypt-proxy; else"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -gt 1 ] ; then; systemctl is-active --quiet dnscrypt-proxy; if [ $? -eq 0 ] \u0026\u0026 [ ! -f /var/lib/dnscrypt-proxy-blocklist/dnscrypt-blocklist-names.txt ]; "
+    }
+  ]
+}

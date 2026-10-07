@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "1a15616c01e6a32406121f7ec74e44031425706d921591e1d1f4a5eda8a2fc53",
+  "key": "mirror/openrepos/rubdos/personal/main/u/urbackup-client-2.4.11.0-2.armv7hl.rpm",
+  "name": "urbackup-client",
+  "rpm_version": "2.4.11.0",
+  "release": "2",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=getent group urbackup \u003e /dev/null || groupadd -r urbackup; :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/urbackup-client.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/sbin/urbackupclientbackend --config /etc/sysconfig/urbackupclient --no-consoletime sandbox=none"
+    }
+  ]
+}

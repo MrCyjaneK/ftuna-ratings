@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "fc8a5eba548e042a8bf3c3e6aea3e39f7bf5de42127cac10387b3edeb6c85267",
+  "key": "chum/5.1_armv7hl/armv7hl/monit-debuginfo-5.34.0+git11-1.2.1.bso.armv7hl.rpm",
+  "name": "monit-debuginfo",
+  "rpm_version": "5.34.0+git11",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

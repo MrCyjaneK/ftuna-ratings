@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "04776c6e9403272a8cc4a0463997e03041a21ca485a973c1b0919b3ca0adfa75",
+  "key": "mirror/openrepos/nephros/personal/main/h/harbour-bugger-0.9.9git4-1.7.1.jolla_.noarch.rpm",
+  "name": "harbour-bugger",
+  "rpm_version": "0.9.9+git4",
+  "release": "1.7.1.jolla",
+  "arch": "noarch",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

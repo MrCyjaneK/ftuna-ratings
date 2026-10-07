@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "ee7be1833a07c39411bb35a57ed15368d3b353202342b0c9ec01e2cbd6bdcf73",
+  "key": "chum/5.2_armv7hl/armv7hl/kitemviews-devel-5.34.0-1.1.1.bso.armv7hl.rpm",
+  "name": "kitemviews-devel",
+  "rpm_version": "5.34.0",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

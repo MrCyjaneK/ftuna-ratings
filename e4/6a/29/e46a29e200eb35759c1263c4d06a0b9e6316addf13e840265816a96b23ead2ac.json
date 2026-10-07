@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "e46a29e200eb35759c1263c4d06a0b9e6316addf13e840265816a96b23ead2ac",
+  "key": "mirror/openrepos/neochapay/personal/main/g/google-opensans-fonts-20111018-1.1.noarch.rpm",
+  "name": "google-opensans-fonts",
+  "rpm_version": "20111018",
+  "release": "1.1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -x /usr/bin/fc-cache ]; then; /usr/bin/fc-cache /usr/share/fonts/google-opensans || :; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 -a -x /usr/bin/fc-cache ] ; then; /usr/bin/fc-cache /usr/share/fonts/google-opensans || :; fi"
+    }
+  ]
+}

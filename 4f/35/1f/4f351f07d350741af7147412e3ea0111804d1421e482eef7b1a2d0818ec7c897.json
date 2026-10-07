@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "4f351f07d350741af7147412e3ea0111804d1421e482eef7b1a2d0818ec7c897",
+  "key": "chum/5.1_i486/noarch/bash-git-prompt-2.7.1-1.3.1.bso.noarch.rpm",
+  "name": "bash-git-prompt",
+  "rpm_version": "2.7.1",
+  "release": "1.3.1.bso",
+  "arch": "noarch",
+  "verdict": 40,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": 40
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "hooks",
+      "path": "/etc/profile.d/bash-git-prompt.sh",
+      "code": "hooks.profile",
+      "detail": "mode 0100644 user root group root"
+    }
+  ]
+}

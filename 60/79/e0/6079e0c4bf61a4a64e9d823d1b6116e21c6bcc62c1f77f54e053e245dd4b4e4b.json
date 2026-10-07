@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "6079e0c4bf61a4a64e9d823d1b6116e21c6bcc62c1f77f54e053e245dd4b4e4b",
+  "key": "mirror/openrepos/lpr/personal/main/l/libtiff-devel-4.3.0-4.armv7hl.rpm",
+  "name": "libtiff-devel",
+  "rpm_version": "4.3.0",
+  "release": "4",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

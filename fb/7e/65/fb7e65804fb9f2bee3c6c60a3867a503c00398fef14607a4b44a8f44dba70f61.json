@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "fb7e65804fb9f2bee3c6c60a3867a503c00398fef14607a4b44a8f44dba70f61",
+  "key": "chum/5.1_i486/i486/opt-kf5-kirigami2-debuginfo-5.116.0-1.8.1.bso.i486.rpm",
+  "name": "opt-kf5-kirigami2-debuginfo",
+  "rpm_version": "5.116.0",
+  "release": "1.8.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

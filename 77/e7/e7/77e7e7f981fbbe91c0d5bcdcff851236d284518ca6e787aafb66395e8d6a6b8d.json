@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "77e7e7f981fbbe91c0d5bcdcff851236d284518ca6e787aafb66395e8d6a6b8d",
+  "key": "mirror/openrepos/aviarus/personal/main/q/qtmozembed-qt5-next153-1.56.0-1.aarch64.rpm",
+  "name": "qtmozembed-qt5-next153",
+  "rpm_version": "1.56.0",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": 0,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": 0
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/licenses/qtmozembed-qt5-next153-1.56.0/LICENSE.txt",
+      "code": "worldwrite",
+      "detail": "/usr/share/licenses/qtmozembed-qt5-next153-1.56.0/LICENSE.txt mode 0100666 user root group root file"
+    }
+  ]
+}

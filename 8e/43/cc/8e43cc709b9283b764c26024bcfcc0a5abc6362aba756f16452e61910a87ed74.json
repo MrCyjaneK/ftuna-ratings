@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "8e43cc709b9283b764c26024bcfcc0a5abc6362aba756f16452e61910a87ed74",
+  "key": "chum/5.2_armv7hl/armv7hl/eql5-debugsource-24.2.2-1.3.2.bso.armv7hl.rpm",
+  "name": "eql5-debugsource",
+  "rpm_version": "24.2.2",
+  "release": "1.3.2.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

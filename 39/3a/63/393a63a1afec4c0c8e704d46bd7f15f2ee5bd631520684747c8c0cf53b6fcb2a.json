@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "393a63a1afec4c0c8e704d46bd7f15f2ee5bd631520684747c8c0cf53b6fcb2a",
+  "key": "mirror/openrepos/noonien/personal/main/s/share-plugin-telepathy-0.5-1.aarch64.rpm",
+  "name": "share-plugin-telepathy",
+  "rpm_version": "0.5+master.20210919155209.68b507d",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

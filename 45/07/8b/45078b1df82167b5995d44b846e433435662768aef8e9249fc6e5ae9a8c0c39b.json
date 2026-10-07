@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "45078b1df82167b5995d44b846e433435662768aef8e9249fc6e5ae9a8c0c39b",
+  "key": "mirror/openrepos/nephros/personal/main/h/harbour-mlocate-0.26-2.armv7hl.rpm",
+  "name": "harbour-mlocate",
+  "rpm_version": "0.26",
+  "release": "2",
+  "arch": "armv7hl",
+  "verdict": 35,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": 45
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :; systemctl enable harbour-mlocate-updatedb.timer || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; systemctl stop harbour-mlocate-updatedb.service || :; systemctl disable harbour-mlocate-updatedb.timer || :"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/locate",
+      "code": "setgid",
+      "detail": "/usr/bin/locate mode 0102711 user root group nemo file"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/harbour-mlocate-updatedb.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/bin/updatedb sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/harbour-mlocate-updatedb.timer",
+      "code": "systemd.timer",
+      "detail": "scope=system activates=harbour-mlocate-updatedb.service"
+    }
+  ]
+}

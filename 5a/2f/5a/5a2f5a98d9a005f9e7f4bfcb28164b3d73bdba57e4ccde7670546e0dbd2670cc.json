@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "5a2f5a98d9a005f9e7f4bfcb28164b3d73bdba57e4ccde7670546e0dbd2670cc",
+  "key": "mirror/openrepos/jfarnaud/personal/main/b/bt-tether-0.1-4.armv7hl.rpm",
+  "name": "bt-tether",
+  "rpm_version": "0.1",
+  "release": "4",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ 2 = \"$1\" ]; then; if [ -f /etc/systemd/system/bt-tether.service ]; then; systemctl stop bt-tether.service"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/local/lib/bt-tether/bt-config install; systemctl restart bluetooth.service; systemctl enable bt-tether-daemon.service"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ 0 = \"$1\" ]; then; /usr/local/lib/bt-tether/bt-config uninstall; systemctl stop bt-tether-daemon.service"
+    },
+    {
+      "module": "systemd",
+      "path": "/etc/systemd/system/bt-tether-daemon.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/local/bin/bt-tether sandbox=none"
+    }
+  ]
+}

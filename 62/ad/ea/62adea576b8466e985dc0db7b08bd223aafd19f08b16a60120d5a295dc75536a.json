@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "62adea576b8466e985dc0db7b08bd223aafd19f08b16a60120d5a295dc75536a",
+  "key": "mirror/openrepos/nephros/personal/main/h/harbour-privoxy-httpd-3.0.34obs3-1.1.1.jolla_.noarch.rpm",
+  "name": "harbour-privoxy-httpd",
+  "rpm_version": "3.0.34+obs3",
+  "release": "1.1.1.jolla",
+  "arch": "noarch",
+  "verdict": 40,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 50
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl --no-reload preset harbour-privoxy-httpd.service \u003e/dev/null 2\u003e\u00261 || :; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload disable --now harbour-privoxy-httpd.service \u003e /dev/null 2\u003e\u00261 || :; fi"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/harbour-privoxy-httpd.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/bin/python3 /usr/share/harbour-privoxy/harbour-privoxy-httpd.py sandbox=ProtectSystem=strict,ProtectHome=read-only,PrivateTmp"
+    }
+  ]
+}

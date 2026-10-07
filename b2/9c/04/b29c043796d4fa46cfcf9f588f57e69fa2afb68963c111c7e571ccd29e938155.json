@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "b29c043796d4fa46cfcf9f588f57e69fa2afb68963c111c7e571ccd29e938155",
+  "key": "mirror/openrepos/lpr_A7/personal/main/r/rescue-password-off-0.3-10.3.1.jolla_.armv7hl.rpm",
+  "name": "rescue-password-off",
+  "rpm_version": "0.3",
+  "release": "10.3.1.jolla",
+  "arch": "armv7hl",
+  "verdict": 23,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": 15
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "hooks",
+      "path": "/etc/pam.d/rescue-password-off",
+      "code": "hooks.pam",
+      "detail": "mode 0100644 user root group root"
+    },
+    {
+      "module": "systemd",
+      "path": "/lib/systemd/system/rescue-password-off.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/bin/rescue-password-off sandbox=none"
+    }
+  ]
+}

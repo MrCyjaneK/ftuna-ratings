@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "9cd42a2e31ec80fd23fb06160c273a16aa2f9f979a57d53c233cbddcb0d397d2",
+  "key": "mirror/openrepos/alina/personal/main/s/sailfishos-patch-sneakpeek-0.2-1.noarch.rpm",
+  "name": "sailfishos-patch-sneakpeek",
+  "rpm_version": "0.2",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-sneakpeek ]; then; /usr/sbin/patchmanager -u sailfishos-patch-sneakpeek || true; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-sneakpeek ]; then; /usr/sbin/patchmanager -u sailfishos-patch-sneakpeek || true; fi"
+    }
+  ]
+}

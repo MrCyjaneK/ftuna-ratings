@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "48f3e0ff4b9542bdff864e0b7bf3cd2a2be8aa4f6d3b90540cd19646d0ccb5d8",
+  "key": "mirror/openrepos/black_sheep_dev/personal/main/h/harbour-mlsmanager-0.1.15-1.i486.rpm",
+  "name": "harbour-mlsmanager",
+  "rpm_version": "0.1.15",
+  "release": "1",
+  "arch": "i486",
+  "verdict": 63,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 85
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/harbour.mlsmanager.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=nemo exec=/usr/bin/invoker --type=silica-qt5 -s /usr/bin/harbour-mlsmanager"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-mlsmanager.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=ssu removerepo nubecula-mls-offline-repo; desktop-file-install --delete-original       \\; --dir /home/deploy/installroot/usr/share/applications             \\"
+    }
+  ]
+}

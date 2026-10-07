@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "5db0e7576b1e926a644e1455afba4fb4671bf80ddc0a4171a12b03074ac032b6",
+  "key": "mirror/openrepos/nephros/personal/main/y/youtube-dl-open-helper-2020.11.26-1.3nep.noarch.rpm",
+  "name": "youtube-dl-open-helper",
+  "rpm_version": "2020.11.26",
+  "release": "1.3nep",
+  "arch": "noarch",
+  "verdict": 85,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/youtube-dl-open-installer.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/share/youtube-dl/youtube-dl-open-installer.sh sandbox=none"
+    }
+  ]
+}

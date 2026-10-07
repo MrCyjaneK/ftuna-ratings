@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "101af7aa42b8239ecc7fa274dcdb6a4bd25f529fc292a96abd959f246b3c4f53",
+  "key": "chum/5.1_armv7hl/armv7hl/opt-qt5-qtsvg-debugsource-5.15.14+kde5-1.4.1.bso.armv7hl.rpm",
+  "name": "opt-qt5-qtsvg-debugsource",
+  "rpm_version": "5.15.14+kde5",
+  "release": "1.4.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

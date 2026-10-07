@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "fc387519eb00acbd1897d2db45b60959dfb7e6f7540f258c18edcc262fb2b387",
+  "key": "chum/5.2_aarch64/noarch/i2pd-ui-2.56.0+git1-1.6.2.bso.noarch.rpm",
+  "name": "i2pd-ui",
+  "rpm_version": "2.56.0+git1",
+  "release": "1.6.2.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

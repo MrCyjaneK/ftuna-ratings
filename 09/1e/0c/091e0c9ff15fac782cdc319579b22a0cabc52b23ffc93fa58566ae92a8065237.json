@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "091e0c9ff15fac782cdc319579b22a0cabc52b23ffc93fa58566ae92a8065237",
+  "key": "mirror/openrepos/Thaodan/personal/main/s/sailfishos-launcher-combined-patch-3.1.b80c28a-10.1.1.jolla_.noarch.rpm",
+  "name": "sailfishos-launcher-combined-patch",
+  "rpm_version": "3.1.b80c28a",
+  "release": "10.1.1.jolla",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-launcher-combined-patch ]; then; /usr/sbin/patchmanager -u sailfishos-launcher-combined-patch || true; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-launcher-combined-patch ]; then; /usr/sbin/patchmanager -u sailfishos-launcher-combined-patch || true; fi"
+    }
+  ]
+}

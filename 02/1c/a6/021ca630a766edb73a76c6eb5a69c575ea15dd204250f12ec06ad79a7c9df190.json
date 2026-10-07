@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "021ca630a766edb73a76c6eb5a69c575ea15dd204250f12ec06ad79a7c9df190",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-evento-0.1.0-1.1.1.bso.armv7hl.rpm",
+  "name": "harbour-evento",
+  "rpm_version": "0.1.0",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "df755e04b7645b7b9227e5757b2bd005fe7104d75162a9e8750636f67b245579",
+  "key": "mirror/openrepos/Karry/personal/main/l/libanthy-qml-plugin-1.0.0-1.aarch64.rpm",
+  "name": "libanthy-qml-plugin",
+  "rpm_version": "1.0.0",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

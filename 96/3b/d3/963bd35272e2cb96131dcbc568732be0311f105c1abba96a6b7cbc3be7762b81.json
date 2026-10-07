@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "963bd35272e2cb96131dcbc568732be0311f105c1abba96a6b7cbc3be7762b81",
+  "key": "mirror/openrepos/aviarus/personal/main/h/harbour-jitsi-0.42.0-1.noarch.rpm",
+  "name": "harbour-jitsi",
+  "rpm_version": "0.42.0",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 53,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-jitsi.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/bin/update-desktop-database /usr/share/applications || true; /usr/bin/gtk-update-icon-cache -f /usr/share/icons/hicolor 2\u003e/dev/null || true; touch /usr/sha"
+    }
+  ]
+}

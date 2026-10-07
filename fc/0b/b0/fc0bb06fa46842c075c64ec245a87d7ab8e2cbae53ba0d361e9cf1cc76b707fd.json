@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "fc0bb06fa46842c075c64ec245a87d7ab8e2cbae53ba0d361e9cf1cc76b707fd",
+  "key": "mirror/openrepos/saberaltria/personal/main/h/harbour-dolphin-wubi-1.2-4.armv7hl.rpm",
+  "name": "harbour-dolphin-wubi",
+  "rpm_version": "1.2",
+  "release": "4",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

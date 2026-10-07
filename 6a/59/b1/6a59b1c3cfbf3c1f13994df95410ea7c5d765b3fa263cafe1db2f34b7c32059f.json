@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "6a59b1c3cfbf3c1f13994df95410ea7c5d765b3fa263cafe1db2f34b7c32059f",
+  "key": "mirror/openrepos/javitonino/personal/main/j/jolla-settings-networking-plugin-vpn-wireguard-0.2-1.noarch.rpm",
+  "name": "jolla-settings-networking-plugin-vpn-wireguard",
+  "rpm_version": "0.2",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

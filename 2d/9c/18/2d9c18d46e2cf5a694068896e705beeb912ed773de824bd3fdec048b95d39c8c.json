@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "2d9c18d46e2cf5a694068896e705beeb912ed773de824bd3fdec048b95d39c8c",
+  "key": "chum/5.1_i486/i486/mapnik-debugsource-3.1.0.1-1.6.1.bso.i486.rpm",
+  "name": "mapnik-debugsource",
+  "rpm_version": "3.1.0.1",
+  "release": "1.6.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

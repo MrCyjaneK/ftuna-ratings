@@ -1,0 +1,98 @@
+{
+  "version": 6,
+  "sha256": "95696b5a399e1bc0aab9ec1dcea9590396677960c47a135a039ccdce63d8d358",
+  "key": "mirror/openrepos/blizzz/personal/main/h/harbour-nextcloud-talk-1.0.3-1.23.1.jolla_.armv7hl.rpm",
+  "name": "harbour-nextcloud-talk",
+  "rpm_version": "1.0.3",
+  "release": "1.23.1.jolla",
+  "arch": "armv7hl",
+  "verdict": 65,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-nextcloud-talk.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-nextcloud-talk.desktop",
+      "code": "sailjail.permission",
+      "detail": "MediaIndexing"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-nextcloud-talk.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-nextcloud-talk.desktop",
+      "code": "sailjail.permission",
+      "detail": "Secrets"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-nextcloud-talk.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $(awk -F=  '/^VERSION_ID/ {gsub(/\\./,\"\") ;  print $2}' /etc/os-release) -lt 44000 ]; then; printf '[X-Sailjail]\\nSandboxing=disabled\\n' \u003e /etc/sailjail/app"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "1363858eef11885c48e34e6cdeaaeaa74fcdf49dd2b4dc7c65b74b00c05b4f11",
+  "key": "chum/5.1_aarch64/aarch64/opt-kf5-kbookmarks-devel-5.116.0-1.6.1.bso.aarch64.rpm",
+  "name": "opt-kf5-kbookmarks-devel",
+  "rpm_version": "5.116.0",
+  "release": "1.6.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

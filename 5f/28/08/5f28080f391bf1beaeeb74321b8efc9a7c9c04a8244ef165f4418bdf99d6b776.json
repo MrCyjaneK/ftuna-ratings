@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "5f28080f391bf1beaeeb74321b8efc9a7c9c04a8244ef165f4418bdf99d6b776",
+  "key": "mirror/openrepos/lpr_next/personal/main/p/poppler-21.05.0-3.armv7hl.rpm",
+  "name": "poppler",
+  "rpm_version": "21.05.0",
+  "release": "3",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

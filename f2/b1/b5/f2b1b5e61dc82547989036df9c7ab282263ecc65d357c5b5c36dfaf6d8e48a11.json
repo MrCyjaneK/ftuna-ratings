@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "f2b1b5e61dc82547989036df9c7ab282263ecc65d357c5b5c36dfaf6d8e48a11",
+  "key": "mirror/openrepos/lpr/personal/main/p/ppp-libs-2.4.9git1-1.6.1.jolla_.armv7hl.rpm",
+  "name": "ppp-libs",
+  "rpm_version": "2.4.9+git1",
+  "release": "1.6.1.jolla",
+  "arch": "armv7hl",
+  "verdict": 0,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": 0
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "setuid",
+      "path": "/usr/lib/pppd/2.4.9/pppoatm.so",
+      "code": "setuid",
+      "detail": "/usr/lib/pppd/2.4.9/pppoatm.so mode 0104550 user root group root file"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/pppd/2.4.9/pppoe.so",
+      "code": "setuid",
+      "detail": "/usr/lib/pppd/2.4.9/pppoe.so mode 0104550 user root group root file"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "a419c785620e39e4c81b95a82dd4974ca05d9100de7779b3c596d5a8b4e8b894",
+  "key": "chum/5.1_aarch64/aarch64/waypipe-debugsource-0.10.5+git1+c-1.5.1.bso.aarch64.rpm",
+  "name": "waypipe-debugsource",
+  "rpm_version": "0.10.5+git1+c",
+  "release": "1.5.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

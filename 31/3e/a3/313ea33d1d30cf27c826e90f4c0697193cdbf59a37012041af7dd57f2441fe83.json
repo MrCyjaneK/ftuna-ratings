@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "313ea33d1d30cf27c826e90f4c0697193cdbf59a37012041af7dd57f2441fe83",
+  "key": "mirror/openrepos/lpr/personal/main/i/imagemagick-c-7.1.2.30-7.1.armv7hl.rpm",
+  "name": "ImageMagick-c++",
+  "rpm_version": "7.1.2.30",
+  "release": "7.1",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

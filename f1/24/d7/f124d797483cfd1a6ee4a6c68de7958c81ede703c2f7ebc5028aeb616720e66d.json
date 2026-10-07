@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "f124d797483cfd1a6ee4a6c68de7958c81ede703c2f7ebc5028aeb616720e66d",
+  "key": "mirror/openrepos/247/personal/main/a/ambience-synthwave2-1.2-0.noarch.rpm",
+  "name": "ambience-synthwave2",
+  "rpm_version": "1.2",
+  "release": "0",
+  "arch": "noarch",
+  "verdict": 15,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": 0
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=chmod 755 /usr/share/ambience/{name}; chmod 755 /usr/share/ambience/{name}/images; chmod 644 /usr/share/ambience/{name}/*.*"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; rm -rf /usr/share/ambience/{name}"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/ambience/ambience-synthwave/sounds/Synthwave2_ringtone.ogg",
+      "code": "worldwrite",
+      "detail": "/usr/share/ambience/ambience-synthwave/sounds/Synthwave2_ringtone.ogg mode 0100777 user root group root exec"
+    }
+  ]
+}

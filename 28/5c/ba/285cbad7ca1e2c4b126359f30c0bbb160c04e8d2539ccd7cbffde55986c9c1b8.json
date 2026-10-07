@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "285cbad7ca1e2c4b126359f30c0bbb160c04e8d2539ccd7cbffde55986c9c1b8",
+  "key": "chum/5.2_aarch64/aarch64/maxima-plotting-5.47.0+git3-1.1.2.bso.aarch64.rpm",
+  "name": "maxima-plotting",
+  "rpm_version": "5.47.0+git3",
+  "release": "1.1.2.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

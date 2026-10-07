@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "ca2be2d1b915471d29b5f3baca4981460eb3d42b2910d5b29e797a917edf01e0",
+  "key": "mirror/openrepos/DrYak/personal/main/l/libavahi-devel-0.6.31-10.24.1.jolla_.armv7hl.rpm",
+  "name": "libavahi-devel",
+  "rpm_version": "0.6.31",
+  "release": "10.24.1.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

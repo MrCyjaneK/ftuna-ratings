@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "fdc1356598a6c81608570bbeb25e38a851b2a762598906d0086e9bdc0663b1a5",
+  "key": "chum/5.2_aarch64/noarch/maxima-demo-5.47.0+git3-1.1.2.bso.noarch.rpm",
+  "name": "maxima-demo",
+  "rpm_version": "5.47.0+git3",
+  "release": "1.1.2.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

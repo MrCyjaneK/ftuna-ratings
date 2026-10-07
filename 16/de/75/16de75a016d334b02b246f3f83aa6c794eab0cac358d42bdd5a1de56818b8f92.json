@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "16de75a016d334b02b246f3f83aa6c794eab0cac358d42bdd5a1de56818b8f92",
+  "key": "chum/5.2_i486/i486/unbound-debuginfo-1.17.1+git2-1.1.1.bso.i486.rpm",
+  "name": "unbound-debuginfo",
+  "rpm_version": "1.17.1+git2",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

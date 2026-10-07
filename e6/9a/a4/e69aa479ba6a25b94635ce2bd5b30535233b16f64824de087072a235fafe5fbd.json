@@ -1,0 +1,224 @@
+{
+  "version": 6,
+  "sha256": "e69aa479ba6a25b94635ce2bd5b30535233b16f64824de087072a235fafe5fbd",
+  "key": "mirror/openrepos/aegg/personal/main/h/harbour-reis-0.3.3-1.armv7hl.rpm",
+  "name": "harbour-reis",
+  "rpm_version": "0.3.3",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 50,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": 0
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-reis.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-reis.desktop",
+      "code": "sailjail.permission",
+      "detail": "Location"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-reis",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-reis mode 040777 user root group root dir"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-reis/qml/components/Favorite.qml",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-reis/qml/components/Favorite.qml mode 0100676 user root group root exec"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-reis/qml/components/JourneyLeg.qml",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-reis/qml/components/JourneyLeg.qml mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-reis/qml/components/JourneySuggestion.qml",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-reis/qml/components/JourneySuggestion.qml mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-reis/qml/components/RealTimeLine.qml",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-reis/qml/components/RealTimeLine.qml mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-reis/qml/components/RealTimePlattform.qml",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-reis/qml/components/RealTimePlattform.qml mode 0100676 user root group root exec"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-reis/qml/components/SearchItem.qml",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-reis/qml/components/SearchItem.qml mode 0100676 user root group root exec"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-reis/qml/cover/CoverPage.qml",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-reis/qml/cover/CoverPage.qml mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-reis/qml/harbour-reis.qml",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-reis/qml/harbour-reis.qml mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-reis/qml/icons/icon-m-boat.svg",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-reis/qml/icons/icon-m-boat.svg mode 0100676 user root group root exec"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-reis/qml/icons/icon-m-bus.svg",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-reis/qml/icons/icon-m-bus.svg mode 0100676 user root group root exec"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-reis/qml/icons/icon-m-metro.svg",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-reis/qml/icons/icon-m-metro.svg mode 0100676 user root group root exec"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-reis/qml/icons/icon-m-tram.svg",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-reis/qml/icons/icon-m-tram.svg mode 0100676 user root group root exec"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-reis/qml/pages/Journey.qml",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-reis/qml/pages/Journey.qml mode 0100676 user root group root exec"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-reis/qml/pages/JourneySearch.qml",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-reis/qml/pages/JourneySearch.qml mode 0100676 user root group root exec"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-reis/qml/pages/JourneySuggestions.qml",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-reis/qml/pages/JourneySuggestions.qml mode 0100676 user root group root exec"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-reis/qml/pages/Location.qml",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-reis/qml/pages/Location.qml mode 0100676 user root group root exec"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-reis/qml/pages/MainPage.qml",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-reis/qml/pages/MainPage.qml mode 0100676 user root group root exec"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-reis/qml/pages/RealTime.qml",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-reis/qml/pages/RealTime.qml mode 0100676 user root group root exec"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-reis/qml/scripts/departures.js",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-reis/qml/scripts/departures.js mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-reis/qml/scripts/favorites.js",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-reis/qml/scripts/favorites.js mode 0100676 user root group root exec"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-reis/qml/scripts/fetch.js",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-reis/qml/scripts/fetch.js mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-reis/qml/scripts/geocoder.js",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-reis/qml/scripts/geocoder.js mode 0100676 user root group root exec"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-reis/qml/scripts/journey.js",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-reis/qml/scripts/journey.js mode 0100666 user root group root file"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-reis/translations",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-reis/translations mode 040777 user root group root dir"
+    }
+  ]
+}

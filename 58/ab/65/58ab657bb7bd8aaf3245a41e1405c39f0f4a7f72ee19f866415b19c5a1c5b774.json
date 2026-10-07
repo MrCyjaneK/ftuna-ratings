@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "58ab657bb7bd8aaf3245a41e1405c39f0f4a7f72ee19f866415b19c5a1c5b774",
+  "key": "mirror/openrepos/artur_/personal/main/o/opt-maui-mauikit-filebrowsing-2.2.1-1.armv7hl.rpm",
+  "name": "opt-maui-mauikit-filebrowsing",
+  "rpm_version": "2.2.1",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

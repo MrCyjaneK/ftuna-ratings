@@ -1,0 +1,116 @@
+{
+  "version": 6,
+  "sha256": "80f194c83b6561e8cdc2c72e810867635aecd69067c0984c049bce6c7ebfa4f2",
+  "key": "mirror/openrepos/HengYeDev/personal/main/h/harbour-sailtrix-1.3.4-0.armv7hl.rpm",
+  "name": "harbour-sailtrix",
+  "rpm_version": "1.3.4",
+  "release": "0",
+  "arch": "armv7hl",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailtrix.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailtrix.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailtrix.desktop",
+      "code": "sailjail.permission",
+      "detail": "Documents"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailtrix.desktop",
+      "code": "sailjail.permission",
+      "detail": "Downloads"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailtrix.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailtrix.desktop",
+      "code": "sailjail.permission",
+      "detail": "Pictures"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailtrix.desktop",
+      "code": "sailjail.permission",
+      "detail": "Videos"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailtrix.desktop",
+      "code": "sailjail.permission",
+      "detail": "Music"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailtrix.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia"
+    }
+  ]
+}

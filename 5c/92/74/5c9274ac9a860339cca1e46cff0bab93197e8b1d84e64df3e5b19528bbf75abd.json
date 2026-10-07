@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "5c9274ac9a860339cca1e46cff0bab93197e8b1d84e64df3e5b19528bbf75abd",
+  "key": "chum/5.2_i486/noarch/parallel-20260322+git1-1.13.1.bso.noarch.rpm",
+  "name": "parallel",
+  "rpm_version": "20260322+git1",
+  "release": "1.13.1.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

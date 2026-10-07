@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "6e5e621a2da0834be097fdbba7b4cc7d88bcb6490482a8f86dc04f9a634a5329",
+  "key": "repo/ftuna-oss/5.1.0.11/armv7hl/github.com/roundedrectangle/harbour-sshazam/harbour-sshazam-debugsource-1.1.4-1.armv7hl.rpm",
+  "name": "harbour-sshazam-debugsource",
+  "rpm_version": "1.1.4",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 45,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": 45
+    }
+  ],
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/roundedrectangle/harbour-sshazam",
+      "code": "ftuna.built",
+      "detail": "hooks"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/roundedrectangle/harbour-sshazam",
+      "code": "ftuna.image",
+      "detail": "20-rust.sh\n21-python-deps.sh"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "95b7bcaabc4027de04729ce1e6755968b7b288ad40d7b83eac92bbbd6510306f",
+  "key": "chum/5.1_aarch64/noarch/keyboard-presage-hu_HU-1.2.4-1.4.1.bso.noarch.rpm",
+  "name": "keyboard-presage-hu_HU",
+  "rpm_version": "1.2.4",
+  "release": "1.4.1.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

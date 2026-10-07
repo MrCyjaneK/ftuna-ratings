@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "28dbd0e10669abbc48a173c410bf63bde2fc78ea24d2d8c440b12873fcca33ec",
+  "key": "mirror/openrepos/ade/personal/main/k/keyboard-custom-emoji-0.4.3-10.noarch.rpm",
+  "name": "keyboard-custom-emoji",
+  "rpm_version": "0.4.3",
+  "release": "10",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user restart maliit-server.service"
+    }
+  ]
+}

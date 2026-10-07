@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "129b05be58595ad88829d7ddd31127fe685f158f2de1c64ea1eb22b620255600",
+  "key": "mirror/openrepos/glitchapp/personal/main/s/sienna-0.3.1-1.noarch.rpm",
+  "name": "sienna",
+  "rpm_version": "0.3.1",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/sienna.desktop",
+      "code": "sailjail.permission",
+      "detail": "Love2D"
+    }
+  ]
+}

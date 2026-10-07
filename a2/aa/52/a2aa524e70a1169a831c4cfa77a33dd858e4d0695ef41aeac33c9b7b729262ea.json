@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "a2aa524e70a1169a831c4cfa77a33dd858e4d0695ef41aeac33c9b7b729262ea",
+  "key": "mirror/openrepos/ichthyosaurus/personal/main/s/sfos-patch-office-always-search-1.0.1-1.noarch.rpm",
+  "name": "sfos-patch-office-always-search",
+  "rpm_version": "1.0.1",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-office-always-search ]; then; /usr/sbin/patchmanager -u sfos-patch-office-always-search || true; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-office-always-search ]; then; /usr/sbin/patchmanager -u sfos-patch-office-always-search || true; fi"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "ba3c570c679b433ba546ef00084f0d99cc56afbeda58ba120575f0b1f5728371",
+  "key": "mirror/openrepos/Mister_Magister/personal/main/y/yottagram-debuginfo-0.7.0-56.i486.rpm",
+  "name": "yottagram-debuginfo",
+  "rpm_version": "0.7.0",
+  "release": "56",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

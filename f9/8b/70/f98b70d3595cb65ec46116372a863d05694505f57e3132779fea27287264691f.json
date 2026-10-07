@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "f98b70d3595cb65ec46116372a863d05694505f57e3132779fea27287264691f",
+  "key": "mirror/openrepos/ade/personal/main/h/harbour-infraview-0.4-5.aarch64.rpm",
+  "name": "harbour-infraview",
+  "rpm_version": "0.4",
+  "release": "5",
+  "arch": "aarch64",
+  "verdict": 38,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": 0
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-infraview.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/share/harbour-infraview/helper/infraview-helper",
+      "code": "setuid",
+      "detail": "/usr/share/harbour-infraview/helper/infraview-helper mode 0104755 user root group root file"
+    }
+  ]
+}

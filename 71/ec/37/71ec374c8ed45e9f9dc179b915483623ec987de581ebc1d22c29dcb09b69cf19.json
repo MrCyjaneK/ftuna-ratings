@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "71ec374c8ed45e9f9dc179b915483623ec987de581ebc1d22c29dcb09b69cf19",
+  "key": "mirror/openrepos/nephros/personal/main/h/harbour-mlocate-0.26-1.20.2.jolla_.armv7hl.rpm",
+  "name": "harbour-mlocate",
+  "rpm_version": "0.26",
+  "release": "1.20.2.jolla",
+  "arch": "armv7hl",
+  "verdict": 38,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": 45
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/libexec/manage-groups add privileged || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload disable --now harbour-mlocate-updatedb.service \u003e /dev/null 2\u003e\u00261 || :; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; /usr/libexec/manage-groups remove privileged || :; fi"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/locate",
+      "code": "setgid",
+      "detail": "/usr/bin/locate mode 0102711 user root group privileged file"
+    }
+  ]
+}

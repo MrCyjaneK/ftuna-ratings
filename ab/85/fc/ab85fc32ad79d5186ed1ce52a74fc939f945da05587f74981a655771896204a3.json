@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "ab85fc32ad79d5186ed1ce52a74fc939f945da05587f74981a655771896204a3",
+  "key": "mirror/openrepos/slava/personal/main/o/openrepos-mybackup-1.0.5-1.armv7hl.rpm",
+  "name": "openrepos-mybackup",
+  "rpm_version": "1.0.5",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 43,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/openrepos-mybackup.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" == 0 ] ; then; for u in $(getent passwd | cut -d: -f1); do; eval rm -fr ~$u/.local/share/openrepos-mybackup ||:"
+    }
+  ]
+}

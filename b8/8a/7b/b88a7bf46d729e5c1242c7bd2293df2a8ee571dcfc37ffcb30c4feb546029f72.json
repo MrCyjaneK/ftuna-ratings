@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "b88a7bf46d729e5c1242c7bd2293df2a8ee571dcfc37ffcb30c4feb546029f72",
+  "key": "chum/5.1_armv7hl/armv7hl/opt-kf5-kitemviews-debuginfo-5.116.0-1.7.1.bso.armv7hl.rpm",
+  "name": "opt-kf5-kitemviews-debuginfo",
+  "rpm_version": "5.116.0",
+  "release": "1.7.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

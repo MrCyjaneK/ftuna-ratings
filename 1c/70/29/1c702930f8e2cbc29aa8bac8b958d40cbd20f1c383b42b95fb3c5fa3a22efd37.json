@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "1c702930f8e2cbc29aa8bac8b958d40cbd20f1c383b42b95fb3c5fa3a22efd37",
+  "key": "mirror/openrepos/llelectronics_dev/personal/main/g/gstreamer1.0-tools-1.10.5master.20180301182831.3.g2c12f9f-10.30.1.jolla_.i486.rpm",
+  "name": "gstreamer1.0-tools",
+  "rpm_version": "1.10.5+master.20180301182831.3.g2c12f9f",
+  "release": "10.30.1.jolla",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

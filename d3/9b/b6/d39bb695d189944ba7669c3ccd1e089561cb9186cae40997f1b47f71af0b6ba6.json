@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "d39bb695d189944ba7669c3ccd1e089561cb9186cae40997f1b47f71af0b6ba6",
+  "key": "mirror/openrepos/Mister_Magister/personal/main/y/yottagram-transferengine-plugin-0.2.8-1.i486.rpm",
+  "name": "yottagram-transferengine-plugin",
+  "rpm_version": "0.2.8",
+  "release": "1",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

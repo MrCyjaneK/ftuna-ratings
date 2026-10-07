@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "3bdebc73e5f86193effdae71c3fc7bce0a8c68abf9c1df93ca7c701bc6f92574",
+  "key": "mirror/openrepos/zuyev/personal/main/h/harbour-novyy_zavet-3.3.1-1.i486.rpm",
+  "name": "harbour-novyy_zavet",
+  "rpm_version": "3.3.1",
+  "release": "1",
+  "arch": "i486",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

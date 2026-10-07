@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "30dedeba13575ae82a5c1dee906fcf3c9fc746faeced36fba3be9af075b0e0c9",
+  "key": "mirror/openrepos/lpr/personal/main/l/libjpeg-turbo-static-2.0.5-1.armv7hl.rpm",
+  "name": "libjpeg-turbo-static",
+  "rpm_version": "2.0.5",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

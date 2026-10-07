@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "bbd1c5ba7e8f44d7b40a7c95634c2182cf2bdbcb767abac6de9e29c94045a2c6",
+  "key": "mirror/openrepos/artur_/personal/main/l/libxcb-xtest-1.15-1.armv7hl.rpm",
+  "name": "libxcb-xtest",
+  "rpm_version": "1.15",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "1c347e068042a631f5bae6324eb651c887dcb8dcdaf132892d098646afc7709a",
+  "key": "mirror/openrepos/nephros/personal/main/h/harbour-mlocate-systemd-user-0.26-12.noarch.rpm",
+  "name": "harbour-mlocate-systemd-user",
+  "rpm_version": "0.26",
+  "release": "12",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl --no-reload preset \\--user \\--global harbour-mlocate-updatedb-user.service \u003e/dev/null 2\u003e\u00261 || :; fi"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "b1dffa188cd113142f5136cff5706c06b14160d4d69778ee371e614da2698c71",
+  "key": "mirror/openrepos/lpr/personal/main/g/glibc-headers-2.30git7-8.2.armv7hl.rpm",
+  "name": "glibc-headers",
+  "rpm_version": "2.30+git7",
+  "release": "8.2",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -L /usr/include/scsi ] ; then; rm -f /usr/include/scsi; fi"
+    }
+  ]
+}

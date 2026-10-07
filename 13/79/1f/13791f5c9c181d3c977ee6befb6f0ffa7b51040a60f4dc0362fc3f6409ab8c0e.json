@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "13791f5c9c181d3c977ee6befb6f0ffa7b51040a60f4dc0362fc3f6409ab8c0e",
+  "key": "mirror/openrepos/elBoberidoTesting/personal/main/h/harbour-kuri-0.4.93-1.armv7hl.rpm",
+  "name": "harbour-kuri",
+  "rpm_version": "0.4.93",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 55,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-kuri.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-kuri.desktop",
+      "code": "sailjail.permission",
+      "detail": "Bluetooth"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-kuri.desktop",
+      "code": "sailjail.permission",
+      "detail": "Downloads"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-kuri.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-kuri.desktop",
+      "code": "sailjail.permission",
+      "detail": "Location"
+    }
+  ]
+}

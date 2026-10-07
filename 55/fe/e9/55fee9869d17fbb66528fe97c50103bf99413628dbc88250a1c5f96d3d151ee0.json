@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "55fee9869d17fbb66528fe97c50103bf99413628dbc88250a1c5f96d3d151ee0",
+  "key": "chum/5.1_i486/noarch/harbour-stppc-0.1.0-1.1.1.bso.noarch.rpm",
+  "name": "harbour-stppc",
+  "rpm_version": "0.1.0",
+  "release": "1.1.1.bso",
+  "arch": "noarch",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

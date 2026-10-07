@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "63049b0a0125e7c955689b80c9b1340eaf84e0b8ba639ab6a854abe92116af56",
+  "key": "mirror/openrepos/birdzhang/personal/main/i/iftop-0.17-10.3.1.jolla_.i486.rpm",
+  "name": "iftop",
+  "rpm_version": "0.17",
+  "release": "10.3.1.jolla",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

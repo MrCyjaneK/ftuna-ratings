@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "6fa8876ff64f5135ab2a43cce1bc49403abe3fa1db5edf7bf761b9ab2ba2551e",
+  "key": "mirror/openrepos/NicoCnd/personal/main/w/wget-1.18-1.i586.rpm",
+  "name": "wget",
+  "rpm_version": "1.18",
+  "release": "1",
+  "arch": "i586",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/install-info /usr/share/info/wget.info.gz /usr/share/info/dir || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = 0 ]; then; /sbin/install-info --delete /usr/share/info/wget.info.gz /usr/share/info/dir || :; fi"
+    }
+  ]
+}

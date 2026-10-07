@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "e9ddbae4b78c61ceda88fe3bb6c204b01d58fe03e9cd79b9c038c1fc4734f6c4",
+  "key": "mirror/openrepos/ade/personal/main/m/mpd-0.23-17.3.aarch64.rpm",
+  "name": "mpd",
+  "rpm_version": "0.23",
+  "release": "17.3",
+  "arch": "aarch64",
+  "verdict": 65,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 100
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user enable mpd.socket || :; systemctl-user start mpd.socket || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%posttrans",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :; systemctl-user enable mpd.socket || :; systemctl-user start mpd.socket || :"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/mpd.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/mpd --systemd sandbox=ProtectSystem,NoNewPrivileges,RestrictNamespaces,ProtectKernelTunables,ProtectControlGroups"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/mpd.socket",
+      "code": "systemd.socket",
+      "detail": "scope=user activates=mpd.service"
+    }
+  ]
+}

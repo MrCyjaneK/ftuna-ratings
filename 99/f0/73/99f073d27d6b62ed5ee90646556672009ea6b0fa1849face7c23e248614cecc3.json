@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "99f073d27d6b62ed5ee90646556672009ea6b0fa1849face7c23e248614cecc3",
+  "key": "mirror/openrepos/aerique/personal/main/l/libargon2-devel-2019.03.26.87e5513-1.aarch64.rpm",
+  "name": "libargon2-devel",
+  "rpm_version": "2019.03.26.87e5513",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

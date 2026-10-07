@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "91a86c5c83104ce6add34b339d39800c5b16ab8a93f6de0afc6b6e2b6eb5a740",
+  "key": "mirror/openrepos/nephros/personal/main/o/openrepos-mbedtls-tools-2.25.0-4.armv7hl.rpm",
+  "name": "openrepos-mbedtls-tools",
+  "rpm_version": "2.25.0",
+  "release": "4",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "2a9942d11da10f130b14e42db321cdd16acd1ddbafc7196f8a6fbbfd1ffaaa02",
+  "key": "chum/5.2_aarch64/aarch64/flowplayer-debugsource-0.3.6-1.4.1.bso.aarch64.rpm",
+  "name": "flowplayer-debugsource",
+  "rpm_version": "0.3.6",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

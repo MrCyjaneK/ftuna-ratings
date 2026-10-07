@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "b838d176b45b51e8016e9c09a0f2162d64dcdf2cc67f86f58e73245d4e094e76",
+  "key": "mirror/openrepos/Mister_Magister/personal/main/c/corepack18-18.20.8-1.2.1.bso_.armv7hl.rpm",
+  "name": "corepack18",
+  "rpm_version": "18.20.8",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=update-alternatives --remove corepack-default /usr/bin/corepack18"
+    }
+  ]
+}

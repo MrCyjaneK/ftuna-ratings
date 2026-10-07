@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "f1f719c1c1dd12ff3db36b860d3ca6ad56f7cde9f5c6364d5ed11c8355066234",
+  "key": "chum/5.2_i486/i486/opencv-debuginfo-4.8.1-1.2.1.bso.i486.rpm",
+  "name": "opencv-debuginfo",
+  "rpm_version": "4.8.1",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

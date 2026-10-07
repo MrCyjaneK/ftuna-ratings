@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "e07a258d7b440e3890a4372f5bfcb5982e917eadf30c1ac20229ce25671ae010",
+  "key": "chum/5.1_i486/i486/kcoreaddons-debugsource-5.34.0-1.2.1.bso.i486.rpm",
+  "name": "kcoreaddons-debugsource",
+  "rpm_version": "5.34.0",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "7d7c1d180e87f5efc6b9f12899f2388d6d3b6b1295f48a5004f58f299409e976",
+  "key": "mirror/openrepos/blizzz/personal/main/h/harbour-nextcloud-talk-1.0.0-alpha.8.armv7hl.rpm",
+  "name": "harbour-nextcloud-talk",
+  "rpm_version": "1.0.0",
+  "release": "alpha.8",
+  "arch": "armv7hl",
+  "verdict": 53,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-nextcloud-talk.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user restart ngfd.service; systemctl-user restart sailfish-secretsd.service; desktop-file-install --delete-original       \\"
+    }
+  ]
+}

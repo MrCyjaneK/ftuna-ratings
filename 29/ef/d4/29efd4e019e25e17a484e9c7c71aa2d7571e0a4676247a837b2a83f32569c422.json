@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "29efd4e019e25e17a484e9c7c71aa2d7571e0a4676247a837b2a83f32569c422",
+  "key": "chum/5.1_i486/i486/harbour-fire-debugsource-1.0.7-1.8.1.bso.i486.rpm",
+  "name": "harbour-fire-debugsource",
+  "rpm_version": "1.0.7",
+  "release": "1.8.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

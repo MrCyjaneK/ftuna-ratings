@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "908d81f524e6e3bf122991430f3fe0d19bc84f315e4ed4c4ff1f6a3377d4b072",
+  "key": "mirror/openrepos/eatdirt/personal/main/x/xplanet-background-1.3.1-7.armv7hl.rpm",
+  "name": "xplanet-background",
+  "rpm_version": "1.3.1",
+  "release": "7",
+  "arch": "armv7hl",
+  "verdict": 58,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl-user enable xplanet.service; systemctl-user start xplanet.service"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl-user --no-reload disable xplanet.service; systemctl-user stop xplanet.service"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload; if [ $1 -ge 1 ] ; then; systemctl-user try-restart xplanet.service"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/xplanet.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=nemo exec=/usr/bin/xplanet $XPLANET_OPTIONS -prev_command ${XPLANET_PREV} -post_command ${XPLANET_POST} sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/xplanet.timer",
+      "code": "systemd.timer",
+      "detail": "scope=user activates=xplanet.service"
+    }
+  ]
+}

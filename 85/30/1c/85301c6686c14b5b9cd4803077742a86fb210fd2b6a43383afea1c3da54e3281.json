@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "85301c6686c14b5b9cd4803077742a86fb210fd2b6a43383afea1c3da54e3281",
+  "key": "mirror/openrepos/nobodyinperson/personal/main/p/python3-idna-2.8-rokua.noarch.rpm",
+  "name": "python3-idna",
+  "rpm_version": "2.8",
+  "release": "rokua",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

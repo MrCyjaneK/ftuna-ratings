@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "92bcd911631fc73afe1b52bacca45f72b80f474f0bd7e4e76840d69a54cdb038",
+  "key": "chum/5.1_i486/i486/harbour-fire-1.0.7-1.8.1.bso.i486.rpm",
+  "name": "harbour-fire",
+  "rpm_version": "1.0.7",
+  "release": "1.8.1.bso",
+  "arch": "i486",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fire.desktop",
+      "code": "sailjail.permission",
+      "detail": "Camera"
+    }
+  ]
+}

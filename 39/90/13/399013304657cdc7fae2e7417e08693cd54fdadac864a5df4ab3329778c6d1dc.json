@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "399013304657cdc7fae2e7417e08693cd54fdadac864a5df4ab3329778c6d1dc",
+  "key": "chum/5.1_i486/noarch/parallel-shell-completion-20260322+git1-1.13.1.bso.noarch.rpm",
+  "name": "parallel-shell-completion",
+  "rpm_version": "20260322+git1",
+  "release": "1.13.1.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

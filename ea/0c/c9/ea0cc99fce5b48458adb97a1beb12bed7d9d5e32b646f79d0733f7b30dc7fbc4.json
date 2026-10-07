@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "ea0cc99fce5b48458adb97a1beb12bed7d9d5e32b646f79d0733f7b30dc7fbc4",
+  "key": "chum/5.2_aarch64/aarch64_ilp32/libupnp6-64bit-1.6.21-1.1.1.bso.aarch64_ilp32.rpm",
+  "name": "libupnp6-64bit",
+  "rpm_version": "1.6.21",
+  "release": "1.1.1.bso",
+  "arch": "aarch64_ilp32",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig"
+    }
+  ]
+}

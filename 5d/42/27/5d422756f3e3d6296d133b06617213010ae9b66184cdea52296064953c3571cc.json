@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "5d422756f3e3d6296d133b06617213010ae9b66184cdea52296064953c3571cc",
+  "key": "mirror/openrepos/hanhsuan/personal/main/l/libchewing-0.5.1-1.i486.rpm",
+  "name": "libchewing",
+  "rpm_version": "0.5.1",
+  "release": "1",
+  "arch": "i486",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; /sbin/install-info /usr/share/info/libchewing.info /usr/share/info/dir || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ] ; then; /sbin/install-info --delete /usr/share/info/libchewing.info /usr/share/info/dir || :; fi"
+    }
+  ]
+}

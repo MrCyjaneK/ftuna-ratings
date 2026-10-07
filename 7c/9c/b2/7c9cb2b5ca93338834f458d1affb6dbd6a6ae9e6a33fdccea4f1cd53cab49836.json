@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "7c9cb2b5ca93338834f458d1affb6dbd6a6ae9e6a33fdccea4f1cd53cab49836",
+  "key": "mirror/openrepos/lpr/personal/main/c/calligra-sheets-core-3.2.1git4-1.11.6.jolla_.armv7hl.rpm",
+  "name": "calligra-sheets-core",
+  "rpm_version": "3.2.1+git4",
+  "release": "1.11.6.jolla",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig"
+    }
+  ]
+}

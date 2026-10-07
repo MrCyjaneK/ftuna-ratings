@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "4531cef7b7de96dda446a5c5d611cb6d9318921acf0895def68dff7e56af17d1",
+  "key": "mirror/openrepos/obexd_contentfilter_olf/personal/main/o/obexd-contentfilter-off-1.1.9-stable.noarch.rpm",
+  "name": "obexd-contentfilter-off",
+  "rpm_version": "1.1.9",
+  "release": "stable",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

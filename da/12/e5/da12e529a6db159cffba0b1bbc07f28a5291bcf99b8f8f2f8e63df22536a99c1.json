@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "da12e529a6db159cffba0b1bbc07f28a5291bcf99b8f8f2f8e63df22536a99c1",
+  "key": "chum/5.1_aarch64/aarch64/nocache-1.2+git2-1.5.1.bso.aarch64.rpm",
+  "name": "nocache",
+  "rpm_version": "1.2+git2",
+  "release": "1.5.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

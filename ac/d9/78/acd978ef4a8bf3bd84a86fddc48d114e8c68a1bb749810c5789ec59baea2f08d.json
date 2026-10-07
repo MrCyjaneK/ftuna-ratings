@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "acd978ef4a8bf3bd84a86fddc48d114e8c68a1bb749810c5789ec59baea2f08d",
+  "key": "mirror/openrepos/For_the_freedom/personal/main/h/harbour-xhvpn-1.6.3-1.aarch64.rpm",
+  "name": "harbour-xhvpn",
+  "rpm_version": "1.6.3",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": 28,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": 0
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-xhvpn.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/bin/update-mime-database /usr/share/mime \u003e/dev/null 2\u003e\u00261 || :; /usr/bin/xray-connman-helper --disconnect-active-vpn \u003e/dev/null 2\u003e\u00261 || :; systemctl try-res"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/bin/update-mime-database /usr/share/mime \u003e/dev/null 2\u003e\u00261 || :; systemctl try-restart connman-vpn.service \u003e/dev/null 2\u003e\u00261 || :"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/xray-connman-helper",
+      "code": "setuid",
+      "detail": "/usr/bin/xray-connman-helper mode 0104755 user root group root file"
+    }
+  ]
+}

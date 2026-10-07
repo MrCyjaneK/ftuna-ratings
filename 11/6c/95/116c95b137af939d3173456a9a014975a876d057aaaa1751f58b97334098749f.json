@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "116c95b137af939d3173456a9a014975a876d057aaaa1751f58b97334098749f",
+  "key": "chum/5.2_aarch64/aarch64/harbour-taskswitcher-debugsource-0.6.3-1.2.1.bso.aarch64.rpm",
+  "name": "harbour-taskswitcher-debugsource",
+  "rpm_version": "0.6.3",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

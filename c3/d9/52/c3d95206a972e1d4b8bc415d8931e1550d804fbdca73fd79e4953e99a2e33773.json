@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "c3d95206a972e1d4b8bc415d8931e1550d804fbdca73fd79e4953e99a2e33773",
+  "key": "mirror/openrepos/poetaster/personal/main/h/harbour-sailskaat-0.1.0-1.noarch.rpm",
+  "name": "harbour-sailskaat",
+  "rpm_version": "0.1.0",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

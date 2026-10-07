@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "093089466d503464e1b8f357f4976b4d791d12098c80bd4f5673f17d79dba5b7",
+  "key": "chum/5.2_i486/i486/sysstat-debugsource-12.7.7+git1-1.4.1.bso.i486.rpm",
+  "name": "sysstat-debugsource",
+  "rpm_version": "12.7.7+git1",
+  "release": "1.4.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

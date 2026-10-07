@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "d715f99ca76e7c94445857e3e766ea29380344da959f60ffdcc18e404adbdd7a",
+  "key": "chum/5.2_aarch64/aarch64/qmaplibregl-debuginfo-3.0.0+git2-1.8.1.bso.aarch64.rpm",
+  "name": "qmaplibregl-debuginfo",
+  "rpm_version": "3.0.0+git2",
+  "release": "1.8.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

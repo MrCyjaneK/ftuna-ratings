@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "afa20c8cf2db173513ba8fd6c0991a8aa137576d2dcaf714a32dcc10c684a68b",
+  "key": "chum/5.2_armv7hl/armv7hl/python3-pyscard-debugsource-2.0.0-1.1.1.bso.armv7hl.rpm",
+  "name": "python3-pyscard-debugsource",
+  "rpm_version": "2.0.0",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

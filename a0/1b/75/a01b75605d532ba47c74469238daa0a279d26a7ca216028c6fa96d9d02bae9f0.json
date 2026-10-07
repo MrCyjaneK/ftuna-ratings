@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "a01b75605d532ba47c74469238daa0a279d26a7ca216028c6fa96d9d02bae9f0",
+  "key": "chum/5.1_armv7hl/armv7hl/s2geometry-debuginfo-0.11.1-1.3.1.bso.armv7hl.rpm",
+  "name": "s2geometry-debuginfo",
+  "rpm_version": "0.11.1",
+  "release": "1.3.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

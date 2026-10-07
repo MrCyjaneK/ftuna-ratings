@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "ffb60e4d0cf9a4b13c3f6ef8d119d72cd7e59078d8689c5ea213357ba6e8262d",
+  "key": "mirror/openrepos/glitchapp/personal/main/t/thrustii-0.1.7-1.noarch.rpm",
+  "name": "thrustII",
+  "rpm_version": "0.1.7",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/thrust.desktop",
+      "code": "sailjail.permission",
+      "detail": "Love2D"
+    }
+  ]
+}

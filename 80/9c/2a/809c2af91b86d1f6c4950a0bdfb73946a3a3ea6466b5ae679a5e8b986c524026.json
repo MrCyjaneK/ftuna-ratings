@@ -1,0 +1,122 @@
+{
+  "version": 6,
+  "sha256": "809c2af91b86d1f6c4950a0bdfb73946a3a3ea6466b5ae679a5e8b986c524026",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-flotsam-0.1.1-1.1.1.bso.armv7hl.rpm",
+  "name": "harbour-flotsam",
+  "rpm_version": "0.1.1",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": 58,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 30
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": 45
+    },
+    {
+      "module": "systemd",
+      "score": 84
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.harbour.flotsam.Sync.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/libexec/harbour-flotsam-syncd systemd=harbour-flotsam-syncd.service"
+    },
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/system-services/org.harbour.flotsam.Connman.service",
+      "code": "dbus.service",
+      "detail": "scope=system user=root exec=/usr/libexec/harbour-flotsam-connman-helper systemd=harbour-flotsam-connman-helper.service"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-flotsam.desktop",
+      "code": "sailjail.permission",
+      "detail": "Privileged"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-flotsam.desktop",
+      "code": "sailjail.permission",
+      "detail": "Flotsam"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-flotsam.desktop",
+      "code": "sailjail.permission",
+      "detail": "Camera"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemd-tmpfiles --create /usr/lib/tmpfiles.d/harbour-flotsam.conf \u003e/dev/null 2\u003e\u00261 || :; systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :; systemctl stop harbour-fl"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; systemctl-user stop harbour-flotsam-syncd.service \u003e/dev/null 2\u003e\u00261 || :; systemctl stop harbour-flotsam-connman-helper.service \u003e/dev/nul"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/libexec/harbour-flotsam-syncd",
+      "code": "setgid",
+      "detail": "/usr/libexec/harbour-flotsam-syncd mode 0102755 user root group privileged file"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/harbour-flotsam-connman-helper.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=privileged exec=/usr/libexec/harbour-flotsam-connman-helper sandbox=ProtectSystem=strict,ProtectHome,PrivateTmp,PrivateNetwork,NoNewPrivileges,MemoryDenyWriteExecute,RestrictNamespaces,ProtectKernelModules,ProtectKernelTunables,ProtectControlGroups,CapabilityBoundingSet"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-flotsam-syncd.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/libexec/harbour-flotsam-syncd sandbox=none"
+    }
+  ]
+}

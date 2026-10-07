@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "fc37d07c676b9fa80b371b8157e2f35c940f2ea717c6eb2d961386fbde722dfd",
+  "key": "mirror/openrepos/lpr_A7/personal/main/j/jolla-developer-mode-profile-0.3.1-10.12.1.jolla_.armv7hl.rpm",
+  "name": "jolla-developer-mode-profile",
+  "rpm_version": "0.3.1",
+  "release": "10.12.1.jolla",
+  "arch": "armv7hl",
+  "verdict": 40,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": 40
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "hooks",
+      "path": "/etc/profile.d/developer-profile.sh",
+      "code": "hooks.profile",
+      "detail": "mode 0100644 user root group root"
+    }
+  ]
+}

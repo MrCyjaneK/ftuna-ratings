@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "9bbd3e7b205a3847314eb6d70e4deffbd53533d2d39588267cf9e14ee84070c8",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-ringingrestorer-1.8-1.2.1.bso.armv7hl.rpm",
+  "name": "harbour-ringingrestorer",
+  "rpm_version": "1.8",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "verdict": 57,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-ringingrestorer.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -gt 1 ]; then; systemctl-user stop harbour-ringingrestorer ||:; systemctl-user disable harbour-ringingrestorer ||:"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload ||:; systemctl-user enable harbour-ringingrestorer ||:; systemctl-user restart harbour-ringingrestorer ||:"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -lt 1 ]; then; systemctl-user stop harbour-ringingrestorer ||:; systemctl-user disable harbour-ringingrestorer ||:"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-ringingrestorer.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-ringingrestorer -d sandbox=none"
+    }
+  ]
+}

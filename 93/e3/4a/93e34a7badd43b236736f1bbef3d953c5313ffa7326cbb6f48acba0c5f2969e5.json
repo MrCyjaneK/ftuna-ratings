@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "93e34a7badd43b236736f1bbef3d953c5313ffa7326cbb6f48acba0c5f2969e5",
+  "key": "mirror/openrepos/alina/personal/main/s/sailfishos-patch-notes-cover-0.3-2_2.1.1.noarch.rpm",
+  "name": "sailfishos-patch-notes-cover",
+  "rpm_version": "0.3",
+  "release": "2",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-notes-cover ]; then; /usr/sbin/patchmanager -u sailfishos-patch-notes-cover || true; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-notes-cover ]; then; /usr/sbin/patchmanager -u sailfishos-patch-notes-cover || true; fi"
+    }
+  ]
+}

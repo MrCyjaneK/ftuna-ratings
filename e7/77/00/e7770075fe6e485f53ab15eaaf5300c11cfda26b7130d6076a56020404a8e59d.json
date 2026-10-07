@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "e7770075fe6e485f53ab15eaaf5300c11cfda26b7130d6076a56020404a8e59d",
+  "key": "mirror/openrepos/Polleke/personal/main/s/slang-devel-2.3.2-10.i486.rpm",
+  "name": "slang-devel",
+  "rpm_version": "2.3.2",
+  "release": "10",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

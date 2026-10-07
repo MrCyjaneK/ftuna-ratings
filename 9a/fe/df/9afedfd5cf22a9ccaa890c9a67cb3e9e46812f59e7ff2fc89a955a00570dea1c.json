@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "9afedfd5cf22a9ccaa890c9a67cb3e9e46812f59e7ff2fc89a955a00570dea1c",
+  "key": "mirror/openrepos/nephros/personal/main/d/dconfjson-0.2.3-1.2.1.jolla_.noarch.rpm",
+  "name": "dconfjson",
+  "rpm_version": "0.2.3",
+  "release": "1.2.1.jolla",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

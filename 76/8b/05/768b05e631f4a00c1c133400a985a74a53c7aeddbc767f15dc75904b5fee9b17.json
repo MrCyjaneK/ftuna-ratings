@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "768b05e631f4a00c1c133400a985a74a53c7aeddbc767f15dc75904b5fee9b17",
+  "key": "mirror/openrepos/MiPal75/personal/main/f/felis-phone-start-page-1.0.0-2.noarch.rpm",
+  "name": "felis-phone-start-page",
+  "rpm_version": "1.0.0",
+  "release": "2",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /tmp/patchmanager3/patches/felis-phone-start-page ]; then; /usr/sbin/patchmanager -u felis-phone-start-page || true; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /tmp/patchmanager3/patches/felis-phone-start-page ]; then; /usr/sbin/patchmanager -u felis-phone-start-page || true; fi"
+    }
+  ]
+}

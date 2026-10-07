@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "98a4cf8fe5f3bca6f04e4a2aa722eddc380703c7f83847533e4c87376e25db7e",
+  "key": "mirror/openrepos/lpr_A7/personal/main/l/libtasn1-4.13-1.8.8.armv7hl.rpm",
+  "name": "libtasn1",
+  "rpm_version": "4.13",
+  "release": "1.8.8",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

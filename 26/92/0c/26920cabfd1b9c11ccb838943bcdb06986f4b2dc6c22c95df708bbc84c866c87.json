@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "26920cabfd1b9c11ccb838943bcdb06986f4b2dc6c22c95df708bbc84c866c87",
+  "key": "mirror/openrepos/gmicroul/personal/main/v/video-editor-qt-1.0.0-2.aarch64.rpm",
+  "name": "video-editor-qt",
+  "rpm_version": "1.0.0",
+  "release": "2",
+  "arch": "aarch64",
+  "verdict": 53,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/video-editor-qt.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=update-desktop-database /usr/share/applications \u003e/dev/null 2\u003e\u00261 || :; touch --no-create /usr/share/icons/hicolor \u003e/dev/null 2\u003e\u00261 || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=update-desktop-database /usr/share/applications \u003e/dev/null 2\u003e\u00261 || :; touch --no-create /usr/share/icons/hicolor \u003e/dev/null 2\u003e\u00261 || :"
+    }
+  ]
+}

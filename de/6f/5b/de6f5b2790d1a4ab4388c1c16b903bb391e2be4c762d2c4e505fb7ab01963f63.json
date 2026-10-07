@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "de6f5b2790d1a4ab4388c1c16b903bb391e2be4c762d2c4e505fb7ab01963f63",
+  "key": "chum/5.1_armv7hl/armv7hl/mc-4.8.29-1.5.1.bso.armv7hl.rpm",
+  "name": "mc",
+  "rpm_version": "4.8.29",
+  "release": "1.5.1.bso",
+  "arch": "armv7hl",
+  "verdict": 10,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": 10
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "hooks",
+      "path": "/etc/profile.d/mc.csh",
+      "code": "hooks.profile",
+      "detail": "mode 0100755 user root group root"
+    },
+    {
+      "module": "hooks",
+      "path": "/etc/profile.d/mc.sh",
+      "code": "hooks.profile",
+      "detail": "mode 0100755 user root group root"
+    },
+    {
+      "module": "hooks",
+      "path": "/usr/share/mc/hints/mc.hint.ko",
+      "code": "hooks.module",
+      "detail": "mode 0100644 user root group root"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "3de585b94622ab66fe6ff57ede87982f669ad0e2df6ae685e6a913ce0a3c1941",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-sailmines-0.8+main.20260829104512.1.g84ec3b8-1.1.1.bso.armv7hl.rpm",
+  "name": "harbour-sailmines",
+  "rpm_version": "0.8+main.20260829104512.1.g84ec3b8",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

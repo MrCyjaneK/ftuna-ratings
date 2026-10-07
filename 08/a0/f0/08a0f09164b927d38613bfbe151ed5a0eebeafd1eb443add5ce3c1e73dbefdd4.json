@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "08a0f09164b927d38613bfbe151ed5a0eebeafd1eb443add5ce3c1e73dbefdd4",
+  "key": "mirror/openrepos/wrzof/personal/main/p/python3-requests-2.4.1-10.2.1.jolla_.noarch.rpm",
+  "name": "python3-requests",
+  "rpm_version": "2.4.1",
+  "release": "10.2.1.jolla",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

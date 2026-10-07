@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "5ffcdbc1926b4f28f79c380253d988669576e8158c617cfe552f5a2c73c4c14d",
+  "key": "mirror/openrepos/shellkr/personal/main/l/libgpg-error-1.27-10.30.1.jolla_.armv7hl.rpm",
+  "name": "libgpg-error",
+  "rpm_version": "1.27",
+  "release": "10.30.1.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

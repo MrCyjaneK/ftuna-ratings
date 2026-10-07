@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "8048c07f86d1b1592a24202ba475c18f3252393eec536069c8ea51e9706d8e95",
+  "key": "mirror/openrepos/mazhe/personal/main/m/mdnsresponder-567-1.1.armv7hl.rpm",
+  "name": "mDNSResponder",
+  "rpm_version": "567",
+  "release": "1.1",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; if [ $1 -eq 1 ] ; then; /bin/systemctl preset mdnsd.service \u003e/dev/null 2\u003e\u00261 || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; /bin/systemctl --no-reload disable mdnsd.service \u003e /dev/null 2\u003e\u00261 || :; /bin/systemctl stop mdnsd.service \u003e /dev/null 2\u003e\u00261 || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/bin/systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :; if [ $1 -ge 1 ] ; then; /bin/systemctl try-restart mdnsd.service \u003e/dev/null 2\u003e\u00261 || :"
+    },
+    {
+      "module": "systemd",
+      "path": "/lib/systemd/system/mdnsd.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/sbin/mdnsd sandbox=none"
+    }
+  ]
+}

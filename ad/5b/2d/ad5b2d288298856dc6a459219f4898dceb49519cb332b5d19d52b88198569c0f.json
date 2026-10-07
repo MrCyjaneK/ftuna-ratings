@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "ad5b2d288298856dc6a459219f4898dceb49519cb332b5d19d52b88198569c0f",
+  "key": "mirror/openrepos/Polleke/personal/main/m/mc-4.8.33-1.aarch64.rpm",
+  "name": "mc",
+  "rpm_version": "4.8.33",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": 10,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": 10
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "hooks",
+      "path": "/etc/profile.d/mc.csh",
+      "code": "hooks.profile",
+      "detail": "mode 0100755 user root group root"
+    },
+    {
+      "module": "hooks",
+      "path": "/etc/profile.d/mc.sh",
+      "code": "hooks.profile",
+      "detail": "mode 0100755 user root group root"
+    },
+    {
+      "module": "hooks",
+      "path": "/usr/share/mc/hints/mc.hint.ko",
+      "code": "hooks.module",
+      "detail": "mode 0100644 user root group root"
+    }
+  ]
+}

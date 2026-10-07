@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "1f96ebcdd031f736ec28c8ae12e2310d54a8c8b3a4b74d2ecd9137de98606457",
+  "key": "mirror/openrepos/kelvan/personal/main/w/wol-0.7.1-1.5.1.armv7hl.rpm",
+  "name": "wol",
+  "rpm_version": "0.7.1",
+  "release": "1.5.1",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "355ce7ab56aab80c805493887f289e8cdcd4fc00d9acfe110faf8c9cf624ac0b",
+  "key": "mirror/openrepos/Rikudou_Sennin/personal/main/l/libsecret-0.21.7-1.armv7hl.rpm",
+  "name": "libsecret",
+  "rpm_version": "0.21.7",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

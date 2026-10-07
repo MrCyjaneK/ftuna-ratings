@@ -1,0 +1,104 @@
+{
+  "version": 6,
+  "sha256": "c3ad31f0f7b26c429da381519474601a45d5833bcf85b8711a830a1136d66e71",
+  "key": "mirror/openrepos/xkr47/personal/main/c/charger-control-0.1-1.armv7hl.rpm",
+  "name": "charger-control",
+  "rpm_version": "0.1",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 59,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": 45
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/charger-control.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=grep \"^charger-control:\" /etc/group \u003e /dev/null || groupadd charger-control"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl enable /usr/lib/systemd/user/charger-control-permissions.service; systemctl start charger-control-permissions.service"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload disable charger-control-permissions.service || :; systemctl stop charger-control-permissions.service || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :; if [ $1 -eq 0 ] ; then; ! grep \"^charger-control:\" /etc/group \u003e /dev/null || groupdel charger-control"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/charger-control",
+      "code": "setgid",
+      "detail": "/usr/bin/charger-control mode 0102755 user root group charger-control file"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/charger-control-permissions.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/libexec/charger-control-permissions.sh sandbox=none"
+    }
+  ]
+}

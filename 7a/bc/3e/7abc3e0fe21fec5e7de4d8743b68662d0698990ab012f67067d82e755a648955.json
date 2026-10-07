@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "7abc3e0fe21fec5e7de4d8743b68662d0698990ab012f67067d82e755a648955",
+  "key": "mirror/openrepos/fface/personal/main/p/peervpn-0.044-1.i486.rpm",
+  "name": "peervpn",
+  "rpm_version": "0.044",
+  "release": "1",
+  "arch": "i486",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "systemd",
+      "path": "/etc/systemd/system/peervpn.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/local/sbin/peervpn /etc/peervpn.conf sandbox=none"
+    }
+  ]
+}

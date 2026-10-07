@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "879e40a54e793102f686d11ab692b9afd4bc1ed09c32f88b960caaf6a3022f67",
+  "key": "mirror/openrepos/nephros/personal/main/a/arrowboard-de-qwertz-1.3-1.noarch.rpm",
+  "name": "arrowboard-de-qwertz",
+  "rpm_version": "1.3",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

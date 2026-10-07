@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "7fc657ca7b287d5e7888ae315ffbc854dd4a9bf35e42679a1b30e868f9b50a69",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-picupload-debuginfo-0.3.6+main.20260831185729.07a7789-1.1.1.bso.armv7hl.rpm",
+  "name": "harbour-picupload-debuginfo",
+  "rpm_version": "0.3.6+main.20260831185729.07a7789",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

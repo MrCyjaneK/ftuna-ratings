@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "2c3936c31579e67776efc239a3e68c7c49d8672c13ddf99ba9f284dfcef6f8fd",
+  "key": "chum/5.1_armv7hl/armv7hl/w3m-debuginfo-0.5.3-1.1.1.bso.armv7hl.rpm",
+  "name": "w3m-debuginfo",
+  "rpm_version": "0.5.3",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

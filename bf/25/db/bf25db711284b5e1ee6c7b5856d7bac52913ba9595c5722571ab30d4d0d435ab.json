@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "bf25db711284b5e1ee6c7b5856d7bac52913ba9595c5722571ab30d4d0d435ab",
+  "key": "chum/5.1_armv7hl/armv7hl/opt-kf5-kwindowsystem-5.116.0-1.7.1.bso.armv7hl.rpm",
+  "name": "opt-kf5-kwindowsystem",
+  "rpm_version": "5.116.0",
+  "release": "1.7.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "11a22ab81bc8cf99405328b42c5fbe94234157a4e50dda50dfe81715790ae613",
+  "key": "mirror/openrepos/nephros/personal/main/a/ambience-eff-xperia-1.0-4.noarch.rpm",
+  "name": "ambience-eff-xperia",
+  "rpm_version": "1.0",
+  "release": "4",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

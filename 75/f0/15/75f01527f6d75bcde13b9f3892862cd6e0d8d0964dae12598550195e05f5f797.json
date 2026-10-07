@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "75f01527f6d75bcde13b9f3892862cd6e0d8d0964dae12598550195e05f5f797",
+  "key": "chum/5.2_armv7hl/armv7hl/lnav-debugsource-0.11.2+git1-1.2.1.bso.armv7hl.rpm",
+  "name": "lnav-debugsource",
+  "rpm_version": "0.11.2+git1",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

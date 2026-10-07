@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "1a631fbd7199a6598fa6921bf3703277bdb770288865d1d4999fc24356303d18",
+  "key": "mirror/openrepos/ichthyosaurus/personal/main/s/sfos-patch-homescreen-no-carousel-4.0.1-1.noarch.rpm",
+  "name": "sfos-patch-homescreen-no-carousel",
+  "rpm_version": "4.0.1",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d '/usr/share/patchmanager/patches/sfos-patch-homescreen-no-carousel' ]; then; /usr/sbin/patchmanager -u 'sfos-patch-homescreen-no-carousel' || true; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d '/usr/share/patchmanager/patches/sfos-patch-homescreen-no-carousel' ]; then; /usr/sbin/patchmanager -u 'sfos-patch-homescreen-no-carousel' || true; fi"
+    }
+  ]
+}

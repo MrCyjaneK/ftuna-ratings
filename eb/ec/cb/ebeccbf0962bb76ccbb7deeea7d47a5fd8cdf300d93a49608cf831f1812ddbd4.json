@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "ebeccbf0962bb76ccbb7deeea7d47a5fd8cdf300d93a49608cf831f1812ddbd4",
+  "key": "chum/5.2_aarch64/aarch64/oniguruma-debuginfo-6.9.6-1.1.1.bso.aarch64.rpm",
+  "name": "oniguruma-debuginfo",
+  "rpm_version": "6.9.6",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

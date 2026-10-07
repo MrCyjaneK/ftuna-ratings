@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "576ae3e4b995c99673c8e67a41ae7070f7cf016256abcc47408e31e7b54cf9dc",
+  "key": "mirror/openrepos/nephros/personal/main/h/harbour-privoxy-extra-lists-2021.01.06-2.noarch.rpm",
+  "name": "harbour-privoxy-extra-lists",
+  "rpm_version": "2021.01.06",
+  "release": "2",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

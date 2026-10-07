@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "cadbe815d16ddaf2ea603b8d44a18240da9d43bd0f6f8b670edbabda907c5970",
+  "key": "mirror/openrepos/ferlanero/personal/main/s/sailfishos-patch-silicamail-3.2.1.20-1.noarch.rpm",
+  "name": "sailfishos-patch-silicamail",
+  "rpm_version": "3.2.1.20",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; rm -rf /usr/share/patchmanager/patches/sailfishos-patch-silicamail/htmlViewer_Dark.css"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "7ec5d8145c7cf9f8308c1f2575f4ce21dfbc05896aba553830efdcc8f03084e0",
+  "key": "chum/5.1_i486/i486/harbour-aenigma-debugsource-0.4.0-1.4.1.bso.i486.rpm",
+  "name": "harbour-aenigma-debugsource",
+  "rpm_version": "0.4.0",
+  "release": "1.4.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

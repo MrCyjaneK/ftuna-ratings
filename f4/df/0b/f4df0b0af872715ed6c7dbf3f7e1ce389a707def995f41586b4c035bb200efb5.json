@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "f4df0b0af872715ed6c7dbf3f7e1ce389a707def995f41586b4c035bb200efb5",
+  "key": "mirror/openrepos/lachs0r/personal/main/o/openssh-clients-8.1p1-1.armv7hl.rpm",
+  "name": "openssh-clients",
+  "rpm_version": "8.1p1",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 45,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": 45
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "setuid",
+      "path": "/usr/bin/ssh-agent",
+      "code": "setgid",
+      "detail": "/usr/bin/ssh-agent mode 0102755 user root group nobody file"
+    }
+  ]
+}

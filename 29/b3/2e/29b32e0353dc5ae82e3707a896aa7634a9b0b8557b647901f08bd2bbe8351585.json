@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "29b32e0353dc5ae82e3707a896aa7634a9b0b8557b647901f08bd2bbe8351585",
+  "key": "chum/5.1_aarch64/aarch64/kservice-debuginfo-5.34.0-1.1.1.bso.aarch64.rpm",
+  "name": "kservice-debuginfo",
+  "rpm_version": "5.34.0",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "8ec9485292cfc18724b2014bcb3824b55a7278955b98703ab461a5671b540c11",
+  "key": "chum/5.1_aarch64/aarch64/ncpamixer-debuginfo-1.3.9-1.1.2.bso.aarch64.rpm",
+  "name": "ncpamixer-debuginfo",
+  "rpm_version": "1.3.9",
+  "release": "1.1.2.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

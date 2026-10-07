@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "2579b69da1e8a87ebf8b284694fc21df7cb46a733dc1c9cf32fbac82da8943dd",
+  "key": "chum/5.2_aarch64/aarch64/wordgrinder-0.8+git3-1.2.1.bso.aarch64.rpm",
+  "name": "wordgrinder",
+  "rpm_version": "0.8+git3",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/wordgrinder.desktop",
+      "code": "sailjail.permission",
+      "detail": "Documents"
+    }
+  ]
+}

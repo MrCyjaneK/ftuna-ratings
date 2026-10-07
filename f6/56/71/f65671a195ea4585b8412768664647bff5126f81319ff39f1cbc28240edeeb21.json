@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "f65671a195ea4585b8412768664647bff5126f81319ff39f1cbc28240edeeb21",
+  "key": "mirror/openrepos/ilovekiruna/personal/main/h/haze-accounts-extensions-hangouts-0.2-10.13.1.jolla_.noarch.rpm",
+  "name": "haze-accounts-extensions-hangouts",
+  "rpm_version": "0.2",
+  "release": "10.13.1.jolla",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

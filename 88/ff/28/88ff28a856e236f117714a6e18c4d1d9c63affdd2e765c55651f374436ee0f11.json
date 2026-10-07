@@ -1,0 +1,98 @@
+{
+  "version": 6,
+  "sha256": "88ff28a856e236f117714a6e18c4d1d9c63affdd2e765c55651f374436ee0f11",
+  "key": "mirror/openrepos/mkiol/personal/main/h/harbour-dsnote-4.6.1-1.armv7hl.rpm",
+  "name": "harbour-dsnote",
+  "rpm_version": "4.6.1",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 64,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 85
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.mkiol.Speech.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/bin/false systemd=harbour-dsnote.service"
+    },
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.mkiol.dsnote.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/harbour-dsnote --app"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-dsnote.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user stop harbour-dsnote.service \u003e/dev/null 2\u003e\u00261 || :; systemctl-user daemon-reload \u003e/dev/null 2\u003e\u00261 || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user stop harbour-dsnote.service \u003e/dev/null 2\u003e\u00261 || :; systemctl-user daemon-reload \u003e/dev/null 2\u003e\u00261 || :"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-dsnote.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-dsnote --service sandbox=none"
+    }
+  ]
+}

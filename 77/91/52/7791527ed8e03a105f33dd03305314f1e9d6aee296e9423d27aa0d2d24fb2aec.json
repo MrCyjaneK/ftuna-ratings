@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "7791527ed8e03a105f33dd03305314f1e9d6aee296e9423d27aa0d2d24fb2aec",
+  "key": "chum/5.2_armv7hl/armv7hl/libKF5ConfigWidgets5-5.34.0-1.1.1.bso.armv7hl.rpm",
+  "name": "libKF5ConfigWidgets5",
+  "rpm_version": "5.34.0",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

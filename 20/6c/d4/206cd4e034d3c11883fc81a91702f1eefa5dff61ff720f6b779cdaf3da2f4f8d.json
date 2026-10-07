@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "206cd4e034d3c11883fc81a91702f1eefa5dff61ff720f6b779cdaf3da2f4f8d",
+  "key": "mirror/openrepos/iKozzz/personal/main/g/gst-fluendo-mp3-0.10.32.armv7hl.rpm",
+  "name": "fluendo-mp3",
+  "rpm_version": "0.10.32",
+  "release": "10.40.1.jolla",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=mv /home/abuild/rpmbuild/BUILD/usr/lib/gstreamer-0.10/libgstflump3dec.so usr/lib/gstreamer-0.10/libgstflump3dec.so; rm -rf /home/abuild"
+    }
+  ]
+}

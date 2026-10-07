@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "73d0df61cf779a626cab4cc44e6c1cc0fa331838e46d099d8de6415cafeb0ac8",
+  "key": "mirror/openrepos/neochapay/personal/main/l/lipstick-glacier-home-qt5-0.26.1-2.armv7hl.rpm",
+  "name": "lipstick-glacier-home-qt5",
+  "rpm_version": "0.26.1",
+  "release": "2",
+  "arch": "armv7hl",
+  "verdict": 58,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user --no-block restart lipstick.service"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/lipstick.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/lipstick $LIPSTICK_OPTIONS --systemd sandbox=none"
+    }
+  ]
+}

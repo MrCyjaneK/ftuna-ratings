@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "108ae159c522c7e88f740a3893b11fa436958241ae3fc3e76cc0c1932c435df9",
+  "key": "mirror/openrepos/ichthyosaurus/personal/main/s/sfos-patch-keyboard-swiss-german-layout-1.0.3-1.noarch.rpm",
+  "name": "sfos-patch-keyboard-swiss-german-layout",
+  "rpm_version": "1.0.3",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-keyboard-swiss-german-layout ]; then; /usr/sbin/patchmanager -u sfos-patch-keyboard-swiss-german-layout |"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-keyboard-swiss-german-layout ]; then; /usr/sbin/patchmanager -u sfos-patch-keyboard-swiss-german-layout |"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "ef89e17b796f0d32ac5a78e7c39797886ac7d6efb5b738c8b54d216c55afb7f5",
+  "key": "mirror/openrepos/ade/personal/main/o/okboard-experimental-0.6.38-2.aarch64.rpm",
+  "name": "okboard-experimental",
+  "rpm_version": "0.6.38",
+  "release": "2",
+  "arch": "aarch64",
+  "verdict": 43,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/okboard.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=find ${home_dir}/ -xdev -mindepth 2 -maxdepth 2 -type d -name .config | sed -r 's=$=/maliit.org/server.conf=' | xargs -r rm -f || true; killall maliit-server 2\u003e"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=rm -f /usr/share/okboard/install.log /usr/share/okboard/install.err; if [ $1 = 0 ] ; then  # do not run uninstall script in case of upgrade; rm -f /usr/lib64/ma"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ] ; then; find ${home_dir}/ -xdev -mindepth 2 -maxdepth 2 -type d -name .config | sed -r 's=$=/maliit.org/server.conf=' | xargs -r rm -f || true; ki"
+    }
+  ]
+}

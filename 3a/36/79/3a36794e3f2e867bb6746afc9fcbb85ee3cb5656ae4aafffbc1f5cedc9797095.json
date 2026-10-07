@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "3a36794e3f2e867bb6746afc9fcbb85ee3cb5656ae4aafffbc1f5cedc9797095",
+  "key": "chum/5.2_armv7hl/noarch/oauth2-py-2.26+obs4-1.5.2.bso.noarch.rpm",
+  "name": "oauth2-py",
+  "rpm_version": "2.26+obs4",
+  "release": "1.5.2.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

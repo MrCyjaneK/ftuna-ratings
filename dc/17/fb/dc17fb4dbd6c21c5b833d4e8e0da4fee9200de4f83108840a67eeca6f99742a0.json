@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "dc17fb4dbd6c21c5b833d4e8e0da4fee9200de4f83108840a67eeca6f99742a0",
+  "key": "mirror/openrepos/AndyWuest/personal/main/h/harbour-commbank-0.2.0-1.armv7hl.rpm",
+  "name": "harbour-commbank",
+  "rpm_version": "0.2.0",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-commbank.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-commbank.desktop",
+      "code": "sailjail.permission",
+      "detail": "Secrets"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-commbank.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs"
+    }
+  ]
+}

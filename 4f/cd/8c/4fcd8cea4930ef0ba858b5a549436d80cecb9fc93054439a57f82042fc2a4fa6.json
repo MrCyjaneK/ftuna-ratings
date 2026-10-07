@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "4fcd8cea4930ef0ba858b5a549436d80cecb9fc93054439a57f82042fc2a4fa6",
+  "key": "chum/5.2_armv7hl/armv7hl/perl-IO-Socket-IP-debugsource-0.42-1.1.1.bso.armv7hl.rpm",
+  "name": "perl-IO-Socket-IP-debugsource",
+  "rpm_version": "0.42",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

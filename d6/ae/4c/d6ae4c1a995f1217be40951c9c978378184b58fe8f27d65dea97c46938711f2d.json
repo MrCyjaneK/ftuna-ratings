@@ -1,0 +1,116 @@
+{
+  "version": 6,
+  "sha256": "d6ae4c1a995f1217be40951c9c978378184b58fe8f27d65dea97c46938711f2d",
+  "key": "chum/5.1_armv7hl/noarch/hosts-block-0.1.2+master.20260725144015.538f6e9-1.5.1.bso.noarch.rpm",
+  "name": "hosts-block",
+  "rpm_version": "0.1.2+master.20260725144015.538f6e9",
+  "release": "1.5.1.bso",
+  "arch": "noarch",
+  "verdict": 38,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/hosts-block-add-to-blacklist.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/hosts-block-add-to-whitelist.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=[ \"$1\" = 1 ] \u0026\u0026 cd /etc \u0026\u0026 [ -r hosts ] \u0026\u0026 /usr/bin/tar czf /home/hosts-original_hosts-block.tar.gz hosts || :; if [ $1 -eq 1 ] ; then; systemctl --no-reload pr"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload disable --now hosts-block.timer hosts-block-watch-config.service \u003e /dev/null 2\u003e\u00261 || :; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=[ \"$1\" = 0 ] \u0026\u0026 /usr/bin/systemctl daemon-reload || :; [ \"$1\" = 0 ] \u0026\u0026 /usr/bin/rmdir /usr/share/hosts-block/ /usr/share/doc/hosts-block/ || :; [ \"$1\" = 0 ] \u0026\u0026 "
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/hosts-block-forced.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/bin/hosts-block forced sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/hosts-block-watch-config.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/share/hosts-block/watch-config.sh sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/hosts-block.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/bin/hosts-block sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/hosts-block.timer",
+      "code": "systemd.timer",
+      "detail": "scope=system activates=hosts-block.service"
+    }
+  ]
+}

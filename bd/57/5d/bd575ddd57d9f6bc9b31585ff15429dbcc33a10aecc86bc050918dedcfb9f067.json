@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "bd575ddd57d9f6bc9b31585ff15429dbcc33a10aecc86bc050918dedcfb9f067",
+  "key": "chum/5.1_aarch64/aarch64/mc-debugsource-4.8.29-1.5.1.bso.aarch64.rpm",
+  "name": "mc-debugsource",
+  "rpm_version": "4.8.29",
+  "release": "1.5.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

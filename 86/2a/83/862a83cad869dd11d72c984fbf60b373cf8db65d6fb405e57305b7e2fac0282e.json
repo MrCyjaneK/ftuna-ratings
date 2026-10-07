@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "862a83cad869dd11d72c984fbf60b373cf8db65d6fb405e57305b7e2fac0282e",
+  "key": "mirror/openrepos/lpr/personal/main/l/libamberwebauthorization-1.0.8-1.8.4.jolla_.armv7hl.rpm",
+  "name": "libamberwebauthorization",
+  "rpm_version": "1.0.8",
+  "release": "1.8.4.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

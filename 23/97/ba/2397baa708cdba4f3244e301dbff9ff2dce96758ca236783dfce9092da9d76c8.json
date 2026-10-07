@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "2397baa708cdba4f3244e301dbff9ff2dce96758ca236783dfce9092da9d76c8",
+  "key": "mirror/openrepos/martonmiklos/personal/main/h/harbour-sms-share-plugin-1.0-2.armv7hl.rpm",
+  "name": "harbour-sms-share-plugin",
+  "rpm_version": "1.0",
+  "release": "2",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

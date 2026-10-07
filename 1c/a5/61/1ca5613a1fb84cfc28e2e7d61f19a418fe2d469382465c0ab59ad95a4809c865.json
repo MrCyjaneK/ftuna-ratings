@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "1ca5613a1fb84cfc28e2e7d61f19a418fe2d469382465c0ab59ad95a4809c865",
+  "key": "chum/5.1_i486/i486/date-debuginfo-3.0.0.20210322.sfos.3-1.4.1.bso.i486.rpm",
+  "name": "date-debuginfo",
+  "rpm_version": "3.0.0.20210322.sfos.3",
+  "release": "1.4.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

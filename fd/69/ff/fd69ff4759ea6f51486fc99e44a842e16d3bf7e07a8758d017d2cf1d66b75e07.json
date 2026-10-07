@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "fd69ff4759ea6f51486fc99e44a842e16d3bf7e07a8758d017d2cf1d66b75e07",
+  "key": "chum/5.1_aarch64/aarch64/harbour-batteryoverlay2-debugsource-0.4.0-1.1.1.bso.aarch64.rpm",
+  "name": "harbour-batteryoverlay2-debugsource",
+  "rpm_version": "0.4.0",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

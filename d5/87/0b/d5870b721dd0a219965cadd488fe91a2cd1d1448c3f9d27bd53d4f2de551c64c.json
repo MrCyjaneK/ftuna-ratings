@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "d5870b721dd0a219965cadd488fe91a2cd1d1448c3f9d27bd53d4f2de551c64c",
+  "key": "mirror/openrepos/wdehoog/personal/main/l/libupnp6-1.6.21-10.3.1.jolla_.armv7hl.rpm",
+  "name": "libupnp6",
+  "rpm_version": "1.6.21",
+  "release": "10.3.1.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

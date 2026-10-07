@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "3380b0adb36a00ea7af583cfb988327814a463ba9a253a4f53fc61d4a3d4b1f6",
+  "key": "mirror/openrepos/ichthyosaurus/personal/main/s/sfos-patch-podcatcher-various-1.1.1-1.noarch.rpm",
+  "name": "sfos-patch-podcatcher-various",
+  "rpm_version": "1.1.1",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-podcatcher-various ]; then; /usr/sbin/patchmanager -u sfos-patch-podcatcher-various || true; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-podcatcher-various ]; then; /usr/sbin/patchmanager -u sfos-patch-podcatcher-various || true; fi"
+    }
+  ]
+}

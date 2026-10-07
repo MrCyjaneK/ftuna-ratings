@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "a7d4e0c2d10d8d154e72cc41a8588f837389d0123bf551f76ec01af165901ccc",
+  "key": "chum/5.2_i486/i486/harbour-fibonacci-debuginfo-1.0.4-1.7.1.bso.i486.rpm",
+  "name": "harbour-fibonacci-debuginfo",
+  "rpm_version": "1.0.4",
+  "release": "1.7.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

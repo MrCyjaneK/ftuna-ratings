@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "912e7e7420a383eebcb6b1425578ece6e10f557e7fb1308529cb6ada41b5fb8a",
+  "key": "mirror/openrepos/Mister_Magister/personal/main/y/yottagram-voicecall-plugin-0.3.1-1.armv7hl.rpm",
+  "name": "yottagram-voicecall-plugin",
+  "rpm_version": "0.3.1",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

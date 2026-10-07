@@ -1,0 +1,182 @@
+{
+  "version": 6,
+  "sha256": "d0e5e8dd2bfd0f9afe6483f4278608ddab4804fe2ca9f56136b14821d838547f",
+  "key": "mirror/openrepos/aviarus/personal/main/s/sailfish-browser-next-3.0.0-1.aarch64.rpm",
+  "name": "sailfish-browser-next",
+  "rpm_version": "3.0.0",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": 54,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 85
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": 0
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.sailfishos.browsernext.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/sailfish-browser-next -prestart"
+    },
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.sailfishos.browsernext.ui.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/sailfish-browser-next -prestart"
+    },
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.sailfishos.captiveportalnext.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/invoker -s --type=generic /usr/bin/sailjail -p sailfish-captiveportal-next.desktop /usr/bin/sailfish-captiveportal-next -prestart -captiveportal"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/sailfish-browser-next.desktop",
+      "code": "sailjail.permission",
+      "detail": "WebView"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/sailfish-browser-next.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/sailfish-browser-next.desktop",
+      "code": "sailjail.permission",
+      "detail": "Camera"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/sailfish-browser-next.desktop",
+      "code": "sailjail.permission",
+      "detail": "Location"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/sailfish-browser-next.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/sailfish-browser-next.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/sailfish-browser-next.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/sailfish-browser-next.desktop",
+      "code": "sailjail.permission",
+      "detail": "MediaIndexing"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/sailfish-captiveportal-next.desktop",
+      "code": "sailjail.permission",
+      "detail": "CaptivePortal"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/sailfish-captiveportal-next.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/sailfish-captiveportal-next.desktop",
+      "code": "sailjail.permission",
+      "detail": "Camera"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/sailfish-captiveportal-next.desktop",
+      "code": "sailjail.permission",
+      "detail": "Location"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/sailfish-captiveportal-next.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/sailfish-captiveportal-next.desktop",
+      "code": "sailjail.permission",
+      "detail": "Downloads"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig || :; if [ \"$1\" -ge 2 ]; then; /usr/bin/add-oneshot --all-users --now browser-next-cleanup-startup-cache || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig || :"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/licenses/sailfish-browser-next-3.0.0/LICENSE.txt",
+      "code": "worldwrite",
+      "detail": "/usr/share/licenses/sailfish-browser-next-3.0.0/LICENSE.txt mode 0100666 user root group root file"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "b4ec164e0a020c5937ca699f65cee975b2bab351278cd91b92f4c73d4881fe09",
+  "key": "mirror/openrepos/DrYak/personal/main/p/pv-1.6.0-10.6.1.jolla_.armv7hl.rpm",
+  "name": "pv",
+  "rpm_version": "1.6.0",
+  "release": "10.6.1.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

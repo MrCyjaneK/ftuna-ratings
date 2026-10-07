@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "d4201318cca4e2887714074cfbc29ba66855a342af1c0ee5a794d83bb90f7df2",
+  "key": "mirror/openrepos/saberaltria/personal/main/p/patch-silica-flat-ui-1.4-6.armv7hl.rpm",
+  "name": "patch-silica-flat-ui",
+  "rpm_version": "1.4",
+  "release": "6",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

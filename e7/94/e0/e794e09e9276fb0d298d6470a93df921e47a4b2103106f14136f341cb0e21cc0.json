@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "e794e09e9276fb0d298d6470a93df921e47a4b2103106f14136f341cb0e21cc0",
+  "key": "mirror/openrepos/eson/personal/main/s/swedish-for-screenrecorder-0.1.0-1.noarch.rpm",
+  "name": "swedish-for-screenrecorder",
+  "rpm_version": "0.1.0",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=chmod 644 /usr/share/screenrecorder-gui/translations/screenrecorder-gui-sv.qm"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; rm -rf /usr/share/screenrecorder-gui/translations/screenrecorder-gui-sv.qm; else"
+    }
+  ]
+}

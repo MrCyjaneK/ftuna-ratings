@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "4c2fa200fee775c126f94608b1870fe517840f48cd00429494a211c5242b8643",
+  "key": "chum/5.1_armv7hl/armv7hl/qt5keychain-debugsource-0.13.2+git2-1.1.1.bso.armv7hl.rpm",
+  "name": "qt5keychain-debugsource",
+  "rpm_version": "0.13.2+git2",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

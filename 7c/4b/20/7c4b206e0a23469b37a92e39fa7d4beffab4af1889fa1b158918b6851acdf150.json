@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "7c4b206e0a23469b37a92e39fa7d4beffab4af1889fa1b158918b6851acdf150",
+  "key": "mirror/openrepos/nephros/personal/main/m/mbedtls-tools-2.28.2git1.0-1.4.1.jolla_.aarch64.rpm",
+  "name": "mbedtls-tools",
+  "rpm_version": "2.28.2+git1.0",
+  "release": "1.4.1.jolla",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

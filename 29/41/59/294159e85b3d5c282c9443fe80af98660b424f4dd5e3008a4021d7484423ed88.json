@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "294159e85b3d5c282c9443fe80af98660b424f4dd5e3008a4021d7484423ed88",
+  "key": "chum/5.1_i486/i486/harbour-owncloud-daemon-0.9.9.5-1.1.1.bso.i486.rpm",
+  "name": "harbour-owncloud-daemon",
+  "rpm_version": "0.9.9.5",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "verdict": 85,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-owncloud-daemon.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-owncloud-daemon sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-owncloud-permission-agent.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-owncloud-permission-agent sandbox=none"
+    }
+  ]
+}

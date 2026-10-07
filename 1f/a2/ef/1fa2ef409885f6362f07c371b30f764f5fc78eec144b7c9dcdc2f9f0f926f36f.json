@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "1fa2ef409885f6362f07c371b30f764f5fc78eec144b7c9dcdc2f9f0f926f36f",
+  "key": "chum/5.1_i486/i486/davfs2-debuginfo-1.7.0+git4-1.7.1.bso.i486.rpm",
+  "name": "davfs2-debuginfo",
+  "rpm_version": "1.7.0+git4",
+  "release": "1.7.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

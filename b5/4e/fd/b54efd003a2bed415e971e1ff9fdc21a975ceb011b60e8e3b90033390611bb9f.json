@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "b54efd003a2bed415e971e1ff9fdc21a975ceb011b60e8e3b90033390611bb9f",
+  "key": "mirror/openrepos/nephros/personal/main/o/openrepos-djvulibre-3.5.27.1-2.armv7hl.rpm",
+  "name": "openrepos-djvulibre",
+  "rpm_version": "3.5.27.1",
+  "release": "2",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

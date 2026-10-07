@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "d75a228084279f6b78e1d29dcb2504d0504d54279b13e26d61162d33ae80ce0b",
+  "key": "mirror/openrepos/reffyy/personal/main/r/rommy-sailfish-aarch64-main-12c81c1c-rommy-runtime-0.1.0-1522999054.aarch64.rpm",
+  "name": "rommy-runtime",
+  "rpm_version": "0.1.0",
+  "release": "1522999054",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

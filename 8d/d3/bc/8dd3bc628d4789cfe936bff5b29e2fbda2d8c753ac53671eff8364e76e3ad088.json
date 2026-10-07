@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "8dd3bc628d4789cfe936bff5b29e2fbda2d8c753ac53671eff8364e76e3ad088",
+  "key": "chum/5.1_armv7hl/armv7hl/libmikmod-debugsource-3.3.11.1-1.2.1.bso.armv7hl.rpm",
+  "name": "libmikmod-debugsource",
+  "rpm_version": "3.3.11.1",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

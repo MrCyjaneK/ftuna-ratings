@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "54635b03ab57f7ec58075aa8502cd4db867b675e537fd5c257002b88686d8c0c",
+  "key": "chum/5.1_i486/i486/moreutils-debuginfo-0.70+git2-1.3.1.bso.i486.rpm",
+  "name": "moreutils-debuginfo",
+  "rpm_version": "0.70+git2",
+  "release": "1.3.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "f3cf2b9d487e22538f4e0a54db438bbf70a6fe9f81ad67337574b28ab1e5890c",
+  "key": "chum/5.1_aarch64/aarch64/tin-debugsource-2.6.5-1.1.1.bso.aarch64.rpm",
+  "name": "tin-debugsource",
+  "rpm_version": "2.6.5",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

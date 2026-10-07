@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "80e091a8648eed7a0a32d465d68429e3614e8908cd33bfe0d69cf259b46eed51",
+  "key": "chum/5.2_aarch64/aarch64/nettle-debuginfo-3.10.1.1-1.3.1.bso.aarch64.rpm",
+  "name": "nettle-debuginfo",
+  "rpm_version": "3.10.1.1",
+  "release": "1.3.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

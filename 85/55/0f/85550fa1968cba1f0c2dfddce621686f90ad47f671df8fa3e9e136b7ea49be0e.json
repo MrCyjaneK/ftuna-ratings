@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "85550fa1968cba1f0c2dfddce621686f90ad47f671df8fa3e9e136b7ea49be0e",
+  "key": "mirror/openrepos/ilovekiruna/personal/main/p/purple-facebook-incr-2-10.31.2.jolla_.armv7hl.rpm",
+  "name": "purple-facebook-incr",
+  "rpm_version": "2",
+  "release": "10.31.2.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "ae3e9217c73cada39c7791b9900c963fdd50533a230332dc3472bc8c57ff5dbc",
+  "key": "chum/5.1_aarch64/noarch/harbour-sailreef-0.3.0-1.6.1.bso.noarch.rpm",
+  "name": "harbour-sailreef",
+  "rpm_version": "0.3.0",
+  "release": "1.6.1.bso",
+  "arch": "noarch",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailreef.desktop",
+      "code": "sailjail.permission",
+      "detail": "Downloads"
+    }
+  ]
+}

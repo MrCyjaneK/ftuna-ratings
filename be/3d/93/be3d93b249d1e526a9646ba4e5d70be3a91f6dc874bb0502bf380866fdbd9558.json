@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "be3d93b249d1e526a9646ba4e5d70be3a91f6dc874bb0502bf380866fdbd9558",
+  "key": "mirror/openrepos/lpr_A7/personal/main/l/libutempter-1.1.5-1.1.1.armv7hl.rpm",
+  "name": "libutempter",
+  "rpm_version": "1.1.5",
+  "release": "1.1.1",
+  "arch": "armv7hl",
+  "verdict": 38,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": 45
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body={; /usr/sbin/groupadd -g 22 -r -f utmp || :; /usr/sbin/groupadd -g 35 -r -f utempter || :"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/libexec/utempter/utempter",
+      "code": "setgid",
+      "detail": "/usr/libexec/utempter/utempter mode 0102711 user root group utmp file"
+    }
+  ]
+}

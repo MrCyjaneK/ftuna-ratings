@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "1ceccd903dc44c038e3048640dbbf2220faca9d99222c3ca0fbbd9a95d4f8223",
+  "key": "mirror/openrepos/Tomin/personal/main/g/gc-8.0.4-4.i486.rpm",
+  "name": "gc",
+  "rpm_version": "8.0.4",
+  "release": "4",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

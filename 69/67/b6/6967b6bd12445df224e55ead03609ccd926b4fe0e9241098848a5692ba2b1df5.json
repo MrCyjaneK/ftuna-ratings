@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "6967b6bd12445df224e55ead03609ccd926b4fe0e9241098848a5692ba2b1df5",
+  "key": "mirror/openrepos/olf/personal/main/m/mount-sdcard-1.8.1-1.sfos340.noarch.rpm",
+  "name": "mount-sdcard",
+  "rpm_version": "1.8.1",
+  "release": "1.sfos340",
+  "arch": "noarch",
+  "verdict": 23,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": 10
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": 30
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "polkit",
+      "path": "/etc/polkit-1/localauthority/50-local.d/61-mountsd.pkla",
+      "code": "polkit.pkla",
+      "detail": "Identity=unix-group:root ResultAny=yes"
+    },
+    {
+      "module": "systemd",
+      "path": "/etc/systemd/system/mount-sd@.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/bin/udisksctl-user mount $UDISKS2_MOUNT_OPTIONS -b /dev/%i sandbox=none"
+    },
+    {
+      "module": "udev",
+      "path": "/etc/udev/rules.d/91-mountsd.rules",
+      "code": "udev.run",
+      "detail": "user=root program=/usr/bin/systemctl stop mount-sd@%k.service"
+    }
+  ]
+}

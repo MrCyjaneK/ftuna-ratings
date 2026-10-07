@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "0eafd008ff5644a88aeb9d7b99a9abaaf34811ba34a2a23410cb698f9a2204ab",
+  "key": "mirror/openrepos/aviarus/personal/main/o/okboard-patch-5.2-1.0-1.noarch.rpm",
+  "name": "okboard-patch-5.2",
+  "rpm_version": "1.0",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/share/okboard-patch-5.2/okboard-52-fix.sh || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ] ; then; killall maliit-server 2\u003e/dev/null || :; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%triggerin okboard",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/share/okboard-patch-5.2/okboard-52-fix.sh || :"
+    }
+  ]
+}

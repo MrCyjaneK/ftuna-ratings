@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "687125d6fe2b457d7e8d6e795ea7000b6d0869c55d45ff5364d1eec32debf104",
+  "key": "mirror/openrepos/llelectronics_dev/personal/main/l/libqtwebkit5-widgets-5.212.0-1.119.1.jolla_.i486.rpm",
+  "name": "libqtwebkit5-widgets",
+  "rpm_version": "5.212.0",
+  "release": "1.119.1.jolla",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

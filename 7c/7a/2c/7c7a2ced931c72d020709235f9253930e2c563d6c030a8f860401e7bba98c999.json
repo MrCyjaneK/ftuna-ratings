@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "7c7a2ced931c72d020709235f9253930e2c563d6c030a8f860401e7bba98c999",
+  "key": "mirror/openrepos/aviarus/personal/main/w/waydroid-clipboard-1.2-1.noarch.rpm",
+  "name": "waydroid-clipboard",
+  "rpm_version": "1.2",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 43,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/waydroid-clipboard.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/share/waydroid-clipboard/apply.sh || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = 0 ]; then; T=/usr/lib/waydroid/tools/services/clipboard_manager.py; if [ -f \"$T.orig\" ]; then"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%triggerin waydroid",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/share/waydroid-clipboard/apply.sh || :"
+    }
+  ]
+}

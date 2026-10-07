@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "b382aa91eafc5c30e6e18613b614bb6a7729c065f2be350917f81624dab937c5",
+  "key": "chum/5.2_armv7hl/armv7hl/openrepos-mybackup-1.0.7-1.3.1.bso.armv7hl.rpm",
+  "name": "openrepos-mybackup",
+  "rpm_version": "1.0.7",
+  "release": "1.3.1.bso",
+  "arch": "armv7hl",
+  "verdict": 43,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/openrepos-mybackup.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" == 0 ] ; then; for d in $(getent passwd | cut -d: -f6) ; do; if [ \"$d\" != \"\" ] \u0026\u0026 [ \"$d\" != \"/\" ] \u0026\u0026 [ -d \"$d/.local/share/openrepos-mybackup\" ] ; the"
+    }
+  ]
+}

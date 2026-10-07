@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "55107c15c6363b9d8675f9203a3d658a0f0ecce9c6508a3f2451f1abf2d95fc4",
+  "key": "mirror/openrepos/tigeli/personal/main/h/harbour-wlan-region-0.0.2-0.noarch.rpm",
+  "name": "harbour-wlan-region",
+  "rpm_version": "0.0.2",
+  "release": "0",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/bin/sed -i 's/^#ccode=ALL/ccode=ALL/;s/^ccode=US/#ccode=US/' /system/etc/firmware/bcmdhd_aob.cal; /bin/echo \"Please reboot the device to make changes effective"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/bin/sed -i 's/^ccode=ALL/#ccode=ALL/;s/^#ccode=US/ccode=US/' /system/etc/firmware/bcmdhd_aob.cal; /bin/echo \"Please reboot the device to make changes effective"
+    }
+  ]
+}

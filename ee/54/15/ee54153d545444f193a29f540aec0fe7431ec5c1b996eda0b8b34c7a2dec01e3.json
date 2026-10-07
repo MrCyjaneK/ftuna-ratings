@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "ee54153d545444f193a29f540aec0fe7431ec5c1b996eda0b8b34c7a2dec01e3",
+  "key": "mirror/openrepos/nobodyinperson/personal/main/p/python3-matplotlib-3.1.14.gc3a21f388-jolla_seitseminen.armv7hl.rpm",
+  "name": "python3-matplotlib",
+  "rpm_version": "3.1.1+4.gc3a21f388",
+  "release": "jolla_seitseminen",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

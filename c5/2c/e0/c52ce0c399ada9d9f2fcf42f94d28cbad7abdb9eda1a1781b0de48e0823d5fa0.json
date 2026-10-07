@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "c52ce0c399ada9d9f2fcf42f94d28cbad7abdb9eda1a1781b0de48e0823d5fa0",
+  "key": "mirror/openrepos/slava/personal/main/o/openrepos-clock-settings-1.0.5-30.1.i486.rpm",
+  "name": "openrepos-clock-settings",
+  "rpm_version": "1.0.5",
+  "release": "30.1",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

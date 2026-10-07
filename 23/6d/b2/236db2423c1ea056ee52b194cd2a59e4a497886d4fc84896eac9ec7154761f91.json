@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "236db2423c1ea056ee52b194cd2a59e4a497886d4fc84896eac9ec7154761f91",
+  "key": "mirror/openrepos/Mister_Magister/personal/main/n/npm18-18.2.0-1.24.1.jolla_.i486.rpm",
+  "name": "npm18",
+  "rpm_version": "18.2.0",
+  "release": "1.24.1.jolla",
+  "arch": "i486",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=ln -s /usr/bin/npm18 /usr/bin/npm"
+    }
+  ]
+}

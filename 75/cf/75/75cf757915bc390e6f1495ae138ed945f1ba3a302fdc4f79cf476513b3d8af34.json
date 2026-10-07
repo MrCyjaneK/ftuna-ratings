@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "75cf757915bc390e6f1495ae138ed945f1ba3a302fdc4f79cf476513b3d8af34",
+  "key": "chum/5.2_i486/i486/PerlMagick-7.1.2.13+obs1.0-1.17.1.bso.i486.rpm",
+  "name": "PerlMagick",
+  "rpm_version": "7.1.2.13+obs1.0",
+  "release": "1.17.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

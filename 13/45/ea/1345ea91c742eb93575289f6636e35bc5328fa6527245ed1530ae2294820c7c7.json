@@ -1,0 +1,122 @@
+{
+  "version": 6,
+  "sha256": "1345ea91c742eb93575289f6636e35bc5328fa6527245ed1530ae2294820c7c7",
+  "key": "mirror/openrepos/nephros/personal/main/h/harbour-privoxy-3.0.34obs3-1.1.1.jolla_.i486.rpm",
+  "name": "harbour-privoxy",
+  "rpm_version": "3.0.34+obs3",
+  "release": "1.1.1.jolla",
+  "arch": "i486",
+  "verdict": 45,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-privoxy-config.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-privoxy-toggle.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=update-desktop-database /usr/share/applications \u0026\u003e /dev/null || :; if [ $1 -eq 1 ] ; then; systemctl --no-reload preset harbour-privoxy.service \u003e/dev/null 2\u003e\u00261 "
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload disable --now harbour-privoxy.service \u003e /dev/null 2\u003e\u00261 || :; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=update-desktop-database /usr/share/applications \u0026\u003e /dev/null || :"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/harbour-privoxy-clean-certs.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=-/bin/find /usr/share/harbour-privoxy/ssl/certs -type f -name *.crt -mtime +120 -exec rm -f {} \\;; -/bin/find /usr/share/harbour-privoxy/ssl/certs -type f -name *.pem -mtime +120 -exec rm -f {} \\; sandbox=ProtectSystem=strict,ProtectHome=read-only"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/harbour-privoxy-clean-log.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/bin/systemctl reload harbour-privoxy.service sandbox=ProtectSystem=strict,ProtectHome=read-only"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/harbour-privoxy-housekeeping.timer",
+      "code": "systemd.timer",
+      "detail": "scope=system activates=%N.target"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/harbour-privoxy-log2jrnl.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=dynamic group=inet exec=/usr/bin/systemd-cat -p notice -t privoxy-log /usr/bin/tail -F -n0 /var/log/harbour-privoxy/logfile ambient=CAP_DAC_READ_SEARCH sandbox=ProtectSystem=strict,ProtectHome,PrivateTmp,PrivateDevices,PrivateNetwork,PrivateUsers,NoNewPrivileges,MemoryDenyWriteExecute,ProtectKernelTunables,ProtectControlGroups"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/harbour-privoxy.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/sbin/harbour-privoxy --pidfile ${PIDFILE}  --user ${PUSER}.inet /usr/share/harbour-privoxy/conf/config.sailfish sandbox=ProtectSystem=strict,ProtectHome=read-only"
+    }
+  ]
+}

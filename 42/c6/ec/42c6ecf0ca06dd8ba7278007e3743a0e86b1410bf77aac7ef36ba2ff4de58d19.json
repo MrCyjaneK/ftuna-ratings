@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "42c6ecf0ca06dd8ba7278007e3743a0e86b1410bf77aac7ef36ba2ff4de58d19",
+  "key": "mirror/openrepos/lpr_next/personal/main/l/libsndfile-1.2.2-3.armv7hl.rpm",
+  "name": "libsndfile",
+  "rpm_version": "1.2.2",
+  "release": "3",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

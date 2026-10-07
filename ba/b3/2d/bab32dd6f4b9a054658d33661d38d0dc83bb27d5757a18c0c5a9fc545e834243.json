@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "bab32dd6f4b9a054658d33661d38d0dc83bb27d5757a18c0c5a9fc545e834243",
+  "key": "chum/5.2_aarch64/aarch64/AtomicParsley-debugsource-0.9.6.20221229+obs1-1.4.2.bso.aarch64.rpm",
+  "name": "AtomicParsley-debugsource",
+  "rpm_version": "0.9.6.20221229+obs1",
+  "release": "1.4.2.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

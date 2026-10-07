@@ -1,0 +1,104 @@
+{
+  "version": 6,
+  "sha256": "1d8be8a62f32a340cdabae252578fc1c17aee41a739a6ac83bc90eb451f31abe",
+  "key": "chum/5.1_aarch64/aarch64/sysstat-sa-tools-12.7.7+git1-1.4.1.bso.aarch64.rpm",
+  "name": "sysstat-sa-tools",
+  "rpm_version": "12.7.7+git1",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/sysstat-collect.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/lib64/sa/sa1 1 1 sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/sysstat-collect.timer",
+      "code": "systemd.timer",
+      "detail": "scope=system activates=sysstat-collect.service"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/sysstat-rotate.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/lib64/sa/sa1 --rotate sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/sysstat-rotate.timer",
+      "code": "systemd.timer",
+      "detail": "scope=system activates=sysstat-rotate.service"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/sysstat-summary.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/lib64/sa/sa2 -A sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/sysstat-summary.timer",
+      "code": "systemd.timer",
+      "detail": "scope=system activates=sysstat-summary.service"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/sysstat.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/lib64/sa/sa1 --boot sandbox=none"
+    }
+  ]
+}

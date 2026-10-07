@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "ba18cbb45e0c759764d42a75a4a40ae556fcae4e8b968349db0e3bda93d2f44e",
+  "key": "chum/5.2_armv7hl/noarch/maxima-help-5.47.0+git3-1.1.2.bso.noarch.rpm",
+  "name": "maxima-help",
+  "rpm_version": "5.47.0+git3",
+  "release": "1.1.2.bso",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=lastarg() { shift $(($# - 1)) ; echo \"$1\" ; }; if test -x sbin/install-info ; then; if test -e \"$(lastarg --info-dir=/usr/share/info /usr/share/info/maxima.info"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=lastarg() { shift $(($# - 1)) ; echo \"$1\" ; }; if test -x sbin/install-info ; then; if ! test -e \"$(lastarg --info-dir=/usr/share/info /usr/share/info/maxima.in"
+    }
+  ]
+}

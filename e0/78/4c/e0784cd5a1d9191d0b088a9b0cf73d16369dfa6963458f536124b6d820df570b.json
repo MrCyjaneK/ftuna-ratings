@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "e0784cd5a1d9191d0b088a9b0cf73d16369dfa6963458f536124b6d820df570b",
+  "key": "chum/5.1_i486/i486/harbour-advanced-camera-debugsource-0.9.8-1.4.1.bso.i486.rpm",
+  "name": "harbour-advanced-camera-debugsource",
+  "rpm_version": "0.9.8",
+  "release": "1.4.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

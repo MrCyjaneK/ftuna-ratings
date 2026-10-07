@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "d696c1fde2e0d4891e044d8d2fb1eaed32dfc24121ddb5de4e20ee3fa7b561c4",
+  "key": "mirror/openrepos/Mister_Magister/personal/main/t/tdlib-1.6.0-1.4.1.jolla_.armv7hl.rpm",
+  "name": "tdlib",
+  "rpm_version": "1.6.0",
+  "release": "1.4.1.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

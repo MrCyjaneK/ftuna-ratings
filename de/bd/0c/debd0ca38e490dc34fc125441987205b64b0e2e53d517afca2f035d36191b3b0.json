@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "debd0ca38e490dc34fc125441987205b64b0e2e53d517afca2f035d36191b3b0",
+  "key": "mirror/openrepos/shellkr/personal/main/p/pwgen-2.07-10.9.1.jolla_.armv7hl.rpm",
+  "name": "pwgen",
+  "rpm_version": "2.07",
+  "release": "10.9.1.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

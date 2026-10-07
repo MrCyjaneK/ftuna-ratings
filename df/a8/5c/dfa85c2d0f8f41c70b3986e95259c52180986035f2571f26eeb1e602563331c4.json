@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "dfa85c2d0f8f41c70b3986e95259c52180986035f2571f26eeb1e602563331c4",
+  "key": "chum/5.2_armv7hl/armv7hl/elinks-0.19.1-1.2.2.bso.armv7hl.rpm",
+  "name": "elinks",
+  "rpm_version": "0.19.1",
+  "release": "1.2.2.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

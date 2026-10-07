@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "e86b6e725cb1f1da1a9b05380f26398bce5ba28240da3a6682fbc9f371de0bfc",
+  "key": "mirror/openrepos/aviarus/personal/main/e/embedlite-components-qt5-next153-2.0.0-5.aarch64.rpm",
+  "name": "embedlite-components-qt5-next153",
+  "rpm_version": "2.0.0",
+  "release": "5",
+  "arch": "aarch64",
+  "verdict": 15,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": 0
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=touch /var/lib/_MOZEMBED_CACHE_CLEAN_"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/licenses/embedlite-components-qt5-next153-2.0.0/COPYING",
+      "code": "worldwrite",
+      "detail": "/usr/share/licenses/embedlite-components-qt5-next153-2.0.0/COPYING mode 0100666 user root group root file"
+    }
+  ]
+}

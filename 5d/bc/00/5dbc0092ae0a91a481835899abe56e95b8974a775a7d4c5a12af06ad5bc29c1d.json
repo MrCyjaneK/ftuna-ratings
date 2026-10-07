@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "5dbc0092ae0a91a481835899abe56e95b8974a775a7d4c5a12af06ad5bc29c1d",
+  "key": "chum/5.1_aarch64/noarch/harbour-privoxy-docs-4.2.0+wolfssl2-1.4.1.bso.noarch.rpm",
+  "name": "harbour-privoxy-docs",
+  "rpm_version": "4.2.0+wolfssl2",
+  "release": "1.4.1.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "3c130164a96cee0ab45c2866630ddae49f4a3493a3848d80c89ff40c4f1c0dd6",
+  "key": "mirror/openrepos/shadowfish/personal/main/l/libev4-4.24-1.4.3.jolla_.i486.rpm",
+  "name": "libev4",
+  "rpm_version": "4.24",
+  "release": "1.4.3.jolla",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

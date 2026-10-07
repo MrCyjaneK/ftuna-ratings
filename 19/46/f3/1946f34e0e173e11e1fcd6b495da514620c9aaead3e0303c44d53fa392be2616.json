@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "1946f34e0e173e11e1fcd6b495da514620c9aaead3e0303c44d53fa392be2616",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-yubikey-debuginfo-1.2.4-1.13.1.bso.armv7hl.rpm",
+  "name": "harbour-yubikey-debuginfo",
+  "rpm_version": "1.2.4",
+  "release": "1.13.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

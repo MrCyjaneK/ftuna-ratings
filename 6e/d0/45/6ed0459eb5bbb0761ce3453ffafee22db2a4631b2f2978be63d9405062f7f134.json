@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "6ed0459eb5bbb0761ce3453ffafee22db2a4631b2f2978be63d9405062f7f134",
+  "key": "mirror/openrepos/birdzhang/personal/main/s/sailfishos-voicecall-ui-location-attached-0.2.4-1.48.1.jolla_.noarch.rpm",
+  "name": "sailfishos-voicecall-ui-location-attached",
+  "rpm_version": "0.2.4",
+  "release": "1.48.1.jolla",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -f /usr/sbin/patchmanager ]; then; /usr/sbin/patchmanager -u sailfishos-voicecall-ui-location-attached || true; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -f /usr/sbin/patchmanager ]; then; /usr/sbin/patchmanager -u sailfishos-voicecall-ui-location-attached|| true; fi"
+    }
+  ]
+}

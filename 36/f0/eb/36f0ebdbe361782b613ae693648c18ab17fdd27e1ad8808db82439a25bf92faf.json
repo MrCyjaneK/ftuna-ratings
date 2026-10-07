@@ -1,0 +1,24 @@
+{
+  "version": 6,
+  "sha256": "36f0ebdbe361782b613ae693648c18ab17fdd27e1ad8808db82439a25bf92faf",
+  "key": "mirror/openrepos/too/personal/main/d/device-ip-1.2-1.noarch.rpm",
+  "name": "device-ip",
+  "rpm_version": "1.2",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "rpm",
+      "path": "mirror/openrepos/too/personal/main/d/device-ip-1.2-1.noarch.rpm",
+      "code": "rpm.read",
+      "detail": "No such entry 1037"
+    }
+  ]
+}

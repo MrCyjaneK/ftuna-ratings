@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "9e80434b9019acac14da433d04594c46208eacecca93b3078d03cc7f1a94b6dd",
+  "key": "mirror/openrepos/lpr/personal/main/g/gstreamer1.0-devel-1.16.2git2-6.armv7hl.rpm",
+  "name": "gstreamer1.0-devel",
+  "rpm_version": "1.16.2+git2",
+  "release": "6",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

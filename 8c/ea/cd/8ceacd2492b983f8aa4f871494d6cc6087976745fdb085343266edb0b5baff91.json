@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "8ceacd2492b983f8aa4f871494d6cc6087976745fdb085343266edb0b5baff91",
+  "key": "mirror/openrepos/slava/personal/main/s/sailfish-qrshare-1.0.13-35.1.i486.rpm",
+  "name": "sailfish-qrshare",
+  "rpm_version": "1.0.13",
+  "release": "35.1",
+  "arch": "i486",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/lib/qt5/qml/com/monich/qrshare/mkicon /usr/share/sailfish-qrshare/qrshare.svg || :; rm -f /usr/lib/qt5/qml/com/monich/qrshare/mkicon"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" == 0 ] ; then rm -f /usr/share/sailfish-qrshare/qrshare.png; fi"
+    }
+  ]
+}

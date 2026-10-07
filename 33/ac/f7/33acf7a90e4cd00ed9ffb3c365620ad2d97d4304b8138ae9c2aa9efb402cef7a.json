@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "33acf7a90e4cd00ed9ffb3c365620ad2d97d4304b8138ae9c2aa9efb402cef7a",
+  "key": "chum/5.2_i486/i486/harbour-biddy-bff-debugsource-0.92+main.20250111162800.f805769-1.3.1.bso.i486.rpm",
+  "name": "harbour-biddy-bff-debugsource",
+  "rpm_version": "0.92+main.20250111162800.f805769",
+  "release": "1.3.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

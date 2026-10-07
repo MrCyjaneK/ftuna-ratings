@@ -1,0 +1,98 @@
+{
+  "version": 6,
+  "sha256": "15254f425bd7dffdd602701b38de703d76b07ca98a4ecc0cf8118cd9ff8b199a",
+  "key": "mirror/openrepos/ade/personal/main/c/cronie-1.7.2-1.aarch64.rpm",
+  "name": "cronie",
+  "rpm_version": "1.7.2",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": 19,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": 15
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": 0
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "hooks",
+      "path": "/etc/pam.d/crond",
+      "code": "hooks.pam",
+      "detail": "mode 0100644 user root group root"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=%set_permissions /etc/crontab /usr/bin/crontab; %service_add_post cron.service; systemctl enable cron.service"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl daemon-reload"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%verifyscript",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=%verify_permissions -e /etc/crontab -e /usr/bin/crontab"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/crontab",
+      "code": "setuid",
+      "detail": "/usr/bin/crontab mode 0104111 user root group root file"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/cron.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/sbin/cron -s -m off -n $CRONDARGS sandbox=none"
+    }
+  ]
+}

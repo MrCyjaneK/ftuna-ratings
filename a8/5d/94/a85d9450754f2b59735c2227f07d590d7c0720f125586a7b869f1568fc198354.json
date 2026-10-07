@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "a85d9450754f2b59735c2227f07d590d7c0720f125586a7b869f1568fc198354",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/michal-szczepaniak/septitrac/Septitrac-debugsource-1.2.2-1.i486.rpm",
+  "name": "Septitrac-debugsource",
+  "rpm_version": "1.2.2",
+  "release": "1",
+  "arch": "i486",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": 100
+    }
+  ],
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/septitrac",
+      "code": "ftuna.built",
+      "detail": "clean"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "version": 6,
+  "sha256": "0415851ad59f8f6d06f2172aad524842f7d499aced5d79cd05fdcb7572bdb0c6",
+  "key": "mirror/openrepos/rubdos/personal/main/h/harbour-whisperfish-0.6.0.beta_.18-0.sf4_.armv7hl.rpm",
+  "name": "harbour-whisperfish",
+  "rpm_version": "0.6.0.beta.18",
+  "release": "0.sf4",
+  "arch": "armv7hl",
+  "verdict": 53,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-whisperfish.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-whisperfish.desktop",
+      "code": "sailjail.permission",
+      "detail": "Pictures"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-whisperfish.desktop",
+      "code": "sailjail.permission",
+      "detail": "Contacts"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-whisperfish.desktop",
+      "code": "sailjail.permission",
+      "detail": "Notifications"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-whisperfish.desktop",
+      "code": "sailjail.permission",
+      "detail": "Phone"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-whisperfish.desktop",
+      "code": "sailjail.permission",
+      "detail": "Privileged"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-whisperfish.desktop",
+      "code": "sailjail.permission",
+      "detail": "Mozilla"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-whisperfish.desktop",
+      "code": "sailjail.permission",
+      "detail": "MediaIndexing"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-whisperfish.desktop",
+      "code": "sailjail.permission",
+      "detail": "Downloads"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-whisperfish.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-whisperfish.desktop",
+      "code": "sailjail.permission",
+      "detail": "WebView"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-whisperfish.desktop",
+      "code": "sailjail.permission",
+      "detail": "Camera"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-whisperfish.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-whisperfish.desktop",
+      "code": "sailjail.permission",
+      "detail": "AppLaunch"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload; if pidof harbour-whisperfish \u003e/dev/null; then harbour-whisperfish --quit 2\u003e/dev/null || true; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user stop harbour-whisperfish.service || true; systemctl-user disable harbour-whisperfish.service || true"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/be.rubdos.whisperfish.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=unknown sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-whisperfish.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/invoker --type=qtquick2 /usr/bin/harbour-whisperfish -prestart sandbox=none"
+    }
+  ]
+}

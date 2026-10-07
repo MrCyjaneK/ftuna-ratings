@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "515e1d24d8ba5dea4bed7f81872adcf479246f18b120a26cb2b591fbbbeac3db",
+  "key": "chum/5.1_i486/i486/rpcbind-1.2.7-1.3.1.bso.i486.rpm",
+  "name": "rpcbind",
+  "rpm_version": "1.2.7",
+  "release": "1.3.1.bso",
+  "arch": "i486",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/rpcbind.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/sbin/rpcbind $RPCBIND_OPTIONS  -f sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/rpcbind.socket",
+      "code": "systemd.socket",
+      "detail": "scope=system activates=rpcbind.service"
+    }
+  ]
+}

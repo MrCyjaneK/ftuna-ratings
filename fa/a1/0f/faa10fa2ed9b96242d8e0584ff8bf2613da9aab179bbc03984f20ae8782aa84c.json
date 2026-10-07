@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "faa10fa2ed9b96242d8e0584ff8bf2613da9aab179bbc03984f20ae8782aa84c",
+  "key": "mirror/openrepos/aviarus/personal/main/x/xulrunner-qt5-next153-153.2.0-3.aarch64.rpm",
+  "name": "xulrunner-qt5-next153",
+  "rpm_version": "153.2.0",
+  "release": "3",
+  "arch": "aarch64",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=touch /var/lib/_MOZEMBED_CACHE_CLEAN_"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "601554a8294a7498c2a0e22509fee7051357c056b6da876ecfd7122c738d94a1",
+  "key": "mirror/openrepos/bundyo/personal/main/b/bulgarian_phonetic_keyboard-0.2-1.noarch.rpm",
+  "name": "bulgarian_phonetic_keyboard",
+  "rpm_version": "0.2",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 15,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": 0
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=killall maliit-server"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=killall maliit-server"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/maliit/plugins/com/jolla/layouts/bg.conf",
+      "code": "worldwrite",
+      "detail": "/usr/share/maliit/plugins/com/jolla/layouts/bg.conf mode 0100777 user root group root exec"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/maliit/plugins/com/jolla/layouts/bg.qml",
+      "code": "worldwrite",
+      "detail": "/usr/share/maliit/plugins/com/jolla/layouts/bg.qml mode 0100777 user root group root exec"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "e60185b54c1cc6b5d7d99cab97c1ea9c3124533f0e5eab02f880b1531266b6d6",
+  "key": "chum/5.1_i486/i486/waypipe-debugsource-0.10.5+git1+c-1.5.1.bso.i486.rpm",
+  "name": "waypipe-debugsource",
+  "rpm_version": "0.10.5+git1+c",
+  "release": "1.5.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

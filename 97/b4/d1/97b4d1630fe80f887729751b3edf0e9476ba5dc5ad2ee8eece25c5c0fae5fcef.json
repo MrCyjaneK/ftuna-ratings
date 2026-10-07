@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "97b4d1630fe80f887729751b3edf0e9476ba5dc5ad2ee8eece25c5c0fae5fcef",
+  "key": "chum/5.1_aarch64/aarch64/opt-qt5-designer-5.15.14+kde4-1.4.1.bso.aarch64.rpm",
+  "name": "opt-qt5-designer",
+  "rpm_version": "5.15.14+kde4",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

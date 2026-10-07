@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "ee08c4a3519e13074ae09c8e3cbddee4eb0d15c393642fe69113f79bf258a520",
+  "key": "chum/5.2_aarch64/noarch/harbour-simplecrop-1.2.3-1.8.1.bso.noarch.rpm",
+  "name": "harbour-simplecrop",
+  "rpm_version": "1.2.3",
+  "release": "1.8.1.bso",
+  "arch": "noarch",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-simplecrop.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-simplecrop.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-simplecrop.desktop",
+      "code": "sailjail.permission",
+      "detail": "MediaIndexing"
+    }
+  ]
+}

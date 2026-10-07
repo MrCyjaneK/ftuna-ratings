@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "e33a20e0eddafdaa16ce7701c56cf441a57c58da31ad3c562a30542765b1140b",
+  "key": "chum/5.1_aarch64/aarch64/harbour-fire-debugsource-1.0.7-1.8.1.bso.aarch64.rpm",
+  "name": "harbour-fire-debugsource",
+  "rpm_version": "1.0.7",
+  "release": "1.8.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

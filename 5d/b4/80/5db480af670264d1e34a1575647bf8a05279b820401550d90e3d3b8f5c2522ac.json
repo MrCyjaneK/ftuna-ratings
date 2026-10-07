@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "5db480af670264d1e34a1575647bf8a05279b820401550d90e3d3b8f5c2522ac",
+  "key": "mirror/openrepos/kan/personal/main/d/dnscrypt-proxy-2.1.4-9.aarch64.rpm",
+  "name": "dnscrypt-proxy",
+  "rpm_version": "2.1.4",
+  "release": "9",
+  "arch": "aarch64",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -e /etc/systemd/system/dnscrypt-proxy.service ]; then; systemctl stop dnscrypt-proxy; \\; /usr/bin/dnscrypt-proxy -service uninstall"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ ! -f /var/lib/dnsmasq/resolv.conf ]; then; rm -f /etc/resolv.conf; \\; ln -s /var/lib/dnscrypt-proxy/resolv.conf /etc/resolv.conf"
+    }
+  ]
+}

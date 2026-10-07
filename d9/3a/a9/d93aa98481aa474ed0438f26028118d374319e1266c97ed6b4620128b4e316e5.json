@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "d93aa98481aa474ed0438f26028118d374319e1266c97ed6b4620128b4e316e5",
+  "key": "chum/5.1_armv7hl/armv7hl/inotify-tools-4.23.9.0+git1-1.4.1.bso.armv7hl.rpm",
+  "name": "inotify-tools",
+  "rpm_version": "4.23.9.0+git1",
+  "release": "1.4.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

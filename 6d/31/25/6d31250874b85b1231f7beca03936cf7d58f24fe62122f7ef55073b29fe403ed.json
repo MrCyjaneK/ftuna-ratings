@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "6d31250874b85b1231f7beca03936cf7d58f24fe62122f7ef55073b29fe403ed",
+  "key": "mirror/openrepos/nephros/personal/main/o/openrepos-djvulibre-3.5.28-2.i486.rpm",
+  "name": "openrepos-djvulibre",
+  "rpm_version": "3.5.28",
+  "release": "2",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

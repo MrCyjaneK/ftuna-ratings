@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "0939fe11d3daa910276feed8567004836bc6bd3f29056f8a79bc402a6804e623",
+  "key": "mirror/openrepos/ferlanero/personal/main/s/sailfishos-patch-fixiconpickermenu-3.3.0.16-1.noarch.rpm",
+  "name": "sailfishos-patch-fixiconpickermenu",
+  "rpm_version": "3.3.0.16",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; rm -rf /usr/share/patchmanager/patches/sailfishos-patch-FixIconPickerMenu/main.png"
+    }
+  ]
+}

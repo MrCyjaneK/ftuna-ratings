@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "5dc4fa0592e2ba84fb6863e3642c9da66e7cfdd13112aba7bc2da5f9c86f1acb",
+  "key": "chum/5.1_aarch64/aarch64/libecl-24.5.10-1.3.2.bso.aarch64.rpm",
+  "name": "libecl",
+  "rpm_version": "24.5.10",
+  "release": "1.3.2.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

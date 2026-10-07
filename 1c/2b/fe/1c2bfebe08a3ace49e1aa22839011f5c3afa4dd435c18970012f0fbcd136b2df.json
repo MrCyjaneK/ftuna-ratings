@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "1c2bfebe08a3ace49e1aa22839011f5c3afa4dd435c18970012f0fbcd136b2df",
+  "key": "chum/5.1_i486/i486/valhalla-lite-3.4.0.6+git1-1.7.1.bso.i486.rpm",
+  "name": "valhalla-lite",
+  "rpm_version": "3.4.0.6+git1",
+  "release": "1.7.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "4e9f7c57aea2e0700e0f0d1a3ed63ee5a51c9cfa43b32a7abecbd79ec994a0fb",
+  "key": "chum/5.2_aarch64/aarch64/date-devel-3.0.0.20210322.sfos.3-1.4.1.bso.aarch64.rpm",
+  "name": "date-devel",
+  "rpm_version": "3.0.0.20210322.sfos.3",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

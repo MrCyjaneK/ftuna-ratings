@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "68c40dad32051e0e1af4b214a0c160f8b542bb3d6e4dfdd9ee7468621db7ccb8",
+  "key": "mirror/openrepos/kan/personal/main/h/harbour-dns-alternative-0.9-6.noarch.rpm",
+  "name": "harbour-dns-alternative",
+  "rpm_version": "0.9",
+  "release": "6",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl daemon-reload; \\; systemctl restart connman; \\; rm -f /etc/resolv.conf; \\"
+    },
+    {
+      "module": "systemd",
+      "path": "/etc/systemd/system/connman.service.d/override.conf",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=unknown sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/etc/systemd/system/dnsmasq.service.d/override.conf",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=unknown sandbox=none"
+    }
+  ]
+}

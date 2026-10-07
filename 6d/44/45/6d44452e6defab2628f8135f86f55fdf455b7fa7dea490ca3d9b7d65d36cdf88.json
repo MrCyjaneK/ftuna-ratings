@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "6d44452e6defab2628f8135f86f55fdf455b7fa7dea490ca3d9b7d65d36cdf88",
+  "key": "chum/5.1_aarch64/aarch64/harbour-foilauth-debuginfo-1.1.20-1.21.1.bso.aarch64.rpm",
+  "name": "harbour-foilauth-debuginfo",
+  "rpm_version": "1.1.20",
+  "release": "1.21.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

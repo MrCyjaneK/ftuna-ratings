@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "5e77cc863813b9dcf9202cd744d3ddcaa92b1abc029e462cf1e3e4bd0acd554b",
+  "key": "mirror/openrepos/nobodyinperson/personal/main/p/python3-sensemapi-0.0.11-jolla.noarch.rpm",
+  "name": "python3-sensemapi",
+  "rpm_version": "0.0.11",
+  "release": "jolla",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "688c76fce9f2db1acc1ed44a77ddb2dc7eef5930958512d94030476a19a5b1d2",
+  "key": "mirror/openrepos/nicosouv/personal/main/s/sailfishos-meetings-1.5.0-1.armv7hl.rpm",
+  "name": "sailfishos-meetings",
+  "rpm_version": "1.5.0",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/sailfishos-meetings.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/sailfishos-meetings.desktop",
+      "code": "sailjail.permission",
+      "detail": "Calendar"
+    }
+  ]
+}

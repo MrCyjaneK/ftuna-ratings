@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "72188c82261a71685fed274f951b6a15a1b7917e40a8704e3835f358430e5cf4",
+  "key": "mirror/openrepos/lpr/personal/main/z/zstd-1.5.0git1-1.1.10.jolla_.armv7hl.rpm",
+  "name": "zstd",
+  "rpm_version": "1.5.0+git1",
+  "release": "1.1.10.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

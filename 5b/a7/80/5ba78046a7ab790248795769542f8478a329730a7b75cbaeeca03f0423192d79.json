@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "5ba78046a7ab790248795769542f8478a329730a7b75cbaeeca03f0423192d79",
+  "key": "mirror/openrepos/mumudada/personal/main/h/harbour-apk-run-ctrl-0.1-1.armv7hl.rpm",
+  "name": "harbour-apkRunCtrl",
+  "rpm_version": "0.1",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 53,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-apkBackRunCtrl.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -f \"/home/nemo/.apkRunBackAcl.db\" ]; then; rm /home/nemo/.apkRunBackAcl.db; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=touch /home/nemo/.apkRunBackAcl.db; chown nemo:nemo /home/nemo/.apkRunBackAcl.db; systemctl enable /usr/share/harbour-apkBackRunCtrl/chk-android-back-run.servic"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl stop chk-android-back-run.service; systemctl disable /usr/share/harbour-apkBackRunCtrl/chk-android-back-run.service"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -f \"/home/nemo/.apkRunBackAcl.db\" ]; then; rm /home/nemo/.apkRunBackAcl.db; fi"
+    }
+  ]
+}

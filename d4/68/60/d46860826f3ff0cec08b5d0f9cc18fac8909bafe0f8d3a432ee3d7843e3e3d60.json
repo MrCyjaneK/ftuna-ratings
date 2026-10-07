@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "d46860826f3ff0cec08b5d0f9cc18fac8909bafe0f8d3a432ee3d7843e3e3d60",
+  "key": "mirror/openrepos/nobodyinperson/personal/main/p/python3-attrs-19.3.0-rokua.noarch.rpm",
+  "name": "python3-attrs",
+  "rpm_version": "19.3.0",
+  "release": "rokua",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

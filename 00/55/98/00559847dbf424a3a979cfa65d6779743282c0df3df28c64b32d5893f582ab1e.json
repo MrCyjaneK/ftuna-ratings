@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "00559847dbf424a3a979cfa65d6779743282c0df3df28c64b32d5893f582ab1e",
+  "key": "chum/5.1_armv7hl/armv7hl/aria2-devel-1.37.0+git1-1.3.1.bso.armv7hl.rpm",
+  "name": "aria2-devel",
+  "rpm_version": "1.37.0+git1",
+  "release": "1.3.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

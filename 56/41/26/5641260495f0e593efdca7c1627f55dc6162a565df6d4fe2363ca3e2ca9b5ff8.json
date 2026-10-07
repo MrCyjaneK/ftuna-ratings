@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "5641260495f0e593efdca7c1627f55dc6162a565df6d4fe2363ca3e2ca9b5ff8",
+  "key": "chum/5.1_i486/i486/nload-debuginfo-0.7.4.180309+obs8-1.5.1.bso.i486.rpm",
+  "name": "nload-debuginfo",
+  "rpm_version": "0.7.4.180309+obs8",
+  "release": "1.5.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

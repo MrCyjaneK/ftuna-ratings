@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "d8935e42b74377a2f1c8a3f12e63928e7729f9231f2d35ecf87e8f937a09adb8",
+  "key": "chum/5.1_i486/i486/kwidgetsaddons-debugsource-5.34.0-1.1.1.bso.i486.rpm",
+  "name": "kwidgetsaddons-debugsource",
+  "rpm_version": "5.34.0",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

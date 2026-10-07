@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "9776a8a8c1f458c02d26acaeffeb7c3fd96a8822614ae758764223d2bd61b260",
+  "key": "mirror/openrepos/olf/personal/main/m/mount-sdcard-1.0-4.noarch.rpm",
+  "name": "mount-sdcard",
+  "rpm_version": "1.0",
+  "release": "4",
+  "arch": "noarch",
+  "verdict": 65,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 65
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "systemd",
+      "path": "/etc/systemd/system/mount-sd@.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=nemo group=root exec=/usr/bin/udisksctl mount -b /dev/%i sandbox=none"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "23894ebd6f21211e4ef2f00050acd6b9a59f6a355e37abafb7d940d829ea48cb",
+  "key": "mirror/openrepos/noonien/personal/main/t/telepathy-gabble-plus-0.18.4-31.aarch64.rpm",
+  "name": "telepathy-gabble-plus",
+  "rpm_version": "0.18.4+git2+HEAD.20220318195648.9da4537+telepathy.gabble.502a2ffad+lib.ext.wocky.6a31d2c",
+  "release": "31",
+  "arch": "aarch64",
+  "verdict": 85,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 85
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.freedesktop.Telepathy.ConnectionManager.gabble.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/libexec/telepathy-gabble"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "7c8ea4b7f449c7ac8607258d59a40b98085407316b0339efce1f72ee5041e2f4",
+  "key": "chum/5.1_armv7hl/armv7hl/date-devel-3.0.0.20210322.sfos.3-1.4.1.bso.armv7hl.rpm",
+  "name": "date-devel",
+  "rpm_version": "3.0.0.20210322.sfos.3",
+  "release": "1.4.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

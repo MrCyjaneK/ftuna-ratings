@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "e45412d7d4a1c00afb3d19a79930ab40ce4de07d4c39d42f1a8504a833b926a1",
+  "key": "mirror/openrepos/llelectronics_dev/personal/main/q/qt5-qtwebkit-uiprocess-launcher-5.212.0-1.117.1.jolla_.i486.rpm",
+  "name": "qt5-qtwebkit-uiprocess-launcher",
+  "rpm_version": "5.212.0",
+  "release": "1.117.1.jolla",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

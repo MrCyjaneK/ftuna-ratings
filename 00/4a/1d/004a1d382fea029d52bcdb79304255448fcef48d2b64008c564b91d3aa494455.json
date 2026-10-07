@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "004a1d382fea029d52bcdb79304255448fcef48d2b64008c564b91d3aa494455",
+  "key": "chum/5.2_aarch64/aarch64/maxima-binary-ecl-5.47.0+git3-1.1.2.bso.aarch64.rpm",
+  "name": "maxima-binary-ecl",
+  "rpm_version": "5.47.0+git3",
+  "release": "1.1.2.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "63b018539f2cb9395b68533ae8d9e521f2a82bb5817fb003a5659761f11044f5",
+  "key": "mirror/openrepos/lpr_next/personal/main/p/poppler-glib-doc-20.11-3.noarch.rpm",
+  "name": "poppler-glib-doc",
+  "rpm_version": "20.11",
+  "release": "3",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

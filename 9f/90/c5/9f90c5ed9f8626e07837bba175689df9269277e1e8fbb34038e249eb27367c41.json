@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "9f90c5ed9f8626e07837bba175689df9269277e1e8fbb34038e249eb27367c41",
+  "key": "mirror/openrepos/birdzhang/personal/main/o/opencc-devel-1.0.5master.20181213085056.2140df8-1.2.3.jolla_.armv7hl_1.rpm",
+  "name": "opencc-devel",
+  "rpm_version": "1.0.5+master.20181213085056.2140df8",
+  "release": "1.2.3.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

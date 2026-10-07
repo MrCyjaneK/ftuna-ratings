@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "9a6af6a5719eb4e9c5170a63115d8f1fb10cf2669c89f29c190a69b8cdfb7cb9",
+  "key": "mirror/openrepos/takraslt/personal/main/h/harbour-yousail-0.3-1.noarch.rpm",
+  "name": "harbour-yousail",
+  "rpm_version": "0.3",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 70,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 85
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/harbour.yousail.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/python3 /usr/share/harbour-yousail/python/yousail_service.py"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-yousail.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    }
+  ]
+}

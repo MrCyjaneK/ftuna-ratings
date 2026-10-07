@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "252cdc089f8969a4c907fcf2a20c05a2121a4545bbf7a8349e76d62712fb2903",
+  "key": "mirror/openrepos/b100dian/personal/main/o/onedrive-2.4.13obs.20210813215504.15.g7b8b46b-1.22.1.jolla_.aarch64.rpm",
+  "name": "onedrive",
+  "rpm_version": "2.4.13+obs.20210813215504.15.g7b8b46b",
+  "release": "1.22.1.jolla",
+  "arch": "aarch64",
+  "verdict": 75,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 75
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/onedrive@.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=%i group=users exec=/usr/bin/onedrive --monitor --confdir=/home/%i/.config/onedrive sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/onedrive.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/onedrive --monitor sandbox=none"
+    }
+  ]
+}

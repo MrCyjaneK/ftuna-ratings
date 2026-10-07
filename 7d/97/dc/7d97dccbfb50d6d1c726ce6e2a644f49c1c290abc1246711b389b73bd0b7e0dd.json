@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "7d97dccbfb50d6d1c726ce6e2a644f49c1c290abc1246711b389b73bd0b7e0dd",
+  "key": "mirror/openrepos/halftux/personal/main/t/tcptrack-1.4.3-12.aarch64.rpm",
+  "name": "tcptrack",
+  "rpm_version": "1.4.3",
+  "release": "12",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

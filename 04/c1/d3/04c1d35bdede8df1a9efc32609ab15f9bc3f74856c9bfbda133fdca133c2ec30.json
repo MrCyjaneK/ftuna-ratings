@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "04c1d35bdede8df1a9efc32609ab15f9bc3f74856c9bfbda133fdca133c2ec30",
+  "key": "mirror/openrepos/nephros/personal/main/o/ocean-sound-theme-6.4.90-1.9.1.bso_.noarch.rpm",
+  "name": "ocean-sound-theme",
+  "rpm_version": "6.4.90",
+  "release": "1.9.1.bso",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl --no-reload preset --user --global restart ambienced \u003e/dev/null 2\u003e\u00261 || :; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl --no-reload preset --user --global restart ambienced \u003e/dev/null 2\u003e\u00261 || :"
+    }
+  ]
+}

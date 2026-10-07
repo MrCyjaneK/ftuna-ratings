@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "8f18e73f66041415216ad166adc80c0f1820b9657e8ae356842fef295d824b01",
+  "key": "mirror/openrepos/lachs0r/personal/main/o/openssh-8.1p1-1.armv7hl.rpm",
+  "name": "openssh",
+  "rpm_version": "8.1p1",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 15,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": 0
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=SSHD_SERVICE=\"/lib/systemd/system/sshd.service\"; if [ ! -f $SSHD_SERVICE -a -d /usr/libexec/openssh ]; then; echo \"[Unit]\" \u003e $SSHD_SERVICE || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl unmask sshd-keygen.service \u0026\u003e /dev/null || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%posttrans",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=SSHD_SERVICE=\"/lib/systemd/system/sshd.service\"; if grep -q \"PLU temp fake\" $SSHD_SERVICE; then; systemctl stop sshd.service \u0026\u003e /dev/null || :"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/libexec/openssh/ssh-keysign",
+      "code": "setuid",
+      "detail": "/usr/libexec/openssh/ssh-keysign mode 0104755 user root group root file"
+    }
+  ]
+}

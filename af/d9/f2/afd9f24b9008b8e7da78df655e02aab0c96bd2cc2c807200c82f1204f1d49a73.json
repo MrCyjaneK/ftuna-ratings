@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "afd9f24b9008b8e7da78df655e02aab0c96bd2cc2c807200c82f1204f1d49a73",
+  "key": "chum/5.1_armv7hl/armv7hl/libaria2-1.37.0+git1-1.3.1.bso.armv7hl.rpm",
+  "name": "libaria2",
+  "rpm_version": "1.37.0+git1",
+  "release": "1.3.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

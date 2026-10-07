@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "154a1fa942cb6f4e0a9572c5aa0f48093cbe8317c0b0b87286f4c57563902837",
+  "key": "mirror/openrepos/Mister_Magister/personal/main/n/nodejs18-devel-18.2.0-1.24.1.jolla_.aarch64.rpm",
+  "name": "nodejs18-devel",
+  "rpm_version": "18.2.0",
+  "release": "1.24.1.jolla",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

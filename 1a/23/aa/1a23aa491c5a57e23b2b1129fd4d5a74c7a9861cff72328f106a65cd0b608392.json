@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "1a23aa491c5a57e23b2b1129fd4d5a74c7a9861cff72328f106a65cd0b608392",
+  "key": "mirror/openrepos/BlackSailer/personal/main/t/tdlibjson-1.2.0-1.jolla_.i486.rpm",
+  "name": "tdlibjson",
+  "rpm_version": "1.2.0",
+  "release": "10.26.1.jolla",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

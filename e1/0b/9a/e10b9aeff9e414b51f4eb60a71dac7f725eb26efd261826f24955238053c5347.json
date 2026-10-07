@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "e10b9aeff9e414b51f4eb60a71dac7f725eb26efd261826f24955238053c5347",
+  "key": "chum/5.1_i486/i486/sailfishos-chum-gui-debugsource-0.6.12-1.13.1.bso.i486.rpm",
+  "name": "sailfishos-chum-gui-debugsource",
+  "rpm_version": "0.6.12",
+  "release": "1.13.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

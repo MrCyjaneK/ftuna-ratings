@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "49fb21901178b387229ad506c979c1b2a5ec9db157e1705c2d4c26a41041f46c",
+  "key": "chum/5.1_aarch64/aarch64/harbour-dailycomics-debugsource-1.9.97-1.2.1.bso.aarch64.rpm",
+  "name": "harbour-dailycomics-debugsource",
+  "rpm_version": "1.9.97",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

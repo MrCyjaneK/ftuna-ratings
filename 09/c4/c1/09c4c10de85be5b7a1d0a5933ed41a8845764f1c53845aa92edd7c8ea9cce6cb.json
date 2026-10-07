@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "09c4c10de85be5b7a1d0a5933ed41a8845764f1c53845aa92edd7c8ea9cce6cb",
+  "key": "chum/5.1_armv7hl/armv7hl/libmarisa-debugsource-0.2.6.2-1.3.1.bso.armv7hl.rpm",
+  "name": "libmarisa-debugsource",
+  "rpm_version": "0.2.6.2",
+  "release": "1.3.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

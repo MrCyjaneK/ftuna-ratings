@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "ec194c32f9a8fb8fdf99d330f9e7e24e0d70d37b70dd1b526735da17d8cb84ba",
+  "key": "chum/5.1_armv7hl/armv7hl/valhalla-lite-devel-3.4.0.6+git1-1.7.1.bso.armv7hl.rpm",
+  "name": "valhalla-lite-devel",
+  "rpm_version": "3.4.0.6+git1",
+  "release": "1.7.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

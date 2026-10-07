@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "62c97c585be54321fa9bb4b39cd2275e89c2c4ad5d48eb44f32088c1bdd5fe28",
+  "key": "mirror/openrepos/piggz/personal/main/h/harbour-amazfish-1.7.01.7.0.20201010190441.8409c73-1.5.1.jolla_.armv7hl.rpm",
+  "name": "harbour-amazfish",
+  "rpm_version": "1.7.0+1.7.0.20201010190441.8409c73",
+  "release": "1.5.1.jolla",
+  "arch": "armv7hl",
+  "verdict": 80,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-amazfish-ui.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-amazfish.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/invoker --type=generic /usr/bin/harbour-amazfishd sandbox=none"
+    }
+  ]
+}

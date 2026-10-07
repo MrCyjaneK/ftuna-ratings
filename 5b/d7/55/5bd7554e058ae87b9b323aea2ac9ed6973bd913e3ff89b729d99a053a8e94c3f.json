@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "5bd7554e058ae87b9b323aea2ac9ed6973bd913e3ff89b729d99a053a8e94c3f",
+  "key": "chum/5.1_aarch64/aarch64/libKF5ConfigCore5-5.34.0-1.1.1.bso.aarch64.rpm",
+  "name": "libKF5ConfigCore5",
+  "rpm_version": "5.34.0",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

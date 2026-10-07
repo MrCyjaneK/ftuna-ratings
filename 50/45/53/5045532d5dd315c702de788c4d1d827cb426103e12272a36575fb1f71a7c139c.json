@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "5045532d5dd315c702de788c4d1d827cb426103e12272a36575fb1f71a7c139c",
+  "key": "mirror/openrepos/kan/personal/main/k/keyboard-layout-pl-ios-0.2-0.noarch.rpm",
+  "name": "keyboard-layout-pl-ios",
+  "rpm_version": "0.2",
+  "release": "0",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=PUSER=$(getent passwd 100000 | cut -d: -f1 ); if [ $1 = 1 ]; then; echo \"Zainstalowano polską klawiaturę ze strzałkami\""
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=PUSER=$(getent passwd 100000 | cut -d: -f1 ); if [ $1 = 0 ]; then; echo \"Klawiatura została odinstalowana\""
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "09fe191bd55ef37bfd336ba7b9095a827ee08e91cb4912768755bd95682a5a58",
+  "key": "chum/5.1_i486/i486/plocate-1.1.23-1.1.1.bso.i486.rpm",
+  "name": "plocate",
+  "rpm_version": "1.1.23",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "verdict": 38,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": 45
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -f /var/cache/mlocate.db ]; then; /usr/sbin/plocate-build /var/cache/mlocate.db /var/lib/plocate/plocate.db \u0026\u0026 rm -f /var/cache/mlocate.db; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload disable --now plocate-updatedb.service \u003e /dev/null 2\u003e\u00261 || :; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; fi"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/plocate",
+      "code": "setgid",
+      "detail": "/usr/bin/plocate mode 0102711 user root group privileged file"
+    }
+  ]
+}

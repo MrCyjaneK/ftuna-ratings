@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "729ec83b9fb19ad1871886db820fdb256d6074e8474d5fe9d700b97a3c7aa15a",
+  "key": "mirror/openrepos/lpr_A7/personal/main/m/mpg123-devel-1.27.2-2.0.0.armv7hl.rpm",
+  "name": "mpg123-devel",
+  "rpm_version": "1.27.2",
+  "release": "2.0.0",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

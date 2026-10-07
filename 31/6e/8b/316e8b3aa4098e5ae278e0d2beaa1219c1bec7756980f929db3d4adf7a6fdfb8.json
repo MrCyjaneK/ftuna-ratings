@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "316e8b3aa4098e5ae278e0d2beaa1219c1bec7756980f929db3d4adf7a6fdfb8",
+  "key": "mirror/openrepos/Juanro49/personal/main/h/harbour-weather-backend-aemet-1.3.9-3.noarch.rpm",
+  "name": "harbour-weather-backend-aemet",
+  "rpm_version": "1.3.9",
+  "release": "3",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

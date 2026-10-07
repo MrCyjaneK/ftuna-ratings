@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "f712e06d8c2ee99c2855ce932893d7f8ada6dd34f1e863af98470ce19be4b26e",
+  "key": "chum/5.1_armv7hl/armv7hl/ncdu-debuginfo-1.22+git1-1.4.1.bso.armv7hl.rpm",
+  "name": "ncdu-debuginfo",
+  "rpm_version": "1.22+git1",
+  "release": "1.4.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

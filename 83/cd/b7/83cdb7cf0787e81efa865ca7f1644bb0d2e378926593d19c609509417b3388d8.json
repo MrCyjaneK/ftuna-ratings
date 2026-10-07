@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "83cdb7cf0787e81efa865ca7f1644bb0d2e378926593d19c609509417b3388d8",
+  "key": "chum/5.1_armv7hl/armv7hl/opt-kf5-kcrash-debuginfo-5.116.0-1.6.1.bso.armv7hl.rpm",
+  "name": "opt-kf5-kcrash-debuginfo",
+  "rpm_version": "5.116.0",
+  "release": "1.6.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

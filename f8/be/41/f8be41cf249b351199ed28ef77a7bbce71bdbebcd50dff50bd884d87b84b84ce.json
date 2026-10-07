@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "f8be41cf249b351199ed28ef77a7bbce71bdbebcd50dff50bd884d87b84b84ce",
+  "key": "mirror/openrepos/omnight/personal/main/p/phonehook-0.7.0-1.armv7hl.rpm",
+  "name": "phonehook",
+  "rpm_version": "0.7.0",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 63,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/phonehook.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; killall phonehook-daemon || :; killall phonehook || true"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%posttrans",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=killall phonehook-daemon || :; ln -s -f /usr/lib/systemd/user/phonehook-daemon.service /usr/lib/systemd/user/post-user-session.target.wants; systemctl-user enab"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/phonehook-daemon.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/phonehook-daemon sandbox=none"
+    }
+  ]
+}

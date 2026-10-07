@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "a3b71c06c384d7fb75403b58af0125c3fbbe47ccef8c1d83754cae1b931bceaf",
+  "key": "mirror/openrepos/saberaltria/personal/main/h/harbour-dolphin-cangjie-1.2-2.i486.rpm",
+  "name": "harbour-dolphin-cangjie",
+  "rpm_version": "1.2",
+  "release": "2",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

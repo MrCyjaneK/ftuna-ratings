@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "5530386b8fed31d3ebedc0d230727eb6bfcc5dc827ae0fbe052e1d945ae4f099",
+  "key": "chum/5.2_armv7hl/armv7hl/sailfishos-chum-gui-0.6.12-1.13.1.bso.armv7hl.rpm",
+  "name": "sailfishos-chum-gui",
+  "rpm_version": "0.6.12",
+  "release": "1.13.1.bso",
+  "arch": "armv7hl",
+  "verdict": 43,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/sailfishos-chum-gui.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = 0 ]; then; ssu rr sailfishos-chum"
+    }
+  ]
+}

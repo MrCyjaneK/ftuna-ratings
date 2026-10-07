@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "08c2013e7d1c9519312d165aa6ccc4fe4a7756798ecaf001fd14ff7e41c4e26f",
+  "key": "mirror/openrepos/theyosh/personal/main/w/wifikill3r-0.12-3.i486.rpm",
+  "name": "WiFiKilL3r",
+  "rpm_version": "0.12",
+  "release": "3",
+  "arch": "i486",
+  "verdict": 53,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/WiFiKilL3r.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /home/defaultuser ]; then; export WIFIKILLER_HOME_DIR=\"/home/defaultuser/\""
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "506e3544f7e3cc7490775062acc41732cdc005a96ca6a7b16d7b2a5a9c6f7242",
+  "key": "mirror/openrepos/kozaobecna/personal/main/h/harbour-sailreef-0.3.0-1.noarch.rpm",
+  "name": "harbour-sailreef",
+  "rpm_version": "0.3.0",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailreef.desktop",
+      "code": "sailjail.permission",
+      "detail": "Downloads"
+    }
+  ]
+}

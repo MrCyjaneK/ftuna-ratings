@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "4e191775cb967378979367111bdf15ccbc8cdecf94b3c68c0dab22716e3cfaca",
+  "key": "mirror/openrepos/slava/personal/main/s/sailfish-qrshare-1.1.1-1.i486.rpm",
+  "name": "sailfish-qrshare",
+  "rpm_version": "1.1.1",
+  "release": "1",
+  "arch": "i486",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/lib/qt5/qml/com/monich/qrshare/mkicon /usr/share/nemo-transferengine/openrepos-qrshare/qrshare.svg || :; rm -f /usr/lib/qt5/qml/com/monich/qrshare/mkicon"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" == 0 ] ; then rm -f /usr/share/nemo-transferengine/openrepos-qrshare/qrshare.png; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%posttrans",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=rm -f /usr/share/sailfish-qrshare//qrshare.png; if  [ -d /usr/share/sailfish-qrshare//translations ] ; then rmdir /usr/share/sailfish-qrshare//translations || :"
+    }
+  ]
+}

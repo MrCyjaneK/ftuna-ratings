@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "7dd94a5285d579e080943ab1fde84e402303e24f1644db0f0e8ff778cb4a9f5a",
+  "key": "mirror/openrepos/lpr/personal/main/c/calligra-data-3.2.1git4-1.11.6.jolla_.armv7hl.rpm",
+  "name": "calligra-data",
+  "rpm_version": "3.2.1+git4",
+  "release": "1.11.6.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "f9b9809d1ec2fd61c0a4e51ca60d211304fee3c7d696a16b79f6eee272145f96",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-fbjail-debugsource-0.9.16-1.2.1.bso.armv7hl.rpm",
+  "name": "harbour-fbjail-debugsource",
+  "rpm_version": "0.9.16",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

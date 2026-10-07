@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "36c973b1bbba14915e0ae58edc674e1b8fd35d724f5bc772203d68719f24880f",
+  "key": "chum/5.1_armv7hl/armv7hl/opt-kf5-kbookmarks-debugsource-5.116.0-1.6.1.bso.armv7hl.rpm",
+  "name": "opt-kf5-kbookmarks-debugsource",
+  "rpm_version": "5.116.0",
+  "release": "1.6.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

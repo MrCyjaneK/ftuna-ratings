@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "a379b68db3450dbf28d6f4d9f76bdd0275c885733d1023a935cb124d953fc8d9",
+  "key": "mirror/openrepos/ilovekiruna/personal/main/p/purple-hangouts-1.0-10.33.1.jolla_.armv7hl.rpm",
+  "name": "purple-hangouts",
+  "rpm_version": "1.0",
+  "release": "10.33.1.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

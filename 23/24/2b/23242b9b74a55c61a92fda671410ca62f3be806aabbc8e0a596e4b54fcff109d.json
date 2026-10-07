@@ -1,0 +1,104 @@
+{
+  "version": 6,
+  "sha256": "23242b9b74a55c61a92fda671410ca62f3be806aabbc8e0a596e4b54fcff109d",
+  "key": "mirror/openrepos/abranson/personal/main/r/rockpool-1.13-1.27.1.armv7hl.rpm",
+  "name": "rockpool",
+  "rpm_version": "1.13",
+  "release": "1.27.1.jolla",
+  "arch": "armv7hl",
+  "verdict": 72,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/rockpool.desktop",
+      "code": "sailjail.permission",
+      "detail": "Rockpool"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/rockpool.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/rockpool.desktop",
+      "code": "sailjail.permission",
+      "detail": "AppLaunch"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/rockpool.desktop",
+      "code": "sailjail.permission",
+      "detail": "WebView"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/rockpool.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=su nemo -c 'systemctl --user daemon-reload'; su nemo -c 'systemctl --user try-restart rockpoold.service'; update-desktop-database"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/rockpoold.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/rockpoold sandbox=none"
+    }
+  ]
+}

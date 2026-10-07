@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "7c6ff251b5ce672d5e56a398a4419487c6d90f57971af52e254f2c40c32cf1a0",
+  "key": "mirror/openrepos/wiktorek140/personal/main/h/harbour-prostogram-alpha-1.0.alpha-23.armv7hl.rpm",
+  "name": "harbour-prostogram-alpha",
+  "rpm_version": "1.0.ALPHA",
+  "release": "23",
+  "arch": "armv7hl",
+  "verdict": 75,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-prostogram-alpha.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    }
+  ]
+}

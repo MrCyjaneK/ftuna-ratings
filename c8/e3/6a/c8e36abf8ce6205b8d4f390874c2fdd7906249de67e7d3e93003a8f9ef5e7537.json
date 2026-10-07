@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "c8e36abf8ce6205b8d4f390874c2fdd7906249de67e7d3e93003a8f9ef5e7537",
+  "key": "mirror/openrepos/carmenfdezb/personal/main/d/deadbeef-1.8.4-3.aarch64-sfos4.5.rpm",
+  "name": "deadbeef",
+  "rpm_version": "1.8.4",
+  "release": "3",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

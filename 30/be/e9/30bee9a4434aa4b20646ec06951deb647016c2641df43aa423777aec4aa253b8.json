@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "30bee9a4434aa4b20646ec06951deb647016c2641df43aa423777aec4aa253b8",
+  "key": "chum/5.2_i486/i486/harbour-sailmines-0.8+main.20260829104512.1.g84ec3b8-1.1.1.bso.i486.rpm",
+  "name": "harbour-sailmines",
+  "rpm_version": "0.8+main.20260829104512.1.g84ec3b8",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

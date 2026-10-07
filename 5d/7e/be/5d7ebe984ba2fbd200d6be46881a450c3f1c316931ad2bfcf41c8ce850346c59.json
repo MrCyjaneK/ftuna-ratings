@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "5d7ebe984ba2fbd200d6be46881a450c3f1c316931ad2bfcf41c8ce850346c59",
+  "key": "mirror/openrepos/nephros/personal/main/h/harbour-cursetag-5-6.aarch64.rpm",
+  "name": "harbour-cursetag",
+  "rpm_version": "5",
+  "release": "6",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

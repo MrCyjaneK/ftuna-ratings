@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "a58f44c3cd680eb06914785e838cb4f37e1e7ef8bd6249e0dcdd8fc8ab03168d",
+  "key": "chum/5.1_aarch64/aarch64/opt-qt5-qtconnectivity-devel-5.15.14+kde3-1.4.1.bso.aarch64.rpm",
+  "name": "opt-qt5-qtconnectivity-devel",
+  "rpm_version": "5.15.14+kde3",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

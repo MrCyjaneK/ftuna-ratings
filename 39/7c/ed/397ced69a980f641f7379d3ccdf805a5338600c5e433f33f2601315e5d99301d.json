@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "397ced69a980f641f7379d3ccdf805a5338600c5e433f33f2601315e5d99301d",
+  "key": "mirror/openrepos/cstelz/personal/main/l/libstrophe-80a7ea0-git.i486.rpm",
+  "name": "libstrophe",
+  "rpm_version": "80a7ea0",
+  "release": "git",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

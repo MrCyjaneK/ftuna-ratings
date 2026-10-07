@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "eead82ac118c637c705ad645102d6bd1eec7c6a317c1965560544c55a9788e30",
+  "key": "mirror/openrepos/Rikudou_Sennin/personal/main/n/nodejs-20.19.4-1.i686.rpm",
+  "name": "nodejs",
+  "rpm_version": "20.19.4",
+  "release": "1",
+  "arch": "i686",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

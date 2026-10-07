@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "e69ba70655bd7cf4556c5327a29fd02a95acd9667dfaa851c98143e51443d09a",
+  "key": "mirror/openrepos/birdzhang/personal/main/j/jolla-settings-gost-button-0.1.1-4.noarch.rpm",
+  "name": "jolla-settings-gost-button",
+  "rpm_version": "0.1.1",
+  "release": "4",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

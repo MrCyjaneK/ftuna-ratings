@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "af87d9ac720f0ce7793c408ba56aea975716ee74f275d512ce220bb731cb523a",
+  "key": "mirror/openrepos/ade/personal/main/h/harbour-sailcron-0.4-5.i486.rpm",
+  "name": "harbour-sailcron",
+  "rpm_version": "0.4",
+  "release": "5",
+  "arch": "i486",
+  "verdict": 38,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": 0
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailcron.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/share/harbour-sailcron/helper/sailcronhelper",
+      "code": "setuid",
+      "detail": "/usr/share/harbour-sailcron/helper/sailcronhelper mode 0104755 user root group root file"
+    }
+  ]
+}

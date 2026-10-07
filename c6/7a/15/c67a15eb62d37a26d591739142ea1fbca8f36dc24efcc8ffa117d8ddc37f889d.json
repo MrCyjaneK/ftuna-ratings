@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "c67a15eb62d37a26d591739142ea1fbca8f36dc24efcc8ffa117d8ddc37f889d",
+  "key": "chum/5.1_i486/i486/i2pd-debugsource-2.56.0+git1-1.6.1.bso.i486.rpm",
+  "name": "i2pd-debugsource",
+  "rpm_version": "2.56.0+git1",
+  "release": "1.6.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

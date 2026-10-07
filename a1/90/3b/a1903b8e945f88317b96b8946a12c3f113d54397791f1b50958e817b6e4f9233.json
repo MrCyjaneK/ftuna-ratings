@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "a1903b8e945f88317b96b8946a12c3f113d54397791f1b50958e817b6e4f9233",
+  "key": "chum/5.1_i486/i486/opt-qt5-qttools-devel-5.15.14+kde4-1.4.1.bso.i486.rpm",
+  "name": "opt-qt5-qttools-devel",
+  "rpm_version": "5.15.14+kde4",
+  "release": "1.4.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

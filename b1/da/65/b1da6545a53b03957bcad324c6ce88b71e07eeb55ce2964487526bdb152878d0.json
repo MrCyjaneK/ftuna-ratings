@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "b1da6545a53b03957bcad324c6ce88b71e07eeb55ce2964487526bdb152878d0",
+  "key": "mirror/openrepos/V10lator/personal/main/s/sudo-1.8.6p3-2.3.1.armv7hl.rpm",
+  "name": "sudo",
+  "rpm_version": "1.8.6p3",
+  "release": "2.3.1",
+  "arch": "armv7hl",
+  "verdict": 8,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": 15
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": 0
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "hooks",
+      "path": "/etc/pam.d/sudo",
+      "code": "hooks.pam",
+      "detail": "mode 0100644 user root group root"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/sudo",
+      "code": "setuid",
+      "detail": "/usr/bin/sudo mode 0104755 user root group root file"
+    }
+  ]
+}

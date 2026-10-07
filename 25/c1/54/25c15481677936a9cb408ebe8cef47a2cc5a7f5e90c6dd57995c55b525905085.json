@@ -1,0 +1,24 @@
+{
+  "version": 6,
+  "sha256": "25c15481677936a9cb408ebe8cef47a2cc5a7f5e90c6dd57995c55b525905085",
+  "key": "mirror/openrepos/jaimeMF/personal/main/t/taskwarrior-2.6.2-0.aarch64.rpm",
+  "name": "taskwarrior",
+  "rpm_version": "2.6.2",
+  "release": "0",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "rpm",
+      "path": "mirror/openrepos/jaimeMF/personal/main/t/taskwarrior-2.6.2-0.aarch64.rpm",
+      "code": "rpm.read",
+      "detail": "No such entry 1037"
+    }
+  ]
+}

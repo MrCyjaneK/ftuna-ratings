@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "4deeb8ff37f0e74e69491b2a07173c29b056398c91a2e0dff058fc3d0ccfbc07",
+  "key": "chum/5.2_aarch64/aarch64/valhalla-lite-3.4.0.6+git1-1.7.1.bso.aarch64.rpm",
+  "name": "valhalla-lite",
+  "rpm_version": "3.4.0.6+git1",
+  "release": "1.7.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

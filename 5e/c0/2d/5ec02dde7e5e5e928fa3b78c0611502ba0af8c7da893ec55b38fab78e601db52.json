@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "5ec02dde7e5e5e928fa3b78c0611502ba0af8c7da893ec55b38fab78e601db52",
+  "key": "mirror/openrepos/Mister_Magister/personal/main/y/youtube-dl-2016.05.08-1.22.1.armv7hl.rpm",
+  "name": "youtube-dl",
+  "rpm_version": "2016.05.08",
+  "release": "1.22.1",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

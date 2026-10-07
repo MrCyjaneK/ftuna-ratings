@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "aad524a4bd30fa3eaeefa4bc16883f04a57e4052748f72f8a45b3450e7f5036a",
+  "key": "mirror/openrepos/Polleke/personal/main/s/slang-devel-2.3.2-10.armv7hl.rpm",
+  "name": "slang-devel",
+  "rpm_version": "2.3.2",
+  "release": "10",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

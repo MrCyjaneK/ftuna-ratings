@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "12b8d64de8b9b7ea9d4ca93d900beec56fb4add58de0623ea1c3bd20887c2134",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-meecast-debugsource-1.12.22-1.33.1.bso.armv7hl.rpm",
+  "name": "harbour-meecast-debugsource",
+  "rpm_version": "1.12.22",
+  "release": "1.33.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

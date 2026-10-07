@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "324437c89eba32fdf937d2188fea02493f381c5a731993ba9df366145b1ed905",
+  "key": "chum/5.1_aarch64/aarch64/ktrip-debuginfo-23.04.3-1.4.2.bso.aarch64.rpm",
+  "name": "ktrip-debuginfo",
+  "rpm_version": "23.04.3",
+  "release": "1.4.2.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

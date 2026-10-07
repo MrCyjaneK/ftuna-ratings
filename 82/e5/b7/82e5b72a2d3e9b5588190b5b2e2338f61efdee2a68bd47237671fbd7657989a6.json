@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "82e5b72a2d3e9b5588190b5b2e2338f61efdee2a68bd47237671fbd7657989a6",
+  "key": "mirror/openrepos/cstelz/personal/main/l/libstrophe-80a7ea0-git.armv7hl.rpm",
+  "name": "libstrophe",
+  "rpm_version": "80a7ea0",
+  "release": "git",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

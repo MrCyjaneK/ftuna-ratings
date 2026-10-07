@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "4ebb3da69d448a08940102a3488f59235d7b54d5f2fe60f4c27f959b48f4ff35",
+  "key": "chum/5.1_armv7hl/armv7hl/libunbound8-1.17.1+git2-1.1.1.bso.armv7hl.rpm",
+  "name": "libunbound8",
+  "rpm_version": "1.17.1+git2",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

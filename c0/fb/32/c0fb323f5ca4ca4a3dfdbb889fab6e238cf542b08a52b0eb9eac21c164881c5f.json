@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "c0fb323f5ca4ca4a3dfdbb889fab6e238cf542b08a52b0eb9eac21c164881c5f",
+  "key": "mirror/openrepos/lpr/personal/main/c/calligra-kf5-3.2.1git2-1.8.1.jolla_.armv7hl.rpm",
+  "name": "calligra-kf5",
+  "rpm_version": "3.2.1+git2",
+  "release": "1.8.1.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

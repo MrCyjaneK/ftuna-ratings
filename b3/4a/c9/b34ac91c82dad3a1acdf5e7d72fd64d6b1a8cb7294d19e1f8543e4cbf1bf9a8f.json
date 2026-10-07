@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "b34ac91c82dad3a1acdf5e7d72fd64d6b1a8cb7294d19e1f8543e4cbf1bf9a8f",
+  "key": "chum/5.2_aarch64/aarch64/systemdatascope-debuginfo-0.5.2-1.5.2.bso.aarch64.rpm",
+  "name": "systemdatascope-debuginfo",
+  "rpm_version": "0.5.2",
+  "release": "1.5.2.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

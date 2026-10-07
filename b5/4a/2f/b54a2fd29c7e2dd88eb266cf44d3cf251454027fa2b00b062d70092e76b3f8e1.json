@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "b54a2fd29c7e2dd88eb266cf44d3cf251454027fa2b00b062d70092e76b3f8e1",
+  "key": "mirror/openrepos/javitonino/personal/main/c/connman-plugin-vpn-wireguard-0.4-1.aarch64.rpm",
+  "name": "connman-plugin-vpn-wireguard",
+  "rpm_version": "0.4",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

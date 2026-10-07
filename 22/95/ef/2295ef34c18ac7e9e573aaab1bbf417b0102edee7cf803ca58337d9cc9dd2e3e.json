@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "2295ef34c18ac7e9e573aaab1bbf417b0102edee7cf803ca58337d9cc9dd2e3e",
+  "key": "mirror/openrepos/ade/personal/main/v/vixie-cron-3.0pl2-2.i486.rpm",
+  "name": "vixie-cron",
+  "rpm_version": "3.0pl2",
+  "release": "2",
+  "arch": "i486",
+  "verdict": 20,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": 0
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=case \"$1\" in; 1); systemctl enable cron.service"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=case \"$1\" in; 0); systemctl stop cron.service"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/crontab",
+      "code": "setuid",
+      "detail": "/usr/bin/crontab mode 0104111 user root group root file"
+    },
+    {
+      "module": "systemd",
+      "path": "/lib/systemd/system/cron.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/sbin/crond sandbox=none"
+    }
+  ]
+}

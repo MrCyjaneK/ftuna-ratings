@@ -1,0 +1,278 @@
+{
+  "version": 6,
+  "sha256": "76df89edcf74573973346a6e47f716f8d15ec86a9ae29300708576d8a31e8e9c",
+  "key": "mirror/openrepos/aviarus/personal/main/e/embedlite-components-qt5-next153-2.0.0-9.armv7hl.rpm",
+  "name": "embedlite-components-qt5-next153",
+  "rpm_version": "2.0.0",
+  "release": "9",
+  "arch": "armv7hl",
+  "verdict": 43,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": 55
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=udevadm control --reload-rules \u003e/dev/null 2\u003e\u00261 || :; udevadm trigger --subsystem-match=hidraw \u003e/dev/null 2\u003e\u00261 || :; touch /var/lib/_MOZEMBED_CACHE_CLEAN_"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153 mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/chrome",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/chrome mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/chrome/content",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/chrome/content mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/chrome/content/localization",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/chrome/content/localization mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/chrome/content/localization/en-US",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/chrome/content/localization/en-US mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/chrome/content/localization/en-US/branding",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/chrome/content/localization/en-US/branding mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/chrome/content/localization/fi",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/chrome/content/localization/fi mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/chrome/content/localization/fi/branding",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/chrome/content/localization/fi/branding mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/chrome/content/localization/ru",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/chrome/content/localization/ru mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/chrome/content/localization/ru/branding",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/chrome/content/localization/ru/branding mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/chrome/skin",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/chrome/skin mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/embedlite",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/embedlite mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/embedlite/content",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/embedlite/content mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/embedlite/content/sync",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/embedlite/content/sync mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/en-US",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/en-US mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/en-US/locale",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/en-US/locale mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/en-US/locale/branding",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/en-US/locale/branding mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/en-US/locale/en-US",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/en-US/locale/en-US mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/en-US/locale/en-US/browser",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/en-US/locale/en-US/browser mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/fi",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/fi mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/fi/locale",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/fi/locale mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/fi/locale/branding",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/fi/locale/branding mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/fi/locale/fi",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/fi/locale/fi mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/fi/locale/fi/browser",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/fi/locale/fi/browser mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/mozapps",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/mozapps mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/mozapps/skin",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/mozapps/skin mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/mozapps/skin/places",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/mozapps/skin/places mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/ru",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/ru mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/ru/locale",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/ru/locale mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/ru/locale/branding",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/ru/locale/branding mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/ru/locale/ru",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/ru/locale/ru mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/chrome/ru/locale/ru/browser",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/chrome/ru/locale/ru/browser mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/lib/mozembedlite-next153/components",
+      "code": "setgid",
+      "detail": "/usr/lib/mozembedlite-next153/components mode 042755 user root group root dir"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/share/licenses/embedlite-components-qt5-next153-2.0.0",
+      "code": "setgid",
+      "detail": "/usr/share/licenses/embedlite-components-qt5-next153-2.0.0 mode 042755 user root group root dir"
+    }
+  ]
+}

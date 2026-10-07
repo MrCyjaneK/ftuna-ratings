@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "767ce1e6ecdd44fe8cb42de463e4f11ae60e104e7469d3666877c9a9e1dd2f4a",
+  "key": "mirror/openrepos/ichthyosaurus/personal/main/s/sfos-patch-keyboard-configurable-height-1.1.0-1.noarch.rpm",
+  "name": "sfos-patch-keyboard-configurable-height",
+  "rpm_version": "1.1.0",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=set -o pipefail; if mkdir -p '/var/lib/rpm-state/sfos-patch-keyboard-configurable-height'; then; dbus-send --print-reply --system --type=method_call \\"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/sbin/patchmanager -u 'sfos-patch-keyboard-configurable-height' || true"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%posttrans",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -e '/var/lib/rpm-state/sfos-patch-keyboard-configurable-height/was-applied' ]; then; /usr/sbin/patchmanager -a 'sfos-patch-keyboard-configurable-height' ||"
+    }
+  ]
+}

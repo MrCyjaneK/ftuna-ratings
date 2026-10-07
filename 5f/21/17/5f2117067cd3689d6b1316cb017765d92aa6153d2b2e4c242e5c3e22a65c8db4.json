@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "5f2117067cd3689d6b1316cb017765d92aa6153d2b2e4c242e5c3e22a65c8db4",
+  "key": "mirror/openrepos/lpr/personal/main/l/libnice-0.1.17git4-1.2.7.jolla_.armv7hl.rpm",
+  "name": "libnice",
+  "rpm_version": "0.1.17+git4",
+  "release": "1.2.7.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

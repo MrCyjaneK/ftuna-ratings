@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "213d643fc1b831ab1d1d52852be79a597b6fa0be86a8a1e9794eff638ed892e2",
+  "key": "chum/5.1_i486/i486/graphviz-debuginfo-12.2.1+git3-1.3.1.bso.i486.rpm",
+  "name": "graphviz-debuginfo",
+  "rpm_version": "12.2.1+git3",
+  "release": "1.3.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

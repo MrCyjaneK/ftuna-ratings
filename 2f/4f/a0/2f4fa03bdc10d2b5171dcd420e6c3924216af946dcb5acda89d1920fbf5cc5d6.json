@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "2f4fa03bdc10d2b5171dcd420e6c3924216af946dcb5acda89d1920fbf5cc5d6",
+  "key": "mirror/openrepos/Thaodan/personal/main/s/sailfishos-patch-mail-message-title-0.1rpm.20190208192930.f0d24b3-1.7.1.noarch.rpm",
+  "name": "sailfishos-patch-mail-message-title",
+  "rpm_version": "0.1+rpm.20190208192930.f0d24b3",
+  "release": "1.7.1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-mail-message-title ]; then; /usr/sbin/patchmanager -u sailfishos-patch-mail-message-title || true; "
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-mail-message-title ]; then; /usr/sbin/patchmanager -u sailfishos-patch-mail-message-title || true; "
+    }
+  ]
+}

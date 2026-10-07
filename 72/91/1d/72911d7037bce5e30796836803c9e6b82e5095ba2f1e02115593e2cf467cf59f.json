@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "72911d7037bce5e30796836803c9e6b82e5095ba2f1e02115593e2cf467cf59f",
+  "key": "mirror/openrepos/lpr/personal/main/g/gstreamer1.0-plugins-good-amrnb-1.26.11-2.aarch64.rpm",
+  "name": "gstreamer1.0-plugins-good-amrnb",
+  "rpm_version": "1.26.11",
+  "release": "2",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

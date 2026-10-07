@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "42d17fe18fc271a2f03136cf33cfe06d7ae027da944eb25bc5025cc7c6517f41",
+  "key": "chum/5.2_armv7hl/armv7hl/pcsc-lite-debuginfo-1.8.10-1.1.1.bso.armv7hl.rpm",
+  "name": "pcsc-lite-debuginfo",
+  "rpm_version": "1.8.10",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,122 @@
+{
+  "version": 6,
+  "sha256": "9175f2f5aff10493cf4dcd78fbef87dcfec64ac11c1d3e34ae1df65575b30670",
+  "key": "mirror/openrepos/HAF_MED/personal/main/h/harbour-thakir-3.1.7-5.i486.rpm",
+  "name": "harbour-thakir",
+  "rpm_version": "3.1.7",
+  "release": "5",
+  "arch": "i486",
+  "verdict": 70,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 85
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 65
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.hafsoftdz.harbour-thakir.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/sailjail -p harbour-thakir.desktop /usr/bin/harbour-thakir"
+    },
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.hafsoftdz.harbour_thakir.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/sailjail -p harbour-thakir.desktop /usr/bin/harbour-thakir"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-thakir.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-thakir.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-thakir.desktop",
+      "code": "sailjail.permission",
+      "detail": "Location"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-thakir.desktop",
+      "code": "sailjail.permission",
+      "detail": "Sensors"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl daemon-reload ||:; systemctl enable --now harbour-thakir-check.timer ||:; systemctl restart harbour-thakir-check.timer ||:"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; systemctl disable --now harbour-thakir-check.timer ||:; fi"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/harbour-thakir-check.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=defaultuser group=root exec=/bin/sh -c '/usr/bin/harbour-thakir --check-and-play \u003e\u003e /home/defaultuser/.cache/harbour-thakir-check.log 2\u003e\u00261' sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/harbour-thakir-check.timer",
+      "code": "systemd.timer",
+      "detail": "scope=system activates=harbour-thakir-check.service"
+    }
+  ]
+}

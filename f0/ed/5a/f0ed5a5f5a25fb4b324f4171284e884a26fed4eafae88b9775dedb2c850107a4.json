@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "f0ed5a5f5a25fb4b324f4171284e884a26fed4eafae88b9775dedb2c850107a4",
+  "key": "mirror/openrepos/ade/personal/main/n/nmap-suid-7.99-1.armv7hl.rpm",
+  "name": "nmap-suid",
+  "rpm_version": "7.99",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 0,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": 0
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "setuid",
+      "path": "/usr/share/nmap-suid/bin/nmap",
+      "code": "setuid",
+      "detail": "/usr/share/nmap-suid/bin/nmap mode 0104755 user root group root file"
+    }
+  ]
+}

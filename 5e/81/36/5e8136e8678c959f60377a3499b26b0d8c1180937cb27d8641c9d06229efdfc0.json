@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "5e8136e8678c959f60377a3499b26b0d8c1180937cb27d8641c9d06229efdfc0",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-sailtasklist-debuginfo-1.3.6+main.20260831185800.1389aeb-1.1.1.bso.armv7hl.rpm",
+  "name": "harbour-sailtasklist-debuginfo",
+  "rpm_version": "1.3.6+main.20260831185800.1389aeb",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

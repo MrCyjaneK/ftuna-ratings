@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "fc4d148aa78bf04b8aacb4799a827f75672e8e2c9e5330d86a773b56e2abc363",
+  "key": "mirror/openrepos/nobodyinperson/personal/main/p/python3-certifi-2019.9.11-rokua.noarch.rpm",
+  "name": "python3-certifi",
+  "rpm_version": "2019.9.11",
+  "release": "rokua",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

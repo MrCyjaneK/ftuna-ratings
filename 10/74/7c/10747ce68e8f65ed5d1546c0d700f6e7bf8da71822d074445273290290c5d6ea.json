@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "10747ce68e8f65ed5d1546c0d700f6e7bf8da71822d074445273290290c5d6ea",
+  "key": "chum/5.1_aarch64/aarch64/libass-debuginfo-0.17.1+git1-1.1.1.bso.aarch64.rpm",
+  "name": "libass-debuginfo",
+  "rpm_version": "0.17.1+git1",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

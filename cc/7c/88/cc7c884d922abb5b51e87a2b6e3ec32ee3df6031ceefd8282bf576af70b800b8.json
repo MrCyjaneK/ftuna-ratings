@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "cc7c884d922abb5b51e87a2b6e3ec32ee3df6031ceefd8282bf576af70b800b8",
+  "key": "mirror/openrepos/mikhael/personal/main/h/harbour-seabass-0.9.1-1-unconfined.noarch.rpm",
+  "name": "harbour-seabass",
+  "rpm_version": "0.9.1",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 55,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-seabass.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    }
+  ]
+}

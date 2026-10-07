@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "8efd40561c5c5aa090298fffecf0290986ed305f5601c4a2d2017aafb66e087e",
+  "key": "mirror/openrepos/nephros/personal/main/l/lomiri-sound-theme-ringtones-22.02git1-1.8.1.jolla_.noarch.rpm",
+  "name": "lomiri-sound-theme-ringtones",
+  "rpm_version": "22.02+git1",
+  "release": "1.8.1.jolla",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

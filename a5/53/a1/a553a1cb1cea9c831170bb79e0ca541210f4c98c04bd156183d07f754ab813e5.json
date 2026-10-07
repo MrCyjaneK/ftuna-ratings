@@ -1,0 +1,98 @@
+{
+  "version": 6,
+  "sha256": "a553a1cb1cea9c831170bb79e0ca541210f4c98c04bd156183d07f754ab813e5",
+  "key": "chum/5.2_aarch64/aarch64/harbour-maep-qt-1.4.13+master.20220516083048.3.gedaa56b-1.2.1.bso.aarch64.rpm",
+  "name": "harbour-maep-qt",
+  "rpm_version": "1.4.13+master.20220516083048.3.gedaa56b",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-maep-qt.desktop",
+      "code": "sailjail.permission",
+      "detail": "Location"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-maep-qt.desktop",
+      "code": "sailjail.permission",
+      "detail": "Documents"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-maep-qt.desktop",
+      "code": "sailjail.permission",
+      "detail": "Downloads"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-maep-qt.desktop",
+      "code": "sailjail.permission",
+      "detail": "PublicDir"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-maep-qt.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-maep-qt.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    }
+  ]
+}

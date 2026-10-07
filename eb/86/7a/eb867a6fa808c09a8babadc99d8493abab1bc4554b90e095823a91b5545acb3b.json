@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "eb867a6fa808c09a8babadc99d8493abab1bc4554b90e095823a91b5545acb3b",
+  "key": "mirror/openrepos/yun_L/personal/main/h/harbour-dimeora-0.3-2.aarch64.rpm",
+  "name": "harbour-dimeora",
+  "rpm_version": "0.3",
+  "release": "2",
+  "arch": "aarch64",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

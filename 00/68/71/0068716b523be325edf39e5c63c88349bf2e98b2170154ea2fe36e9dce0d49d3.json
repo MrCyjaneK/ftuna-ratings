@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "0068716b523be325edf39e5c63c88349bf2e98b2170154ea2fe36e9dce0d49d3",
+  "key": "mirror/openrepos/Louis/personal/main/w/whois-5.2.9-0.i586.rpm",
+  "name": "whois",
+  "rpm_version": "5.2.9",
+  "release": "0",
+  "arch": "i586",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

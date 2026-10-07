@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "a6000a4b49f91c1a12d525a1ff56825d734aef98b56cc2c9219c7db49f2308e3",
+  "key": "mirror/openrepos/ade/personal/main/h/harbour-sailcron-0.9-3.armv7hl.rpm",
+  "name": "harbour-sailcron",
+  "rpm_version": "0.9",
+  "release": "3",
+  "arch": "armv7hl",
+  "verdict": 28,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": 0
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailcron.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/share/harbour-sailcron/helper/sailcronhelper",
+      "code": "setuid",
+      "detail": "/usr/share/harbour-sailcron/helper/sailcronhelper mode 0104755 user root group root file"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "c6c0d0173045d16df4c0da0581636b092023fbc75c8c4042d9be9ecddef4e404",
+  "key": "mirror/openrepos/Dokuz/personal/main/b/betasail-recorder-1.2.2-16.aarch64.rpm",
+  "name": "sail-recorder",
+  "rpm_version": "1.2.2",
+  "release": "15",
+  "arch": "aarch64",
+  "verdict": 65,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": 45
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload \u003e/dev/null 2\u003e\u00261 || :; systemctl-user restart sail-recorder-daemon.service \u003e/dev/null 2\u003e\u00261 || :; systemctl-user restart sail-recorde"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/libexec/sail-recorder/sail-recorder-engine",
+      "code": "setgid",
+      "detail": "/usr/libexec/sail-recorder/sail-recorder-engine mode 0102755 user root group privileged file"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/sail-recorder-daemon.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/python3 /usr/libexec/sail-recorder/sail-recorder-daemon.py sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/sail-recorder-dbus-watchdog.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/libexec/sail-recorder/sail-recorder-dbus-watchdog.sh sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/sail-recorder-topmenu.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/libexec/sail-recorder/sail-recorder-dbus-bridge sandbox=none"
+    }
+  ]
+}

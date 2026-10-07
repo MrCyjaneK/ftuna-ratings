@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "e6e0e282f1d1a11b25888df82a960ce43c8cfbf5d390485906d80c1e4b365213",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-expenditure-2.0.1-1.4.2.bso.armv7hl.rpm",
+  "name": "harbour-expenditure",
+  "rpm_version": "2.0.1",
+  "release": "1.4.2.bso",
+  "arch": "armv7hl",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-expenditure.desktop",
+      "code": "sailjail.permission",
+      "detail": "PublicDir"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-expenditure.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-expenditure.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia"
+    }
+  ]
+}

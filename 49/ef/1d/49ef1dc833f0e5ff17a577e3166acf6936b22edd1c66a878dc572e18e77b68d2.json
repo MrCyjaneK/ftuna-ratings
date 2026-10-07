@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "49ef1dc833f0e5ff17a577e3166acf6936b22edd1c66a878dc572e18e77b68d2",
+  "key": "mirror/openrepos/slava/personal/main/h/harbour-yubikey-1.2.1-1.armv7hl.rpm",
+  "name": "harbour-yubikey",
+  "rpm_version": "1.2.1",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 35,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 20
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/etc/dbus-1/system.d/harbour.yubikey.conf",
+      "code": "dbus.policy",
+      "detail": "context=default own"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-yubikey.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=udevadm control --reload-rules ||:"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" == 0 ] ; then; udevadm control --reload-rules ||:; for d in $(getent passwd | cut -d: -f6) ; do"
+    }
+  ]
+}

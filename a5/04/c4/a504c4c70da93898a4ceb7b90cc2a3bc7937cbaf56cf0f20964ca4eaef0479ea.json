@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "a504c4c70da93898a4ceb7b90cc2a3bc7937cbaf56cf0f20964ca4eaef0479ea",
+  "key": "chum/5.1_aarch64/aarch64/gnutls37-devel-3.7.2-1.1.2.bso.aarch64.rpm",
+  "name": "gnutls37-devel",
+  "rpm_version": "3.7.2",
+  "release": "1.1.2.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

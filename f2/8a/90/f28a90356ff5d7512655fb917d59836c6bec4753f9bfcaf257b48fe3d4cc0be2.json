@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "f28a90356ff5d7512655fb917d59836c6bec4753f9bfcaf257b48fe3d4cc0be2",
+  "key": "mirror/openrepos/roboro/personal/main/a/abcm2ps-6.6.22-1.9.1.armv7hl.rpm",
+  "name": "abcm2ps",
+  "rpm_version": "6.6.22",
+  "release": "1.9.1",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "2e831aa71d0f0b28459c979cb48a2f9e34bcaaf40e41e7857bc5dd06d8e37f1f",
+  "key": "mirror/openrepos/attah/personal/main/s/seaprint-share-plugin-0.0.4-0.armv7hl.rpm",
+  "name": "seaprint-share-plugin",
+  "rpm_version": "0.0.4",
+  "release": "0",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

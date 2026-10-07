@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "e0c535f4961d95c9d1a6cd0090f2486f270c53f4f8d7ec046b2166f030d230e4",
+  "key": "mirror/openrepos/lpr/personal/main/l/libpng-1.6.58git1-1.8.2.jolla_.armv7hl.rpm",
+  "name": "libpng",
+  "rpm_version": "1.6.58+git1",
+  "release": "1.8.2.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

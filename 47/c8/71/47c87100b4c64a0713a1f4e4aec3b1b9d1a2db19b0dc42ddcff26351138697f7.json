@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "47c87100b4c64a0713a1f4e4aec3b1b9d1a2db19b0dc42ddcff26351138697f7",
+  "key": "mirror/openrepos/JulienBlanc/personal/main/h/harbour-kontroller-0.23-2.i486.rpm",
+  "name": "harbour-kontroller",
+  "rpm_version": "0.23",
+  "release": "2",
+  "arch": "i486",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-kontroller.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-kontroller.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-kontroller.desktop",
+      "code": "sailjail.permission",
+      "detail": "Music"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-kontroller.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-kontroller.desktop",
+      "code": "sailjail.permission",
+      "detail": "Videos"
+    }
+  ]
+}

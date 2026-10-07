@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "572a5580749e55282cc46d13f08f590ae88eb0b4bdd97da5edabc72e962317ee",
+  "key": "mirror/openrepos/flypig/personal/main/h/harbour-contrac-0.3.1-1.armv7hl.rpm",
+  "name": "harbour-contrac",
+  "rpm_version": "0.3.1",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 63,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-contrac.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -ge 1 ]; then; systemctl-user daemon-reload || true; systemctl-user restart contracd.service || true"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; systemctl-user stop contracd.service || true; systemctl-user disable contracd.service || true"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/contracd.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/invoker --type=generic /usr/bin/contracd sandbox=none"
+    }
+  ]
+}

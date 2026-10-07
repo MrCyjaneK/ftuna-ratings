@@ -1,0 +1,116 @@
+{
+  "version": 6,
+  "sha256": "001d2bafdbd4e3b877057789190cf173ddb5ee8d553eb44c860c66b4f6966454",
+  "key": "mirror/openrepos/Mister_Magister/personal/main/y/yottagram-0.6.1-0.armv7hl.rpm",
+  "name": "yottagram",
+  "rpm_version": "0.6.1",
+  "release": "0",
+  "arch": "armv7hl",
+  "verdict": 62,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 85
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": 45
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/com.verdanditeam.yottagram.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/invoker -s --type=generic /usr/bin/yottagram"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/yottagram.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/yottagram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/yottagram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/yottagram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Location"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/yottagram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Microphone"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/yottagram.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/yottagram.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/yottagram",
+      "code": "setgid",
+      "detail": "/usr/bin/yottagram mode 0102755 user root group privileged file"
+    }
+  ]
+}

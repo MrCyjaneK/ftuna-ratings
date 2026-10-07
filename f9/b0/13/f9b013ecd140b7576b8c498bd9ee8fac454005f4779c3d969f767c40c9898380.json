@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "f9b013ecd140b7576b8c498bd9ee8fac454005f4779c3d969f767c40c9898380",
+  "key": "mirror/openrepos/sznowicki/personal/main/v/vapaamin-0.1.4-1.i486.rpm",
+  "name": "Vapaamin",
+  "rpm_version": "0.1.4",
+  "release": "1",
+  "arch": "i486",
+  "verdict": 54,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": 45
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/Vapaamin.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if id defaultuser \u003e/dev/null 2\u003e\u00261; then; su - defaultuser -c 'XDG_RUNTIME_DIR=/run/user/$(id -u) systemctl --user daemon-reload' || :; su - defaultuser -c 'XDG_"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = 0 ] \u0026\u0026 id defaultuser \u003e/dev/null 2\u003e\u00261; then; su - defaultuser -c 'XDG_RUNTIME_DIR=/run/user/$(id -u) systemctl --user disable --now Vapaamin-daemon."
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/Vapaamin-daemon",
+      "code": "setgid",
+      "detail": "/usr/bin/Vapaamin-daemon mode 0102755 user root group privileged file"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/Vapaamin-daemon.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/Vapaamin-daemon sandbox=none"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "724681ec2033a2c357975ff144c8cc7b3aa2bf133171f6c3d60c4ff76dd083ad",
+  "key": "mirror/openrepos/ade/personal/main/h/harbour-jollacompass-0.3.7-1.armv7hl.rpm",
+  "name": "harbour-jollacompass",
+  "rpm_version": "0.3.7",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-jollacompass.desktop",
+      "code": "sailjail.permission",
+      "detail": "Location"
+    }
+  ]
+}

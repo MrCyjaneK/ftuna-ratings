@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "94fcce901779a2b97779529e086d644e8bc7dd34577d5d7a373ec726bfccb427",
+  "key": "chum/5.2_i486/i486/pcsc-ccid-1.4.35-1.2.1.bso.i486.rpm",
+  "name": "pcsc-ccid",
+  "rpm_version": "1.4.35",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": 30
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "udev",
+      "path": "/lib/udev/rules.d/92_pcscd_ccid.rules",
+      "code": "udev.run",
+      "detail": "user=root program=/usr/sbin/Kobil_mIDentity_switch"
+    }
+  ]
+}

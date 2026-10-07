@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "ce273a4daaa5dbce1bbc125664b070c7b56ec1f11eddf9024dc2012be4a604d9",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-valuelogger2-debuginfo-1.0.22-1.11.1.bso.armv7hl.rpm",
+  "name": "harbour-valuelogger2-debuginfo",
+  "rpm_version": "1.0.22",
+  "release": "1.11.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

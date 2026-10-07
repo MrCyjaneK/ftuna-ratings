@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "566be148c1a95cb6ada8cd36aea0f8fc3ebda3c5e945fed71d72d18888c8d6d0",
+  "key": "mirror/openrepos/eugenio/personal/main/s/sailfishos-patch-force-largecovers-3.2.0.12-1.noarch.rpm",
+  "name": "sailfishos-patch-force-largecovers",
+  "rpm_version": "3.2.0.12",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -x /usr/sbin/patchmanager ]; then; /usr/sbin/patchmanager -u eugenio-force-largecovers || true; fi"
+    }
+  ]
+}

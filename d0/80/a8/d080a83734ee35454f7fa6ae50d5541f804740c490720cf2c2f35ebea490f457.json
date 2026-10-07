@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "d080a83734ee35454f7fa6ae50d5541f804740c490720cf2c2f35ebea490f457",
+  "key": "chum/5.2_i486/i486/harbour-osmscout-server-debugsource-3.1.7-1.9.2.bso.i486.rpm",
+  "name": "harbour-osmscout-server-debugsource",
+  "rpm_version": "3.1.7",
+  "release": "1.9.2.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

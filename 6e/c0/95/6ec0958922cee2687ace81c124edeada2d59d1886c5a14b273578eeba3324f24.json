@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "6ec0958922cee2687ace81c124edeada2d59d1886c5a14b273578eeba3324f24",
+  "key": "mirror/openrepos/DeSamurai/personal/main/a/a52dec-0.8.0-160000.1.13.aarch64.rpm",
+  "name": "a52dec",
+  "rpm_version": "0.8.0",
+  "release": "160000.1.13",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

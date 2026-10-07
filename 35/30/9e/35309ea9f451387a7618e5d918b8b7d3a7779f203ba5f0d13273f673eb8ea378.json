@@ -1,0 +1,122 @@
+{
+  "version": 6,
+  "sha256": "35309ea9f451387a7618e5d918b8b7d3a7779f203ba5f0d13273f673eb8ea378",
+  "key": "mirror/openrepos/nephros/personal/main/h/harbour-privoxy-3.0.32obs5-1.25.2.jolla_.armv7hl.rpm",
+  "name": "harbour-privoxy",
+  "rpm_version": "3.0.32+obs5",
+  "release": "1.25.2.jolla",
+  "arch": "armv7hl",
+  "verdict": 45,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-privoxy-config.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-privoxy-toggle.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=update-desktop-database /usr/share/applications \u0026\u003e /dev/null || :; if [ $1 -eq 1 ] ; then; systemctl --no-reload preset harbour-privoxy.service \u003e/dev/null 2\u003e\u00261 "
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload disable --now harbour-privoxy.service \u003e /dev/null 2\u003e\u00261 || :; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=update-desktop-database /usr/share/applications \u0026\u003e /dev/null || :"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/harbour-privoxy-clean-certs.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=-/bin/find /usr/share/harbour-privoxy/ssl/certs -type f -name *.crt -mtime +90 -exec rm -f {} \\;; -/bin/find /usr/share/harbour-privoxy/ssl/certs -type f -name *.pem -mtime +90 -exec rm -f {} \\; sandbox=ProtectSystem=strict,ProtectHome=read-only"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/harbour-privoxy-clean-log.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/bin/systemctl reload harbour-privoxy.service sandbox=ProtectSystem=strict,ProtectHome=read-only"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/harbour-privoxy-housekeeping.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/bin/true sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/harbour-privoxy-housekeeping.timer",
+      "code": "systemd.timer",
+      "detail": "scope=system activates=harbour-privoxy-housekeeping.service"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/harbour-privoxy.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/sbin/harbour-privoxy --pidfile ${PIDFILE}  --user ${PUSER}.inet /usr/share/harbour-privoxy/conf/config.sailfish sandbox=ProtectSystem=strict,ProtectHome=read-only"
+    }
+  ]
+}

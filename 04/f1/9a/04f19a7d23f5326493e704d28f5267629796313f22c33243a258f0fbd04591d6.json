@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "04f19a7d23f5326493e704d28f5267629796313f22c33243a258f0fbd04591d6",
+  "key": "mirror/openrepos/lpr/personal/main/p/python3-zbar-0.23.93-1.7.1.2.3.armv7hl.rpm",
+  "name": "python3-zbar",
+  "rpm_version": "0.23.93",
+  "release": "1.7.1.2.3",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

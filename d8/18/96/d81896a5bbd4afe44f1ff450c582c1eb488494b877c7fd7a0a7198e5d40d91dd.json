@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "d81896a5bbd4afe44f1ff450c582c1eb488494b877c7fd7a0a7198e5d40d91dd",
+  "key": "mirror/openrepos/cornerman/personal/main/s/sailfishos-patch-less-home-animations-0.2.0-1.noarch.rpm",
+  "name": "sailfishos-patch-less-home-animations",
+  "rpm_version": "0.2.0",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-less-home-animations ]; then; /usr/sbin/patchmanager -u sailfishos-patch-less-home-animations || tr"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-less-home-animations ]; then; /usr/sbin/patchmanager -u sailfishos-patch-less-home-animations || tr"
+    }
+  ]
+}

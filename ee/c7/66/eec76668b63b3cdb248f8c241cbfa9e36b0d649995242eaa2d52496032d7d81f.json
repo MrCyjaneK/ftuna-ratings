@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "eec76668b63b3cdb248f8c241cbfa9e36b0d649995242eaa2d52496032d7d81f",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-sailtrix-debuginfo-1.4.3-1.12.1.bso.armv7hl.rpm",
+  "name": "harbour-sailtrix-debuginfo",
+  "rpm_version": "1.4.3",
+  "release": "1.12.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

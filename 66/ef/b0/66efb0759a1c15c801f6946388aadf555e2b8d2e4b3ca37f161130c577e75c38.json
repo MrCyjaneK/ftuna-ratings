@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "66efb0759a1c15c801f6946388aadf555e2b8d2e4b3ca37f161130c577e75c38",
+  "key": "mirror/openrepos/Rikudou_Sennin/personal/main/p/proton-bridge-3.24.2-1.aarch64.rpm",
+  "name": "proton-bridge",
+  "rpm_version": "3.24.2",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": 58,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl --no-reload preset \\--user \\--global proton-bridge.service \u003e/dev/null 2\u003e\u00261 || :; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; systemctl --global disable proton-bridge.service \u003e/dev/null 2\u003e\u00261 || :; fi"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/proton-bridge.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/bridge --noninteractive sandbox=none"
+    }
+  ]
+}

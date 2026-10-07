@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "a60a5f4dd3cba811bf724c7e961107c39be71423ee2aa7acce09b3f84d1c025b",
+  "key": "chum/5.2_aarch64/noarch/python3-yt-dlp-2023.12.30+obs2-1.4.2.bso.noarch.rpm",
+  "name": "python3-yt-dlp",
+  "rpm_version": "2023.12.30+obs2",
+  "release": "1.4.2.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

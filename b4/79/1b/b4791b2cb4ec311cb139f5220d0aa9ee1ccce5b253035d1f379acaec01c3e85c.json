@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "b4791b2cb4ec311cb139f5220d0aa9ee1ccce5b253035d1f379acaec01c3e85c",
+  "key": "mirror/openrepos/korppi/personal/main/s/securefishnet-2.1-7.armv7hl.rpm",
+  "name": "securefishnet",
+  "rpm_version": "2.1",
+  "release": "7",
+  "arch": "armv7hl",
+  "verdict": 45,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/securefishnet-gui.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/bin/killall securefishnet-gui \u003e/dev/null 2\u003e\u00261 || :; if [ $1 -eq 1 ]; then; if [ $1 -eq 1 ] ; then"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; /bin/systemctl stop OVPNdaemon.service \u003e/dev/null 2\u003e\u00261 || :; for service in %{OVPNdaemon_start_services} ; do"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -ge 1 ]; then; for service in %{OVPNdaemon_start_services} ; do; /bin/systemctl try-restart $service \u003e/dev/null 2\u003e\u00261 || :"
+    },
+    {
+      "module": "systemd",
+      "path": "/etc/systemd/system/OVPNdaemon.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/bin/OVPNdaemon sandbox=none"
+    }
+  ]
+}

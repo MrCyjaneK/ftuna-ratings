@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "e57ba874bf6d4e6af1a9bff679f6fe55b7d503d6140384f9ae41d4864c16ef7f",
+  "key": "chum/5.1_i486/i486/nfs-utils-doc-2.9.1+git1-1.7.1.bso.i486.rpm",
+  "name": "nfs-utils-doc",
+  "rpm_version": "2.9.1+git1",
+  "release": "1.7.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

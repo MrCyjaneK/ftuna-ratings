@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "cb619a53f6a735495fdf0269dac13b11516f408c85b1251ee6b6f137763cfdd8",
+  "key": "chum/5.2_armv7hl/armv7hl/maliit-plugin-presage-debuginfo-1.2.4-1.6.1.bso.armv7hl.rpm",
+  "name": "maliit-plugin-presage-debuginfo",
+  "rpm_version": "1.2.4",
+  "release": "1.6.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

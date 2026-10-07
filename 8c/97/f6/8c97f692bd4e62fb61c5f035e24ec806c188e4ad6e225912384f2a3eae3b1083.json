@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "8c97f692bd4e62fb61c5f035e24ec806c188e4ad6e225912384f2a3eae3b1083",
+  "key": "chum/5.1_i486/i486/mpv-debugsource-0.35.1+git1-1.1.1.bso.i486.rpm",
+  "name": "mpv-debugsource",
+  "rpm_version": "0.35.1+git1",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

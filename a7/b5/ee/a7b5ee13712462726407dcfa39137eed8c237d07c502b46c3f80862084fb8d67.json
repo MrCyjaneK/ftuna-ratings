@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "a7b5ee13712462726407dcfa39137eed8c237d07c502b46c3f80862084fb8d67",
+  "key": "chum/5.2_aarch64/aarch64/libdate-tz-3.0.0.20210322.sfos.3-1.4.1.bso.aarch64.rpm",
+  "name": "libdate-tz",
+  "rpm_version": "3.0.0.20210322.sfos.3",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

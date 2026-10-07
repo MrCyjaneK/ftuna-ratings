@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "1978e1f44cd1b567875717f234ddf4adbdca7c1c4b2e42d5dd7a2ced2a29f39e",
+  "key": "mirror/openrepos/slava/personal/main/h/harbour-wordle-1.0.13-1.armv7hl.rpm",
+  "name": "harbour-wordle",
+  "rpm_version": "1.0.13",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-wordle.desktop",
+      "code": "sailjail.permission",
+      "detail": "Sensors"
+    }
+  ]
+}

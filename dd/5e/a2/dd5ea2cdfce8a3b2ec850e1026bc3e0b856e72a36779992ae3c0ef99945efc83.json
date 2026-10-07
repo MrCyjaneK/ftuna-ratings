@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "dd5ea2cdfce8a3b2ec850e1026bc3e0b856e72a36779992ae3c0ef99945efc83",
+  "key": "mirror/openrepos/lpr/personal/main/p/pulseaudio-devel-12.2git9-2.armv7hl.rpm",
+  "name": "pulseaudio-devel",
+  "rpm_version": "12.2+git9",
+  "release": "2",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

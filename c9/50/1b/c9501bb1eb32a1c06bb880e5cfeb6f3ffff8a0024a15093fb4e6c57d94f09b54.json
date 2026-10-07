@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "c9501bb1eb32a1c06bb880e5cfeb6f3ffff8a0024a15093fb4e6c57d94f09b54",
+  "key": "mirror/openrepos/javitonino/personal/main/w/wireguard-tools-1.0.20210914-1.i486.rpm",
+  "name": "wireguard-tools",
+  "rpm_version": "1.0.20210914",
+  "release": "1",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

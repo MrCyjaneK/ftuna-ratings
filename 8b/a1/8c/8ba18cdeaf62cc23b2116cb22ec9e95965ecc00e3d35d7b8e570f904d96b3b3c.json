@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "8ba18cdeaf62cc23b2116cb22ec9e95965ecc00e3d35d7b8e570f904d96b3b3c",
+  "key": "mirror/openrepos/lpr_A7/personal/main/m/mpg123-pulse-1.23.8-1.armv7hl.rpm",
+  "name": "mpg123-pulse",
+  "rpm_version": "1.23.8",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

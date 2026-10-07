@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "d906366726e176100cc73974d684ba22fac01da6f43557a30cc65f34774819f8",
+  "key": "chum/5.2_armv7hl/armv7hl/libargon2-debuginfo-2019.03.26+master.20250304084355.2.gebfc33f-1.3.1.bso.armv7hl.rpm",
+  "name": "libargon2-debuginfo",
+  "rpm_version": "2019.03.26+master.20250304084355.2.gebfc33f",
+  "release": "1.3.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

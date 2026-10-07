@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "ec497258a70a74f615c28d0d0b5284f56c552afcee7101fb77e42317ef4d94ae",
+  "key": "mirror/openrepos/sail_ffmpg/personal/main/f/ffmpeg-8.0.1-2.2.armv7hl.rpm",
+  "name": "ffmpeg",
+  "rpm_version": "8.0.1",
+  "release": "2.2",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

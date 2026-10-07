@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "c5a85ed06de0a6b8a78e78fb4a9e48267238911710a44ba1c5f15de14d0f263b",
+  "key": "mirror/openrepos/alina/personal/main/s/sailfishos-patch-voicecall-quickaction-0.3-6.noarch.rpm",
+  "name": "sailfishos-patch-voicecall-quickaction",
+  "rpm_version": "0.3",
+  "release": "6",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/alina/patches/sailfishos-patch-voicecall-quickaction ]; then; /usr/sbin/patchmanager -u sailfishos-patch-voicecall-quickaction || "
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/alina/patches/sailfishos-patch-voicecall-quickaction ]; then; /usr/sbin/patchmanager -u sailfishos-patch-voicecall-quickaction || "
+    }
+  ]
+}

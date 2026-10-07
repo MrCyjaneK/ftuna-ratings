@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "9141842e06fb1ffbbda14358d3a86c1736d951240b5f14812fccbf62b0b05c10",
+  "key": "chum/5.1_i486/i486/harbour-amazfish-2.9.0-1.16.1.bso.i486.rpm",
+  "name": "harbour-amazfish",
+  "rpm_version": "2.9.0",
+  "release": "1.16.1.bso",
+  "arch": "i486",
+  "verdict": 62,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": 45
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-amazfish-ui.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/harbour-amazfishd",
+      "code": "setgid",
+      "detail": "/usr/bin/harbour-amazfishd mode 0102755 user root group privileged file"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-amazfish.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-amazfishd sandbox=none"
+    }
+  ]
+}

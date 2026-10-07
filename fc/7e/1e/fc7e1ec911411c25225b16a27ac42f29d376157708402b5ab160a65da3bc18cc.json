@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "fc7e1ec911411c25225b16a27ac42f29d376157708402b5ab160a65da3bc18cc",
+  "key": "mirror/openrepos/lpr_A7/personal/main/l/libsailfishapp-0.0.10-10.2.1.jolla_.armv7hl.rpm",
+  "name": "libsailfishapp",
+  "rpm_version": "0.0.10",
+  "release": "10.2.1.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

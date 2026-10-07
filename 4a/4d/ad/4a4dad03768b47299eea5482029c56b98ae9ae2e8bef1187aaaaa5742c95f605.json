@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "4a4dad03768b47299eea5482029c56b98ae9ae2e8bef1187aaaaa5742c95f605",
+  "key": "mirror/openrepos/nemishkor/personal/main/u/unofficial-jolla-language-pack-uk-0.1.0-0.0.1.noarch.rpm",
+  "name": "unofficial-jolla-language-pack-uk",
+  "rpm_version": "0.1.0",
+  "release": "0.0.1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/bin/localedef --force --replace --verbose -i uk_UA -f UTF-8 uk_UA.utf8; exit 0"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/bin/localedef --delete-from-archive uk_UA.utf8"
+    }
+  ]
+}

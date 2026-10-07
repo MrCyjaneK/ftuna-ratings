@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "abb9a71f5ae167a5c25a5161da224ebf2775425f67db7e5f803d023d2c9cd591",
+  "key": "chum/5.1_i486/noarch/python3-cairosvg-2.5.2+git2-1.2.1.bso.noarch.rpm",
+  "name": "python3-cairosvg",
+  "rpm_version": "2.5.2+git2",
+  "release": "1.2.1.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

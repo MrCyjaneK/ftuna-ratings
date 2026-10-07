@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "9c60b53be84d18623af7aad4d3b7fccfca55757343bc804240caffc87ae8b323",
+  "key": "mirror/openrepos/lpr/personal/main/i/imagemagick-7.1.2.24-7.0.aarch64.rpm",
+  "name": "ImageMagick",
+  "rpm_version": "7.1.2.24",
+  "release": "7.0",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

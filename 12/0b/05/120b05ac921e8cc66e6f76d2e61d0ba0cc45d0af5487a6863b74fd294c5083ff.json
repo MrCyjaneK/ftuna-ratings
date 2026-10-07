@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "120b05ac921e8cc66e6f76d2e61d0ba0cc45d0af5487a6863b74fd294c5083ff",
+  "key": "chum/5.1_aarch64/aarch64/i2pd-debugsource-2.56.0+git1-1.6.2.bso.aarch64.rpm",
+  "name": "i2pd-debugsource",
+  "rpm_version": "2.56.0+git1",
+  "release": "1.6.2.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

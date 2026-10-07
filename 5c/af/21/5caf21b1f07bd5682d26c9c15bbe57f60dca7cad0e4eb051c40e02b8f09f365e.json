@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "5caf21b1f07bd5682d26c9c15bbe57f60dca7cad0e4eb051c40e02b8f09f365e",
+  "key": "mirror/openrepos/lpr_A7/personal/main/l/libffi-3.2.1git1-1.10.7.armv7hl.rpm",
+  "name": "libffi",
+  "rpm_version": "3.2.1+git1",
+  "release": "1.10.7",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%posttrans",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ ! -e /usr/lib/libffi.so.5 ]; then; ln -sf libffi.so.6 /usr/lib/libffi.so.5 || :; fi"
+    }
+  ]
+}

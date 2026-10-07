@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "e9130cc12b1674521e6bd2536c02dacf7483f16998819be7a822d84f308868ed",
+  "key": "chum/5.1_aarch64/aarch64/wordgrinder-debuginfo-0.8+git3-1.2.1.bso.aarch64.rpm",
+  "name": "wordgrinder-debuginfo",
+  "rpm_version": "0.8+git3",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

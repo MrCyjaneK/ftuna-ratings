@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "1bba7ffa5bcba5230baa0fd8370d8cf9bee45a100356a0dda0668d22df21fa24",
+  "key": "mirror/openrepos/Kabouik/personal/main/h/havoc-0.1.0sailfishos.20220121231007.43.g45e03f7-1.19.1.jolla_.i486.rpm",
+  "name": "havoc",
+  "rpm_version": "0.1.0+sailfishos.20220121231007.43.g45e03f7",
+  "release": "1.19.1.jolla",
+  "arch": "i486",
+  "verdict": 55,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/havoc.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    }
+  ]
+}

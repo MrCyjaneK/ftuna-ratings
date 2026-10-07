@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "f12eb9aba282fc9596eb57aac527b97fc80de4f5dd8813e0fdf2fa4a8b1eb52b",
+  "key": "chum/5.2_armv7hl/armv7hl/mytraceroute-debuginfo-0.95+git2-1.2.1.bso.armv7hl.rpm",
+  "name": "mytraceroute-debuginfo",
+  "rpm_version": "0.95+git2",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

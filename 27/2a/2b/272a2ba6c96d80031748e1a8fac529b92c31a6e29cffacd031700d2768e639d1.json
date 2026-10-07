@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "272a2ba6c96d80031748e1a8fac529b92c31a6e29cffacd031700d2768e639d1",
+  "key": "mirror/openrepos/lpr/personal/main/b/boost-signals-1.66.0git2-1.2.6.jolla_.armv7hl.rpm",
+  "name": "boost-signals",
+  "rpm_version": "1.66.0+git2",
+  "release": "1.2.6.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

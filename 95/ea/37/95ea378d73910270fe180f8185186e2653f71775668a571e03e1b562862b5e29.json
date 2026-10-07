@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "95ea378d73910270fe180f8185186e2653f71775668a571e03e1b562862b5e29",
+  "key": "mirror/openrepos/mazhe/personal/main/m/mdnsresponder-debuginfo-567-1.1.armv7hl.rpm",
+  "name": "mDNSResponder-debuginfo",
+  "rpm_version": "567",
+  "release": "1.1",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

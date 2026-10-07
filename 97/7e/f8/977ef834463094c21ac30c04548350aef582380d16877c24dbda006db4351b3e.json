@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "977ef834463094c21ac30c04548350aef582380d16877c24dbda006db4351b3e",
+  "key": "mirror/openrepos/Mister_Magister/personal/main/y/yottagram-voicecall-plugin-0.6.0-5.i486.rpm",
+  "name": "yottagram-voicecall-plugin",
+  "rpm_version": "0.6.0",
+  "release": "5",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

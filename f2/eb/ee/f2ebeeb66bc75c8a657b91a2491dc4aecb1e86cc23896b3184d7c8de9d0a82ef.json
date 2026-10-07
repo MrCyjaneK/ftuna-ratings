@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "f2ebeeb66bc75c8a657b91a2491dc4aecb1e86cc23896b3184d7c8de9d0a82ef",
+  "key": "mirror/openrepos/slava/personal/main/o/openrepos-books-1.1.6-1.aarch64.rpm",
+  "name": "openrepos-books",
+  "rpm_version": "1.1.6",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": 57,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 85
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/openrepos-books.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/invoker --type=silica-qt5 --desktop-file=openrepos-books.desktop -n -d 5 /usr/bin/openrepos-books"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/openrepos-books.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" == 0 ] ; then \\; getent passwd | grep -v '/nologin$' | \\; while IFS=: read -r name pw uid gid comment home shell; \\"
+    }
+  ]
+}

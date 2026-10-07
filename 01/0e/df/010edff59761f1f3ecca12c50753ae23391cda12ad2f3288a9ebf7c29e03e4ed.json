@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "010edff59761f1f3ecca12c50753ae23391cda12ad2f3288a9ebf7c29e03e4ed",
+  "key": "chum/5.2_i486/i486/harbour-shakkikello-debugsource-0.9.9-1.1.1.bso.i486.rpm",
+  "name": "harbour-shakkikello-debugsource",
+  "rpm_version": "0.9.9",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

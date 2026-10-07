@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "26b7886b67e0ee0d8349489d7c162253b683d90db61249b41f7551b6b8dfa0c4",
+  "key": "chum/5.2_aarch64/noarch/waydroid-settings-1.4.3+git3-1.10.1.bso.noarch.rpm",
+  "name": "waydroid-settings",
+  "rpm_version": "1.4.3+git3",
+  "release": "1.10.1.bso",
+  "arch": "noarch",
+  "verdict": 70,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/waydroid.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/waydroid-session.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/waydroid session start sandbox=none"
+    }
+  ]
+}

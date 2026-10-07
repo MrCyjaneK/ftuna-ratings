@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "6d2d7bb9fba8f3470d0239870e40235898f9bd7d4003a2a7e867d10a3423871d",
+  "key": "chum/5.1_aarch64/aarch64/graphviz-debugsource-12.2.1+git3-1.3.1.bso.aarch64.rpm",
+  "name": "graphviz-debugsource",
+  "rpm_version": "12.2.1+git3",
+  "release": "1.3.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

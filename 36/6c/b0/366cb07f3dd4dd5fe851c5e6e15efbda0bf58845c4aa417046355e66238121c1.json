@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "366cb07f3dd4dd5fe851c5e6e15efbda0bf58845c4aa417046355e66238121c1",
+  "key": "mirror/openrepos/martonmiklos/personal/main/p/presage_predictor-1.0-5.armv7hl.rpm",
+  "name": "presage_predictor",
+  "rpm_version": "1.0",
+  "release": "5",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

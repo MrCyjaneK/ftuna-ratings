@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "a09ef8cad83e455f42f63e6a4c63bec3a4740cb2f4641ef352058e57771bd59a",
+  "key": "mirror/openrepos/tp_labs/personal/main/h/harbour-shello-0.1-2.i486.rpm",
+  "name": "harbour-shello",
+  "rpm_version": "0.1",
+  "release": "2",
+  "arch": "i486",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-shello.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-shello.desktop",
+      "code": "sailjail.permission",
+      "detail": "NetworkInfo"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-shello.desktop",
+      "code": "sailjail.permission",
+      "detail": "LocalNetwork"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-shello.desktop",
+      "code": "sailjail.permission",
+      "detail": "Documents"
+    }
+  ]
+}

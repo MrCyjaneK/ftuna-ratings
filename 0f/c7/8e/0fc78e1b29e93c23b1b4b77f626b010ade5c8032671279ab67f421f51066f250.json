@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "0fc78e1b29e93c23b1b4b77f626b010ade5c8032671279ab67f421f51066f250",
+  "key": "mirror/openrepos/nephros/personal/main/h/harbour-distcc-3.3.3-4.i486.rpm",
+  "name": "harbour-distcc",
+  "rpm_version": "3.3.3",
+  "release": "4",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

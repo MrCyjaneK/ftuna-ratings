@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "ac4722bbc2e95d13b7790d7b8622f965b4a62ca0cddcfdb5ec0f2c7b85ea8b91",
+  "key": "chum/5.1_aarch64/aarch64/detox-1.4.5+git1-1.4.1.bso.aarch64.rpm",
+  "name": "detox",
+  "rpm_version": "1.4.5+git1",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

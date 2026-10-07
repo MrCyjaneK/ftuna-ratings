@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "f025b233b0c9fe67fad1f591df0298963aeb3f0aea71fb3b8ef3744e30230540",
+  "key": "chum/5.2_armv7hl/armv7hl/slang-debugsource-2.3.2-1.2.1.bso.armv7hl.rpm",
+  "name": "slang-debugsource",
+  "rpm_version": "2.3.2",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

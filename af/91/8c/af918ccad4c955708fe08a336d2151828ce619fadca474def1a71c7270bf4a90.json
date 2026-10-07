@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "af918ccad4c955708fe08a336d2151828ce619fadca474def1a71c7270bf4a90",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-parkingtimer-debugsource-0.3-1.1.1.bso.armv7hl.rpm",
+  "name": "harbour-parkingtimer-debugsource",
+  "rpm_version": "0.3",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

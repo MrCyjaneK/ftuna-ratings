@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "5ba7ef5679dacfbddc20b431160579723353d7a499c289853f461d3070b23e56",
+  "key": "chum/5.1_aarch64/aarch64/harbour-colordots-debuginfo-0.4.0+master.20210927124440.3.g94a2c65-1.1.2.bso.aarch64.rpm",
+  "name": "harbour-colordots-debuginfo",
+  "rpm_version": "0.4.0+master.20210927124440.3.g94a2c65",
+  "release": "1.1.2.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

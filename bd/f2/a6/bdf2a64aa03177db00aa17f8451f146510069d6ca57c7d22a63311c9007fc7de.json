@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "bdf2a64aa03177db00aa17f8451f146510069d6ca57c7d22a63311c9007fc7de",
+  "key": "mirror/openrepos/kan/personal/main/h/harbour-arcanechat-0.11.1-2.aarch64.rpm",
+  "name": "harbour-arcanechat",
+  "rpm_version": "0.11.1",
+  "release": "2",
+  "arch": "aarch64",
+  "verdict": 53,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-arcanechat.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=ln -s /usr/share/harbour-arcanechat/lib/python3.8/site-packages/deltachat_rpc_server/deltachat-rpc-server /usr/bin/deltachat-rpc-server; ln -s /usr/share/harbou"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -gt 1 ] ; then; if [ -e /usr/bin/deltachat_rpc_server ]; then; rm -f /usr/bin/deltachat_rpc_server \u003e /dev/null 2\u003e\u00261 || true"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "dc2aeefeb916f651d1f48bdb01b8ef891f870b34e7adf416c3f55f5758676fe2",
+  "key": "mirror/openrepos/Juanro49/personal/main/l/librespeed-cli-1.0.12-1.aarch64.rpm",
+  "name": "librespeed-cli",
+  "rpm_version": "1.0.12",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

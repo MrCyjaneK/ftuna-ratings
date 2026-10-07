@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "75cf533860f2eb89283714bc8f1d54a766e44e8890beb111405c76034b8098f7",
+  "key": "mirror/openrepos/osetr/personal/main/h/harbour-storeman-installer-1.2.2-1.noarch.rpm",
+  "name": "harbour-storeman-installer",
+  "rpm_version": "1.2.2",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 32,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": 10
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "polkit",
+      "path": "/var/lib/polkit-1/localauthority/50-local.d/50-harbour-storeman-installer-packagekit.pkla",
+      "code": "polkit.pkla",
+      "detail": "Identity=unix-group:ssu ResultAny=yes"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-storeman-installer.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=ssu rr harbour-storeman-obs; rm -f /var/cache/ssu/features.ini; ssu ur"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%posttrans",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=ssu rr mentaljam-obs; rm -f /var/cache/ssu/features.ini; ssu ar harbour-storeman-obs 'https://repo.sailfishos.org/obs/home:/olf:/harbour-storeman/%(release)_%(a"
+    }
+  ]
+}

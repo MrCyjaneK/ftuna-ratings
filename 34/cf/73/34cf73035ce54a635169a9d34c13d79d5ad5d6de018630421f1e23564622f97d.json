@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "34cf73035ce54a635169a9d34c13d79d5ad5d6de018630421f1e23564622f97d",
+  "key": "mirror/openrepos/nephros/personal/main/o/openrepos-olsrd-plugin-txtinfo-0.9.8-5.aarch64.rpm",
+  "name": "openrepos-olsrd-plugin-txtinfo",
+  "rpm_version": "0.9.8",
+  "release": "5",
+  "arch": "aarch64",
+  "verdict": 75,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/openrepos-olsrd-txtinfo.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    }
+  ]
+}

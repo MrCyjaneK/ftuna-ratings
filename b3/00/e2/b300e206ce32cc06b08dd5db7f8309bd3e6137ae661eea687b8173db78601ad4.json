@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "b300e206ce32cc06b08dd5db7f8309bd3e6137ae661eea687b8173db78601ad4",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-sailhn-debugsource-0.10.5-1.8.1.bso.armv7hl.rpm",
+  "name": "harbour-sailhn-debugsource",
+  "rpm_version": "0.10.5",
+  "release": "1.8.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "11acc0444419c479f38f4889db20ad81ac25d006c1c4bfde59236b02d754bc3f",
+  "key": "chum/5.1_armv7hl/armv7hl/profanity-debugsource-0.15.1+git4-1.2.2.bso.armv7hl.rpm",
+  "name": "profanity-debugsource",
+  "rpm_version": "0.15.1+git4",
+  "release": "1.2.2.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

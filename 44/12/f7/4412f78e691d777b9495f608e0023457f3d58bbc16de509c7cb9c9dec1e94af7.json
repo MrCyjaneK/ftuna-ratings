@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "4412f78e691d777b9495f608e0023457f3d58bbc16de509c7cb9c9dec1e94af7",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-pgz-galaxy-attack-hd-debugsource-1.0.9.1-1.1.1.bso.armv7hl.rpm",
+  "name": "harbour-pgz-galaxy-attack-hd-debugsource",
+  "rpm_version": "1.0.9.1",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "1ef7ab41113cc749cbbbe2ca3e6511175abeadfdb8be0a8a3d10f6ab31a62504",
+  "key": "mirror/openrepos/abranson/personal/main/h/harbour-quickddit-1.14.2-1.armv7hl.rpm",
+  "name": "harbour-quickddit",
+  "rpm_version": "1.14.2",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-quickddit.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-quickddit.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-quickddit.desktop",
+      "code": "sailjail.permission",
+      "detail": "Pictures"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-quickddit.desktop",
+      "code": "sailjail.permission",
+      "detail": "WebView"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-quickddit.desktop",
+      "code": "sailjail.permission",
+      "detail": "Notifications"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "19b9a09dcc1bed596341c864c5fd53cdf909edd74f471578ef37c42fbf57d01b",
+  "key": "mirror/openrepos/zuyev/personal/main/h/harbour-molitvoslov-5.5.14-3.i486.rpm",
+  "name": "harbour-molitvoslov",
+  "rpm_version": "5.5.14",
+  "release": "3",
+  "arch": "i486",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

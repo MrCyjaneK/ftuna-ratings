@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "b14408a742de146fe87db8f049ae920617a69b4e8d03f9bbd67a7484bfa68afb",
+  "key": "chum/5.1_i486/i486/rpcbind-debugsource-1.2.7-1.3.1.bso.i486.rpm",
+  "name": "rpcbind-debugsource",
+  "rpm_version": "1.2.7",
+  "release": "1.3.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

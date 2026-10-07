@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "529be8d8deb2b1b90eafb2f46666dfcd3b4577bcd4441ac986ec46fe9b525311",
+  "key": "chum/5.2_aarch64/aarch64/harbour-crossfishwatch-debugsource-1.0.0-1.1.1.bso.aarch64.rpm",
+  "name": "harbour-crossfishwatch-debugsource",
+  "rpm_version": "1.0.0",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "d4414c4b5a33ac5a310e6787b5bd9fd160c2805e2dd58744c0b70f19a2e1fa1e",
+  "key": "chum/5.1_aarch64/noarch/youtube-dl-standalone-2025.11.26+git1-1.5.1.bso.noarch.rpm",
+  "name": "youtube-dl-standalone",
+  "rpm_version": "2025.11.26+git1",
+  "release": "1.5.1.bso",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=ln -sf youtube-dl-standalone /usr/bin/youtube-dl ||:"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -lt 1 ] ; then; rm /usr/bin/youtube-dl ||:; fi"
+    }
+  ]
+}

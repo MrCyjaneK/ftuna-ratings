@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "b67405880a2b370b78215f82bbb3057dcc2ad95ef0b6df21ba608c0a3d925966",
+  "key": "mirror/openrepos/kozaobecna/personal/main/h/harbour-sailreef-0.1.6-1.noarch.rpm",
+  "name": "harbour-sailreef",
+  "rpm_version": "0.1.6",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

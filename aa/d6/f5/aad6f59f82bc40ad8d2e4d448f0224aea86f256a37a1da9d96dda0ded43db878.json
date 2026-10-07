@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "aad6f59f82bc40ad8d2e4d448f0224aea86f256a37a1da9d96dda0ded43db878",
+  "key": "mirror/openrepos/zuyev/personal/main/h/harbour-molitvoslov-5.5.16-1.armv7hl.rpm",
+  "name": "harbour-molitvoslov",
+  "rpm_version": "5.5.16",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

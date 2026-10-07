@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "59ee2c74f5d62923de2b089ee3b2027b1b70785c7ae2521270f338848eea9c8b",
+  "key": "mirror/openrepos/lpr_next/personal/main/g/glibc-devel-2.25.6git1-1.armv7hl.rpm",
+  "name": "glibc-devel",
+  "rpm_version": "2.25.6+git1",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

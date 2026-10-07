@@ -1,0 +1,98 @@
+{
+  "version": 6,
+  "sha256": "3276a13df37fcc9d3f0ff6a9cd31b02d8e691908eb32c8cdea9f2937ab10ddb7",
+  "key": "mirror/openrepos/piggz/personal/main/h/harbour-taskswitcher-0.0.devel-1.i486.rpm",
+  "name": "harbour-taskswitcher",
+  "rpm_version": "0.0.devel",
+  "release": "1",
+  "arch": "i486",
+  "verdict": 63,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-taskswitcher-user.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"2\" ]; then; systemctl --user stop harbour-taskswitcher.service; systemctl --user stop harbour-taskswitcher-user.service"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl --user daemon-reload; systemctl --user enable harbour-taskswitcher.service; systemctl --user enable harbour-taskswitcher-user.service"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"0\" ]; then; systemctl --user stop harbour-taskswitcher.service; systemctl --user stop harbour-taskswitcher-user.service"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-taskswitcher-user.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-taskswitcher-user sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-taskswitcher.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-taskswitcher sandbox=none"
+    }
+  ]
+}

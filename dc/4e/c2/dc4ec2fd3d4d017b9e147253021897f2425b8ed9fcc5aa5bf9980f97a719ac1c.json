@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "dc4ec2fd3d4d017b9e147253021897f2425b8ed9fcc5aa5bf9980f97a719ac1c",
+  "key": "mirror/openrepos/SomethingElse/personal/main/s/sfos-patch-status-bar-0.1.1-45.noarch.rpm",
+  "name": "sfos-patch-status-bar",
+  "rpm_version": "0.1.1",
+  "release": "45",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=set -o pipefail; if mkdir -p '/var/lib/rpm-state/sfos-patch-status-bar'; then; dbus-send --print-reply --system --type=method_call \\"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/sbin/patchmanager -u 'sfos-patch-status-bar' || true"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%posttrans",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -e '/var/lib/rpm-state/sfos-patch-status-bar/was-applied' ]; then; /usr/sbin/patchmanager -a 'sfos-patch-status-bar' || true; rm '/var/lib/rpm-state/sfos-p"
+    }
+  ]
+}

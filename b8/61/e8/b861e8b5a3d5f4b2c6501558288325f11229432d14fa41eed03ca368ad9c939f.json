@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "b861e8b5a3d5f4b2c6501558288325f11229432d14fa41eed03ca368ad9c939f",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/mrcyjanek/sshnotif/sshnotif-debuginfo-0.1-3.i486.rpm",
+  "name": "sshnotif-debuginfo",
+  "rpm_version": "0.1",
+  "release": "3",
+  "arch": "i486",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": 100
+    }
+  ],
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/sshnotif",
+      "code": "ftuna.built",
+      "detail": "clean"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "755a8f32e38025345e5a94ffb729af3f294067b53d9b56bff1e3bd107e1a41c1",
+  "key": "chum/5.1_armv7hl/armv7hl/opt-qt5-qtsensors-5.15.14-1.4.1.bso.armv7hl.rpm",
+  "name": "opt-qt5-qtsensors",
+  "rpm_version": "5.15.14",
+  "release": "1.4.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

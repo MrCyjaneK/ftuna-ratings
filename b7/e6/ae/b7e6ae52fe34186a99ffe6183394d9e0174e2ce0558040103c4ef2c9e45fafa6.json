@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "b7e6ae52fe34186a99ffe6183394d9e0174e2ce0558040103c4ef2c9e45fafa6",
+  "key": "mirror/openrepos/Polleke/personal/main/m/mc-debuginfo-4.8.32-1.i486.rpm",
+  "name": "mc-debuginfo",
+  "rpm_version": "4.8.32",
+  "release": "1",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

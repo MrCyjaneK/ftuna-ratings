@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "6dd1a3a665c11a0a43bf5ed2983fe532ee701974177edd1bdc2a6ad41f428d49",
+  "key": "chum/5.1_armv7hl/armv7hl/pilot-2.26+obs4-1.5.2.bso.armv7hl.rpm",
+  "name": "pilot",
+  "rpm_version": "2.26+obs4",
+  "release": "1.5.2.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

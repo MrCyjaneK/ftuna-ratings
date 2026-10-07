@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "05a42eab12be8245a3e1b22dcbeaff1e0d5a3ab7b24eb24f8625b982dcf1990e",
+  "key": "mirror/openrepos/eson/personal/main/a/ambience-yrgb-abstract-light-0.2.0-1.noarch.rpm",
+  "name": "ambience-yrgb-abstract-light",
+  "rpm_version": "0.2.0",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=chmod 755 /usr/share/ambience/{name}; chmod 755 /usr/share/ambience/{name}/images; chmod 755 /usr/share/ambience/{name}/sounds"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; rm -rf /usr/share/ambience/{name}; systemctl-user restart ambienced.service"
+    }
+  ]
+}

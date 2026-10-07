@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "4895cf58a13365ea86a3a1bac8394bfe41d17baf89f7097dcbe2a63707b56ecb",
+  "key": "mirror/openrepos/TopRanger/personal/main/h/harbour-kana-keyboard-0.0.1-1.noarch.rpm",
+  "name": "harbour-kana-keyboard",
+  "rpm_version": "0.0.1",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

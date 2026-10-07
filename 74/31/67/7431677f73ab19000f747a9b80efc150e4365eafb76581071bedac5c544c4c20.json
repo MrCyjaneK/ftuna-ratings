@@ -1,0 +1,98 @@
+{
+  "version": 6,
+  "sha256": "7431677f73ab19000f747a9b80efc150e4365eafb76581071bedac5c544c4c20",
+  "key": "mirror/openrepos/projectmoon/personal/main/f/foghorn-0.3.0-1.armv7hl.rpm",
+  "name": "foghorn",
+  "rpm_version": "0.3.0",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 75,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 85
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.unifiedpush.Distributor.Foghorn.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/foghornd systemd=foghornd.service"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/foghorn.desktop",
+      "code": "sailjail.permission",
+      "detail": "AppLaunch"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/foghorn.desktop",
+      "code": "sailjail.permission",
+      "detail": "Foghorn"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; systemctl-user daemon-reload || :; fi"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/foghornd.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/foghornd sandbox=none"
+    }
+  ]
+}

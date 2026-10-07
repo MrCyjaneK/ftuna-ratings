@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "9009994b7fed5495b922dc04115aa40d2e135436f7b7bd4e5a854c08dfe60189",
+  "key": "chum/5.1_aarch64/aarch64/opt-qt5-qtdatavis3d-debugsource-5.15.14-1.4.1.bso.aarch64.rpm",
+  "name": "opt-qt5-qtdatavis3d-debugsource",
+  "rpm_version": "5.15.14",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

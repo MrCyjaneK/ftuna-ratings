@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "0b4c94d5f87511c3e5a7287df0e81fb7a3db56d163671a7bbc95ef25fb268d78",
+  "key": "mirror/openrepos/piggz/personal/main/k/kdeconnect-sfos-0.1.1-1.armv7hl.rpm",
+  "name": "kdeconnect-sfos",
+  "rpm_version": "0.1.1",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 80,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 85
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.kde.kdeconnect.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/lib/libexec/kdeconnectd"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/kdeconnect-sfos.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    }
+  ]
+}

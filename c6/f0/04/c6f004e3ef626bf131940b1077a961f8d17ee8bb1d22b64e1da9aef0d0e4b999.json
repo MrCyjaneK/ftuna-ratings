@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "c6f004e3ef626bf131940b1077a961f8d17ee8bb1d22b64e1da9aef0d0e4b999",
+  "key": "mirror/openrepos/birdzhang/personal/main/j/jolla-settings-gost-button-0.1.4-1.armv7hl.rpm",
+  "name": "jolla-settings-gost-button",
+  "rpm_version": "0.1.4",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 30
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/system-services/xyz.birdzhang.gost.global.service",
+      "code": "dbus.service",
+      "detail": "scope=system user=root exec=/usr/bin/gost-button"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=dbus-send --system --type=method_call \\; --dest=org.freedesktop.DBus / org.freedesktop.DBus.ReloadConfig; sed -i 's/\\r//' /usr/bin/gost_proxy.sh"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=dbus-send --system --type=method_call \\; --dest=xyz.birdzhang.gost.global /xyz/birdzhang/gost/global \\; xyz.birdzhang.gost.global.quit"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=dbus-send --system --type=method_call \\; --dest=org.freedesktop.DBus / org.freedesktop.DBus.ReloadConfig"
+    }
+  ]
+}

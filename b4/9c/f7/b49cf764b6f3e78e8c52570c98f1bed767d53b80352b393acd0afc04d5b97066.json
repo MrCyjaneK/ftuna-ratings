@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "b49cf764b6f3e78e8c52570c98f1bed767d53b80352b393acd0afc04d5b97066",
+  "key": "chum/5.1_i486/i486/opt-qt5-qtsvg-5.15.14+kde5-1.4.1.bso.i486.rpm",
+  "name": "opt-qt5-qtsvg",
+  "rpm_version": "5.15.14+kde5",
+  "release": "1.4.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

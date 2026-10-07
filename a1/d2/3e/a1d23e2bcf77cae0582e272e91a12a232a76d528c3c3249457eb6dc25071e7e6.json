@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "a1d23e2bcf77cae0582e272e91a12a232a76d528c3c3249457eb6dc25071e7e6",
+  "key": "mirror/openrepos/aviarus/personal/main/o/okboard-0.6.39-9.aarch64.rpm",
+  "name": "okboard",
+  "rpm_version": "0.6.39",
+  "release": "9",
+  "arch": "aarch64",
+  "verdict": 43,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/okboard.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=find ${home_dir}/ -xdev -mindepth 2 -maxdepth 2 -type d -name .config | sed -r 's=$=/maliit.org/server.conf=' | xargs -r rm -f || true; killall maliit-server 2\u003e"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=rm -f /usr/share/okboard/install.log /usr/share/okboard/install.err; if [ $1 = 0 ] ; then  # do not run uninstall script in case of upgrade; rm -f /usr/lib64/ma"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ] ; then; find ${home_dir}/ -xdev -mindepth 2 -maxdepth 2 -type d -name .config | sed -r 's=$=/maliit.org/server.conf=' | xargs -r rm -f || true; ki"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%triggerpostun okboard-experimental, %triggerpostun okboard-full",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=killall maliit-server 2\u003e/dev/null || true; /usr/share/okboard/patch.sh install \u003e\u003e /usr/share/okboard/install.log 2\u003e\u00261 || true"
+    }
+  ]
+}

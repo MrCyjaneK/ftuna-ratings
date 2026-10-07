@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "67055656272cbc756b279fc40ef1726ca0a0ad24c7120cfd9c51496b70873745",
+  "key": "mirror/openrepos/alina/personal/main/s/sailfishos-patch-quicksettings-powermenu-1.7-1.noarch.rpm",
+  "name": "sailfishos-patch-quicksettings-powermenu",
+  "rpm_version": "1.7",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-quicksettings-powermenu ]; then; /usr/sbin/patchmanager -u sailfishos-patch-quicksettings-powermenu"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-quicksettings-powermenu ]; then; /usr/sbin/patchmanager -u sailfishos-patch-quicksettings-powermenu"
+    }
+  ]
+}

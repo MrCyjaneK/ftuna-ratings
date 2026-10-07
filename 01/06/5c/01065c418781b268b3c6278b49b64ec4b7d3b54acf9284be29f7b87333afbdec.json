@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "01065c418781b268b3c6278b49b64ec4b7d3b54acf9284be29f7b87333afbdec",
+  "key": "mirror/openrepos/kan/personal/main/s/smartdns4dns-46.1-1.aarch64.rpm",
+  "name": "smartdns4DNS",
+  "rpm_version": "46.1",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -e /usr/lib/systemd/system/smartdns.service ]; then; systemctl disable smartdns \u0026\u0026 systemctl stop smartdns \u0026\u0026 rm -f /usr/lib/systemd/system/smartdns.servic"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ ! -e /var/log/smartdns.log.txt ]; then; curmask=\"$(umask)\""
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 == 0 ] ; then; echo \"Stoping service \"; \\; systemctl stop smartdns || true"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 == 0 ] ; then; echo \"Reloading services\"; systemctl daemon-reload; \\"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/smartdns.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/sbin/smartdns -p /run/smartdns.pid $SMART_DNS_OPTS sandbox=none"
+    }
+  ]
+}

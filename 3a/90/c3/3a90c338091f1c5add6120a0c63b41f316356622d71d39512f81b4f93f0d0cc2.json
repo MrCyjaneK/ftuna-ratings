@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "3a90c338091f1c5add6120a0c63b41f316356622d71d39512f81b4f93f0d0cc2",
+  "key": "chum/5.2_armv7hl/armv7hl/hodie-debuginfo-1.5.0-1.3.1.bso.armv7hl.rpm",
+  "name": "hodie-debuginfo",
+  "rpm_version": "1.5.0",
+  "release": "1.3.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "24d5edfc16dee8c920a018b095cb9cd57774d113cfac30320fc8f859ea282419",
+  "key": "mirror/openrepos/nephros/personal/main/i/imagemagick-7.0.10.31-2.i486.rpm",
+  "name": "ImageMagick",
+  "rpm_version": "7.0.10.31",
+  "release": "2",
+  "arch": "i486",
+  "verdict": 80,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 80
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/sbin/ldconfig"
+    }
+  ]
+}

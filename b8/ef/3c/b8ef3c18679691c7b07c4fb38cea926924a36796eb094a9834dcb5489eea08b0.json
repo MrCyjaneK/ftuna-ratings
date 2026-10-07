@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "b8ef3c18679691c7b07c4fb38cea926924a36796eb094a9834dcb5489eea08b0",
+  "key": "mirror/openrepos/BillyHalley/personal/main/w/wall-clock-0.1-2.noarch.rpm",
+  "name": "wall-clock",
+  "rpm_version": "0.1",
+  "release": "2",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

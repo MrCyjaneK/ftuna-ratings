@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "43916a0b8f32bc0f60ebc7ec600205f850e7c06d7dce33ebf231b7a03de25db2",
+  "key": "mirror/openrepos/nthn/personal/main/u/unofficial-jolla-language-pack-nl_be-5.1.0.7-1.16.noarch.rpm",
+  "name": "unofficial-jolla-language-pack-nl_be",
+  "rpm_version": "5.1.0.7",
+  "release": "1.16",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/bin/localedef --force --replace --verbose -i nl_BE -f UTF-8 nl_BE.utf8; exit 0"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/bin/localedef --delete-from-archive nl_BE.utf8"
+    }
+  ]
+}

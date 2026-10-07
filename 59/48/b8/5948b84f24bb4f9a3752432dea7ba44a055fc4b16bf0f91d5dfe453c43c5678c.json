@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "5948b84f24bb4f9a3752432dea7ba44a055fc4b16bf0f91d5dfe453c43c5678c",
+  "key": "mirror/openrepos/lachs0r/personal/main/o/openssh-clients-doc-8.1p1-1.armv7hl.rpm",
+  "name": "openssh-clients-doc",
+  "rpm_version": "8.1p1",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

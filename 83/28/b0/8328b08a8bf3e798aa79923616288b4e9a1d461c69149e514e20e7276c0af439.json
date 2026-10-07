@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "8328b08a8bf3e798aa79923616288b4e9a1d461c69149e514e20e7276c0af439",
+  "key": "mirror/openrepos/CoanTeen/personal/main/h/harbour-rockbridge-0.2-2.armv7hl.rpm",
+  "name": "harbour-rockbridge",
+  "rpm_version": "0.2",
+  "release": "2",
+  "arch": "armv7hl",
+  "verdict": 54,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": 0
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload; systemctl-user enable harbour-rockbridged.service; systemctl-user try-restart harbour-rockbridged.service"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/harbour-rockbridge-attach",
+      "code": "setuid",
+      "detail": "/usr/bin/harbour-rockbridge-attach mode 0104755 user root group root file"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-rockbridged.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-rockbridged sandbox=none"
+    }
+  ]
+}

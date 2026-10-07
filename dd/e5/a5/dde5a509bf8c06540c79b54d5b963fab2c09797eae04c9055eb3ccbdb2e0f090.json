@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "dde5a509bf8c06540c79b54d5b963fab2c09797eae04c9055eb3ccbdb2e0f090",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-pure-maps-debuginfo-3.5.1-1.15.2.bso.armv7hl.rpm",
+  "name": "harbour-pure-maps-debuginfo",
+  "rpm_version": "3.5.1",
+  "release": "1.15.2.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

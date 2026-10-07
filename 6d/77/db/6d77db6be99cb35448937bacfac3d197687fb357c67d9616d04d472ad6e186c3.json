@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "6d77db6be99cb35448937bacfac3d197687fb357c67d9616d04d472ad6e186c3",
+  "key": "chum/5.1_armv7hl/armv7hl/opt-qt5-qtquickcontrols-debugsource-5.15.14-1.4.1.bso.armv7hl.rpm",
+  "name": "opt-qt5-qtquickcontrols-debugsource",
+  "rpm_version": "5.15.14",
+  "release": "1.4.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

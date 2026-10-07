@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "94c4220223d5c44434e2080d736a1687b495a9314ed54b55a6fd4a1f6b7dc28c",
+  "key": "mirror/openrepos/lpr/personal/main/b/boost-regex-1.81.0git2-1.8.2.jolla_.armv7hl.rpm",
+  "name": "boost-regex",
+  "rpm_version": "1.81.0+git2",
+  "release": "1.8.2.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

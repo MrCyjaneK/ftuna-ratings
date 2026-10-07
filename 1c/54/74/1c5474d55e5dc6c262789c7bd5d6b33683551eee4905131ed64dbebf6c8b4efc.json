@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "1c5474d55e5dc6c262789c7bd5d6b33683551eee4905131ed64dbebf6c8b4efc",
+  "key": "mirror/openrepos/Ghoelian/personal/main/h/harbour-piefish-1.5.0-1.aarch64.rpm",
+  "name": "harbour-piefish",
+  "rpm_version": "1.5.0",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-piefish.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-piefish.desktop",
+      "code": "sailjail.permission",
+      "detail": "Pictures"
+    }
+  ]
+}

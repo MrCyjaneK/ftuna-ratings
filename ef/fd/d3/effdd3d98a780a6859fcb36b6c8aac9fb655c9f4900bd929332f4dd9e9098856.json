@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "effdd3d98a780a6859fcb36b6c8aac9fb655c9f4900bd929332f4dd9e9098856",
+  "key": "mirror/openrepos/Van_ess0/personal/main/p/patchmanager-musicplayer-buttons-1.3-1.armv7hl.rpm",
+  "name": "patchmanager-musicplayer-buttons",
+  "rpm_version": "1.3",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=rm -rf /usr/share/patchmanager/patches/mpb-*"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "fa42b130dde5c6840c5c2614897514d5bdd7b652615034cf3edcb0e0e7e294e2",
+  "key": "chum/5.1_i486/i486/harbour-squeeze-remote-debugsource-3.2.0-1.3.1.bso.i486.rpm",
+  "name": "harbour-squeeze-remote-debugsource",
+  "rpm_version": "3.2.0",
+  "release": "1.3.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

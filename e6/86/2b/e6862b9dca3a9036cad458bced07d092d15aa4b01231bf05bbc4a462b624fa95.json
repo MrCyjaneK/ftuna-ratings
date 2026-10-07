@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "e6862b9dca3a9036cad458bced07d092d15aa4b01231bf05bbc4a462b624fa95",
+  "key": "mirror/openrepos/kan/personal/main/d/dnscrypt-proxy-2.1.1-1.aarch64.rpm",
+  "name": "dnscrypt-proxy",
+  "rpm_version": "2.1.1",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/usr/bindnscrypt-proxy -service install -config /etcdnscrypt-proxy/dnscrypt-proxy.toml"
+    }
+  ]
+}

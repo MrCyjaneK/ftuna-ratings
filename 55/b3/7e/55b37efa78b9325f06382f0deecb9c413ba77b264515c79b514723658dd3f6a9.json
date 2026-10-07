@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "55b37efa78b9325f06382f0deecb9c413ba77b264515c79b514723658dd3f6a9",
+  "key": "mirror/openrepos/lpr/personal/main/g/glibc-2.30git8-9.2.armv7hl.rpm",
+  "name": "glibc",
+  "rpm_version": "2.30+git8",
+  "release": "9.2",
+  "arch": "armv7hl",
+  "verdict": 18,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": 5
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "hooks",
+      "path": "/etc/ld.so.conf",
+      "code": "hooks.linker",
+      "detail": "mode 0100644 user root group root"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=\u003clua\u003e body=-- Check that the running kernel is new enough; required = '3.4.108'; rel = posix.uname(\"%r\")"
+    }
+  ]
+}

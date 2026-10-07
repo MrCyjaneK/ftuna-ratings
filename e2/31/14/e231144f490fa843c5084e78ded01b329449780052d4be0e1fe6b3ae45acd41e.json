@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "e231144f490fa843c5084e78ded01b329449780052d4be0e1fe6b3ae45acd41e",
+  "key": "mirror/openrepos/OpenSSL_111_102/personal/main/o/openssl-1.1.1kgit1-1.7.5.jolla_.aarch64.rpm",
+  "name": "openssl",
+  "rpm_version": "1.1.1k+git1",
+  "release": "1.7.5.jolla",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

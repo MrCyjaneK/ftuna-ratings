@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "529c9d2234207c1ab4ab2268670b49ee6c6826cf3665b013e03c138e0b89b01a",
+  "key": "mirror/openrepos/shellkr/personal/main/z/zsh-syntax-highlighting-0.5.0-10.1.1.jolla_.armv7hl.rpm",
+  "name": "zsh-syntax-highlighting",
+  "rpm_version": "0.5.0",
+  "release": "10.1.1.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

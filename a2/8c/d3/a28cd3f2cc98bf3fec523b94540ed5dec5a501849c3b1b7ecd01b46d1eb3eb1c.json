@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "a28cd3f2cc98bf3fec523b94540ed5dec5a501849c3b1b7ecd01b46d1eb3eb1c",
+  "key": "chum/5.1_aarch64/aarch64/davfs2-debugsource-1.7.0+git4-1.7.1.bso.aarch64.rpm",
+  "name": "davfs2-debugsource",
+  "rpm_version": "1.7.0+git4",
+  "release": "1.7.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

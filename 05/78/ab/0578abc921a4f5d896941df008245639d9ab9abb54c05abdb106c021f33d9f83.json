@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "0578abc921a4f5d896941df008245639d9ab9abb54c05abdb106c021f33d9f83",
+  "key": "mirror/openrepos/carmenfdezb/personal/main/d/deadbeef-mpris2-plugin-1.14-1.armv7hl.rpm",
+  "name": "deadbeef-mpris2-plugin",
+  "rpm_version": "1.14",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "0a6571c8733d8d39ecdb7c1f30727c94c79b6b7304b131a2ed02538ec129688c",
+  "key": "mirror/openrepos/gexc/personal/main/p/pinyinprime-0.0.10-0.armv7hl.rpm",
+  "name": "pinyinprime",
+  "rpm_version": "0.0.10",
+  "release": "0",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -e /usr/share/maliit/plugins/com/jolla/pinyinpInputHandler.qml ]; then rm /usr/share/maliit/plugins/com/jolla/pinyinpInoutHandler.qml; fi; if [ -e /usr/sha"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=su - nemo -c \"systemctl --user restart maliit-server.service\""
+    }
+  ]
+}

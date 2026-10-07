@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "466e73c7a7498f8ae543406fb97fb988f8e7c861d2cfe3b906487df9490bc6c9",
+  "key": "mirror/openrepos/nobodyinperson/personal/main/p/python3-xdgspec-0.2.1-torronsuo.noarch.rpm",
+  "name": "python3-xdgspec",
+  "rpm_version": "0.2.1",
+  "release": "torronsuo",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

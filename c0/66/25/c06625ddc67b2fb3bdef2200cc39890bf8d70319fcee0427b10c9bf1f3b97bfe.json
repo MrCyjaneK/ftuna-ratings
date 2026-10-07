@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "c06625ddc67b2fb3bdef2200cc39890bf8d70319fcee0427b10c9bf1f3b97bfe",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-pgz-jewelrush-0.7.0-1.1.1.bso.armv7hl.rpm",
+  "name": "harbour-pgz-jewelrush",
+  "rpm_version": "0.7.0",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": 75,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-pgz-jewelrush.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    }
+  ]
+}

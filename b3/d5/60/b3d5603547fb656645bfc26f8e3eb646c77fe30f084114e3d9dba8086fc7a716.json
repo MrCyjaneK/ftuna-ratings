@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "b3d5603547fb656645bfc26f8e3eb646c77fe30f084114e3d9dba8086fc7a716",
+  "key": "mirror/openrepos/zlutor/personal/main/a/ambience-teacup-forfictionmobile-0.1-1.armv7hl.rpm",
+  "name": "ambience-teacup-forfictionmobile",
+  "rpm_version": "0.1",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=add-oneshot --now --user trigger-ambience-update \u0026\u003e/dev/null || :"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=add-oneshot --now --user trigger-ambience-update \u0026\u003e/dev/null || :"
+    }
+  ]
+}

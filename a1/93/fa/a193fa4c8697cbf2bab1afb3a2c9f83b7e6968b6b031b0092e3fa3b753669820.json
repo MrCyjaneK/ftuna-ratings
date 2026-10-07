@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "a193fa4c8697cbf2bab1afb3a2c9f83b7e6968b6b031b0092e3fa3b753669820",
+  "key": "chum/5.1_i486/i486/opt-kf5-sonnet-ui-5.116.0-1.6.1.bso.i486.rpm",
+  "name": "opt-kf5-sonnet-ui",
+  "rpm_version": "5.116.0",
+  "release": "1.6.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

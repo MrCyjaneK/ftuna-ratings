@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "b5bb6d97a21cbc946d7fa24f4dfe1b213356c8e878d5e453a809dc2ccc4611cf",
+  "key": "mirror/openrepos/anig/personal/main/w/widget-manager-0.5-1.noarch.rpm",
+  "name": "widget-manager",
+  "rpm_version": "0.5",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 53,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/widgetManager.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -f /usr/sbin/patchmanager ]; then; /usr/sbin/patchmanager -u widget-manager || true; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; rm -rf /usr/share/patchmanager/patches/widget-manager || true; rm -rf /usr/share/widgetManager || true"
+    }
+  ]
+}

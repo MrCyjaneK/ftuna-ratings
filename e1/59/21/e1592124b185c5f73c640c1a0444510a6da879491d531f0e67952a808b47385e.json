@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "e1592124b185c5f73c640c1a0444510a6da879491d531f0e67952a808b47385e",
+  "key": "mirror/openrepos/rubdos/personal/main/h/harbour-whisperfish-shareplugin-v1-debugsource-0.6.0.beta_.25-0.armv7hl.rpm",
+  "name": "harbour-whisperfish-shareplugin-v1-debugsource",
+  "rpm_version": "0.6.0.beta.25",
+  "release": "0",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "8ef946c51214d5a78f86d185e83dd59bb132409036b8662f5a03cdcd41b16ee4",
+  "key": "mirror/openrepos/astafiev/personal/main/e/elliptica-foilauth-1.1.10.ell-1.33.1.jolla_.aarch64.rpm",
+  "name": "elliptica-foilauth",
+  "rpm_version": "1.1.10.ell",
+  "release": "1.33.1.jolla",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

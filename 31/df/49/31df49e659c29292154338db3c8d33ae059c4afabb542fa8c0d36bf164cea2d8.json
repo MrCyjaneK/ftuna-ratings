@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "31df49e659c29292154338db3c8d33ae059c4afabb542fa8c0d36bf164cea2d8",
+  "key": "mirror/openrepos/cornerman/personal/main/s/sailfishos-patch-switcher-click-hints-launcher-0.0.3-1.noarch.rpm",
+  "name": "sailfishos-patch-switcher-click-hints-launcher",
+  "rpm_version": "0.0.3",
+  "release": "1",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-switcher-click-hints-launcher ]; then; /usr/sbin/patchmanager -u sailfishos-patch-switcher-click-hi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-switcher-click-hints-launcher ]; then; /usr/sbin/patchmanager -u sailfishos-patch-switcher-click-hi"
+    }
+  ]
+}

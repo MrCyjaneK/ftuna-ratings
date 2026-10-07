@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "e4248f60f1e3ccfba48bb20440cd799a204cb03e358f596e253097fd7d69f1f9",
+  "key": "chum/5.2_i486/i486/harbour-colordots-debuginfo-0.4.0+master.20210927124440.3.g94a2c65-1.1.1.bso.i486.rpm",
+  "name": "harbour-colordots-debuginfo",
+  "rpm_version": "0.4.0+master.20210927124440.3.g94a2c65",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

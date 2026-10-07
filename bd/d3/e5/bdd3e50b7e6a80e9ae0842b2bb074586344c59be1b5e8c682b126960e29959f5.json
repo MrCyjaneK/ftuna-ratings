@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "bdd3e50b7e6a80e9ae0842b2bb074586344c59be1b5e8c682b126960e29959f5",
+  "key": "mirror/openrepos/Thaodan/personal/main/l/libpurple-nss-2.10.11-10.16.1.armv7hl.rpm",
+  "name": "libpurple-nss",
+  "rpm_version": "2.10.11",
+  "release": "10.16.1.jolla",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

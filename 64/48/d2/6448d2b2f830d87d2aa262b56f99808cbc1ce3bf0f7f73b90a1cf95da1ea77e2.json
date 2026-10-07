@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "6448d2b2f830d87d2aa262b56f99808cbc1ce3bf0f7f73b90a1cf95da1ea77e2",
+  "key": "chum/5.1_aarch64/aarch64/opt-kf5-kirigami2-devel-5.116.0-1.8.1.bso.aarch64.rpm",
+  "name": "opt-kf5-kirigami2-devel",
+  "rpm_version": "5.116.0",
+  "release": "1.8.1.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}
