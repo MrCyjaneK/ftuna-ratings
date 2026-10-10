@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "3c25c07d7855c2ab93c365c55097f1a7333b3b22d12f2d2e1662ba1fc0b7c105",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-iceage-debugsource-0.2-1.2.1.bso.armv7hl.rpm",
+  "name": "harbour-iceage-debugsource",
+  "rpm_version": "0.2",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

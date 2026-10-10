@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "c62e1e7ef3c47a74930a3c90f3900cf80bb6fb4272b1c6c2cca51719e1b7a29c",
+  "key": "chum/5.2_aarch64/aarch64/harbour-sailmines-0.9-1.2.1.bso.aarch64.rpm",
+  "name": "harbour-sailmines",
+  "rpm_version": "0.9",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}
