@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "a1364c0171147c7f571f07105e65be93d174793b24e4856da4c55d2e188f53ab",
+  "key": "mirror/openrepos/klarre/personal/main/l/longterm-0.5.0-1.armv7hl.rpm",
+  "name": "longterm",
+  "rpm_version": "0.5.0",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/longterm.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/longterm.desktop",
+      "code": "sailjail.permission",
+      "detail": "Secrets"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/longterm.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs"
+    }
+  ]
+}

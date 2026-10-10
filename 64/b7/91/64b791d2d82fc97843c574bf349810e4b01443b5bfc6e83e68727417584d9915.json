@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "64b791d2d82fc97843c574bf349810e4b01443b5bfc6e83e68727417584d9915",
+  "key": "mirror/openrepos/mrcyjanek/personal/main/h/harbour-mullvad-0.1-2.i486.rpm",
+  "name": "harbour-mullvad",
+  "rpm_version": "0.1",
+  "release": "2",
+  "arch": "i486",
+  "verdict": 50,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": 45
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-mullvad.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-mullvad.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/libexec/harbour-mullvad-vpn",
+      "code": "setgid",
+      "detail": "/usr/libexec/harbour-mullvad-vpn mode 0102755 user root group privileged file"
+    }
+  ]
+}
