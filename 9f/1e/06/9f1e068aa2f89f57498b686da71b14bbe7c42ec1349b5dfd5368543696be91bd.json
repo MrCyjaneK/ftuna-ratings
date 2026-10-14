@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "9f1e068aa2f89f57498b686da71b14bbe7c42ec1349b5dfd5368543696be91bd",
+  "key": "chum/5.2_aarch64/aarch64/harbour-fiatimago-1.0-1.1.1.bso.aarch64.rpm",
+  "name": "harbour-fiatimago",
+  "rpm_version": "1.0",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fiatimago.desktop",
+      "code": "sailjail.permission",
+      "detail": "Pictures"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fiatimago.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia"
+    }
+  ]
+}

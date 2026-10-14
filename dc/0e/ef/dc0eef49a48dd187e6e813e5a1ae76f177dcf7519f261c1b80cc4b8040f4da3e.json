@@ -1,0 +1,104 @@
+{
+  "version": 6,
+  "sha256": "dc0eef49a48dd187e6e813e5a1ae76f177dcf7519f261c1b80cc4b8040f4da3e",
+  "key": "chum/5.2_i486/i486/screenrecorder-0.5.3-1.1.1.bso.i486.rpm",
+  "name": "screenrecorder",
+  "rpm_version": "0.5.3",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "verdict": 60,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 85
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": 45
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.coderus.screenrecorder.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/bin/false systemd=screenrecorder.service"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/screenrecorder-gui.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user start screenrecorder.service"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user stop screenrecorder.service"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user stop screenrecorder.service"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/sbin/screenrecorder",
+      "code": "setgid",
+      "detail": "/usr/sbin/screenrecorder mode 0102755 user root group privileged file"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/screenrecorder.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/sbin/screenrecorder --daemon sandbox=none"
+    }
+  ]
+}

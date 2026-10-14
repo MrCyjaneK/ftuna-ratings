@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "8308ebc686b7ef866b049a07223cb64640b583d056726ae8f3652b6847549dae",
+  "key": "repo/ftuna-oss/5.1.0.11/aarch64/github.com/sailfishos/ffmpeg/ffmpeg-8.1.2-20261112.morecodecs.aarch64.rpm",
+  "name": "ffmpeg",
+  "rpm_version": "8.1.2",
+  "release": "20261112.morecodecs",
+  "arch": "aarch64",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": 100
+    }
+  ],
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/sailfishos/ffmpeg",
+      "code": "ftuna.built",
+      "detail": "clean"
+    }
+  ]
+}

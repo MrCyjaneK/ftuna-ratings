@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "4a0c9b354add3a5fd4fab5e2f07e5e5447a0dad45dcb4a3725f30cad2a18b803",
+  "key": "chum/5.2_i486/noarch/yt-dlp-2026.08.19+git1-1.5.1.bso.noarch.rpm",
+  "name": "yt-dlp",
+  "rpm_version": "2026.08.19+git1",
+  "release": "1.5.1.bso",
+  "arch": "noarch",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

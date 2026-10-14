@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "33a1f06aac73e06683e5694421fb3f13653d8783c16c7256a4dda2589bce00d3",
+  "key": "chum/5.2_armv7hl/armv7hl/screenrecorder-debuginfo-0.5.3-1.1.1.bso.armv7hl.rpm",
+  "name": "screenrecorder-debuginfo",
+  "rpm_version": "0.5.3",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

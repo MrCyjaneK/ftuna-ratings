@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "f1ba42fbdbb81be6dc01a25c9414d47efa7a834ef638d91740106a8d32682c3f",
+  "key": "chum/5.1_aarch64/noarch/yt-dlp-standalone-2026.08.19+git1-1.5.1.bso.noarch.rpm",
+  "name": "yt-dlp-standalone",
+  "rpm_version": "2026.08.19+git1",
+  "release": "1.5.1.bso",
+  "arch": "noarch",
+  "verdict": 30,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=ln -sf yt-dlp-standalone /usr/bin/yt-dlp ||:"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -lt 1 ] ; then; rm /usr/bin/yt-dlp ||:; fi"
+    }
+  ]
+}

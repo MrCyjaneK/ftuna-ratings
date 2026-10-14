@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "f74e1b1f8cca746f99b6a0a7ba8ca5fa6a01bccd1e8c1e2ba1e432bbc301282c",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/sailfishos/ffmpeg/ffmpeg-debuginfo-8.1.2-20261112.morecodecs.i486.rpm",
+  "name": "ffmpeg-debuginfo",
+  "rpm_version": "8.1.2",
+  "release": "20261112.morecodecs",
+  "arch": "i486",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": 100
+    }
+  ],
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/sailfishos/ffmpeg",
+      "code": "ftuna.built",
+      "detail": "clean"
+    }
+  ]
+}
