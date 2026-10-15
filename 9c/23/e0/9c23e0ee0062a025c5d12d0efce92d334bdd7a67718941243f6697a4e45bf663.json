@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "9c23e0ee0062a025c5d12d0efce92d334bdd7a67718941243f6697a4e45bf663",
+  "key": "mirror/openrepos/birdzhang/personal/main/s/sfos-quickshare-0.1.1-1.aarch64.rpm",
+  "name": "sfos-quickshare",
+  "rpm_version": "0.1.1",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": 85,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 85
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.sailfishos.QuickShare.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/sfos-quickshared systemd=sfos-quickshare.service"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/sfos-quickshare.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/sfos-quickshared sandbox=none"
+    }
+  ]
+}
