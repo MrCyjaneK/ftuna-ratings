@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "6ac87a7d62bdfe3bc1e55c9cde35cc7f10ca947b221732642be65fc7f21903b7",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-avarisk-debugsource-0.9.5-1.5.2.bso.armv7hl.rpm",
+  "name": "harbour-avarisk-debugsource",
+  "rpm_version": "0.9.5",
+  "release": "1.5.2.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "fa545027d6a4f1bd2317f4466a7dab39a66d5ef2b2ffcd3e7b2cf73e7efad8a3",
+  "key": "chum/5.1_aarch64/aarch64/harbour-fahrplan2-2.0.58-1.23.1.bso.aarch64.rpm",
+  "name": "harbour-fahrplan2",
+  "rpm_version": "2.0.58",
+  "release": "1.23.1.bso",
+  "arch": "aarch64",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fahrplan2.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fahrplan2.desktop",
+      "code": "sailjail.permission",
+      "detail": "Location"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fahrplan2.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "caba45f5a041119bbf63a7a19bbc783bbe088a01ad96c5fdaac1e70b65457d81",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-clipper-debugsource-0.4.6-1.8.1.bso.armv7hl.rpm",
+  "name": "harbour-clipper-debugsource",
+  "rpm_version": "0.4.6",
+  "release": "1.8.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

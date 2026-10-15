@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "6fbbd2833076a331f0dc80c1dffc5e18652506426eb7d302e59e54bd29d685df",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-pure-maps-3.5.1-1.15.3.bso.armv7hl.rpm",
+  "name": "harbour-pure-maps",
+  "rpm_version": "3.5.1",
+  "release": "1.15.3.bso",
+  "arch": "armv7hl",
+  "verdict": 55,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-pure-maps-uri-handler.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-pure-maps.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    }
+  ]
+}

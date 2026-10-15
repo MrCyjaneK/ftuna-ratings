@@ -1,0 +1,86 @@
+{
+  "version": 6,
+  "sha256": "f78f6a767e237da08fea01941b4a48ab596bd554b252fd2487eda3d8cf4fca1f",
+  "key": "chum/5.2_i486/i486/ghosteel-1.5.0-1.10.2.bso.i486.rpm",
+  "name": "ghosteel",
+  "rpm_version": "1.5.0",
+  "release": "1.10.2.bso",
+  "arch": "i486",
+  "verdict": 70,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": 85
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/com.zackslash.ghosteel.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/ghosteel"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/ghosteel.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/ghosteel.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/ghosteel.desktop",
+      "code": "sailjail.permission",
+      "detail": "Secrets"
+    }
+  ]
+}

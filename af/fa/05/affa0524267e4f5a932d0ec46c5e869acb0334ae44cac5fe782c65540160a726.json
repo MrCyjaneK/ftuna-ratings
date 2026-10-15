@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "affa0524267e4f5a932d0ec46c5e869acb0334ae44cac5fe782c65540160a726",
+  "key": "chum/5.2_i486/i486/systemdatascope-0.5.2-1.5.2.bso.i486.rpm",
+  "name": "systemdatascope",
+  "rpm_version": "0.5.2",
+  "release": "1.5.2.bso",
+  "arch": "i486",
+  "verdict": 55,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/systemdatascope.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "sha256": "c3e3063b7660167d8536471ccdb4fe174a19045c5a9a7e8e9f22e094630a77a2",
+  "key": "chum/5.2_i486/i486/harbour-sailfin-0.6.0-1.1.2.bso.i486.rpm",
+  "name": "harbour-sailfin",
+  "rpm_version": "0.6.0",
+  "release": "1.1.2.bso",
+  "arch": "i486",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailfin.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailfin.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio"
+    }
+  ]
+}

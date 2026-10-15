@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "6d2c06bea3cfb95b54acfd2d2b787fbd4ca985b817d67fa80b9289dc3b8fe89b",
+  "key": "chum/5.2_armv7hl/armv7hl/waydroid-runner-0.3.1-1.4.3.bso.armv7hl.rpm",
+  "name": "waydroid-runner",
+  "rpm_version": "0.3.1",
+  "release": "1.4.3.bso",
+  "arch": "armv7hl",
+  "verdict": 55,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/waydroid-runner.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "c97ee947b89926f8990dfbb9b1cd5b9d462f5f0167956ae88da5f89b44ebacf7",
+  "key": "chum/5.2_i486/i486/harbour-tooterb-debuginfo-1.4.9-1.39.2.bso.i486.rpm",
+  "name": "harbour-tooterb-debuginfo",
+  "rpm_version": "1.4.9",
+  "release": "1.39.2.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

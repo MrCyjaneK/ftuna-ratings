@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "b98d6d20e4405e93933c4f7e520330b3baeb49e552647e0a7f3527003161b8c4",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-quartermaster-0.3.1-1.1.2.bso.armv7hl.rpm",
+  "name": "harbour-quartermaster",
+  "rpm_version": "0.3.1",
+  "release": "1.1.2.bso",
+  "arch": "armv7hl",
+  "verdict": 55,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-quartermaster.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    }
+  ]
+}

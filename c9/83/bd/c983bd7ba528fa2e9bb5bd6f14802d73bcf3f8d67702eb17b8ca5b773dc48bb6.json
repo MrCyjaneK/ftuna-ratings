@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "c983bd7ba528fa2e9bb5bd6f14802d73bcf3f8d67702eb17b8ca5b773dc48bb6",
+  "key": "chum/5.2_aarch64/aarch64/harbour-pure-maps-debugsource-3.5.1-1.15.3.bso.aarch64.rpm",
+  "name": "harbour-pure-maps-debugsource",
+  "rpm_version": "3.5.1",
+  "release": "1.15.3.bso",
+  "arch": "aarch64",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

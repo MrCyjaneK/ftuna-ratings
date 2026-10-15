@@ -1,0 +1,68 @@
+{
+  "version": 6,
+  "sha256": "d604b47186438f36a7d71a95ab24d06d01ce6921260b1c78dd0aeca9d2da333b",
+  "key": "chum/5.2_armv7hl/armv7hl/hutspot-0.4-1.2.3.bso.armv7hl.rpm",
+  "name": "hutspot",
+  "rpm_version": "0.4",
+  "release": "1.2.3.bso",
+  "arch": "armv7hl",
+  "verdict": 75,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 75
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/hutspot.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section"
+    }
+  ]
+}

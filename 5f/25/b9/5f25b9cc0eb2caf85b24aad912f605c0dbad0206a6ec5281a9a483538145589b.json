@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "5f25b9cc0eb2caf85b24aad912f605c0dbad0206a6ec5281a9a483538145589b",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-fahrplan2-debuginfo-2.0.58-1.23.1.bso.armv7hl.rpm",
+  "name": "harbour-fahrplan2-debuginfo",
+  "rpm_version": "2.0.58",
+  "release": "1.23.1.bso",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "140e5d44d08bacbb2734aea3b647208b37629d8af7737dc2f542bffb0f669ac0",
+  "key": "chum/5.2_i486/i486/harbour-sailtrix-debuginfo-1.4.3-1.12.2.bso.i486.rpm",
+  "name": "harbour-sailtrix-debuginfo",
+  "rpm_version": "1.4.3",
+  "release": "1.12.2.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "82d1d92f9cc6e3594baba44e46e293231b31c6133ba5f08d708346c4eea6dc65",
+  "key": "chum/5.2_i486/i486/harbour-sailfin-debugsource-0.6.0-1.1.2.bso.i486.rpm",
+  "name": "harbour-sailfin-debugsource",
+  "rpm_version": "0.6.0",
+  "release": "1.1.2.bso",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}
