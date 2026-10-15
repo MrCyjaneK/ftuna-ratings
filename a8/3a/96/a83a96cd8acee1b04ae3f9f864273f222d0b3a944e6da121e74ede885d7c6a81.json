@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "a83a96cd8acee1b04ae3f9f864273f222d0b3a944e6da121e74ede885d7c6a81",
+  "key": "mirror/openrepos/mrcyjanek/personal/main/s/sfos_airpods-debuginfo-0.1.0-2.armv7hl.rpm",
+  "name": "sfos_airpods-debuginfo",
+  "rpm_version": "0.1.0",
+  "release": "2",
+  "arch": "armv7hl",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

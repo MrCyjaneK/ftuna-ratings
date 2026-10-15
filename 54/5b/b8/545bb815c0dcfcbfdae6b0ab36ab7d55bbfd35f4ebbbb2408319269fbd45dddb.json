@@ -1,0 +1,92 @@
+{
+  "version": 6,
+  "sha256": "545bb815c0dcfcbfdae6b0ab36ab7d55bbfd35f4ebbbb2408319269fbd45dddb",
+  "key": "mirror/openrepos/Senjienly/personal/main/s/silisili-native-devel-1.1.0-1.59.aarch64.rpm",
+  "name": "silisili-native-devel",
+  "rpm_version": "1.1.0",
+  "release": "1.59",
+  "arch": "aarch64",
+  "verdict": 38,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 55
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/cn.silisili.native.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=native_dir=/home/defaultuser/.config/cn.silisili.native; native_snapshot=$native_dir/stable_config_snapshot.json; native_session=$native_dir/account_session.jso"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; systemctl disable --now silisili-native-minimedia.service \u003e/dev/null 2\u003e\u00261 || :; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :; exit 0"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/silisili-native-minimedia.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/libexec/silisili-native/silisili-native-minimedia-wrapper sandbox=none"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "version": 6,
+  "sha256": "5cb0e601620e83fb4809fdc55852267ec7545952278bee25f8b0c494d7cc3f66",
+  "key": "mirror/openrepos/abranson/personal/main/r/rockpool-2.0.2-1.aarch64.rpm",
+  "name": "rockpool",
+  "rpm_version": "2.0.2",
+  "release": "1",
+  "arch": "aarch64",
+  "verdict": 51,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": 45
+    },
+    {
+      "module": "systemd",
+      "score": 30
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/rockpool.desktop",
+      "code": "sailjail.permission",
+      "detail": "Rockpool"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/rockpool.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/rockpool.desktop",
+      "code": "sailjail.permission",
+      "detail": "AppLaunch"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/rockpool.desktop",
+      "code": "sailjail.permission",
+      "detail": "WebView"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/rockpool.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/rockpool.desktop",
+      "code": "sailjail.permission",
+      "detail": "Contacts"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/rockpool.desktop",
+      "code": "sailjail.permission",
+      "detail": "Privileged"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user stop rockpoold.service || :; systemctl-user disable rockpoold.service || :; sha256sum /etc/systemd/system/bluetooth.service.d/50-libpebble3d.conf"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=update-desktop-database; systemctl daemon-reload || :; if ! sha256sum --check --status /run/rockpool-bluetooth-override.sha256 2\u003e/dev/null; then"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"0\" ]; then; systemctl-user stop libpebble3d.service || :; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :; if [ \"$1\" = \"0\" ]; then; systemctl daemon-reload || :"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/libexec/libpebble3d/libpebble3d-platform-sailfish-launcher",
+      "code": "setgid",
+      "detail": "/usr/libexec/libpebble3d/libpebble3d-platform-sailfish-launcher mode 0102755 user root group privileged file"
+    },
+    {
+      "module": "systemd",
+      "path": "/etc/systemd/system/bluetooth.service.d/50-libpebble3d.conf",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=unknown sandbox=none"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/libpebble3d.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/libexec/libpebble3d/libpebble3d; /usr/libexec/libpebble3d/libpebble3d-platform-sailfish-launcher sandbox=none"
+    }
+  ]
+}

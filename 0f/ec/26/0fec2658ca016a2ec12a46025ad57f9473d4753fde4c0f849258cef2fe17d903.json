@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "0fec2658ca016a2ec12a46025ad57f9473d4753fde4c0f849258cef2fe17d903",
+  "key": "mirror/openrepos/kan/personal/main/t/tor-0.4.8.25-1.armv7hl.rpm",
+  "name": "tor",
+  "rpm_version": "0.4.8.25",
+  "release": "1",
+  "arch": "armv7hl",
+  "verdict": 58,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": 30
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": 85
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/tor ]; then; rm -rf /var/lib/tor; fi"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=PUSER=$(getent passwd 100000 | cut -d: -f1 ); chown -R $PUSER:inet /home/.system/var/lib/tor; chown -R $PUSER:inet /var/log/tor"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/tor.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/torctl start sandbox=none"
+    }
+  ]
+}

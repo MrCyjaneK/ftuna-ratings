@@ -1,0 +1,61 @@
+{
+  "version": 6,
+  "sha256": "94dd46caf68c27ec6891e0b369a880e2e7ed465e483dc2e939ed7698dd0f76c4",
+  "key": "mirror/openrepos/mrcyjanek/personal/main/s/sfos_airpods-debuginfo-0.1.0-2.i486.rpm",
+  "name": "sfos_airpods-debuginfo",
+  "rpm_version": "0.1.0",
+  "release": "2",
+  "arch": "i486",
+  "verdict": -1,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": -1
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": []
+}

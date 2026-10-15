@@ -1,0 +1,80 @@
+{
+  "version": 6,
+  "sha256": "923c3d70a7ea1d3afb10503984343b001051509c134e7d1f74d36ebe3f3e8214",
+  "key": "mirror/openrepos/Senjienly/personal/main/z/zzmusic-1.0.0-27.bonito.dev_.20261013t113645z.8ef344bc6f8b.aarch64.rpm",
+  "name": "zzmusic",
+  "rpm_version": "1.0.0",
+  "release": "27.bonito.dev.20261013t113645z.8ef344bc6f8b",
+  "arch": "aarch64",
+  "verdict": 100,
+  "scores": [
+    {
+      "module": "cron",
+      "score": -1
+    },
+    {
+      "module": "dbus",
+      "score": -1
+    },
+    {
+      "module": "filecaps",
+      "score": -1
+    },
+    {
+      "module": "hooks",
+      "score": -1
+    },
+    {
+      "module": "polkit",
+      "score": -1
+    },
+    {
+      "module": "sailjail",
+      "score": 100
+    },
+    {
+      "module": "scriptlet",
+      "score": -1
+    },
+    {
+      "module": "setuid",
+      "score": -1
+    },
+    {
+      "module": "systemd",
+      "score": -1
+    },
+    {
+      "module": "udev",
+      "score": -1
+    },
+    {
+      "module": "worldwrite",
+      "score": -1
+    },
+    {
+      "module": "ftuna",
+      "score": -1
+    }
+  ],
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-qqmusic.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-qqmusic.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-qqmusic.desktop",
+      "code": "sailjail.permission",
+      "detail": "Secrets"
+    }
+  ]
+}
