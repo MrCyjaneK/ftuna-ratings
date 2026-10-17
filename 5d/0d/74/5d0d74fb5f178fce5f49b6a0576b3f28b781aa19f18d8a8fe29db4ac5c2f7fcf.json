@@ -1,92 +1,46 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "5d0d74fb5f178fce5f49b6a0576b3f28b781aa19f18d8a8fe29db4ac5c2f7fcf",
   "key": "mirror/openrepos/Jakub/personal/main/h/harbour-submusic-0.15.2-1.armv7hl.rpm",
   "name": "harbour-submusic",
   "rpm_version": "0.15.2",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 100,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-submusic.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-submusic.desktop",
       "code": "sailjail.permission",
-      "detail": "Audio"
+      "detail": "Audio",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-submusic.desktop",
       "code": "sailjail.permission",
-      "detail": "Secrets"
+      "detail": "Secrets",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-submusic.desktop",
       "code": "sailjail.permission",
-      "detail": "Music"
+      "detail": "Music",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-submusic.desktop",
       "code": "sailjail.permission",
-      "detail": "MediaIndexing"
+      "detail": "MediaIndexing",
+      "color": "gray"
     }
   ]
 }

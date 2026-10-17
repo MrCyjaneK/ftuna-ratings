@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "76e6d8eade3c6859ee9638521c45ade9d59a37b46410874f84791a8f822229de",
   "key": "chum/5.2_i486/i486/harbour-fiatmargo-1.2-1.1.1.bso.i486.rpm",
   "name": "harbour-fiatmargo",
   "rpm_version": "1.2",
   "release": "1.1.1.bso",
   "arch": "i486",
-  "verdict": 100,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-fiatmargo.desktop",
       "code": "sailjail.permission",
-      "detail": "Pictures"
+      "detail": "Pictures",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-fiatmargo.desktop",
       "code": "sailjail.permission",
-      "detail": "MediaIndexing"
+      "detail": "MediaIndexing",
+      "color": "gray"
     }
   ]
 }

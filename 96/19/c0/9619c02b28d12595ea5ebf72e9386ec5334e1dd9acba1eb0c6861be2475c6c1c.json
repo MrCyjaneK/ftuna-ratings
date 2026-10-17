@@ -1,61 +1,10 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "9619c02b28d12595ea5ebf72e9386ec5334e1dd9acba1eb0c6861be2475c6c1c",
   "key": "chum/5.1_aarch64/aarch64/opt-kf5-kirigami-addons-treeview-0.11.0-1.6.1.bso.aarch64.rpm",
   "name": "opt-kf5-kirigami-addons-treeview",
   "rpm_version": "0.11.0",
   "release": "1.6.1.bso",
   "arch": "aarch64",
-  "verdict": -1,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": []
 }

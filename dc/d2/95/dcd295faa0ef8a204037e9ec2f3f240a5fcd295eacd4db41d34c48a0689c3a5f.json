@@ -1,236 +1,214 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "dcd295faa0ef8a204037e9ec2f3f240a5fcd295eacd4db41d34c48a0689c3a5f",
   "key": "mirror/openrepos/birdzhang/personal/main/s/sailfishweibopy-0.2-1.armv7hl.rpm",
   "name": "sailfishweibopy",
   "rpm_version": "0.2",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 15,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": 0
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=rm -rf /usr/lib/python3.4/site-packages/curl; rm -rf /usr/lib/python3.4/site-packages/pycurl*"
+      "detail": "user=root program=/bin/sh body=rm -rf /usr/lib/python3.4/site-packages/curl; rm -rf /usr/lib/python3.4/site-packages/pycurl*",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/lib/python3.4/site-packages/curl/__init__.py",
       "code": "worldwrite",
-      "detail": "/usr/lib/python3.4/site-packages/curl/__init__.py mode 0100777 user root group root exec"
+      "detail": "/usr/lib/python3.4/site-packages/curl/__init__.py mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/lib/python3.4/site-packages/pycurl.cpython-34m.so",
       "code": "worldwrite",
-      "detail": "/usr/lib/python3.4/site-packages/pycurl.cpython-34m.so mode 0100777 user root group root exec"
+      "detail": "/usr/lib/python3.4/site-packages/pycurl.cpython-34m.so mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/doc/pycurl/AUTHORS",
       "code": "worldwrite",
-      "detail": "/usr/share/doc/pycurl/AUTHORS mode 0100777 user root group root exec"
+      "detail": "/usr/share/doc/pycurl/AUTHORS mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/doc/pycurl/COPYING-LGPL",
       "code": "worldwrite",
-      "detail": "/usr/share/doc/pycurl/COPYING-LGPL mode 0100777 user root group root exec"
+      "detail": "/usr/share/doc/pycurl/COPYING-LGPL mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/doc/pycurl/COPYING-MIT",
       "code": "worldwrite",
-      "detail": "/usr/share/doc/pycurl/COPYING-MIT mode 0100777 user root group root exec"
+      "detail": "/usr/share/doc/pycurl/COPYING-MIT mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/doc/pycurl/ChangeLog",
       "code": "worldwrite",
-      "detail": "/usr/share/doc/pycurl/ChangeLog mode 0100777 user root group root exec"
+      "detail": "/usr/share/doc/pycurl/ChangeLog mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/doc/pycurl/INSTALL.rst",
       "code": "worldwrite",
-      "detail": "/usr/share/doc/pycurl/INSTALL.rst mode 0100777 user root group root exec"
+      "detail": "/usr/share/doc/pycurl/INSTALL.rst mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/doc/pycurl/README.rst",
       "code": "worldwrite",
-      "detail": "/usr/share/doc/pycurl/README.rst mode 0100777 user root group root exec"
+      "detail": "/usr/share/doc/pycurl/README.rst mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/doc/pycurl/RELEASE-NOTES.rst",
       "code": "worldwrite",
-      "detail": "/usr/share/doc/pycurl/RELEASE-NOTES.rst mode 0100777 user root group root exec"
+      "detail": "/usr/share/doc/pycurl/RELEASE-NOTES.rst mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/doc/pycurl/examples/basicfirst.py",
       "code": "worldwrite",
-      "detail": "/usr/share/doc/pycurl/examples/basicfirst.py mode 0100777 user root group root exec"
+      "detail": "/usr/share/doc/pycurl/examples/basicfirst.py mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/doc/pycurl/examples/file_upload.py",
       "code": "worldwrite",
-      "detail": "/usr/share/doc/pycurl/examples/file_upload.py mode 0100777 user root group root exec"
+      "detail": "/usr/share/doc/pycurl/examples/file_upload.py mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/doc/pycurl/examples/linksys.py",
       "code": "worldwrite",
-      "detail": "/usr/share/doc/pycurl/examples/linksys.py mode 0100777 user root group root exec"
+      "detail": "/usr/share/doc/pycurl/examples/linksys.py mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/doc/pycurl/examples/quickstart/file_upload_buffer.py",
       "code": "worldwrite",
-      "detail": "/usr/share/doc/pycurl/examples/quickstart/file_upload_buffer.py mode 0100777 user root group root exec"
+      "detail": "/usr/share/doc/pycurl/examples/quickstart/file_upload_buffer.py mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/doc/pycurl/examples/quickstart/file_upload_real.py",
       "code": "worldwrite",
-      "detail": "/usr/share/doc/pycurl/examples/quickstart/file_upload_real.py mode 0100777 user root group root exec"
+      "detail": "/usr/share/doc/pycurl/examples/quickstart/file_upload_real.py mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/doc/pycurl/examples/quickstart/file_upload_real_fancy.py",
       "code": "worldwrite",
-      "detail": "/usr/share/doc/pycurl/examples/quickstart/file_upload_real_fancy.py mode 0100777 user root group root exec"
+      "detail": "/usr/share/doc/pycurl/examples/quickstart/file_upload_real_fancy.py mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/doc/pycurl/examples/quickstart/follow_redirect.py",
       "code": "worldwrite",
-      "detail": "/usr/share/doc/pycurl/examples/quickstart/follow_redirect.py mode 0100777 user root group root exec"
+      "detail": "/usr/share/doc/pycurl/examples/quickstart/follow_redirect.py mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/doc/pycurl/examples/quickstart/form_post.py",
       "code": "worldwrite",
-      "detail": "/usr/share/doc/pycurl/examples/quickstart/form_post.py mode 0100777 user root group root exec"
+      "detail": "/usr/share/doc/pycurl/examples/quickstart/form_post.py mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/doc/pycurl/examples/quickstart/get.py",
       "code": "worldwrite",
-      "detail": "/usr/share/doc/pycurl/examples/quickstart/get.py mode 0100777 user root group root exec"
+      "detail": "/usr/share/doc/pycurl/examples/quickstart/get.py mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/doc/pycurl/examples/quickstart/get_python2.py",
       "code": "worldwrite",
-      "detail": "/usr/share/doc/pycurl/examples/quickstart/get_python2.py mode 0100777 user root group root exec"
+      "detail": "/usr/share/doc/pycurl/examples/quickstart/get_python2.py mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/doc/pycurl/examples/quickstart/get_python3.py",
       "code": "worldwrite",
-      "detail": "/usr/share/doc/pycurl/examples/quickstart/get_python3.py mode 0100777 user root group root exec"
+      "detail": "/usr/share/doc/pycurl/examples/quickstart/get_python3.py mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/doc/pycurl/examples/quickstart/response_headers.py",
       "code": "worldwrite",
-      "detail": "/usr/share/doc/pycurl/examples/quickstart/response_headers.py mode 0100777 user root group root exec"
+      "detail": "/usr/share/doc/pycurl/examples/quickstart/response_headers.py mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/doc/pycurl/examples/quickstart/response_info.py",
       "code": "worldwrite",
-      "detail": "/usr/share/doc/pycurl/examples/quickstart/response_info.py mode 0100777 user root group root exec"
+      "detail": "/usr/share/doc/pycurl/examples/quickstart/response_info.py mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/doc/pycurl/examples/quickstart/write_file.py",
       "code": "worldwrite",
-      "detail": "/usr/share/doc/pycurl/examples/quickstart/write_file.py mode 0100777 user root group root exec"
+      "detail": "/usr/share/doc/pycurl/examples/quickstart/write_file.py mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/doc/pycurl/examples/retriever-multi.py",
       "code": "worldwrite",
-      "detail": "/usr/share/doc/pycurl/examples/retriever-multi.py mode 0100777 user root group root exec"
+      "detail": "/usr/share/doc/pycurl/examples/retriever-multi.py mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/doc/pycurl/examples/retriever.py",
       "code": "worldwrite",
-      "detail": "/usr/share/doc/pycurl/examples/retriever.py mode 0100777 user root group root exec"
+      "detail": "/usr/share/doc/pycurl/examples/retriever.py mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/doc/pycurl/examples/sfquery.py",
       "code": "worldwrite",
-      "detail": "/usr/share/doc/pycurl/examples/sfquery.py mode 0100777 user root group root exec"
+      "detail": "/usr/share/doc/pycurl/examples/sfquery.py mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/doc/pycurl/examples/smtp.py",
       "code": "worldwrite",
-      "detail": "/usr/share/doc/pycurl/examples/smtp.py mode 0100777 user root group root exec"
+      "detail": "/usr/share/doc/pycurl/examples/smtp.py mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/doc/pycurl/examples/xmlrpc_curl.py",
       "code": "worldwrite",
-      "detail": "/usr/share/doc/pycurl/examples/xmlrpc_curl.py mode 0100777 user root group root exec"
+      "detail": "/usr/share/doc/pycurl/examples/xmlrpc_curl.py mode 0100777 user root group root exec",
+      "color": "red"
     }
   ]
 }

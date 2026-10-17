@@ -1,170 +1,137 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "26dbeae58b8028ce8c2ba4c543bce5b490216199e322338a56a95f587399cfe9",
   "key": "mirror/openrepos/rubdos/personal/main/h/harbour-whisperfish-0.6.0.beta_.19-0.sf3_.aarch64.rpm",
   "name": "harbour-whisperfish",
   "rpm_version": "0.6.0.beta.19",
   "release": "0.sf3",
   "arch": "aarch64",
-  "verdict": 53,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-whisperfish.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-whisperfish.desktop",
       "code": "sailjail.permission",
-      "detail": "Pictures"
+      "detail": "Pictures",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-whisperfish.desktop",
       "code": "sailjail.permission",
-      "detail": "Contacts"
+      "detail": "Contacts",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-whisperfish.desktop",
       "code": "sailjail.permission",
-      "detail": "Notifications"
+      "detail": "Notifications",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-whisperfish.desktop",
       "code": "sailjail.permission",
-      "detail": "Phone"
+      "detail": "Phone",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-whisperfish.desktop",
       "code": "sailjail.permission",
-      "detail": "Privileged"
+      "detail": "Privileged",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-whisperfish.desktop",
       "code": "sailjail.permission",
-      "detail": "Mozilla"
+      "detail": "Mozilla",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-whisperfish.desktop",
       "code": "sailjail.permission",
-      "detail": "MediaIndexing"
+      "detail": "MediaIndexing",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-whisperfish.desktop",
       "code": "sailjail.permission",
-      "detail": "Downloads"
+      "detail": "Downloads",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-whisperfish.desktop",
       "code": "sailjail.permission",
-      "detail": "UserDirs"
+      "detail": "UserDirs",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-whisperfish.desktop",
       "code": "sailjail.permission",
-      "detail": "WebView"
+      "detail": "WebView",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-whisperfish.desktop",
       "code": "sailjail.permission",
-      "detail": "Camera"
+      "detail": "Camera",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-whisperfish.desktop",
       "code": "sailjail.permission",
-      "detail": "RemovableMedia"
+      "detail": "RemovableMedia",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-whisperfish.desktop",
       "code": "sailjail.permission",
-      "detail": "AppLaunch"
+      "detail": "AppLaunch",
+      "color": "gray"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload; if pidof harbour-whisperfish \u003e/dev/null; then harbour-whisperfish --quit 2\u003e/dev/null || true; fi"
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload; if pidof harbour-whisperfish \u003e/dev/null; then harbour-whisperfish --quit 2\u003e/dev/null || true; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user stop harbour-whisperfish.service || true; systemctl-user disable harbour-whisperfish.service || true"
+      "detail": "user=root program=/bin/sh body=systemctl-user stop harbour-whisperfish.service || true; systemctl-user disable harbour-whisperfish.service || true",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/be.rubdos.whisperfish.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=unknown sandbox=none"
+      "detail": "scope=system user=root group=root exec=unknown sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/harbour-whisperfish.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/invoker --type=qtquick2 /usr/bin/harbour-whisperfish -prestart sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/invoker --type=qtquick2 /usr/bin/harbour-whisperfish -prestart sandbox=none",
+      "color": "green"
     }
   ]
 }

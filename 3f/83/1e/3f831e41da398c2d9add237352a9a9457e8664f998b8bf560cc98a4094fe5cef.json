@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "3f831e41da398c2d9add237352a9a9457e8664f998b8bf560cc98a4094fe5cef",
   "key": "chum/5.2_i486/i486/sailfishos-chum-gui-0.6.12-1.13.1.bso.i486.rpm",
   "name": "sailfishos-chum-gui",
   "rpm_version": "0.6.12",
   "release": "1.13.1.bso",
   "arch": "i486",
-  "verdict": 43,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/sailfishos-chum-gui.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" = 0 ]; then; ssu rr sailfishos-chum"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = 0 ]; then; ssu rr sailfishos-chum",
+      "color": "red"
     }
   ]
 }

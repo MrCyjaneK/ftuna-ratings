@@ -1,61 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "e2049b1df7e79500c15d8a5d78d795ab289573681da5610d38ab5d793cafd752",
   "key": "mirror/openrepos/halftux/personal/main/q/qthp41newt-1.0.4-1.armv7hl.rpm",
   "name": "qthp41newt",
   "rpm_version": "1.0.4",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 100,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
+  "issues": [
     {
       "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
+      "path": "/usr/share/applications/qthp41newt.desktop",
+      "code": "sailjail.jailed",
+      "detail": "sandboxed",
+      "color": "green"
     }
-  ],
-  "issues": []
+  ]
 }

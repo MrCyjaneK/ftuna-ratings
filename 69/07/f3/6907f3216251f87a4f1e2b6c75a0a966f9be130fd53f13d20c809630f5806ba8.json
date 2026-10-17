@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "6907f3216251f87a4f1e2b6c75a0a966f9be130fd53f13d20c809630f5806ba8",
   "key": "mirror/openrepos/foolsbazar/personal/main/s/sailfish-loopen-vkb-1.1.1-7.noarch.rpm",
   "name": "sailfish-loopen-vkb",
   "rpm_version": "1.1.1",
   "release": "7",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user restart maliit-server.service"
+      "detail": "user=root program=/bin/sh body=systemctl-user restart maliit-server.service",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user restart maliit-server.service"
+      "detail": "user=root program=/bin/sh body=systemctl-user restart maliit-server.service",
+      "color": "red"
     }
   ]
 }

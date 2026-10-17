@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "e3e87b0679237db955e01f93261a068ac4d65b9111d476f1318437b95ed9b60c",
   "key": "chum/5.2_aarch64/noarch/cacert-ca-certificates-260810-1.1.1.bso.noarch.rpm",
   "name": "cacert-ca-certificates",
   "rpm_version": "260810",
   "release": "1.1.1.bso",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=certutil -A -n \"CAcert.org Root CA\" -t TC -d /etc/pki/nssdb -i /etc/pki/ca-trust/source/anchors/CAcert_Root_X0F.crt; certutil -A -n \"CAcert.org Class 3\" -t TC -"
+      "detail": "user=root program=/bin/sh body=certutil -A -n \"CAcert.org Root CA\" -t TC -d /etc/pki/nssdb -i /etc/pki/ca-trust/source/anchors/CAcert_Root_X0F.crt; certutil -A -n \"CAcert.org Class 3\" -t TC -",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; certutil -D -n \"CAcert.org Root CA\" -d /etc/pki/nssdb; certutil -D -n \"CAcert.org Class 3\" -d /etc/pki/nssdb"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; certutil -D -n \"CAcert.org Root CA\" -d /etc/pki/nssdb; certutil -D -n \"CAcert.org Class 3\" -d /etc/pki/nssdb",
+      "color": "red"
     }
   ]
 }

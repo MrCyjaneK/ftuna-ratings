@@ -1,110 +1,67 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "1ba134b5262c7e541e391f48ee5f3b88e86ea746bb9498d4b9fe5ae65616c010",
   "key": "mirror/openrepos/Rikudou_Sennin/personal/main/i/inari-blue-notifier-daemon-1.8.2-1.aarch64.rpm",
   "name": "inari-blue-notifier-daemon",
   "rpm_version": "1.8.2",
   "release": "1",
   "arch": "aarch64",
-  "verdict": 72,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/inari-blue-notifier-contacts.desktop",
       "code": "sailjail.permission",
-      "detail": "Contacts"
+      "detail": "Contacts",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/inari-blue-notifier-contacts.desktop",
       "code": "sailjail.permission",
-      "detail": "Privileged"
+      "detail": "Privileged",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/inari-blue-notifier-contacts.desktop",
       "code": "sailjail.permission",
-      "detail": "InariBlueNotifierDaemonContactAuth"
+      "detail": "InariBlueNotifierDaemonContactAuth",
+      "color": "gray"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl reload-or-try-restart symbiosis.service || :; systemctl-user daemon-reload || :; if [ \"$1\" -eq 1 ]; then"
+      "detail": "user=root program=/bin/sh body=systemctl reload-or-try-restart symbiosis.service || :; systemctl-user daemon-reload || :; if [ \"$1\" -eq 1 ]; then",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; systemctl-user disable --now inari-blue-notifier-daemon.service inari-blue-notifier-daemon-contacts.service || :; fi"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; systemctl-user disable --now inari-blue-notifier-daemon.service inari-blue-notifier-daemon-contacts.service || :; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :; if [ \"$1\" -eq 0 ]; then; systemctl reload-or-try-restart symbiosis.service || :"
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :; if [ \"$1\" -eq 0 ]; then; systemctl reload-or-try-restart symbiosis.service || :",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/inari-blue-notifier-daemon-contacts.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/sailjail -p inari-blue-notifier-contacts.desktop -- /usr/bin/inari-blue-notifier-contacts sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/sailjail -p inari-blue-notifier-contacts.desktop -- /usr/bin/inari-blue-notifier-contacts sandbox=none",
+      "color": "green"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/inari-blue-notifier-daemon.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/inari-blue-notifier-daemon sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/inari-blue-notifier-daemon sandbox=none",
+      "color": "green"
     }
   ]
 }

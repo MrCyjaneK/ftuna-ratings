@@ -1,86 +1,39 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "885680380b459a776bfd0ea66be6a63af02751fae4ce24687d500ee396fab45b",
   "key": "mirror/openrepos/ade/personal/main/v/vixie-cron-3.0pl2-2.aarch64.rpm",
   "name": "vixie-cron",
   "rpm_version": "3.0pl2",
   "release": "2",
   "arch": "aarch64",
-  "verdict": 20,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": 0
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl enable cron.service; systemctl start cron.service"
+      "detail": "user=root program=/bin/sh body=systemctl enable cron.service; systemctl start cron.service",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl stop cron.service; systemctl disable cron.service; systemctl daemon-reload"
+      "detail": "user=root program=/bin/sh body=systemctl stop cron.service; systemctl disable cron.service; systemctl daemon-reload",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/bin/crontab",
       "code": "setuid",
-      "detail": "/usr/bin/crontab mode 0104111 user root group root file"
+      "detail": "/usr/bin/crontab mode 0104111 user root group root file",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/lib/systemd/system/cron.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/sbin/vixie_crond sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/sbin/vixie_crond sandbox=none",
+      "color": "red"
     }
   ]
 }

@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "e437373d9d842df805327b7ea65883eba74da752d218d46310f38665c7468662",
   "key": "mirror/openrepos/aviarus/personal/main/u/usb-headset-call-mic-0.1.1-1.noarch.rpm",
   "name": "usb-headset-call-mic",
   "rpm_version": "0.1.1",
   "release": "1",
   "arch": "noarch",
-  "verdict": 85,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/usb-headset-call-mic.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/usb-headset-call-mic sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/usb-headset-call-mic sandbox=none",
+      "color": "green"
     }
   ]
 }

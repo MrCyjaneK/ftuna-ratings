@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "a93941400f97383ca5ac5962f4fbd55bbd29eb3ea7ab48103be1c861ee3fe865",
   "key": "mirror/openrepos/beidl/personal/main/j/jollac-touchfilter-remover-0.3-1.noarch.rpm",
   "name": "jollac-touchfilter-remover",
   "rpm_version": "0.3",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/lib/oneshot.d/jollac-touchfilter-remover restore \u003e/dev/null 2\u003e\u00261 || :"
+      "detail": "user=root program=/bin/sh body=/usr/lib/oneshot.d/jollac-touchfilter-remover restore \u003e/dev/null 2\u003e\u00261 || :",
+      "color": "red"
     }
   ]
 }

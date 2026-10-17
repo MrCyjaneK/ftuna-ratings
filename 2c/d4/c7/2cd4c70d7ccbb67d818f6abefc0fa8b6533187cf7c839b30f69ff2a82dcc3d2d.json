@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "2cd4c70d7ccbb67d818f6abefc0fa8b6533187cf7c839b30f69ff2a82dcc3d2d",
   "key": "mirror/openrepos/olf/personal/main/h/harbour-storeman-installer-2.3.0-release10.noarch.rpm",
   "name": "harbour-storeman-installer",
   "rpm_version": "2.3.0",
   "release": "release10",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ ! -e /var/log/harbour-storeman-installer.log.txt ]; then; curmask=\"$(umask)\""
+      "detail": "user=root program=/bin/sh body=if [ ! -e /var/log/harbour-storeman-installer.log.txt ]; then; curmask=\"$(umask)\"",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%posttrans",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=umask 113; setsid --fork sh -c '(/usr/bin/harbour-storeman-installer \"$1\" \"$2\")' sh_call_inst-storeman \"$$\" \"/var/log/harbour-storeman-installer.log.txt\" \u003e\u003e \"/v"
+      "detail": "user=root program=/bin/sh body=umask 113; setsid --fork sh -c '(/usr/bin/harbour-storeman-installer \"$1\" \"$2\")' sh_call_inst-storeman \"$$\" \"/var/log/harbour-storeman-installer.log.txt\" \u003e\u003e \"/v",
+      "color": "red"
     }
   ]
 }

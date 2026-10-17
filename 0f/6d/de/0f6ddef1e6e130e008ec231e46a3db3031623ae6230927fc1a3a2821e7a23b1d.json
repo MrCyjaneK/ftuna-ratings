@@ -1,86 +1,39 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "0f6ddef1e6e130e008ec231e46a3db3031623ae6230927fc1a3a2821e7a23b1d",
   "key": "chum/5.2_armv7hl/armv7hl/plocate-1.1.23-1.1.1.bso.armv7hl.rpm",
   "name": "plocate",
   "rpm_version": "1.1.23",
   "release": "1.1.1.bso",
   "arch": "armv7hl",
-  "verdict": 38,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": 45
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -f /var/cache/mlocate.db ]; then; /usr/sbin/plocate-build /var/cache/mlocate.db /var/lib/plocate/plocate.db \u0026\u0026 rm -f /var/cache/mlocate.db; fi"
+      "detail": "user=root program=/bin/sh body=if [ -f /var/cache/mlocate.db ]; then; /usr/sbin/plocate-build /var/cache/mlocate.db /var/lib/plocate/plocate.db \u0026\u0026 rm -f /var/cache/mlocate.db; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload disable --now plocate-updatedb.service \u003e /dev/null 2\u003e\u00261 || :; fi"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload disable --now plocate-updatedb.service \u003e /dev/null 2\u003e\u00261 || :; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; fi"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; fi",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/bin/plocate",
       "code": "setgid",
-      "detail": "/usr/bin/plocate mode 0102711 user root group privileged file"
+      "detail": "/usr/bin/plocate mode 0102711 user root group privileged file",
+      "color": "red"
     }
   ]
 }

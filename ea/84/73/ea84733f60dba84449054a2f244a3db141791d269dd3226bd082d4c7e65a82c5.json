@@ -1,518 +1,550 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "ea84733f60dba84449054a2f244a3db141791d269dd3226bd082d4c7e65a82c5",
   "key": "mirror/openrepos/edp17/personal/main/h/harbour-snapszer-1.0.0-0.5.0.aarch64.rpm",
   "name": "harbour-snapszer",
   "rpm_version": "1.0.0",
   "release": "0.5.0",
   "arch": "aarch64",
-  "verdict": 50,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
+  "issues": [
     {
       "module": "sailjail",
-      "score": 100
+      "path": "/usr/share/applications/harbour-snapszer.desktop",
+      "code": "sailjail.jailed",
+      "detail": "sandboxed",
+      "color": "green"
     },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": 0
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
-  "issues": [
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards mode 040777 user root group root dir"
+      "detail": "/usr/share/harbour-snapszer/images/cards mode 040777 user root group root dir",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/back.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/back.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/back.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_back.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_back.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_back.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_0_10.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_0_10.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_0_10.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_0_11.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_0_11.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_0_11.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_0_12.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_0_12.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_0_12.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_0_13.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_0_13.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_0_13.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_0_14.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_0_14.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_0_14.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_0_7.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_0_7.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_0_7.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_0_8.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_0_8.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_0_8.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_0_9.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_0_9.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_0_9.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_1_10.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_1_10.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_1_10.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_1_11.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_1_11.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_1_11.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_1_12.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_1_12.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_1_12.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_1_13.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_1_13.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_1_13.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_1_14.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_1_14.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_1_14.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_1_7.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_1_7.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_1_7.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_1_8.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_1_8.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_1_8.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_1_9.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_1_9.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_1_9.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_2_10.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_2_10.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_2_10.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_2_11.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_2_11.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_2_11.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_2_12.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_2_12.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_2_12.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_2_13.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_2_13.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_2_13.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_2_14.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_2_14.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_2_14.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_2_7.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_2_7.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_2_7.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_2_8.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_2_8.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_2_8.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_2_9.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_2_9.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_2_9.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_3_10.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_3_10.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_3_10.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_3_11.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_3_11.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_3_11.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_3_12.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_3_12.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_3_12.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_3_13.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_3_13.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_3_13.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_3_14.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_3_14.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_3_14.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_3_7.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_3_7.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_3_7.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_3_8.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_3_8.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_3_8.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/betyar_card_3_9.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_3_9.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/betyar_card_3_9.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-0_10.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-0_10.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-0_10.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-0_11.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-0_11.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-0_11.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-0_12.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-0_12.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-0_12.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-0_13.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-0_13.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-0_13.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-0_14.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-0_14.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-0_14.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-0_7.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-0_7.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-0_7.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-0_8.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-0_8.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-0_8.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-0_9.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-0_9.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-0_9.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-1_10.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-1_10.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-1_10.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-1_11.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-1_11.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-1_11.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-1_12.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-1_12.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-1_12.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-1_13.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-1_13.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-1_13.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-1_14.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-1_14.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-1_14.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-1_7.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-1_7.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-1_7.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-1_8.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-1_8.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-1_8.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-1_9.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-1_9.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-1_9.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-2_10.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-2_10.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-2_10.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-2_11.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-2_11.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-2_11.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-2_12.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-2_12.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-2_12.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-2_13.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-2_13.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-2_13.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-2_14.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-2_14.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-2_14.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-2_7.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-2_7.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-2_7.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-2_8.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-2_8.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-2_8.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-2_9.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-2_9.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-2_9.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-3_10.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-3_10.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-3_10.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-3_11.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-3_11.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-3_11.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-3_12.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-3_12.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-3_12.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-3_13.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-3_13.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-3_13.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-3_14.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-3_14.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-3_14.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-3_7.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-3_7.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-3_7.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-3_8.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-3_8.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-3_8.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/images/cards/card-3_9.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/images/cards/card-3_9.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/images/cards/card-3_9.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/qml/AboutPage.qml",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/qml/AboutPage.qml mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/qml/AboutPage.qml mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/qml/Card.qml",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/qml/Card.qml mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/qml/Card.qml mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/qml/CoverPage.qml",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/qml/CoverPage.qml mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/qml/CoverPage.qml mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/qml/FlyingCard.qml",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/qml/FlyingCard.qml mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/qml/FlyingCard.qml mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/qml/GameRules.qml",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/qml/GameRules.qml mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/qml/GameRules.qml mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/qml/Settings.qml",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/qml/Settings.qml mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/qml/Settings.qml mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/qml/harbour-snapszer.qml",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/qml/harbour-snapszer.qml mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/qml/harbour-snapszer.qml mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/qml/icons",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/qml/icons mode 040777 user root group root dir"
+      "detail": "/usr/share/harbour-snapszer/qml/icons mode 040777 user root group root dir",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-snapszer/qml/icons/icon-256.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-snapszer/qml/icons/icon-256.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-snapszer/qml/icons/icon-256.png mode 0100666 user root group root file",
+      "color": "red"
     }
   ]
 }

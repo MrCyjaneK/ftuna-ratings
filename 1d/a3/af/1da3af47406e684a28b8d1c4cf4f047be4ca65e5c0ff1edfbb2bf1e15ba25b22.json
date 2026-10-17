@@ -1,61 +1,10 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "1da3af47406e684a28b8d1c4cf4f047be4ca65e5c0ff1edfbb2bf1e15ba25b22",
   "key": "mirror/openrepos/llelectronics_dev/personal/main/q/qt5-qtwebkit-uiprocess-launcher-5.212.0-1.112.1.jolla_.armv7hl.rpm",
   "name": "qt5-qtwebkit-uiprocess-launcher",
   "rpm_version": "5.212.0",
   "release": "1.112.1.jolla",
   "arch": "armv7hl",
-  "verdict": -1,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": []
 }

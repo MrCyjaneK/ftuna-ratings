@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "ec594f0bb630e6ba22b8450748fa30a75c3a566f5aaa0cbd0c6fe1ae21379319",
   "key": "mirror/openrepos/eson/personal/main/s/swedish-for-search-engines-manager-0.2.0-1.noarch.rpm",
   "name": "swedish-for-search-engines-manager",
   "rpm_version": "0.2.0",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=chmod 644 /usr/share/sailfishos-browser-searchengines/translations/sailfishos-browser-searchengines-sv.qm"
+      "detail": "user=root program=/bin/sh body=chmod 644 /usr/share/sailfishos-browser-searchengines/translations/sailfishos-browser-searchengines-sv.qm",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; rm -rf /usr/share/sailfishos-browser-searchengines/translations/sailfishos-browser-searchengines-sv.qm; else"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; rm -rf /usr/share/sailfishos-browser-searchengines/translations/sailfishos-browser-searchengines-sv.qm; else",
+      "color": "red"
     }
   ]
 }

@@ -1,104 +1,60 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "c9c0d0e5752189682959e34ecac93308c04fec69197db15858dfebdc46289515",
   "key": "mirror/openrepos/DomiH/personal/main/h/harbour-find-my-device-1.1-1.i486.rpm",
   "name": "harbour-find-my-device",
   "rpm_version": "1.1",
   "release": "1",
   "arch": "i486",
-  "verdict": 38,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-find-my-device.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl --global enable harbour-find-my-device-daemon-gps.service \u003e/dev/null 2\u003e\u00261 || :; systemctl --global enable harbour-find-my-device-daemon-cmd.service \u003e/"
+      "detail": "user=root program=/bin/sh body=systemctl --global enable harbour-find-my-device-daemon-gps.service \u003e/dev/null 2\u003e\u00261 || :; systemctl --global enable harbour-find-my-device-daemon-cmd.service \u003e/",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"0\" ]; then; systemctl --global disable harbour-find-my-device-daemon-gps.service \u003e/dev/null 2\u003e\u00261 || :; systemctl --global disable harbour-find-my-d"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"0\" ]; then; systemctl --global disable harbour-find-my-device-daemon-gps.service \u003e/dev/null 2\u003e\u00261 || :; systemctl --global disable harbour-find-my-d",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/harbour-find-my-device-priv.path",
       "code": "systemd.path",
-      "detail": "scope=system activates=harbour-find-my-device-priv.service"
+      "detail": "scope=system activates=harbour-find-my-device-priv.service",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/harbour-find-my-device-priv.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/bin/python3 /usr/share/harbour-find-my-device/qml/utilities/priv_service.py sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/bin/python3 /usr/share/harbour-find-my-device/qml/utilities/priv_service.py sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/harbour-find-my-device-daemon-cmd.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/python3 /usr/share/harbour-find-my-device/qml/utilities/daemon_cmd.py sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/python3 /usr/share/harbour-find-my-device/qml/utilities/daemon_cmd.py sandbox=none",
+      "color": "green"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/harbour-find-my-device-daemon-gps.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/python3 /usr/share/harbour-find-my-device/qml/utilities/daemon_gps.py sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/python3 /usr/share/harbour-find-my-device/qml/utilities/daemon_gps.py sandbox=none",
+      "color": "green"
     }
   ]
 }

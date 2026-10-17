@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "1d2ff979790fc01c75d4a72f3e6334c41823033255bd18bacccecd7210e6b0a8",
   "key": "mirror/openrepos/glitchapp/personal/main/e/epictactics-0.5-1.noarch.rpm",
   "name": "epictactics",
   "rpm_version": "0.5",
   "release": "1",
   "arch": "noarch",
-  "verdict": 100,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/epictactics.desktop",
       "code": "sailjail.permission",
-      "detail": "Love2D"
+      "detail": "Love2D",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/epictactics.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     }
   ]
 }

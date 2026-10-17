@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "19116b1a218d27a1a875395f5e4bc952a4a2f40dfd0d06d2d2f8443b60035786",
   "key": "mirror/openrepos/nephros/personal/main/a/ambience-eff-1.0-1.noarch.rpm",
   "name": "ambience-eff",
   "rpm_version": "1.0",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user restart ambienced.service ||:"
+      "detail": "user=root program=/bin/sh body=systemctl-user restart ambienced.service ||:",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; echo \"It's an uninstall\"; else"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; echo \"It's an uninstall\"; else",
+      "color": "red"
     }
   ]
 }

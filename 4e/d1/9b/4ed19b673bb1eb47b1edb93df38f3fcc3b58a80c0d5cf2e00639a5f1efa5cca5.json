@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "4ed19b673bb1eb47b1edb93df38f3fcc3b58a80c0d5cf2e00639a5f1efa5cca5",
   "key": "mirror/openrepos/ichthyosaurus/personal/main/s/sfos-patch-homescreen-notifications-always-expanded-1.0.0-1.noarch.rpm",
   "name": "sfos-patch-homescreen-notifications-always-expanded",
   "rpm_version": "1.0.0",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=set -o pipefail; if mkdir -p '/var/lib/rpm-state/sfos-patch-homescreen-notifications-always-expanded'; then; dbus-send --print-reply --system --type=method_call"
+      "detail": "user=root program=/bin/sh body=set -o pipefail; if mkdir -p '/var/lib/rpm-state/sfos-patch-homescreen-notifications-always-expanded'; then; dbus-send --print-reply --system --type=method_call",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/sbin/patchmanager -u 'sfos-patch-homescreen-notifications-always-expanded' || true"
+      "detail": "user=root program=/bin/sh body=/usr/sbin/patchmanager -u 'sfos-patch-homescreen-notifications-always-expanded' || true",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%posttrans",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -e '/var/lib/rpm-state/sfos-patch-homescreen-notifications-always-expanded/was-applied' ]; then; /usr/sbin/patchmanager -a 'sfos-patch-homescreen-notificat"
+      "detail": "user=root program=/bin/sh body=if [ -e '/var/lib/rpm-state/sfos-patch-homescreen-notifications-always-expanded/was-applied' ]; then; /usr/sbin/patchmanager -a 'sfos-patch-homescreen-notificat",
+      "color": "red"
     }
   ]
 }

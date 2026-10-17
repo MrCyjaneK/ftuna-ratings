@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "6a6c4a1db6eed6a37e39c6e81c4aad3b73b5824f162a6e68ad1322ae31734827",
   "key": "mirror/openrepos/lpr/personal/main/c/calligra-filters-3.2.1git2-1.8.1.jolla_.armv7hl.rpm",
   "name": "calligra-filters",
   "rpm_version": "3.2.1+git2",
   "release": "1.8.1.jolla",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/sbin/ldconfig"
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig",
+      "color": "red"
     }
   ]
 }

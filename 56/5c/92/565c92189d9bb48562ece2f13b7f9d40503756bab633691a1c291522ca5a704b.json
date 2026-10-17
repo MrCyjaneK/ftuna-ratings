@@ -1,110 +1,67 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "565c92189d9bb48562ece2f13b7f9d40503756bab633691a1c291522ca5a704b",
   "key": "chum/5.2_aarch64/aarch64/nethack-3.6.7+obs4-1.3.2.bso.aarch64.rpm",
   "name": "nethack",
   "rpm_version": "3.6.7+obs4",
   "release": "1.3.2.bso",
   "arch": "aarch64",
-  "verdict": 43,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": 45
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/nethack.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=getent group users \u003e/dev/null || echo \"error: group users does not exist, refusing to create it\""
+      "detail": "user=root program=/bin/sh body=getent group users \u003e/dev/null || echo \"error: group users does not exist, refusing to create it\"",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/bin/update-desktop-database -q || :"
+      "detail": "user=root program=/bin/sh body=/usr/bin/update-desktop-database -q || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/bin/update-desktop-database -q || :"
+      "detail": "user=root program=/bin/sh body=/usr/bin/update-desktop-database -q || :",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/libexec/nethack/nethack",
       "code": "setgid",
-      "detail": "/usr/libexec/nethack/nethack mode 0102755 user root group users file"
+      "detail": "/usr/libexec/nethack/nethack mode 0102755 user root group users file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/libexec/nethack/nethack-recover",
       "code": "setgid",
-      "detail": "/usr/libexec/nethack/nethack-recover mode 0102755 user root group users file"
+      "detail": "/usr/libexec/nethack/nethack-recover mode 0102755 user root group users file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/nethack/var",
       "code": "setgid",
-      "detail": "/usr/share/nethack/var mode 042770 user root group users dir"
+      "detail": "/usr/share/nethack/var mode 042770 user root group users dir",
+      "color": "green"
     },
     {
       "module": "setuid",
       "path": "/usr/share/nethack/var/save",
       "code": "setgid",
-      "detail": "/usr/share/nethack/var/save mode 042770 user root group users dir"
+      "detail": "/usr/share/nethack/var/save mode 042770 user root group users dir",
+      "color": "green"
     }
   ]
 }

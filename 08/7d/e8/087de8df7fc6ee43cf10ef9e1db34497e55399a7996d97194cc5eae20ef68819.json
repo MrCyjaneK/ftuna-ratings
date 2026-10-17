@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "087de8df7fc6ee43cf10ef9e1db34497e55399a7996d97194cc5eae20ef68819",
   "key": "mirror/openrepos/olf/personal/main/s/sailfishos-chum-gui-installer-0.3.1-1.noarch.rpm",
   "name": "sailfishos-chum-gui-installer",
   "rpm_version": "0.3.1",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ ! -e /var/log/sailfishos-chum-gui-installer.log.txt ]; then; curmask=\"$(umask)\""
+      "detail": "user=root program=/bin/sh body=if [ ! -e /var/log/sailfishos-chum-gui-installer.log.txt ]; then; curmask=\"$(umask)\"",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" = 0 ]  # Removal; then; ssu rr sailfishos-chum"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = 0 ]  # Removal; then; ssu rr sailfishos-chum",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%posttrans",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=umask 113; setsid --fork sh -c '(/usr/bin/sailfishos-chum-gui-installer \"$1\" \"$2\")' sh_call_inst-chum-gui \"$$\" \"/var/log/sailfishos-chum-gui-installer.log.txt\" "
+      "detail": "user=root program=/bin/sh body=umask 113; setsid --fork sh -c '(/usr/bin/sailfishos-chum-gui-installer \"$1\" \"$2\")' sh_call_inst-chum-gui \"$$\" \"/var/log/sailfishos-chum-gui-installer.log.txt\" ",
+      "color": "red"
     }
   ]
 }

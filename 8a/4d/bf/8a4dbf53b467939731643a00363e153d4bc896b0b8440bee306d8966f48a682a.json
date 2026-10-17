@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "8a4dbf53b467939731643a00363e153d4bc896b0b8440bee306d8966f48a682a",
   "key": "mirror/openrepos/247/personal/main/a/ambience-fantasyzone-2.0-0.noarch.rpm",
   "name": "ambience-fantasyzone",
   "rpm_version": "2.0",
   "release": "0",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=chmod 755 /usr/share/ambience/{name}; chmod 755 /usr/share/ambience/{name}/images; chmod 644 /usr/share/ambience/{name}/*.*"
+      "detail": "user=root program=/bin/sh body=chmod 755 /usr/share/ambience/{name}; chmod 755 /usr/share/ambience/{name}/images; chmod 644 /usr/share/ambience/{name}/*.*",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; rm -rf /usr/share/ambience/{name}"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; rm -rf /usr/share/ambience/{name}",
+      "color": "red"
     }
   ]
 }

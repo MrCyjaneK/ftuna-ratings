@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "f94e3cd77fbefd1ae8aebece63c97d19f96d203784ef70094cfca37420964776",
   "key": "mirror/openrepos/adel/personal/main/h/harbour-multi-keyboard-layouts-0.3.1-1.armv7hl.rpm",
   "name": "harbour-multi-keyboard-layouts",
   "rpm_version": "0.3.1",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 53,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-multi-keyboard-layouts.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=killall maliit-server"
+      "detail": "user=root program=/bin/sh body=killall maliit-server",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=killall maliit-server"
+      "detail": "user=root program=/bin/sh body=killall maliit-server",
+      "color": "red"
     }
   ]
 }

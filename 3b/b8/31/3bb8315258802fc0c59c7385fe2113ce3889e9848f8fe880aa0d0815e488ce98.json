@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "3bb8315258802fc0c59c7385fe2113ce3889e9848f8fe880aa0d0815e488ce98",
   "key": "mirror/openrepos/ichthyosaurus/personal/main/s/sfos-patch-remorse-remove-cross-1.0.1-1.noarch.rpm",
   "name": "sfos-patch-remorse-remove-cross",
   "rpm_version": "1.0.1",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-remorse-remove-cross ]; then; /usr/sbin/patchmanager -u sfos-patch-remorse-remove-cross || true; fi"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-remorse-remove-cross ]; then; /usr/sbin/patchmanager -u sfos-patch-remorse-remove-cross || true; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-remorse-remove-cross ]; then; /usr/sbin/patchmanager -u sfos-patch-remorse-remove-cross || true; fi"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-remorse-remove-cross ]; then; /usr/sbin/patchmanager -u sfos-patch-remorse-remove-cross || true; fi",
+      "color": "red"
     }
   ]
 }

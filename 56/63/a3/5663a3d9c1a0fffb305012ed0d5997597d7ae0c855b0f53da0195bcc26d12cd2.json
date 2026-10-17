@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "5663a3d9c1a0fffb305012ed0d5997597d7ae0c855b0f53da0195bcc26d12cd2",
   "key": "mirror/openrepos/ruff/personal/main/r/rockpool-1.0-alpha1timeline7.armv7hl.rpm",
   "name": "rockpool",
   "rpm_version": "1.0",
   "release": "alpha1timeline7",
   "arch": "armv7hl",
-  "verdict": 63,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/rockpool.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=grep -q \"^/usr/bin/rockpoold\" /usr/share/mapplauncherd/privileges || echo \"/usr/bin/rockpoold,cehlmnpu\" \u003e\u003e /usr/share/mapplauncherd/privileges; su nemo -c 'syst"
+      "detail": "user=root program=/bin/sh body=grep -q \"^/usr/bin/rockpoold\" /usr/share/mapplauncherd/privileges || echo \"/usr/bin/rockpoold,cehlmnpu\" \u003e\u003e /usr/share/mapplauncherd/privileges; su nemo -c 'syst",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/rockpoold.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/invoker -o --type=qt5 /usr/bin/rockpoold sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/invoker -o --type=qt5 /usr/bin/rockpoold sandbox=none",
+      "color": "green"
     }
   ]
 }

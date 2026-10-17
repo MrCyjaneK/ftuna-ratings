@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "c417a12fb174e6defb42ee474a2a86c34ba328127b06730c0bedf74e0547eb4e",
   "key": "mirror/openrepos/kan/personal/main/d/dnscrypt-proxy-blocklist-2.1.5-240217.noarch.rpm",
   "name": "dnscrypt-proxy-blocklist",
   "rpm_version": "2.1.5",
   "release": "240217",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=cp -T -r /var/lib/dnscrypt-proxy/dnscrypt-proxy.toml.dnsmasq /var/lib/dnscrypt-proxy/dnscrypt-proxy.toml.noblock; \\; rpm -ef dnscrypt-proxy-blocklist-2.1.4-1.no"
+      "detail": "user=root program=/bin/sh body=cp -T -r /var/lib/dnscrypt-proxy/dnscrypt-proxy.toml.dnsmasq /var/lib/dnscrypt-proxy/dnscrypt-proxy.toml.noblock; \\; rpm -ef dnscrypt-proxy-blocklist-2.1.4-1.no",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl start dnscrypt-proxy"
+      "detail": "user=root program=/bin/sh body=systemctl start dnscrypt-proxy",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl stop dnscrypt-proxy;systemctl start dnscrypt-proxy"
+      "detail": "user=root program=/bin/sh body=systemctl stop dnscrypt-proxy;systemctl start dnscrypt-proxy",
+      "color": "red"
     }
   ]
 }

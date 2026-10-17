@@ -1,92 +1,46 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "e99dd15e89bcabf147524d97ed128fed9414dbfe6e5ab4cc409c91b4bcee6653",
   "key": "mirror/openrepos/kan/personal/main/d/dnscrypt-proxy-2.1.13-0.aarch64.rpm",
   "name": "dnscrypt-proxy",
   "rpm_version": "2.1.13",
   "release": "0",
   "arch": "aarch64",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -gt 1 ] ; then; rm -f /etc/resolv.conf; \\; ln -s /var/run/connman/resolv.conf /etc/resolv.conf"
+      "detail": "user=root program=/bin/sh body=if [ $1 -gt 1 ] ; then; rm -f /etc/resolv.conf; \\; ln -s /var/run/connman/resolv.conf /etc/resolv.conf",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ ! -e /var/log/dnscrypt-proxy/dnscrypt-proxy.log.txt ]; then; curmask=\"$(umask)\""
+      "detail": "user=root program=/bin/sh body=if [ ! -e /var/log/dnscrypt-proxy/dnscrypt-proxy.log.txt ]; then; curmask=\"$(umask)\"",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 == 0 ] ; then; echo \"Stoping service \"; \\; systemctl stop dnscrypt-proxy || true"
+      "detail": "user=root program=/bin/sh body=if [ $1 == 0 ] ; then; echo \"Stoping service \"; \\; systemctl stop dnscrypt-proxy || true",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 == 0 ] ; then; if [ -f /var/lib/environment/connman/nodnsproxy.conf ]; then; rm -f /var/lib/environment/connman/nodnsproxy.conf"
+      "detail": "user=root program=/bin/sh body=if [ $1 == 0 ] ; then; if [ -f /var/lib/environment/connman/nodnsproxy.conf ]; then; rm -f /var/lib/environment/connman/nodnsproxy.conf",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%posttrans",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=umask 113; setsid --fork sh -c '(/var/lib/dnscrypt-proxy/dnscrypt-proxy-install-service.sh \"$1\" \"$2\")' sh_call_inst-dnscrypt-proxy-service \"$$\" \"/var/log/dnscry"
+      "detail": "user=root program=/bin/sh body=umask 113; setsid --fork sh -c '(/var/lib/dnscrypt-proxy/dnscrypt-proxy-install-service.sh \"$1\" \"$2\")' sh_call_inst-dnscrypt-proxy-service \"$$\" \"/var/log/dnscry",
+      "color": "red"
     }
   ]
 }

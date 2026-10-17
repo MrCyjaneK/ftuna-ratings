@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "69dfe69d51e1c33ea0d91ce693e5b4e0bd5f3836c5896cd71d08df408e1d80ac",
   "key": "mirror/openrepos/martonmiklos/personal/main/u/unofficial-jolla-language-pack-el-2.1.4-0.0.1.noarch.rpm",
   "name": "unofficial-jolla-language-pack-el",
   "rpm_version": "2.1.4",
   "release": "0.0.1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/bin/localedef --force --replace --verbose -i el_GR -f UTF-8 el_GR.utf8; exit 0"
+      "detail": "user=root program=/bin/sh body=/usr/bin/localedef --force --replace --verbose -i el_GR -f UTF-8 el_GR.utf8; exit 0",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/bin/localedef --delete-from-archive el_GR.utf8"
+      "detail": "user=root program=/bin/sh body=/usr/bin/localedef --delete-from-archive el_GR.utf8",
+      "color": "red"
     }
   ]
 }

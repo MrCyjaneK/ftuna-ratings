@@ -1,92 +1,46 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "7fe1f0abfdd0cabeb5c9b197c2f1371733474b664fd9c849c15d950d115809e3",
   "key": "mirror/openrepos/eekkelund/personal/main/h/harbour-tide-0.2.7-3.i486.rpm",
   "name": "harbour-tide",
   "rpm_version": "0.2.7",
   "release": "3",
   "arch": "i486",
-  "verdict": 35,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": 0
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-tide-root.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-tide.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user restart maliit-server.service; install -g nemo -o nemo -d /home/nemo/tIDE/; install -g nemo -o nemo -d /home/nemo/tIDE/Projects/"
+      "detail": "user=root program=/bin/sh body=systemctl-user restart maliit-server.service; install -g nemo -o nemo -d /home/nemo/tIDE/; install -g nemo -o nemo -d /home/nemo/tIDE/Projects/",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=rm -rf /usr/share/harbour-tide/qml/pages/Editor2.qml"
+      "detail": "user=root program=/bin/sh body=rm -rf /usr/share/harbour-tide/qml/pages/Editor2.qml",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/bin/harbour-tide-root",
       "code": "setuid",
-      "detail": "/usr/bin/harbour-tide-root mode 0104755 user root group root file"
+      "detail": "/usr/bin/harbour-tide-root mode 0104755 user root group root file",
+      "color": "red"
     }
   ]
 }

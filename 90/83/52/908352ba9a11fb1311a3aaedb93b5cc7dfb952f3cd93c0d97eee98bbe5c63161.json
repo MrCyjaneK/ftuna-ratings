@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "908352ba9a11fb1311a3aaedb93b5cc7dfb952f3cd93c0d97eee98bbe5c63161",
   "key": "mirror/openrepos/gnikandrov/personal/main/s/sailfish-fonts-extra-aliendalvik-0.2.010-2.noarch.rpm",
   "name": "sailfish-fonts-extra-aliendalvik",
   "rpm_version": "0.2.010",
   "release": "2",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=cd /opt/alien/system/fonts; for variant in {Regular,Italic,{Bold,Light}{,Italic}}; do; mv Roboto-${variant}.ttf Roboto-${variant}.ttf.backup"
+      "detail": "user=root program=/bin/sh body=cd /opt/alien/system/fonts; for variant in {Regular,Italic,{Bold,Light}{,Italic}}; do; mv Roboto-${variant}.ttf Roboto-${variant}.ttf.backup",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=cd /opt/alien/system/fonts; for variant in {Regular,Italic,{Bold,Light}{,Italic}}; do; if [ -f Roboto-${variant}.ttf.backup ]; then"
+      "detail": "user=root program=/bin/sh body=cd /opt/alien/system/fonts; for variant in {Regular,Italic,{Bold,Light}{,Italic}}; do; if [ -f Roboto-${variant}.ttf.backup ]; then",
+      "color": "red"
     }
   ]
 }

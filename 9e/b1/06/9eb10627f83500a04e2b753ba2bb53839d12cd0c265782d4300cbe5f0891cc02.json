@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "9eb10627f83500a04e2b753ba2bb53839d12cd0c265782d4300cbe5f0891cc02",
   "key": "mirror/openrepos/lpr/personal/main/g/glibc-2.30git8-9.3.armv7hl.rpm",
   "name": "glibc",
   "rpm_version": "2.30+git8",
   "release": "9.3",
   "arch": "armv7hl",
-  "verdict": 18,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": 5
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "hooks",
       "path": "/etc/ld.so.conf",
       "code": "hooks.linker",
-      "detail": "mode 0100644 user root group root"
+      "detail": "mode 0100644 user root group root",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=\u003clua\u003e body=-- Check that the running kernel is new enough; required = '3.4.108'; rel = posix.uname(\"%r\")"
+      "detail": "user=root program=\u003clua\u003e body=-- Check that the running kernel is new enough; required = '3.4.108'; rel = posix.uname(\"%r\")",
+      "color": "red"
     }
   ]
 }

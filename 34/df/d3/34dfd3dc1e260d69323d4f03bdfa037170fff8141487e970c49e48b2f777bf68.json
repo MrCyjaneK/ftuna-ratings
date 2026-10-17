@@ -1,86 +1,39 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "34dfd3dc1e260d69323d4f03bdfa037170fff8141487e970c49e48b2f777bf68",
   "key": "mirror/openrepos/krnlyng/personal/main/k/kodi-18.7-leia.i486.rpm",
   "name": "kodi",
   "rpm_version": "18.7",
   "release": "Leia",
   "arch": "i486",
-  "verdict": 53,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/kodi-wayland.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/bin/touch --no-create /usr/share/icons/hicolor \u0026\u003e/dev/null || :"
+      "detail": "user=root program=/bin/sh body=/bin/touch --no-create /usr/share/icons/hicolor \u0026\u003e/dev/null || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; /bin/touch --no-create /usr/share/icons/hicolor \u0026\u003e/dev/null; /usr/bin/gtk-update-icon-cache /usr/share/icons/hicolor \u0026\u003e/dev/null || :"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; /bin/touch --no-create /usr/share/icons/hicolor \u0026\u003e/dev/null; /usr/bin/gtk-update-icon-cache /usr/share/icons/hicolor \u0026\u003e/dev/null || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%posttrans",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/bin/gtk-update-icon-cache /usr/share/icons/hicolor \u0026\u003e/dev/null || :; if [ ! -L /usr/lib/xbmc ] ; then; rmdir /usr/lib/xbmc /usr/share/xbmc"
+      "detail": "user=root program=/bin/sh body=/usr/bin/gtk-update-icon-cache /usr/share/icons/hicolor \u0026\u003e/dev/null || :; if [ ! -L /usr/lib/xbmc ] ; then; rmdir /usr/lib/xbmc /usr/share/xbmc",
+      "color": "red"
     }
   ]
 }

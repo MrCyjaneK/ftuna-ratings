@@ -1,98 +1,53 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "fcda9690a5a181b4ff8abd4d6e20269f18972ffe5af97fc814319c92b31aaed2",
   "key": "chum/5.1_armv7hl/armv7hl/harbour-iceage-0.2-1.2.1.bso.armv7hl.rpm",
   "name": "harbour-iceage",
   "rpm_version": "0.2",
   "release": "1.2.1.bso",
   "arch": "armv7hl",
-  "verdict": 100,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-iceage.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-iceage.desktop",
       "code": "sailjail.permission",
-      "detail": "Secrets"
+      "detail": "Secrets",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-iceage.desktop",
       "code": "sailjail.permission",
-      "detail": "Audio"
+      "detail": "Audio",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-iceage.desktop",
       "code": "sailjail.permission",
-      "detail": "Pictures"
+      "detail": "Pictures",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-iceage.desktop",
       "code": "sailjail.permission",
-      "detail": "MediaIndexing"
+      "detail": "MediaIndexing",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-iceage.desktop",
       "code": "sailjail.permission",
-      "detail": "Videos"
+      "detail": "Videos",
+      "color": "gray"
     }
   ]
 }

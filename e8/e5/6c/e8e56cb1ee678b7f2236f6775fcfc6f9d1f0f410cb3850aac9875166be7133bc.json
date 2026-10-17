@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "e8e56cb1ee678b7f2236f6775fcfc6f9d1f0f410cb3850aac9875166be7133bc",
   "key": "chum/5.1_i486/i486/lpac-2.3.0+git1-1.1.1.bso.i486.rpm",
   "name": "lpac",
   "rpm_version": "2.3.0+git1",
   "release": "1.1.1.bso",
   "arch": "i486",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/sbin/ldconfig"
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/sbin/ldconfig"
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig",
+      "color": "red"
     }
   ]
 }

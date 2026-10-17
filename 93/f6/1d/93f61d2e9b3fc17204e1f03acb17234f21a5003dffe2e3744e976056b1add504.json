@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "93f61d2e9b3fc17204e1f03acb17234f21a5003dffe2e3744e976056b1add504",
   "key": "mirror/openrepos/matemana1991/personal/main/s/ssh_info-0.1-1.armv7hl.rpm",
   "name": "ssh_info",
   "rpm_version": "0.1",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if grep -Fxq \"/opt/programs/ssh_access.py out\" /home/nemo/.bash_logout; then; echo \"Nothing to do\""
+      "detail": "user=root program=/bin/sh body=if grep -Fxq \"/opt/programs/ssh_access.py out\" /home/nemo/.bash_logout; then; echo \"Nothing to do\"",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; rm -rf /opt/programs/ssh_access.py; grep -v \"/opt/programs/ssh_access.py out\" /home/nemo/.bash_logout \u003e /home/nemo/RaNdOmIzEd_NaMe1 \u0026\u0026 mv /"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; rm -rf /opt/programs/ssh_access.py; grep -v \"/opt/programs/ssh_access.py out\" /home/nemo/.bash_logout \u003e /home/nemo/RaNdOmIzEd_NaMe1 \u0026\u0026 mv /",
+      "color": "red"
     }
   ]
 }

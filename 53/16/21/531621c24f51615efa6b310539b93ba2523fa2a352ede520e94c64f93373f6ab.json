@@ -1,110 +1,67 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "531621c24f51615efa6b310539b93ba2523fa2a352ede520e94c64f93373f6ab",
   "key": "mirror/openrepos/planetos_store/personal/main/h/harbour-audiocut-1.5.1-1.noarch.rpm",
   "name": "harbour-audiocut",
   "rpm_version": "1.5.1",
   "release": "1",
   "arch": "noarch",
-  "verdict": 100,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-audiocut.desktop",
       "code": "sailjail.permission",
-      "detail": "Compatibility"
+      "detail": "Compatibility",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-audiocut.desktop",
       "code": "sailjail.permission",
-      "detail": "Camera"
+      "detail": "Camera",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-audiocut.desktop",
       "code": "sailjail.permission",
-      "detail": "Audio"
+      "detail": "Audio",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-audiocut.desktop",
       "code": "sailjail.permission",
-      "detail": "Microphone"
+      "detail": "Microphone",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-audiocut.desktop",
       "code": "sailjail.permission",
-      "detail": "MediaIndexing"
+      "detail": "MediaIndexing",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-audiocut.desktop",
       "code": "sailjail.permission",
-      "detail": "Music"
+      "detail": "Music",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-audiocut.desktop",
       "code": "sailjail.permission",
-      "detail": "RemovableMedia"
+      "detail": "RemovableMedia",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-audiocut.desktop",
       "code": "sailjail.permission",
-      "detail": "UserDirs"
+      "detail": "UserDirs",
+      "color": "gray"
     }
   ]
 }

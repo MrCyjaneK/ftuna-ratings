@@ -1,92 +1,46 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "1d0a4240b1b5bfa84ca59be5544cf472965dc0243511c3e810a5499aba3183bc",
   "key": "mirror/openrepos/DomiH/personal/main/h/harbour-ferry-0.2-2.armv7hl.rpm",
   "name": "harbour-ferry",
   "rpm_version": "0.2",
   "release": "2",
   "arch": "armv7hl",
-  "verdict": 57,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-ferry.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :"
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :"
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/harbour-ferry-sync.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/python3 /usr/share/harbour-ferry/helper/sync_helper.py sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/python3 /usr/share/harbour-ferry/helper/sync_helper.py sandbox=none",
+      "color": "green"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/harbour-ferry-sync.timer",
       "code": "systemd.timer",
-      "detail": "scope=user activates=harbour-ferry-sync.service"
+      "detail": "scope=user activates=harbour-ferry-sync.service",
+      "color": "green"
     }
   ]
 }

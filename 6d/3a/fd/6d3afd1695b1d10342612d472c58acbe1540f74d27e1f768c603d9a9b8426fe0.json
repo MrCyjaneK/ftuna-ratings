@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "6d3afd1695b1d10342612d472c58acbe1540f74d27e1f768c603d9a9b8426fe0",
   "key": "mirror/openrepos/SomethingElse/personal/main/s/sfos-patch-launcher-list-0.2.6-66.noarch.rpm",
   "name": "sfos-patch-launcher-list",
   "rpm_version": "0.2.6",
   "release": "66",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=set -o pipefail; if mkdir -p '/var/lib/rpm-state/sfos-patch-launcher-list'; then; dbus-send --print-reply --system --type=method_call \\"
+      "detail": "user=root program=/bin/sh body=set -o pipefail; if mkdir -p '/var/lib/rpm-state/sfos-patch-launcher-list'; then; dbus-send --print-reply --system --type=method_call \\",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/sbin/patchmanager -u 'sfos-patch-launcher-list' || true"
+      "detail": "user=root program=/bin/sh body=/usr/sbin/patchmanager -u 'sfos-patch-launcher-list' || true",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%posttrans",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -e '/var/lib/rpm-state/sfos-patch-launcher-list/was-applied' ]; then; /usr/sbin/patchmanager -a 'sfos-patch-launcher-list' || true; rm '/var/lib/rpm-state/"
+      "detail": "user=root program=/bin/sh body=if [ -e '/var/lib/rpm-state/sfos-patch-launcher-list/was-applied' ]; then; /usr/sbin/patchmanager -a 'sfos-patch-launcher-list' || true; rm '/var/lib/rpm-state/",
+      "color": "red"
     }
   ]
 }

@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "3cffee74bb15f1deb19568cc13dcd13e9f6f64c8499510283a0b05ab90900e1f",
   "key": "chum/5.1_i486/i486/mosh-server-1.4.0+git4-1.2.1.bso.i486.rpm",
   "name": "mosh-server",
   "rpm_version": "1.4.0+git4",
   "release": "1.2.1.bso",
   "arch": "i486",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl try-restart connman.service \u003e/dev/null 2\u003e\u00261 || :; fi"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl try-restart connman.service \u003e/dev/null 2\u003e\u00261 || :; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl try-restart connman.service \u003e/dev/null 2\u003e\u00261 || :; fi"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl try-restart connman.service \u003e/dev/null 2\u003e\u00261 || :; fi",
+      "color": "red"
     }
   ]
 }

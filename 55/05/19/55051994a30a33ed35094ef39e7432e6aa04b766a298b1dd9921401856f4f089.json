@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "55051994a30a33ed35094ef39e7432e6aa04b766a298b1dd9921401856f4f089",
   "key": "mirror/openrepos/nephros/personal/main/a/ambience-covid19-0.2-1.noarch.rpm",
   "name": "ambience-COVID19",
   "rpm_version": "0.2",
   "release": "1",
   "arch": "noarch",
-  "verdict": 15,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": 0
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user restart ambienced.service"
+      "detail": "user=root program=/bin/sh body=systemctl-user restart ambienced.service",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; rmdir /usr/share/ambience/ambience-COVID19; systemctl-user restart ambienced.service"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; rmdir /usr/share/ambience/ambience-COVID19; systemctl-user restart ambienced.service",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/ambience/ambience-COVID19/images/SARS-CoV-2_em.jpg",
       "code": "worldwrite",
-      "detail": "/usr/share/ambience/ambience-COVID19/images/SARS-CoV-2_em.jpg mode 0100666 user root group root file"
+      "detail": "/usr/share/ambience/ambience-COVID19/images/SARS-CoV-2_em.jpg mode 0100666 user root group root file",
+      "color": "red"
     }
   ]
 }

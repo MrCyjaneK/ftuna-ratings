@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "dfdb392702513e70275ec148c70cc45ce3ea44b739b39e3b601085bc319c612c",
   "key": "mirror/openrepos/martonmiklos/personal/main/u/unofficial-jolla-language-pack-hu-2.0.5-0.0.3.noarch.rpm",
   "name": "unofficial-jolla-language-pack-hu",
   "rpm_version": "2.0.5",
   "release": "0.0.3",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=localedef --replace -i hu_HU -f UTF-8 hu_HU.utf8 --prefix=/"
+      "detail": "user=root program=/bin/sh body=localedef --replace -i hu_HU -f UTF-8 hu_HU.utf8 --prefix=/",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=localedef --delete-from-archive hu_HU.utf8"
+      "detail": "user=root program=/bin/sh body=localedef --delete-from-archive hu_HU.utf8",
+      "color": "red"
     }
   ]
 }

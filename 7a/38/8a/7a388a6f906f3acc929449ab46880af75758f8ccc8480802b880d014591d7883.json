@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "7a388a6f906f3acc929449ab46880af75758f8ccc8480802b880d014591d7883",
   "key": "chum/5.1_i486/i486/gnutls37-3.7.2-1.1.1.bso.i486.rpm",
   "name": "gnutls37",
   "rpm_version": "3.7.2",
   "release": "1.1.1.bso",
   "arch": "i486",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/sbin/ldconfig"
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/sbin/ldconfig"
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig",
+      "color": "red"
     }
   ]
 }

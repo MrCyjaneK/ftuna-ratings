@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "878143f3c5dbf75fdf13e4229db3840fb46ff85ff964568423bbca57aebcca4e",
   "key": "mirror/openrepos/kan/personal/main/t/tor-0.4.9.12-1.armv7hl.rpm",
   "name": "tor",
   "rpm_version": "0.4.9.12",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 58,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/tor ]; then; rm -rf /var/lib/tor; fi"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/tor ]; then; rm -rf /var/lib/tor; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=PUSER=$(getent passwd 100000 | cut -d: -f1 ); chown -R $PUSER:inet /home/.system/var/lib/tor; chown -R $PUSER:inet /var/log/tor"
+      "detail": "user=root program=/bin/sh body=PUSER=$(getent passwd 100000 | cut -d: -f1 ); chown -R $PUSER:inet /home/.system/var/lib/tor; chown -R $PUSER:inet /var/log/tor",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/tor.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/torctl start sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/torctl start sandbox=none",
+      "color": "green"
     }
   ]
 }

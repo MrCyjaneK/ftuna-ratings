@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "0d3ee3bab2f26c70d71916225ef7a41514721a1e42758837c91806c40e8ba872",
   "key": "mirror/openrepos/lpr_A7/personal/main/j/jolla-developer-mode-0.3.1-10.12.1.jolla_.armv7hl.rpm",
   "name": "jolla-developer-mode",
   "rpm_version": "0.3.1",
   "release": "10.12.1.jolla",
   "arch": "armv7hl",
-  "verdict": 15,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": 15
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": 0
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "hooks",
       "path": "/etc/pam.d/devel-su",
       "code": "hooks.pam",
-      "detail": "mode 0100644 user root group root"
+      "detail": "mode 0100644 user root group root",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=ENCPARTITION=\"/usr/lib/qt5/plugins/devicelock/encpartition\"; if [ -x $ENCPARTITION ]; then; $ENCPARTITION --developermode trigger"
+      "detail": "user=root program=/bin/sh body=ENCPARTITION=\"/usr/lib/qt5/plugins/devicelock/encpartition\"; if [ -x $ENCPARTITION ]; then; $ENCPARTITION --developermode trigger",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/bin/devel-su",
       "code": "setuid",
-      "detail": "/usr/bin/devel-su mode 0104755 user root group root file"
+      "detail": "/usr/bin/devel-su mode 0104755 user root group root file",
+      "color": "red"
     }
   ]
 }

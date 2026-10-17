@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "aef28771902f094c7679280cf5631bc39f401971d323c6174675e0068b00b6a2",
   "key": "mirror/openrepos/ade/personal/main/h/harbour-acid-pass-0.2-6.armv7hl.rpm",
   "name": "harbour-acid-pass",
   "rpm_version": "0.2",
   "release": "6",
   "arch": "armv7hl",
-  "verdict": 38,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": 0
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-acid-pass.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "setuid",
       "path": "/usr/share/harbour-acid-pass/helper/acid-passhelper",
       "code": "setuid",
-      "detail": "/usr/share/harbour-acid-pass/helper/acid-passhelper mode 0104755 user root group root file"
+      "detail": "/usr/share/harbour-acid-pass/helper/acid-passhelper mode 0104755 user root group root file",
+      "color": "red"
     }
   ]
 }

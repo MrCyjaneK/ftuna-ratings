@@ -1,61 +1,10 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "aa614ba5da7a19c60bd03bfa36a1bd7d14c94b36ace3f2e3844d785029ba156f",
   "key": "chum/5.1_i486/i486/harbour-phototools-debugsource-0.4.0+master.20210726194605.2.ge6fb35d-1.1.1.bso.i486.rpm",
   "name": "harbour-phototools-debugsource",
   "rpm_version": "0.4.0+master.20210726194605.2.ge6fb35d",
   "release": "1.1.1.bso",
   "arch": "i486",
-  "verdict": -1,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": []
 }

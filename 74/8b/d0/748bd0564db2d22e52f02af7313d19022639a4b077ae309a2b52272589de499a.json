@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "748bd0564db2d22e52f02af7313d19022639a4b077ae309a2b52272589de499a",
   "key": "mirror/openrepos/halftux/personal/main/g/genwall-1.1.1-1.armv7hl.rpm",
   "name": "genwall",
   "rpm_version": "1.1.1",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 38,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": 0
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/genwall.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "setuid",
       "path": "/usr/bin/genwall",
       "code": "setuid",
-      "detail": "/usr/bin/genwall mode 0104755 user root group root file"
+      "detail": "/usr/bin/genwall mode 0104755 user root group root file",
+      "color": "red"
     }
   ]
 }

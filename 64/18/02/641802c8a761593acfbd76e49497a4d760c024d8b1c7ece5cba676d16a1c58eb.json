@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "641802c8a761593acfbd76e49497a4d760c024d8b1c7ece5cba676d16a1c58eb",
   "key": "mirror/openrepos/glitchapp/personal/main/f/fishfilletsmini-0.1.2-1.noarch.rpm",
   "name": "Fishfilletsmini",
   "rpm_version": "0.1.2",
   "release": "1",
   "arch": "noarch",
-  "verdict": 100,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/fishfilletsmini.desktop",
       "code": "sailjail.permission",
-      "detail": "Love2D"
+      "detail": "Love2D",
+      "color": "gray"
     }
   ]
 }

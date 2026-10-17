@@ -1,104 +1,60 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "019110497f1d5b8d715bb67f3573646e4451011dd1c59108af468026554fdee8",
   "key": "mirror/openrepos/aviarus/personal/main/h/harbour-whatsapp-0.9.215-1.aarch64.rpm",
   "name": "harbour-whatsapp",
   "rpm_version": "0.9.215",
   "release": "1",
   "arch": "aarch64",
-  "verdict": 72,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-whatsapp-daemon.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-whatsapp-daemon.desktop",
       "code": "sailjail.permission",
-      "detail": "Secrets"
+      "detail": "Secrets",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-whatsapp.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-whatsapp.desktop",
       "code": "sailjail.permission",
-      "detail": "Secrets"
+      "detail": "Secrets",
+      "color": "gray"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=D=/usr/share/applications/harbour-whatsapp.desktop; sed -i '/^X-Maemo-Service=/d' $D; sed -i '/^ExecDBus=/d' $D"
+      "detail": "user=root program=/bin/sh body=D=/usr/share/applications/harbour-whatsapp.desktop; sed -i '/^X-Maemo-Service=/d' $D; sed -i '/^ExecDBus=/d' $D",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"0\" ]; then; rm -f /usr/share/harbour-whatsapp/gst-launch-1.0 /usr/share/harbour-whatsapp/pactl; fi"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"0\" ]; then; rm -f /usr/share/harbour-whatsapp/gst-launch-1.0 /usr/share/harbour-whatsapp/pactl; fi",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/harbour-whatsapp-daemon.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/sailjail -p harbour-whatsapp-daemon.desktop -- /usr/bin/harbour-whatsapp-daemon sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/sailjail -p harbour-whatsapp-daemon.desktop -- /usr/bin/harbour-whatsapp-daemon sandbox=none",
+      "color": "green"
     }
   ]
 }

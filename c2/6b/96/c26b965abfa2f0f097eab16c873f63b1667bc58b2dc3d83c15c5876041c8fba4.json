@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "c26b965abfa2f0f097eab16c873f63b1667bc58b2dc3d83c15c5876041c8fba4",
   "key": "mirror/openrepos/enigma9o7/personal/main/s/supertux-0.6.1-2.armv7hl.rpm",
   "name": "Supertux",
   "rpm_version": "0.6.1",
   "release": "2",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=mkdir /home/nemo/.local; mkdir /home/nemo/.local/share; mkdir /home/nemo/.local/share/supertux2"
+      "detail": "user=root program=/bin/sh body=mkdir /home/nemo/.local; mkdir /home/nemo/.local/share; mkdir /home/nemo/.local/share/supertux2",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; rm /usr/local/games/supertux*; rm /usr/local/share/applications/supertux2.desktop"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; rm /usr/local/games/supertux*; rm /usr/local/share/applications/supertux2.desktop",
+      "color": "red"
     }
   ]
 }

@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "33c7def09b803eb41e3124a8232fd5f9ae3d5abb6e26a0d62c143e8677e0e2f8",
   "key": "mirror/openrepos/gexc/personal/main/p/pdnsd-1.2.9a-1.armv7hl.rpm",
   "name": "pdnsd",
   "rpm_version": "1.2.9a",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=chown -R nobody:nobody /var/cache/pdnsd"
+      "detail": "user=root program=/bin/sh body=chown -R nobody:nobody /var/cache/pdnsd",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; rm -rf /var/cache/pdnsd"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; rm -rf /var/cache/pdnsd",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/system/pdnsd.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/sbin/pdnsd -t -mto -c /etc/pdnsd.conf sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/sbin/pdnsd -t -mto -c /etc/pdnsd.conf sandbox=none",
+      "color": "red"
     }
   ]
 }

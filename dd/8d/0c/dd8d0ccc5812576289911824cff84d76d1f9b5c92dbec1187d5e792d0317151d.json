@@ -1,152 +1,116 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "dd8d0ccc5812576289911824cff84d76d1f9b5c92dbec1187d5e792d0317151d",
   "key": "mirror/openrepos/olf_testing/personal/main/c/crypto-sdcard-1.7.3-beta1.sfos340qcrypto.noarch.rpm",
   "name": "crypto-sdcard",
   "rpm_version": "1.7.3",
   "release": "beta1.sfos340+qcrypto",
   "arch": "noarch",
-  "verdict": 23,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": 10
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": 30
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "polkit",
       "path": "/etc/polkit-1/localauthority/50-local.d/69-cryptosd.pkla",
       "code": "polkit.pkla",
-      "detail": "Identity=unix-group:root;unix-group:media_rw ResultAny=yes"
+      "detail": "Identity=unix-group:root;unix-group:media_rw ResultAny=yes",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/system/cryptosd-luks@.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/sbin/cryptsetup --allow-discards -d /etc/crypto-sdcard/crypto_luks_%I.key luksOpen /dev/disk/by-uuid/%I %I sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/sbin/cryptsetup --allow-discards -d /etc/crypto-sdcard/crypto_luks_%I.key luksOpen /dev/disk/by-uuid/%I %I sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/system/cryptosd-plain@.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/sbin/cryptsetup -d - -o ${CRYPTO_PLAIN_OFFSET} -h ${CRYPTO_PLAIN_PASSPHRASE_HASH} -s ${CRYPTO_PLAIN_KEYLENGTH} -c ${CRYPTO_PLAIN_CIPHER} --allow-discards --type plain open /dev/%I %I sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/sbin/cryptsetup -d - -o ${CRYPTO_PLAIN_OFFSET} -h ${CRYPTO_PLAIN_PASSPHRASE_HASH} -s ${CRYPTO_PLAIN_KEYLENGTH} -c ${CRYPTO_PLAIN_CIPHER} --allow-discards --type plain open /dev/%I %I sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/system/mnt-cryptosd-luks@.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/bin/mount -v /dev/mapper/%I /media/cryptosd-luks-%I sandbox=none"
+      "detail": "scope=system user=root group=root exec=/bin/mount -v /dev/mapper/%I /media/cryptosd-luks-%I sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/system/mnt-cryptosd-plain@.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/bin/mount -v /dev/mapper/%I /media/cryptosd-plain-%I sandbox=none"
+      "detail": "scope=system user=root group=root exec=/bin/mount -v /dev/mapper/%I /media/cryptosd-plain-%I sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/system/mount-cryptosd-luks@.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/bin/udisksctl-user mount $UDISKS2_MOUNT_OPTIONS -b /dev/mapper/%I sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/bin/udisksctl-user mount $UDISKS2_MOUNT_OPTIONS -b /dev/mapper/%I sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/system/mount-cryptosd-plain@.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/bin/udisksctl-user mount $UDISKS2_MOUNT_OPTIONS -b /dev/mapper/%I sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/bin/udisksctl-user mount $UDISKS2_MOUNT_OPTIONS -b /dev/mapper/%I sandbox=none",
+      "color": "red"
     },
     {
       "module": "udev",
       "path": "/etc/udev/rules.d/96-cryptosd.rules",
       "code": "udev.run",
-      "detail": "user=root program=/usr/bin/systemd-escape --template=cryptosd-luks@.service %E{ID_FS_UUID}"
+      "detail": "user=root program=/usr/bin/systemd-escape --template=cryptosd-luks@.service %E{ID_FS_UUID}",
+      "color": "red"
     },
     {
       "module": "udev",
       "path": "/etc/udev/rules.d/96-cryptosd.rules",
       "code": "udev.run",
-      "detail": "user=root program=/usr/bin/systemd-escape --template=cryptosd-luks@.service %E{ID_FS_UUID}"
+      "detail": "user=root program=/usr/bin/systemd-escape --template=cryptosd-luks@.service %E{ID_FS_UUID}",
+      "color": "red"
     },
     {
       "module": "udev",
       "path": "/etc/udev/rules.d/96-cryptosd.rules",
       "code": "udev.run",
-      "detail": "user=root program=/usr/bin/systemctl stop %c"
+      "detail": "user=root program=/usr/bin/systemctl stop %c",
+      "color": "red"
     },
     {
       "module": "udev",
       "path": "/etc/udev/rules.d/96-cryptosd.rules",
       "code": "udev.run",
-      "detail": "user=root program=/usr/bin/systemctl stop cryptosd-plain@%k.service"
+      "detail": "user=root program=/usr/bin/systemctl stop cryptosd-plain@%k.service",
+      "color": "red"
     },
     {
       "module": "udev",
       "path": "/etc/udev/rules.d/96-cryptosd.rules",
       "code": "udev.run",
-      "detail": "user=root program=/usr/bin/systemd-escape --template=mount-cryptosd-luks@.service %E{DM_NAME}"
+      "detail": "user=root program=/usr/bin/systemd-escape --template=mount-cryptosd-luks@.service %E{DM_NAME}",
+      "color": "red"
     },
     {
       "module": "udev",
       "path": "/etc/udev/rules.d/96-cryptosd.rules",
       "code": "udev.run",
-      "detail": "user=root program=/usr/bin/systemd-escape --template=mount-cryptosd-luks@.service %E{DM_NAME}"
+      "detail": "user=root program=/usr/bin/systemd-escape --template=mount-cryptosd-luks@.service %E{DM_NAME}",
+      "color": "red"
     },
     {
       "module": "udev",
       "path": "/etc/udev/rules.d/96-cryptosd.rules",
       "code": "udev.run",
-      "detail": "user=root program=/usr/bin/systemctl stop %c"
+      "detail": "user=root program=/usr/bin/systemctl stop %c",
+      "color": "red"
     },
     {
       "module": "udev",
       "path": "/etc/udev/rules.d/96-cryptosd.rules",
       "code": "udev.run",
-      "detail": "user=root program=/usr/bin/systemctl stop mount-cryptosd-plain@%E{DM_NAME}.service"
+      "detail": "user=root program=/usr/bin/systemctl stop mount-cryptosd-plain@%E{DM_NAME}.service",
+      "color": "red"
     }
   ]
 }

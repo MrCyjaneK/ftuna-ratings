@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "5ddbf6ed5f02454eb55b0b88078fad1cdfa9b7d71bc0628ac7ab8dd8f42d7a3f",
   "key": "mirror/openrepos/martonmiklos/personal/main/u/unofficial-jolla-language-pack-hu-2.1.4-0.0.2.noarch.rpm",
   "name": "unofficial-jolla-language-pack-hu",
   "rpm_version": "2.1.4",
   "release": "0.0.2",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/bin/localedef --force --replace --verbose -i hu_HU -f UTF-8 hu_HU.utf8; exit 0"
+      "detail": "user=root program=/bin/sh body=/usr/bin/localedef --force --replace --verbose -i hu_HU -f UTF-8 hu_HU.utf8; exit 0",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/bin/localedef --delete-from-archive hu_HU.utf8"
+      "detail": "user=root program=/bin/sh body=/usr/bin/localedef --delete-from-archive hu_HU.utf8",
+      "color": "red"
     }
   ]
 }

@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "d46e5f7dc8fd3ff316698349af1d82cc07b41f197af87d6873953c52fda96128",
   "key": "mirror/openrepos/lpr_next/personal/main/g/glibc-2.2310.1-2.armv7hl.rpm",
   "name": "glibc",
   "rpm_version": "2.23+10.1",
   "release": "2",
   "arch": "armv7hl",
-  "verdict": 5,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": 5
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "hooks",
       "path": "/etc/ld.so.conf",
       "code": "hooks.linker",
-      "detail": "mode 0100644 user root group root"
+      "detail": "mode 0100644 user root group root",
+      "color": "red"
     }
   ]
 }

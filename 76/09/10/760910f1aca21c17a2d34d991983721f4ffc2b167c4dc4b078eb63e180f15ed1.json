@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "760910f1aca21c17a2d34d991983721f4ffc2b167c4dc4b078eb63e180f15ed1",
   "key": "mirror/openrepos/lpr_next/personal/main/g/glibc-headers-2.25.6git1-1.armv7hl.rpm",
   "name": "glibc-headers",
   "rpm_version": "2.25.6+git1",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -L /usr/include/scsi ] ; then; rm -f /usr/include/scsi; fi"
+      "detail": "user=root program=/bin/sh body=if [ -L /usr/include/scsi ] ; then; rm -f /usr/include/scsi; fi",
+      "color": "red"
     }
   ]
 }

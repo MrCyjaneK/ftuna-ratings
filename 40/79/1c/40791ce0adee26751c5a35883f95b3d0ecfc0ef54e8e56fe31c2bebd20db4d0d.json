@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "40791ce0adee26751c5a35883f95b3d0ecfc0ef54e8e56fe31c2bebd20db4d0d",
   "key": "mirror/openrepos/lobanokivan11/personal/main/h/harbour-dyncal-0.4.7-1.aarch64.rpm",
   "name": "harbour-dyncal",
   "rpm_version": "0.4.7",
   "release": "1",
   "arch": "aarch64",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=chmod +x /usr/share/harbour-dyncal/*.sh; install -Dm644 /usr/share/harbour-dyncal/harbour-dyncal.service /etc/systemd/system/harbour-dyncal.service; install -Dm"
+      "detail": "user=root program=/bin/sh body=chmod +x /usr/share/harbour-dyncal/*.sh; install -Dm644 /usr/share/harbour-dyncal/harbour-dyncal.service /etc/systemd/system/harbour-dyncal.service; install -Dm",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/share/harbour-dyncal/harbour-dyncal-uninstall.sh"
+      "detail": "user=root program=/bin/sh body=/usr/share/harbour-dyncal/harbour-dyncal-uninstall.sh",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; systemctl stop harbour-dyncal.timer harbour-dyncal.service 2\u003e/dev/null || :; systemctl disable harbour-dyncal.timer harbour-dyncal.servic"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; systemctl stop harbour-dyncal.timer harbour-dyncal.service 2\u003e/dev/null || :; systemctl disable harbour-dyncal.timer harbour-dyncal.servic",
+      "color": "red"
     }
   ]
 }

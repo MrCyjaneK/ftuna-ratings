@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "434a31fb5499c4c8aeb612edcb0ff402f9181f22e116fc0166e891b2692e747b",
   "key": "mirror/openrepos/rrunner64/personal/main/k/keyboard-custom-de-neo2-0.4-2.noarch.rpm",
   "name": "keyboard-custom-de-neo2",
   "rpm_version": "0.4",
   "release": "2",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user restart maliit-server.service"
+      "detail": "user=root program=/bin/sh body=systemctl-user restart maliit-server.service",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user restart maliit-server.service"
+      "detail": "user=root program=/bin/sh body=systemctl-user restart maliit-server.service",
+      "color": "red"
     }
   ]
 }

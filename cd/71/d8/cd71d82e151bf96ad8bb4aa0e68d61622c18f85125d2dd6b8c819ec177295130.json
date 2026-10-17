@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "cd71d82e151bf96ad8bb4aa0e68d61622c18f85125d2dd6b8c819ec177295130",
   "key": "mirror/openrepos/Tomin/personal/main/g/guile22-2.2.7-7.i486.rpm",
   "name": "guile22",
   "rpm_version": "2.2.7",
   "release": "7",
   "arch": "i486",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%triggerin slib",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=rm -f /usr/share/guile/site/2.2/slibcat; export SCHEME_LIBRARY_PATH=/usr/share/slib/; /usr/bin/guile2.2 --fresh-auto-compile --no-auto-compile -c \\"
+      "detail": "user=root program=/bin/sh body=rm -f /usr/share/guile/site/2.2/slibcat; export SCHEME_LIBRARY_PATH=/usr/share/slib/; /usr/bin/guile2.2 --fresh-auto-compile --no-auto-compile -c \\",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%triggerun slib",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$2\" = 0 ]; then; rm -f /usr/share/guile/site/2.2/slibcat; fi"
+      "detail": "user=root program=/bin/sh body=if [ \"$2\" = 0 ]; then; rm -f /usr/share/guile/site/2.2/slibcat; fi",
+      "color": "red"
     }
   ]
 }

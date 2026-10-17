@@ -1,92 +1,46 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "cf8264cf58c1db8039f7583d1534f7ec3d21959a5978e033180c24dd45630a03",
   "key": "mirror/openrepos/gmicroul/personal/main/h/harbour-dshq-0.4.0-1.aarch64.rpm",
   "name": "harbour-dshq",
   "rpm_version": "0.4.0",
   "release": "1",
   "arch": "aarch64",
-  "verdict": 57,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-dshq.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl --user daemon-reload 2\u003e/dev/null || true; systemctl --user enable harbour-dshq-web.service 2\u003e/dev/null || true; systemctl --user start harbour-dshq-we"
+      "detail": "user=root program=/bin/sh body=systemctl --user daemon-reload 2\u003e/dev/null || true; systemctl --user enable harbour-dshq-web.service 2\u003e/dev/null || true; systemctl --user start harbour-dshq-we",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl --user disable harbour-dshq-web.service 2\u003e/dev/null || true; systemctl --user stop harbour-dshq-web.service 2\u003e/dev/null || true"
+      "detail": "user=root program=/bin/sh body=systemctl --user disable harbour-dshq-web.service 2\u003e/dev/null || true; systemctl --user stop harbour-dshq-web.service 2\u003e/dev/null || true",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl --user daemon-reload 2\u003e/dev/null || true"
+      "detail": "user=root program=/bin/sh body=systemctl --user daemon-reload 2\u003e/dev/null || true",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/harbour-dshq-web.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/bash /usr/lib64/harbour-dshq/start-dsh-web.sh sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/bash /usr/lib64/harbour-dshq/start-dsh-web.sh sandbox=none",
+      "color": "green"
     }
   ]
 }

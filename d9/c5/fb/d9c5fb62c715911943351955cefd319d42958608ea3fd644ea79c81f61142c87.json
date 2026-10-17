@@ -1,134 +1,95 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "d9c5fb62c715911943351955cefd319d42958608ea3fd644ea79c81f61142c87",
   "key": "mirror/openrepos/WerkWolf/personal/main/h/harbour-piepmatz-1.11-1.i486.rpm",
   "name": "harbour-piepmatz",
   "rpm_version": "1.11",
   "release": "1",
   "arch": "i486",
-  "verdict": 100,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-piepmatz.desktop",
       "code": "sailjail.permission",
-      "detail": "Audio"
+      "detail": "Audio",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-piepmatz.desktop",
       "code": "sailjail.permission",
-      "detail": "Documents"
+      "detail": "Documents",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-piepmatz.desktop",
       "code": "sailjail.permission",
-      "detail": "Downloads"
+      "detail": "Downloads",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-piepmatz.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-piepmatz.desktop",
       "code": "sailjail.permission",
-      "detail": "Location"
+      "detail": "Location",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-piepmatz.desktop",
       "code": "sailjail.permission",
-      "detail": "MediaIndexing"
+      "detail": "MediaIndexing",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-piepmatz.desktop",
       "code": "sailjail.permission",
-      "detail": "Microphone"
+      "detail": "Microphone",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-piepmatz.desktop",
       "code": "sailjail.permission",
-      "detail": "Music"
+      "detail": "Music",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-piepmatz.desktop",
       "code": "sailjail.permission",
-      "detail": "Pictures"
+      "detail": "Pictures",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-piepmatz.desktop",
       "code": "sailjail.permission",
-      "detail": "PublicDir"
+      "detail": "PublicDir",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-piepmatz.desktop",
       "code": "sailjail.permission",
-      "detail": "UserDirs"
+      "detail": "UserDirs",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-piepmatz.desktop",
       "code": "sailjail.permission",
-      "detail": "Videos"
+      "detail": "Videos",
+      "color": "gray"
     }
   ]
 }

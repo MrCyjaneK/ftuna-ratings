@@ -1,98 +1,53 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "408600c956ae6f8af16bccb397d43f8273cfd698bc5cc67259f0e3add4732aee",
   "key": "mirror/openrepos/projectmoon/personal/main/f/foghorn-0.3.0-1.aarch64.rpm",
   "name": "foghorn",
   "rpm_version": "0.3.0",
   "release": "1",
   "arch": "aarch64",
-  "verdict": 75,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/org.unifiedpush.Distributor.Foghorn.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/bin/foghornd systemd=foghornd.service"
+      "detail": "scope=session user=session exec=/usr/bin/foghornd systemd=foghornd.service",
+      "color": "green"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/foghorn.desktop",
       "code": "sailjail.permission",
-      "detail": "AppLaunch"
+      "detail": "AppLaunch",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/foghorn.desktop",
       "code": "sailjail.permission",
-      "detail": "Foghorn"
+      "detail": "Foghorn",
+      "color": "gray"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :"
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; systemctl-user daemon-reload || :; fi"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; systemctl-user daemon-reload || :; fi",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/foghornd.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/foghornd sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/foghornd sandbox=none",
+      "color": "green"
     }
   ]
 }

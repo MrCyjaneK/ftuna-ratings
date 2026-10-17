@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "37dd5321d26d97d08d3e3617f3a2ae37894babb8b62d20825762cebd371b5728",
   "key": "mirror/openrepos/ichthyosaurus/personal/main/s/sfos-patch-keyboard-apostrophe-key-1.0.3-1.noarch.rpm",
   "name": "sfos-patch-keyboard-apostrophe-key",
   "rpm_version": "1.0.3",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-keyboard-apostrophe-key ]; then; /usr/sbin/patchmanager -u sfos-patch-keyboard-apostrophe-key || true; fi"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-keyboard-apostrophe-key ]; then; /usr/sbin/patchmanager -u sfos-patch-keyboard-apostrophe-key || true; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-keyboard-apostrophe-key ]; then; /usr/sbin/patchmanager -u sfos-patch-keyboard-apostrophe-key || true; fi"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-keyboard-apostrophe-key ]; then; /usr/sbin/patchmanager -u sfos-patch-keyboard-apostrophe-key || true; fi",
+      "color": "red"
     }
   ]
 }

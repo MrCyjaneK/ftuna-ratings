@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "beb4dfbb23ae38c0c4c8dae3acb90cc226f5f4fac82d63fa62a1c740aab3e030",
   "key": "mirror/openrepos/DrYak/personal/main/n/nss-mdns-0.10-10.5.1.jolla_.armv7hl.rpm",
   "name": "nss-mdns",
   "rpm_version": "0.10",
   "release": "10.5.1.jolla",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; if [ \"$1\" -eq 1 ] ; then; nss-mdns-config --enable"
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; if [ \"$1\" -eq 1 ] ; then; nss-mdns-config --enable",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ] ; then; nss-mdns-config --disable; fi"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ] ; then; nss-mdns-config --disable; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/sbin/ldconfig"
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig",
+      "color": "red"
     }
   ]
 }

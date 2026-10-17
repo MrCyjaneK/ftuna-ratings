@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "67a7cd8174c55ed8db0225259963a46d42a244ab208d0fec5b541cc88ffc0cd6",
   "key": "mirror/openrepos/Pemek/personal/main/s/sailfishos-patch-browser-history-swipes-0.0.3-1.noarch.rpm",
   "name": "sailfishos-patch-browser-history-swipes",
   "rpm_version": "0.0.3",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-browser-history-swipes ]; then; /usr/sbin/patchmanager -u sailfishos-patch-browser-history-swipes |"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-browser-history-swipes ]; then; /usr/sbin/patchmanager -u sailfishos-patch-browser-history-swipes |",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-browser-history-swipes ]; then; /usr/sbin/patchmanager -u sailfishos-patch-browser-history-swipes |"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-browser-history-swipes ]; then; /usr/sbin/patchmanager -u sailfishos-patch-browser-history-swipes |",
+      "color": "red"
     }
   ]
 }

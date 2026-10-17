@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "6768e497df8736b48de31a8b80d7f4184335d8107977d4716718bfc81bc7cb96",
   "key": "mirror/openrepos/Nokius/personal/main/a/ambience-pcb-0.0.1-10.4.1.jolla_.armv7hl.rpm",
   "name": "ambience-pcb",
   "rpm_version": "0.0.1",
   "release": "10.4.1.jolla",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user restart ambienced.service"
+      "detail": "user=root program=/bin/sh body=systemctl-user restart ambienced.service",
+      "color": "red"
     }
   ]
 }

@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "b1a65f58adb9ad4b2d4583dd821d3529849b526fe78f0f03e633177a302f7eb6",
   "key": "mirror/openrepos/glitchapp/personal/main/f/flashblip-0.3-1.noarch.rpm",
   "name": "flashblip",
   "rpm_version": "0.3",
   "release": "1",
   "arch": "noarch",
-  "verdict": 100,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/flashblip.desktop",
       "code": "sailjail.permission",
-      "detail": "Love2D"
+      "detail": "Love2D",
+      "color": "gray"
     }
   ]
 }

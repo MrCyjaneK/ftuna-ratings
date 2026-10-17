@@ -1,92 +1,46 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "2f75f215e05d395b2d0a6628f0b1aab6de062592bd385ce0a608658fd742c2ab",
   "key": "mirror/openrepos/mrcyjanek/personal/main/s/sfos_airpods-0.1.0-2.armv7hl.rpm",
   "name": "sfos_airpods",
   "rpm_version": "0.1.0",
   "release": "2",
   "arch": "armv7hl",
-  "verdict": 53,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 75
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/sfos_airpods.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemd-sysusers /usr/lib/sysusers.d/sfos_airpods.conf \u003e/dev/null 2\u003e\u00261 || \\; useradd -r -g bluetooth -s /usr/sbin/nologin -c \"AirPods control\" airpods \u003e/dev/nul"
+      "detail": "user=root program=/bin/sh body=systemd-sysusers /usr/lib/sysusers.d/sfos_airpods.conf \u003e/dev/null 2\u003e\u00261 || \\; useradd -r -g bluetooth -s /usr/sbin/nologin -c \"AirPods control\" airpods \u003e/dev/nul",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; systemctl disable --now sfos_airpods.service \u003e/dev/null 2\u003e\u00261 || :; fi"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; systemctl disable --now sfos_airpods.service \u003e/dev/null 2\u003e\u00261 || :; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :"
+      "detail": "user=root program=/bin/sh body=systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/sfos_airpods.service",
       "code": "systemd.service",
-      "detail": "scope=system user=airpods group=bluetooth exec=/usr/bin/airpodsd sandbox=none"
+      "detail": "scope=system user=airpods group=bluetooth exec=/usr/bin/airpodsd sandbox=none",
+      "color": "yellow"
     }
   ]
 }

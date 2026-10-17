@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "9c4a71aef7d6d4d6bada1c1f67e547761cdadaba40363a1e3b2cbbcaeb33db96",
   "key": "chum/5.2_aarch64/aarch64/lpac-2.3.0+git1-1.1.1.bso.aarch64.rpm",
   "name": "lpac",
   "rpm_version": "2.3.0+git1",
   "release": "1.1.1.bso",
   "arch": "aarch64",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/sbin/ldconfig"
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/sbin/ldconfig"
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig",
+      "color": "red"
     }
   ]
 }

@@ -1,104 +1,60 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "8504689200ad15a622128fb8883806b1bfb64fd372dec6b4d575902765d36084",
   "key": "mirror/openrepos/molan/personal/main/h/harbour-tooterb-1.4.3-1.i486.rpm",
   "name": "harbour-tooterb",
   "rpm_version": "1.4.3",
   "release": "1.35.1.bso",
   "arch": "i486",
-  "verdict": 80,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/de.poetaster.harbour.tooterb.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/bin/harbour-tooterb"
+      "detail": "scope=session user=session exec=/usr/bin/harbour-tooterb",
+      "color": "green"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-tooterb-open-url.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-tooterb.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-tooterb.desktop",
       "code": "sailjail.permission",
-      "detail": "Audio"
+      "detail": "Audio",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-tooterb.desktop",
       "code": "sailjail.permission",
-      "detail": "MediaIndexing"
+      "detail": "MediaIndexing",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-tooterb.desktop",
       "code": "sailjail.permission",
-      "detail": "RemovableMedia"
+      "detail": "RemovableMedia",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-tooterb.desktop",
       "code": "sailjail.permission",
-      "detail": "UserDirs"
+      "detail": "UserDirs",
+      "color": "gray"
     }
   ]
 }

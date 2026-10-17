@@ -1,92 +1,46 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "c56efed189fb01fe9aeb8260cfd003e1cfa04bb81f58dbbafa4c0272b4d14df3",
   "key": "mirror/openrepos/gmicroul/personal/main/q/qq-sailfish-patch-2.0-5.aarch64.rpm",
   "name": "qq-sailfish-patch",
   "rpm_version": "2.0",
   "release": "5",
   "arch": "aarch64",
-  "verdict": 57,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/org.freedesktop.portal.Desktop.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/libexec/qq-fileportal"
+      "detail": "scope=session user=session exec=/usr/libexec/qq-fileportal",
+      "color": "green"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/qq-inputboard.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/qq-sailfish.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=f=/usr/bin/qq-sailfish; if [ -f \"$f\" ]; then; [ -f \"$f.patch-orig\" ] || cp -p \"$f\" \"$f.patch-orig\""
+      "detail": "user=root program=/bin/sh body=f=/usr/bin/qq-sailfish; if [ -f \"$f\" ]; then; [ -f \"$f.patch-orig\" ] || cp -p \"$f\" \"$f.patch-orig\"",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"0\" ]; then; rm -f /usr/bin/qq-sailfish.patch-orig; fi"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"0\" ]; then; rm -f /usr/bin/qq-sailfish.patch-orig; fi",
+      "color": "red"
     }
   ]
 }

@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "030f6b302f5de3eff2d14524eb486e0d84692063b5322d1fd5a1cb2f282df008",
   "key": "mirror/openrepos/artur_/personal/main/n/newcompositor-0.0.5-1.i486.rpm",
   "name": "newcompositor",
   "rpm_version": "0.0.5",
   "release": "1",
   "arch": "i486",
-  "verdict": 58,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl --no-reload preset \\--user \\--global newcompositor.service \u003e/dev/null 2\u003e\u00261 || :; fi"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl --no-reload preset \\--user \\--global newcompositor.service \u003e/dev/null 2\u003e\u00261 || :; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload --user --global disable newcompositor.service \u003e /dev/null 2\u003e\u00261 || :; fi"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload --user --global disable newcompositor.service \u003e /dev/null 2\u003e\u00261 || :; fi",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/newcompositor.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/newcompositor --wayland-socket-name newcompositor/wayland                                  --qt-runner-address \"unix:path=${XDG_RUNTIME_DIR}/newcompositor/qt-runner\" sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/newcompositor --wayland-socket-name newcompositor/wayland                                  --qt-runner-address \"unix:path=${XDG_RUNTIME_DIR}/newcompositor/qt-runner\" sandbox=none",
+      "color": "green"
     }
   ]
 }

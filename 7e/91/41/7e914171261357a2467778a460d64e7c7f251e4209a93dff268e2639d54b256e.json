@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "7e914171261357a2467778a460d64e7c7f251e4209a93dff268e2639d54b256e",
   "key": "mirror/openrepos/sailfish_keyboard/personal/main/m/maliit-plugin-presage-1.1.0-10.27.1.jolla.armv7hl.rpm",
   "name": "maliit-plugin-presage",
   "rpm_version": "1.1.0",
   "release": "10.27.1.jolla",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=su - nemo -c \"/bin/systemctl --user restart maliit-server.service\""
+      "detail": "user=root program=/bin/sh body=su - nemo -c \"/bin/systemctl --user restart maliit-server.service\"",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=su - nemo -c \"/bin/systemctl --user restart maliit-server.service\""
+      "detail": "user=root program=/bin/sh body=su - nemo -c \"/bin/systemctl --user restart maliit-server.service\"",
+      "color": "red"
     }
   ]
 }

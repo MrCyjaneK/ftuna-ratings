@@ -1,61 +1,10 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "e67b7552119dc68c8073e66f40e2c2a5e0b33acc5968d5820082515d46179d6a",
   "key": "chum/5.1_aarch64/aarch64/harbour-maep-qt-debuginfo-1.4.13+master.20220516083048.3.gedaa56b-1.2.1.bso.aarch64.rpm",
   "name": "harbour-maep-qt-debuginfo",
   "rpm_version": "1.4.13+master.20220516083048.3.gedaa56b",
   "release": "1.2.1.bso",
   "arch": "aarch64",
-  "verdict": -1,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": []
 }

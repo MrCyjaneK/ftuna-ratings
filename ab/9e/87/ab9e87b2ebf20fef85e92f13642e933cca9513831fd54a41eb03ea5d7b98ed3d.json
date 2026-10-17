@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "ab9e87b2ebf20fef85e92f13642e933cca9513831fd54a41eb03ea5d7b98ed3d",
   "key": "mirror/openrepos/babba22/personal/main/s/sailfishos-instantly-hide-digits-patch-0.1-1.noarch.rpm",
   "name": "sailfishos-instantly-hide-digits-patch",
   "rpm_version": "0.1",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -f /usr/sbin/patchmanager ]; then; /usr/sbin/patchmanager -u sailfishos-instantly-hide-digits-patch || true; fi"
+      "detail": "user=root program=/bin/sh body=if [ -f /usr/sbin/patchmanager ]; then; /usr/sbin/patchmanager -u sailfishos-instantly-hide-digits-patch || true; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -f /usr/sbin/patchmanager ]; then; /usr/sbin/patchmanager -u sailfishos-instantly-hide-digits-patch || true; fi"
+      "detail": "user=root program=/bin/sh body=if [ -f /usr/sbin/patchmanager ]; then; /usr/sbin/patchmanager -u sailfishos-instantly-hide-digits-patch || true; fi",
+      "color": "red"
     }
   ]
 }

@@ -1,104 +1,60 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "7c76fc1a172975dcf01248d5d5c2948412c916e05958a9b23b6c58c6b56a8a9a",
   "key": "chum/5.2_aarch64/aarch64/sysstat-sa-tools-12.7.7+git1-1.4.1.bso.aarch64.rpm",
   "name": "sysstat-sa-tools",
   "rpm_version": "12.7.7+git1",
   "release": "1.4.1.bso",
   "arch": "aarch64",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/sysstat-collect.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/lib64/sa/sa1 1 1 sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/lib64/sa/sa1 1 1 sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/sysstat-collect.timer",
       "code": "systemd.timer",
-      "detail": "scope=system activates=sysstat-collect.service"
+      "detail": "scope=system activates=sysstat-collect.service",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/sysstat-rotate.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/lib64/sa/sa1 --rotate sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/lib64/sa/sa1 --rotate sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/sysstat-rotate.timer",
       "code": "systemd.timer",
-      "detail": "scope=system activates=sysstat-rotate.service"
+      "detail": "scope=system activates=sysstat-rotate.service",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/sysstat-summary.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/lib64/sa/sa2 -A sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/lib64/sa/sa2 -A sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/sysstat-summary.timer",
       "code": "systemd.timer",
-      "detail": "scope=system activates=sysstat-summary.service"
+      "detail": "scope=system activates=sysstat-summary.service",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/sysstat.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/lib64/sa/sa1 --boot sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/lib64/sa/sa1 --boot sandbox=none",
+      "color": "red"
     }
   ]
 }

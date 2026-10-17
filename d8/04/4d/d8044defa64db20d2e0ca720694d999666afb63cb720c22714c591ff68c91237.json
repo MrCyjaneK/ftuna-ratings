@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "d8044defa64db20d2e0ca720694d999666afb63cb720c22714c591ff68c91237",
   "key": "mirror/openrepos/peremen/personal/main/u/unofficial-jolla-language-pack-ko-2.0.5-0.0.1.noarch.rpm",
   "name": "unofficial-jolla-language-pack-ko",
   "rpm_version": "2.0.5",
   "release": "0.0.1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=localedef --replace -i ko_KR -f UTF-8 ko_KR.utf8 --prefix=/"
+      "detail": "user=root program=/bin/sh body=localedef --replace -i ko_KR -f UTF-8 ko_KR.utf8 --prefix=/",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=localedef --delete-from-archive ko_KR.utf8"
+      "detail": "user=root program=/bin/sh body=localedef --delete-from-archive ko_KR.utf8",
+      "color": "red"
     }
   ]
 }

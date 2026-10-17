@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "fba0025cdd371357d7737fbf622e2d2e8370e771678fb17bff10dc284177dc7d",
   "key": "mirror/openrepos/For_the_freedom/personal/main/h/harbour-xhvpn-1.0.0-1.armv7hl.rpm",
   "name": "harbour-xhvpn",
   "rpm_version": "1.0.0",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/bin/update-mime-database /usr/share/mime \u003e/dev/null 2\u003e\u00261 || :; systemctl try-restart connman-vpn.service \u003e/dev/null 2\u003e\u00261 || :"
+      "detail": "user=root program=/bin/sh body=/usr/bin/update-mime-database /usr/share/mime \u003e/dev/null 2\u003e\u00261 || :; systemctl try-restart connman-vpn.service \u003e/dev/null 2\u003e\u00261 || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/bin/update-mime-database /usr/share/mime \u003e/dev/null 2\u003e\u00261 || :; systemctl try-restart connman-vpn.service \u003e/dev/null 2\u003e\u00261 || :"
+      "detail": "user=root program=/bin/sh body=/usr/bin/update-mime-database /usr/share/mime \u003e/dev/null 2\u003e\u00261 || :; systemctl try-restart connman-vpn.service \u003e/dev/null 2\u003e\u00261 || :",
+      "color": "red"
     }
   ]
 }

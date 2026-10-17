@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "953e01785ebd0fecad59f3b52e372a140feb35c0427a92dac70fd85f19c06132",
   "key": "mirror/openrepos/SomethingElse/personal/main/s/sfos-patch-homescreen-cover-icons-0.1.2-15.noarch.rpm",
   "name": "sfos-patch-homescreen-cover-icons",
   "rpm_version": "0.1.2",
   "release": "15",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=set -o pipefail; if mkdir -p '/var/lib/rpm-state/sfos-patch-homescreen-cover-icons'; then; dbus-send --print-reply --system --type=method_call \\"
+      "detail": "user=root program=/bin/sh body=set -o pipefail; if mkdir -p '/var/lib/rpm-state/sfos-patch-homescreen-cover-icons'; then; dbus-send --print-reply --system --type=method_call \\",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/sbin/patchmanager -u 'sfos-patch-homescreen-cover-icons' || true"
+      "detail": "user=root program=/bin/sh body=/usr/sbin/patchmanager -u 'sfos-patch-homescreen-cover-icons' || true",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%posttrans",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -e '/var/lib/rpm-state/sfos-patch-homescreen-cover-icons/was-applied' ]; then; /usr/sbin/patchmanager -a 'sfos-patch-homescreen-cover-icons' || true; rm '/"
+      "detail": "user=root program=/bin/sh body=if [ -e '/var/lib/rpm-state/sfos-patch-homescreen-cover-icons/was-applied' ]; then; /usr/sbin/patchmanager -a 'sfos-patch-homescreen-cover-icons' || true; rm '/",
+      "color": "red"
     }
   ]
 }

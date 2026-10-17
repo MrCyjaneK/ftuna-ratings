@@ -1,24 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "68de9baaede0471ed62f44a3ff81175d0f1824c38e140b24b51c73c27727ae96",
   "key": "mirror/openrepos/aviarus/personal/main/o/okb-lang-ru-0.4-0.noarch.rpm",
   "name": "okb-lang-ru",
   "rpm_version": "0.4",
   "release": "0",
   "arch": "noarch",
-  "verdict": -1,
-  "scores": [
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "rpm",
       "path": "mirror/openrepos/aviarus/personal/main/o/okb-lang-ru-0.4-0.noarch.rpm",
       "code": "rpm.read",
-      "detail": "bad magic"
+      "detail": "bad magic",
+      "color": "gray"
     }
   ]
 }

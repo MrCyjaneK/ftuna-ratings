@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "fdd18bb33a8721de6e53cf9ab7327b546395b2eb86be227892fa917d855b915d",
   "key": "mirror/openrepos/beidl/personal/main/h/harbour-owncloud-daemon-0.5.2-1.i486.rpm",
   "name": "harbour-owncloud-daemon",
   "rpm_version": "0.5.2",
   "release": "1",
   "arch": "i486",
-  "verdict": 58,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/bin/systemctl-user enable harbour-owncloud-daemon.service \u003e/dev/null 2\u003e\u00261 || :; /bin/systemctl-user enable harbour-owncloud-permissiond.service \u003e/dev/null 2\u003e\u00261"
+      "detail": "user=root program=/bin/sh body=/bin/systemctl-user enable harbour-owncloud-daemon.service \u003e/dev/null 2\u003e\u00261 || :; /bin/systemctl-user enable harbour-owncloud-permissiond.service \u003e/dev/null 2\u003e\u00261",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/harbour-owncloud-daemon.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-owncloud-daemon sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-owncloud-daemon sandbox=none",
+      "color": "green"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/harbour-owncloud-permissiond.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-owncloud-permissiond sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-owncloud-permissiond sandbox=none",
+      "color": "green"
     }
   ]
 }

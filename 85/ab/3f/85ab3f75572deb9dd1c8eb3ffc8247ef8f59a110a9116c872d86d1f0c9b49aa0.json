@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "85ab3f75572deb9dd1c8eb3ffc8247ef8f59a110a9116c872d86d1f0c9b49aa0",
   "key": "mirror/openrepos/gexc/personal/main/s/strokeb-0.1.1-2.armv7hl.rpm",
   "name": "strokeb",
   "rpm_version": "0.1.1",
   "release": "2",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -e /usr/share/maliit/plugins/com/jolla/strokeLargeXt9CpInputHandler.qml ]; then rm /usr/share/maliit/plugins/com/jolla/strokeLargeXt9CpInputHandler.qml; fi"
+      "detail": "user=root program=/bin/sh body=if [ -e /usr/share/maliit/plugins/com/jolla/strokeLargeXt9CpInputHandler.qml ]; then rm /usr/share/maliit/plugins/com/jolla/strokeLargeXt9CpInputHandler.qml; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=su - nemo -c \"systemctl --user restart maliit-server.service\""
+      "detail": "user=root program=/bin/sh body=su - nemo -c \"systemctl --user restart maliit-server.service\"",
+      "color": "red"
     }
   ]
 }

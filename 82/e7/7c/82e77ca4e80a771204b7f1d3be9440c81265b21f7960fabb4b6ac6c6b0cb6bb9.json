@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "82e77ca4e80a771204b7f1d3be9440c81265b21f7960fabb4b6ac6c6b0cb6bb9",
   "key": "mirror/openrepos/Van_ess0/personal/main/m/mtr-0.85-7.armv7hl.rpm",
   "name": "mtr",
   "rpm_version": "0.85",
   "release": "7",
   "arch": "armv7hl",
-  "verdict": 18,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": 35
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": 0
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "filecaps",
       "path": "/usr/sbin/mtr",
       "code": "filecaps",
-      "detail": "= cap_net_raw+ep mode 0104755 user root group root"
+      "detail": "= cap_net_raw+ep mode 0104755 user root group root",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/sbin/mtr",
       "code": "setuid",
-      "detail": "/usr/sbin/mtr mode 0104755 user root group root file"
+      "detail": "/usr/sbin/mtr mode 0104755 user root group root file",
+      "color": "red"
     }
   ]
 }

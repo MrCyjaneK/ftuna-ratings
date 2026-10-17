@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "1895bc5938e2a5e891c126b39c37060b1d234a9911b06c18a0e2c22a9cb9bf34",
   "key": "chum/5.2_armv7hl/armv7hl/pcsc-ccid-1.4.35-1.2.1.bso.armv7hl.rpm",
   "name": "pcsc-ccid",
   "rpm_version": "1.4.35",
   "release": "1.2.1.bso",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": 30
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "udev",
       "path": "/lib/udev/rules.d/92_pcscd_ccid.rules",
       "code": "udev.run",
-      "detail": "user=root program=/usr/sbin/Kobil_mIDentity_switch"
+      "detail": "user=root program=/usr/sbin/Kobil_mIDentity_switch",
+      "color": "red"
     }
   ]
 }

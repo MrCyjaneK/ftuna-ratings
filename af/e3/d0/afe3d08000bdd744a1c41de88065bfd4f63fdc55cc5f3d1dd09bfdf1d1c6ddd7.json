@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "afe3d08000bdd744a1c41de88065bfd4f63fdc55cc5f3d1dd09bfdf1d1c6ddd7",
   "key": "mirror/openrepos/Mister_Magister/personal/main/m/morsender-0.4.0master.20180808172652.38f4bb4-1.23.1.armv7hl.rpm",
   "name": "Morsender",
   "rpm_version": "0.4.0+master.20180808172652.38f4bb4",
   "release": "1.23.1",
   "arch": "armv7hl",
-  "verdict": 82,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/com.mistermagister.morsender.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/bin/invoker -s --type=generic /usr/bin/Morsender"
+      "detail": "scope=session user=session exec=/usr/bin/invoker -s --type=generic /usr/bin/Morsender",
+      "color": "green"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/Morsender.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/Morsender.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/invoker -s --type=generic /usr/bin/Morsender --daemon sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/invoker -s --type=generic /usr/bin/Morsender --daemon sandbox=none",
+      "color": "green"
     }
   ]
 }

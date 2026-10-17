@@ -1,92 +1,46 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "367071a7eb09a523c80a55e0e027403d0fb1478e5ed60a457bc7fe26261c3821",
   "key": "mirror/openrepos/aviarus/personal/main/o/okboard-0.6.39-5.aarch64.rpm",
   "name": "okboard",
   "rpm_version": "0.6.39",
   "release": "5",
   "arch": "aarch64",
-  "verdict": 43,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/okboard.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=find ${home_dir}/ -xdev -mindepth 2 -maxdepth 2 -type d -name .config | sed -r 's=$=/maliit.org/server.conf=' | xargs -r rm -f || true; killall maliit-server 2\u003e"
+      "detail": "user=root program=/bin/sh body=find ${home_dir}/ -xdev -mindepth 2 -maxdepth 2 -type d -name .config | sed -r 's=$=/maliit.org/server.conf=' | xargs -r rm -f || true; killall maliit-server 2\u003e",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=rm -f /usr/share/okboard/install.log /usr/share/okboard/install.err; if [ $1 = 0 ] ; then  # do not run uninstall script in case of upgrade; rm -f /usr/lib64/ma"
+      "detail": "user=root program=/bin/sh body=rm -f /usr/share/okboard/install.log /usr/share/okboard/install.err; if [ $1 = 0 ] ; then  # do not run uninstall script in case of upgrade; rm -f /usr/lib64/ma",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ] ; then; find ${home_dir}/ -xdev -mindepth 2 -maxdepth 2 -type d -name .config | sed -r 's=$=/maliit.org/server.conf=' | xargs -r rm -f || true; ki"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ] ; then; find ${home_dir}/ -xdev -mindepth 2 -maxdepth 2 -type d -name .config | sed -r 's=$=/maliit.org/server.conf=' | xargs -r rm -f || true; ki",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%triggerpostun okboard-experimental, %triggerpostun okboard-full",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=killall maliit-server 2\u003e/dev/null || true; /usr/share/okboard/patch.sh install \u003e\u003e /usr/share/okboard/install.log 2\u003e\u00261 || true"
+      "detail": "user=root program=/bin/sh body=killall maliit-server 2\u003e/dev/null || true; /usr/share/okboard/patch.sh install \u003e\u003e /usr/share/okboard/install.log 2\u003e\u00261 || true",
+      "color": "red"
     }
   ]
 }

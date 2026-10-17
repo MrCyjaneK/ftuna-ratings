@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "b5eff0bfe8e7115c7eadb76eb60fa7e3cb5b137a0c5f18abc7daf5f57129c6b5",
   "key": "mirror/openrepos/ichthyosaurus/personal/main/s/sfos-patch-office-favorites-1.0.0-1.noarch.rpm",
   "name": "sfos-patch-office-favorites",
   "rpm_version": "1.0.0",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-office-favorites ]; then; /usr/sbin/patchmanager -u sfos-patch-office-favorites || true; fi"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-office-favorites ]; then; /usr/sbin/patchmanager -u sfos-patch-office-favorites || true; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-office-favorites ]; then; /usr/sbin/patchmanager -u sfos-patch-office-favorites || true; fi"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-office-favorites ]; then; /usr/sbin/patchmanager -u sfos-patch-office-favorites || true; fi",
+      "color": "red"
     }
   ]
 }

@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "507a2a83dbbbaa0211ac2b5d4a922e919f47e6f383cce80176e17f952f374419",
   "key": "mirror/openrepos/alina/personal/main/s/sailfishos-patch-voicecall-quickaction-3.0.0-1.noarch.rpm",
   "name": "sailfishos-patch-voicecall-quickaction",
   "rpm_version": "3.0.0",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-voicecall-quickaction ]; then; /usr/sbin/patchmanager -u sailfishos-patch-voicecall-quickaction || "
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-voicecall-quickaction ]; then; /usr/sbin/patchmanager -u sailfishos-patch-voicecall-quickaction || ",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-voicecall-quickaction ]; then; /usr/sbin/patchmanager -u sailfishos-patch-voicecall-quickaction || "
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-voicecall-quickaction ]; then; /usr/sbin/patchmanager -u sailfishos-patch-voicecall-quickaction || ",
+      "color": "red"
     }
   ]
 }

@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "16dccda0d22977276c066a3168681055d6fd68b67273c10d0c79ab6a5fbc4cf3",
   "key": "mirror/openrepos/martonmiklos/personal/main/u/unofficial-jolla-language-pack-ja-3.4.0-0.0.1.noarch.rpm",
   "name": "unofficial-jolla-language-pack-ja",
   "rpm_version": "3.4.0",
   "release": "0.0.1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/bin/localedef --force --replace --verbose -i ja_JP -f UTF-8 ja_JP.utf8; exit 0"
+      "detail": "user=root program=/bin/sh body=/usr/bin/localedef --force --replace --verbose -i ja_JP -f UTF-8 ja_JP.utf8; exit 0",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/bin/localedef --delete-from-archive ja_JP.utf8"
+      "detail": "user=root program=/bin/sh body=/usr/bin/localedef --delete-from-archive ja_JP.utf8",
+      "color": "red"
     }
   ]
 }

@@ -1,104 +1,60 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "f3c87c210c3505baccfdbf5d8f464348bc142d42dc86ce644cd782858e60f321",
   "key": "mirror/openrepos/lachs0r/personal/main/k/krb5-mini-1.17-0.armv7hl.rpm",
   "name": "krb5-mini",
   "rpm_version": "1.17",
   "release": "0",
   "arch": "armv7hl",
-  "verdict": 33,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": 40
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "hooks",
       "path": "/etc/profile.d/krb5.csh",
       "code": "hooks.profile",
-      "detail": "mode 0100644 user root group root"
+      "detail": "mode 0100644 user root group root",
+      "color": "red"
     },
     {
       "module": "hooks",
       "path": "/etc/profile.d/krb5.sh",
       "code": "hooks.profile",
-      "detail": "mode 0100644 user root group root"
+      "detail": "mode 0100644 user root group root",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/sbin/ldconfig"
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/sbin/ldconfig"
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/lib/systemd/system/kadmind.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/lib/mit/sbin/kadmind -P /var/run/kadmind.pid $KADMIND_ARGS sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/lib/mit/sbin/kadmind -P /var/run/kadmind.pid $KADMIND_ARGS sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/lib/systemd/system/kpropd.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/lib/mit/sbin/kpropd -S sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/lib/mit/sbin/kpropd -S sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/lib/systemd/system/krb5kdc.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/lib/mit/sbin/krb5kdc -P /var/run/krb5kdc.pid $KRB5KDC_ARGS sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/lib/mit/sbin/krb5kdc -P /var/run/krb5kdc.pid $KRB5KDC_ARGS sandbox=none",
+      "color": "red"
     }
   ]
 }

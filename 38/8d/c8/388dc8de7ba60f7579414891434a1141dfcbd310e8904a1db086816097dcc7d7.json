@@ -1,92 +1,46 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "388dc8de7ba60f7579414891434a1141dfcbd310e8904a1db086816097dcc7d7",
   "key": "mirror/openrepos/blizzz/personal/main/h/harbour-nextcloud-talk-1.0.1-1.18.1.jolla_.armv7hl.rpm",
   "name": "harbour-nextcloud-talk",
   "rpm_version": "1.0.1",
   "release": "1.18.1.jolla",
   "arch": "armv7hl",
-  "verdict": 65,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-nextcloud-talk.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-nextcloud-talk.desktop",
       "code": "sailjail.permission",
-      "detail": "MediaIndexing"
+      "detail": "MediaIndexing",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-nextcloud-talk.desktop",
       "code": "sailjail.permission",
-      "detail": "Secrets"
+      "detail": "Secrets",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-nextcloud-talk.desktop",
       "code": "sailjail.permission",
-      "detail": "UserDirs"
+      "detail": "UserDirs",
+      "color": "gray"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $(awk -F=  '/^VERSION_ID/ {gsub(/\\./,\"\") ;  print $2}' /etc/os-release) -lt 44000 ]; then; printf '[X-Sailjail]\\nSandboxing=disabled\\n' \u003e /etc/sailjail/app"
+      "detail": "user=root program=/bin/sh body=if [ $(awk -F=  '/^VERSION_ID/ {gsub(/\\./,\"\") ;  print $2}' /etc/os-release) -lt 44000 ]; then; printf '[X-Sailjail]\\nSandboxing=disabled\\n' \u003e /etc/sailjail/app",
+      "color": "red"
     }
   ]
 }

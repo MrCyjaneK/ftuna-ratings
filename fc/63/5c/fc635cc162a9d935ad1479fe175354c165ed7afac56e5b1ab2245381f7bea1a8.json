@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "fc635cc162a9d935ad1479fe175354c165ed7afac56e5b1ab2245381f7bea1a8",
   "key": "chum/5.2_i486/noarch/lxc-templates-desktop-1.4-1.1.1.bso.noarch.rpm",
   "name": "lxc-templates-desktop",
   "rpm_version": "1.4",
   "release": "1.1.1.bso",
   "arch": "noarch",
-  "verdict": 0,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": 0
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "setuid",
       "path": "/usr/share/lxc/templates/lxc-sfos-download",
       "code": "setuid",
-      "detail": "/usr/share/lxc/templates/lxc-sfos-download mode 0104755 user root group root script"
+      "detail": "/usr/share/lxc/templates/lxc-sfos-download mode 0104755 user root group root script",
+      "color": "red"
     }
   ]
 }

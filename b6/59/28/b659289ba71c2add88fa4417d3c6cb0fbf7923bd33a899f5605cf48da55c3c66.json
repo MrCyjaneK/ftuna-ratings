@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "b659289ba71c2add88fa4417d3c6cb0fbf7923bd33a899f5605cf48da55c3c66",
   "key": "mirror/openrepos/gbour/personal/main/h/harbour-smssync-0.2.0-1.armv7hl.rpm",
   "name": "harbour-smssync",
   "rpm_version": "0.2.0",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 58,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload; systemctl-user restart harbour-smssyncd; systemctl-user enable harbour-smssyncd"
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload; systemctl-user restart harbour-smssyncd; systemctl-user enable harbour-smssyncd",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"0\" ]; then; systemctl-user stop harbour-smssyncd; systemctl-user disable harbour-smssyncd"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"0\" ]; then; systemctl-user stop harbour-smssyncd; systemctl-user disable harbour-smssyncd",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/harbour-smssyncd.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-smssyncd sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-smssyncd sandbox=none",
+      "color": "green"
     }
   ]
 }

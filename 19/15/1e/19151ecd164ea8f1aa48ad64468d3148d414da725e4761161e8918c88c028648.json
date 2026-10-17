@@ -1,116 +1,74 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "19151ecd164ea8f1aa48ad64468d3148d414da725e4761161e8918c88c028648",
   "key": "mirror/openrepos/nephros/personal/main/o/openrepos-themecolor-2.9-2.noarch.rpm",
   "name": "openrepos-themecolor",
   "rpm_version": "2.9",
   "release": "2",
   "arch": "noarch",
-  "verdict": 72,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/openrepos-themecolor.desktop",
       "code": "sailjail.permission",
-      "detail": "Pictures"
+      "detail": "Pictures",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/openrepos-themecolor.desktop",
       "code": "sailjail.permission",
-      "detail": "MediaIndexing"
+      "detail": "MediaIndexing",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/openrepos-themecolor.desktop",
       "code": "sailjail.permission",
-      "detail": "Documents"
+      "detail": "Documents",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/openrepos-themecolor.desktop",
       "code": "sailjail.permission",
-      "detail": "Downloads"
+      "detail": "Downloads",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/openrepos-themecolor.desktop",
       "code": "sailjail.permission",
-      "detail": "Ambience"
+      "detail": "Ambience",
+      "color": "gray"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=update-desktop-database /usr/share/applications \u0026\u003e /dev/null || :; systemctl --daemon-reload; glib-compile-schemas --strict /usr/share/openrepos-themecolor/glib"
+      "detail": "user=root program=/bin/sh body=update-desktop-database /usr/share/applications \u0026\u003e /dev/null || :; systemctl --daemon-reload; glib-compile-schemas --strict /usr/share/openrepos-themecolor/glib",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=update-desktop-database /usr/share/applications \u0026\u003e /dev/null || :; systemctl --daemon-reload"
+      "detail": "user=root program=/bin/sh body=update-desktop-database /usr/share/applications \u0026\u003e /dev/null || :; systemctl --daemon-reload",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/openrepos-themecolor-makerpm.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/share/openrepos-themecolor/makeambience.sh sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/share/openrepos-themecolor/makeambience.sh sandbox=none",
+      "color": "green"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/openrepos-themecolor-watcher.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/openrepos-themecolor-watcher.py sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/openrepos-themecolor-watcher.py sandbox=none",
+      "color": "green"
     }
   ]
 }

@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "1246a1f8a194b640ba7c9bbdd788f35e32b540b6d54878f48aa477ab7938de48",
   "key": "mirror/openrepos/ade/personal/main/u/upmpdcli-1.8.12-0.armv7hl.rpm",
   "name": "upmpdcli",
   "rpm_version": "1.8.12",
   "release": "0",
   "arch": "armv7hl",
-  "verdict": 38,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": 0
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%posttrans",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :"
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/upmpdcli.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/upmpdcli -c /etc/upmpdcli.conf sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/upmpdcli -c /etc/upmpdcli.conf sandbox=none",
+      "color": "green"
     },
     {
       "module": "worldwrite",
       "path": "/etc/upmpdcli.conf",
       "code": "worldwrite",
-      "detail": "/etc/upmpdcli.conf mode 0100666 user root group root file"
+      "detail": "/etc/upmpdcli.conf mode 0100666 user root group root file",
+      "color": "red"
     }
   ]
 }

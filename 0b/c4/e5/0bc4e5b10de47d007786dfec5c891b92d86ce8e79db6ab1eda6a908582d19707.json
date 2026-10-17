@@ -1,92 +1,46 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "0bc4e5b10de47d007786dfec5c891b92d86ce8e79db6ab1eda6a908582d19707",
   "key": "mirror/openrepos/nephros/personal/main/o/openrepos-djvulibre-open-0.3.1-3.noarch.rpm",
   "name": "openrepos-djvulibre-open",
   "rpm_version": "0.3.1",
   "release": "3",
   "arch": "noarch",
-  "verdict": 63,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/openrepos-djvulibre-open.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=update-desktop-database /usr/share/applications \u0026\u003e /dev/null || :"
+      "detail": "user=root program=/bin/sh body=update-desktop-database /usr/share/applications \u0026\u003e /dev/null || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl --user --no-reload disable openrepos-djvulibre-mimes.service \u003e/dev/null 2\u003e\u00261 || :; systemctl stop --user openrepos-djvulibre-mimes.service \u003e/dev/null "
+      "detail": "user=root program=/bin/sh body=systemctl --user --no-reload disable openrepos-djvulibre-mimes.service \u003e/dev/null 2\u003e\u00261 || :; systemctl stop --user openrepos-djvulibre-mimes.service \u003e/dev/null ",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=update-desktop-database /usr/share/applications \u0026\u003e /dev/null || :"
+      "detail": "user=root program=/bin/sh body=update-desktop-database /usr/share/applications \u0026\u003e /dev/null || :",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/openrepos-djvulibre-open-installer.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/share/openrepos-djvulibre-open/openrepos-djvulibre-open-installer.sh sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/share/openrepos-djvulibre-open/openrepos-djvulibre-open-installer.sh sandbox=none",
+      "color": "green"
     }
   ]
 }

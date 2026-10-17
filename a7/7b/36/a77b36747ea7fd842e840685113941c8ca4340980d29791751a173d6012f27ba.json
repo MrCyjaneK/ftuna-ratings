@@ -1,104 +1,60 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "a77b36747ea7fd842e840685113941c8ca4340980d29791751a173d6012f27ba",
   "key": "mirror/openrepos/lpr/personal/main/a/alsa-utils-1.2.3git2-1.3.1.jolla_.armv7hl.rpm",
   "name": "alsa-utils",
   "rpm_version": "1.2.3+git2",
   "release": "1.3.1.jolla",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": 30
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -s /etc/alsa/asound.state -a ! -s /etc/asound.state ] ; then; mv /etc/alsa/asound.state /etc/asound.state; fi"
+      "detail": "user=root program=/bin/sh body=if [ -s /etc/alsa/asound.state -a ! -s /etc/asound.state ] ; then; mv /etc/alsa/asound.state /etc/asound.state; fi",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/alsa-restore.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=-/usr/sbin/alsactl restore sandbox=none"
+      "detail": "scope=system user=root group=root exec=-/usr/sbin/alsactl restore sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/alsa-state.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=-/usr/sbin/alsactl -s -n 19 -c rdaemon sandbox=none"
+      "detail": "scope=system user=root group=root exec=-/usr/sbin/alsactl -s -n 19 -c rdaemon sandbox=none",
+      "color": "red"
     },
     {
       "module": "udev",
       "path": "/lib/udev/rules.d/90-alsa-restore.rules",
       "code": "udev.run",
-      "detail": "user=root program=/usr/sbin/alsactl restore $attr{device/number}"
+      "detail": "user=root program=/usr/sbin/alsactl restore $attr{device/number}",
+      "color": "red"
     },
     {
       "module": "udev",
       "path": "/lib/udev/rules.d/90-alsa-restore.rules",
       "code": "udev.run",
-      "detail": "user=root program=/usr/sbin/alsactl nrestore $attr{device/number}"
+      "detail": "user=root program=/usr/sbin/alsactl nrestore $attr{device/number}",
+      "color": "red"
     },
     {
       "module": "udev",
       "path": "/lib/udev/rules.d/90-alsa.rules",
       "code": "udev.run",
-      "detail": "user=root program=/sbin/alsactl -E ALSA_CONFIG_PATH=/etc/alsa/alsactl.conf --initfile=/lib/alsa/init/00main restore /dev/$name"
+      "detail": "user=root program=/sbin/alsactl -E ALSA_CONFIG_PATH=/etc/alsa/alsactl.conf --initfile=/lib/alsa/init/00main restore /dev/$name",
+      "color": "red"
     },
     {
       "module": "udev",
       "path": "/lib/udev/rules.d/90-alsa.rules",
       "code": "udev.run",
-      "detail": "user=root program=/sbin/alsactl -E ALSA_CONFIG_PATH=/etc/alsa/alsactl.conf store /dev/$name"
+      "detail": "user=root program=/sbin/alsactl -E ALSA_CONFIG_PATH=/etc/alsa/alsactl.conf store /dev/$name",
+      "color": "red"
     }
   ]
 }

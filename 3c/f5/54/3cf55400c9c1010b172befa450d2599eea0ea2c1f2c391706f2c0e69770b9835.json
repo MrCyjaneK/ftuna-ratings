@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "3cf55400c9c1010b172befa450d2599eea0ea2c1f2c391706f2c0e69770b9835",
   "key": "chum/5.1_i486/noarch/harbour-multimodal-0.98-1.9.1.bso.noarch.rpm",
   "name": "harbour-multimodal",
   "rpm_version": "0.98",
   "release": "1.9.1.bso",
   "arch": "noarch",
-  "verdict": 65,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-multimodal.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-multimodal.desktop",
       "code": "sailjail.permission",
-      "detail": "Location"
+      "detail": "Location",
+      "color": "gray"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=sed -i 's/CLIENT-ID/c832e0d20b3d711bd456b8dad388a7a1/' /usr/share/harbour-multimodal/src/dbahn_client/dbahn_client.py; sed -i 's/API-ID/5067e18b90aa7c7f6b9b45c3"
+      "detail": "user=root program=/bin/sh body=sed -i 's/CLIENT-ID/c832e0d20b3d711bd456b8dad388a7a1/' /usr/share/harbour-multimodal/src/dbahn_client/dbahn_client.py; sed -i 's/API-ID/5067e18b90aa7c7f6b9b45c3",
+      "color": "red"
     }
   ]
 }

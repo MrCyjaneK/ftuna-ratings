@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "3c2d0eb15ce329d91c4c6206380c6af19392c401dd831dadf2c075ca4ce6c1cf",
   "key": "mirror/openrepos/Mister_Magister/personal/main/m/microtube-3.9.1-1.armv7hl.rpm",
   "name": "microtube",
   "rpm_version": "3.9.1",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 70,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/com.verdanditeam.microtube.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/bin/invoker --type=silica-qt5 /usr/bin/microtube"
+      "detail": "scope=session user=session exec=/usr/bin/invoker --type=silica-qt5 /usr/bin/microtube",
+      "color": "green"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/microtube.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     }
   ]
 }

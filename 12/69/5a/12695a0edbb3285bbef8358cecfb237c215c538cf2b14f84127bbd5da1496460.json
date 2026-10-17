@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "12695a0edbb3285bbef8358cecfb237c215c538cf2b14f84127bbd5da1496460",
   "key": "mirror/openrepos/lpr_A7/personal/main/s/screen-4.0.2-1.1.2.armv7hl.rpm",
   "name": "screen",
   "rpm_version": "4.0.2",
   "release": "1.1.2",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": 15
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": 45
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "hooks",
       "path": "/etc/pam.d/screen",
       "code": "hooks.pam",
-      "detail": "mode 0100644 user root group root"
+      "detail": "mode 0100644 user root group root",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/sbin/groupadd -g 84 -r -f screen; :"
+      "detail": "user=root program=/bin/sh body=/usr/sbin/groupadd -g 84 -r -f screen; :",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/bin/screen",
       "code": "setgid",
-      "detail": "/usr/bin/screen mode 0102755 user root group screen file"
+      "detail": "/usr/bin/screen mode 0102755 user root group screen file",
+      "color": "red"
     }
   ]
 }

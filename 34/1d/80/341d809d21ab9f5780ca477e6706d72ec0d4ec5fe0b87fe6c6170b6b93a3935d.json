@@ -1,104 +1,60 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "341d809d21ab9f5780ca477e6706d72ec0d4ec5fe0b87fe6c6170b6b93a3935d",
   "key": "chum/5.1_aarch64/noarch/waydroid-1.4.3+git3-1.10.1.bso.noarch.rpm",
   "name": "waydroid",
   "rpm_version": "1.4.3+git3",
   "release": "1.10.1.bso",
   "arch": "noarch",
-  "verdict": 33,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 30
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": 20
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/system-services/id.waydro.Container.service",
       "code": "dbus.service",
-      "detail": "scope=system user=root exec=/usr/bin/waydroid -w container start systemd=waydroid-container.service"
+      "detail": "scope=system user=root exec=/usr/bin/waydroid -w container start systemd=waydroid-container.service",
+      "color": "red"
     },
     {
       "module": "hooks",
       "path": "/etc/modules-load.d/waydroid.conf",
       "code": "hooks.boot",
-      "detail": "mode 0100644 user root group root"
+      "detail": "mode 0100644 user root group root",
+      "color": "red"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/waydroid.app.install.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/waydroid.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 == 2 ]; then; sed -i '/apparmor/d' /var/lib/waydroid/lxc/waydroid/config || :; grep config_session /var/lib/waydroid/lxc/waydroid/config || sed -e '/con"
+      "detail": "user=root program=/bin/sh body=if [ $1 == 2 ]; then; sed -i '/apparmor/d' /var/lib/waydroid/lxc/waydroid/config || :; grep config_session /var/lib/waydroid/lxc/waydroid/config || sed -e '/con",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl daemon-reload; systemctl-user daemon-reload; systemctl enable waydroid-container"
+      "detail": "user=root program=/bin/sh body=systemctl daemon-reload; systemctl-user daemon-reload; systemctl enable waydroid-container",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/waydroid-container.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/bin/waydroid container start sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/bin/waydroid container start sandbox=none",
+      "color": "red"
     }
   ]
 }

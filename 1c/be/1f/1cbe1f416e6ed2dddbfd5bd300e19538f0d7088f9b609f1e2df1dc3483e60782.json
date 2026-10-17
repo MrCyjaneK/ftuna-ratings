@@ -1,86 +1,39 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "1cbe1f416e6ed2dddbfd5bd300e19538f0d7088f9b609f1e2df1dc3483e60782",
   "key": "chum/5.1_aarch64/aarch64/monit-5.34.0+git11-1.2.1.bso.aarch64.rpm",
   "name": "monit",
   "rpm_version": "5.34.0+git11",
   "release": "1.2.1.bso",
   "arch": "aarch64",
-  "verdict": 45,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/monit-web.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl --no-reload preset monit.service \u003e/dev/null 2\u003e\u00261 || :; fi"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl --no-reload preset monit.service \u003e/dev/null 2\u003e\u00261 || :; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload disable --now monit.service \u003e /dev/null 2\u003e\u00261 || :; fi"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload disable --now monit.service \u003e /dev/null 2\u003e\u00261 || :; fi",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/monit.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/bin/monit -I sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/bin/monit -I sandbox=none",
+      "color": "red"
     }
   ]
 }

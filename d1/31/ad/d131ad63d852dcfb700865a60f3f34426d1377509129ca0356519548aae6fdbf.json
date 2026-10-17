@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "d131ad63d852dcfb700865a60f3f34426d1377509129ca0356519548aae6fdbf",
   "key": "mirror/openrepos/pvanhoof/personal/main/g/geoclue-provider-yandex-0.2.1-1.aarch64.rpm",
   "name": "geoclue-provider-yandex",
   "rpm_version": "0.2.1",
   "release": "1",
   "arch": "aarch64",
-  "verdict": 85,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/org.freedesktop.Geoclue.Providers.Yandex.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/bin/invoker --type=qt5 /usr/libexec/geoclue-yandex"
+      "detail": "scope=session user=session exec=/usr/bin/invoker --type=qt5 /usr/libexec/geoclue-yandex",
+      "color": "green"
     }
   ]
 }

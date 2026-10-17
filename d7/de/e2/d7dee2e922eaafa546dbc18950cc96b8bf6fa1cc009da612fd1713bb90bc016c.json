@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "d7dee2e922eaafa546dbc18950cc96b8bf6fa1cc009da612fd1713bb90bc016c",
   "key": "mirror/openrepos/martonmiklos/personal/main/u/unofficial-jolla-language-pack-sk-3.4.0-0.0.1.noarch.rpm",
   "name": "unofficial-jolla-language-pack-sk",
   "rpm_version": "3.4.0",
   "release": "0.0.1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/bin/localedef --force --replace --verbose -i sk_SK -f UTF-8 sk_SK.utf8; exit 0"
+      "detail": "user=root program=/bin/sh body=/usr/bin/localedef --force --replace --verbose -i sk_SK -f UTF-8 sk_SK.utf8; exit 0",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/bin/localedef --delete-from-archive sk_SK.utf8"
+      "detail": "user=root program=/bin/sh body=/usr/bin/localedef --delete-from-archive sk_SK.utf8",
+      "color": "red"
     }
   ]
 }

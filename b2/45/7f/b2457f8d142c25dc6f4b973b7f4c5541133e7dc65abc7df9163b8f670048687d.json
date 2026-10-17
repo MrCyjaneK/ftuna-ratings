@@ -1,92 +1,46 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "b2457f8d142c25dc6f4b973b7f4c5541133e7dc65abc7df9163b8f670048687d",
   "key": "chum/5.2_armv7hl/armv7hl/collectd-5.12.0.sfos.7-1.6.1.bso.armv7hl.rpm",
   "name": "collectd",
   "rpm_version": "5.12.0.sfos.7",
   "release": "1.6.1.bso",
   "arch": "armv7hl",
-  "verdict": 58,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user stop collectd.service\" || systemctl-user stop collectd.service || true; exit 0"
+      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user stop collectd.service\" || systemctl-user stop collectd.service || true; exit 0",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user daemon-reload\" || systemctl-user daemon-reload || true"
+      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user daemon-reload\" || systemctl-user daemon-reload || true",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user disable collectd.service\" || systemctl-user disable collectd.service || true; su nemo -c \"systemctl --user stop collectd.service\" |"
+      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user disable collectd.service\" || systemctl-user disable collectd.service || true; su nemo -c \"systemctl --user stop collectd.service\" |",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user daemon-reload\" || systemctl-user daemon-reload || true"
+      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user daemon-reload\" || systemctl-user daemon-reload || true",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/collectd.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/sbin/collectd sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/sbin/collectd sandbox=none",
+      "color": "green"
     }
   ]
 }

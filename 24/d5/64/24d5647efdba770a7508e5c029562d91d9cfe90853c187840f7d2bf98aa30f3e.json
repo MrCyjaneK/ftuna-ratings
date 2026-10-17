@@ -1,86 +1,39 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "24d5647efdba770a7508e5c029562d91d9cfe90853c187840f7d2bf98aa30f3e",
   "key": "mirror/openrepos/black_sheep_dev/personal/main/h/harbour-takeoff-0.6.7-1.armv7hl.rpm",
   "name": "harbour-takeoff",
   "rpm_version": "0.6.7",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 63,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-takeoff.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [[ ! -d \"/home/nemo/.config/harbour-takeoff\" ]]; then; mkdir /home/nemo/.config/harbour-takeoff"
+      "detail": "user=root program=/bin/sh body=if [[ ! -d \"/home/nemo/.config/harbour-takeoff\" ]]; then; mkdir /home/nemo/.config/harbour-takeoff",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" = 0 ]; then; systemctl-user stop org.nubecula.takeoff.service  \u003e /dev/null 2\u003e\u00261 || :; systemctl-user disable org.nubecula.takeoff.service  \u003e /dev/null"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = 0 ]; then; systemctl-user stop org.nubecula.takeoff.service  \u003e /dev/null 2\u003e\u00261 || :; systemctl-user disable org.nubecula.takeoff.service  \u003e /dev/null",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/org.nubecula.takeoff.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/home/nemo/.config/harbour-takeoff/takeoff.sh sandbox=none"
+      "detail": "scope=user user=session group=session exec=/home/nemo/.config/harbour-takeoff/takeoff.sh sandbox=none",
+      "color": "green"
     }
   ]
 }

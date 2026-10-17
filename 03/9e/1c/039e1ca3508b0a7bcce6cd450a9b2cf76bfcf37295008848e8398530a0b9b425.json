@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "039e1ca3508b0a7bcce6cd450a9b2cf76bfcf37295008848e8398530a0b9b425",
   "key": "mirror/openrepos/alina/personal/main/s/sailfishos-patch-clock-quickactions-0.1-1.noarch.rpm",
   "name": "sailfishos-patch-clock-quickactions",
   "rpm_version": "0.1",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/alina/patches/sailfishos-patch-clock-quickactions ]; then; /usr/sbin/patchmanager -u sailfishos-patch-clock-quickactions || true; "
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/alina/patches/sailfishos-patch-clock-quickactions ]; then; /usr/sbin/patchmanager -u sailfishos-patch-clock-quickactions || true; ",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/alina/patches/sailfishos-patch-clock-quickactions ]; then; /usr/sbin/patchmanager -u sailfishos-patch-clock-quickactions || true; "
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/alina/patches/sailfishos-patch-clock-quickactions ]; then; /usr/sbin/patchmanager -u sailfishos-patch-clock-quickactions || true; ",
+      "color": "red"
     }
   ]
 }

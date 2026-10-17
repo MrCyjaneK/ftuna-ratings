@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "c09e92c878dd066fa195ddae9c0c93a1571a2252055b179a0b5c728dba74168c",
   "key": "mirror/openrepos/BlackSailer/personal/main/d/depecher-0.2-3.i486.rpm",
   "name": "depecher",
   "rpm_version": "0.2",
   "release": "3",
   "arch": "i486",
-  "verdict": 53,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/depecher.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user restart mce.service; systemctl-user restart ngfd.service; if [ -d \"/home/nemo/depecherDatabase\" ]; then"
+      "detail": "user=root program=/bin/sh body=systemctl-user restart mce.service; systemctl-user restart ngfd.service; if [ -d \"/home/nemo/depecherDatabase\" ]; then",
+      "color": "red"
     }
   ]
 }

@@ -1,86 +1,39 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "8a5a0e00793b960f5b79a7767beb6641a7ce34d9fa0351eb48483261987f0e62",
   "key": "mirror/openrepos/direc85/personal/main/h/harbour-brightness-1.0-1.noarch.rpm",
   "name": "harbour-brightness",
   "rpm_version": "1.0",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if ! rpm -qi droid-config-xqbt52 \u003e/dev/null; then; echo \"Error: Device is not Sony Xperia 10 III\""
+      "detail": "user=root program=/bin/sh body=if ! rpm -qi droid-config-xqbt52 \u003e/dev/null; then; echo \"Error: Device is not Sony Xperia 10 III\"",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; systemctl stop harbour-brightness.service; systemctl disable harbour-brightness.service"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; systemctl stop harbour-brightness.service; systemctl disable harbour-brightness.service",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%posttrans",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl daemon-reload; systemctl enable harbour-brightness.service; systemctl stop harbour-brightness.service"
+      "detail": "user=root program=/bin/sh body=systemctl daemon-reload; systemctl enable harbour-brightness.service; systemctl stop harbour-brightness.service",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/harbour-brightness.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/bin/harbour-brightness sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/bin/harbour-brightness sandbox=none",
+      "color": "red"
     }
   ]
 }

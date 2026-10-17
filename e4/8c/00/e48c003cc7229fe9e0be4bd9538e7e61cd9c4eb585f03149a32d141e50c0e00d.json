@@ -1,86 +1,39 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "e48c003cc7229fe9e0be4bd9538e7e61cd9c4eb585f03149a32d141e50c0e00d",
   "key": "mirror/openrepos/V10lator/personal/main/f/f2fs-0.3-0.armv7hl.rpm",
   "name": "f2fs",
   "rpm_version": "0.3",
   "release": "0",
   "arch": "armv7hl",
-  "verdict": 20,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": 10
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "hooks",
       "path": "/lib/modules/3.4.106.20150416.1/extra/fs/f2fs/f2fs.ko",
       "code": "hooks.module",
-      "detail": "mode 0100744 user root group root"
+      "detail": "mode 0100744 user root group root",
+      "color": "red"
     },
     {
       "module": "hooks",
       "path": "/lib/modules/3.4.108.20150901.1/extra/fs/f2fs/f2fs.ko",
       "code": "hooks.module",
-      "detail": "mode 0100744 user root group root"
+      "detail": "mode 0100744 user root group root",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=depmod -a"
+      "detail": "user=root program=/bin/sh body=depmod -a",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; rm -rf /lib/modules/3.4.106.20150416.1/extra/fs/f2fs"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; rm -rf /lib/modules/3.4.106.20150416.1/extra/fs/f2fs",
+      "color": "red"
     }
   ]
 }

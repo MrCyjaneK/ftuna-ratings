@@ -1,92 +1,46 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "3f4aa51bf6486e9d230c33e69a8f42f60b482aa286ff90c212d7f0665d9e2383",
   "key": "mirror/openrepos/korppi/personal/main/f/fishnetmount-0.9.2-4.i486.rpm",
   "name": "fishnetmount",
   "rpm_version": "0.9.2",
   "release": "4",
   "arch": "i486",
-  "verdict": 45,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/fishnetmount-gui.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ]; then; if [ $1 -eq 1 ] ; then; /bin/systemctl preset netmountingd.service \u003e/dev/null 2\u003e\u00261 || :"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ]; then; if [ $1 -eq 1 ] ; then; /bin/systemctl preset netmountingd.service \u003e/dev/null 2\u003e\u00261 || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; /bin/systemctl stop netmountingd.service \u003e/dev/null 2\u003e\u00261 || :; for service in %{netmountingd_start_services} ; do"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; /bin/systemctl stop netmountingd.service \u003e/dev/null 2\u003e\u00261 || :; for service in %{netmountingd_start_services} ; do",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -ge 1 ]; then; for service in %{netmountingd_start_services} ; do; /bin/systemctl try-restart $service \u003e/dev/null 2\u003e\u00261 || :"
+      "detail": "user=root program=/bin/sh body=if [ $1 -ge 1 ]; then; for service in %{netmountingd_start_services} ; do; /bin/systemctl try-restart $service \u003e/dev/null 2\u003e\u00261 || :",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/system/netmountingd.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/bin/netmountingd sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/bin/netmountingd sandbox=none",
+      "color": "red"
     }
   ]
 }

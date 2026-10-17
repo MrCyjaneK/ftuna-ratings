@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "87875386b60825527e7110b646fb8c1e9ae1802558b0574c323677070697162b",
   "key": "mirror/openrepos/alina/personal/main/s/sailfishos-patch-messages-layout-3.0.0-2.noarch.rpm",
   "name": "sailfishos-patch-messages-layout",
   "rpm_version": "3.0.0",
   "release": "2",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-messages-layout ]; then; /usr/sbin/patchmanager -u sailfishos-patch-messages-layout || true; fi"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-messages-layout ]; then; /usr/sbin/patchmanager -u sailfishos-patch-messages-layout || true; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-messages-layout ]; then; /usr/sbin/patchmanager -u sailfishos-patch-messages-layout || true; fi"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-messages-layout ]; then; /usr/sbin/patchmanager -u sailfishos-patch-messages-layout || true; fi",
+      "color": "red"
     }
   ]
 }

@@ -1,86 +1,39 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "8d733a6209483331eaf8270dd9e20e0468679b6f068517a46ba7f38ef0c3ec66",
   "key": "chum/5.1_i486/i486/systemd-journal-viewer-0.6.0+git1-1.1.1.bso.i486.rpm",
   "name": "systemd-journal-viewer",
   "rpm_version": "0.6.0+git1",
   "release": "1.1.1.bso",
   "arch": "i486",
-  "verdict": 68,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": 0
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/org.coderus.systemd.journal.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/bin/false systemd=systemd-journal-daemon.service"
+      "detail": "scope=session user=session exec=/bin/false systemd=systemd-journal-daemon.service",
+      "color": "green"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/systemd-journal-viewer.desktop",
       "code": "sailjail.permission",
-      "detail": "Documents"
+      "detail": "Documents",
+      "color": "gray"
     },
     {
       "module": "setuid",
       "path": "/usr/bin/systemd-journal-daemon",
       "code": "setuid",
-      "detail": "/usr/bin/systemd-journal-daemon mode 0104755 user root group root file"
+      "detail": "/usr/bin/systemd-journal-daemon mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/systemd-journal-daemon.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/invoker -s --type=generic /usr/bin/systemd-journal-daemon sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/invoker -s --type=generic /usr/bin/systemd-journal-daemon sandbox=none",
+      "color": "green"
     }
   ]
 }

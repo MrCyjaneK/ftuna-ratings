@@ -1,92 +1,46 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "165d96a1ba1a81bd4d36f210f748f4c41051c64751a378467cdf733ae3d90a77",
   "key": "mirror/openrepos/projectmoon/personal/main/h/harbour-doomsday-0.2.0-1.armv7hl.rpm",
   "name": "harbour-doomsday",
   "rpm_version": "0.2.0",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 93,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/org.unifiedpush.Connector.doomsday.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/bin/env LEGHORN_PUSH_WAKE=1 /usr/bin/sailjail -p harbour-doomsday.desktop -- /usr/bin/harbour-doomsday"
+      "detail": "scope=session user=session exec=/usr/bin/env LEGHORN_PUSH_WAKE=1 /usr/bin/sailjail -p harbour-doomsday.desktop -- /usr/bin/harbour-doomsday",
+      "color": "green"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-doomsday.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-doomsday.desktop",
       "code": "sailjail.permission",
-      "detail": "Location"
+      "detail": "Location",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-doomsday.desktop",
       "code": "sailjail.permission",
-      "detail": "Notifications"
+      "detail": "Notifications",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-doomsday.desktop",
       "code": "sailjail.permission",
-      "detail": "UnifiedPush"
+      "detail": "UnifiedPush",
+      "color": "gray"
     }
   ]
 }

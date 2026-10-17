@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "34fed9cdc1ee4754a25341e11f34b7e217635497be4c205c0a1414a71a794462",
   "key": "mirror/openrepos/Ingvix/personal/main/s/sailfishos-patch-vpn-switch-0.1-1.noarch.rpm",
   "name": "sailfishos-patch-vpn-switch",
   "rpm_version": "0.1",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -x /usr/sbin/patchmanager ]; then; /usr/sbin/patchmanager -u sailfishos-patch-vpn-switch || true; fi"
+      "detail": "user=root program=/bin/sh body=if [ -x /usr/sbin/patchmanager ]; then; /usr/sbin/patchmanager -u sailfishos-patch-vpn-switch || true; fi",
+      "color": "red"
     }
   ]
 }

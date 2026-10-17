@@ -1,86 +1,39 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "8636b674cf60ee4eda55921be3fa446c862d2751f2eabfc2d395eb3095c59ea1",
   "key": "mirror/openrepos/birdzhang/personal/main/j/jolla-settings-gost-button-0.1.4-2.armv7hl.rpm",
   "name": "jolla-settings-gost-button",
   "rpm_version": "0.1.4",
   "release": "2",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 30
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/system-services/xyz.birdzhang.gost.global.service",
       "code": "dbus.service",
-      "detail": "scope=system user=root exec=/usr/bin/gost-button"
+      "detail": "scope=system user=root exec=/usr/bin/gost-button",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=dbus-send --system --type=method_call \\; --dest=org.freedesktop.DBus / org.freedesktop.DBus.ReloadConfig; sed -i 's/\\r//' /usr/bin/gost_proxy.sh"
+      "detail": "user=root program=/bin/sh body=dbus-send --system --type=method_call \\; --dest=org.freedesktop.DBus / org.freedesktop.DBus.ReloadConfig; sed -i 's/\\r//' /usr/bin/gost_proxy.sh",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=dbus-send --system --type=method_call \\; --dest=xyz.birdzhang.gost.global /xyz/birdzhang/gost/global \\; xyz.birdzhang.gost.global.quit"
+      "detail": "user=root program=/bin/sh body=dbus-send --system --type=method_call \\; --dest=xyz.birdzhang.gost.global /xyz/birdzhang/gost/global \\; xyz.birdzhang.gost.global.quit",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=dbus-send --system --type=method_call \\; --dest=org.freedesktop.DBus / org.freedesktop.DBus.ReloadConfig"
+      "detail": "user=root program=/bin/sh body=dbus-send --system --type=method_call \\; --dest=org.freedesktop.DBus / org.freedesktop.DBus.ReloadConfig",
+      "color": "red"
     }
   ]
 }

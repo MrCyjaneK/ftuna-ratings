@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "754b9032abd4b4d9ae1d0004bcd677ac65e5eed991ac7a7505900ec675bd42fb",
   "key": "mirror/openrepos/Thaodan/personal/main/s/sailfishos-patch-pulldown-covers-0.6rpm.20200131014941.92f16b7-1.5.1.noarch.rpm",
   "name": "sailfishos-patch-pulldown-covers",
   "rpm_version": "0.6+rpm.20200131014941.92f16b7",
   "release": "1.5.1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-pulldown-covers ]; then; /usr/sbin/patchmanager -u sailfishos-patch-pulldown-covers || true; fi"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-pulldown-covers ]; then; /usr/sbin/patchmanager -u sailfishos-patch-pulldown-covers || true; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-pulldown-covers ]; then; /usr/sbin/patchmanager -u sailfishos-patch-pulldown-covers || true; fi"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-pulldown-covers ]; then; /usr/sbin/patchmanager -u sailfishos-patch-pulldown-covers || true; fi",
+      "color": "red"
     }
   ]
 }

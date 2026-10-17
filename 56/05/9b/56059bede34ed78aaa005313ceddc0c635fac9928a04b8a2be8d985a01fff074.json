@@ -1,24 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "56059bede34ed78aaa005313ceddc0c635fac9928a04b8a2be8d985a01fff074",
   "key": "mirror/openrepos/jaimeMF/personal/main/t/taskwarrior-2.6.2-0.armv7hl.rpm",
   "name": "taskwarrior",
   "rpm_version": "2.6.2",
   "release": "0",
   "arch": "armv7hl",
-  "verdict": -1,
-  "scores": [
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "rpm",
       "path": "mirror/openrepos/jaimeMF/personal/main/t/taskwarrior-2.6.2-0.armv7hl.rpm",
       "code": "rpm.read",
-      "detail": "No such entry 1037"
+      "detail": "No such entry 1037",
+      "color": "gray"
     }
   ]
 }

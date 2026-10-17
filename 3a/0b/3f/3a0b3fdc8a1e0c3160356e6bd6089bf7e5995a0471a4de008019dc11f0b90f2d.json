@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "3a0b3fdc8a1e0c3160356e6bd6089bf7e5995a0471a4de008019dc11f0b90f2d",
   "key": "mirror/openrepos/artur_/personal/main/o/opt-maui-mauiman-1.0.1-1.armv7hl.rpm",
   "name": "opt-maui-mauiman",
   "rpm_version": "1.0.1",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 85,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/org.mauiman.server.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/bin/MauiManServer"
+      "detail": "scope=session user=session exec=/usr/bin/MauiManServer",
+      "color": "green"
     }
   ]
 }

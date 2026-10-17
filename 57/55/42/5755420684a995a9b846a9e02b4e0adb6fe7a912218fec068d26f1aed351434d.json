@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "5755420684a995a9b846a9e02b4e0adb6fe7a912218fec068d26f1aed351434d",
   "key": "chum/5.1_armv7hl/armv7hl/tin-2.6.5-1.1.1.bso.armv7hl.rpm",
   "name": "tin",
   "rpm_version": "2.6.5",
   "release": "1.1.1.bso",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /home/nemo ]; then; ln -sf /usr/share/tin-2.6.5/faq /home/nemo/Documents/tin.faq; elif [ -d /home/defaultuser ]; then"
+      "detail": "user=root program=/bin/sh body=if [ -d /home/nemo ]; then; ln -sf /usr/share/tin-2.6.5/faq /home/nemo/Documents/tin.faq; elif [ -d /home/defaultuser ]; then",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; if [ -L /home/nemo/Documents/tin.faq ]; then; rm /home/nemo/Documents/tin.faq"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; if [ -L /home/nemo/Documents/tin.faq ]; then; rm /home/nemo/Documents/tin.faq",
+      "color": "red"
     }
   ]
 }

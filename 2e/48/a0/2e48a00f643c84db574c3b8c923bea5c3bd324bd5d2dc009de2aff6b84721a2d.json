@@ -1,92 +1,46 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "2e48a00f643c84db574c3b8c923bea5c3bd324bd5d2dc009de2aff6b84721a2d",
   "key": "mirror/openrepos/mrbn100ful/personal/main/s/sfos-qcom-boost-1.0.0-1.noarch.rpm",
   "name": "sfos-qcom-boost",
   "rpm_version": "1.0.0",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": 30
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :; systemctl enable sfos-qcom-boost.service \u003e/dev/null 2\u003e\u00261 || :; systemctl start sfos-qcom-boost.service \u003e/dev/null "
+      "detail": "user=root program=/bin/sh body=systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :; systemctl enable sfos-qcom-boost.service \u003e/dev/null 2\u003e\u00261 || :; systemctl start sfos-qcom-boost.service \u003e/dev/null ",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; systemctl disable --now sfos-qcom-boost.service \u003e/dev/null 2\u003e\u00261 || :; fi"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; systemctl disable --now sfos-qcom-boost.service \u003e/dev/null 2\u003e\u00261 || :; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :; udevadm control --reload-rules \u003e/dev/null 2\u003e\u00261 || :; if [ $1 -eq 0 ] \u0026\u0026 [ -d /sys/module/cpu_boost/parameters ]; t"
+      "detail": "user=root program=/bin/sh body=systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :; udevadm control --reload-rules \u003e/dev/null 2\u003e\u00261 || :; if [ $1 -eq 0 ] \u0026\u0026 [ -d /sys/module/cpu_boost/parameters ]; t",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/sfos-qcom-boost.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/libexec/sfos-qcom-boost.sh sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/libexec/sfos-qcom-boost.sh sandbox=none",
+      "color": "red"
     },
     {
       "module": "udev",
       "path": "/lib/udev/rules.d/99-sfos-qcom-boost-gpu.rules",
       "code": "udev.run",
-      "detail": "user=root program=/usr/libexec/sfos-qcom-boost.sh gpu"
+      "detail": "user=root program=/usr/libexec/sfos-qcom-boost.sh gpu",
+      "color": "red"
     }
   ]
 }

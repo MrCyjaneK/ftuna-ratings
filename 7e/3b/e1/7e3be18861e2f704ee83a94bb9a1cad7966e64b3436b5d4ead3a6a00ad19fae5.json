@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "7e3be18861e2f704ee83a94bb9a1cad7966e64b3436b5d4ead3a6a00ad19fae5",
   "key": "chum/5.2_armv7hl/armv7hl/harbour-sailautossh-1.4.5-1.1.1.bso.armv7hl.rpm",
   "name": "harbour-sailautossh",
   "rpm_version": "1.4.5",
   "release": "1.1.1.bso",
   "arch": "armv7hl",
-  "verdict": 75,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/org.codeberg.fifr.sailautossh.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/bin/invoker -s --type=silica-qt5 /usr/bin/harbour-sailautossh systemd=harbour-sailautossh.service"
+      "detail": "scope=session user=session exec=/usr/bin/invoker -s --type=silica-qt5 /usr/bin/harbour-sailautossh systemd=harbour-sailautossh.service",
+      "color": "green"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-sailautossh.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/harbour-sailautossh.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/invoker -s --type=silica-qt5 /usr/bin/harbour-sailautossh sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/invoker -s --type=silica-qt5 /usr/bin/harbour-sailautossh sandbox=none",
+      "color": "green"
     }
   ]
 }

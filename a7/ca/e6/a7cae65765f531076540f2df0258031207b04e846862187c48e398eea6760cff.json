@@ -1,128 +1,88 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "a7cae65765f531076540f2df0258031207b04e846862187c48e398eea6760cff",
   "key": "mirror/openrepos/JimKnopfIoT/personal/main/h/harbour-sfmail-0.8.23-1.armv7hl.rpm",
   "name": "harbour-sfmail",
   "rpm_version": "0.8.23",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 65,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-sfmail.desktop",
       "code": "sailjail.permission",
-      "detail": "Email"
+      "detail": "Email",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-sfmail.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-sfmail.desktop",
       "code": "sailjail.permission",
-      "detail": "Accounts"
+      "detail": "Accounts",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-sfmail.desktop",
       "code": "sailjail.permission",
-      "detail": "Privileged"
+      "detail": "Privileged",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-sfmail.desktop",
       "code": "sailjail.permission",
-      "detail": "UserDirs"
+      "detail": "UserDirs",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-sfmail.desktop",
       "code": "sailjail.permission",
-      "detail": "AppLaunch"
+      "detail": "AppLaunch",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-sfmail.desktop",
       "code": "sailjail.permission",
-      "detail": "Contacts"
+      "detail": "Contacts",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-sfmail.desktop",
       "code": "sailjail.permission",
-      "detail": "EmailUi"
+      "detail": "EmailUi",
+      "color": "gray"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -f /usr/share/dbus-1/services/com.jolla.email.ui.service ] \u0026\u0026 [ ! -f /usr/share/dbus-1/services/com.jolla.email.ui.service.sfmail-orig ] \\; \u0026\u0026 ! grep -q 'm"
+      "detail": "user=root program=/bin/sh body=if [ -f /usr/share/dbus-1/services/com.jolla.email.ui.service ] \u0026\u0026 [ ! -f /usr/share/dbus-1/services/com.jolla.email.ui.service.sfmail-orig ] \\; \u0026\u0026 ! grep -q 'm",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; if [ -f /usr/share/dbus-1/services/com.jolla.email.ui.service.sfmail-orig ]; then; mv -f /usr/share/dbus-1/services/com.jolla.email.ui."
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; if [ -f /usr/share/dbus-1/services/com.jolla.email.ui.service.sfmail-orig ]; then; mv -f /usr/share/dbus-1/services/com.jolla.email.ui.",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%triggerin jolla-email",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -f /usr/share/dbus-1/services/com.jolla.email.ui.service ] \u0026\u0026 ! grep -q 'mailui-dispatch' /usr/share/dbus-1/services/com.jolla.email.ui.service; then; cp -"
+      "detail": "user=root program=/bin/sh body=if [ -f /usr/share/dbus-1/services/com.jolla.email.ui.service ] \u0026\u0026 ! grep -q 'mailui-dispatch' /usr/share/dbus-1/services/com.jolla.email.ui.service; then; cp -",
+      "color": "red"
     }
   ]
 }

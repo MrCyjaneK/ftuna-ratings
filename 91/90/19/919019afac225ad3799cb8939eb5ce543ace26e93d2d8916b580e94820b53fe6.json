@@ -1,164 +1,130 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "919019afac225ad3799cb8939eb5ce543ace26e93d2d8916b580e94820b53fe6",
   "key": "mirror/openrepos/mrbn100ful/personal/main/a/atlantic-browser-1.6.0.aarch64.rpm",
   "name": "atlantic-browser",
   "rpm_version": "1.6.0",
   "release": "748.1.aio",
   "arch": "aarch64",
-  "verdict": 61,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/org.atlantic.browser.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/bin/sailjail -p atlantic-browser.desktop /usr/bin/atlantic-browser.bin"
+      "detail": "scope=session user=session exec=/usr/bin/sailjail -p atlantic-browser.desktop /usr/bin/atlantic-browser.bin",
+      "color": "green"
     },
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/org.atlantic.browser.ui.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/bin/sailjail -p atlantic-browser.desktop /usr/bin/atlantic-browser.bin"
+      "detail": "scope=session user=session exec=/usr/bin/sailjail -p atlantic-browser.desktop /usr/bin/atlantic-browser.bin",
+      "color": "green"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/atlantic-browser.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/atlantic-browser.desktop",
       "code": "sailjail.permission",
-      "detail": "Audio"
+      "detail": "Audio",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/atlantic-browser.desktop",
       "code": "sailjail.permission",
-      "detail": "Camera"
+      "detail": "Camera",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/atlantic-browser.desktop",
       "code": "sailjail.permission",
-      "detail": "Microphone"
+      "detail": "Microphone",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/atlantic-browser.desktop",
       "code": "sailjail.permission",
-      "detail": "WebView"
+      "detail": "WebView",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/atlantic-browser.desktop",
       "code": "sailjail.permission",
-      "detail": "UserDirs"
+      "detail": "UserDirs",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/atlantic-browser.desktop",
       "code": "sailjail.permission",
-      "detail": "MediaIndexing"
+      "detail": "MediaIndexing",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/atlantic-browser.desktop",
       "code": "sailjail.permission",
-      "detail": "RemovableMedia"
+      "detail": "RemovableMedia",
+      "color": "gray"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/sbin/ldconfig || :"
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" = 0 ]; then; systemctl disable --now atlantic-memory-reclaim.timer \u003e/dev/null 2\u003e\u00261 || :; systemctl disable --now atlantic-memory-reclaim.service \u003e/dev"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = 0 ]; then; systemctl disable --now atlantic-memory-reclaim.timer \u003e/dev/null 2\u003e\u00261 || :; systemctl disable --now atlantic-memory-reclaim.service \u003e/dev",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/sbin/ldconfig || :; systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :"
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig || :; systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%posttrans",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=rm -f /etc/systemd/system/*.target.wants/atlantic-cpu-governor.service \u003e/dev/null 2\u003e\u00261 || :; systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :; systemctl enable atla"
+      "detail": "user=root program=/bin/sh body=rm -f /etc/systemd/system/*.target.wants/atlantic-cpu-governor.service \u003e/dev/null 2\u003e\u00261 || :; systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :; systemctl enable atla",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/atlantic-browser-memory.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/libexec/atlantic/atlantic-browser-memory.sh sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/libexec/atlantic/atlantic-browser-memory.sh sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/atlantic-memory-reclaim.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/libexec/atlantic/atlantic-memory-reclaim.sh sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/libexec/atlantic/atlantic-memory-reclaim.sh sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/atlantic-memory-reclaim.timer",
       "code": "systemd.timer",
-      "detail": "scope=system activates=atlantic-memory-reclaim.service"
+      "detail": "scope=system activates=atlantic-memory-reclaim.service",
+      "color": "red"
     }
   ]
 }

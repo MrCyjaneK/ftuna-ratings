@@ -1,86 +1,39 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "21a5e8a44c07e6b4405037a18fb3e552930e15bdbffbb3bef494fa4307d8e2f9",
   "key": "mirror/openrepos/aviarus/personal/main/h/harbour-nfsshift-0.1.4-1full.armv7hl.rpm",
   "name": "harbour-nfsshift",
   "rpm_version": "0.1.4",
   "release": "1full",
   "arch": "armv7hl",
-  "verdict": 65,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-nfsshift.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-nfsshift.desktop",
       "code": "sailjail.permission",
-      "detail": "Audio"
+      "detail": "Audio",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-nfsshift.desktop",
       "code": "sailjail.permission",
-      "detail": "Sensors"
+      "detail": "Sensors",
+      "color": "gray"
     },
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -L /usr/share/harbour-nfsshift/data ]; then; rm -f /usr/share/harbour-nfsshift/data; fi"
+      "detail": "user=root program=/bin/sh body=if [ -L /usr/share/harbour-nfsshift/data ]; then; rm -f /usr/share/harbour-nfsshift/data; fi",
+      "color": "red"
     }
   ]
 }

@@ -1,122 +1,81 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "cb8d519284ebb2f0660c023481479a8a53e006cdd4be505d6294a4d7bc671337",
   "key": "mirror/openrepos/HAF_MED/personal/main/h/harbour-thakir-3.5.7-1.i486.rpm",
   "name": "harbour-thakir",
   "rpm_version": "3.5.7",
   "release": "1",
   "arch": "i486",
-  "verdict": 70,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 65
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/org.hafsoftdz.harbour-thakir.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/bin/sailjail -p harbour-thakir.desktop /usr/bin/harbour-thakir"
+      "detail": "scope=session user=session exec=/usr/bin/sailjail -p harbour-thakir.desktop /usr/bin/harbour-thakir",
+      "color": "green"
     },
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/org.hafsoftdz.harbour_thakir.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/bin/sailjail -p harbour-thakir.desktop /usr/bin/harbour-thakir"
+      "detail": "scope=session user=session exec=/usr/bin/sailjail -p harbour-thakir.desktop /usr/bin/harbour-thakir",
+      "color": "green"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-thakir.desktop",
       "code": "sailjail.permission",
-      "detail": "Audio"
+      "detail": "Audio",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-thakir.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-thakir.desktop",
       "code": "sailjail.permission",
-      "detail": "Location"
+      "detail": "Location",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-thakir.desktop",
       "code": "sailjail.permission",
-      "detail": "Sensors"
+      "detail": "Sensors",
+      "color": "gray"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl daemon-reload ||:; systemctl enable --now harbour-thakir-check.timer ||:; systemctl restart harbour-thakir-check.timer ||:"
+      "detail": "user=root program=/bin/sh body=systemctl daemon-reload ||:; systemctl enable --now harbour-thakir-check.timer ||:; systemctl restart harbour-thakir-check.timer ||:",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; systemctl disable --now harbour-thakir-check.timer ||:; fi"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; systemctl disable --now harbour-thakir-check.timer ||:; fi",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/harbour-thakir-check.service",
       "code": "systemd.service",
-      "detail": "scope=system user=defaultuser group=root exec=/bin/sh -c '/usr/bin/harbour-thakir --check-and-play \u003e\u003e /home/defaultuser/.cache/harbour-thakir-check.log 2\u003e\u00261' sandbox=none"
+      "detail": "scope=system user=defaultuser group=root exec=/bin/sh -c '/usr/bin/harbour-thakir --check-and-play \u003e\u003e /home/defaultuser/.cache/harbour-thakir-check.log 2\u003e\u00261' sandbox=none",
+      "color": "yellow"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/harbour-thakir-check.timer",
       "code": "systemd.timer",
-      "detail": "scope=system activates=harbour-thakir-check.service"
+      "detail": "scope=system activates=harbour-thakir-check.service",
+      "color": "red"
     }
   ]
 }

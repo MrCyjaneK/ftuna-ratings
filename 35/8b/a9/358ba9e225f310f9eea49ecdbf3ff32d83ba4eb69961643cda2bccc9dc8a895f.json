@@ -1,104 +1,60 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "358ba9e225f310f9eea49ecdbf3ff32d83ba4eb69961643cda2bccc9dc8a895f",
   "key": "mirror/openrepos/ketilk/personal/main/p/ppp-2.4.5-33.armv7hl.rpm",
   "name": "ppp",
   "rpm_version": "2.4.5",
   "release": "33",
   "arch": "armv7hl",
-  "verdict": 15,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": 15
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": 0
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "hooks",
       "path": "/etc/pam.d/ppp",
       "code": "hooks.pam",
-      "detail": "mode 0100644 user root group root"
+      "detail": "mode 0100644 user root group root",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=getent group dip \u003e/dev/null 2\u003e\u00261 || groupadd -r -g 40 dip \u003e/dev/null 2\u003e\u00261 || :"
+      "detail": "user=root program=/bin/sh body=getent group dip \u003e/dev/null 2\u003e\u00261 || groupadd -r -g 40 dip \u003e/dev/null 2\u003e\u00261 || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=mkdir -p /var/lock/ppp 2\u003e\u00261 \u003e/dev/null || :"
+      "detail": "user=root program=/bin/sh body=mkdir -p /var/lock/ppp 2\u003e\u00261 \u003e/dev/null || :",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/lib/pppd/2.4.5/openl2tp.so",
       "code": "setuid",
-      "detail": "/usr/lib/pppd/2.4.5/openl2tp.so mode 0104755 user root group root file"
+      "detail": "/usr/lib/pppd/2.4.5/openl2tp.so mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/lib/pppd/2.4.5/pppoatm.so",
       "code": "setuid",
-      "detail": "/usr/lib/pppd/2.4.5/pppoatm.so mode 0104755 user root group root file"
+      "detail": "/usr/lib/pppd/2.4.5/pppoatm.so mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/lib/pppd/2.4.5/pppol2tp.so",
       "code": "setuid",
-      "detail": "/usr/lib/pppd/2.4.5/pppol2tp.so mode 0104755 user root group root file"
+      "detail": "/usr/lib/pppd/2.4.5/pppol2tp.so mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/lib/pppd/2.4.5/rp-pppoe.so",
       "code": "setuid",
-      "detail": "/usr/lib/pppd/2.4.5/rp-pppoe.so mode 0104755 user root group root file"
+      "detail": "/usr/lib/pppd/2.4.5/rp-pppoe.so mode 0104755 user root group root file",
+      "color": "red"
     }
   ]
 }

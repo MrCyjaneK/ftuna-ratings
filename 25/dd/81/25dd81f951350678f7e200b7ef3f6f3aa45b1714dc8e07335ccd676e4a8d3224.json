@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "25dd81f951350678f7e200b7ef3f6f3aa45b1714dc8e07335ccd676e4a8d3224",
   "key": "mirror/openrepos/aviarus/personal/main/x/xulrunner-qt5-next153-153.2.0-5.aarch64.rpm",
   "name": "xulrunner-qt5-next153",
   "rpm_version": "153.2.0",
   "release": "5",
   "arch": "aarch64",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=touch /var/lib/_MOZEMBED_CACHE_CLEAN_; for prefsjs in /home/*/.local/share/org.sailfishos/browser-next153/.mozilla/prefs.js; do; [ -f \"$prefsjs\" ] \u0026\u0026 sed -i '/l"
+      "detail": "user=root program=/bin/sh body=touch /var/lib/_MOZEMBED_CACHE_CLEAN_; for prefsjs in /home/*/.local/share/org.sailfishos/browser-next153/.mozilla/prefs.js; do; [ -f \"$prefsjs\" ] \u0026\u0026 sed -i '/l",
+      "color": "red"
     }
   ]
 }

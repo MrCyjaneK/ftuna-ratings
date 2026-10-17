@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "2544848c8d8f05aa61ae74fa81afa534ff72ff27ee6acd2e7c4e1e4ab486a821",
   "key": "mirror/openrepos/laoidheach/personal/main/z/zsh-5.8-1.armv7hl.rpm",
   "name": "zsh",
   "rpm_version": "5.8",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 35,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": 40
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "hooks",
       "path": "/etc/zshrc",
       "code": "hooks.profile",
-      "detail": "mode 0100644 user root group root"
+      "detail": "mode 0100644 user root group root",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" = 1 ]; then; if [ ! -f /etc/shells ] ; then; echo \"/bin/zsh\" \u003e /etc/shells"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = 1 ]; then; if [ ! -f /etc/shells ] ; then; echo \"/bin/zsh\" \u003e /etc/shells",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" = 0 ] \u0026\u0026 [ -f /etc/shells ] ; then; sed -i '\\!^/bin/zsh$!d' /etc/shells; sed -i '\\!^/bin/zsh$!d' /etc/shells"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = 0 ] \u0026\u0026 [ -f /etc/shells ] ; then; sed -i '\\!^/bin/zsh$!d' /etc/shells; sed -i '\\!^/bin/zsh$!d' /etc/shells",
+      "color": "red"
     }
   ]
 }

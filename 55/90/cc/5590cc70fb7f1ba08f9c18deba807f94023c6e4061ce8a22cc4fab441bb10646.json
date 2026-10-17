@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "5590cc70fb7f1ba08f9c18deba807f94023c6e4061ce8a22cc4fab441bb10646",
   "key": "mirror/openrepos/noonien/personal/main/t/telepathy-gabble-plus-0.18.4-4.armv7hl.rpm",
   "name": "telepathy-gabble-plus",
   "rpm_version": "0.18.4",
   "release": "4",
   "arch": "armv7hl",
-  "verdict": 85,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/org.freedesktop.Telepathy.ConnectionManager.gabble.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/libexec/telepathy-gabble"
+      "detail": "scope=session user=session exec=/usr/libexec/telepathy-gabble",
+      "color": "green"
     }
   ]
 }

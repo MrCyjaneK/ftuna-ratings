@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "bf95a9bc65af2ee4fd841b9fde6d2b0e423414891c2de9ecd0ccba25b43ccdd9",
   "key": "mirror/openrepos/anig/personal/main/l/lockscreen-upcoming-0.5-1.noarch.rpm",
   "name": "lockscreen-upcoming",
   "rpm_version": "0.5",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=// Do stuff specific to uninstalls; if [ -f /usr/sbin/patchmanager ]; then; /usr/sbin/patchmanager -u lockscreen-upcoming || true"
+      "detail": "user=root program=/bin/sh body=// Do stuff specific to uninstalls; if [ -f /usr/sbin/patchmanager ]; then; /usr/sbin/patchmanager -u lockscreen-upcoming || true",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; dconf reset -f /desktop/lipstick-jolla-home/lockscreenUpcoming/ || true"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; dconf reset -f /desktop/lipstick-jolla-home/lockscreenUpcoming/ || true",
+      "color": "red"
     }
   ]
 }

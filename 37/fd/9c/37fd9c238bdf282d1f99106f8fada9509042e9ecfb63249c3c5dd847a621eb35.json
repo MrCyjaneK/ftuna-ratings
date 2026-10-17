@@ -1,86 +1,39 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "37fd9c238bdf282d1f99106f8fada9509042e9ecfb63249c3c5dd847a621eb35",
   "key": "mirror/openrepos/V10lator/personal/main/e/exfat-nofuse-1.2.11-0.armv7hl.rpm",
   "name": "exfat-nofuse",
   "rpm_version": "1.2.11",
   "release": "0",
   "arch": "armv7hl",
-  "verdict": 20,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": 10
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "hooks",
       "path": "/lib/modules/3.4.108.20150901.1/extra/fs/exfat/exfat.ko",
       "code": "hooks.module",
-      "detail": "mode 0100744 user root group root"
+      "detail": "mode 0100744 user root group root",
+      "color": "red"
     },
     {
       "module": "hooks",
       "path": "/lib/modules/3.4.108.20160401.1/extra/fs/exfat/exfat.ko",
       "code": "hooks.module",
-      "detail": "mode 0100744 user root group root"
+      "detail": "mode 0100744 user root group root",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=depmod -a"
+      "detail": "user=root program=/bin/sh body=depmod -a",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; rm -rf /lib/modules/3.4.108.20150901.1/extra/fs/exfat"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; rm -rf /lib/modules/3.4.108.20150901.1/extra/fs/exfat",
+      "color": "red"
     }
   ]
 }

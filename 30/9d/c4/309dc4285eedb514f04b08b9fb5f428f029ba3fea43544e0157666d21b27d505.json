@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "309dc4285eedb514f04b08b9fb5f428f029ba3fea43544e0157666d21b27d505",
   "key": "chum/5.1_aarch64/aarch64/harbour-fibonacci-1.0.4-1.7.1.bso.aarch64.rpm",
   "name": "harbour-fibonacci",
   "rpm_version": "1.0.4",
   "release": "1.7.1.bso",
   "arch": "aarch64",
-  "verdict": 65,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-fibonacci.desktop",
       "code": "sailjail.permission",
-      "detail": "UserDirs"
+      "detail": "UserDirs",
+      "color": "gray"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=killall maliit-server"
+      "detail": "user=root program=/bin/sh body=killall maliit-server",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=killall maliit-server"
+      "detail": "user=root program=/bin/sh body=killall maliit-server",
+      "color": "red"
     }
   ]
 }

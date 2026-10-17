@@ -1,98 +1,53 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "6804c1d96af26dcf20f8644d9933279789a53674181fcee8b64c8ec7534b2b59",
   "key": "mirror/openrepos/lpr/personal/main/g/glib2-2.72.3git1-1.5.3.jolla_.armv7hl.rpm",
   "name": "glib2",
   "rpm_version": "2.72.3+git1",
   "release": "1.5.3.jolla",
   "arch": "armv7hl",
-  "verdict": 35,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": 40
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "hooks",
       "path": "/etc/profile.d/glib2.csh",
       "code": "hooks.profile",
-      "detail": "mode 0100644 user root group root"
+      "detail": "mode 0100644 user root group root",
+      "color": "red"
     },
     {
       "module": "hooks",
       "path": "/etc/profile.d/glib2.sh",
       "code": "hooks.profile",
-      "detail": "mode 0100644 user root group root"
+      "detail": "mode 0100644 user root group root",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%transfiletriggerin /usr/lib/gio/modules",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=gio-querymodules-32 /usr/lib/gio/modules \u0026\u003e /dev/null || :"
+      "detail": "user=root program=/bin/sh body=gio-querymodules-32 /usr/lib/gio/modules \u0026\u003e /dev/null || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%transfiletriggerpostun /usr/lib/gio/modules",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=gio-querymodules-32 /usr/lib/gio/modules \u0026\u003e /dev/null || :"
+      "detail": "user=root program=/bin/sh body=gio-querymodules-32 /usr/lib/gio/modules \u0026\u003e /dev/null || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%transfiletriggerin /usr/share/glib-2.0/schemas",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=glib-compile-schemas /usr/share/glib-2.0/schemas \u0026\u003e /dev/null || :"
+      "detail": "user=root program=/bin/sh body=glib-compile-schemas /usr/share/glib-2.0/schemas \u0026\u003e /dev/null || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%transfiletriggerpostun /usr/share/glib-2.0/schemas",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=glib-compile-schemas /usr/share/glib-2.0/schemas \u0026\u003e /dev/null || :"
+      "detail": "user=root program=/bin/sh body=glib-compile-schemas /usr/share/glib-2.0/schemas \u0026\u003e /dev/null || :",
+      "color": "red"
     }
   ]
 }

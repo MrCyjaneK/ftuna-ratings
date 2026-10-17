@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "f43be861991d494a5ccb2b7d7d7e3ef0a6d06025c6fa3422472abf1b19cbe614",
   "key": "mirror/openrepos/saberaltria/personal/main/h/harbour-numix-icon-0.0-3.armv7hl.rpm",
   "name": "harbour-numix-icon",
   "rpm_version": "0.0",
   "release": "3",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=patch -p0 \u003c /var/lib/icons/unified_diff.patch; systemctl-user restart lipstick.service"
+      "detail": "user=root program=/bin/sh body=patch -p0 \u003c /var/lib/icons/unified_diff.patch; systemctl-user restart lipstick.service",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=patch -p0 -Rt \u003c /var/lib/icons/unified_diff.patch; systemctl-user restart lipstick.service"
+      "detail": "user=root program=/bin/sh body=patch -p0 -Rt \u003c /var/lib/icons/unified_diff.patch; systemctl-user restart lipstick.service",
+      "color": "red"
     }
   ]
 }

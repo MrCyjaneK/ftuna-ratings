@@ -1,98 +1,53 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "763adae65707a3093d9b051713dfb277e74f540c39ac2af0850a80f0ecdb8b0c",
   "key": "mirror/openrepos/gexc/personal/main/s/shadowsocks-libev-2.1.4-0.armv7hl.rpm",
   "name": "shadowsocks-libev",
   "rpm_version": "2.1.4",
   "release": "0",
   "arch": "armv7hl",
-  "verdict": 58,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -e /usr/share/man/man8/shadowsocks.8.gz ]; then; rm /usr/share/man/man8/shadowsocks.8.gz"
+      "detail": "user=root program=/bin/sh body=if [ -e /usr/share/man/man8/shadowsocks.8.gz ]; then; rm /usr/share/man/man8/shadowsocks.8.gz",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user disable ss-redir; systemctl-user disable ss-local; systemctl-user disable ss-tunnel"
+      "detail": "user=root program=/bin/sh body=systemctl-user disable ss-redir; systemctl-user disable ss-local; systemctl-user disable ss-tunnel",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/user/ss-local.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/ss-local -c /home/nemo/.shadowsocks/ss-config.json -u sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/ss-local -c /home/nemo/.shadowsocks/ss-config.json -u sandbox=none",
+      "color": "green"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/user/ss-redir.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/ss-redir -c /home/nemo/.shadowsocks/ss-config.json sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/ss-redir -c /home/nemo/.shadowsocks/ss-config.json sandbox=none",
+      "color": "green"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/user/ss-server.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/ss-server -c /home/nemo/.shadowsocks/ss-config.json sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/ss-server -c /home/nemo/.shadowsocks/ss-config.json sandbox=none",
+      "color": "green"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/user/ss-tunnel.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/ss-tunnel -c /home/nemo/.shadowsocks/ss-config.json -l 5354 -L 8.8.8.8:53 -u sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/ss-tunnel -c /home/nemo/.shadowsocks/ss-config.json -l 5354 -L 8.8.8.8:53 -u sandbox=none",
+      "color": "green"
     }
   ]
 }

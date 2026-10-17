@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "96f871034e56c7dc441e9711677f2417f38fd8dd34f87d670d1432774f2340d2",
   "key": "mirror/openrepos/gnikandrov/personal/main/s/sailfish-fonts-extra-0.2.010-2.noarch.rpm",
   "name": "sailfish-fonts-extra",
   "rpm_version": "0.2.010",
   "release": "2",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if ! fgrep -q 'Source Sans Pro' /etc/fonts/local.conf; then; sed -i.orig -e '/\u003cfamily\u003eSail Sans Pro Light\u003c\\/family\u003e/ {N; s/\\(\u003cprefer\u003e\\)/\\1\\n      \u003cfamily\u003eSource"
+      "detail": "user=root program=/bin/sh body=if ! fgrep -q 'Source Sans Pro' /etc/fonts/local.conf; then; sed -i.orig -e '/\u003cfamily\u003eSail Sans Pro Light\u003c\\/family\u003e/ {N; s/\\(\u003cprefer\u003e\\)/\\1\\n      \u003cfamily\u003eSource",
+      "color": "red"
     }
   ]
 }

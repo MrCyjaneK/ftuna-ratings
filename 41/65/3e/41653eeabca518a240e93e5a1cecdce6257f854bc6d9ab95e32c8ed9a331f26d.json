@@ -1,86 +1,39 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "41653eeabca518a240e93e5a1cecdce6257f854bc6d9ab95e32c8ed9a331f26d",
   "key": "chum/5.1_aarch64/aarch64/ghosteel-1.5.0-1.10.1.bso.aarch64.rpm",
   "name": "ghosteel",
   "rpm_version": "1.5.0",
   "release": "1.10.1.bso",
   "arch": "aarch64",
-  "verdict": 70,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/com.zackslash.ghosteel.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/bin/ghosteel"
+      "detail": "scope=session user=session exec=/usr/bin/ghosteel",
+      "color": "green"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/ghosteel.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/ghosteel.desktop",
       "code": "sailjail.permission",
-      "detail": "UserDirs"
+      "detail": "UserDirs",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/ghosteel.desktop",
       "code": "sailjail.permission",
-      "detail": "Secrets"
+      "detail": "Secrets",
+      "color": "gray"
     }
   ]
 }

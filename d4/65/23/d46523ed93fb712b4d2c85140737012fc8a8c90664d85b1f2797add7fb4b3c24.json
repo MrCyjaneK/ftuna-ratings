@@ -1,98 +1,53 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "d46523ed93fb712b4d2c85140737012fc8a8c90664d85b1f2797add7fb4b3c24",
   "key": "mirror/openrepos/omnight/personal/main/p/phonehook-0.2.1-1.armv7hl.rpm",
   "name": "phonehook",
   "rpm_version": "0.2.1",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 63,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/phonehook.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if more /usr/share/lipstick-jolla-home-qt5/compositor.qml | grep com.omnight.lipstickIf; then; patch -R -N /usr/share/lipstick-jolla-home-qt5/compositor.qml \u003c /"
+      "detail": "user=root program=/bin/sh body=if more /usr/share/lipstick-jolla-home-qt5/compositor.qml | grep com.omnight.lipstickIf; then; patch -R -N /usr/share/lipstick-jolla-home-qt5/compositor.qml \u003c /",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=killall phonehook-daemon; cd /usr/share/lipstick-jolla-home-qt5/; patch -N -p4  \u003c /usr/share/phonehook/phonehook-lipstick-v3.patch;"
+      "detail": "user=root program=/bin/sh body=killall phonehook-daemon; cd /usr/share/lipstick-jolla-home-qt5/; patch -N -p4  \u003c /usr/share/phonehook/phonehook-lipstick-v3.patch;",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=cd /usr/share/lipstick-jolla-home-qt5/; patch -R -N -p4 \u003c /usr/share/phonehook/phonehook-lipstick-v3.patch;"
+      "detail": "user=root program=/bin/sh body=cd /usr/share/lipstick-jolla-home-qt5/; patch -R -N -p4 \u003c /usr/share/phonehook/phonehook-lipstick-v3.patch;",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; killall phonehook-daemon || true; killall phonehook || true"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; killall phonehook-daemon || true; killall phonehook || true",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/phonehook-daemon.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/phonehook-daemon sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/phonehook-daemon sandbox=none",
+      "color": "green"
     }
   ]
 }

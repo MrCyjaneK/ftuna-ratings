@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "0ec393751cc91dc376051d30a92fa406781043cd752af0202c4b979cd89c2301",
   "key": "mirror/openrepos/alina/personal/main/s/sailfishos-patch-volumecontrol-0.6-1_2.1.0.noarch.rpm",
   "name": "sailfishos-patch-volumecontrol",
   "rpm_version": "0.6",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-volumecontrol ]; then; /usr/sbin/patchmanager -u sailfishos-patch-volumecontrol || true; fi"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-volumecontrol ]; then; /usr/sbin/patchmanager -u sailfishos-patch-volumecontrol || true; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-volumecontrol ]; then; /usr/sbin/patchmanager -u sailfishos-patch-volumecontrol || true; fi"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-volumecontrol ]; then; /usr/sbin/patchmanager -u sailfishos-patch-volumecontrol || true; fi",
+      "color": "red"
     }
   ]
 }

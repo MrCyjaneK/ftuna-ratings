@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "1d35928f54593ebb0e85c56f43f90f16020a4acad7f5aa689588a0b256d1eeb9",
   "key": "chum/5.2_armv7hl/noarch/yt-dlp-script-2026.08.19+git1-1.5.1.bso.noarch.rpm",
   "name": "yt-dlp-script",
   "rpm_version": "2026.08.19+git1",
   "release": "1.5.1.bso",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=ln -sf yt-dlp.py /usr/bin/yt-dlp ||:"
+      "detail": "user=root program=/bin/sh body=ln -sf yt-dlp.py /usr/bin/yt-dlp ||:",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -lt 1 ] ; then; rm /usr/bin/yt-dlp ||:; fi"
+      "detail": "user=root program=/bin/sh body=if [ $1 -lt 1 ] ; then; rm /usr/bin/yt-dlp ||:; fi",
+      "color": "red"
     }
   ]
 }

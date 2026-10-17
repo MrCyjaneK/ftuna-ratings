@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "76dac289392322dc1b11f61aef9fe44e21574442f10829e76f5f26d104b6e608",
   "key": "mirror/openrepos/alina/personal/main/s/sailfishos-patch-calendar-quickaction-0.1-1.noarch.rpm",
   "name": "sailfishos-patch-calendar-quickaction",
   "rpm_version": "0.1",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/alina/patches/sailfishos-patch-calendar-quickaction ]; then; /usr/sbin/patchmanager -u sailfishos-patch-calendar-quickaction || tr"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/alina/patches/sailfishos-patch-calendar-quickaction ]; then; /usr/sbin/patchmanager -u sailfishos-patch-calendar-quickaction || tr",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/alina/patches/sailfishos-patch-calendar-quickaction ]; then; /usr/sbin/patchmanager -u sailfishos-patch-calendar-quickaction || tr"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/alina/patches/sailfishos-patch-calendar-quickaction ]; then; /usr/sbin/patchmanager -u sailfishos-patch-calendar-quickaction || tr",
+      "color": "red"
     }
   ]
 }

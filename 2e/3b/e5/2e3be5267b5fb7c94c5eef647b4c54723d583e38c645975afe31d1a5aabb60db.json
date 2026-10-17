@@ -1,92 +1,46 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "2e3be5267b5fb7c94c5eef647b4c54723d583e38c645975afe31d1a5aabb60db",
   "key": "mirror/openrepos/eekkelund/personal/main/h/harbour-tide-0.2-1.armv7hl.rpm",
   "name": "harbour-tide",
   "rpm_version": "0.2",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 35,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": 0
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-tide-root.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-tide.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user restart maliit-server.service; mkdir -p /home/nemo/tIDE/; mv /home/nemo/Projects/ /home/nemo/tIDE/"
+      "detail": "user=root program=/bin/sh body=systemctl-user restart maliit-server.service; mkdir -p /home/nemo/tIDE/; mv /home/nemo/Projects/ /home/nemo/tIDE/",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=rm -rf /usr/share/harbour-tide/qml/pages/Editor2.qml"
+      "detail": "user=root program=/bin/sh body=rm -rf /usr/share/harbour-tide/qml/pages/Editor2.qml",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/bin/harbour-tide-root",
       "code": "setuid",
-      "detail": "/usr/bin/harbour-tide-root mode 0104755 user root group root file"
+      "detail": "/usr/bin/harbour-tide-root mode 0104755 user root group root file",
+      "color": "red"
     }
   ]
 }

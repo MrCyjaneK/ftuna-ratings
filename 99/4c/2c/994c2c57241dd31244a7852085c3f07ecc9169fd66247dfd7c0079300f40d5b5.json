@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "994c2c57241dd31244a7852085c3f07ecc9169fd66247dfd7c0079300f40d5b5",
   "key": "mirror/openrepos/Thaodan/personal/main/s/sailfishos-patch-return-to-app-after-eventsview-3.0.1.14rpm.20190220104610.849d607-1.1.1.noarch.rpm",
   "name": "sailfishos-patch-return-to-app-after-eventsview",
   "rpm_version": "3.0.1.14+rpm.20190220104610.849d607",
   "release": "1.1.1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-return-to-app-after-eventsview ]; then; /usr/sbin/patchmanager -u sailfishos-patch-return-to-app-af"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-return-to-app-after-eventsview ]; then; /usr/sbin/patchmanager -u sailfishos-patch-return-to-app-af",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-return-to-app-after-eventsview ]; then; /usr/sbin/patchmanager -u sailfishos-patch-return-to-app-af"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-return-to-app-after-eventsview ]; then; /usr/sbin/patchmanager -u sailfishos-patch-return-to-app-af",
+      "color": "red"
     }
   ]
 }

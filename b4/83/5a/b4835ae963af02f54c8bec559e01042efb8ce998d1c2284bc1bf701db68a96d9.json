@@ -1,146 +1,109 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "b4835ae963af02f54c8bec559e01042efb8ce998d1c2284bc1bf701db68a96d9",
   "key": "mirror/openrepos/abranson/personal/main/r/rockpool-2.0.0-1.aarch64.rpm",
   "name": "rockpool",
   "rpm_version": "2.0.0",
   "release": "1",
   "arch": "aarch64",
-  "verdict": 51,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": 45
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/rockpool.desktop",
       "code": "sailjail.permission",
-      "detail": "Rockpool"
+      "detail": "Rockpool",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/rockpool.desktop",
       "code": "sailjail.permission",
-      "detail": "UserDirs"
+      "detail": "UserDirs",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/rockpool.desktop",
       "code": "sailjail.permission",
-      "detail": "AppLaunch"
+      "detail": "AppLaunch",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/rockpool.desktop",
       "code": "sailjail.permission",
-      "detail": "WebView"
+      "detail": "WebView",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/rockpool.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/rockpool.desktop",
       "code": "sailjail.permission",
-      "detail": "Contacts"
+      "detail": "Contacts",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/rockpool.desktop",
       "code": "sailjail.permission",
-      "detail": "Privileged"
+      "detail": "Privileged",
+      "color": "gray"
     },
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user stop rockpoold.service || :; systemctl-user disable rockpoold.service || :; sha256sum /etc/systemd/system/bluetooth.service.d/50-libpebble3d.conf"
+      "detail": "user=root program=/bin/sh body=systemctl-user stop rockpoold.service || :; systemctl-user disable rockpoold.service || :; sha256sum /etc/systemd/system/bluetooth.service.d/50-libpebble3d.conf",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=update-desktop-database; systemctl daemon-reload || :; if ! sha256sum --check --status /run/rockpool-bluetooth-override.sha256 2\u003e/dev/null; then"
+      "detail": "user=root program=/bin/sh body=update-desktop-database; systemctl daemon-reload || :; if ! sha256sum --check --status /run/rockpool-bluetooth-override.sha256 2\u003e/dev/null; then",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"0\" ]; then; systemctl-user stop libpebble3d.service || :; fi"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"0\" ]; then; systemctl-user stop libpebble3d.service || :; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :; if [ \"$1\" = \"0\" ]; then; systemctl daemon-reload || :"
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :; if [ \"$1\" = \"0\" ]; then; systemctl daemon-reload || :",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/libexec/libpebble3d/libpebble3d-platform-sailfish-launcher",
       "code": "setgid",
-      "detail": "/usr/libexec/libpebble3d/libpebble3d-platform-sailfish-launcher mode 0102755 user root group privileged file"
+      "detail": "/usr/libexec/libpebble3d/libpebble3d-platform-sailfish-launcher mode 0102755 user root group privileged file",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/system/bluetooth.service.d/50-libpebble3d.conf",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=unknown sandbox=none"
+      "detail": "scope=system user=root group=root exec=unknown sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/libpebble3d.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/libexec/libpebble3d/libpebble3d; /usr/libexec/libpebble3d/libpebble3d-platform-sailfish-launcher sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/libexec/libpebble3d/libpebble3d; /usr/libexec/libpebble3d/libpebble3d-platform-sailfish-launcher sandbox=none",
+      "color": "green"
     }
   ]
 }

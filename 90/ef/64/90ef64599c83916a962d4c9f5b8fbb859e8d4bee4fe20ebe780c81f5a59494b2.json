@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "90ef64599c83916a962d4c9f5b8fbb859e8d4bee4fe20ebe780c81f5a59494b2",
   "key": "mirror/openrepos/molan/personal/main/h/harbour-themepack-vaidroid-2.6-1.noarch.rpm",
   "name": "harbour-themepack-vaidroid",
   "rpm_version": "2.6",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user restart maliit-server.service"
+      "detail": "user=root program=/bin/sh body=systemctl-user restart maliit-server.service",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%posttrans",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=mv /usr/share/harbour-themepack-vaidroid/theme/* /usr/share/harbour-themepack-vaidroid/; rm -r mv /usr/share/harbour-themepack-vaidroid/theme/"
+      "detail": "user=root program=/bin/sh body=mv /usr/share/harbour-themepack-vaidroid/theme/* /usr/share/harbour-themepack-vaidroid/; rm -r mv /usr/share/harbour-themepack-vaidroid/theme/",
+      "color": "red"
     }
   ]
 }

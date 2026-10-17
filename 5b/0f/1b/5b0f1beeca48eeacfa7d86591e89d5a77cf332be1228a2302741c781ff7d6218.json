@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "5b0f1beeca48eeacfa7d86591e89d5a77cf332be1228a2302741c781ff7d6218",
   "key": "chum/5.1_aarch64/aarch64/i2pd-2.59.0+git1-1.7.1.bso.aarch64.rpm",
   "name": "i2pd",
   "rpm_version": "2.59.0+git1",
   "release": "1.7.1.bso",
   "arch": "aarch64",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; if [ \"$1\" -ge 1 ]; then; systemctl daemon-reload || :"
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; if [ \"$1\" -ge 1 ]; then; systemctl daemon-reload || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; if [ \"$1\" -eq 0 ]; then; systemctl stop i2pd.service || :"
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; if [ \"$1\" -eq 0 ]; then; systemctl stop i2pd.service || :",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/i2pd.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=inet exec=/usr/bin/i2pd --datadir /home/.system/var/lib/i2pd --conf=/home/.system/var/lib/i2pd/i2pd.conf --tunconf=/home/.system/var/lib/i2pd/tunnels.conf --tunnelsdir=/home/.system/var/lib/i2pd/tunnels.conf.d --pidfile=/run/i2pd/i2pd.pid --daemon --service sandbox=none"
+      "detail": "scope=system user=root group=inet exec=/usr/bin/i2pd --datadir /home/.system/var/lib/i2pd --conf=/home/.system/var/lib/i2pd/i2pd.conf --tunconf=/home/.system/var/lib/i2pd/tunnels.conf --tunnelsdir=/home/.system/var/lib/i2pd/tunnels.conf.d --pidfile=/run/i2pd/i2pd.pid --daemon --service sandbox=none",
+      "color": "red"
     }
   ]
 }

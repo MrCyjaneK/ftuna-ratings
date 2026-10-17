@@ -1,80 +1,39 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "15d6360c35a0c912a9ecfe25c30d940b03886cbbe35e9765c4a0790d7970228a",
   "key": "mirror/openrepos/CoanTeen/personal/main/h/harbour-rockbridge-0.2-2.i486.rpm",
   "name": "harbour-rockbridge",
   "rpm_version": "0.2",
   "release": "2",
   "arch": "i486",
-  "verdict": 54,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
+  "issues": [
     {
       "module": "sailjail",
-      "score": 100
+      "path": "/usr/share/applications/harbour-rockbridge.desktop",
+      "code": "sailjail.jailed",
+      "detail": "sandboxed",
+      "color": "green"
     },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": 0
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
-  "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload; systemctl-user enable harbour-rockbridged.service; systemctl-user try-restart harbour-rockbridged.service"
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload; systemctl-user enable harbour-rockbridged.service; systemctl-user try-restart harbour-rockbridged.service",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/bin/harbour-rockbridge-attach",
       "code": "setuid",
-      "detail": "/usr/bin/harbour-rockbridge-attach mode 0104755 user root group root file"
+      "detail": "/usr/bin/harbour-rockbridge-attach mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/harbour-rockbridged.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-rockbridged sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-rockbridged sandbox=none",
+      "color": "green"
     }
   ]
 }

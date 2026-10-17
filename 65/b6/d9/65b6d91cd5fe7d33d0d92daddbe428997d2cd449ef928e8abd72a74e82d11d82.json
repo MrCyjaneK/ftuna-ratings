@@ -1,302 +1,291 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "65b6d91cd5fe7d33d0d92daddbe428997d2cd449ef928e8abd72a74e82d11d82",
   "key": "mirror/openrepos/JimKnopfIoT/personal/main/h/harbour-xmatic-0.46.16-1.armv7hl.rpm",
   "name": "harbour-xmatic",
   "rpm_version": "0.46.16",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 93,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/org.unifiedpush.Connector.xmatic.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/bin/env XMATIC_PUSH_WAKE=1 /usr/bin/sailjail -p harbour-xmatic.desktop -- /usr/bin/harbour-xmatic"
+      "detail": "scope=session user=session exec=/usr/bin/env XMATIC_PUSH_WAKE=1 /usr/bin/sailjail -p harbour-xmatic.desktop -- /usr/bin/harbour-xmatic",
+      "color": "green"
     },
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/org.xmatic.xmatic.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/bin/sailjail -p harbour-xmatic.desktop /usr/bin/harbour-xmatic"
+      "detail": "scope=session user=session exec=/usr/bin/sailjail -p harbour-xmatic.desktop /usr/bin/harbour-xmatic",
+      "color": "green"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic-open-url.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic-open-url.desktop",
       "code": "sailjail.permission",
-      "detail": "Audio"
+      "detail": "Audio",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic-open-url.desktop",
       "code": "sailjail.permission",
-      "detail": "Microphone"
+      "detail": "Microphone",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic-open-url.desktop",
       "code": "sailjail.permission",
-      "detail": "Camera"
+      "detail": "Camera",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic-open-url.desktop",
       "code": "sailjail.permission",
-      "detail": "Pictures"
+      "detail": "Pictures",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic-open-url.desktop",
       "code": "sailjail.permission",
-      "detail": "Documents"
+      "detail": "Documents",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic-open-url.desktop",
       "code": "sailjail.permission",
-      "detail": "Downloads"
+      "detail": "Downloads",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic-open-url.desktop",
       "code": "sailjail.permission",
-      "detail": "Music"
+      "detail": "Music",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic-open-url.desktop",
       "code": "sailjail.permission",
-      "detail": "Videos"
+      "detail": "Videos",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic-open-url.desktop",
       "code": "sailjail.permission",
-      "detail": "PublicDir"
+      "detail": "PublicDir",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic-open-url.desktop",
       "code": "sailjail.permission",
-      "detail": "RemovableMedia"
+      "detail": "RemovableMedia",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic-open-url.desktop",
       "code": "sailjail.permission",
-      "detail": "MediaIndexing"
+      "detail": "MediaIndexing",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic-open-url.desktop",
       "code": "sailjail.permission",
-      "detail": "Thumbnails"
+      "detail": "Thumbnails",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic-open-url.desktop",
       "code": "sailjail.permission",
-      "detail": "Sharing"
+      "detail": "Sharing",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic-open-url.desktop",
       "code": "sailjail.permission",
-      "detail": "Notifications"
+      "detail": "Notifications",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic-open-url.desktop",
       "code": "sailjail.permission",
-      "detail": "Secrets"
+      "detail": "Secrets",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic-open-url.desktop",
       "code": "sailjail.permission",
-      "detail": "UnifiedPush"
+      "detail": "UnifiedPush",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic-open-url.desktop",
       "code": "sailjail.permission",
-      "detail": "XmaticSpeech"
+      "detail": "XmaticSpeech",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic-open-url.desktop",
       "code": "sailjail.permission",
-      "detail": "Location"
+      "detail": "Location",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic.desktop",
       "code": "sailjail.permission",
-      "detail": "Audio"
+      "detail": "Audio",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic.desktop",
       "code": "sailjail.permission",
-      "detail": "Microphone"
+      "detail": "Microphone",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic.desktop",
       "code": "sailjail.permission",
-      "detail": "Camera"
+      "detail": "Camera",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic.desktop",
       "code": "sailjail.permission",
-      "detail": "Pictures"
+      "detail": "Pictures",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic.desktop",
       "code": "sailjail.permission",
-      "detail": "Documents"
+      "detail": "Documents",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic.desktop",
       "code": "sailjail.permission",
-      "detail": "Downloads"
+      "detail": "Downloads",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic.desktop",
       "code": "sailjail.permission",
-      "detail": "Music"
+      "detail": "Music",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic.desktop",
       "code": "sailjail.permission",
-      "detail": "Videos"
+      "detail": "Videos",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic.desktop",
       "code": "sailjail.permission",
-      "detail": "PublicDir"
+      "detail": "PublicDir",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic.desktop",
       "code": "sailjail.permission",
-      "detail": "RemovableMedia"
+      "detail": "RemovableMedia",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic.desktop",
       "code": "sailjail.permission",
-      "detail": "MediaIndexing"
+      "detail": "MediaIndexing",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic.desktop",
       "code": "sailjail.permission",
-      "detail": "Thumbnails"
+      "detail": "Thumbnails",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic.desktop",
       "code": "sailjail.permission",
-      "detail": "Sharing"
+      "detail": "Sharing",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic.desktop",
       "code": "sailjail.permission",
-      "detail": "Notifications"
+      "detail": "Notifications",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic.desktop",
       "code": "sailjail.permission",
-      "detail": "Secrets"
+      "detail": "Secrets",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic.desktop",
       "code": "sailjail.permission",
-      "detail": "UnifiedPush"
+      "detail": "UnifiedPush",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic.desktop",
       "code": "sailjail.permission",
-      "detail": "XmaticSpeech"
+      "detail": "XmaticSpeech",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-xmatic.desktop",
       "code": "sailjail.permission",
-      "detail": "Location"
+      "detail": "Location",
+      "color": "gray"
     }
   ]
 }

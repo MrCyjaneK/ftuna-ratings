@@ -1,86 +1,39 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "702b42b552a43f7b8a9e2c17a9d6c6af4cb8f1e5d4cb83d3560b7911d09c1daa",
   "key": "mirror/openrepos/dpurgin/personal/main/h/harbour-callrecorder-0.6.2-1.armv7hl.rpm",
   "name": "harbour-callrecorder",
   "rpm_version": "0.6.2",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 63,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-callrecorder.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=echo \"Reloading systemd...\"; systemctl-user daemon-reload; if [ $1 = 1 ]; then"
+      "detail": "user=root program=/bin/sh body=echo \"Reloading systemd...\"; systemctl-user daemon-reload; if [ $1 = 1 ]; then",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; echo \"Stopping service...\"; systemctl-user stop harbour-callrecorderd"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; echo \"Stopping service...\"; systemctl-user stop harbour-callrecorderd",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/harbour-callrecorderd.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-callrecorderd sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-callrecorderd sandbox=none",
+      "color": "green"
     }
   ]
 }

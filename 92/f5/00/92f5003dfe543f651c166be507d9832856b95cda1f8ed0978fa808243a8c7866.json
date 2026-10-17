@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "92f5003dfe543f651c166be507d9832856b95cda1f8ed0978fa808243a8c7866",
   "key": "mirror/openrepos/lourens/personal/main/w/wget-1.18-1.armv7hl.rpm",
   "name": "wget",
   "rpm_version": "1.18",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/sbin/install-info /usr/share/info/wget.info.gz /usr/share/info/dir || :"
+      "detail": "user=root program=/bin/sh body=/sbin/install-info /usr/share/info/wget.info.gz /usr/share/info/dir || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" = 0 ]; then; /sbin/install-info --delete /usr/share/info/wget.info.gz /usr/share/info/dir || :; fi"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = 0 ]; then; /sbin/install-info --delete /usr/share/info/wget.info.gz /usr/share/info/dir || :; fi",
+      "color": "red"
     }
   ]
 }

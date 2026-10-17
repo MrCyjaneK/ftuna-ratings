@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "b0edbaeebd8118e6f683f88f44df3f51efa321c88483fbe649203e13721bfe6f",
   "key": "mirror/openrepos/Rikudou_Sennin/personal/main/h/harbour-inari-blue-notifier-1.3.1-1.aarch64.rpm",
   "name": "harbour-inari-blue-notifier",
   "rpm_version": "1.3.1",
   "release": "1",
   "arch": "aarch64",
-  "verdict": 100,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-inari-blue-notifier.desktop",
       "code": "sailjail.permission",
-      "detail": "AppLaunch"
+      "detail": "AppLaunch",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-inari-blue-notifier.desktop",
       "code": "sailjail.permission",
-      "detail": "InariBlueNotifier"
+      "detail": "InariBlueNotifier",
+      "color": "gray"
     }
   ]
 }

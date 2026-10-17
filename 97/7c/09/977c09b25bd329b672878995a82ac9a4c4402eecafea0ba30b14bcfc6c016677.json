@@ -1,86 +1,39 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "977c09b25bd329b672878995a82ac9a4c4402eecafea0ba30b14bcfc6c016677",
   "key": "chum/5.1_aarch64/noarch/plocate-service-system-1.1.23-1.1.1.bso.noarch.rpm",
   "name": "plocate-service-system",
   "rpm_version": "1.1.23",
   "release": "1.1.1.bso",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl enable plocate-updatedb.timer || :; if [ $1 -eq 1 ] ; then; systemctl --no-reload preset plocate-updatedb.service ||: \u003e/dev/null 2\u003e\u00261 || :"
+      "detail": "user=root program=/bin/sh body=systemctl enable plocate-updatedb.timer || :; if [ $1 -eq 1 ] ; then; systemctl --no-reload preset plocate-updatedb.service ||: \u003e/dev/null 2\u003e\u00261 || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; else; if [ $1 = 1 ]; then"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; else; if [ $1 = 1 ]; then",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/plocate-updatedb.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/sbin/updatedb sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/sbin/updatedb sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/plocate-updatedb.timer",
       "code": "systemd.timer",
-      "detail": "scope=system activates=plocate-updatedb.service"
+      "detail": "scope=system activates=plocate-updatedb.service",
+      "color": "red"
     }
   ]
 }

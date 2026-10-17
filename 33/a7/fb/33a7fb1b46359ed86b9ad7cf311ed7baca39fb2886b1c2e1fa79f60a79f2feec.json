@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "33a7fb1b46359ed86b9ad7cf311ed7baca39fb2886b1c2e1fa79f60a79f2feec",
   "key": "mirror/openrepos/metalstrolch/personal/main/h/harbour-navit-0.5.3-1.armv7hl.rpm",
   "name": "harbour-navit",
   "rpm_version": "0.5.3",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 53,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-navit.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /usr/share/harbour-navit/espeak-data ]; then; rm -rf /usr/share/harbour-navit/espeak-data; fi"
+      "detail": "user=root program=/bin/sh body=if [ -d /usr/share/harbour-navit/espeak-data ]; then; rm -rf /usr/share/harbour-navit/espeak-data; fi",
+      "color": "red"
     }
   ]
 }

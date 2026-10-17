@@ -1,584 +1,620 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "df4715758cec905de51141ad58316c0a018ba220c1f19b55fcea1bb51fe5bf77",
   "key": "mirror/openrepos/lobanokivan11/personal/main/s/sailfishos-uithemer-2.2.1-3.i486.rpm",
   "name": "sailfishos-uithemer",
   "rpm_version": "2.2.1",
   "release": "3",
   "arch": "i486",
-  "verdict": 35,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": 0
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/sailfishos-uithemer.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=mv /usr/share/sailfishos-uithemer/scripts/sailfishos-uithemer.txt /etc/dconf/db/vendor.d/; dconf update; if [ $1 == 1 ]; then"
+      "detail": "user=root program=/bin/sh body=mv /usr/share/sailfishos-uithemer/scripts/sailfishos-uithemer.txt /etc/dconf/db/vendor.d/; dconf update; if [ $1 == 1 ]; then",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 == 0 ]; then; rm -rf /home/defaultuser/.local/share/sailfishos-uithemer; rm /etc/dconf/db/vendor.d/sailfishos-uithemer.txt"
+      "detail": "user=root program=/bin/sh body=if [ $1 == 0 ]; then; rm -rf /home/defaultuser/.local/share/sailfishos-uithemer; rm /etc/dconf/db/vendor.d/sailfishos-uithemer.txt",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/bin/sailfishos-uithemer",
       "code": "setuid",
-      "detail": "/usr/bin/sailfishos-uithemer mode 0104755 user root group root file"
+      "detail": "/usr/bin/sailfishos-uithemer mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/applications/sailfishos-uithemer.desktop",
       "code": "setuid",
-      "detail": "/usr/share/applications/sailfishos-uithemer.desktop mode 0104755 user root group root file"
+      "detail": "/usr/share/applications/sailfishos-uithemer.desktop mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/icons/hicolor/108x108/apps/sailfishos-uithemer.png",
       "code": "setuid",
-      "detail": "/usr/share/icons/hicolor/108x108/apps/sailfishos-uithemer.png mode 0104755 user root group root file"
+      "detail": "/usr/share/icons/hicolor/108x108/apps/sailfishos-uithemer.png mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/icons/hicolor/128x128/apps/sailfishos-uithemer.png",
       "code": "setuid",
-      "detail": "/usr/share/icons/hicolor/128x128/apps/sailfishos-uithemer.png mode 0104755 user root group root file"
+      "detail": "/usr/share/icons/hicolor/128x128/apps/sailfishos-uithemer.png mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/icons/hicolor/172x172/apps/sailfishos-uithemer.png",
       "code": "setuid",
-      "detail": "/usr/share/icons/hicolor/172x172/apps/sailfishos-uithemer.png mode 0104755 user root group root file"
+      "detail": "/usr/share/icons/hicolor/172x172/apps/sailfishos-uithemer.png mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/icons/hicolor/256x256/apps/sailfishos-uithemer.png",
       "code": "setuid",
-      "detail": "/usr/share/icons/hicolor/256x256/apps/sailfishos-uithemer.png mode 0104755 user root group root file"
+      "detail": "/usr/share/icons/hicolor/256x256/apps/sailfishos-uithemer.png mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/icons/hicolor/86x86/apps/sailfishos-uithemer.png",
       "code": "setuid",
-      "detail": "/usr/share/icons/hicolor/86x86/apps/sailfishos-uithemer.png mode 0104755 user root group root file"
+      "detail": "/usr/share/icons/hicolor/86x86/apps/sailfishos-uithemer.png mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/images/appinfo.png",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/images/appinfo.png mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/images/appinfo.png mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/images/coverbg-light.png",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/images/coverbg-light.png mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/images/coverbg-light.png mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/images/coverbg.png",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/images/coverbg.png mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/images/coverbg.png mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/images/download-light.png",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/images/download-light.png mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/images/download-light.png mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/images/download.png",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/images/download.png mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/images/download.png mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/images/font-light.png",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/images/font-light.png mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/images/font-light.png mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/images/font.png",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/images/font.png mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/images/font.png mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/images/icon-light.png",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/images/icon-light.png mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/images/icon-light.png mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/images/icon.png",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/images/icon.png mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/images/icon.png mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/images/sound-light.png",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/images/sound-light.png mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/images/sound-light.png mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/images/sound.png",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/images/sound.png mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/images/sound.png mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/common/Settings.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/common/Settings.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/common/Settings.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/components/AboutLanguage.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/components/AboutLanguage.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/components/AboutLanguage.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/components/AboutTranslator.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/components/AboutTranslator.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/components/AboutTranslator.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/components/BusyState.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/components/BusyState.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/components/BusyState.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/components/Column.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/components/Column.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/components/Column.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/components/ConfirmHeader.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/components/ConfirmHeader.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/components/ConfirmHeader.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/components/FontPreview.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/components/FontPreview.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/components/FontPreview.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/components/LabelSpacer.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/components/LabelSpacer.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/components/LabelSpacer.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/components/LabelText.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/components/LabelText.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/components/LabelText.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/components/Notification.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/components/Notification.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/components/Notification.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/components/themepacklistview/ThemePackItem.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/components/themepacklistview/ThemePackItem.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/components/themepacklistview/ThemePackItem.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/cover/CoverActionList1.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/cover/CoverActionList1.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/cover/CoverActionList1.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/cover/CoverActionList2.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/cover/CoverActionList2.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/cover/CoverActionList2.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/cover/CoverConfirm.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/cover/CoverConfirm.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/cover/CoverConfirm.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/cover/CoverLabel.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/cover/CoverLabel.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/cover/CoverLabel.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/cover/CoverPage.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/cover/CoverPage.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/cover/CoverPage.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/cover/FontPreviewCover.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/cover/FontPreviewCover.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/cover/FontPreviewCover.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/pages/AboutPage.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/pages/AboutPage.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/pages/AboutPage.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/pages/ConfirmPage.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/pages/ConfirmPage.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/pages/ConfirmPage.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/pages/DensityPage.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/pages/DensityPage.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/pages/DensityPage.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/pages/GuidePage.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/pages/GuidePage.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/pages/GuidePage.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/pages/MainPage.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/pages/MainPage.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/pages/MainPage.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/pages/OptionsPage.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/pages/OptionsPage.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/pages/OptionsPage.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/pages/RecoveryPage.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/pages/RecoveryPage.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/pages/RecoveryPage.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/pages/RestoreDDPage.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/pages/RestoreDDPage.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/pages/RestoreDDPage.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/pages/RestorePage.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/pages/RestorePage.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/pages/RestorePage.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/pages/TranslatorPage.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/pages/TranslatorPage.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/pages/TranslatorPage.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/pages/WelcomePage.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/pages/WelcomePage.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/pages/WelcomePage.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/qml/sailfishos-uithemer.qml",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/qml/sailfishos-uithemer.qml mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/qml/sailfishos-uithemer.qml mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/scripts/apply_adpi.sh",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/scripts/apply_adpi.sh mode 0104755 user root group root script"
+      "detail": "/usr/share/sailfishos-uithemer/scripts/apply_adpi.sh mode 0104755 user root group root script",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/scripts/apply_hours.sh",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/scripts/apply_hours.sh mode 0104755 user root group root script"
+      "detail": "/usr/share/sailfishos-uithemer/scripts/apply_hours.sh mode 0104755 user root group root script",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/scripts/disable-autoupdate.sh",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/scripts/disable-autoupdate.sh mode 0104755 user root group root script"
+      "detail": "/usr/share/sailfishos-uithemer/scripts/disable-autoupdate.sh mode 0104755 user root group root script",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/scripts/disable-dpi.sh",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/scripts/disable-dpi.sh mode 0104755 user root group root script"
+      "detail": "/usr/share/sailfishos-uithemer/scripts/disable-dpi.sh mode 0104755 user root group root script",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/scripts/disable-servicesu.sh",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/scripts/disable-servicesu.sh mode 0104755 user root group root script"
+      "detail": "/usr/share/sailfishos-uithemer/scripts/disable-servicesu.sh mode 0104755 user root group root script",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/scripts/enable-autoupdate.sh",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/scripts/enable-autoupdate.sh mode 0104755 user root group root script"
+      "detail": "/usr/share/sailfishos-uithemer/scripts/enable-autoupdate.sh mode 0104755 user root group root script",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/scripts/enable-dpi.sh",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/scripts/enable-dpi.sh mode 0104755 user root group root script"
+      "detail": "/usr/share/sailfishos-uithemer/scripts/enable-dpi.sh mode 0104755 user root group root script",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/scripts/enable-servicesu.sh",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/scripts/enable-servicesu.sh mode 0104755 user root group root script"
+      "detail": "/usr/share/sailfishos-uithemer/scripts/enable-servicesu.sh mode 0104755 user root group root script",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/scripts/homescreen.sh",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/scripts/homescreen.sh mode 0104755 user root group root script"
+      "detail": "/usr/share/sailfishos-uithemer/scripts/homescreen.sh mode 0104755 user root group root script",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/scripts/iconspreview.sh",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/scripts/iconspreview.sh mode 0104755 user root group root script"
+      "detail": "/usr/share/sailfishos-uithemer/scripts/iconspreview.sh mode 0104755 user root group root script",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/scripts/install_dependencies.sh",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/scripts/install_dependencies.sh mode 0104755 user root group root script"
+      "detail": "/usr/share/sailfishos-uithemer/scripts/install_dependencies.sh mode 0104755 user root group root script",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/scripts/install_imagemagick.sh",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/scripts/install_imagemagick.sh mode 0104755 user root group root script"
+      "detail": "/usr/share/sailfishos-uithemer/scripts/install_imagemagick.sh mode 0104755 user root group root script",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/scripts/ocr.sh",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/scripts/ocr.sh mode 0104755 user root group root script"
+      "detail": "/usr/share/sailfishos-uithemer/scripts/ocr.sh mode 0104755 user root group root script",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/scripts/reapply_icons.sh",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/scripts/reapply_icons.sh mode 0104755 user root group root script"
+      "detail": "/usr/share/sailfishos-uithemer/scripts/reapply_icons.sh mode 0104755 user root group root script",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/scripts/restore_dpi.sh",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/scripts/restore_dpi.sh mode 0104755 user root group root script"
+      "detail": "/usr/share/sailfishos-uithemer/scripts/restore_dpi.sh mode 0104755 user root group root script",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/scripts/restore_iz.sh",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/scripts/restore_iz.sh mode 0104755 user root group root script"
+      "detail": "/usr/share/sailfishos-uithemer/scripts/restore_iz.sh mode 0104755 user root group root script",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/scripts/sailfishos-uithemer.txt",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/scripts/sailfishos-uithemer.txt mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/scripts/sailfishos-uithemer.txt mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/scripts/themeapply.sh",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/scripts/themeapply.sh mode 0104755 user root group root script"
+      "detail": "/usr/share/sailfishos-uithemer/scripts/themeapply.sh mode 0104755 user root group root script",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/scripts/themerecovery.sh",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/scripts/themerecovery.sh mode 0104755 user root group root script"
+      "detail": "/usr/share/sailfishos-uithemer/scripts/themerecovery.sh mode 0104755 user root group root script",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/scripts/themerestore.sh",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/scripts/themerestore.sh mode 0104755 user root group root script"
+      "detail": "/usr/share/sailfishos-uithemer/scripts/themerestore.sh mode 0104755 user root group root script",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/scripts/tools-backupicons.sh",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/scripts/tools-backupicons.sh mode 0104755 user root group root script"
+      "detail": "/usr/share/sailfishos-uithemer/scripts/tools-backupicons.sh mode 0104755 user root group root script",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/scripts/tools-restoreicons.sh",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/scripts/tools-restoreicons.sh mode 0104755 user root group root script"
+      "detail": "/usr/share/sailfishos-uithemer/scripts/tools-restoreicons.sh mode 0104755 user root group root script",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-de.qm",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-de.qm mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-de.qm mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-el.qm",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-el.qm mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-el.qm mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-es.qm",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-es.qm mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-es.qm mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-es_ES.qm",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-es_ES.qm mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-es_ES.qm mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-fr.qm",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-fr.qm mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-fr.qm mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-hu_HU.qm",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-hu_HU.qm mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-hu_HU.qm mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-it.qm",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-it.qm mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-it.qm mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-nl.qm",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-nl.qm mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-nl.qm mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-nl_BE.qm",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-nl_BE.qm mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-nl_BE.qm mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-pl.qm",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-pl.qm mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-pl.qm mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-ru.qm",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-ru.qm mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-ru.qm mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-sl_SI.qm",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-sl_SI.qm mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-sl_SI.qm mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-sv.qm",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-sv.qm mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-sv.qm mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-zh.qm",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-zh.qm mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer-zh.qm mode 0104755 user root group root file",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer.qm",
       "code": "setuid",
-      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer.qm mode 0104755 user root group root file"
+      "detail": "/usr/share/sailfishos-uithemer/translations/sailfishos-uithemer.qm mode 0104755 user root group root file",
+      "color": "red"
     }
   ]
 }

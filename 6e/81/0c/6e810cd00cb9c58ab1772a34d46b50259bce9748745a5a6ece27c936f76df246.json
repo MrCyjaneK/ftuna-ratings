@@ -1,116 +1,74 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "6e810cd00cb9c58ab1772a34d46b50259bce9748745a5a6ece27c936f76df246",
   "key": "mirror/openrepos/aviarus/personal/main/h/harbour-whatsapp-0.9.278-1.armv7hl.rpm",
   "name": "harbour-whatsapp",
   "rpm_version": "0.9.278",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 72,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-whatsapp-daemon.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-whatsapp-daemon.desktop",
       "code": "sailjail.permission",
-      "detail": "Secrets"
+      "detail": "Secrets",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-whatsapp-share.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-whatsapp-share.desktop",
       "code": "sailjail.permission",
-      "detail": "Secrets"
+      "detail": "Secrets",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-whatsapp.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-whatsapp.desktop",
       "code": "sailjail.permission",
-      "detail": "Secrets"
+      "detail": "Secrets",
+      "color": "gray"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=D=/usr/share/applications/harbour-whatsapp.desktop; if [ ! -s $D ] || ! grep -q '^\\[Desktop Entry\\]' $D; then; PSAVE=$(sed -n 's/^Permissions=//p' $D 2\u003e/dev/nul"
+      "detail": "user=root program=/bin/sh body=D=/usr/share/applications/harbour-whatsapp.desktop; if [ ! -s $D ] || ! grep -q '^\\[Desktop Entry\\]' $D; then; PSAVE=$(sed -n 's/^Permissions=//p' $D 2\u003e/dev/nul",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"0\" ]; then; rm -f /usr/share/harbour-whatsapp/gst-launch-1.0 /usr/share/harbour-whatsapp/pactl; rm -f /usr/share/dbus-1/services/harbour.harbour-wh"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"0\" ]; then; rm -f /usr/share/harbour-whatsapp/gst-launch-1.0 /usr/share/harbour-whatsapp/pactl; rm -f /usr/share/dbus-1/services/harbour.harbour-wh",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/harbour-whatsapp-daemon.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/sailjail -p harbour-whatsapp-daemon.desktop -- /usr/bin/harbour-whatsapp-daemon sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/sailjail -p harbour-whatsapp-daemon.desktop -- /usr/bin/harbour-whatsapp-daemon sandbox=none",
+      "color": "green"
     }
   ]
 }

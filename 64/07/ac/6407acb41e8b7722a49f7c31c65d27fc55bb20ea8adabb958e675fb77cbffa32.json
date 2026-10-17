@@ -1,92 +1,46 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "6407acb41e8b7722a49f7c31c65d27fc55bb20ea8adabb958e675fb77cbffa32",
   "key": "mirror/openrepos/eatdirt/personal/main/x/xplanet-background-1.3.1-5.armv7hl.rpm",
   "name": "xplanet-background",
   "rpm_version": "1.3.1",
   "release": "5",
   "arch": "armv7hl",
-  "verdict": 58,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl-user enable xplanet.service; systemctl-user start xplanet.service"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl-user enable xplanet.service; systemctl-user start xplanet.service",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl-user --no-reload disable xplanet.service; systemctl-user stop xplanet.service"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl-user --no-reload disable xplanet.service; systemctl-user stop xplanet.service",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload; if [ $1 -ge 1 ] ; then; systemctl-user try-restart xplanet.service"
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload; if [ $1 -ge 1 ] ; then; systemctl-user try-restart xplanet.service",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/xplanet.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=nemo exec=/usr/bin/xplanet $XPLANET_OPTIONS -prev_command ${XPLANET_PREV} -post_command ${XPLANET_POST} sandbox=none"
+      "detail": "scope=user user=session group=nemo exec=/usr/bin/xplanet $XPLANET_OPTIONS -prev_command ${XPLANET_PREV} -post_command ${XPLANET_POST} sandbox=none",
+      "color": "green"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/xplanet.timer",
       "code": "systemd.timer",
-      "detail": "scope=user activates=xplanet.service"
+      "detail": "scope=user activates=xplanet.service",
+      "color": "green"
     }
   ]
 }

@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "7c9a58cd752bb7cbf24316d0e6f600ad00a636afeaca13e93eb503382a978835",
   "key": "mirror/openrepos/piggz/personal/main/k/kdeconnect-sfos-1.3.1fixupcrash.20181022212530.fee7166-1.armv7hl.rpm",
   "name": "kdeconnect-sfos",
   "rpm_version": "1.3.1+fixup+crash.20181022212530.fee7166",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 80,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/org.kde.kdeconnect.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/lib/libexec/kdeconnectd"
+      "detail": "scope=session user=session exec=/usr/lib/libexec/kdeconnectd",
+      "color": "green"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/kdeconnect-sfos.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     }
   ]
 }

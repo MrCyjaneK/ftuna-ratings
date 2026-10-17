@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "14bf73101de05c232342202315d60eaaedf716cb22a7be96355f87537136930f",
   "key": "mirror/openrepos/247/personal/main/a/ambience-synthwave3-1.0-0.noarch.rpm",
   "name": "ambience-synthwave3",
   "rpm_version": "1.0",
   "release": "0",
   "arch": "noarch",
-  "verdict": 15,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": 0
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=chmod 755 /usr/share/ambience/{name}; chmod 755 /usr/share/ambience/{name}/images; chmod 644 /usr/share/ambience/{name}/*.*"
+      "detail": "user=root program=/bin/sh body=chmod 755 /usr/share/ambience/{name}; chmod 755 /usr/share/ambience/{name}/images; chmod 644 /usr/share/ambience/{name}/*.*",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; rm -rf /usr/share/ambience/{name}"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; rm -rf /usr/share/ambience/{name}",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/ambience/ambience-synthwave/sounds/Synthwave2_ringtone.ogg",
       "code": "worldwrite",
-      "detail": "/usr/share/ambience/ambience-synthwave/sounds/Synthwave2_ringtone.ogg mode 0100777 user root group root exec"
+      "detail": "/usr/share/ambience/ambience-synthwave/sounds/Synthwave2_ringtone.ogg mode 0100777 user root group root exec",
+      "color": "red"
     }
   ]
 }

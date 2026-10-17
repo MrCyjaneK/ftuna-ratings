@@ -1,86 +1,39 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "24d3ff94341c39e8a784077d03f76dc11f9c6b3496f83ae7edff928bfd178824",
   "key": "mirror/openrepos/Rikudou_Sennin/personal/main/m/music-sleep-timer-daemon-1.0.0-1.aarch64.rpm",
   "name": "music-sleep-timer-daemon",
   "rpm_version": "1.0.0",
   "release": "1",
   "arch": "aarch64",
-  "verdict": 58,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :; if [ \"$1\" -eq 1 ]; then; systemctl-user enable --now music-sleep-timer-daemon.service || :"
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :; if [ \"$1\" -eq 1 ]; then; systemctl-user enable --now music-sleep-timer-daemon.service || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; systemctl-user disable --now music-sleep-timer-daemon.service || :; fi"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; systemctl-user disable --now music-sleep-timer-daemon.service || :; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :"
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/music-sleep-timer-daemon.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/music-sleep-timer-daemon sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/music-sleep-timer-daemon sandbox=none",
+      "color": "green"
     }
   ]
 }

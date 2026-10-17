@@ -1,86 +1,39 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "869c079f1695ddbf52930218c99c2dfebf421e28b2160eb9871618500c4282e5",
   "key": "mirror/openrepos/kan/personal/main/d/dnscrypt-proxy-2.1.5-3.armv7hl.rpm",
   "name": "dnscrypt-proxy",
   "rpm_version": "2.1.5",
   "release": "3",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=ln -s %{connman_resolv_conf} %{etc_resolv_conf}; if [ -e /etc/systemd/system/dnscrypt-proxy.service ]; then; systemctl stop dnscrypt-proxy \u0026\u0026 rm -f /etc/systemd"
+      "detail": "user=root program=/bin/sh body=ln -s %{connman_resolv_conf} %{etc_resolv_conf}; if [ -e /etc/systemd/system/dnscrypt-proxy.service ]; then; systemctl stop dnscrypt-proxy \u0026\u0026 rm -f /etc/systemd",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ ! -f /var/lib/dnsmasq/resolv.conf ]; then; rm -f /etc/resolv.conf; \\; ln -s /var/lib/dnscrypt-proxy/resolv.conf /etc/resolv.conf"
+      "detail": "user=root program=/bin/sh body=if [ ! -f /var/lib/dnsmasq/resolv.conf ]; then; rm -f /etc/resolv.conf; \\; ln -s /var/lib/dnscrypt-proxy/resolv.conf /etc/resolv.conf",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=echo \"Uninstalling service \"; \\; /usr/bin/dnscrypt-proxy -service uninstall -config /var/lib/dnscrypt-proxy/dnscrypt-proxy.toml; \\; rm -f /var/lib/environment/c"
+      "detail": "user=root program=/bin/sh body=echo \"Uninstalling service \"; \\; /usr/bin/dnscrypt-proxy -service uninstall -config /var/lib/dnscrypt-proxy/dnscrypt-proxy.toml; \\; rm -f /var/lib/environment/c",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=echo \"Reloading services\"; \\; systemctl daemon-reload; \\; systemctl restart connman; \\"
+      "detail": "user=root program=/bin/sh body=echo \"Reloading services\"; \\; systemctl daemon-reload; \\; systemctl restart connman; \\",
+      "color": "red"
     }
   ]
 }

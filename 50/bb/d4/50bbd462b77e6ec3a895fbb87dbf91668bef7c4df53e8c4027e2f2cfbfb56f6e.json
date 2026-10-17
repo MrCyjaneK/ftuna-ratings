@@ -1,104 +1,60 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "50bbd462b77e6ec3a895fbb87dbf91668bef7c4df53e8c4027e2f2cfbfb56f6e",
   "key": "mirror/openrepos/ade/personal/main/h/harbour-systemmonitor-0.6-54.i486.rpm",
   "name": "harbour-systemmonitor",
   "rpm_version": "0.6",
   "release": "54",
   "arch": "i486",
-  "verdict": 57,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-systemmonitor.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user stop harbour-systemmonitord || true"
+      "detail": "user=root program=/bin/sh body=systemctl-user stop harbour-systemmonitord || true",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || true; systemctl-user enable harbour-systemmonitord || true; systemctl-user start harbour-systemmonitord || true"
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || true; systemctl-user enable harbour-systemmonitord || true; systemctl-user start harbour-systemmonitord || true",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user disable harbour-systemmonitord || true; systemctl-user stop harbour-systemmonitord || true"
+      "detail": "user=root program=/bin/sh body=systemctl-user disable harbour-systemmonitord || true; systemctl-user stop harbour-systemmonitord || true",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || true"
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || true",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%posttrans",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || true; systemctl-user enable harbour-systemmonitord || true; systemctl-user start harbour-systemmonitord || true"
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || true; systemctl-user enable harbour-systemmonitord || true; systemctl-user start harbour-systemmonitord || true",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/harbour-systemmonitord.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-systemmonitord sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-systemmonitord sandbox=none",
+      "color": "green"
     }
   ]
 }

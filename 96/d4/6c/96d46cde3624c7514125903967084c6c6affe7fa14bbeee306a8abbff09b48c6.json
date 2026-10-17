@@ -1,104 +1,60 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "96d46cde3624c7514125903967084c6c6affe7fa14bbeee306a8abbff09b48c6",
   "key": "mirror/openrepos/poetaster/personal/main/s/screenrecorder-0.5.4-1.aarch64.rpm",
   "name": "screenrecorder",
   "rpm_version": "0.5.4",
   "release": "1",
   "arch": "aarch64",
-  "verdict": 60,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": 45
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/org.coderus.screenrecorder.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/bin/false systemd=screenrecorder.service"
+      "detail": "scope=session user=session exec=/bin/false systemd=screenrecorder.service",
+      "color": "green"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/screenrecorder-gui.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user start screenrecorder.service"
+      "detail": "user=root program=/bin/sh body=systemctl-user start screenrecorder.service",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user stop screenrecorder.service"
+      "detail": "user=root program=/bin/sh body=systemctl-user stop screenrecorder.service",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user stop screenrecorder.service"
+      "detail": "user=root program=/bin/sh body=systemctl-user stop screenrecorder.service",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/sbin/screenrecorder",
       "code": "setgid",
-      "detail": "/usr/sbin/screenrecorder mode 0102755 user root group privileged file"
+      "detail": "/usr/sbin/screenrecorder mode 0102755 user root group privileged file",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/screenrecorder.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/sbin/screenrecorder --daemon sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/sbin/screenrecorder --daemon sandbox=none",
+      "color": "green"
     }
   ]
 }

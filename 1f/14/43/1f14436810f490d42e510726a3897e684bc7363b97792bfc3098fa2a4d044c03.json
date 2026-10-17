@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "1f14436810f490d42e510726a3897e684bc7363b97792bfc3098fa2a4d044c03",
   "key": "mirror/openrepos/abranson/personal/main/r/rockpool-1.11-1.2.1.i486.rpm",
   "name": "rockpool",
   "rpm_version": "1.11",
   "release": "1.2.1.jolla",
   "arch": "i486",
-  "verdict": 63,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/rockpool.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=su nemo -c 'systemctl --user daemon-reload'; su nemo -c 'systemctl --user try-restart rockpoold.service'; update-desktop-database"
+      "detail": "user=root program=/bin/sh body=su nemo -c 'systemctl --user daemon-reload'; su nemo -c 'systemctl --user try-restart rockpoold.service'; update-desktop-database",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/rockpoold.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/invoker -o --type=qt5 /usr/bin/rockpoold sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/invoker -o --type=qt5 /usr/bin/rockpoold sandbox=none",
+      "color": "green"
     }
   ]
 }

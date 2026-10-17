@@ -1,92 +1,46 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "a142c8c3f6b241ce626c19e55d0cd5a60225c4abe42b51ba1969ab9ea613fdd8",
   "key": "mirror/openrepos/BlackSailer/personal/main/d/depecher-0.7.0-1.i486.rpm",
   "name": "depecher",
   "rpm_version": "0.7.0",
   "release": "1",
   "arch": "i486",
-  "verdict": 69,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/org.blacksailer.depecher.service",
       "code": "dbus.service",
-      "detail": "scope=session user=nemo exec=/bin/false systemd=org.blacksailer.depecher.service"
+      "detail": "scope=session user=nemo exec=/bin/false systemd=org.blacksailer.depecher.service",
+      "color": "green"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/depecher.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user stop org.blacksailer.depecher.service || true; if /sbin/pidof depecher \u003e /dev/null; then; killall depecher || true"
+      "detail": "user=root program=/bin/sh body=systemctl-user stop org.blacksailer.depecher.service || true; if /sbin/pidof depecher \u003e /dev/null; then; killall depecher || true",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user stop org.blacksailer.depecher.service || true; systemctl-user disable org.blacksailer.depecher.service || true; systemctl-user daemon-reload"
+      "detail": "user=root program=/bin/sh body=systemctl-user stop org.blacksailer.depecher.service || true; systemctl-user disable org.blacksailer.depecher.service || true; systemctl-user daemon-reload",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/org.blacksailer.depecher.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/depecher sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/depecher sandbox=none",
+      "color": "green"
     }
   ]
 }

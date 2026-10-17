@@ -1,98 +1,53 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "5c80b22adb6b16c46020faa13fdf77af72e5c56fdb8f669368d2f215dd630da5",
   "key": "mirror/openrepos/nephros/personal/main/s/screencast-0.4.1-1.aarch64.rpm",
   "name": "screencast",
   "rpm_version": "0.4.1",
   "release": "1",
   "arch": "aarch64",
-  "verdict": 53,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": 45
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"2\" ]; then; systemctl-user stop screencast.socket ||:; systemctl-user stop screencast.service ||:"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"2\" ]; then; systemctl-user stop screencast.socket ||:; systemctl-user stop screencast.service ||:",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload ||:; systemctl-user enable screencast.socket ||:; systemctl-user restart screencast.socket ||:"
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload ||:; systemctl-user enable screencast.socket ||:; systemctl-user restart screencast.socket ||:",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"0\" ]; then; systemctl-user stop screencast.socket ||:; systemctl-user stop screencast.service ||:"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"0\" ]; then; systemctl-user stop screencast.socket ||:; systemctl-user stop screencast.service ||:",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/sbin/screencast",
       "code": "setgid",
-      "detail": "/usr/sbin/screencast mode 0102755 user root group privileged file"
+      "detail": "/usr/sbin/screencast mode 0102755 user root group privileged file",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/screencast.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=-/usr/sbin/screencast --daemon $SCREENCAST_OPTIONS sandbox=none"
+      "detail": "scope=user user=session group=session exec=-/usr/sbin/screencast --daemon $SCREENCAST_OPTIONS sandbox=none",
+      "color": "green"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/screencast.socket",
       "code": "systemd.socket",
-      "detail": "scope=user activates=screencast.service"
+      "detail": "scope=user activates=screencast.service",
+      "color": "green"
     }
   ]
 }

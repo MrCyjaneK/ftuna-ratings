@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "2ec816c7207a28fa036035fff320f7ae713a3e1b2eab5ddc4e596a3c0f78c4e7",
   "key": "chum/5.2_i486/i486/zsh-5.9-1.7.1.bso.i486.rpm",
   "name": "zsh",
   "rpm_version": "5.9",
   "release": "1.7.1.bso",
   "arch": "i486",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 1 ]; then; if [ -f /etc/shells ]; then; grep -qxF \"/usr/bin/zsh\" /etc/shells || echo \"/usr/bin/zsh\" \u003e\u003e /etc/shells"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 1 ]; then; if [ -f /etc/shells ]; then; grep -qxF \"/usr/bin/zsh\" /etc/shells || echo \"/usr/bin/zsh\" \u003e\u003e /etc/shells",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ] \u0026\u0026 [ -f /etc/shells ]; then; sed -i '\\!^/usr/bin/zsh$!dq' /etc/shells; sed -i '\\!^/bin/zsh$!dq' /etc/shells"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ] \u0026\u0026 [ -f /etc/shells ]; then; sed -i '\\!^/usr/bin/zsh$!dq' /etc/shells; sed -i '\\!^/bin/zsh$!dq' /etc/shells",
+      "color": "red"
     }
   ]
 }

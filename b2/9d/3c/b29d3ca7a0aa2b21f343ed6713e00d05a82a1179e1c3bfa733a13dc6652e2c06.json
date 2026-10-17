@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "b29d3ca7a0aa2b21f343ed6713e00d05a82a1179e1c3bfa733a13dc6652e2c06",
   "key": "chum/5.1_aarch64/aarch64/graphviz-12.2.1+git3-1.3.1.bso.aarch64.rpm",
   "name": "graphviz",
   "rpm_version": "12.2.1+git3",
   "release": "1.3.1.bso",
   "arch": "aarch64",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=rm -rf /usr/lib64/graphviz/config6 || :"
+      "detail": "user=root program=/bin/sh body=rm -rf /usr/lib64/graphviz/config6 || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; LD_LIBRARY_PATH=/usr/lib64 /usr/bin/dot -c || :"
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; LD_LIBRARY_PATH=/usr/lib64 /usr/bin/dot -c || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; if [ $1 -eq 0 ]; then; rm -f /usr/lib64/graphviz/config6 || :"
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; if [ $1 -eq 0 ]; then; rm -f /usr/lib64/graphviz/config6 || :",
+      "color": "red"
     }
   ]
 }

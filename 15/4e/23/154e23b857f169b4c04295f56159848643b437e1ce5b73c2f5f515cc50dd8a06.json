@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "154e23b857f169b4c04295f56159848643b437e1ce5b73c2f5f515cc50dd8a06",
   "key": "mirror/openrepos/eugenio/personal/main/k/kernel-module-zram-jolla-3.4.91.20140612.1-2.armv7hl.rpm",
   "name": "kernel-module-zram-jolla",
   "rpm_version": "3.4.91.20140612.1",
   "release": "2",
   "arch": "armv7hl",
-  "verdict": 10,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": 10
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "hooks",
       "path": "/lib/modules/3.4.91.20140612.1/extra/zram.ko",
       "code": "hooks.module",
-      "detail": "mode 0100644 user root group root"
+      "detail": "mode 0100644 user root group root",
+      "color": "red"
     },
     {
       "module": "hooks",
       "path": "/lib/modules/3.4.91.20140612.1/extra/zsmalloc.ko",
       "code": "hooks.module",
-      "detail": "mode 0100644 user root group root"
+      "detail": "mode 0100644 user root group root",
+      "color": "red"
     }
   ]
 }

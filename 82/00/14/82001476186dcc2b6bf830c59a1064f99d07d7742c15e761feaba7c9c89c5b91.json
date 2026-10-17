@@ -1,86 +1,39 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "82001476186dcc2b6bf830c59a1064f99d07d7742c15e761feaba7c9c89c5b91",
   "key": "mirror/openrepos/Sirius3R/personal/main/i/ipv4-tuning-0.1-1.armv7hl.rpm",
   "name": "ipv4-tuning",
   "rpm_version": "0.1",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 25,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": 20
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "hooks",
       "path": "/etc/sysctl.d/ipv4-tuning",
       "code": "hooks.boot",
-      "detail": "mode 0100644 user root group root"
+      "detail": "mode 0100644 user root group root",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=cp /etc/sysctl.d/ipv4-settings.conf /etc/sysctl.d/ipv4-settings.conf-def"
+      "detail": "user=root program=/bin/sh body=cp /etc/sysctl.d/ipv4-settings.conf /etc/sysctl.d/ipv4-settings.conf-def",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=echo \"$(\u003c/etc/sysctl.d/ipv4-tuning)\" \u003e\u003e /etc/sysctl.d/ipv4-settings.conf; sysctl -p /etc/sysctl.d/ipv4-settings.conf"
+      "detail": "user=root program=/bin/sh body=echo \"$(\u003c/etc/sysctl.d/ipv4-tuning)\" \u003e\u003e /etc/sysctl.d/ipv4-settings.conf; sysctl -p /etc/sysctl.d/ipv4-settings.conf",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=rm /etc/sysctl.d/ipv4-tuning; rm /etc/sysctl.d/ipv4-settings.conf; mv /etc/sysctl.d/ipv4-settings.conf-def /etc/sysctl.d/ipv4-settings.conf"
+      "detail": "user=root program=/bin/sh body=rm /etc/sysctl.d/ipv4-tuning; rm /etc/sysctl.d/ipv4-settings.conf; mv /etc/sysctl.d/ipv4-settings.conf-def /etc/sysctl.d/ipv4-settings.conf",
+      "color": "red"
     }
   ]
 }

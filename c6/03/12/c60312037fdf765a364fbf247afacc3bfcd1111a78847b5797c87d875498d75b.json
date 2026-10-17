@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "c60312037fdf765a364fbf247afacc3bfcd1111a78847b5797c87d875498d75b",
   "key": "mirror/openrepos/ichthyosaurus/personal/main/s/sfos-patch-keyboard-swiss-french-layout-1.0.2-1.noarch.rpm",
   "name": "sfos-patch-keyboard-swiss-french-layout",
   "rpm_version": "1.0.2",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-keyboard-swiss-french-layout ]; then; /usr/sbin/patchmanager -u sfos-patch-keyboard-swiss-french-layout |"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-keyboard-swiss-french-layout ]; then; /usr/sbin/patchmanager -u sfos-patch-keyboard-swiss-french-layout |",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-keyboard-swiss-french-layout ]; then; /usr/sbin/patchmanager -u sfos-patch-keyboard-swiss-french-layout |"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-keyboard-swiss-french-layout ]; then; /usr/sbin/patchmanager -u sfos-patch-keyboard-swiss-french-layout |",
+      "color": "red"
     }
   ]
 }

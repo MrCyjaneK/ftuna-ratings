@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "5d71aa76d2ef900b2da70a6e4fa70177f40109213aaad048774782567eb71fde",
   "key": "mirror/openrepos/anig/personal/main/c/calendar-cover-upcoming-0.3-2.armv7hl.rpm",
   "name": "calendar-cover-upcoming",
   "rpm_version": "0.3",
   "release": "2",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=// Do stuff specific to uninstalls; if [ -f /usr/sbin/patchmanager ]; then; /usr/sbin/patchmanager -u calendar-cover-upcoming || true"
+      "detail": "user=root program=/bin/sh body=// Do stuff specific to uninstalls; if [ -f /usr/sbin/patchmanager ]; then; /usr/sbin/patchmanager -u calendar-cover-upcoming || true",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; rm -rf /usr/share/patchmanager/patches/calendar-cover-upcoming || true"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; rm -rf /usr/share/patchmanager/patches/calendar-cover-upcoming || true",
+      "color": "red"
     }
   ]
 }

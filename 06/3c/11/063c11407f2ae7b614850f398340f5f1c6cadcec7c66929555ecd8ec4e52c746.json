@@ -1,140 +1,102 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "063c11407f2ae7b614850f398340f5f1c6cadcec7c66929555ecd8ec4e52c746",
   "key": "mirror/openrepos/eson/personal/main/a/ambience-yrgb-fractals-0.1.0-1.noarch.rpm",
   "name": "ambience-yrgb-fractals",
   "rpm_version": "0.1.0",
   "release": "1",
   "arch": "noarch",
-  "verdict": 15,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": 0
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=chmod 755 /usr/share/ambience/{name}; chmod 755 /usr/share/ambience/{name}/images; chmod 755 /usr/share/ambience/{name}/sounds"
+      "detail": "user=root program=/bin/sh body=chmod 755 /usr/share/ambience/{name}; chmod 755 /usr/share/ambience/{name}/images; chmod 755 /usr/share/ambience/{name}/sounds",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; rm -rf /usr/share/ambience/{name}; systemctl-user restart ambienced.service"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; rm -rf /usr/share/ambience/{name}; systemctl-user restart ambienced.service",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/ambience/ambience-yrgb-fractals/b.ambience",
       "code": "worldwrite",
-      "detail": "/usr/share/ambience/ambience-yrgb-fractals/b.ambience mode 0100666 user root group root file"
+      "detail": "/usr/share/ambience/ambience-yrgb-fractals/b.ambience mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/ambience/ambience-yrgb-fractals/g.ambience",
       "code": "worldwrite",
-      "detail": "/usr/share/ambience/ambience-yrgb-fractals/g.ambience mode 0100666 user root group root file"
+      "detail": "/usr/share/ambience/ambience-yrgb-fractals/g.ambience mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/ambience/ambience-yrgb-fractals/r.ambience",
       "code": "worldwrite",
-      "detail": "/usr/share/ambience/ambience-yrgb-fractals/r.ambience mode 0100666 user root group root file"
+      "detail": "/usr/share/ambience/ambience-yrgb-fractals/r.ambience mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/ambience/ambience-yrgb-fractals/sounds.index",
       "code": "worldwrite",
-      "detail": "/usr/share/ambience/ambience-yrgb-fractals/sounds.index mode 0100666 user root group root file"
+      "detail": "/usr/share/ambience/ambience-yrgb-fractals/sounds.index mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/ambience/ambience-yrgb-fractals/sounds/yrgb-alarm.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/ambience/ambience-yrgb-fractals/sounds/yrgb-alarm.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/ambience/ambience-yrgb-fractals/sounds/yrgb-alarm.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/ambience/ambience-yrgb-fractals/sounds/yrgb-calendar.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/ambience/ambience-yrgb-fractals/sounds/yrgb-calendar.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/ambience/ambience-yrgb-fractals/sounds/yrgb-calendar.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/ambience/ambience-yrgb-fractals/sounds/yrgb-email.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/ambience/ambience-yrgb-fractals/sounds/yrgb-email.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/ambience/ambience-yrgb-fractals/sounds/yrgb-email.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/ambience/ambience-yrgb-fractals/sounds/yrgb-im.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/ambience/ambience-yrgb-fractals/sounds/yrgb-im.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/ambience/ambience-yrgb-fractals/sounds/yrgb-im.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/ambience/ambience-yrgb-fractals/sounds/yrgb-message.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/ambience/ambience-yrgb-fractals/sounds/yrgb-message.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/ambience/ambience-yrgb-fractals/sounds/yrgb-message.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/ambience/ambience-yrgb-fractals/sounds/yrgb-ringtone.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/ambience/ambience-yrgb-fractals/sounds/yrgb-ringtone.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/ambience/ambience-yrgb-fractals/sounds/yrgb-ringtone.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/ambience/ambience-yrgb-fractals/y.ambience",
       "code": "worldwrite",
-      "detail": "/usr/share/ambience/ambience-yrgb-fractals/y.ambience mode 0100666 user root group root file"
+      "detail": "/usr/share/ambience/ambience-yrgb-fractals/y.ambience mode 0100666 user root group root file",
+      "color": "red"
     }
   ]
 }

@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "a7fe20b7a45f7aa6241a1df0750867455233427ef9ca15e9f64dda8c8e01a464",
   "key": "mirror/openrepos/nephros/personal/main/a/ambience-queenmarycaptain-0.2-1.noarch.rpm",
   "name": "ambience-QueenMaryCaptain",
   "rpm_version": "0.2",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user restart ambienced.service"
+      "detail": "user=root program=/bin/sh body=systemctl-user restart ambienced.service",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; rmdir /usr/share/ambience/ambience-QueenMaryCaptain; systemctl-user restart ambienced.service"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; rmdir /usr/share/ambience/ambience-QueenMaryCaptain; systemctl-user restart ambienced.service",
+      "color": "red"
     }
   ]
 }

@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "36ab262b9dd9ad5ad8943d4b734a13fa34ae500b5afc28300bad40ad9fda53a3",
   "key": "mirror/openrepos/ade/personal/main/u/upmpdcli-1.8.3-0.aarch64.rpm",
   "name": "upmpdcli",
   "rpm_version": "1.8.3",
   "release": "0",
   "arch": "aarch64",
-  "verdict": 38,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": 0
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%posttrans",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :"
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/upmpdcli.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/upmpdcli -c /etc/upmpdcli.conf sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/upmpdcli -c /etc/upmpdcli.conf sandbox=none",
+      "color": "green"
     },
     {
       "module": "worldwrite",
       "path": "/etc/upmpdcli.conf",
       "code": "worldwrite",
-      "detail": "/etc/upmpdcli.conf mode 0100666 user root group root file"
+      "detail": "/etc/upmpdcli.conf mode 0100666 user root group root file",
+      "color": "red"
     }
   ]
 }

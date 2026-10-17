@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "80dfc8b603b616d4840c3d70dbeaa68fbdfdedc10af5263563ba893d9fff4c54",
   "key": "mirror/openrepos/Mister_Magister/personal/main/n/nodejs18-18.2.0-1.24.1.jolla_.armv7hl.rpm",
   "name": "nodejs18",
   "rpm_version": "18.2.0",
   "release": "1.24.1.jolla",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=ln -s /usr/bin/node18 /usr/bin/node"
+      "detail": "user=root program=/bin/sh body=ln -s /usr/bin/node18 /usr/bin/node",
+      "color": "red"
     }
   ]
 }

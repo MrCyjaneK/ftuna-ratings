@@ -1,98 +1,53 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "8083bb1a11ceee5928457b7a99eff715429c8886dbbd2644c03369a1c59d317c",
   "key": "mirror/openrepos/nephros/personal/main/h/harbour-privoxy-3.0.30-0.2git2ecae8.armv7hl.rpm",
   "name": "harbour-privoxy",
   "rpm_version": "3.0.30",
   "release": "0.2~git2ecae8",
   "arch": "armv7hl",
-  "verdict": 45,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-privoxy-config.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-privoxy-toggle.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=update-desktop-database /usr/share/applications \u0026\u003e /dev/null || :; systemctl enable harbour-privoxy.service \u003e/dev/null 2\u003e\u00261 ||:; ln -s /etc/pki/tls/cert.pem %{s"
+      "detail": "user=root program=/bin/sh body=update-desktop-database /usr/share/applications \u0026\u003e /dev/null || :; systemctl enable harbour-privoxy.service \u003e/dev/null 2\u003e\u00261 ||:; ln -s /etc/pki/tls/cert.pem %{s",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl --no-reload disable harbour-privoxy.service \u003e/dev/null 2\u003e\u00261 || :; systemctl stop harbour-privoxy.service \u003e/dev/null 2\u003e\u00261 ||:"
+      "detail": "user=root program=/bin/sh body=systemctl --no-reload disable harbour-privoxy.service \u003e/dev/null 2\u003e\u00261 || :; systemctl stop harbour-privoxy.service \u003e/dev/null 2\u003e\u00261 ||:",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=update-desktop-database /usr/share/applications \u0026\u003e /dev/null || :; systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 ||:"
+      "detail": "user=root program=/bin/sh body=update-desktop-database /usr/share/applications \u0026\u003e /dev/null || :; systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 ||:",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/harbour-privoxy.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/sbin/harbour-privoxy                  --pidfile ${PIDFILE}  --user ${PUSER}.inet /usr/share/harbour-privoxy/conf/config.sailfish sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/sbin/harbour-privoxy                  --pidfile ${PIDFILE}  --user ${PUSER}.inet /usr/share/harbour-privoxy/conf/config.sailfish sandbox=none",
+      "color": "red"
     }
   ]
 }

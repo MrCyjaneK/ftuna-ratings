@@ -1,104 +1,60 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "4a8503bf5c2c5898fa7d5b3984347c08369d8315937c16f24721f886fdcf5c0e",
   "key": "mirror/openrepos/V10lator/personal/main/s/samba-4.2.2-3.armv7hl.rpm",
   "name": "samba",
   "rpm_version": "4.2.2",
   "release": "3",
   "arch": "armv7hl",
-  "verdict": 45,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/samba.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 1 ]; then; mkdir /var/log/samba; mkdir /var/cache/samba"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 1 ]; then; mkdir /var/log/samba; mkdir /var/cache/samba",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; rm -rf /etc/samba /usr/include/samba-4.0 /usr/lib/samba /usr/share/samba /usr/lib/python2.7/site-packag"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; rm -rf /etc/samba /usr/include/samba-4.0 /usr/lib/samba /usr/share/samba /usr/lib/python2.7/site-packag",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/lib/systemd/system/nmb.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/sbin/nmbd -F $NMBDOPTIONS sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/sbin/nmbd -F $NMBDOPTIONS sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/lib/systemd/system/samba.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/sbin/samba $SAMBAOPTIONS sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/sbin/samba $SAMBAOPTIONS sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/lib/systemd/system/smb.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/sbin/smbd $SMBDOPTIONS sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/sbin/smbd $SMBDOPTIONS sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/lib/systemd/system/winbind.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/sbin/winbindd \"$WINBINDOPTIONS\" sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/sbin/winbindd \"$WINBINDOPTIONS\" sandbox=none",
+      "color": "red"
     }
   ]
 }

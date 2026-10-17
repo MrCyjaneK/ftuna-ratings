@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "e8fb08df17b9820e15fbda6cfb417757d52c273e8112b837455e86a10c478392",
   "key": "mirror/openrepos/abranson/personal/main/s/sailfish-account-rss-0.9.2-1.10.1.bso_.aarch64.rpm",
   "name": "sailfish-account-rss",
   "rpm_version": "0.9.2",
   "release": "1.10.1.bso",
   "arch": "aarch64",
-  "verdict": 53,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/rss-import.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; /usr/libexec/manage-groups add account-rss || :; systemctl-user try-restart msyncd.service || :"
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; /usr/libexec/manage-groups add account-rss || :; systemctl-user try-restart msyncd.service || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; if [ \"$1\" -eq 0 ]; then; /usr/libexec/manage-groups remove account-rss || :"
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; if [ \"$1\" -eq 0 ]; then; /usr/libexec/manage-groups remove account-rss || :",
+      "color": "red"
     }
   ]
 }

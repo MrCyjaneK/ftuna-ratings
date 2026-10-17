@@ -1,86 +1,39 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "ea260adf4bc9d6bc5c89df0d930991139bc1eb6b118d6339ab4ff4f3d3d553fd",
   "key": "mirror/openrepos/dev_nis/personal/main/j/jolla-settings-screenmonitor-1.0.7-1.armv7hl.rpm",
   "name": "jolla-settings-screenmonitor",
   "rpm_version": "1.0.7",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 30
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/system-services/eu.medesimo.ScreenMonitor.service",
       "code": "dbus.service",
-      "detail": "scope=system user=root exec=/usr/bin/ScreenMonitor"
+      "detail": "scope=system user=root exec=/usr/bin/ScreenMonitor",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/bin/systemctl enable ScreenMonitor.service"
+      "detail": "user=root program=/bin/sh body=/usr/bin/systemctl enable ScreenMonitor.service",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/bin/systemctl disable ScreenMonitor.service"
+      "detail": "user=root program=/bin/sh body=/usr/bin/systemctl disable ScreenMonitor.service",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/ScreenMonitor.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/bin/ScreenMonitor --dbus sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/bin/ScreenMonitor --dbus sandbox=none",
+      "color": "red"
     }
   ]
 }

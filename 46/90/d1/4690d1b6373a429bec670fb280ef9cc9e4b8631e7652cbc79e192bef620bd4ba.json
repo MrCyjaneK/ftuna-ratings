@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "4690d1b6373a429bec670fb280ef9cc9e4b8631e7652cbc79e192bef620bd4ba",
   "key": "mirror/openrepos/gexc/personal/main/p/pdnsd-1.2.9a-0.armv7hl.rpm",
   "name": "pdnsd",
   "rpm_version": "1.2.9a",
   "release": "0",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=chown -R nobody:nobody /var/cache/pdnsd"
+      "detail": "user=root program=/bin/sh body=chown -R nobody:nobody /var/cache/pdnsd",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; rm -rf /var/cache/pdnsd"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; rm -rf /var/cache/pdnsd",
+      "color": "red"
     }
   ]
 }

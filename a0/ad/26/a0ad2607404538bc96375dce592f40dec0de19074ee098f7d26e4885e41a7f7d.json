@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "a0ad2607404538bc96375dce592f40dec0de19074ee098f7d26e4885e41a7f7d",
   "key": "mirror/openrepos/nephros/personal/main/h/harbour-mlocate-systemd-system-0.26-12.noarch.rpm",
   "name": "harbour-mlocate-systemd-system",
   "rpm_version": "0.26",
   "release": "12",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl enable harbour-mlocate-updatedb.timer || :; if [ $1 -eq 1 ] ; then; systemctl --no-reload preset harbour-mlocate-updatedb.service \u003e/dev/null 2\u003e\u00261 || :"
+      "detail": "user=root program=/bin/sh body=systemctl enable harbour-mlocate-updatedb.timer || :; if [ $1 -eq 1 ] ; then; systemctl --no-reload preset harbour-mlocate-updatedb.service \u003e/dev/null 2\u003e\u00261 || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; rm -f /var/cache/harbour-mlocate.db || :; else"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; rm -f /var/cache/harbour-mlocate.db || :; else",
+      "color": "red"
     }
   ]
 }

@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "7db016e7a4887496b53c87fc3765b37901f007484e67d46f79d7724044699d80",
   "key": "mirror/openrepos/olf/personal/main/m/mount-sdcard-1.8.0-1.sfos321.noarch.rpm",
   "name": "mount-sdcard",
   "rpm_version": "1.8.0",
   "release": "1.sfos321",
   "arch": "noarch",
-  "verdict": 23,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": 10
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": 30
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "polkit",
       "path": "/etc/polkit-1/localauthority/50-local.d/61-mountsd.pkla",
       "code": "polkit.pkla",
-      "detail": "Identity=unix-group:root ResultAny=yes"
+      "detail": "Identity=unix-group:root ResultAny=yes",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/system/mount-sd@.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/bin/udisksctl-user mount $UDISKS2_MOUNT_OPTIONS -b /dev/%i sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/bin/udisksctl-user mount $UDISKS2_MOUNT_OPTIONS -b /dev/%i sandbox=none",
+      "color": "red"
     },
     {
       "module": "udev",
       "path": "/etc/udev/rules.d/91-mountsd.rules",
       "code": "udev.run",
-      "detail": "user=root program=/bin/systemctl stop mount-sd@%k.service"
+      "detail": "user=root program=/bin/systemctl stop mount-sd@%k.service",
+      "color": "red"
     }
   ]
 }

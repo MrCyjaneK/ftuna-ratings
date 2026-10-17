@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "75c97e7932800f3a9cd001133f707eac9bf78709e154e6b615a02b6982dd66e2",
   "key": "chum/5.2_aarch64/noarch/mlocate-service-user-0.26+git4-1.1.1.bso.noarch.rpm",
   "name": "mlocate-service-user",
   "rpm_version": "0.26+git4",
   "release": "1.1.1.bso",
   "arch": "noarch",
-  "verdict": 58,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl --no-reload preset \\--user \\--global mlocate-updatedb-user.service ||: \u003e/dev/null 2\u003e\u00261 || :; fi"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl --no-reload preset \\--user \\--global mlocate-updatedb-user.service ||: \u003e/dev/null 2\u003e\u00261 || :; fi",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/mlocate-updatedb-user.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/updatedb -l 0 -o %h/.cache/locateDB.db -U %h sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/updatedb -l 0 -o %h/.cache/locateDB.db -U %h sandbox=none",
+      "color": "green"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/mlocate-updatedb-user.timer",
       "code": "systemd.timer",
-      "detail": "scope=user activates=mlocate-updatedb-user.service"
+      "detail": "scope=user activates=mlocate-updatedb-user.service",
+      "color": "green"
     }
   ]
 }

@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "9edccf12893edc052819ff841763ddd4cbb9af983496bb4a8ab9391f097270c7",
   "key": "mirror/openrepos/krnlyng/personal/main/k/kodi-devel-18.7-leia.i486.rpm",
   "name": "kodi-devel",
   "rpm_version": "18.7",
   "release": "Leia",
   "arch": "i486",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%posttrans",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ ! -L /usr/include/xbmc ] ; then; rmdir /usr/include/xbmc; ln -s kodi ${RPM_BUILD_ROOT}/usr/include/xbmc"
+      "detail": "user=root program=/bin/sh body=if [ ! -L /usr/include/xbmc ] ; then; rmdir /usr/include/xbmc; ln -s kodi ${RPM_BUILD_ROOT}/usr/include/xbmc",
+      "color": "red"
     }
   ]
 }

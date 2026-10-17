@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "f329274efc882f024a9b3ff00ca8b7c5cb406d3a8e44739369d1f254d4f3602c",
   "key": "mirror/openrepos/aviarus/personal/main/e/embedlite-components-qt5-next153-2.0.0-9.aarch64.rpm",
   "name": "embedlite-components-qt5-next153",
   "rpm_version": "2.0.0",
   "release": "9",
   "arch": "aarch64",
-  "verdict": 15,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": 0
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=udevadm control --reload-rules \u003e/dev/null 2\u003e\u00261 || :; udevadm trigger --subsystem-match=hidraw \u003e/dev/null 2\u003e\u00261 || :; touch /var/lib/_MOZEMBED_CACHE_CLEAN_"
+      "detail": "user=root program=/bin/sh body=udevadm control --reload-rules \u003e/dev/null 2\u003e\u00261 || :; udevadm trigger --subsystem-match=hidraw \u003e/dev/null 2\u003e\u00261 || :; touch /var/lib/_MOZEMBED_CACHE_CLEAN_",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/licenses/embedlite-components-qt5-next153-2.0.0/COPYING",
       "code": "worldwrite",
-      "detail": "/usr/share/licenses/embedlite-components-qt5-next153-2.0.0/COPYING mode 0100666 user root group root file"
+      "detail": "/usr/share/licenses/embedlite-components-qt5-next153-2.0.0/COPYING mode 0100666 user root group root file",
+      "color": "red"
     }
   ]
 }

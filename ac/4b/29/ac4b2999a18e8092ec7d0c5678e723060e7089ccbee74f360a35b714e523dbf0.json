@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "ac4b2999a18e8092ec7d0c5678e723060e7089ccbee74f360a35b714e523dbf0",
   "key": "mirror/openrepos/ade/personal/main/n/nmap-suid-7.93-1.aarch64.rpm",
   "name": "nmap-suid",
   "rpm_version": "7.93",
   "release": "1",
   "arch": "aarch64",
-  "verdict": 0,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": 0
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "setuid",
       "path": "/usr/share/nmap-suid/bin/nmap",
       "code": "setuid",
-      "detail": "/usr/share/nmap-suid/bin/nmap mode 0104755 user root group root file"
+      "detail": "/usr/share/nmap-suid/bin/nmap mode 0104755 user root group root file",
+      "color": "red"
     }
   ]
 }

@@ -1,98 +1,53 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "dc70cf1e5a010b73247c2ffd303f68dde2402cbb5823e9fd42818a2bf8464cdf",
   "key": "mirror/openrepos/peterleinchen/personal/main/h/harbour-defender-0.4.1-1.armv7hl.rpm",
   "name": "harbour-defender",
   "rpm_version": "0.4.1",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 45,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-defender.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=[ -f /etc/hosts ] \u0026\u0026 echo \"/etc/hosts exists\" || echo -e \"127.0.0.1               localhost.localdomain localhost\\n::1             localhost6.localdomain6 local"
+      "detail": "user=root program=/bin/sh body=[ -f /etc/hosts ] \u0026\u0026 echo \"/etc/hosts exists\" || echo -e \"127.0.0.1               localhost.localdomain localhost\\n::1             localhost6.localdomain6 local",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"0\" ]; then; systemctl stop harbour-defender.timer; systemctl disable harbour-defender.timer"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"0\" ]; then; systemctl stop harbour-defender.timer; systemctl disable harbour-defender.timer",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/system/harbour-defender.path",
       "code": "systemd.path",
-      "detail": "scope=system activates=harbour-defender.service"
+      "detail": "scope=system activates=harbour-defender.service",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/system/harbour-defender.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/bin/python3 /usr/share/harbour-defender/qml/python/defender_updater.py sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/bin/python3 /usr/share/harbour-defender/qml/python/defender_updater.py sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/system/harbour-defender.timer",
       "code": "systemd.timer",
-      "detail": "scope=system activates=harbour-defender.service"
+      "detail": "scope=system activates=harbour-defender.service",
+      "color": "red"
     }
   ]
 }

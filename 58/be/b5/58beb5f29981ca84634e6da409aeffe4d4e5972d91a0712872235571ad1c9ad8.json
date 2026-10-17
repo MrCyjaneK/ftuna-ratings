@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "58beb5f29981ca84634e6da409aeffe4d4e5972d91a0712872235571ad1c9ad8",
   "key": "mirror/openrepos/kan/personal/main/h/harbour-arcanechat-tui-0.12.0-2.aarch64.rpm",
   "name": "harbour-arcanechat-tui",
   "rpm_version": "0.12.0",
   "release": "2",
   "arch": "aarch64",
-  "verdict": 53,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-arcanechat-tui.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=ln -s /usr/share/harbour-arcanechat-tui/lib/python3.11/site-packages/deltachat_rpc_server/deltachat-rpc-server /usr/bin/deltachat-rpc-server; ln -s /usr/share/h"
+      "detail": "user=root program=/bin/sh body=ln -s /usr/share/harbour-arcanechat-tui/lib/python3.11/site-packages/deltachat_rpc_server/deltachat-rpc-server /usr/bin/deltachat-rpc-server; ln -s /usr/share/h",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -gt 1 ] ; then; if [ -e /usr/bin/deltachat_rpc_server ]; then; rm -f /usr/bin/deltachat_rpc_server \u003e /dev/null 2\u003e\u00261 || true"
+      "detail": "user=root program=/bin/sh body=if [ $1 -gt 1 ] ; then; if [ -e /usr/bin/deltachat_rpc_server ]; then; rm -f /usr/bin/deltachat_rpc_server \u003e /dev/null 2\u003e\u00261 || true",
+      "color": "red"
     }
   ]
 }

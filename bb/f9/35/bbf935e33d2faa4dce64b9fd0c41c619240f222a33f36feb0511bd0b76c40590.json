@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "bbf935e33d2faa4dce64b9fd0c41c619240f222a33f36feb0511bd0b76c40590",
   "key": "mirror/openrepos/ichthyosaurus/personal/main/s/sfos-patch-homescreen-launcher-hint-rows-1.0.0-1.noarch.rpm",
   "name": "sfos-patch-homescreen-launcher-hint-rows",
   "rpm_version": "1.0.0",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-homescreen-launcher-hint-rows ]; then; /usr/sbin/patchmanager -u sfos-patch-homescreen-launcher-hint-rows"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-homescreen-launcher-hint-rows ]; then; /usr/sbin/patchmanager -u sfos-patch-homescreen-launcher-hint-rows",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-homescreen-launcher-hint-rows ]; then; /usr/sbin/patchmanager -u sfos-patch-homescreen-launcher-hint-rows"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sfos-patch-homescreen-launcher-hint-rows ]; then; /usr/sbin/patchmanager -u sfos-patch-homescreen-launcher-hint-rows",
+      "color": "red"
     }
   ]
 }

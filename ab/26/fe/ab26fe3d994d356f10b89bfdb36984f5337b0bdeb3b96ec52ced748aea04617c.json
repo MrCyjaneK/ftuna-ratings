@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "ab26fe3d994d356f10b89bfdb36984f5337b0bdeb3b96ec52ced748aea04617c",
   "key": "mirror/openrepos/aviarus/personal/main/r/r7office-sfos-installer-1.2.0-1.aarch64.rpm",
   "name": "r7office-sfos-installer",
   "rpm_version": "1.2.0",
   "release": "1",
   "arch": "aarch64",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if /usr/bin/r7office-install; then; :; else"
+      "detail": "user=root program=/bin/sh body=if /usr/bin/r7office-install; then; :; else",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; TARGET=/usr/share/ru.r7office.documents; for f in pages/EditorPage.qml pages/FilesPage.qml; do"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; TARGET=/usr/share/ru.r7office.documents; for f in pages/EditorPage.qml pages/FilesPage.qml; do",
+      "color": "red"
     }
   ]
 }

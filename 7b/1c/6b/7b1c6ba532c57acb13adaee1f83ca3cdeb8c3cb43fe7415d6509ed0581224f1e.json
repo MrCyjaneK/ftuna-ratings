@@ -1,92 +1,46 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "7b1c6ba532c57acb13adaee1f83ca3cdeb8c3cb43fe7415d6509ed0581224f1e",
   "key": "mirror/openrepos/kan/personal/main/h/harbour-dns-alternative-0.92-0.noarch.rpm",
   "name": "harbour-dns-alternative",
   "rpm_version": "0.92",
   "release": "0",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=rm -f /etc/resolv.conf; \\; ln -s /var/run/connman/resolv.conf /etc/resolv.conf"
+      "detail": "user=root program=/bin/sh body=rm -f /etc/resolv.conf; \\; ln -s /var/run/connman/resolv.conf /etc/resolv.conf",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ ! -f /usr/lib/systemd/system/dnsmasq.service ]; then; cp /var/lib/dnsmasq/dnsmasq.service /usr/lib/systemd/system/dnsmasq.service; fi"
+      "detail": "user=root program=/bin/sh body=if [ ! -f /usr/lib/systemd/system/dnsmasq.service ]; then; cp /var/lib/dnsmasq/dnsmasq.service /usr/lib/systemd/system/dnsmasq.service; fi",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/system/connman.service.d/override.conf",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=unknown sandbox=none"
+      "detail": "scope=system user=root group=root exec=unknown sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/system/dnscrypt-proxy.service.d/override.conf",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/bin/dnscrypt-proxy \"-config\" \"/var/lib/harbour-dns-alternative/dnscrypt-proxy.toml\" sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/bin/dnscrypt-proxy \"-config\" \"/var/lib/harbour-dns-alternative/dnscrypt-proxy.toml\" sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/system/dnsmasq.service.d/override.conf",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/sbin/dnsmasq --enable-dbus=org.DNS.Alternative.dnsmasq -k sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/sbin/dnsmasq --enable-dbus=org.DNS.Alternative.dnsmasq -k sandbox=none",
+      "color": "red"
     }
   ]
 }

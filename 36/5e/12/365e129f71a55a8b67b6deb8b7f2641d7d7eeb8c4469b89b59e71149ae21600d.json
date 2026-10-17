@@ -1,92 +1,46 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "365e129f71a55a8b67b6deb8b7f2641d7d7eeb8c4469b89b59e71149ae21600d",
   "key": "mirror/openrepos/psyhlo/personal/main/h/harbour-carhotspot-0.1.32-1.armv7hl.rpm",
   "name": "harbour-carhotspot",
   "rpm_version": "0.1.32",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 64,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/harbour.carhotspot.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/bin/harbour-carhotspot"
+      "detail": "scope=session user=session exec=/usr/bin/harbour-carhotspot",
+      "color": "green"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-carhotspot.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=chmod 440 /etc/sudoers.d/harbour-carhotspot || true; systemctl-user daemon-reload \u003e/dev/null 2\u003e\u00261 || true; systemctl-user enable harbour-carhotspot.service \u003e/de"
+      "detail": "user=root program=/bin/sh body=chmod 440 /etc/sudoers.d/harbour-carhotspot || true; systemctl-user daemon-reload \u003e/dev/null 2\u003e\u00261 || true; systemctl-user enable harbour-carhotspot.service \u003e/de",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; systemctl-user stop harbour-carhotspot.service \u003e/dev/null 2\u003e\u00261 || true; systemctl-user disable harbour-carhotspot.service \u003e/dev/null 2\u003e\u00261"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; systemctl-user stop harbour-carhotspot.service \u003e/dev/null 2\u003e\u00261 || true; systemctl-user disable harbour-carhotspot.service \u003e/dev/null 2\u003e\u00261",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/harbour-carhotspot.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-carhotspot --daemon sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-carhotspot --daemon sandbox=none",
+      "color": "green"
     }
   ]
 }

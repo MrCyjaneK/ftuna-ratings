@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "ff72000afa253a47cee9ed1e5f31556b48f6b29c01ac0551d2d3f52e6a5b7655",
   "key": "mirror/openrepos/alina/personal/main/s/sailfishos-patch-sneakpeek-0.1-7.noarch.rpm",
   "name": "sailfishos-patch-sneakpeek",
   "rpm_version": "0.1",
   "release": "7",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-sneakpeek ]; then; /usr/sbin/patchmanager -u sailfishos-patch-sneakpeek || true; fi"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-sneakpeek ]; then; /usr/sbin/patchmanager -u sailfishos-patch-sneakpeek || true; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-sneakpeek ]; then; /usr/sbin/patchmanager -u sailfishos-patch-sneakpeek || true; fi"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/ausmt/patches/sailfishos-patch-sneakpeek ]; then; /usr/sbin/patchmanager -u sailfishos-patch-sneakpeek || true; fi",
+      "color": "red"
     }
   ]
 }

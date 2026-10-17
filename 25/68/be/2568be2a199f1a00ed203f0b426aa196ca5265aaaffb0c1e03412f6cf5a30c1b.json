@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "2568be2a199f1a00ed203f0b426aa196ca5265aaaffb0c1e03412f6cf5a30c1b",
   "key": "mirror/openrepos/nephros/personal/main/e/enchanted-sound-theme-1.1git1-1.9.1.jolla_.noarch.rpm",
   "name": "enchanted-sound-theme",
   "rpm_version": "1.1+git1",
   "release": "1.9.1.jolla",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl --no-reload preset --user --global restart ambienced \u003e/dev/null 2\u003e\u00261 || :; fi"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl --no-reload preset --user --global restart ambienced \u003e/dev/null 2\u003e\u00261 || :; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl --no-reload preset --user --global restart ambienced \u003e/dev/null 2\u003e\u00261 || :"
+      "detail": "user=root program=/bin/sh body=systemctl --no-reload preset --user --global restart ambienced \u003e/dev/null 2\u003e\u00261 || :",
+      "color": "red"
     }
   ]
 }

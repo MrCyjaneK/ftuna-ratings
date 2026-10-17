@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "3dc39612b0822a226652d8580741741b6ea7a2522fc565a4751c6ad4df774502",
   "key": "mirror/openrepos/neochapay/personal/main/g/glacier-dialer-0.1-1.i486.rpm",
   "name": "glacier-dialer",
   "rpm_version": "0.1",
   "release": "1",
   "arch": "i486",
-  "verdict": 82,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/org.glacier.voicecall.ui.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/bin/glacier-dialer -prestart"
+      "detail": "scope=session user=session exec=/usr/bin/glacier-dialer -prestart",
+      "color": "green"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/glacier-dialer.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/voicecall-ui-prestart.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/glacier-dialer -prestart sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/glacier-dialer -prestart sandbox=none",
+      "color": "green"
     }
   ]
 }

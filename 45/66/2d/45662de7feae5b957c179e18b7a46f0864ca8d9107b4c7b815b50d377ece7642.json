@@ -1,890 +1,977 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "45662de7feae5b957c179e18b7a46f0864ca8d9107b4c7b815b50d377ece7642",
   "key": "mirror/openrepos/edp17/personal/main/h/harbour-tinycrew-0.5-1.aarch64.rpm",
   "name": "harbour-tinycrew",
   "rpm_version": "0.5",
   "release": "1",
   "arch": "aarch64",
-  "verdict": 50,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": 0
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-tinycrew.desktop",
       "code": "sailjail.permission",
-      "detail": "Audio"
+      "detail": "Audio",
+      "color": "gray"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/qml/AboutPage.qml",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/qml/AboutPage.qml mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/qml/AboutPage.qml mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/qml/CoverPage.qml",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/qml/CoverPage.qml mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/qml/CoverPage.qml mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/qml/GameRules.qml",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/qml/GameRules.qml mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/qml/GameRules.qml mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/qml/LevelSelectPage.qml",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/qml/LevelSelectPage.qml mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/qml/LevelSelectPage.qml mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/qml/RuleIllustration.qml",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/qml/RuleIllustration.qml mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/qml/RuleIllustration.qml mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/qml/Settings.qml",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/qml/Settings.qml mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/qml/Settings.qml mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/qml/harbour-tinycrew.qml",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/qml/harbour-tinycrew.qml mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/qml/harbour-tinycrew.qml mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/qml/icons",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/qml/icons mode 040777 user root group root dir"
+      "detail": "/usr/share/harbour-tinycrew/qml/icons mode 040777 user root group root dir",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/qml/icons/harbour-tinycrew.svg",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/qml/icons/harbour-tinycrew.svg mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/qml/icons/harbour-tinycrew.svg mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/qml/icons/icon-256.png",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/qml/icons/icon-256.png mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/qml/icons/icon-256.png mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds mode 040777 user root group root dir"
+      "detail": "/usr/share/harbour-tinycrew/sounds mode 040777 user root group root dir",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/fail.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/fail.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/fail.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels mode 040777 user root group root dir"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels mode 040777 user root group root dir",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/05",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/05 mode 040777 user root group root dir"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/05 mode 040777 user root group root dir",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/05/fail.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/05/fail.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/05/fail.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/05/object.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/05/object.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/05/object.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/05/save.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/05/save.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/05/save.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/05/skill.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/05/skill.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/05/skill.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/05/win.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/05/win.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/05/win.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/10",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/10 mode 040777 user root group root dir"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/10 mode 040777 user root group root dir",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/10/fail.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/10/fail.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/10/fail.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/10/object.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/10/object.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/10/object.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/10/save.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/10/save.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/10/save.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/10/skill.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/10/skill.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/10/skill.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/10/win.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/10/win.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/10/win.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/100",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/100 mode 040777 user root group root dir"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/100 mode 040777 user root group root dir",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/100/fail.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/100/fail.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/100/fail.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/100/object.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/100/object.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/100/object.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/100/save.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/100/save.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/100/save.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/100/skill.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/100/skill.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/100/skill.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/100/win.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/100/win.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/100/win.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/15",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/15 mode 040777 user root group root dir"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/15 mode 040777 user root group root dir",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/15/fail.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/15/fail.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/15/fail.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/15/object.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/15/object.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/15/object.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/15/save.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/15/save.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/15/save.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/15/skill.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/15/skill.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/15/skill.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/15/win.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/15/win.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/15/win.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/20",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/20 mode 040777 user root group root dir"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/20 mode 040777 user root group root dir",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/20/fail.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/20/fail.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/20/fail.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/20/object.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/20/object.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/20/object.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/20/save.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/20/save.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/20/save.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/20/skill.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/20/skill.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/20/skill.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/20/win.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/20/win.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/20/win.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/25",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/25 mode 040777 user root group root dir"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/25 mode 040777 user root group root dir",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/25/fail.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/25/fail.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/25/fail.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/25/object.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/25/object.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/25/object.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/25/save.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/25/save.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/25/save.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/25/skill.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/25/skill.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/25/skill.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/25/win.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/25/win.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/25/win.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/30",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/30 mode 040777 user root group root dir"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/30 mode 040777 user root group root dir",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/30/fail.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/30/fail.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/30/fail.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/30/object.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/30/object.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/30/object.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/30/save.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/30/save.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/30/save.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/30/skill.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/30/skill.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/30/skill.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/30/win.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/30/win.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/30/win.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/35",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/35 mode 040777 user root group root dir"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/35 mode 040777 user root group root dir",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/35/fail.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/35/fail.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/35/fail.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/35/object.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/35/object.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/35/object.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/35/save.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/35/save.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/35/save.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/35/skill.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/35/skill.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/35/skill.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/35/win.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/35/win.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/35/win.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/40",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/40 mode 040777 user root group root dir"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/40 mode 040777 user root group root dir",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/40/fail.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/40/fail.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/40/fail.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/40/object.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/40/object.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/40/object.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/40/save.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/40/save.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/40/save.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/40/skill.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/40/skill.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/40/skill.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/40/win.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/40/win.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/40/win.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/45",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/45 mode 040777 user root group root dir"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/45 mode 040777 user root group root dir",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/45/fail.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/45/fail.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/45/fail.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/45/object.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/45/object.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/45/object.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/45/save.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/45/save.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/45/save.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/45/skill.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/45/skill.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/45/skill.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/45/win.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/45/win.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/45/win.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/50",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/50 mode 040777 user root group root dir"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/50 mode 040777 user root group root dir",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/50/fail.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/50/fail.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/50/fail.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/50/object.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/50/object.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/50/object.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/50/save.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/50/save.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/50/save.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/50/skill.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/50/skill.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/50/skill.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/50/win.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/50/win.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/50/win.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/55",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/55 mode 040777 user root group root dir"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/55 mode 040777 user root group root dir",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/55/fail.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/55/fail.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/55/fail.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/55/object.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/55/object.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/55/object.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/55/save.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/55/save.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/55/save.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/55/skill.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/55/skill.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/55/skill.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/55/win.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/55/win.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/55/win.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/60",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/60 mode 040777 user root group root dir"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/60 mode 040777 user root group root dir",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/60/fail.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/60/fail.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/60/fail.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/60/object.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/60/object.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/60/object.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/60/save.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/60/save.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/60/save.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/60/skill.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/60/skill.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/60/skill.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/60/win.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/60/win.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/60/win.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/65",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/65 mode 040777 user root group root dir"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/65 mode 040777 user root group root dir",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/65/fail.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/65/fail.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/65/fail.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/65/object.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/65/object.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/65/object.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/65/save.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/65/save.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/65/save.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/65/skill.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/65/skill.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/65/skill.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/65/win.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/65/win.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/65/win.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/70",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/70 mode 040777 user root group root dir"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/70 mode 040777 user root group root dir",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/70/fail.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/70/fail.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/70/fail.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/70/object.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/70/object.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/70/object.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/70/save.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/70/save.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/70/save.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/70/skill.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/70/skill.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/70/skill.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/70/win.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/70/win.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/70/win.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/75",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/75 mode 040777 user root group root dir"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/75 mode 040777 user root group root dir",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/75/fail.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/75/fail.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/75/fail.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/75/object.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/75/object.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/75/object.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/75/save.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/75/save.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/75/save.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/75/skill.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/75/skill.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/75/skill.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/75/win.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/75/win.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/75/win.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/80",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/80 mode 040777 user root group root dir"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/80 mode 040777 user root group root dir",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/80/fail.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/80/fail.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/80/fail.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/80/object.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/80/object.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/80/object.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/80/save.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/80/save.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/80/save.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/80/skill.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/80/skill.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/80/skill.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/80/win.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/80/win.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/80/win.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/85",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/85 mode 040777 user root group root dir"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/85 mode 040777 user root group root dir",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/85/fail.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/85/fail.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/85/fail.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/85/object.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/85/object.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/85/object.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/85/save.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/85/save.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/85/save.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/85/skill.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/85/skill.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/85/skill.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/85/win.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/85/win.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/85/win.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/90",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/90 mode 040777 user root group root dir"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/90 mode 040777 user root group root dir",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/90/fail.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/90/fail.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/90/fail.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/90/object.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/90/object.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/90/object.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/90/save.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/90/save.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/90/save.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/90/skill.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/90/skill.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/90/skill.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/90/win.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/90/win.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/90/win.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/95",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/95 mode 040777 user root group root dir"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/95 mode 040777 user root group root dir",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/95/fail.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/95/fail.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/95/fail.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/95/object.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/95/object.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/95/object.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/95/save.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/95/save.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/95/save.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/95/skill.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/95/skill.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/95/skill.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/levels/95/win.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/levels/95/win.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/levels/95/win.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/object.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/object.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/object.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/save.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/save.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/save.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/skill.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/skill.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/skill.wav mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-tinycrew/sounds/win.wav",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-tinycrew/sounds/win.wav mode 0100666 user root group root file"
+      "detail": "/usr/share/harbour-tinycrew/sounds/win.wav mode 0100666 user root group root file",
+      "color": "red"
     }
   ]
 }

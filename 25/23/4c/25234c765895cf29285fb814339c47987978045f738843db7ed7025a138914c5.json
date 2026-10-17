@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "25234c765895cf29285fb814339c47987978045f738843db7ed7025a138914c5",
   "key": "mirror/openrepos/Ingvix/personal/main/s/sailfishos-patch-scale-poky-fish-0.1.1-1.noarch.rpm",
   "name": "sailfishos-patch-scale-poky-fish",
   "rpm_version": "0.1.1",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -x /usr/sbin/patchmanager ]; then; /usr/sbin/patchmanager -u sailfishos-patch-scale-poky-fish || true; fi"
+      "detail": "user=root program=/bin/sh body=if [ -x /usr/sbin/patchmanager ]; then; /usr/sbin/patchmanager -u sailfishos-patch-scale-poky-fish || true; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=rm -fr /usr/share/jolla-settings/pages/sailfishos-patch-improved-notification-preview/"
+      "detail": "user=root program=/bin/sh body=rm -fr /usr/share/jolla-settings/pages/sailfishos-patch-improved-notification-preview/",
+      "color": "red"
     }
   ]
 }

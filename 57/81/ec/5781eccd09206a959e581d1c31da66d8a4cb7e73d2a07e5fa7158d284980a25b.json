@@ -1,164 +1,130 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "5781eccd09206a959e581d1c31da66d8a4cb7e73d2a07e5fa7158d284980a25b",
   "key": "chum/5.1_i486/i486/nfs-utils-2.9.1+git1-1.7.1.bso.i486.rpm",
   "name": "nfs-utils",
   "rpm_version": "2.9.1+git1",
   "release": "1.7.1.bso",
   "arch": "i486",
-  "verdict": 20,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": 20
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": 0
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": 30
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "hooks",
       "path": "/usr/lib/systemd/system-generators/nfs-server-generator",
       "code": "hooks.generator",
-      "detail": "scope=system mode 0100755 user root group root"
+      "detail": "scope=system mode 0100755 user root group root",
+      "color": "red"
     },
     {
       "module": "hooks",
       "path": "/usr/lib/systemd/system-generators/nfsroot-generator",
       "code": "hooks.generator",
-      "detail": "scope=system mode 0100755 user root group root"
+      "detail": "scope=system mode 0100755 user root group root",
+      "color": "red"
     },
     {
       "module": "hooks",
       "path": "/usr/lib/systemd/system-generators/rpc-pipefs-generator",
       "code": "hooks.generator",
-      "detail": "scope=system mode 0100755 user root group root"
+      "detail": "scope=system mode 0100755 user root group root",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/sbin/mount.nfs",
       "code": "setuid",
-      "detail": "/sbin/mount.nfs mode 0104711 user root group root file"
+      "detail": "/sbin/mount.nfs mode 0104711 user root group root file",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/fsidd.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/sbin/fsidd sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/sbin/fsidd sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/nfs-idmapd.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/sbin/rpc.idmapd sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/sbin/rpc.idmapd sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/nfs-mountd.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/sbin/rpc.mountd sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/sbin/rpc.mountd sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/nfs-server.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/bin/sh -c '/usr/sbin/nfsdctl autostart || /usr/sbin/rpc.nfsd' sandbox=none"
+      "detail": "scope=system user=root group=root exec=/bin/sh -c '/usr/sbin/nfsdctl autostart || /usr/sbin/rpc.nfsd' sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/nfs-utils.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/bin/true sandbox=none"
+      "detail": "scope=system user=root group=root exec=/bin/true sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/rpc-statd-notify.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=-/usr/sbin/sm-notify sandbox=none"
+      "detail": "scope=system user=root group=root exec=-/usr/sbin/sm-notify sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/rpc-statd.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/sbin/rpc.statd sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/sbin/rpc.statd sandbox=none",
+      "color": "red"
     },
     {
       "module": "udev",
       "path": "/lib/udev/rules.d/99-nfs.rules",
       "code": "udev.run",
-      "detail": "user=root program=/usr/libexec/nfsrahead %k"
+      "detail": "user=root program=/usr/libexec/nfsrahead %k",
+      "color": "red"
     },
     {
       "module": "udev",
       "path": "/usr/lib/udev/rules.d/60-nfs.rules",
       "code": "udev.run",
-      "detail": "user=root program=/sbin/sysctl -q --pattern ^sunrpc --system"
+      "detail": "user=root program=/sbin/sysctl -q --pattern ^sunrpc --system",
+      "color": "red"
     },
     {
       "module": "udev",
       "path": "/usr/lib/udev/rules.d/60-nfs.rules",
       "code": "udev.run",
-      "detail": "user=root program=/sbin/sysctl -q --pattern ^sunrpc.svc_rdma --system"
+      "detail": "user=root program=/sbin/sysctl -q --pattern ^sunrpc.svc_rdma --system",
+      "color": "red"
     },
     {
       "module": "udev",
       "path": "/usr/lib/udev/rules.d/60-nfs.rules",
       "code": "udev.run",
-      "detail": "user=root program=/sbin/sysctl -q --pattern ^fs.nfs.n[sl]m --system"
+      "detail": "user=root program=/sbin/sysctl -q --pattern ^fs.nfs.n[sl]m --system",
+      "color": "red"
     },
     {
       "module": "udev",
       "path": "/usr/lib/udev/rules.d/60-nfs.rules",
       "code": "udev.run",
-      "detail": "user=root program=/sbin/sysctl -q --pattern ^fs.nfs.(nfs_callback_tcpport|idmap_cache_timeout) --system"
+      "detail": "user=root program=/sbin/sysctl -q --pattern ^fs.nfs.(nfs_callback_tcpport|idmap_cache_timeout) --system",
+      "color": "red"
     },
     {
       "module": "udev",
       "path": "/usr/lib/udev/rules.d/60-nfs.rules",
       "code": "udev.run",
-      "detail": "user=root program=/sbin/sysctl -q --pattern ^fs.nfs --system"
+      "detail": "user=root program=/sbin/sysctl -q --pattern ^fs.nfs --system",
+      "color": "red"
     }
   ]
 }

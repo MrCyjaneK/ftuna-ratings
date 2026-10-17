@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "ec0f5341727c5b7676af632f93c4537c5672e2bd3c8bc3703d8ba8840211ee6c",
   "key": "mirror/openrepos/Rikudou_Sennin/personal/main/g/go-1.25.6-1.aarch64.rpm",
   "name": "go",
   "rpm_version": "1.25.6",
   "release": "1.fc42",
   "arch": "aarch64",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=ln -sfn /home/.go/1.25.6/bin/go /usr/bin/go || true"
+      "detail": "user=root program=/bin/sh body=ln -sfn /home/.go/1.25.6/bin/go /usr/bin/go || true",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; if [ -L /usr/bin/go ] \u0026\u0026 [ \"$(readlink /usr/bin/go)\" = \"/home/.go/1.25.6/bin/go\" ]; then; rm -f /usr/bin/go"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; if [ -L /usr/bin/go ] \u0026\u0026 [ \"$(readlink /usr/bin/go)\" = \"/home/.go/1.25.6/bin/go\" ]; then; rm -f /usr/bin/go",
+      "color": "red"
     }
   ]
 }

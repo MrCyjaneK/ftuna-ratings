@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "6661df4dc1426a952c479d26fda801ac249dd0ec3d6395d24e1db4fe42715136",
   "key": "mirror/openrepos/kan/personal/main/d/dnscrypt-proxy-blocklist-2.1.13-251004.noarch.rpm",
   "name": "dnscrypt-proxy-blocklist",
   "rpm_version": "2.1.13",
   "release": "251004",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=cp -T -r /var/lib/dnscrypt-proxy/dnscrypt-proxy.toml.dnsmasq /var/lib/dnscrypt-proxy/dnscrypt-proxy.toml.noblock; \\; rpm -ef dnscrypt-proxy-blocklist-2.1.4-1.no"
+      "detail": "user=root program=/bin/sh body=cp -T -r /var/lib/dnscrypt-proxy/dnscrypt-proxy.toml.dnsmasq /var/lib/dnscrypt-proxy/dnscrypt-proxy.toml.noblock; \\; rpm -ef dnscrypt-proxy-blocklist-2.1.4-1.no",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -gt 1 ] ; then; systemctl restart dnscrypt-proxy; if [ -e /var/lib/dnscrypt-proxy/generate_dnsblocklist.sh ]; then"
+      "detail": "user=root program=/bin/sh body=if [ $1 -gt 1 ] ; then; systemctl restart dnscrypt-proxy; if [ -e /var/lib/dnscrypt-proxy/generate_dnsblocklist.sh ]; then",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -gt 1 ] ; then; systemctl is-active --quiet dnscrypt-proxy; if [ $? -eq 0 ] \u0026\u0026 [ ! -f /var/lib/dnscrypt-proxy-blocklist/dnscrypt-blocklist-names.txt ]; "
+      "detail": "user=root program=/bin/sh body=if [ $1 -gt 1 ] ; then; systemctl is-active --quiet dnscrypt-proxy; if [ $? -eq 0 ] \u0026\u0026 [ ! -f /var/lib/dnscrypt-proxy-blocklist/dnscrypt-blocklist-names.txt ]; ",
+      "color": "red"
     }
   ]
 }

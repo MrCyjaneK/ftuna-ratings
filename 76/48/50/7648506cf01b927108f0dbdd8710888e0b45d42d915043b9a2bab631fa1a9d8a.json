@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "7648506cf01b927108f0dbdd8710888e0b45d42d915043b9a2bab631fa1a9d8a",
   "key": "chum/5.1_i486/i486/libmikmod3-3.3.11.1-1.2.1.bso.i486.rpm",
   "name": "libmikmod3",
   "rpm_version": "3.3.11.1",
   "release": "1.2.1.bso",
   "arch": "i486",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/sbin/ldconfig body=lastarg() { shift $(($# - 1)) ; echo \"$1\" ; }; if test -x sbin/install-info ; then; if test -e \"$(lastarg --info-dir=/usr/share/info /usr/share/info/mikmod.info"
+      "detail": "user=root program=/sbin/ldconfig body=lastarg() { shift $(($# - 1)) ; echo \"$1\" ; }; if test -x sbin/install-info ; then; if test -e \"$(lastarg --info-dir=/usr/share/info /usr/share/info/mikmod.info",
+      "color": "red"
     }
   ]
 }

@@ -1,86 +1,39 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "01cf5e2d83caea7854ac873146c839419db29e4450621cf9bde5c8cc61923630",
   "key": "mirror/openrepos/ade/personal/main/v/vixie-cron-3.0pl2-2.armv7hl.rpm",
   "name": "vixie-cron",
   "rpm_version": "3.0pl2",
   "release": "2",
   "arch": "armv7hl",
-  "verdict": 20,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": 0
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=case \"$1\" in; 1); systemctl enable cron.service"
+      "detail": "user=root program=/bin/sh body=case \"$1\" in; 1); systemctl enable cron.service",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=case \"$1\" in; 0); systemctl stop cron.service"
+      "detail": "user=root program=/bin/sh body=case \"$1\" in; 0); systemctl stop cron.service",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/bin/crontab",
       "code": "setuid",
-      "detail": "/usr/bin/crontab mode 0104111 user root group root file"
+      "detail": "/usr/bin/crontab mode 0104111 user root group root file",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/lib/systemd/system/cron.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/sbin/crond sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/sbin/crond sandbox=none",
+      "color": "red"
     }
   ]
 }

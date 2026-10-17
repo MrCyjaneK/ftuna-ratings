@@ -1,92 +1,46 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "ad19d38a6aaf0a3c9cc86a9fbf12641f77a48f9bb3630a61f62ea713e86f3c64",
   "key": "mirror/openrepos/Senjienly/personal/main/s/silisili-native-devel-1.1.0-1.40.aarch64.rpm",
   "name": "silisili-native-devel",
   "rpm_version": "1.1.0",
   "release": "1.40",
   "arch": "aarch64",
-  "verdict": 38,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/cn.silisili.native.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=native_dir=/home/defaultuser/.config/cn.silisili.native; native_snapshot=$native_dir/stable_config_snapshot.json; native_session=$native_dir/account_session.jso"
+      "detail": "user=root program=/bin/sh body=native_dir=/home/defaultuser/.config/cn.silisili.native; native_snapshot=$native_dir/stable_config_snapshot.json; native_session=$native_dir/account_session.jso",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; systemctl disable --now silisili-native-minimedia.service \u003e/dev/null 2\u003e\u00261 || :; fi"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; systemctl disable --now silisili-native-minimedia.service \u003e/dev/null 2\u003e\u00261 || :; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :; exit 0"
+      "detail": "user=root program=/bin/sh body=systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :; exit 0",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/silisili-native-minimedia.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/libexec/silisili-native/silisili-native-minimedia-wrapper sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/libexec/silisili-native/silisili-native-minimedia-wrapper sandbox=none",
+      "color": "red"
     }
   ]
 }

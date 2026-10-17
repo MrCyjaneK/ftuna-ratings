@@ -1,98 +1,53 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "3530bd6b2d3598f993ee471c2bd943a1ae04885b9b82aa93a4afe870ad4cb07c",
   "key": "mirror/openrepos/lpr/personal/main/n/nscd-2.30git8-9.2.armv7hl.rpm",
   "name": "nscd",
   "rpm_version": "2.30+git8",
   "release": "9.2",
   "arch": "armv7hl",
-  "verdict": 20,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": 0
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=getent group nscd \u003e/dev/null || /usr/sbin/groupadd -g 28 -r nscd; getent passwd nscd \u003e/dev/null ||; /usr/sbin/useradd -M -o -r -d / -s /sbin/nologin \\"
+      "detail": "user=root program=/bin/sh body=getent group nscd \u003e/dev/null || /usr/sbin/groupadd -g 28 -r nscd; getent passwd nscd \u003e/dev/null ||; /usr/sbin/useradd -M -o -r -d / -s /sbin/nologin \\",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl --no-reload preset nscd.service \u003e/dev/null 2\u003e\u00261 || :; fi"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl --no-reload preset nscd.service \u003e/dev/null 2\u003e\u00261 || :; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload disable --now nscd.service \u003e /dev/null 2\u003e\u00261 || :; fi"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload disable --now nscd.service \u003e /dev/null 2\u003e\u00261 || :; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if test $1 = 0; then; /usr/sbin/userdel nscd \u003e /dev/null 2\u003e\u00261 || :; fi"
+      "detail": "user=root program=/bin/sh body=if test $1 = 0; then; /usr/sbin/userdel nscd \u003e /dev/null 2\u003e\u00261 || :; fi",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/lib/systemd/system/nscd.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/sbin/nscd sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/sbin/nscd sandbox=none",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/var/run/nscd/socket",
       "code": "worldwrite",
-      "detail": "/var/run/nscd/socket mode 0100666 user root group root file"
+      "detail": "/var/run/nscd/socket mode 0100666 user root group root file",
+      "color": "red"
     }
   ]
 }

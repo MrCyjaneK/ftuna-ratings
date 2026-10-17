@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "ffd9e372df2a2afcfcd1fc94fa5c77ec69ef34d7710cd131eddb5f8265cd7750",
   "key": "mirror/openrepos/fifr/personal/main/s/sailautossh-1.1.1-1.armv7hl.rpm",
   "name": "sailautossh",
   "rpm_version": "1.1.1",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 82,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/org.bitbucket.lyro.sailautossh.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/bin/invoker -s --type=silica-qt5 /usr/bin/sailautossh systemd=sailautossh.service"
+      "detail": "scope=session user=session exec=/usr/bin/invoker -s --type=silica-qt5 /usr/bin/sailautossh systemd=sailautossh.service",
+      "color": "green"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/sailautossh.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/sailautossh.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/invoker -s --type=silica-qt5 /usr/bin/sailautossh sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/invoker -s --type=silica-qt5 /usr/bin/sailautossh sandbox=none",
+      "color": "green"
     }
   ]
 }

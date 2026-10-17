@@ -1,98 +1,53 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "89173f2fc702941b1ad2de8b26c386e06fad2ddcdd93534fa94b6b0cd17c59fc",
   "key": "mirror/openrepos/dfstorm/personal/main/h/harbour-themepack-newaita-0.0.9-1.noarch.rpm",
   "name": "harbour-themepack-newaita",
   "rpm_version": "0.0.9",
   "release": "1",
   "arch": "noarch",
-  "verdict": 15,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": 0
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; rm -rf /usr/share/harbour-themepack-newaita"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; rm -rf /usr/share/harbour-themepack-newaita",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-themepack-newaita/LICENSE.txt",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-themepack-newaita/LICENSE.txt mode 0100777 user root group root exec"
+      "detail": "/usr/share/harbour-themepack-newaita/LICENSE.txt mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-themepack-newaita/dyncal/256x256/.gitignore",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-themepack-newaita/dyncal/256x256/.gitignore mode 0100777 user root group root exec"
+      "detail": "/usr/share/harbour-themepack-newaita/dyncal/256x256/.gitignore mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-themepack-newaita/dyncal/86x86/.gitignore",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-themepack-newaita/dyncal/86x86/.gitignore mode 0100777 user root group root exec"
+      "detail": "/usr/share/harbour-themepack-newaita/dyncal/86x86/.gitignore mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-themepack-newaita/dyncal/scalable/.gitignore",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-themepack-newaita/dyncal/scalable/.gitignore mode 0100777 user root group root exec"
+      "detail": "/usr/share/harbour-themepack-newaita/dyncal/scalable/.gitignore mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/share/harbour-themepack-newaita/package",
       "code": "worldwrite",
-      "detail": "/usr/share/harbour-themepack-newaita/package mode 0100777 user root group root exec"
+      "detail": "/usr/share/harbour-themepack-newaita/package mode 0100777 user root group root exec",
+      "color": "red"
     }
   ]
 }

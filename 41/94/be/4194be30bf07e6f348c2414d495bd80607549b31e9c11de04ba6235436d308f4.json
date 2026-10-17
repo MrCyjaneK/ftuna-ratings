@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "4194be30bf07e6f348c2414d495bd80607549b31e9c11de04ba6235436d308f4",
   "key": "mirror/openrepos/backpackjoe/personal/main/s/sailfish-scanner-0.0.6-1.armv7hl.rpm",
   "name": "sailfish-scanner",
   "rpm_version": "0.0.6",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 53,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/sailfish-scanner.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=upgrade() {; echo \"Upgrading....\"; }"
+      "detail": "user=root program=/bin/sh body=upgrade() {; echo \"Upgrading....\"; }",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"${1}\" -eq 0 ]; then; echo \"removing /usr/share/sailfish-scanner\""
+      "detail": "user=root program=/bin/sh body=if [ \"${1}\" -eq 0 ]; then; echo \"removing /usr/share/sailfish-scanner\"",
+      "color": "red"
     }
   ]
 }

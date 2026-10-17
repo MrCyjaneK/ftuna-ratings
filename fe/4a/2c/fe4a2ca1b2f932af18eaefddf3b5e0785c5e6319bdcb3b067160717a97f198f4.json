@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "fe4a2ca1b2f932af18eaefddf3b5e0785c5e6319bdcb3b067160717a97f198f4",
   "key": "mirror/openrepos/alina/personal/main/s/sailfishos-patch-messages-quickaction-2.2.1-1.noarch.rpm",
   "name": "sailfishos-patch-messages-quickaction",
   "rpm_version": "2.2.1",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/alina/patches/sailfishos-patch-messages-quickaction ]; then; /usr/sbin/patchmanager -u sailfishos-patch-messages-quickaction || tr"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/alina/patches/sailfishos-patch-messages-quickaction ]; then; /usr/sbin/patchmanager -u sailfishos-patch-messages-quickaction || tr",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/alina/patches/sailfishos-patch-messages-quickaction ]; then; /usr/sbin/patchmanager -u sailfishos-patch-messages-quickaction || tr"
+      "detail": "user=root program=/bin/sh body=if [ -d /var/lib/patchmanager/alina/patches/sailfishos-patch-messages-quickaction ]; then; /usr/sbin/patchmanager -u sailfishos-patch-messages-quickaction || tr",
+      "color": "red"
     }
   ]
 }

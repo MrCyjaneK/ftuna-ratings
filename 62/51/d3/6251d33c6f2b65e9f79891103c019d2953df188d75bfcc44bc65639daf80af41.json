@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "6251d33c6f2b65e9f79891103c019d2953df188d75bfcc44bc65639daf80af41",
   "key": "mirror/openrepos/Mister_Magister/personal/main/c/corepack18-18.20.8-1.2.1.bso_.i486.rpm",
   "name": "corepack18",
   "rpm_version": "18.20.8",
   "release": "1.2.1.bso",
   "arch": "i486",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=update-alternatives --remove corepack-default /usr/bin/corepack18"
+      "detail": "user=root program=/bin/sh body=update-alternatives --remove corepack-default /usr/bin/corepack18",
+      "color": "red"
     }
   ]
 }

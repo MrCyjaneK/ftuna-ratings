@@ -1,140 +1,102 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "933d590016a9cfa40dc44d5665a6943af2adde4c96d69e660fd367b91233594d",
   "key": "chum/5.2_aarch64/noarch/harbour-defender-0.9.8-1.11.1.bso.noarch.rpm",
   "name": "harbour-defender",
   "rpm_version": "0.9.8",
   "release": "1.11.1.bso",
   "arch": "noarch",
-  "verdict": 53,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-defender.desktop",
       "code": "sailjail.permission",
-      "detail": "Defender"
+      "detail": "Defender",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-defender.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-defender.desktop",
       "code": "sailjail.permission",
-      "detail": "PublicDir"
+      "detail": "PublicDir",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-defender.desktop",
       "code": "sailjail.permission",
-      "detail": "xCompatibility"
+      "detail": "xCompatibility",
+      "color": "gray"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=[ -f /etc/hosts ] \u0026\u0026 echo \"Info: /etc/hosts exists\" || echo -e \"127.0.0.1               localhost.localdomain localhost\\n::1             localhost6.localdomain6"
+      "detail": "user=root program=/bin/sh body=[ -f /etc/hosts ] \u0026\u0026 echo \"Info: /etc/hosts exists\" || echo -e \"127.0.0.1               localhost.localdomain localhost\\n::1             localhost6.localdomain6",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"0\" ]; then; systemctl disable --now harbour-defender.timer; systemctl disable --now harbour-defender.path"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"0\" ]; then; systemctl disable --now harbour-defender.timer; systemctl disable --now harbour-defender.path",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/system/harbour-defender-adRestart.path",
       "code": "systemd.path",
-      "detail": "scope=system activates=harbour-defender-adRestart.service"
+      "detail": "scope=system activates=harbour-defender-adRestart.service",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/system/harbour-defender-adRestart.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/bin/sh -c \"AppS_USER=`cat /tmp/defender/usr`;                       FILE_PATH=`cat /tmp/defender/dir`/.cache/leinchen.peter/harbour-defender;                       systemctl restart aliendalvik;                       systemctl restart appsupport@$AppS_USER;                       rm -f $FILE_PATH/adRestart;\" sandbox=none"
+      "detail": "scope=system user=root group=root exec=/bin/sh -c \"AppS_USER=`cat /tmp/defender/usr`;                       FILE_PATH=`cat /tmp/defender/dir`/.cache/leinchen.peter/harbour-defender;                       systemctl restart aliendalvik;                       systemctl restart appsupport@$AppS_USER;                       rm -f $FILE_PATH/adRestart;\" sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/system/harbour-defender-updLoop.path",
       "code": "systemd.path",
-      "detail": "scope=system activates=harbour-defender-updLoop.service"
+      "detail": "scope=system activates=harbour-defender-updLoop.service",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/system/harbour-defender-updLoop.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/bin/sh -c \"FILE_PATH=`cat /tmp/defender/dir`/.cache/leinchen.peter/harbour-defender;                       systemctl stop harbour-defender;                       rm -f $FILE_PATH/updLoop;\" sandbox=none"
+      "detail": "scope=system user=root group=root exec=/bin/sh -c \"FILE_PATH=`cat /tmp/defender/dir`/.cache/leinchen.peter/harbour-defender;                       systemctl stop harbour-defender;                       rm -f $FILE_PATH/updLoop;\" sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/system/harbour-defender.path",
       "code": "systemd.path",
-      "detail": "scope=system activates=harbour-defender.service"
+      "detail": "scope=system activates=harbour-defender.service",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/system/harbour-defender.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/bin/python3 /usr/share/harbour-defender/qml/python/defender_updater.py sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/bin/python3 /usr/share/harbour-defender/qml/python/defender_updater.py sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/system/harbour-defender.timer",
       "code": "systemd.timer",
-      "detail": "scope=system activates=harbour-defender.service"
+      "detail": "scope=system activates=harbour-defender.service",
+      "color": "red"
     }
   ]
 }

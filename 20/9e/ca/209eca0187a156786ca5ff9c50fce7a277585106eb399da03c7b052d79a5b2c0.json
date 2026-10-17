@@ -1,116 +1,74 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "209eca0187a156786ca5ff9c50fce7a277585106eb399da03c7b052d79a5b2c0",
   "key": "chum/5.1_aarch64/noarch/hosts-block-0.1.2+master.20260725144015.538f6e9-1.5.1.bso.noarch.rpm",
   "name": "hosts-block",
   "rpm_version": "0.1.2+master.20260725144015.538f6e9",
   "release": "1.5.1.bso",
   "arch": "noarch",
-  "verdict": 38,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/hosts-block-add-to-blacklist.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/hosts-block-add-to-whitelist.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=[ \"$1\" = 1 ] \u0026\u0026 cd /etc \u0026\u0026 [ -r hosts ] \u0026\u0026 /usr/bin/tar czf /home/hosts-original_hosts-block.tar.gz hosts || :; if [ $1 -eq 1 ] ; then; systemctl --no-reload pr"
+      "detail": "user=root program=/bin/sh body=[ \"$1\" = 1 ] \u0026\u0026 cd /etc \u0026\u0026 [ -r hosts ] \u0026\u0026 /usr/bin/tar czf /home/hosts-original_hosts-block.tar.gz hosts || :; if [ $1 -eq 1 ] ; then; systemctl --no-reload pr",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload disable --now hosts-block.timer hosts-block-watch-config.service \u003e /dev/null 2\u003e\u00261 || :; fi"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload disable --now hosts-block.timer hosts-block-watch-config.service \u003e /dev/null 2\u003e\u00261 || :; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=[ \"$1\" = 0 ] \u0026\u0026 /usr/bin/systemctl daemon-reload || :; [ \"$1\" = 0 ] \u0026\u0026 /usr/bin/rmdir /usr/share/hosts-block/ /usr/share/doc/hosts-block/ || :; [ \"$1\" = 0 ] \u0026\u0026 "
+      "detail": "user=root program=/bin/sh body=[ \"$1\" = 0 ] \u0026\u0026 /usr/bin/systemctl daemon-reload || :; [ \"$1\" = 0 ] \u0026\u0026 /usr/bin/rmdir /usr/share/hosts-block/ /usr/share/doc/hosts-block/ || :; [ \"$1\" = 0 ] \u0026\u0026 ",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/hosts-block-forced.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/bin/hosts-block forced sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/bin/hosts-block forced sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/hosts-block-watch-config.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/share/hosts-block/watch-config.sh sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/share/hosts-block/watch-config.sh sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/hosts-block.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/bin/hosts-block sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/bin/hosts-block sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/hosts-block.timer",
       "code": "systemd.timer",
-      "detail": "scope=system activates=hosts-block.service"
+      "detail": "scope=system activates=hosts-block.service",
+      "color": "red"
     }
   ]
 }

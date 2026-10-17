@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "ed91eda5835987df8b5f828f263f7e9d1dfc2cc33a42017d6825f42602e0a698",
   "key": "mirror/openrepos/halftux/personal/main/s/smssend-0.0.2-1.armv7hl.rpm",
   "name": "smssend",
   "rpm_version": "0.0.2",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 10,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": 10
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "polkit",
       "path": "/etc/polkit-1/localauthority/50-local.d/69-smstodbus.pkla",
       "code": "polkit.pkla",
-      "detail": "Identity=unix-group:sailfish-radio ResultAny=yes"
+      "detail": "Identity=unix-group:sailfish-radio ResultAny=yes",
+      "color": "red"
     }
   ]
 }

@@ -1,24 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "87079d93ba6843abea39067875426c7271a97541d9449d46c5f0917cee0b8b88",
   "key": "mirror/openrepos/jaimeMF/personal/main/n/neofetch-7.1.0-0.armv7hl.rpm",
   "name": "neofetch",
   "rpm_version": "7.1.0",
   "release": "0",
   "arch": "armv7hl",
-  "verdict": -1,
-  "scores": [
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "rpm",
       "path": "mirror/openrepos/jaimeMF/personal/main/n/neofetch-7.1.0-0.armv7hl.rpm",
       "code": "rpm.read",
-      "detail": "No such entry 1037"
+      "detail": "No such entry 1037",
+      "color": "gray"
     }
   ]
 }

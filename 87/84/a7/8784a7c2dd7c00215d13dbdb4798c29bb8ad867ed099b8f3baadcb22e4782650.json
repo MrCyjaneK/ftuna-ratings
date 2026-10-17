@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "8784a7c2dd7c00215d13dbdb4798c29bb8ad867ed099b8f3baadcb22e4782650",
   "key": "mirror/openrepos/llelectronics_dev/personal/main/g/gstreamer1.0-1.10.5master.20180301182831.3.g2c12f9f-10.30.1.jolla_.armv7hl.rpm",
   "name": "gstreamer1.0",
   "rpm_version": "1.10.5+master.20180301182831.3.g2c12f9f",
   "release": "10.30.1.jolla",
   "arch": "armv7hl",
-  "verdict": 0,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": 0
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "setuid",
       "path": "/usr/libexec/gstreamer-1.0/gst-ptp-helper",
       "code": "setuid",
-      "detail": "/usr/libexec/gstreamer-1.0/gst-ptp-helper mode 0104755 user root group root file"
+      "detail": "/usr/libexec/gstreamer-1.0/gst-ptp-helper mode 0104755 user root group root file",
+      "color": "red"
     }
   ]
 }

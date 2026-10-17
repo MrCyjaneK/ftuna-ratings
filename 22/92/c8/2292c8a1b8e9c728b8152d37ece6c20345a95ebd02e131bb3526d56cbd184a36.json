@@ -1,86 +1,39 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "2292c8a1b8e9c728b8152d37ece6c20345a95ebd02e131bb3526d56cbd184a36",
   "key": "chum/5.1_armv7hl/noarch/rsnapshot-sailfish-config-1.5.1+git1-1.2.2.bso.noarch.rpm",
   "name": "rsnapshot-sailfish-config",
   "rpm_version": "1.5.1+git1",
   "release": "1.2.2.bso",
   "arch": "noarch",
-  "verdict": 85,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/rsnapshot-user-daily.timer",
       "code": "systemd.timer",
-      "detail": "scope=user activates=rsnapshot-user@daily.service"
+      "detail": "scope=user activates=rsnapshot-user@daily.service",
+      "color": "green"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/rsnapshot-user-monthly.timer",
       "code": "systemd.timer",
-      "detail": "scope=user activates=rsnapshot-user@monthly.service"
+      "detail": "scope=user activates=rsnapshot-user@monthly.service",
+      "color": "green"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/rsnapshot-user-weekly.timer",
       "code": "systemd.timer",
-      "detail": "scope=user activates=rsnapshot-user@weekly.service"
+      "detail": "scope=user activates=rsnapshot-user@weekly.service",
+      "color": "green"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/rsnapshot-user@.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/rsnapshot -c ${RS_CONFIG_FILE} %I sandbox=ProtectSystem=strict,PrivateTmp,NoNewPrivileges"
+      "detail": "scope=user user=session group=session exec=/usr/bin/rsnapshot -c ${RS_CONFIG_FILE} %I sandbox=ProtectSystem=strict,PrivateTmp,NoNewPrivileges",
+      "color": "green"
     }
   ]
 }

@@ -1,110 +1,67 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "c6f67b34664fd14241ff88df83cfc4fe46abdf9870f01965a2be79cac2d7c04d",
   "key": "mirror/openrepos/abranson/personal/main/r/rockpool-1.15sfos4.4.20230111102118.2.g69124a8-1.33.1.jolla_.armv7hl.rpm",
   "name": "rockpool",
   "rpm_version": "1.15+sfos4.4.20230111102118.2.g69124a8",
   "release": "1.33.1.jolla",
   "arch": "armv7hl",
-  "verdict": 65,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": 45
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/rockpool.desktop",
       "code": "sailjail.permission",
-      "detail": "Rockpool"
+      "detail": "Rockpool",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/rockpool.desktop",
       "code": "sailjail.permission",
-      "detail": "UserDirs"
+      "detail": "UserDirs",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/rockpool.desktop",
       "code": "sailjail.permission",
-      "detail": "AppLaunch"
+      "detail": "AppLaunch",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/rockpool.desktop",
       "code": "sailjail.permission",
-      "detail": "WebView"
+      "detail": "WebView",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/rockpool.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=su nemo -c 'systemctl --user daemon-reload'; su nemo -c 'systemctl --user try-restart rockpoold.service'; update-desktop-database"
+      "detail": "user=root program=/bin/sh body=su nemo -c 'systemctl --user daemon-reload'; su nemo -c 'systemctl --user try-restart rockpoold.service'; update-desktop-database",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/bin/rockpoold",
       "code": "setgid",
-      "detail": "/usr/bin/rockpoold mode 0102755 user root group privileged file"
+      "detail": "/usr/bin/rockpoold mode 0102755 user root group privileged file",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/rockpoold.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/rockpoold sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/rockpoold sandbox=none",
+      "color": "green"
     }
   ]
 }

@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "8f21704cae2ec9a18afdacc6b23d997a3941fd721e40b6a12db4895a13e0340e",
   "key": "mirror/openrepos/lpr_A7/personal/main/o/openssl-libs-3.5.8-0.50.3.armv7hl.rpm",
   "name": "openssl-libs",
   "rpm_version": "3.5.8",
   "release": "0.50.3",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; if [ \"$1\" -gt 1 ] ; then; cmp --silent /etc/pki/tls/openssl-3.cnf /etc/pki/tls/openssl-3-orig.cnf 2\u003e/dev/null"
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; if [ \"$1\" -gt 1 ] ; then; cmp --silent /etc/pki/tls/openssl-3.cnf /etc/pki/tls/openssl-3-orig.cnf 2\u003e/dev/null",
+      "color": "red"
     }
   ]
 }

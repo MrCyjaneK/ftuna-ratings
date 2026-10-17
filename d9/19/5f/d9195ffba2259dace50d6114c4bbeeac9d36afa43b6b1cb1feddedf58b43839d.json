@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "d9195ffba2259dace50d6114c4bbeeac9d36afa43b6b1cb1feddedf58b43839d",
   "key": "mirror/openrepos/black_sheep_dev/personal/main/h/harbour-sailhub-0.0.29-1.armv7hl.rpm",
   "name": "harbour-sailhub",
   "rpm_version": "0.0.29",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 80,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/harbour.sailhub.service",
       "code": "dbus.service",
-      "detail": "scope=session user=nemo exec=/usr/bin/invoker --type=silica-qt5 -s /usr/bin/harbour-sailhub"
+      "detail": "scope=session user=nemo exec=/usr/bin/invoker --type=silica-qt5 -s /usr/bin/harbour-sailhub",
+      "color": "green"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-sailhub.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     }
   ]
 }

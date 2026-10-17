@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "262344a964ed56c1b3619f2fd2f00e20fdd8f141db64f9b2218dd1c65b48d5e4",
   "key": "mirror/openrepos/GNious/personal/main/l/lightfish-0.2-1.armv7hl.rpm",
   "name": "LightFish",
   "rpm_version": "0.2",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 38,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": 0
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/LightFish.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "setuid",
       "path": "/usr/share/LightFish/qml/perl/iwpriv_helper.pl",
       "code": "setuid",
-      "detail": "/usr/share/LightFish/qml/perl/iwpriv_helper.pl mode 0104755 user root group root script"
+      "detail": "/usr/share/LightFish/qml/perl/iwpriv_helper.pl mode 0104755 user root group root script",
+      "color": "red"
     }
   ]
 }

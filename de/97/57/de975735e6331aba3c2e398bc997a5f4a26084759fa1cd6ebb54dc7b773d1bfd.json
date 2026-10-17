@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "de975735e6331aba3c2e398bc997a5f4a26084759fa1cd6ebb54dc7b773d1bfd",
   "key": "mirror/openrepos/aviarus/personal/main/s/sailfish-components-webview-qt5-next153-1.7.0-1.aarch64.rpm",
   "name": "sailfish-components-webview-qt5-next153",
   "rpm_version": "1.7.0",
   "release": "1",
   "arch": "aarch64",
-  "verdict": 0,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": 0
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "worldwrite",
       "path": "/usr/share/licenses/sailfish-components-webview-qt5-next153-1.7.0/LICENSE.txt",
       "code": "worldwrite",
-      "detail": "/usr/share/licenses/sailfish-components-webview-qt5-next153-1.7.0/LICENSE.txt mode 0100666 user root group root file"
+      "detail": "/usr/share/licenses/sailfish-components-webview-qt5-next153-1.7.0/LICENSE.txt mode 0100666 user root group root file",
+      "color": "red"
     }
   ]
 }

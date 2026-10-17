@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "7f7ffba1eb6571e314a9f1f5599ac2fdb9603402048c563d732cdf359f042e4e",
   "key": "mirror/openrepos/martonmiklos/personal/main/u/unofficial-jolla-language-pack-sl-2.1.0-0.0.5.noarch.rpm",
   "name": "unofficial-jolla-language-pack-sl",
   "rpm_version": "2.1.0",
   "release": "0.0.5",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=localedef --replace -i sl_SI -f UTF-8 sl_SI.utf8 --prefix=/"
+      "detail": "user=root program=/bin/sh body=localedef --replace -i sl_SI -f UTF-8 sl_SI.utf8 --prefix=/",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=localedef --delete-from-archive sl_SI.utf8"
+      "detail": "user=root program=/bin/sh body=localedef --delete-from-archive sl_SI.utf8",
+      "color": "red"
     }
   ]
 }

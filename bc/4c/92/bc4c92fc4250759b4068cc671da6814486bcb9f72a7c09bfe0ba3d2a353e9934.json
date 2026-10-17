@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "bc4c92fc4250759b4068cc671da6814486bcb9f72a7c09bfe0ba3d2a353e9934",
   "key": "mirror/openrepos/6uvNPR/personal/main/h/harbour-io.edin_.projects.sailsync-owncloud-0.9.1-1.armv7hl.rpm",
   "name": "harbour-io.edin.projects.sailsync-owncloud",
   "rpm_version": "0.9.1+master.20201108103640.c0a73f6",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 53,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-io.edin.projects.sailsync-owncloud.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=username=$(awk 'BEGIN { FS = \":\" } $3 == 100000 { print $1; }' /etc/passwd); homedir=$(awk 'BEGIN { FS = \":\" } $3 == 100000 { print $6; }' /etc/passwd); su \"$us"
+      "detail": "user=root program=/bin/sh body=username=$(awk 'BEGIN { FS = \":\" } $3 == 100000 { print $1; }' /etc/passwd); homedir=$(awk 'BEGIN { FS = \":\" } $3 == 100000 { print $6; }' /etc/passwd); su \"$us",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=username=$(awk 'BEGIN { FS = \":\" } $3 == 100000 { print $1; }' /etc/passwd); homedir=$(awk 'BEGIN { FS = \":\" } $3 == 100000 { print $6; }' /etc/passwd); su \"$us"
+      "detail": "user=root program=/bin/sh body=username=$(awk 'BEGIN { FS = \":\" } $3 == 100000 { print $1; }' /etc/passwd); homedir=$(awk 'BEGIN { FS = \":\" } $3 == 100000 { print $6; }' /etc/passwd); su \"$us",
+      "color": "red"
     }
   ]
 }

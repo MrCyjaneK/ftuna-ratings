@@ -1,104 +1,60 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "1269fb644d42ab82c11cb1c26557d72c95e7a02f1d5d1d3b1180f71ebc0c2530",
   "key": "mirror/openrepos/datakurre/personal/main/h/harbour-pyletoh-0.5.0-10.29.1.jolla_.noarch.rpm",
   "name": "harbour-pyletoh",
   "rpm_version": "0.5.0",
   "release": "10.29.1.jolla",
   "arch": "noarch",
-  "verdict": 63,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-pyletoh.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user stop harbour-pyletoh\"; su nemo -c \"systemctl --user stop harbour-pyletoh-eavesdropper\"; exit 0"
+      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user stop harbour-pyletoh\"; su nemo -c \"systemctl --user stop harbour-pyletoh-eavesdropper\"; exit 0",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user daemon-reload\"; su nemo -c \"systemctl --user enable harbour-pyletoh\"; su nemo -c \"systemctl --user enable harbour-pyletoh-eavesdrop"
+      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user daemon-reload\"; su nemo -c \"systemctl --user enable harbour-pyletoh\"; su nemo -c \"systemctl --user enable harbour-pyletoh-eavesdrop",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user disable harbour-pyletoh\"; su nemo -c \"systemctl --user disable harbour-pyletoh-eavesdropper\"; su nemo -c \"systemctl --user stop har"
+      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user disable harbour-pyletoh\"; su nemo -c \"systemctl --user disable harbour-pyletoh-eavesdropper\"; su nemo -c \"systemctl --user stop har",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user daemon-reload\""
+      "detail": "user=root program=/bin/sh body=su nemo -c \"systemctl --user daemon-reload\"",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/harbour-pyletoh-eavesdropper.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/python3 /usr/share/harbour-pyletoh/qml/eavesdropper.py sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/python3 /usr/share/harbour-pyletoh/qml/eavesdropper.py sandbox=none",
+      "color": "green"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/harbour-pyletoh.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/python3 /usr/share/harbour-pyletoh/qml/daemon.py sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/python3 /usr/share/harbour-pyletoh/qml/daemon.py sandbox=none",
+      "color": "green"
     }
   ]
 }

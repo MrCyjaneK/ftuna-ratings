@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "4a6366a607aba3c2d812b2f2a4e8a8bacda45094f172d288cf0347969717cec0",
   "key": "mirror/openrepos/eson/personal/main/s/swedish-for-systemd-journal-viewer-0.1.0-1.noarch.rpm",
   "name": "swedish-for-systemd-journal-viewer",
   "rpm_version": "0.1.0",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=chmod 644 /usr/share/systemd-journal-viewer/translations/systemd-journal-viewer-sv.qm"
+      "detail": "user=root program=/bin/sh body=chmod 644 /usr/share/systemd-journal-viewer/translations/systemd-journal-viewer-sv.qm",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; rm -rf /usr/share/systemd-journal-viewer/translations/systemd-journal-viewer-sv.qm; else"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; rm -rf /usr/share/systemd-journal-viewer/translations/systemd-journal-viewer-sv.qm; else",
+      "color": "red"
     }
   ]
 }

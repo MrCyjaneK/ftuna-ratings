@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "0623d8dda442292926084457449dd1a2cef7c8e6e216ed4c2873728358f28625",
   "key": "mirror/openrepos/direc85/personal/main/h/harbour-batterybuddy-3.16.2-1.i486.rpm",
   "name": "harbour-batterybuddy",
   "rpm_version": "3.16.2",
   "release": "1",
   "arch": "i486",
-  "verdict": 53,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-batterybuddy.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=// Run on uninstall, not on upgrade; if [ $1 -eq 0 ]; then; systemctl-user stop harbour-batterybuddy.service\""
+      "detail": "user=root program=/bin/sh body=// Run on uninstall, not on upgrade; if [ $1 -eq 0 ]; then; systemctl-user stop harbour-batterybuddy.service\"",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%posttrans",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl stop harbour-batterybuddy.service; systemctl disable harbour-batterybuddy.service; rm /usr/lib/systemd/system/harbour-batterybuddy.service"
+      "detail": "user=root program=/bin/sh body=systemctl stop harbour-batterybuddy.service; systemctl disable harbour-batterybuddy.service; rm /usr/lib/systemd/system/harbour-batterybuddy.service",
+      "color": "red"
     }
   ]
 }

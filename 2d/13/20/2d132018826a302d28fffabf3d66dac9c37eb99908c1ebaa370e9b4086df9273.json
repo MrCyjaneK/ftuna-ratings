@@ -1,386 +1,389 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "2d132018826a302d28fffabf3d66dac9c37eb99908c1ebaa370e9b4086df9273",
   "key": "mirror/openrepos/inte/personal/main/c/cyrus-sasl-2.1.26-1.armv7hl.rpm",
   "name": "cyrus-sasl",
   "rpm_version": "2.1.26",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 0,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": 0
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/AUTHORS",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/AUTHORS mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/AUTHORS mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/COPYING",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/COPYING mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/COPYING mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/ChangeLog",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/ChangeLog mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/ChangeLog mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/INSTALL",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/INSTALL mode 0100646 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/INSTALL mode 0100646 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/INSTALL.TXT",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/INSTALL.TXT mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/INSTALL.TXT mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/NEWS",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/NEWS mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/NEWS mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/README",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/README mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/README mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc mode 040777 user root group root dir"
+      "detail": "/usr/doc/cyrus-sasl/doc mode 040777 user root group root dir",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/Makefile.am",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/Makefile.am mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/Makefile.am mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/Makefile.in",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/Makefile.in mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/Makefile.in mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/NTMakefile",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/NTMakefile mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/NTMakefile mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/ONEWS",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/ONEWS mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/ONEWS mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/TODO",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/TODO mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/TODO mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/advanced.html",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/advanced.html mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/advanced.html mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/appconvert.html",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/appconvert.html mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/appconvert.html mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/components.html",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/components.html mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/components.html mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/draft-burdis-cat-srp-sasl-xx.txt",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/draft-burdis-cat-srp-sasl-xx.txt mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/draft-burdis-cat-srp-sasl-xx.txt mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/draft-ietf-sasl-anon-xx.txt",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/draft-ietf-sasl-anon-xx.txt mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/draft-ietf-sasl-anon-xx.txt mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/draft-ietf-sasl-crammd5-xx.txt",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/draft-ietf-sasl-crammd5-xx.txt mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/draft-ietf-sasl-crammd5-xx.txt mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/draft-ietf-sasl-gssapi-xx.txt",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/draft-ietf-sasl-gssapi-xx.txt mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/draft-ietf-sasl-gssapi-xx.txt mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/draft-ietf-sasl-plain-xx.txt",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/draft-ietf-sasl-plain-xx.txt mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/draft-ietf-sasl-plain-xx.txt mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/draft-ietf-sasl-rfc2222bis-xx.txt",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/draft-ietf-sasl-rfc2222bis-xx.txt mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/draft-ietf-sasl-rfc2222bis-xx.txt mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/draft-ietf-sasl-rfc2831bis-xx.txt",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/draft-ietf-sasl-rfc2831bis-xx.txt mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/draft-ietf-sasl-rfc2831bis-xx.txt mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/draft-ietf-sasl-saslprep-xx.txt",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/draft-ietf-sasl-saslprep-xx.txt mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/draft-ietf-sasl-saslprep-xx.txt mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/draft-murchison-sasl-login-xx.txt",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/draft-murchison-sasl-login-xx.txt mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/draft-murchison-sasl-login-xx.txt mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/draft-newman-sasl-c-api-xx.txt",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/draft-newman-sasl-c-api-xx.txt mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/draft-newman-sasl-c-api-xx.txt mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/draft-newman-sasl-passdss-xx.txt",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/draft-newman-sasl-passdss-xx.txt mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/draft-newman-sasl-passdss-xx.txt mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/gssapi.html",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/gssapi.html mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/gssapi.html mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/index.html",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/index.html mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/index.html mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/install.html",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/install.html mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/install.html mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/macosx.html",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/macosx.html mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/macosx.html mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/mechanisms.html",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/mechanisms.html mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/mechanisms.html mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/options.html",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/options.html mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/options.html mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/plugprog.html",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/plugprog.html mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/plugprog.html mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/programming.html",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/programming.html mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/programming.html mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/readme.html",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/readme.html mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/readme.html mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/rfc1321.txt",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/rfc1321.txt mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/rfc1321.txt mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/rfc1939.txt",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/rfc1939.txt mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/rfc1939.txt mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/rfc2104.txt",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/rfc2104.txt mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/rfc2104.txt mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/rfc2195.txt",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/rfc2195.txt mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/rfc2195.txt mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/rfc2222.txt",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/rfc2222.txt mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/rfc2222.txt mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/rfc2243.txt",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/rfc2243.txt mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/rfc2243.txt mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/rfc2245.txt",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/rfc2245.txt mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/rfc2245.txt mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/rfc2289.txt",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/rfc2289.txt mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/rfc2289.txt mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/rfc2444.txt",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/rfc2444.txt mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/rfc2444.txt mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/rfc2595.txt",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/rfc2595.txt mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/rfc2595.txt mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/rfc2831.txt",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/rfc2831.txt mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/rfc2831.txt mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/rfc2945.txt",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/rfc2945.txt mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/rfc2945.txt mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/rfc3174.txt",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/rfc3174.txt mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/rfc3174.txt mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/server-plugin-flow.fig",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/server-plugin-flow.fig mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/server-plugin-flow.fig mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/sysadmin.html",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/sysadmin.html mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/sysadmin.html mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/testing.txt",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/testing.txt mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/testing.txt mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/upgrading.html",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/upgrading.html mode 0100666 user root group root file"
+      "detail": "/usr/doc/cyrus-sasl/doc/upgrading.html mode 0100666 user root group root file",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/usr/doc/cyrus-sasl/doc/windows.html",
       "code": "worldwrite",
-      "detail": "/usr/doc/cyrus-sasl/doc/windows.html mode 0100777 user root group root exec"
+      "detail": "/usr/doc/cyrus-sasl/doc/windows.html mode 0100777 user root group root exec",
+      "color": "red"
     }
   ]
 }

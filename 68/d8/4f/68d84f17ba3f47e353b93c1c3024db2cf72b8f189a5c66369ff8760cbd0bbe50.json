@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "68d84f17ba3f47e353b93c1c3024db2cf72b8f189a5c66369ff8760cbd0bbe50",
   "key": "mirror/openrepos/piggz/personal/main/h/harbour-taskswitcher-0.6-1.armv7hl.rpm",
   "name": "harbour-taskswitcher",
   "rpm_version": "0.6",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 80,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-taskswitcher-user.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/harbour-taskswitcher-user.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-taskswitcher-user sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-taskswitcher-user sandbox=none",
+      "color": "green"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/harbour-taskswitcher.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-taskswitcher sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-taskswitcher sandbox=none",
+      "color": "green"
     }
   ]
 }

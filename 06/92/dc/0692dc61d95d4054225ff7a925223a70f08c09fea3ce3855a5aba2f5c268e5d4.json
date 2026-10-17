@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "0692dc61d95d4054225ff7a925223a70f08c09fea3ce3855a5aba2f5c268e5d4",
   "key": "mirror/openrepos/birdzhang/personal/main/s/sailfishweibopy-0.2-2.i486.rpm",
   "name": "sailfishweibopy",
   "rpm_version": "0.2",
   "release": "2",
   "arch": "i486",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=rm -rf /usr/lib/python3.4/site-packages/curl; rm -rf /usr/lib/python3.4/site-packages/pycurl*"
+      "detail": "user=root program=/bin/sh body=rm -rf /usr/lib/python3.4/site-packages/curl; rm -rf /usr/lib/python3.4/site-packages/pycurl*",
+      "color": "red"
     }
   ]
 }

@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "9121fdda1127bf76ba3500c7e61dcca435fcc2d684fef8a18602cf8ff44f7a63",
   "key": "mirror/openrepos/kirbylife_/personal/main/h/harbour-muchkin-0.4.0-1.i686.rpm",
   "name": "harbour-muchkin",
   "rpm_version": "0.4.0",
   "release": "1",
   "arch": "i686",
-  "verdict": 53,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-muchkin.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=echo \"Upgrading....\""
+      "detail": "user=root program=/bin/sh body=echo \"Upgrading....\"",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=echo \"removing /usr/share/harbour-muchkin\"; rm -rf /usr/share/harbour-muchkin"
+      "detail": "user=root program=/bin/sh body=echo \"removing /usr/share/harbour-muchkin\"; rm -rf /usr/share/harbour-muchkin",
+      "color": "red"
     }
   ]
 }

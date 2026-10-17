@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "a6489f3e09ba8ba3fd692c8e092df7370ea8122950999974f25e88eb9b09d542",
   "key": "mirror/openrepos/Mister_Magister/personal/main/n/nanofiles-1.0-1.armv7hl.rpm",
   "name": "nanofiles",
   "rpm_version": "1.0",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 38,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": 0
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/nanofiles.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "setuid",
       "path": "/usr/bin/nanofiles",
       "code": "setuid",
-      "detail": "/usr/bin/nanofiles mode 0104755 user root group root file"
+      "detail": "/usr/bin/nanofiles mode 0104755 user root group root file",
+      "color": "red"
     }
   ]
 }

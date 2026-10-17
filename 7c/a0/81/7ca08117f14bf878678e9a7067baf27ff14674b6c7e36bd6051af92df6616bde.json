@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "7ca08117f14bf878678e9a7067baf27ff14674b6c7e36bd6051af92df6616bde",
   "key": "mirror/openrepos/mad_dev/personal/main/h/harbour-themepack-cairo-0.0.1-1.noarch.rpm",
   "name": "harbour-themepack-cairo",
   "rpm_version": "0.0.1",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=mkdir -p /home/nemo/.themepack/harbour-themepack-cairo; if [ -d \"/usr/share/harbour-themepack-cairo/font\" ]; then; mv /usr/share/harbour-themepack-cairo/font /h"
+      "detail": "user=root program=/bin/sh body=mkdir -p /home/nemo/.themepack/harbour-themepack-cairo; if [ -d \"/usr/share/harbour-themepack-cairo/font\" ]; then; mv /usr/share/harbour-themepack-cairo/font /h",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; rm -rf /usr/share/{name}"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; rm -rf /usr/share/{name}",
+      "color": "red"
     }
   ]
 }

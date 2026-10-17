@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "e847fca53a0336741eebf09b648fd3768c89a31b26be1512d573cafe2041c427",
   "key": "chum/5.2_i486/i486/ksh93-1.0.10+git1-1.2.1.bso.i486.rpm",
   "name": "ksh93",
   "rpm_version": "1.0.10+git1",
   "release": "1.2.1.bso",
   "arch": "i486",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=for s in /usr/bin/ksh /usr/bin/rksh; do; if [ ! -f /etc/shells ]; then"
+      "detail": "user=root program=/bin/sh body=for s in /usr/bin/ksh /usr/bin/rksh; do; if [ ! -f /etc/shells ]; then",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=for s in /usr/bin/ksh /usr/bin/rksh; do; if [ ! -f $s ]; then"
+      "detail": "user=root program=/bin/sh body=for s in /usr/bin/ksh /usr/bin/rksh; do; if [ ! -f $s ]; then",
+      "color": "red"
     }
   ]
 }

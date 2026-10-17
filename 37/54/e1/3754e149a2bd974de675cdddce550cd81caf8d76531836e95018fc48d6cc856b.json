@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "3754e149a2bd974de675cdddce550cd81caf8d76531836e95018fc48d6cc856b",
   "key": "mirror/openrepos/nephros/personal/main/o/openrepos-olsrd-0.9.8-5.aarch64.rpm",
   "name": "openrepos-olsrd",
   "rpm_version": "0.9.8",
   "release": "5",
   "arch": "aarch64",
-  "verdict": 34,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 34
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/openrepos-olsrd.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/sbin/openrepos-olsrd -f /etc/olsrd/olsrd.conf.sailfishos -d 0 -pidfile /run/openrepos-olsrd.pid sandbox=PrivateTmp"
+      "detail": "scope=system user=root group=root exec=/usr/sbin/openrepos-olsrd -f /etc/olsrd/olsrd.conf.sailfishos -d 0 -pidfile /run/openrepos-olsrd.pid sandbox=PrivateTmp",
+      "color": "red"
     }
   ]
 }

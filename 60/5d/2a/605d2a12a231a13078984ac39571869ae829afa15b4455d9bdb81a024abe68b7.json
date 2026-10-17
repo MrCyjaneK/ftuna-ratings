@@ -1,128 +1,88 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "605d2a12a231a13078984ac39571869ae829afa15b4455d9bdb81a024abe68b7",
   "key": "mirror/openrepos/projectmoon/personal/main/f/foghorn-0.6.1-1.armv7hl.rpm",
   "name": "foghorn",
   "rpm_version": "0.6.1",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 61,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/org.unifiedpush.Distributor.Foghorn.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/bin/foghornd systemd=foghornd.service"
+      "detail": "scope=session user=session exec=/usr/bin/foghornd systemd=foghornd.service",
+      "color": "green"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/foghorn.desktop",
       "code": "sailjail.permission",
-      "detail": "AppLaunch"
+      "detail": "AppLaunch",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/foghorn.desktop",
       "code": "sailjail.permission",
-      "detail": "Foghorn"
+      "detail": "Foghorn",
+      "color": "gray"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :; systemctl-user try-restart foghornd.service || :"
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :; systemctl-user try-restart foghornd.service || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; systemctl-user stop foghornd.service || :; user=\"$(getent passwd 100000 | cut -d: -f1)\""
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; systemctl-user stop foghornd.service || :; user=\"$(getent passwd 100000 | cut -d: -f1)\"",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; systemctl daemon-reload || :; systemctl-user daemon-reload || :"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; systemctl daemon-reload || :; systemctl-user daemon-reload || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%posttrans",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl daemon-reload || :; user=\"$(getent passwd 100000 | cut -d: -f1)\"; if [ -n \"$user\" ]; then"
+      "detail": "user=root program=/bin/sh body=systemctl daemon-reload || :; user=\"$(getent passwd 100000 | cut -d: -f1)\"; if [ -n \"$user\" ]; then",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/foghorn-appsupport-sync@.path",
       "code": "systemd.path",
-      "detail": "scope=system activates=foghorn-appsupport-sync@%i.service"
+      "detail": "scope=system activates=foghorn-appsupport-sync@%i.service",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/foghorn-appsupport-sync@.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/libexec/foghorn-appsupport sync %i sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/libexec/foghorn-appsupport sync %i sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/system/foghorn-appsupport@.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/libexec/foghorn-appsupport run %i sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/libexec/foghorn-appsupport run %i sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/foghornd.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/foghornd sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/foghornd sandbox=none",
+      "color": "green"
     }
   ]
 }

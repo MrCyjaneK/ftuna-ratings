@@ -1,98 +1,53 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "740929cb658fa7ca7c8eb1885bf21125e5bffd29421a6db3a866434dcb8079a5",
   "key": "mirror/openrepos/nephros/personal/main/o/openrepos-nethack-3.6.6-9.armv7hl.rpm",
   "name": "openrepos-nethack",
   "rpm_version": "3.6.6",
   "release": "9",
   "arch": "armv7hl",
-  "verdict": 62,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": 80
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/openrepos-nethack-wiki-link.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/openrepos-nethack.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/bin/update-desktop-database -q || :"
+      "detail": "user=root program=/bin/sh body=/usr/bin/update-desktop-database -q || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/bin/update-desktop-database -q || :"
+      "detail": "user=root program=/bin/sh body=/usr/bin/update-desktop-database -q || :",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/share/openrepos-nethack/var",
       "code": "setgid",
-      "detail": "/usr/share/openrepos-nethack/var mode 042770 user root group users dir"
+      "detail": "/usr/share/openrepos-nethack/var mode 042770 user root group users dir",
+      "color": "green"
     },
     {
       "module": "setuid",
       "path": "/usr/share/openrepos-nethack/var/save",
       "code": "setgid",
-      "detail": "/usr/share/openrepos-nethack/var/save mode 042770 user root group users dir"
+      "detail": "/usr/share/openrepos-nethack/var/save mode 042770 user root group users dir",
+      "color": "green"
     }
   ]
 }

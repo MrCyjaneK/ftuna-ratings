@@ -1,308 +1,298 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "8c2ac644948c22f82b0230cb5740570b5cf9cd9c5a214b8f00edc3c80ae7c422",
   "key": "mirror/openrepos/RootGPT/personal/main/h/harbour-rootitanium-2.5-1.armv7hl.rpm",
   "name": "harbour-rootitanium",
   "rpm_version": "2.5",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 47,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": 0
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/com.github.RootGPT_YouTube.rootitanium.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/bin/invoker --type=generic --id=harbour-rootitanium /usr/bin/harbour-rootitanium"
+      "detail": "scope=session user=session exec=/usr/bin/invoker --type=generic --id=harbour-rootitanium /usr/bin/harbour-rootitanium",
+      "color": "green"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-rootitanium.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libbz2.so.1.0.8",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libbz2.so.1.0.8 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libbz2.so.1.0.8 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libcrypto.so.3.5.6+git1",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libcrypto.so.3.5.6+git1 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libcrypto.so.3.5.6+git1 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libdbus-1.so.3.38.3",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libdbus-1.so.3.38.3 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libdbus-1.so.3.38.3 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libexpat.so.1.11.2",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libexpat.so.1.11.2 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libexpat.so.1.11.2 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libffi.so.8.1.4",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libffi.so.8.1.4 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libffi.so.8.1.4 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libfontconfig.so.1.12.0",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libfontconfig.so.1.12.0 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libfontconfig.so.1.12.0 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libfreetype.so.6.20.5",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libfreetype.so.6.20.5 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libfreetype.so.6.20.5 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libglib-2.0.so.0.8600.4",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libglib-2.0.so.0.8600.4 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libglib-2.0.so.0.8600.4 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libgmodule-2.0.so.0.8600.4",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libgmodule-2.0.so.0.8600.4 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libgmodule-2.0.so.0.8600.4 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libgobject-2.0.so.0.8600.4",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libgobject-2.0.so.0.8600.4 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libgobject-2.0.so.0.8600.4 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libgraphite2.so.3.2.1",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libgraphite2.so.3.2.1 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libgraphite2.so.3.2.1 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libgthread-2.0.so.0.8600.4",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libgthread-2.0.so.0.8600.4 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libgthread-2.0.so.0.8600.4 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libharfbuzz-subset.so.0.60811.0",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libharfbuzz-subset.so.0.60811.0 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libharfbuzz-subset.so.0.60811.0 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libharfbuzz.so.0.60811.0",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libharfbuzz.so.0.60811.0 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libharfbuzz.so.0.60811.0 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libicudata.so.73.2",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libicudata.so.73.2 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libicudata.so.73.2 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libicui18n.so.73.2",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libicui18n.so.73.2 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libicui18n.so.73.2 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libicuuc.so.73.2",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libicuuc.so.73.2 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libicuuc.so.73.2 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libjpeg.so.62.4.0",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libjpeg.so.62.4.0 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libjpeg.so.62.4.0 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libnspr4.so",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libnspr4.so mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libnspr4.so mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libnss3.so",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libnss3.so mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libnss3.so mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libnssutil3.so",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libnssutil3.so mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libnssutil3.so mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libopus.so.0.11.1",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libopus.so.0.11.1 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libopus.so.0.11.1 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libpcre2-16.so.0.14.0",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libpcre2-16.so.0.14.0 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libpcre2-16.so.0.14.0 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libpcre2-8.so.0.14.0",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libpcre2-8.so.0.14.0 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libpcre2-8.so.0.14.0 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libplc4.so",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libplc4.so mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libplc4.so mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libplds4.so",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libplds4.so mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libplds4.so mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libpng16.so.16.56.0",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libpng16.so.16.56.0 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libpng16.so.16.56.0 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libproxy.so.1.0.0",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libproxy.so.1.0.0 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libproxy.so.1.0.0 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libresolv.so.2",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libresolv.so.2 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libresolv.so.2 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libsharpyuv.so.0.1.2",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libsharpyuv.so.0.1.2 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libsharpyuv.so.0.1.2 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libsmime3.so",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libsmime3.so mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libsmime3.so mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libtiff.so.6.2.0",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libtiff.so.6.2.0 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libtiff.so.6.2.0 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libwayland-server.so.0.24.0",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libwayland-server.so.0.24.0 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libwayland-server.so.0.24.0 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libwebp.so.7.2.0",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libwebp.so.7.2.0 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libwebp.so.7.2.0 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libwebpdemux.so.2.0.17",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libwebpdemux.so.2.0.17 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libwebpdemux.so.2.0.17 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libwebpmux.so.3.1.2",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libwebpmux.so.3.1.2 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libwebpmux.so.3.1.2 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libxkbcommon.so.0.0.0",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libxkbcommon.so.0.0.0 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libxkbcommon.so.0.0.0 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libz.so.1.3.1",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libz.so.1.3.1 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libz.so.1.3.1 mode 0100777 user root group root exec",
+      "color": "red"
     },
     {
       "module": "worldwrite",
       "path": "/home/rootitanium/lib/libzstd.so.1.5.7",
       "code": "worldwrite",
-      "detail": "/home/rootitanium/lib/libzstd.so.1.5.7 mode 0100777 user root group root exec"
+      "detail": "/home/rootitanium/lib/libzstd.so.1.5.7 mode 0100777 user root group root exec",
+      "color": "red"
     }
   ]
 }

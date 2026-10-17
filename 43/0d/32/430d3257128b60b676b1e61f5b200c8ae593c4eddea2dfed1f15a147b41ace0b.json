@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "430d3257128b60b676b1e61f5b200c8ae593c4eddea2dfed1f15a147b41ace0b",
   "key": "mirror/openrepos/ade/personal/main/h/harbour-infraview-0.5-1.armv7hl.rpm",
   "name": "harbour-infraview",
   "rpm_version": "0.5",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 28,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": 0
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-infraview.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "setuid",
       "path": "/usr/share/harbour-infraview/helper/infraview-helper",
       "code": "setuid",
-      "detail": "/usr/share/harbour-infraview/helper/infraview-helper mode 0104755 user root group root file"
+      "detail": "/usr/share/harbour-infraview/helper/infraview-helper mode 0104755 user root group root file",
+      "color": "red"
     }
   ]
 }

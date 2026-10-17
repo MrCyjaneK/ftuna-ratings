@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "0c286fe517fb4c8dc40b88cdca056789f49c989be1f3ba05af557cd3423dbdfc",
   "key": "mirror/openrepos/kan/personal/main/d/dnscrypt-proxy-blocklist-2.1.4-230303.noarch.rpm",
   "name": "dnscrypt-proxy-blocklist",
   "rpm_version": "2.1.4",
   "release": "230303",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=cp -T -r /var/lib/dnscrypt-proxy/dnscrypt-proxy.toml.dnsmasq /var/lib/dnscrypt-proxy/dnscrypt-proxy.toml.noblock; \\; rpm -ef dnscrypt-proxy-blocklist-2.1.4-1.no"
+      "detail": "user=root program=/bin/sh body=cp -T -r /var/lib/dnscrypt-proxy/dnscrypt-proxy.toml.dnsmasq /var/lib/dnscrypt-proxy/dnscrypt-proxy.toml.noblock; \\; rpm -ef dnscrypt-proxy-blocklist-2.1.4-1.no",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ ! -f /var/lib/dnscrypt-proxy/dnscrypt-proxy.toml.dnsmasq ]; then; cp -T -r /var/lib/dnscrypt-proxy/dnscrypt-proxy.toml.block /var/lib/dnscrypt-proxy/dnscry"
+      "detail": "user=root program=/bin/sh body=if [ ! -f /var/lib/dnscrypt-proxy/dnscrypt-proxy.toml.dnsmasq ]; then; cp -T -r /var/lib/dnscrypt-proxy/dnscrypt-proxy.toml.block /var/lib/dnscrypt-proxy/dnscry",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl stop dnscrypt-proxy;systemctl start dnscrypt-proxy"
+      "detail": "user=root program=/bin/sh body=systemctl stop dnscrypt-proxy;systemctl start dnscrypt-proxy",
+      "color": "red"
     }
   ]
 }

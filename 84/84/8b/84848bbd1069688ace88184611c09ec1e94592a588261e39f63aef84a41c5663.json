@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "84848bbd1069688ace88184611c09ec1e94592a588261e39f63aef84a41c5663",
   "key": "mirror/openrepos/lpr_next/personal/main/g/glibc-common-2.2310.1-2.armv7hl.rpm",
   "name": "glibc-common",
   "rpm_version": "2.23+10.1",
   "release": "2",
   "arch": "armv7hl",
-  "verdict": 0,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": 0
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "setuid",
       "path": "/usr/libexec/pt_chown",
       "code": "setuid",
-      "detail": "/usr/libexec/pt_chown mode 0104711 user root group root file"
+      "detail": "/usr/libexec/pt_chown mode 0104711 user root group root file",
+      "color": "red"
     }
   ]
 }

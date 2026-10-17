@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "988e2e611dc75aee3844699f96c807c766aa88e7514bb4145419f4a253dcc28f",
   "key": "mirror/openrepos/Kabouik/personal/main/c/cava-0.6.1-1.armv7hl.rpm",
   "name": "cava",
   "rpm_version": "0.6.1",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 1 ]; then; chmod -R 755 /home/nemo/.config/cava; chown -R nemo:nemo /home/nemo/.config/cava"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 1 ]; then; chmod -R 755 /home/nemo/.config/cava; chown -R nemo:nemo /home/nemo/.config/cava",
+      "color": "red"
     }
   ]
 }

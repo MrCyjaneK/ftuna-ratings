@@ -1,86 +1,39 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "4289518082273011ef8272be6b063631dcf96ebeaaf908fa96f916b214a0d5b3",
   "key": "mirror/openrepos/accumulator/personal/main/s/syncevolution-1.5.3-1.i486.rpm",
   "name": "syncevolution",
   "rpm_version": "1.5.3",
   "release": "1",
   "arch": "i486",
-  "verdict": 73,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": 45
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/org.syncevolution.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/libexec/syncevo-dbus-server systemd=syncevo-dbus-server.service"
+      "detail": "scope=session user=session exec=/usr/libexec/syncevo-dbus-server systemd=syncevo-dbus-server.service",
+      "color": "green"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/syncevolution.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "setuid",
       "path": "/usr/libexec/syncevo-dbus-server",
       "code": "setgid",
-      "detail": "/usr/libexec/syncevo-dbus-server mode 0102755 user root group privileged file"
+      "detail": "/usr/libexec/syncevo-dbus-server mode 0102755 user root group privileged file",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/syncevo-dbus-server.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/libexec/syncevo-dbus-server sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/libexec/syncevo-dbus-server sandbox=none",
+      "color": "green"
     }
   ]
 }

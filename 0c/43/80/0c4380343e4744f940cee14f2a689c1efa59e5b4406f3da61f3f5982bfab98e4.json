@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "0c4380343e4744f940cee14f2a689c1efa59e5b4406f3da61f3f5982bfab98e4",
   "key": "mirror/openrepos/gmicroul/personal/main/p/proxy-run-2.0-2.noarch.rpm",
   "name": "proxy-run",
   "rpm_version": "2.0",
   "release": "2",
   "arch": "noarch",
-  "verdict": 85,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/proxy-run-sync.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/proxy-run --sync sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/proxy-run --sync sandbox=none",
+      "color": "green"
     }
   ]
 }

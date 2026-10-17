@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "f58044addb694413ab8e672c37ec74c0c76044d51146c90484df39cdb852b5eb",
   "key": "chum/5.1_i486/i486/harbour-chameleon-ultra-1.9.0-1.1.1.bso.i486.rpm",
   "name": "harbour-chameleon-ultra",
   "rpm_version": "1.9.0",
   "release": "1.1.1.bso",
   "arch": "i486",
-  "verdict": 43,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-chameleon-ultra.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=_CU_USER=$(getent passwd 100000 2\u003e/dev/null | cut -d: -f1); if [ -n \"$_CU_USER\" ]; then; /usr/sbin/usermod -aG dialout \"$_CU_USER\" 2\u003e/dev/null || true"
+      "detail": "user=root program=/bin/sh body=_CU_USER=$(getent passwd 100000 2\u003e/dev/null | cut -d: -f1); if [ -n \"$_CU_USER\" ]; then; /usr/sbin/usermod -aG dialout \"$_CU_USER\" 2\u003e/dev/null || true",
+      "color": "red"
     }
   ]
 }

@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "cbef7f51afeb81e87d695cb826e6cabc900830477731309dcedbfcc786e639ef",
   "key": "mirror/openrepos/nephros/personal/main/y/youtube-dl-open-helper-5432.3.4-4.noarch.rpm",
   "name": "youtube-dl-open-helper",
   "rpm_version": "5432.3.4",
   "release": "4",
   "arch": "noarch",
-  "verdict": 80,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/youtube-dl-open-clipboard.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/youtube-dl-open-installer.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/share/youtube-dl/youtube-dl-open-installer.sh sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/share/youtube-dl/youtube-dl-open-installer.sh sandbox=none",
+      "color": "green"
     }
   ]
 }

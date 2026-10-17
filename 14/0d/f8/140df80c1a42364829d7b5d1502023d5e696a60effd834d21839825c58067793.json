@@ -1,110 +1,67 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "140df80c1a42364829d7b5d1502023d5e696a60effd834d21839825c58067793",
   "key": "mirror/openrepos/coderus_ac8/personal/main/a/aliendalvik-control-8.1.12-1.armv7hl.rpm",
   "name": "aliendalvik-control",
   "rpm_version": "8.1.12",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 39,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 20
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/etc/dbus-1/system.d/org.coderus.aliendalvikcontrol.conf",
       "code": "dbus.policy",
-      "detail": "context=default own"
+      "detail": "context=default own",
+      "color": "red"
     },
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/org.coderus.aliendalvikcontrol.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/bin/aliendalvik-control-proxy"
+      "detail": "scope=session user=session exec=/usr/bin/aliendalvik-control-proxy",
+      "color": "green"
     },
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/system-services/org.coderus.aliendalvikcontrol.service",
       "code": "dbus.service",
-      "detail": "scope=system user=root exec=/bin/false systemd=aliendalvik-control.service"
+      "detail": "scope=system user=root exec=/bin/false systemd=aliendalvik-control.service",
+      "color": "red"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/android-open-url.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl stop aliendalvik-control ||:; if /sbin/pidof aliendalvik-control \u003e /dev/null; then; killall -9 aliendalvik-control ||:"
+      "detail": "user=root program=/bin/sh body=systemctl stop aliendalvik-control ||:; if /sbin/pidof aliendalvik-control \u003e /dev/null; then; killall -9 aliendalvik-control ||:",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl daemon-reload; apkd-install /usr/share/aliendalvik-control/apk/app-release.apk ||:; systemctl restart aliendalvik-control ||:"
+      "detail": "user=root program=/bin/sh body=systemctl daemon-reload; apkd-install /usr/share/aliendalvik-control/apk/app-release.apk ||:; systemctl restart aliendalvik-control ||:",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl stop aliendalvik-control ||:; if /sbin/pidof aliendalvik-control \u003e /dev/null; then; killall -9 aliendalvik-control ||:"
+      "detail": "user=root program=/bin/sh body=systemctl stop aliendalvik-control ||:; if /sbin/pidof aliendalvik-control \u003e /dev/null; then; killall -9 aliendalvik-control ||:",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/lib/systemd/system/aliendalvik-control.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/bin/aliendalvik-control sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/bin/aliendalvik-control sandbox=none",
+      "color": "red"
     }
   ]
 }

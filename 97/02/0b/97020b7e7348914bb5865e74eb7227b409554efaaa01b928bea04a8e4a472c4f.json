@@ -1,92 +1,46 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "97020b7e7348914bb5865e74eb7227b409554efaaa01b928bea04a8e4a472c4f",
   "key": "mirror/openrepos/Pemek/personal/main/p/phonehook-0.10.0master.20241024195643.4ad26cd-1.aarch64.rpm",
   "name": "phonehook",
   "rpm_version": "0.10.0+master.20241024195643.4ad26cd",
   "release": "1",
   "arch": "aarch64",
-  "verdict": 63,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/phonehook.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user restart phonehook-daemon.service"
+      "detail": "user=root program=/bin/sh body=systemctl-user restart phonehook-daemon.service",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; killall phonehook-daemon || :; killall phonehook || true"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; killall phonehook-daemon || :; killall phonehook || true",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%posttrans",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=killall phonehook-daemon || :; ln -s -f /usr/lib/systemd/user/phonehook-daemon.service /usr/lib/systemd/user/post-user-session.target.wants; systemctl-user enab"
+      "detail": "user=root program=/bin/sh body=killall phonehook-daemon || :; ln -s -f /usr/lib/systemd/user/phonehook-daemon.service /usr/lib/systemd/user/post-user-session.target.wants; systemctl-user enab",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/phonehook-daemon.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/phonehook-daemon sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/phonehook-daemon sandbox=none",
+      "color": "green"
     }
   ]
 }

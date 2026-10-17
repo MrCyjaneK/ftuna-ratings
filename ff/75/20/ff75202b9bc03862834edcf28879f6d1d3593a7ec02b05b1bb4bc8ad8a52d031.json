@@ -1,98 +1,53 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "ff75202b9bc03862834edcf28879f6d1d3593a7ec02b05b1bb4bc8ad8a52d031",
   "key": "mirror/openrepos/BlackSailer/personal/main/h/harbour-sk-0.5-1.armv7hl.rpm",
   "name": "harbour-SK",
   "rpm_version": "0.5",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 69,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/org.blacksailer.workshop.sk.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/bin/invoker -s --type=silica-qt5 /usr/bin/harbour-SK systemd=org.blacksailer.workshop.sk"
+      "detail": "scope=session user=session exec=/usr/bin/invoker -s --type=silica-qt5 /usr/bin/harbour-SK systemd=org.blacksailer.workshop.sk",
+      "color": "green"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-SK.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user stop org.blacksailer.workshop.sk.service; if /sbin/pidof harbour-SK \u003e /dev/null; then; killall harbour-SK || true"
+      "detail": "user=root program=/bin/sh body=systemctl-user stop org.blacksailer.workshop.sk.service; if /sbin/pidof harbour-SK \u003e /dev/null; then; killall harbour-SK || true",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload; systemctl-user enable org.blacksailer.workshop.sk; systemctl-user restart org.blacksailer.workshop.sk"
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload; systemctl-user enable org.blacksailer.workshop.sk; systemctl-user restart org.blacksailer.workshop.sk",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user stop org.blacksailer.workshop.sk.service || true; systemctl-user disable org.blacksailer.workshop.sk || true; systemctl-user daemon-reload"
+      "detail": "user=root program=/bin/sh body=systemctl-user stop org.blacksailer.workshop.sk.service || true; systemctl-user disable org.blacksailer.workshop.sk || true; systemctl-user daemon-reload",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/org.blacksailer.workshop.sk.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/invoker  -s --type=silica-qt5 /usr/bin/harbour-SK sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/invoker  -s --type=silica-qt5 /usr/bin/harbour-SK sandbox=none",
+      "color": "green"
     }
   ]
 }

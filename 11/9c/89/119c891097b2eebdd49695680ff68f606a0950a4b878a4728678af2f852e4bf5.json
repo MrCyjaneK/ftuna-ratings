@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "119c891097b2eebdd49695680ff68f606a0950a4b878a4728678af2f852e4bf5",
   "key": "chum/5.2_i486/i486/openrepos-mybackup-1.0.7-1.3.1.bso.i486.rpm",
   "name": "openrepos-mybackup",
   "rpm_version": "1.0.7",
   "release": "1.3.1.bso",
   "arch": "i486",
-  "verdict": 43,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/openrepos-mybackup.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" == 0 ] ; then; for d in $(getent passwd | cut -d: -f6) ; do; if [ \"$d\" != \"\" ] \u0026\u0026 [ \"$d\" != \"/\" ] \u0026\u0026 [ -d \"$d/.local/share/openrepos-mybackup\" ] ; the"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" == 0 ] ; then; for d in $(getent passwd | cut -d: -f6) ; do; if [ \"$d\" != \"\" ] \u0026\u0026 [ \"$d\" != \"/\" ] \u0026\u0026 [ -d \"$d/.local/share/openrepos-mybackup\" ] ; the",
+      "color": "red"
     }
   ]
 }

@@ -1,98 +1,53 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "9de2cfacbced9b4dd4e25ed0f46c0989255ddcbac4c7c6c89c337961746572cf",
   "key": "mirror/openrepos/dseight/personal/main/c/clockwork-0.1.0-1.i486.rpm",
   "name": "clockwork",
   "rpm_version": "0.1.0",
   "release": "1",
   "arch": "i486",
-  "verdict": 58,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; setcap cap_dac_override+ep /usr/bin/clockwork; if [ \"$1\" -ge 1 ]; then"
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig; setcap cap_dac_override+ep /usr/bin/clockwork; if [ \"$1\" -ge 1 ]; then",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; systemctl-user stop clockwork.service || :; systemctl-user daemon-reload || :"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; systemctl-user stop clockwork.service || :; systemctl-user daemon-reload || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/sbin/ldconfig"
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%transfiletriggerin /usr/share",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if grep -qF /usr/share/harbour-themepack- ; then; systemctl-user try-restart clockwork.service; fi"
+      "detail": "user=root program=/bin/sh body=if grep -qF /usr/share/harbour-themepack- ; then; systemctl-user try-restart clockwork.service; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%transfiletriggerun /usr/share",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if grep -qF /usr/share/harbour-themepack- ; then; systemctl-user try-restart clockwork.service; fi"
+      "detail": "user=root program=/bin/sh body=if grep -qF /usr/share/harbour-themepack- ; then; systemctl-user try-restart clockwork.service; fi",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/clockwork.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/clockwork sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/clockwork sandbox=none",
+      "color": "green"
     }
   ]
 }

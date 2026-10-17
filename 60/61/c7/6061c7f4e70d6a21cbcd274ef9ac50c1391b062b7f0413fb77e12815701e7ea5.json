@@ -1,92 +1,46 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "6061c7f4e70d6a21cbcd274ef9ac50c1391b062b7f0413fb77e12815701e7ea5",
   "key": "mirror/openrepos/lobanokivan11/personal/main/h/harbour-dynclock-0.5.6-1.i486.rpm",
   "name": "harbour-dynclock",
   "rpm_version": "0.5.6",
   "release": "1",
   "arch": "i486",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=chmod +x /usr/share/harbour-dynclock/*.sh; install -Dm644 /usr/share/harbour-dynclock/harbour-dynclock.service /etc/systemd/system/; install -Dm644 /usr/share/h"
+      "detail": "user=root program=/bin/sh body=chmod +x /usr/share/harbour-dynclock/*.sh; install -Dm644 /usr/share/harbour-dynclock/harbour-dynclock.service /etc/systemd/system/; install -Dm644 /usr/share/h",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/share/harbour-dynclock/harbour-dynclock-uninstall.sh"
+      "detail": "user=root program=/bin/sh body=/usr/share/harbour-dynclock/harbour-dynclock-uninstall.sh",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; systemctl disable --now harbour-dynclock.timer; systemctl disable --now harbour-dynclock.service"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; systemctl disable --now harbour-dynclock.timer; systemctl disable --now harbour-dynclock.service",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/system/harbour-dynclock.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/share/harbour-dynclock/harbour-dynclock.sh sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/share/harbour-dynclock/harbour-dynclock.sh sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/etc/systemd/system/harbour-dynclock.timer",
       "code": "systemd.timer",
-      "detail": "scope=system activates=harbour-dynclock.service"
+      "detail": "scope=system activates=harbour-dynclock.service",
+      "color": "red"
     }
   ]
 }

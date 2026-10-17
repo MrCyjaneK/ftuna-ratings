@@ -1,86 +1,39 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "c55756ecc9566e4d6f43118e7a84baf09a2da326cc17c9748915ae92e0735dec",
   "key": "chum/5.2_aarch64/aarch64/mlocate-0.26+git4-1.1.1.bso.aarch64.rpm",
   "name": "mlocate",
   "rpm_version": "0.26+git4",
   "release": "1.1.1.bso",
   "arch": "aarch64",
-  "verdict": 38,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": 45
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/libexec/manage-groups add privileged ||:"
+      "detail": "user=root program=/bin/sh body=/usr/libexec/manage-groups add privileged ||:",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload disable --now mlocate-updatedb.service \u003e /dev/null 2\u003e\u00261 || :; fi"
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload disable --now mlocate-updatedb.service \u003e /dev/null 2\u003e\u00261 || :; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; /usr/libexec/manage-groups remove privileged ||:; fi"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; /usr/libexec/manage-groups remove privileged ||:; fi",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/bin/locate",
       "code": "setgid",
-      "detail": "/usr/bin/locate mode 0102711 user root group privileged file"
+      "detail": "/usr/bin/locate mode 0102711 user root group privileged file",
+      "color": "red"
     }
   ]
 }

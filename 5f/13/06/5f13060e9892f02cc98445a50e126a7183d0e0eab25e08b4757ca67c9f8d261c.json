@@ -1,61 +1,10 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "5f13060e9892f02cc98445a50e126a7183d0e0eab25e08b4757ca67c9f8d261c",
   "key": "chum/5.2_aarch64/aarch64_ilp32/libmodplug-debuginfo-0.8.9.1+git1-1.1.1.bso.aarch64_ilp32.rpm",
   "name": "libmodplug-debuginfo",
   "rpm_version": "0.8.9.1+git1",
   "release": "1.1.1.bso",
   "arch": "aarch64_ilp32",
-  "verdict": -1,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": []
 }

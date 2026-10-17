@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "0caf33a72a58a10edf700c8edf1ddd88be95556bd7bda443fc5935a98bbd08d9",
   "key": "mirror/openrepos/olf/personal/main/m/mount-sdcard-1.6.1-1.sfos321.noarch.rpm",
   "name": "mount-sdcard",
   "rpm_version": "1.6.1",
   "release": "1.sfos321",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": 30
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "systemd",
       "path": "/etc/systemd/system/mount-sd@.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/bin/udisksctl-user mount $UDISKS2_MOUNT_OPTIONS -b /dev/%i sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/bin/udisksctl-user mount $UDISKS2_MOUNT_OPTIONS -b /dev/%i sandbox=none",
+      "color": "red"
     },
     {
       "module": "udev",
       "path": "/etc/udev/rules.d/91-mountsd.rules",
       "code": "udev.run",
-      "detail": "user=root program=/bin/systemctl stop mount-sd@%k.service"
+      "detail": "user=root program=/bin/systemctl stop mount-sd@%k.service",
+      "color": "red"
     }
   ]
 }

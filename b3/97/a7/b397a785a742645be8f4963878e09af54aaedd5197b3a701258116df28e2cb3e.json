@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "b397a785a742645be8f4963878e09af54aaedd5197b3a701258116df28e2cb3e",
   "key": "mirror/openrepos/joeke/personal/main/g/guile30-3.0.9-1.aarch64.rpm",
   "name": "guile30",
   "rpm_version": "3.0.9",
   "release": "1",
   "arch": "aarch64",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%triggerin slib",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=rm -f /usr/share/guile/site/3.0/slibcat; export SCHEME_LIBRARY_PATH=/usr/share/slib/; /usr/bin/guile3.0 --fresh-auto-compile --no-auto-compile -c \\"
+      "detail": "user=root program=/bin/sh body=rm -f /usr/share/guile/site/3.0/slibcat; export SCHEME_LIBRARY_PATH=/usr/share/slib/; /usr/bin/guile3.0 --fresh-auto-compile --no-auto-compile -c \\",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%triggerun slib",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$2\" = 0 ]; then; rm -f /usr/share/guile/site/3.0/slibcat; fi"
+      "detail": "user=root program=/bin/sh body=if [ \"$2\" = 0 ]; then; rm -f /usr/share/guile/site/3.0/slibcat; fi",
+      "color": "red"
     }
   ]
 }
