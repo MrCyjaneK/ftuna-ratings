@@ -1,61 +1,10 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "b1ceb3a412fbad5263c2dede8858ccaab2f4075c681c3a1d5b794973ae625f2b",
   "key": "mirror/openrepos/stoefelz/personal/main/p/python3-beautifulsoup4-4.13-1.noarch.rpm",
   "name": "python3-beautifulsoup4",
   "rpm_version": "4.13",
   "release": "1",
   "arch": "noarch",
-  "verdict": -1,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": []
 }

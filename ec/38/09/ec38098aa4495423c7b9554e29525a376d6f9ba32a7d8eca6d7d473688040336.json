@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "ec38098aa4495423c7b9554e29525a376d6f9ba32a7d8eca6d7d473688040336",
   "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/davea42/libdwarf-code/libdwarf-tools-0.7.0-0.i486.rpm",
   "name": "libdwarf-tools",
   "rpm_version": "0.7.0",
   "release": "0",
   "arch": "i486",
-  "verdict": 100,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": 100
-    }
-  ],
   "issues": [
     {
       "module": "ftuna",
       "path": "github.com/davea42/libdwarf-code",
       "code": "ftuna.built",
-      "detail": "clean"
+      "detail": "clean",
+      "color": "green"
     }
   ]
 }

@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "1064dccf316f141b9bf19ba18abdb224e893c8a99b526ce72234f4fc1e703f42",
+  "key": "mirror/openrepos/Rikudou_Sennin/personal/main/i/inari-blue-notifier-settings-1.0.0-1.noarch.rpm",
+  "name": "inari-blue-notifier-settings",
+  "rpm_version": "1.0.0",
+  "release": "1",
+  "arch": "noarch",
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ] \u0026\u0026 [ -f \"/usr/share/applications/harbour-inari-blue-notifier.desktop\" ]; then; desktop-file-edit --remove-key=NoDisplay \"/usr/share/applicatio",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%posttrans",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -f \"/usr/share/inari-blue-notifier-settings/hide-launcher\" ] \u0026\u0026 \\; [ -f \"/usr/share/applications/harbour-inari-blue-notifier.desktop\" ]; then; desktop-file",
+      "color": "red"
+    }
+  ]
+}

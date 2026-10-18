@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "38c3e37998ac84f79bae000dd76bd1c084927a3ea692e3c920c3827eb59669f3",
   "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/roundedrectangle/harbour-sshazam/harbour-sshazam-debugsource-1.1.4-1.i486.rpm",
   "name": "harbour-sshazam-debugsource",
   "rpm_version": "1.1.4",
   "release": "1",
   "arch": "i486",
-  "verdict": 45,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": 45
-    }
-  ],
   "issues": [
     {
       "module": "ftuna",
       "path": "github.com/roundedrectangle/harbour-sshazam",
       "code": "ftuna.built",
-      "detail": "hooks"
+      "detail": "hooks",
+      "color": "red"
     },
     {
       "module": "ftuna",
       "path": "github.com/roundedrectangle/harbour-sshazam",
       "code": "ftuna.image",
-      "detail": "20-rust.sh\n21-python-deps.sh"
+      "detail": "20-rust.sh\n21-python-deps.sh",
+      "color": "red"
     }
   ]
 }

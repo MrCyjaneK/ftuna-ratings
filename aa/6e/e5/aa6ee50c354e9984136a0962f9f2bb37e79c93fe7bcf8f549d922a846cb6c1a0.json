@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "aa6ee50c354e9984136a0962f9f2bb37e79c93fe7bcf8f549d922a846cb6c1a0",
   "key": "mirror/openrepos/slava/personal/main/h/harbour-counter-1.0.4-8.1.i486.rpm",
   "name": "harbour-counter",
   "rpm_version": "1.0.4",
   "release": "8.1",
   "arch": "i486",
-  "verdict": 75,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-counter.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     }
   ]
 }

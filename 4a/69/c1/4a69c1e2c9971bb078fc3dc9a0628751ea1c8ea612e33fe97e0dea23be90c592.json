@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "4a69c1e2c9971bb078fc3dc9a0628751ea1c8ea612e33fe97e0dea23be90c592",
   "key": "mirror/openrepos/vevgeniev/personal/main/p/pcsc-ccid-1.4.7-1.1.2.armv7hl.rpm",
   "name": "pcsc-ccid",
   "rpm_version": "1.4.7",
   "release": "1.1.2",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": 30
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "udev",
       "path": "/lib/udev/rules.d/92_pcscd_ccid.rules",
       "code": "udev.run",
-      "detail": "user=root program=/usr/sbin/Kobil_mIDentity_switch"
+      "detail": "user=root program=/usr/sbin/Kobil_mIDentity_switch",
+      "color": "red"
     },
     {
       "module": "udev",
       "path": "/lib/udev/rules.d/92_pcscd_ccid.rules",
       "code": "udev.run",
-      "detail": "user=root program=/bin/sh -c 'echo auto \u003e /sys/$devpath/power/level ; echo auto \u003e /sys/$devpath/power/control'"
+      "detail": "user=root program=/bin/sh -c 'echo auto \u003e /sys/$devpath/power/level ; echo auto \u003e /sys/$devpath/power/control'",
+      "color": "red"
     }
   ]
 }

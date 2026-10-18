@@ -1,61 +1,10 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "422e312a3177ee523b27ac867719f7988c81edd104c082e30d061415b4df1bce",
   "key": "mirror/openrepos/wrzof/personal/main/p/python3-feedparser-5.1.3-10.2.1.jolla_.noarch.rpm",
   "name": "python3-feedparser",
   "rpm_version": "5.1.3",
   "release": "10.2.1.jolla",
   "arch": "noarch",
-  "verdict": -1,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": []
 }

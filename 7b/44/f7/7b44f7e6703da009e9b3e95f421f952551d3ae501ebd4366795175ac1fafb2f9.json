@@ -1,0 +1,88 @@
+{
+  "version": 7,
+  "sha256": "7b44f7e6703da009e9b3e95f421f952551d3ae501ebd4366795175ac1fafb2f9",
+  "key": "mirror/openrepos/Dokuz/personal/main/b/betasail-recorder-1.2.2-18.aarch64.rpm",
+  "name": "sail-recorder",
+  "rpm_version": "1.2.2",
+  "release": "18",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.sailfishos.SailRecorder.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/libexec/sail-recorder/sail-recorder-dbus-bridge systemd=sail-recorder-topmenu.service",
+      "color": "green"
+    },
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.sailfishos.SailRecorderCountdown.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/libexec/sail-recorder/sail-recorder-countdown-broker.sh",
+      "color": "green"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/sail-recorder.desktop",
+      "code": "sailjail.jailed",
+      "detail": "sandboxed",
+      "color": "green"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload \u003e/dev/null 2\u003e\u00261 || :; if getent group privileged \u003e/dev/null 2\u003e\u00261; then; chgrp privileged /usr/libexec/sail-recorder/sail-recorder-e",
+      "color": "red"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/libexec/sail-recorder/sail-recorder-engine",
+      "code": "setgid",
+      "detail": "/usr/libexec/sail-recorder/sail-recorder-engine mode 0102755 user root group privileged file",
+      "color": "red"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/sail-recorder-daemon.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/python3 /usr/libexec/sail-recorder/sail-recorder-daemon.py sandbox=none",
+      "color": "green"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/sail-recorder-dbus-refresh.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/busctl --user call org.freedesktop.DBus / org.freedesktop.DBus ReloadConfig sandbox=none",
+      "color": "green"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/sail-recorder-dbus-watchdog.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/libexec/sail-recorder/sail-recorder-dbus-watchdog.sh sandbox=none",
+      "color": "green"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/sail-recorder-screenrecords-cleanup.path",
+      "code": "systemd.path",
+      "detail": "scope=user activates=sail-recorder-screenrecords-cleanup.service",
+      "color": "green"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/sail-recorder-screenrecords-cleanup.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/bin/sh -c 'rmdir /home/defaultuser/Videos/ScreenRecords 2\u003e/dev/null || true' sandbox=none",
+      "color": "green"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/sail-recorder-topmenu.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/libexec/sail-recorder/sail-recorder-dbus-bridge sandbox=none",
+      "color": "green"
+    }
+  ]
+}

@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "1fe9a97a618f3d722ca31b2b07877aa666fd2c1a17d202b56a9689b3c76b1174",
   "key": "mirror/openrepos/szopin/personal/main/h/harbour-dbus-inspector-1.1-1.aarch64.rpm",
   "name": "harbour-dbus-inspector",
   "rpm_version": "1.1",
   "release": "1",
   "arch": "aarch64",
-  "verdict": 75,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-dbus-inspector.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     }
   ]
 }

@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "add1d75edd2b7b2fe092bce16b817c89d9a198cbbc016e3ef2a658cbcc5742b7",
   "key": "mirror/openrepos/toxip/personal/main/d/disable-kalman-filter-0.1-2.noarch.rpm",
   "name": "disable-kalman-filter",
   "rpm_version": "0.1",
   "release": "2",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /usr/share/patchmanager/patches/disable-kalman-filter ]; then; /usr/sbin/patchmanager -u disable-kalman-filter || true; fi"
+      "detail": "user=root program=/bin/sh body=if [ -d /usr/share/patchmanager/patches/disable-kalman-filter ]; then; /usr/sbin/patchmanager -u disable-kalman-filter || true; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/sbin/patchmanager -u disable-kalman-filter || true"
+      "detail": "user=root program=/bin/sh body=/usr/sbin/patchmanager -u disable-kalman-filter || true",
+      "color": "red"
     }
   ]
 }

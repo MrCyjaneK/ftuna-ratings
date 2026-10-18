@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "d346ef0255057f818920c5313d0942b661fc4afa5320a1b147d4f7fc73619d81",
   "key": "repo/ftuna-oss/5.1.0.11/aarch64/github.com/michal-szczepaniak/yottagram/yottagram-debugsource-0.7.3-1.aarch64.rpm",
   "name": "yottagram-debugsource",
   "rpm_version": "0.7.3",
   "release": "1",
   "arch": "aarch64",
-  "verdict": 45,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": 45
-    }
-  ],
   "issues": [
     {
       "module": "ftuna",
       "path": "github.com/michal-szczepaniak/yottagram",
       "code": "ftuna.built",
-      "detail": "hooks"
+      "detail": "hooks",
+      "color": "red"
     },
     {
       "module": "ftuna",
       "path": "github.com/michal-szczepaniak/yottagram",
       "code": "ftuna.image",
-      "detail": "20-qt-cxx20.sh"
+      "detail": "20-qt-cxx20.sh",
+      "color": "red"
     }
   ]
 }

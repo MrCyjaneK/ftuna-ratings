@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "fe89cd71f3c081280fd961d59ae1a5d7e81045148fe7f5f1766f188067632f52",
   "key": "mirror/openrepos/wdehoog/personal/main/d/donnie-0.8-1.8.1.jolla_.armv7hl.rpm",
   "name": "donnie",
   "rpm_version": "0.8",
   "release": "1.8.1.jolla",
   "arch": "armv7hl",
-  "verdict": 75,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/donnie.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     }
   ]
 }

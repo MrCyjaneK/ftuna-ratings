@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "f86ddc78f0ae0e95de3d64963865bfecb23bef4e21df6ce4c66c027778539937",
   "key": "mirror/openrepos/slava/personal/main/h/harbour-yubikey-1.1.1-1.armv7hl.rpm",
   "name": "harbour-yubikey",
   "rpm_version": "1.1.1",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 35,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 20
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/etc/dbus-1/system.d/harbour.yubikey.conf",
       "code": "dbus.policy",
-      "detail": "context=default own"
+      "detail": "context=default own",
+      "color": "red"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-yubikey.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" == 0 ] ; then; for d in $(getent passwd | cut -d: -f6) ; do; if [ \"$d\" != \"\" ] \u0026\u0026 [ \"$d\" != \"/\" ] \u0026\u0026 [ -d \"$d/.local/share/harbour-yubikey\" ] ; then"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" == 0 ] ; then; for d in $(getent passwd | cut -d: -f6) ; do; if [ \"$d\" != \"\" ] \u0026\u0026 [ \"$d\" != \"/\" ] \u0026\u0026 [ -d \"$d/.local/share/harbour-yubikey\" ] ; then",
+      "color": "red"
     }
   ]
 }

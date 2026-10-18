@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "1e796dba0f90dee9ba7971ee1de1da426a356315ac11556bcf3d924ee6a90f59",
+  "key": "mirror/openrepos/aviarus/personal/main/h/harbour-radelt-0.8.5-1.armv7hl.rpm",
+  "name": "harbour-radelt",
+  "rpm_version": "0.8.5",
+  "release": "1",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-radelt.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-radelt.desktop",
+      "code": "sailjail.permission",
+      "detail": "Location",
+      "color": "gray"
+    }
+  ]
+}

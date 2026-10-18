@@ -1,61 +1,10 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "d40aa2c92871c060e8c44a241b3a5f9122ccc7298ca14710f0710ad263af6050",
   "key": "mirror/openrepos/yeoldegrove/personal/main/g/gnupg2-smime-2.2.1-1.1.12.jolla_.armv7hl.rpm",
   "name": "gnupg2-smime",
   "rpm_version": "2.2.1",
   "release": "1.1.12.jolla",
   "arch": "armv7hl",
-  "verdict": -1,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": []
 }

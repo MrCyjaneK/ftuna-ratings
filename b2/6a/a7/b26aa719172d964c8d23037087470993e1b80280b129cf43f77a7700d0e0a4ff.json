@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "b26aa719172d964c8d23037087470993e1b80280b129cf43f77a7700d0e0a4ff",
   "key": "mirror/openrepos/slava/personal/main/h/harbour-foilauth-1.1.9-1.armv7hl.rpm",
   "name": "harbour-foilauth",
   "rpm_version": "1.1.9",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 55,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-foilauth.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     }
   ]
 }

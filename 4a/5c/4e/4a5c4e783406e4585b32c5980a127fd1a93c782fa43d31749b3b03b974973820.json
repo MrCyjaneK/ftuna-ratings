@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "4a5c4e783406e4585b32c5980a127fd1a93c782fa43d31749b3b03b974973820",
   "key": "mirror/openrepos/slava/personal/main/o/openrepos-swissclock-1.0.6-11.1.armv7hl.rpm",
   "name": "openrepos-swissclock",
   "rpm_version": "1.0.6",
   "release": "11.1",
   "arch": "armv7hl",
-  "verdict": 75,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/openrepos-swissclock.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     }
   ]
 }

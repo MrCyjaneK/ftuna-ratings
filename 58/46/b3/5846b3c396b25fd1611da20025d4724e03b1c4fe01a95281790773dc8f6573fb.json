@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "5846b3c396b25fd1611da20025d4724e03b1c4fe01a95281790773dc8f6573fb",
   "key": "mirror/openrepos/slava/personal/main/s/sailfish-qrshare-1.1.0-19.1.aarch64.rpm",
   "name": "sailfish-qrshare",
   "rpm_version": "1.1.0",
   "release": "19.1",
   "arch": "aarch64",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=/usr/lib64/qt5/qml/com/monich/qrshare/mkicon /usr/share/nemo-transferengine/openrepos-qrshare/qrshare.svg || :; rm -f /usr/lib64/qt5/qml/com/monich/qrshare/mkic"
+      "detail": "user=root program=/bin/sh body=/usr/lib64/qt5/qml/com/monich/qrshare/mkicon /usr/share/nemo-transferengine/openrepos-qrshare/qrshare.svg || :; rm -f /usr/lib64/qt5/qml/com/monich/qrshare/mkic",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" == 0 ] ; then rm -f /usr/share/nemo-transferengine/openrepos-qrshare/qrshare.png; fi"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" == 0 ] ; then rm -f /usr/share/nemo-transferengine/openrepos-qrshare/qrshare.png; fi",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%posttrans",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=rm -f /usr/share/sailfish-qrshare//qrshare.png; if  [ -d /usr/share/sailfish-qrshare//translations ] ; then rmdir /usr/share/sailfish-qrshare//translations || :"
+      "detail": "user=root program=/bin/sh body=rm -f /usr/share/sailfish-qrshare//qrshare.png; if  [ -d /usr/share/sailfish-qrshare//translations ] ; then rmdir /usr/share/sailfish-qrshare//translations || :",
+      "color": "red"
     }
   ]
 }

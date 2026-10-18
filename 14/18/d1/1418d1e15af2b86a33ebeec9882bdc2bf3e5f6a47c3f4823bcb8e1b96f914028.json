@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "1418d1e15af2b86a33ebeec9882bdc2bf3e5f6a47c3f4823bcb8e1b96f914028",
   "key": "mirror/openrepos/velemas/personal/main/k/keyboard-by-1.0-1.noarch.rpm",
   "name": "keyboard-by",
   "rpm_version": "1.0",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=killall maliit-server"
+      "detail": "user=root program=/bin/sh body=killall maliit-server",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=killall maliit-server"
+      "detail": "user=root program=/bin/sh body=killall maliit-server",
+      "color": "red"
     }
   ]
 }

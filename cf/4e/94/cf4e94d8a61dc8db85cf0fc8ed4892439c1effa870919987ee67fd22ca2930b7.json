@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "cf4e94d8a61dc8db85cf0fc8ed4892439c1effa870919987ee67fd22ca2930b7",
+  "key": "mirror/openrepos/klarre/personal/main/h/harbour-cribbage-0.1.0-1.armv7hl.rpm",
+  "name": "harbour-cribbage",
+  "rpm_version": "0.1.0",
+  "release": "1",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-cribbage.desktop",
+      "code": "sailjail.jailed",
+      "detail": "sandboxed",
+      "color": "green"
+    }
+  ]
+}

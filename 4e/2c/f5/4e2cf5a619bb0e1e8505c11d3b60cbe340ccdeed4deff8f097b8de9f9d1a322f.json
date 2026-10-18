@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "4e2cf5a619bb0e1e8505c11d3b60cbe340ccdeed4deff8f097b8de9f9d1a322f",
   "key": "mirror/openrepos/slava/personal/main/o/openrepos-logger-ofono-1.0.22-1.armv7hl.rpm",
   "name": "openrepos-logger-ofono",
   "rpm_version": "1.0.22",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 55,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/openrepos-logger-ofono.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     }
   ]
 }

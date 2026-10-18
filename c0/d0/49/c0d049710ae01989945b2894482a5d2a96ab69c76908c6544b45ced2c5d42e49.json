@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "c0d049710ae01989945b2894482a5d2a96ab69c76908c6544b45ced2c5d42e49",
   "key": "mirror/openrepos/theyosh/personal/main/w/wifikill3r-0.13-3.armv7hl.rpm",
   "name": "WiFiKilL3r",
   "rpm_version": "0.13",
   "release": "3",
   "arch": "armv7hl",
-  "verdict": 43,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/WiFiKilL3r.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /home/defaultuser ]; then; export WIFIKILLER_HOME_DIR=\"/home/defaultuser/\""
+      "detail": "user=root program=/bin/sh body=if [ -d /home/defaultuser ]; then; export WIFIKILLER_HOME_DIR=\"/home/defaultuser/\"",
+      "color": "red"
     }
   ]
 }

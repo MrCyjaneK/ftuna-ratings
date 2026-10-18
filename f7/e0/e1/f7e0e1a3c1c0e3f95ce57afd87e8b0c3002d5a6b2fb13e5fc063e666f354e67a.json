@@ -1,86 +1,39 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "f7e0e1a3c1c0e3f95ce57afd87e8b0c3002d5a6b2fb13e5fc063e666f354e67a",
   "key": "mirror/openrepos/szopin/personal/main/h/harbour-tide-0.2.11-1.i486.rpm",
   "name": "harbour-tide",
   "rpm_version": "0.2.11",
   "release": "1",
   "arch": "i486",
-  "verdict": 28,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": 0
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-tide-root.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-tide.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl-user restart maliit-server.service; install -g nemo -o nemo -d /home/nemo/tIDE/; install -g nemo -o nemo -d /home/nemo/tIDE/Projects/"
+      "detail": "user=root program=/bin/sh body=systemctl-user restart maliit-server.service; install -g nemo -o nemo -d /home/nemo/tIDE/; install -g nemo -o nemo -d /home/nemo/tIDE/Projects/",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/bin/harbour-tide-root",
       "code": "setuid",
-      "detail": "/usr/bin/harbour-tide-root mode 0104755 user root group root file"
+      "detail": "/usr/bin/harbour-tide-root mode 0104755 user root group root file",
+      "color": "red"
     }
   ]
 }

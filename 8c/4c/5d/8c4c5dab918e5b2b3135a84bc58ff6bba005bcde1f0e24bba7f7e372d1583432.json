@@ -1,61 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "8c4c5dab918e5b2b3135a84bc58ff6bba005bcde1f0e24bba7f7e372d1583432",
   "key": "mirror/openrepos/soulsource/personal/main/h/harbour-passfish-0.2-1.armv7hl.rpm",
   "name": "harbour-passfish",
   "rpm_version": "0.2",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 100,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
+  "issues": [
     {
       "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
+      "path": "/usr/share/applications/harbour-passfish.desktop",
+      "code": "sailjail.jailed",
+      "detail": "sandboxed",
+      "color": "green"
     }
-  ],
-  "issues": []
+  ]
 }

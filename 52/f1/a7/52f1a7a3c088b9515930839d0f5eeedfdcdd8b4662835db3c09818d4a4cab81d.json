@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "52f1a7a3c088b9515930839d0f5eeedfdcdd8b4662835db3c09818d4a4cab81d",
   "key": "mirror/openrepos/tmi/personal/main/a/arrowboard-el-1.0-1.noarch.rpm",
   "name": "arrowboard-el",
   "rpm_version": "1.0",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 1 ]; then; echo \"Thanks for installing Greek Keyboard with Arrows!\"; echo \"\""
+      "detail": "user=root program=/bin/sh body=if [ $1 = 1 ]; then; echo \"Thanks for installing Greek Keyboard with Arrows!\"; echo \"\"",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; echo \"Uninstalled Greek Keyboard with Arrows.; echo \"Restarting keyboard service...\""
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; echo \"Uninstalled Greek Keyboard with Arrows.; echo \"Restarting keyboard service...\"",
+      "color": "red"
     }
   ]
 }

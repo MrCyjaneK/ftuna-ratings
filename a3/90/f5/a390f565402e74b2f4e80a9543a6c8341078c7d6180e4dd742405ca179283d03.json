@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "a390f565402e74b2f4e80a9543a6c8341078c7d6180e4dd742405ca179283d03",
+  "key": "mirror/openrepos/birdzhang/personal/main/s/sfos-quickshare-runtime-1.0.0-1.aarch64.rpm",
+  "name": "sfos-quickshare-runtime",
+  "rpm_version": "1.0.0",
+  "release": "1",
+  "arch": "aarch64",
+  "issues": []
+}

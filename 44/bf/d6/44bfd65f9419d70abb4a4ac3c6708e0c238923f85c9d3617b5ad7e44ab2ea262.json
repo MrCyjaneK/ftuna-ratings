@@ -1,61 +1,10 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "44bfd65f9419d70abb4a4ac3c6708e0c238923f85c9d3617b5ad7e44ab2ea262",
   "key": "mirror/openrepos/wrzof/personal/main/p/python3-beautifulsoup-4.3.2-10.1.1.jolla_.noarch.rpm",
   "name": "python3-beautifulsoup",
   "rpm_version": "4.3.2",
   "release": "10.1.1.jolla",
   "arch": "noarch",
-  "verdict": -1,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": []
 }

@@ -1,0 +1,46 @@
+{
+  "version": 7,
+  "sha256": "d774f96d94f3f2d010093c22d856e7e5514b8c69e3943dd451b02804e35632ee",
+  "key": "mirror/openrepos/aviarus/personal/main/h/harbour-schachlehrer-0.4.1-1.armv7hl.rpm",
+  "name": "harbour-schachlehrer",
+  "rpm_version": "0.4.1",
+  "release": "1",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-schachlehrer.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-schachlehrer.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-schachlehrer.desktop",
+      "code": "sailjail.permission",
+      "detail": "Documents",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-schachlehrer.desktop",
+      "code": "sailjail.permission",
+      "detail": "Secrets",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-schachlehrer.desktop",
+      "code": "sailjail.permission",
+      "detail": "Bluetooth",
+      "color": "gray"
+    }
+  ]
+}

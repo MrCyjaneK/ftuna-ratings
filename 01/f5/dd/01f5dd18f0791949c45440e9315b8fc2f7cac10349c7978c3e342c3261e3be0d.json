@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "01f5dd18f0791949c45440e9315b8fc2f7cac10349c7978c3e342c3261e3be0d",
   "key": "repo/ftuna-oss/5.1.0.11/aarch64/github.com/abseil/abseil-cpp/abseil-cpp-debuginfo-20210324.2-0.aarch64.rpm",
   "name": "abseil-cpp-debuginfo",
   "rpm_version": "20210324.2",
   "release": "0",
   "arch": "aarch64",
-  "verdict": 100,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": 100
-    }
-  ],
   "issues": [
     {
       "module": "ftuna",
       "path": "github.com/abseil/abseil-cpp",
       "code": "ftuna.built",
-      "detail": "clean"
+      "detail": "clean",
+      "color": "green"
     }
   ]
 }

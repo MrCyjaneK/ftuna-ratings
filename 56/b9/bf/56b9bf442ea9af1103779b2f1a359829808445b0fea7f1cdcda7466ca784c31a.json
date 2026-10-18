@@ -1,110 +1,67 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "56b9bf442ea9af1103779b2f1a359829808445b0fea7f1cdcda7466ca784c31a",
   "key": "mirror/openrepos/unmaintained/personal/main/h/harbour-s1p-0.9.13-1.i486.rpm",
   "name": "harbour-s1p",
   "rpm_version": "0.9.13",
   "release": "1",
   "arch": "i486",
-  "verdict": 93,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/harbour-s1p-daemon.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/bin/s1p"
+      "detail": "scope=session user=session exec=/usr/bin/s1p",
+      "color": "green"
     },
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/harbour-s1p-ui.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/bin/sailjail -p harbour-s1p.desktop /usr/bin/sailfish-qml harbour-s1p"
+      "detail": "scope=session user=session exec=/usr/bin/sailjail -p harbour-s1p.desktop /usr/bin/sailfish-qml harbour-s1p",
+      "color": "green"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-s1p.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-s1p.desktop",
       "code": "sailjail.permission",
-      "detail": "Audio"
+      "detail": "Audio",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-s1p.desktop",
       "code": "sailjail.permission",
-      "detail": "Microphone"
+      "detail": "Microphone",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-s1p.desktop",
       "code": "sailjail.permission",
-      "detail": "Contacts"
+      "detail": "Contacts",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-s1p.desktop",
       "code": "sailjail.permission",
-      "detail": "CommunicationHistory"
+      "detail": "CommunicationHistory",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-s1p.desktop",
       "code": "sailjail.permission",
-      "detail": "Privileged"
+      "detail": "Privileged",
+      "color": "gray"
     }
   ]
 }

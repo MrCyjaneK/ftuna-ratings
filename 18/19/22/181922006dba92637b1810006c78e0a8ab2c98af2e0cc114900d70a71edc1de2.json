@@ -1,92 +1,46 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "181922006dba92637b1810006c78e0a8ab2c98af2e0cc114900d70a71edc1de2",
   "key": "mirror/openrepos/sznowicki/personal/main/v/vapaamin-0.2.0-1.armv7hl.rpm",
   "name": "Vapaamin",
   "rpm_version": "0.2.0",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 54,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": 45
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/Vapaamin.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if id defaultuser \u003e/dev/null 2\u003e\u00261; then; su - defaultuser -c 'XDG_RUNTIME_DIR=/run/user/$(id -u) systemctl --user daemon-reload' || :; su - defaultuser -c 'XDG_"
+      "detail": "user=root program=/bin/sh body=if id defaultuser \u003e/dev/null 2\u003e\u00261; then; su - defaultuser -c 'XDG_RUNTIME_DIR=/run/user/$(id -u) systemctl --user daemon-reload' || :; su - defaultuser -c 'XDG_",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" = 0 ] \u0026\u0026 id defaultuser \u003e/dev/null 2\u003e\u00261; then; su - defaultuser -c 'XDG_RUNTIME_DIR=/run/user/$(id -u) systemctl --user disable --now Vapaamin-daemon."
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = 0 ] \u0026\u0026 id defaultuser \u003e/dev/null 2\u003e\u00261; then; su - defaultuser -c 'XDG_RUNTIME_DIR=/run/user/$(id -u) systemctl --user disable --now Vapaamin-daemon.",
+      "color": "red"
     },
     {
       "module": "setuid",
       "path": "/usr/bin/Vapaamin-daemon",
       "code": "setgid",
-      "detail": "/usr/bin/Vapaamin-daemon mode 0102755 user root group privileged file"
+      "detail": "/usr/bin/Vapaamin-daemon mode 0102755 user root group privileged file",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/Vapaamin-daemon.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/Vapaamin-daemon sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/Vapaamin-daemon sandbox=none",
+      "color": "green"
     }
   ]
 }

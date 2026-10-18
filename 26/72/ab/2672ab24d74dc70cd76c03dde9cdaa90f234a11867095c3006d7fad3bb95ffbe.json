@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "2672ab24d74dc70cd76c03dde9cdaa90f234a11867095c3006d7fad3bb95ffbe",
   "key": "mirror/openrepos/tmi/personal/main/a/arrowboard-en-1.0-1.noarch.rpm",
   "name": "arrowboard-en",
   "rpm_version": "1.0",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 1 ]; then; echo \"Thanks for installing English Keyboard with Arrows!\"; echo \"\""
+      "detail": "user=root program=/bin/sh body=if [ $1 = 1 ]; then; echo \"Thanks for installing English Keyboard with Arrows!\"; echo \"\"",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; echo \"Uninstalled English Keyboard with Arrows.; echo \"Restarting keyboard service...\""
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; echo \"Uninstalled English Keyboard with Arrows.; echo \"Restarting keyboard service...\"",
+      "color": "red"
     }
   ]
 }

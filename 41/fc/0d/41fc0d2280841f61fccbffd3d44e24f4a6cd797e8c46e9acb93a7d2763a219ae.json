@@ -1,0 +1,53 @@
+{
+  "version": 7,
+  "sha256": "41fc0d2280841f61fccbffd3d44e24f4a6cd797e8c46e9acb93a7d2763a219ae",
+  "key": "mirror/openrepos/birdzhang/personal/main/s/sfos-quickshare-0.1.7-1.aarch64.rpm",
+  "name": "sfos-quickshare",
+  "rpm_version": "0.1.7",
+  "release": "1",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.sailfishos.QuickShare.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/sfos-quickshared systemd=sfos-quickshare.service",
+      "color": "green"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if command -v systemctl-user \u003e/dev/null 2\u003e\u00261; then; state=$(systemctl-user is-enabled sfos-quickshare.service 2\u003e/dev/null || :); case \"$state\" in",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; if command -v systemctl-user \u003e/dev/null 2\u003e\u00261; then; state=$(systemctl-user is-enabled sfos-quickshare.service 2\u003e/dev/null || :)",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; if command -v systemctl-user \u003e/dev/null 2\u003e\u00261; then; systemctl-user daemon-reload \u003e/dev/null 2\u003e\u00261 || :",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%posttrans",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if command -v systemctl-user \u003e/dev/null 2\u003e\u00261; then; systemctl-user daemon-reload \u003e/dev/null 2\u003e\u00261 || :; if [ -f /run/sfos-quickshare-rpm/unmask ]; then",
+      "color": "red"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/sfos-quickshare.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/sfos-quickshared sandbox=none",
+      "color": "green"
+    }
+  ]
+}

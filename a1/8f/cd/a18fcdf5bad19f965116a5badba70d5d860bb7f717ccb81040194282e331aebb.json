@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "a18fcdf5bad19f965116a5badba70d5d860bb7f717ccb81040194282e331aebb",
   "key": "repo/ftuna-oss/5.1.0.11/armv7hl/github.com/cisco/openh264/openh264-debuginfo-2.3.1-0.armv7hl.rpm",
   "name": "openh264-debuginfo",
   "rpm_version": "2.3.1",
   "release": "0",
   "arch": "armv7hl",
-  "verdict": 100,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": 100
-    }
-  ],
   "issues": [
     {
       "module": "ftuna",
       "path": "github.com/cisco/openh264",
       "code": "ftuna.built",
-      "detail": "clean"
+      "detail": "clean",
+      "color": "green"
     }
   ]
 }

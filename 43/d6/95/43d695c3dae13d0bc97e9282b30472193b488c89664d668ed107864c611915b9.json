@@ -1,61 +1,10 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "43d695c3dae13d0bc97e9282b30472193b488c89664d668ed107864c611915b9",
   "key": "mirror/openrepos/sr2004/personal/main/l/lksctp-tools-dev-f.13.splitmaster.20191111043347.9cd233e-12.armv7hl.rpm",
   "name": "lksctp-tools-dev",
   "rpm_version": "F.13.split+master.20191111043347.9cd233e",
   "release": "12",
   "arch": "armv7hl",
-  "verdict": -1,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": []
 }

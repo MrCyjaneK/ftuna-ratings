@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "c966715b0742513698124bfd0fac3fe1c8997ea7192ce4df5b35f36181276b77",
   "key": "repo/ftuna-oss/5.1.0.11/armv7hl/github.com/davea42/libdwarf-code/libdwarf-devel-0.7.0-0.armv7hl.rpm",
   "name": "libdwarf-devel",
   "rpm_version": "0.7.0",
   "release": "0",
   "arch": "armv7hl",
-  "verdict": 100,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": 100
-    }
-  ],
   "issues": [
     {
       "module": "ftuna",
       "path": "github.com/davea42/libdwarf-code",
       "code": "ftuna.built",
-      "detail": "clean"
+      "detail": "clean",
+      "color": "green"
     }
   ]
 }

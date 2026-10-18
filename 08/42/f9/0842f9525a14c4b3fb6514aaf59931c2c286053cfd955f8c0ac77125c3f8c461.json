@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "0842f9525a14c4b3fb6514aaf59931c2c286053cfd955f8c0ac77125c3f8c461",
   "key": "mirror/openrepos/tp_labs/personal/main/h/harbour-sailbms-0.1-1.armv7hl.rpm",
   "name": "harbour-sailbms",
   "rpm_version": "0.1",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 100,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-sailbms.desktop",
       "code": "sailjail.permission",
-      "detail": "Bluetooth"
+      "detail": "Bluetooth",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-sailbms.desktop",
       "code": "sailjail.permission",
-      "detail": "DBusSystem"
+      "detail": "DBusSystem",
+      "color": "gray"
     }
   ]
 }

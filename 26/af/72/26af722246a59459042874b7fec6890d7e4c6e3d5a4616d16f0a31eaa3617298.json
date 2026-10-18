@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "26af722246a59459042874b7fec6890d7e4c6e3d5a4616d16f0a31eaa3617298",
   "key": "mirror/openrepos/stoefelz/personal/main/h/harbour-custom-keyboard-26.08-3.armv7hl.rpm",
   "name": "harbour-custom-keyboard",
   "rpm_version": "26.08",
   "release": "3",
   "arch": "armv7hl",
-  "verdict": 100,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-custom-keyboard.desktop",
       "code": "sailjail.permission",
-      "detail": "AppLaunch"
+      "detail": "AppLaunch",
+      "color": "gray"
     }
   ]
 }

@@ -1,98 +1,53 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "3f1d2fdc517196bdc6af62119b4450d1b73612b2d1412e283ed9e5dda70ccc68",
   "key": "mirror/openrepos/sznowicki/personal/main/h/harbour-hauler-0.6.1-1.i486.rpm",
   "name": "harbour-hauler",
   "rpm_version": "0.6.1",
   "release": "1",
   "arch": "i486",
-  "verdict": 100,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-hauler.desktop",
       "code": "sailjail.permission",
-      "detail": "Audio"
+      "detail": "Audio",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-hauler.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-hauler.desktop",
       "code": "sailjail.permission",
-      "detail": "MediaIndexing"
+      "detail": "MediaIndexing",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-hauler.desktop",
       "code": "sailjail.permission",
-      "detail": "Pictures"
+      "detail": "Pictures",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-hauler.desktop",
       "code": "sailjail.permission",
-      "detail": "Videos"
+      "detail": "Videos",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-hauler.desktop",
       "code": "sailjail.permission",
-      "detail": "WebView"
+      "detail": "WebView",
+      "color": "gray"
     }
   ]
 }

@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "69603aa04c2f10a66e0ece2b120edf6a0042c06fd3e8123a7f6d0a2577c94e2d",
+  "key": "mirror/openrepos/roundedrectangle/personal/main/m/micro-2.0.15-1.armv7hl.rpm",
+  "name": "micro",
+  "rpm_version": "2.0.15",
+  "release": "1",
+  "arch": "armv7hl",
+  "issues": []
+}

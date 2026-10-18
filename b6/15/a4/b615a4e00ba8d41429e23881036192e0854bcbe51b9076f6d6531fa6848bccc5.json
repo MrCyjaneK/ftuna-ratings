@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "b615a4e00ba8d41429e23881036192e0854bcbe51b9076f6d6531fa6848bccc5",
   "key": "mirror/openrepos/theyosh/personal/main/w/wifikill3r-0.11-1.armv7hl.rpm",
   "name": "WiFiKilL3r",
   "rpm_version": "0.11",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 53,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/WiFiKilL3r.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=chmod 4755 /usr/share/WiFiKilL3r/qml/bin/*-wifi-root_*; chmod 4755 /usr/share/WiFiKilL3r/qml/python/WiFiKilL3r_Cron.sh; chmod 4755 /usr/share/WiFiKilL3r/qml/pyt"
+      "detail": "user=root program=/bin/sh body=chmod 4755 /usr/share/WiFiKilL3r/qml/bin/*-wifi-root_*; chmod 4755 /usr/share/WiFiKilL3r/qml/python/WiFiKilL3r_Cron.sh; chmod 4755 /usr/share/WiFiKilL3r/qml/pyt",
+      "color": "red"
     }
   ]
 }

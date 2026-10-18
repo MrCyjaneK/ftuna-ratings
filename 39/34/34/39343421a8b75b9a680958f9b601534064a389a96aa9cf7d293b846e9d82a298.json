@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "39343421a8b75b9a680958f9b601534064a389a96aa9cf7d293b846e9d82a298",
   "key": "mirror/openrepos/tmi/personal/main/n/numericboard-0.1-1.noarch.rpm",
   "name": "numericboard",
   "rpm_version": "0.1",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 1 ]; then; echo \"Thanks for installing Numeric keyboard!\"; echo \"\""
+      "detail": "user=root program=/bin/sh body=if [ $1 = 1 ]; then; echo \"Thanks for installing Numeric keyboard!\"; echo \"\"",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; echo \"Uninstalled numeric keyboard.\"; echo \"Restarting keyboard service...\""
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; echo \"Uninstalled numeric keyboard.\"; echo \"Restarting keyboard service...\"",
+      "color": "red"
     }
   ]
 }

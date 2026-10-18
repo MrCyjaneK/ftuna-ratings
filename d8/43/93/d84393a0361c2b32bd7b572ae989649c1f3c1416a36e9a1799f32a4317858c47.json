@@ -1,86 +1,39 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "d84393a0361c2b32bd7b572ae989649c1f3c1416a36e9a1799f32a4317858c47",
   "key": "mirror/openrepos/yun_L/personal/main/h/harbour-eureadia-0.5-1.i486.rpm",
   "name": "harbour-eureadia",
   "rpm_version": "0.5",
   "release": "1",
   "arch": "i486",
-  "verdict": 93,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/com.unapp.eureadia.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/bin/sailjail -p harbour-eureadia.desktop /usr/bin/harbour-eureadia"
+      "detail": "scope=session user=session exec=/usr/bin/sailjail -p harbour-eureadia.desktop /usr/bin/harbour-eureadia",
+      "color": "green"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-eureadia.desktop",
       "code": "sailjail.permission",
-      "detail": "UserDirs"
+      "detail": "UserDirs",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-eureadia.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-eureadia.desktop",
       "code": "sailjail.permission",
-      "detail": "Audio"
+      "detail": "Audio",
+      "color": "gray"
     }
   ]
 }

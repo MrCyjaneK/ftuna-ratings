@@ -1,80 +1,32 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "97c8884820771f4b2ab2ae144fb889a1874e71a4e833d42e24a617aeb91be161",
   "key": "mirror/openrepos/smoku/personal/main/p/pebble-0.10-1.armv7hl.rpm",
   "name": "pebble",
   "rpm_version": "0.10",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 63,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/pebble.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=systemctl --user daemon-reload"
+      "detail": "user=root program=/bin/sh body=systemctl --user daemon-reload",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/pebbled.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/pebbled sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/pebbled sandbox=none",
+      "color": "green"
     }
   ]
 }

@@ -1,98 +1,53 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "53ae16eaf380d1a2950ea5bad6415e33c6f5f060b479b8fd6b7b46c8bd940f45",
   "key": "mirror/openrepos/szopin/personal/main/h/harbour-neliapila-0.9.6-1.noarch.rpm",
   "name": "harbour-neliapila",
   "rpm_version": "0.9.6",
   "release": "1",
   "arch": "noarch",
-  "verdict": 100,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-neliapila.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-neliapila.desktop",
       "code": "sailjail.permission",
-      "detail": "WebView"
+      "detail": "WebView",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-neliapila.desktop",
       "code": "sailjail.permission",
-      "detail": "UserDirs"
+      "detail": "UserDirs",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-neliapila.desktop",
       "code": "sailjail.permission",
-      "detail": "MediaIndexing"
+      "detail": "MediaIndexing",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-neliapila.desktop",
       "code": "sailjail.permission",
-      "detail": "RemovableMedia"
+      "detail": "RemovableMedia",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-neliapila.desktop",
       "code": "sailjail.permission",
-      "detail": "Audio"
+      "detail": "Audio",
+      "color": "gray"
     }
   ]
 }

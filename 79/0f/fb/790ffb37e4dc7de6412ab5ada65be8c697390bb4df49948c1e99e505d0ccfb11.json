@@ -1,104 +1,60 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "790ffb37e4dc7de6412ab5ada65be8c697390bb4df49948c1e99e505d0ccfb11",
   "key": "mirror/openrepos/thelaughingman/personal/main/h/harbour-wallpaper-loop-1.6.0-1.armv7hl.rpm",
   "name": "harbour-wallpaper-loop",
   "rpm_version": "1.6.0",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 93,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 85
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-wallpaper-loop.desktop",
       "code": "sailjail.permission",
-      "detail": "UserDirs"
+      "detail": "UserDirs",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-wallpaper-loop.desktop",
       "code": "sailjail.permission",
-      "detail": "Downloads"
+      "detail": "Downloads",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-wallpaper-loop.desktop",
       "code": "sailjail.permission",
-      "detail": "Pictures"
+      "detail": "Pictures",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-wallpaper-loop.desktop",
       "code": "sailjail.permission",
-      "detail": "Ambience"
+      "detail": "Ambience",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-wallpaper-loop.desktop",
       "code": "sailjail.permission",
-      "detail": "AppLaunch"
+      "detail": "AppLaunch",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-wallpaper-loop.desktop",
       "code": "sailjail.permission",
-      "detail": "Compatibility"
+      "detail": "Compatibility",
+      "color": "gray"
     },
     {
       "module": "systemd",
       "path": "/usr/lib/systemd/user/harbour-wallpaper-loop.service",
       "code": "systemd.service",
-      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-wallpaper-loop --daemon sandbox=none"
+      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-wallpaper-loop --daemon sandbox=none",
+      "color": "green"
     }
   ]
 }

@@ -1,98 +1,53 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "dab0a8c4838820c0af9a033fc22f134fb424e2183ccf1d416ae22c21aa1fcb2e",
   "key": "mirror/openrepos/vevgeniev/personal/main/p/pcsc-lite-1.8.3-2.1.3.armv7hl.rpm",
   "name": "pcsc-lite",
   "rpm_version": "1.8.3",
   "release": "2.1.3",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": 30
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%pre",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=getent group scard \u003e/dev/null || groupadd -r -o scard; getent passwd scard \u003e/dev/null || useradd -r -o -g scard -s /bin/nologin -c \"Smart Card Reader\" -d /var/r"
+      "detail": "user=root program=/bin/sh body=getent group scard \u003e/dev/null || groupadd -r -o scard; getent passwd scard \u003e/dev/null || useradd -r -o -g scard -s /bin/nologin -c \"Smart Card Reader\" -d /var/r",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=%service_add_post pcscd.service pcscd.socket; /bin/systemctl disable pcscd.service || :; /bin/systemctl enable pcscd.socket || :"
+      "detail": "user=root program=/bin/sh body=%service_add_post pcscd.service pcscd.socket; /bin/systemctl disable pcscd.service || :; /bin/systemctl enable pcscd.socket || :",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=%service_del_preun pcscd.service pcscd.socket; %stop_on_removal pcscd"
+      "detail": "user=root program=/bin/sh body=%service_del_preun pcscd.service pcscd.socket; %stop_on_removal pcscd",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=%service_del_postun pcscd.service pcscd.socket; if [ \"$1\" = \"1\" ]; then; /bin/systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :"
+      "detail": "user=root program=/bin/sh body=%service_del_postun pcscd.service pcscd.socket; if [ \"$1\" = \"1\" ]; then; /bin/systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/lib/systemd/system/pcscd.service",
       "code": "systemd.service",
-      "detail": "scope=system user=root group=root exec=/usr/sbin/pcscd --foreground --auto-exit sandbox=none"
+      "detail": "scope=system user=root group=root exec=/usr/sbin/pcscd --foreground --auto-exit sandbox=none",
+      "color": "red"
     },
     {
       "module": "systemd",
       "path": "/lib/systemd/system/pcscd.socket",
       "code": "systemd.socket",
-      "detail": "scope=system activates=pcscd.service"
+      "detail": "scope=system activates=pcscd.service",
+      "color": "red"
     }
   ]
 }

@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "745d3e86fdd314b0592fd3631f2d115e713e3b480d5e690bf21005b53b79e6b9",
   "key": "repo/ftuna-oss/5.1.0.11/aarch64/github.com/michal-szczepaniak/outpost/outpost-debugsource-1.2-1.aarch64.rpm",
   "name": "outpost-debugsource",
   "rpm_version": "1.2",
   "release": "1",
   "arch": "aarch64",
-  "verdict": 45,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": 45
-    }
-  ],
   "issues": [
     {
       "module": "ftuna",
       "path": "github.com/michal-szczepaniak/outpost",
       "code": "ftuna.built",
-      "detail": "hooks"
+      "detail": "hooks",
+      "color": "red"
     },
     {
       "module": "ftuna",
       "path": "github.com/michal-szczepaniak/outpost",
       "code": "ftuna.image",
-      "detail": "20-cpr-deps.sh"
+      "detail": "20-cpr-deps.sh",
+      "color": "red"
     }
   ]
 }

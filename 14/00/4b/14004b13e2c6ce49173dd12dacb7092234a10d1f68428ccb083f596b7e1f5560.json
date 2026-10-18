@@ -1,0 +1,46 @@
+{
+  "version": 7,
+  "sha256": "14004b13e2c6ce49173dd12dacb7092234a10d1f68428ccb083f596b7e1f5560",
+  "key": "mirror/openrepos/aviarus/personal/main/h/harbour-sagswien-0.2.3-1.armv7hl.rpm",
+  "name": "harbour-sagswien",
+  "rpm_version": "0.2.3",
+  "release": "1",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sagswien.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sagswien.desktop",
+      "code": "sailjail.permission",
+      "detail": "Location",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sagswien.desktop",
+      "code": "sailjail.permission",
+      "detail": "Pictures",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sagswien.desktop",
+      "code": "sailjail.permission",
+      "detail": "MediaIndexing",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sagswien.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia",
+      "color": "gray"
+    }
+  ]
+}

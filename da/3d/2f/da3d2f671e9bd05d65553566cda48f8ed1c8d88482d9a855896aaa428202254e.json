@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "da3d2f671e9bd05d65553566cda48f8ed1c8d88482d9a855896aaa428202254e",
   "key": "mirror/openrepos/unai_i/personal/main/s/sailfishos-patch-actdead-charging-clock-0.1.0-1.armv7hl.rpm",
   "name": "sailfishos-patch-actdead-charging-clock",
   "rpm_version": "0.1.0",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%preun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=patchmanager -u sailfishos-actdead-charging-clock"
+      "detail": "user=root program=/bin/sh body=patchmanager -u sailfishos-actdead-charging-clock",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; rm -rf /usr/share/patchmanager/patches/sailfishos-actdead-charging-clock"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; // Do stuff specific to uninstalls; rm -rf /usr/share/patchmanager/patches/sailfishos-actdead-charging-clock",
+      "color": "red"
     }
   ]
 }

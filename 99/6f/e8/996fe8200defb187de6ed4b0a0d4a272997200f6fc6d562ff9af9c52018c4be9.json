@@ -1,92 +1,46 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "996fe8200defb187de6ed4b0a0d4a272997200f6fc6d562ff9af9c52018c4be9",
   "key": "mirror/openrepos/tp_labs/personal/main/h/harbour-byteshark-0.1-1.i486.rpm",
   "name": "harbour-byteshark",
   "rpm_version": "0.1",
   "release": "1",
   "arch": "i486",
-  "verdict": 100,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-byteshark.desktop",
       "code": "sailjail.permission",
-      "detail": "UserDirs"
+      "detail": "UserDirs",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-byteshark.desktop",
       "code": "sailjail.permission",
-      "detail": "Documents"
+      "detail": "Documents",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-byteshark.desktop",
       "code": "sailjail.permission",
-      "detail": "Downloads"
+      "detail": "Downloads",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-byteshark.desktop",
       "code": "sailjail.permission",
-      "detail": "RemovableMedia"
+      "detail": "RemovableMedia",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-byteshark.desktop",
       "code": "sailjail.permission",
-      "detail": "PublicDir"
+      "detail": "PublicDir",
+      "color": "gray"
     }
   ]
 }

@@ -1,0 +1,39 @@
+{
+  "version": 7,
+  "sha256": "14c0a3af32db3b85fb99f379a32723cede3620ad0dead6db7a9eb103f2d942a3",
+  "key": "mirror/openrepos/ade/personal/main/m/mpd-0.24-16.armv7hl.rpm",
+  "name": "mpd",
+  "rpm_version": "0.24",
+  "release": "16",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user enable mpd.socket || :; systemctl-user start mpd.socket || :",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%posttrans",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :; systemctl-user enable mpd.socket || :; systemctl-user start mpd.socket || :",
+      "color": "red"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/mpd.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/mpd --systemd sandbox=ProtectSystem,NoNewPrivileges,RestrictNamespaces,ProtectKernelTunables,ProtectControlGroups",
+      "color": "green"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/mpd.socket",
+      "code": "systemd.socket",
+      "detail": "scope=user activates=mpd.service",
+      "color": "green"
+    }
+  ]
+}

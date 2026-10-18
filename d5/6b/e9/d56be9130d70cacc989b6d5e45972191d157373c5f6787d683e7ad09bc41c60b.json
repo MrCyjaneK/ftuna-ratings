@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "d56be9130d70cacc989b6d5e45972191d157373c5f6787d683e7ad09bc41c60b",
   "key": "mirror/openrepos/slava/personal/main/o/openrepos-mybackup-1.0.2-11.1.armv7hl.rpm",
   "name": "openrepos-mybackup",
   "rpm_version": "1.0.2",
   "release": "11.1",
   "arch": "armv7hl",
-  "verdict": 53,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/openrepos-mybackup.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ \"$1\" == 0 ] ; then; for u in $(getent passwd | cut -d: -f1); do; eval rm -fr ~$u/.local/share/openrepos-mybackup ||:"
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" == 0 ] ; then; for u in $(getent passwd | cut -d: -f1); do; eval rm -fr ~$u/.local/share/openrepos-mybackup ||:",
+      "color": "red"
     }
   ]
 }

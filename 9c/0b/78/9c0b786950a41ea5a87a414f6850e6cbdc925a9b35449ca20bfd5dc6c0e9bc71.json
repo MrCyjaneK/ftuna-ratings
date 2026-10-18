@@ -1,61 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "9c0b786950a41ea5a87a414f6850e6cbdc925a9b35449ca20bfd5dc6c0e9bc71",
   "key": "mirror/openrepos/yun_L/personal/main/h/harbour-dimeora-0.2-1.armv7hl.rpm",
   "name": "harbour-dimeora",
   "rpm_version": "0.2",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 100,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
+  "issues": [
     {
       "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
+      "path": "/usr/share/applications/harbour-dimeora.desktop",
+      "code": "sailjail.jailed",
+      "detail": "sandboxed",
+      "color": "green"
     }
-  ],
-  "issues": []
+  ]
 }

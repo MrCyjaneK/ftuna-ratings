@@ -1,128 +1,88 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "5b834d4df413eae261bc6c286f1d86ee15c2681c313d47c89afbd40d8a42be53",
   "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/michal-szczepaniak/yottagram/yottagram-0.7.3-1.i486.rpm",
   "name": "yottagram",
   "rpm_version": "0.7.3",
   "release": "1",
   "arch": "i486",
-  "verdict": 58,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": 85
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 55
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": 45
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": 45
-    }
-  ],
   "issues": [
     {
       "module": "dbus",
       "path": "/usr/share/dbus-1/services/com.verdanditeam.yottagram.service",
       "code": "dbus.service",
-      "detail": "scope=session user=session exec=/usr/bin/invoker -s --type=generic /usr/bin/yottagram"
+      "detail": "scope=session user=session exec=/usr/bin/invoker -s --type=generic /usr/bin/yottagram",
+      "color": "green"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/yottagram.desktop",
       "code": "sailjail.disabled",
-      "detail": "Sandboxing=Disabled"
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/yottagram.desktop",
       "code": "sailjail.permission",
-      "detail": "Internet"
+      "detail": "Internet",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/yottagram.desktop",
       "code": "sailjail.permission",
-      "detail": "Audio"
+      "detail": "Audio",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/yottagram.desktop",
       "code": "sailjail.permission",
-      "detail": "Location"
+      "detail": "Location",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/yottagram.desktop",
       "code": "sailjail.permission",
-      "detail": "Microphone"
+      "detail": "Microphone",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/yottagram.desktop",
       "code": "sailjail.permission",
-      "detail": "UserDirs"
+      "detail": "UserDirs",
+      "color": "gray"
     },
     {
       "module": "sailjail",
       "path": "/usr/share/applications/yottagram.desktop",
       "code": "sailjail.permission",
-      "detail": "RemovableMedia"
+      "detail": "RemovableMedia",
+      "color": "gray"
     },
     {
       "module": "setuid",
       "path": "/usr/bin/yottagram",
       "code": "setgid",
-      "detail": "/usr/bin/yottagram mode 0102755 user root group privileged file"
+      "detail": "/usr/bin/yottagram mode 0102755 user root group privileged file",
+      "color": "red"
     },
     {
       "module": "ftuna",
       "path": "github.com/michal-szczepaniak/yottagram",
       "code": "ftuna.built",
-      "detail": "hooks"
+      "detail": "hooks",
+      "color": "red"
     },
     {
       "module": "ftuna",
       "path": "github.com/michal-szczepaniak/yottagram",
       "code": "ftuna.image",
-      "detail": "20-qt-cxx20.sh"
+      "detail": "20-qt-cxx20.sh",
+      "color": "red"
     }
   ]
 }

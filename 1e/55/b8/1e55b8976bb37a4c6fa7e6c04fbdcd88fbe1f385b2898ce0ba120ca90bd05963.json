@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "1e55b8976bb37a4c6fa7e6c04fbdcd88fbe1f385b2898ce0ba120ca90bd05963",
+  "key": "mirror/openrepos/roundedrectangle/personal/main/m/micro-2.0.15-1.aarch64.rpm",
+  "name": "micro",
+  "rpm_version": "2.0.15",
+  "release": "1",
+  "arch": "aarch64",
+  "issues": []
+}

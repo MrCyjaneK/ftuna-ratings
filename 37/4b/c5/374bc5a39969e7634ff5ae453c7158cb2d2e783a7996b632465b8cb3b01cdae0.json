@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "374bc5a39969e7634ff5ae453c7158cb2d2e783a7996b632465b8cb3b01cdae0",
   "key": "mirror/openrepos/tmi/personal/main/a/arrowboard-hu-1.1.1-1.noarch.rpm",
   "name": "arrowboard-hu",
   "rpm_version": "1.1.1",
   "release": "1",
   "arch": "noarch",
-  "verdict": 30,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": -1
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 1 ]; then; echo \"Thanks for installing Hungarian Keyboard with Arrows!\"; echo \"\""
+      "detail": "user=root program=/bin/sh body=if [ $1 = 1 ]; then; echo \"Thanks for installing Hungarian Keyboard with Arrows!\"; echo \"\"",
+      "color": "red"
     },
     {
       "module": "scriptlet",
       "path": "%postun",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; rm -rf /usr/share/maliit/plugins/com/jolla/layouts/hu-qwertz.conf; rm -rf /usr/share/maliit/plugins/com/jolla/layouts/hu-qwertz.qml"
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; rm -rf /usr/share/maliit/plugins/com/jolla/layouts/hu-qwertz.conf; rm -rf /usr/share/maliit/plugins/com/jolla/layouts/hu-qwertz.qml",
+      "color": "red"
     }
   ]
 }

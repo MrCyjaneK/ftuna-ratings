@@ -1,61 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "5a17ddedd41192508b4e2edbe3ff22a870564a13d69cba64a135528c7475a9a4",
   "key": "mirror/openrepos/zuyev/personal/main/h/harbour-molitvoslov-5.5.16-1.i486.rpm",
   "name": "harbour-molitvoslov",
   "rpm_version": "5.5.16",
   "release": "1",
   "arch": "i486",
-  "verdict": 100,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
+  "issues": [
     {
       "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
+      "path": "/usr/share/applications/harbour-molitvoslov.desktop",
+      "code": "sailjail.jailed",
+      "detail": "sandboxed",
+      "color": "green"
     }
-  ],
-  "issues": []
+  ]
 }

@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "4e7b9e0d1310c23838320f76dce3c65c3e7d8e14931462c470d7fd8337f5ab6e",
+  "key": "mirror/openrepos/birdzhang/personal/main/s/sfos-quickshare-0.1.5-1.aarch64.rpm",
+  "name": "sfos-quickshare",
+  "rpm_version": "0.1.5",
+  "release": "1",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.sailfishos.QuickShare.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/sfos-quickshared systemd=sfos-quickshare.service",
+      "color": "green"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/sfos-quickshare.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/sfos-quickshared sandbox=none",
+      "color": "green"
+    }
+  ]
+}

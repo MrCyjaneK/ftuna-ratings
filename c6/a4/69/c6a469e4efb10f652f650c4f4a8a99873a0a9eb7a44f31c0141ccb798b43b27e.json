@@ -1,74 +1,25 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "c6a469e4efb10f652f650c4f4a8a99873a0a9eb7a44f31c0141ccb798b43b27e",
   "key": "mirror/openrepos/theyosh/personal/main/w/wifikill3r-0.12-3.armv7hl.rpm",
   "name": "WiFiKilL3r",
   "rpm_version": "0.12",
   "release": "3",
   "arch": "armv7hl",
-  "verdict": 53,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 75
-    },
-    {
-      "module": "scriptlet",
-      "score": 30
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/WiFiKilL3r.desktop",
       "code": "sailjail.absent",
-      "detail": "no [X-Sailjail] section"
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
     },
     {
       "module": "scriptlet",
       "path": "%post",
       "code": "scriptlet",
-      "detail": "user=root program=/bin/sh body=if [ -d /home/defaultuser ]; then; export WIFIKILLER_HOME_DIR=\"/home/defaultuser/\""
+      "detail": "user=root program=/bin/sh body=if [ -d /home/defaultuser ]; then; export WIFIKILLER_HOME_DIR=\"/home/defaultuser/\"",
+      "color": "red"
     }
   ]
 }

@@ -1,0 +1,32 @@
+{
+  "version": 7,
+  "sha256": "43c797f51c2d2619210ebb03229233ea37d860a60ef1e13245190c4e92d52bbf",
+  "key": "mirror/openrepos/aviarus/personal/main/h/harbour-oe1radio-0.7.4-1.armv7hl.rpm",
+  "name": "harbour-oe1radio",
+  "rpm_version": "0.7.4",
+  "release": "1",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-oe1radio.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-oe1radio.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-oe1radio.desktop",
+      "code": "sailjail.permission",
+      "detail": "Downloads",
+      "color": "gray"
+    }
+  ]
+}

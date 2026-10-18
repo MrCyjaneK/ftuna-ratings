@@ -1,68 +1,18 @@
 {
-  "version": 6,
+  "version": 7,
   "sha256": "4144f5cd95d54ba49c8da55492671c5f0ec123d03fcf53398a13d96dcc0c687c",
   "key": "mirror/openrepos/slava/personal/main/h/harbour-matkakortti-1.1.9-1.armv7hl.rpm",
   "name": "harbour-matkakortti",
   "rpm_version": "1.1.9",
   "release": "1",
   "arch": "armv7hl",
-  "verdict": 100,
-  "scores": [
-    {
-      "module": "cron",
-      "score": -1
-    },
-    {
-      "module": "dbus",
-      "score": -1
-    },
-    {
-      "module": "filecaps",
-      "score": -1
-    },
-    {
-      "module": "hooks",
-      "score": -1
-    },
-    {
-      "module": "polkit",
-      "score": -1
-    },
-    {
-      "module": "sailjail",
-      "score": 100
-    },
-    {
-      "module": "scriptlet",
-      "score": -1
-    },
-    {
-      "module": "setuid",
-      "score": -1
-    },
-    {
-      "module": "systemd",
-      "score": -1
-    },
-    {
-      "module": "udev",
-      "score": -1
-    },
-    {
-      "module": "worldwrite",
-      "score": -1
-    },
-    {
-      "module": "ftuna",
-      "score": -1
-    }
-  ],
   "issues": [
     {
       "module": "sailjail",
       "path": "/usr/share/applications/harbour-matkakortti.desktop",
       "code": "sailjail.permission",
-      "detail": "NFC"
+      "detail": "NFC",
+      "color": "gray"
     }
   ]
 }
