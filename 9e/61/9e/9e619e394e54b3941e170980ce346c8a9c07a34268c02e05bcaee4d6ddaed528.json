@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "9e619e394e54b3941e170980ce346c8a9c07a34268c02e05bcaee4d6ddaed528",
+  "key": "mirror/openrepos/slava/personal/main/h/harbour-valuelogger2-1.0.23-1.armv7hl.rpm",
+  "name": "harbour-valuelogger2",
+  "rpm_version": "1.0.23",
+  "release": "1",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-valuelogger2.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    }
+  ]
+}
