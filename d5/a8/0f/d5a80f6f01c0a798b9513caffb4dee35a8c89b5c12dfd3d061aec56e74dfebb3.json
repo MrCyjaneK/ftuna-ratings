@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "d5a80f6f01c0a798b9513caffb4dee35a8c89b5c12dfd3d061aec56e74dfebb3",
+  "key": "repo/ftuna-oss/5.1.0.11/aarch64/github.com/mrcyjanek/ftuna-client/ftuna-debuginfo-0.1.0-5.aarch64.rpm",
+  "name": "ftuna-debuginfo",
+  "rpm_version": "0.1.0",
+  "release": "5",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/ftuna-client",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

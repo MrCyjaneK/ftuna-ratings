@@ -1,0 +1,186 @@
+{
+  "version": 7,
+  "sha256": "efd435bd3597b089170c88eaf6676c1cc9cd55b7e8188cf13a90e879d794cf80",
+  "key": "mirror/openrepos/RootGPT/personal/main/h/harbour-rootelegram-3.7-1.i486.rpm",
+  "name": "harbour-rootelegram",
+  "rpm_version": "3.7",
+  "release": "1",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.unifiedpush.Connector.rootelegram.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/env ROOTELEGRAM_PUSH_WAKE=1 /usr/bin/sailjail -p harbour-rootelegram.desktop -- /usr/bin/harbour-rootelegram",
+      "color": "green"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-rootelegram-open-url.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-rootelegram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Phone",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-rootelegram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-rootelegram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Camera",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-rootelegram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Contacts",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-rootelegram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Documents",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-rootelegram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Downloads",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-rootelegram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-rootelegram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Location",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-rootelegram.desktop",
+      "code": "sailjail.permission",
+      "detail": "MediaIndexing",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-rootelegram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Microphone",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-rootelegram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Music",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-rootelegram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Pictures",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-rootelegram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Privileged",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-rootelegram.desktop",
+      "code": "sailjail.permission",
+      "detail": "PublicDir",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-rootelegram.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-rootelegram.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-rootelegram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Videos",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-rootelegram.desktop",
+      "code": "sailjail.permission",
+      "detail": "UnifiedPush",
+      "color": "gray"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%pre",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=pkill -9 harbour-rootelegram \u003e/dev/null 2\u003e\u00261 || true; exit 0",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=pkill -9 harbour-rootelegram \u003e/dev/null 2\u003e\u00261 || true; exit 0",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = 0 ]; then; systemctl --global disable harbour-rootelegram.service \u003e/dev/null 2\u003e\u00261 || true; fi",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%posttrans",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=for d in /home/*/.cache/QtProject/qmlcache; do; [ -d \"$d\" ] \u0026\u0026 rm -f \"$d\"/*.qmlc \"$d\"/*.jsc 2\u003e/dev/null || true; done",
+      "color": "red"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-rootelegram.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/bin/sh -c 'test -e \"${HOME}/.config/com.github.RootGPT_YouTube/rootelegram/autostart-disabled\" \u0026\u0026 exit 0; test -e \"${HOME}/.config/com.github.RootGPT_YouTube/rootelegram/unifiedpush-enabled\" \u0026\u0026 exit 0; exec /usr/bin/invoker --type=generic --single-instance /usr/bin/harbour-rootelegram --daemon' sandbox=none",
+      "color": "green"
+    }
+  ]
+}

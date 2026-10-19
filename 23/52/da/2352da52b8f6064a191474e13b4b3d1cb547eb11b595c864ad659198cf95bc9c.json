@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "2352da52b8f6064a191474e13b4b3d1cb547eb11b595c864ad659198cf95bc9c",
+  "key": "mirror/openrepos/ade/personal/main/l/libmikmod3-3.3.15-0.armv7hl.rpm",
+  "name": "libmikmod3",
+  "rpm_version": "3.3.15",
+  "release": "0",
+  "arch": "armv7hl",
+  "issues": []
+}

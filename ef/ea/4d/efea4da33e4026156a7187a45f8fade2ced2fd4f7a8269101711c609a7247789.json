@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "efea4da33e4026156a7187a45f8fade2ced2fd4f7a8269101711c609a7247789",
+  "key": "repo/ftuna-oss/5.1.0.11/aarch64/github.com/mrcyjanek/ftuna-client/ftuna-0.1.0-5.aarch64.rpm",
+  "name": "ftuna",
+  "rpm_version": "0.1.0",
+  "release": "5",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/ftuna.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/ftuna-client",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

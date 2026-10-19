@@ -1,0 +1,53 @@
+{
+  "version": 7,
+  "sha256": "8b2677630822c1aa9b95689db27aa1d3a76bc0df619ee293cb39ce523c7918c6",
+  "key": "mirror/openrepos/klarre/personal/main/p/password-store-0.3.2-1.armv7hl.rpm",
+  "name": "password-store",
+  "rpm_version": "0.3.2",
+  "release": "1",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/password-store.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/password-store.desktop",
+      "code": "sailjail.permission",
+      "detail": "Documents",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/password-store.desktop",
+      "code": "sailjail.permission",
+      "detail": "Downloads",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/password-store.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/password-store.desktop",
+      "code": "sailjail.permission",
+      "detail": "Camera",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/password-store.desktop",
+      "code": "sailjail.permission",
+      "detail": "Pictures",
+      "color": "gray"
+    }
+  ]
+}

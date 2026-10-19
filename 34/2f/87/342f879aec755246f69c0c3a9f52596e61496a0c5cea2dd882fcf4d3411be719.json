@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "342f879aec755246f69c0c3a9f52596e61496a0c5cea2dd882fcf4d3411be719",
+  "key": "mirror/openrepos/ade/personal/main/l/libfaad2-2.11.4-1.armv7hl.rpm",
+  "name": "libfaad2",
+  "rpm_version": "2.11.4",
+  "release": "1",
+  "arch": "armv7hl",
+  "issues": []
+}

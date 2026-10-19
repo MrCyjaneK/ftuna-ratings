@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "2258f055f74400edb0d29ecef7652d199d330a3bc664ff1d623e817b951cbc2f",
+  "key": "repo/ftuna-oss/5.1.0.11/armv7hl/github.com/mrcyjanek/ftuna-client/ftuna-debuginfo-0.1.0-5.armv7hl.rpm",
+  "name": "ftuna-debuginfo",
+  "rpm_version": "0.1.0",
+  "release": "5",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/ftuna-client",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "855dcbe5320328fc45b407690ca945d4ec6aba73a9f91671d0d55265b022755e",
+  "key": "mirror/openrepos/ade/personal/main/l/libfaad2-2.11.4-1.aarch64.rpm",
+  "name": "libfaad2",
+  "rpm_version": "2.11.4",
+  "release": "1",
+  "arch": "aarch64",
+  "issues": []
+}

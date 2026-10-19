@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "80a6216368fbf2563e7d1e3982d5f5178e116389caa5bcd8c1dae3796bdcfa7d",
+  "key": "mirror/openrepos/ade/personal/main/l/libfmt12-12.2.0-1.armv7hl.rpm",
+  "name": "libfmt12",
+  "rpm_version": "12.2.0",
+  "release": "1",
+  "arch": "armv7hl",
+  "issues": []
+}

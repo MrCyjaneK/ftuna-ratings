@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "ea714f718650785da13f914b29aebb107c42be26f325a4ef5058e6a660ebdcb8",
+  "key": "mirror/openrepos/ade/personal/main/l/libsidplayfp7-3.1.1-0.aarch64.rpm",
+  "name": "libsidplayfp7",
+  "rpm_version": "3.1.1",
+  "release": "0",
+  "arch": "aarch64",
+  "issues": []
+}

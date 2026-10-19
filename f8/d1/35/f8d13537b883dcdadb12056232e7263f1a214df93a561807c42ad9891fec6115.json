@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "f8d13537b883dcdadb12056232e7263f1a214df93a561807c42ad9891fec6115",
+  "key": "mirror/openrepos/ade/personal/main/l/libfmt12-12.2.0-1.aarch64.rpm",
+  "name": "libfmt12",
+  "rpm_version": "12.2.0",
+  "release": "1",
+  "arch": "aarch64",
+  "issues": []
+}

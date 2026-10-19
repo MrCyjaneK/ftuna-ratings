@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "16c48cad33457f6fc07e14033fe684e06dd73d2a928b25f269d123ed091cf80b",
+  "key": "mirror/openrepos/klarre/personal/main/h/harbour-hearts-0.1.0-1.armv7hl.rpm",
+  "name": "harbour-hearts",
+  "rpm_version": "0.1.0",
+  "release": "1",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-hearts.desktop",
+      "code": "sailjail.jailed",
+      "detail": "sandboxed",
+      "color": "green"
+    }
+  ]
+}
