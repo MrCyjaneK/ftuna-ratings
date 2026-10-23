@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "e728e49a75b4d5d1712cca1f35cd5baed3424298b0d2bfed8b2e8a58a7d9234e",
+  "key": "mirror/openrepos/lpr_next/personal/main/p/poppler-glib-devel-26.01.0-1.1.armv7hl.rpm",
+  "name": "poppler-glib-devel",
+  "rpm_version": "26.01.0",
+  "release": "1.1",
+  "arch": "armv7hl",
+  "issues": []
+}

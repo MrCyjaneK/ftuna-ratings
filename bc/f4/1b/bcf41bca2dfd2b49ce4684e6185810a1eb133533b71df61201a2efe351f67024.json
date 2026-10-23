@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "bcf41bca2dfd2b49ce4684e6185810a1eb133533b71df61201a2efe351f67024",
+  "key": "chum/5.1_i486/i486/harbour-sailtuner-0.2.0+master.20261022170207.97d0d50-1.2.1.bso.i486.rpm",
+  "name": "harbour-sailtuner",
+  "rpm_version": "0.2.0+master.20261022170207.97d0d50",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailtuner.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
+    }
+  ]
+}

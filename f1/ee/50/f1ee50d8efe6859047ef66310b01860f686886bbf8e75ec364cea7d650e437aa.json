@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "f1ee50d8efe6859047ef66310b01860f686886bbf8e75ec364cea7d650e437aa",
+  "key": "mirror/openrepos/lpr_next/personal/main/p/poppler-qt5-devel-26.01.0-1.1.armv7hl.rpm",
+  "name": "poppler-qt5-devel",
+  "rpm_version": "26.01.0",
+  "release": "1.1",
+  "arch": "armv7hl",
+  "issues": []
+}

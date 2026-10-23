@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "6da8a42a555d040bfcb0fc3e88a6cd29ec4b90d4d00e9858e5b0d37a303478c6",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/sailfishos/gcc/gcc-go-13.5.0-2.i486.rpm",
+  "name": "gcc-go",
+  "rpm_version": "13.5.0",
+  "release": "2",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/sailfishos/gcc",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

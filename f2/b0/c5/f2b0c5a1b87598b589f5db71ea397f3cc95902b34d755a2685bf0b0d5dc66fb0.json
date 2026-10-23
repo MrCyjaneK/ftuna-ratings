@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "f2b0c5a1b87598b589f5db71ea397f3cc95902b34d755a2685bf0b0d5dc66fb0",
+  "key": "chum/5.2_aarch64/aarch64/harbour-tooterb-debugsource-1.5.0-1.40.1.bso.aarch64.rpm",
+  "name": "harbour-tooterb-debugsource",
+  "rpm_version": "1.5.0",
+  "release": "1.40.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

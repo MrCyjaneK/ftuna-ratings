@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "93c76441253cb07139192dd30e18eaefbdec368e0eeec545ef8d7aa8e63aa8ec",
+  "key": "mirror/openrepos/lpr_next/personal/main/p/poppler-devel-26.01.0-1.1.armv7hl.rpm",
+  "name": "poppler-devel",
+  "rpm_version": "26.01.0",
+  "release": "1.1",
+  "arch": "armv7hl",
+  "issues": []
+}

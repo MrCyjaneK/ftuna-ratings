@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "a4acda8677345790b797f3feab01dc378e0d02325bbd72c02e1ca6bd46309b31",
+  "key": "repo/ftuna-oss/5.1.0.11/armv7hl/github.com/michal-szczepaniak/outpost/outpost-debugsource-1.2-1.armv7hl.rpm",
+  "name": "outpost-debugsource",
+  "rpm_version": "1.2",
+  "release": "1",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/outpost",
+      "code": "ftuna.built",
+      "detail": "hooks",
+      "color": "red"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/outpost",
+      "code": "ftuna.image",
+      "detail": "20-cpr-deps.sh",
+      "color": "red"
+    }
+  ]
+}

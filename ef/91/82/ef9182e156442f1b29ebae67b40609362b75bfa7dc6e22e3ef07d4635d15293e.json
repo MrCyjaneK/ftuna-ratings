@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "ef9182e156442f1b29ebae67b40609362b75bfa7dc6e22e3ef07d4635d15293e",
+  "key": "repo/ftuna-oss/5.1.0.11/aarch64/github.com/michal-szczepaniak/yottagram/yottagram-voicecall-plugin-0.7.3-1.aarch64.rpm",
+  "name": "yottagram-voicecall-plugin",
+  "rpm_version": "0.7.3",
+  "release": "1",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/yottagram",
+      "code": "ftuna.built",
+      "detail": "hooks",
+      "color": "red"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/yottagram",
+      "code": "ftuna.image",
+      "detail": "20-qt-cxx20.sh",
+      "color": "red"
+    }
+  ]
+}

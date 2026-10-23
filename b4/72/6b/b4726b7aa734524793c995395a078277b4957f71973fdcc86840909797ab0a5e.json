@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "b4726b7aa734524793c995395a078277b4957f71973fdcc86840909797ab0a5e",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-foilpics-debugsource-1.1.8-1.14.1.bso.armv7hl.rpm",
+  "name": "harbour-foilpics-debugsource",
+  "rpm_version": "1.1.8",
+  "release": "1.14.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

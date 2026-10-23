@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "bf2adf1fe8ba887c40e9cccc531122d839e6a0224812042a6529dcb78842d01c",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/michal-szczepaniak/yottagram/yottagram-transferengine-plugin-0.7.3-1.i486.rpm",
+  "name": "yottagram-transferengine-plugin",
+  "rpm_version": "0.7.3",
+  "release": "1",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/yottagram",
+      "code": "ftuna.built",
+      "detail": "hooks",
+      "color": "red"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/yottagram",
+      "code": "ftuna.image",
+      "detail": "20-qt-cxx20.sh",
+      "color": "red"
+    }
+  ]
+}

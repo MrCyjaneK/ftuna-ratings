@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "5460d2785d78cf90fcf8ddc83880d1e217fcf6f9173d8678d5aa66f3f674797d",
+  "key": "repo/ftuna-oss/5.1.0.11/aarch64/github.com/michal-szczepaniak/yottagram/yottagram-transferengine-plugin-0.7.3-1.aarch64.rpm",
+  "name": "yottagram-transferengine-plugin",
+  "rpm_version": "0.7.3",
+  "release": "1",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/yottagram",
+      "code": "ftuna.built",
+      "detail": "hooks",
+      "color": "red"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/yottagram",
+      "code": "ftuna.image",
+      "detail": "20-qt-cxx20.sh",
+      "color": "red"
+    }
+  ]
+}

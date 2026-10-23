@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "8ef972eeee04e7a4cc9abd9db99cae2584580d43263929b63c658b906bdb287e",
+  "key": "chum/5.2_i486/i486/harbour-fiatratio-debuginfo-1.2-1.2.1.bso.i486.rpm",
+  "name": "harbour-fiatratio-debuginfo",
+  "rpm_version": "1.2",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": []
+}

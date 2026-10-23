@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "0a6050c9dd442c198a26f43c56c6d1a406b32e568e6da224acefb48e0355bb58",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/sailfishos/sailfish-components-gallery/sailfish-components-gallery-qt5-ts-devel-1.3.0-1.i486.rpm",
+  "name": "sailfish-components-gallery-qt5-ts-devel",
+  "rpm_version": "1.3.0",
+  "release": "1",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/sailfishos/sailfish-components-gallery",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

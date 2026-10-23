@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "c1973b41536a0e9cc8d47bbbd0b1c2772573740ca8831fd8c4cd9df52f64a473",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/mrcyjanek/gpspicturetagd/gpspicturetagd-debuginfo-0.1-2.i486.rpm",
+  "name": "gpspicturetagd-debuginfo",
+  "rpm_version": "0.1",
+  "release": "2",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/gpspicturetagd",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "d105c91f049c3d73347b78031de0c3cefcb37ef6d22e4011f9348ff636dd5bd9",
+  "key": "repo/ftuna-oss/5.1.0.11/aarch64/github.com/michal-szczepaniak/exawake/exawake-debugsource-1.1-1.aarch64.rpm",
+  "name": "exawake-debugsource",
+  "rpm_version": "1.1",
+  "release": "1",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/exawake",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

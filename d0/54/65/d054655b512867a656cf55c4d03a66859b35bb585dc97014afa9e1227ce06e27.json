@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "d054655b512867a656cf55c4d03a66859b35bb585dc97014afa9e1227ce06e27",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/mrcyjanek/sshnotif/sshnotif-debugsource-0.1-3.i486.rpm",
+  "name": "sshnotif-debugsource",
+  "rpm_version": "0.1",
+  "release": "3",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/sshnotif",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

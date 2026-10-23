@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "05be509542883349b84ad0429804169fd40bdc0dcc20ae0a1725107d5ccf9f17",
+  "key": "mirror/openrepos/kuba77/personal/main/h/harbour-guardifish-0.7-1.noarch.rpm",
+  "name": "harbour-guardifish",
+  "rpm_version": "0.7",
+  "release": "1",
+  "arch": "noarch",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-guardifish.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    }
+  ]
+}

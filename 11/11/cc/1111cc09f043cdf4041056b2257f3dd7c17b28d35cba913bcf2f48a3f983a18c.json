@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "1111cc09f043cdf4041056b2257f3dd7c17b28d35cba913bcf2f48a3f983a18c",
+  "key": "chum/5.1_i486/i486/harbour-foilpics-debugsource-1.1.8-1.14.1.bso.i486.rpm",
+  "name": "harbour-foilpics-debugsource",
+  "rpm_version": "1.1.8",
+  "release": "1.14.1.bso",
+  "arch": "i486",
+  "issues": []
+}

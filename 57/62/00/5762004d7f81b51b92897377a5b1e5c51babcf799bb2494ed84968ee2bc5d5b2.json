@@ -1,0 +1,88 @@
+{
+  "version": 7,
+  "sha256": "5762004d7f81b51b92897377a5b1e5c51babcf799bb2494ed84968ee2bc5d5b2",
+  "key": "repo/ftuna-oss/5.1.0.11/armv7hl/github.com/michal-szczepaniak/yottagram/yottagram-0.7.3-1.armv7hl.rpm",
+  "name": "yottagram",
+  "rpm_version": "0.7.3",
+  "release": "1",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/com.verdanditeam.yottagram.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/invoker -s --type=generic /usr/bin/yottagram",
+      "color": "green"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/yottagram.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/yottagram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/yottagram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/yottagram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Location",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/yottagram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Microphone",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/yottagram.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/yottagram.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia",
+      "color": "gray"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/yottagram",
+      "code": "setgid",
+      "detail": "/usr/bin/yottagram mode 0102755 user root group privileged file",
+      "color": "red"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/yottagram",
+      "code": "ftuna.built",
+      "detail": "hooks",
+      "color": "red"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/yottagram",
+      "code": "ftuna.image",
+      "detail": "20-qt-cxx20.sh",
+      "color": "red"
+    }
+  ]
+}

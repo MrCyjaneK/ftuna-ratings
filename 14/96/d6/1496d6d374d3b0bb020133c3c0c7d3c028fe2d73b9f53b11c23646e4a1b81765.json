@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "1496d6d374d3b0bb020133c3c0c7d3c028fe2d73b9f53b11c23646e4a1b81765",
+  "key": "chum/5.1_aarch64/aarch64/harbour-foilpics-1.1.8-1.14.1.bso.aarch64.rpm",
+  "name": "harbour-foilpics",
+  "rpm_version": "1.1.8",
+  "release": "1.14.1.bso",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-foilpics.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    }
+  ]
+}

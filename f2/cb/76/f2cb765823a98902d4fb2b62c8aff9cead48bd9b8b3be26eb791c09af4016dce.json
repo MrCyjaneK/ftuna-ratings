@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "f2cb765823a98902d4fb2b62c8aff9cead48bd9b8b3be26eb791c09af4016dce",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/piggz/harbour-advanced-camera/harbour-advanced-camera-debugsource-0.9.5-1.i486.rpm",
+  "name": "harbour-advanced-camera-debugsource",
+  "rpm_version": "0.9.5",
+  "release": "1",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/piggz/harbour-advanced-camera",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

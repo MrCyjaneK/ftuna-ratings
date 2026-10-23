@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "c262591e3282c1f7cbe0306a8dab6e9fc0848878cdf4fcf6207bda81122634b5",
+  "key": "mirror/openrepos/lpr/personal/main/i/imagemagick-7.1.2.34-7.1.aarch64.rpm",
+  "name": "ImageMagick",
+  "rpm_version": "7.1.2.34",
+  "release": "7.1",
+  "arch": "aarch64",
+  "issues": []
+}

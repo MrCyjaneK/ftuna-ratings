@@ -1,0 +1,32 @@
+{
+  "version": 7,
+  "sha256": "23a79c76fc9a4e6382135601ec844de65500e0e2fb3f7d8900e181a4c229ddc3",
+  "key": "mirror/openrepos/guillermoto/personal/main/h/harbour-driver-0.8.3-1.armv7hl.rpm",
+  "name": "harbour-driver",
+  "rpm_version": "0.8.3",
+  "release": "1",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-driver.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-driver.desktop",
+      "code": "sailjail.permission",
+      "detail": "Location",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-driver.desktop",
+      "code": "sailjail.permission",
+      "detail": "Notifications",
+      "color": "gray"
+    }
+  ]
+}

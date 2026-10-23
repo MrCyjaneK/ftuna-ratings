@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "a01861964a546c4543d1361b2a1d6a807a4707f27743150bb204b2f22b95c2d9",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/roundedrectangle/harbour-sshazam/harbour-sshazam-debuginfo-1.1.4-1.i486.rpm",
+  "name": "harbour-sshazam-debuginfo",
+  "rpm_version": "1.1.4",
+  "release": "1",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/roundedrectangle/harbour-sshazam",
+      "code": "ftuna.built",
+      "detail": "hooks",
+      "color": "red"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/roundedrectangle/harbour-sshazam",
+      "code": "ftuna.image",
+      "detail": "20-rust.sh\n21-python-deps.sh",
+      "color": "red"
+    }
+  ]
+}

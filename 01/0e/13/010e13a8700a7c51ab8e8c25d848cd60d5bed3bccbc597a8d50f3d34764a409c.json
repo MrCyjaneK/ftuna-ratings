@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "010e13a8700a7c51ab8e8c25d848cd60d5bed3bccbc597a8d50f3d34764a409c",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/michal-szczepaniak/yottagram/yottagram-debugsource-0.7.3-1.i486.rpm",
+  "name": "yottagram-debugsource",
+  "rpm_version": "0.7.3",
+  "release": "1",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/yottagram",
+      "code": "ftuna.built",
+      "detail": "hooks",
+      "color": "red"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/yottagram",
+      "code": "ftuna.image",
+      "detail": "20-qt-cxx20.sh",
+      "color": "red"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "7648a5f4f597aed311cbd83454049d706bfdd2b2bc6650d0cd386f98bc19bc67",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/abseil/abseil-cpp/abseil-cpp-20210324.2-0.i486.rpm",
+  "name": "abseil-cpp",
+  "rpm_version": "20210324.2",
+  "release": "0",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/abseil/abseil-cpp",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

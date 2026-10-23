@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "32f7fa73601b8070c4e252dd48a441f02316ccecfa9d014cfe79c68d61ec1b1c",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-sailtuner-debugsource-0.2.0+master.20261022170207.97d0d50-1.2.1.bso.armv7hl.rpm",
+  "name": "harbour-sailtuner-debugsource",
+  "rpm_version": "0.2.0+master.20261022170207.97d0d50",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

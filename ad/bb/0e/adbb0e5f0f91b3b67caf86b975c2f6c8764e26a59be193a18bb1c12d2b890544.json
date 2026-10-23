@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "adbb0e5f0f91b3b67caf86b975c2f6c8764e26a59be193a18bb1c12d2b890544",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/michal-szczepaniak/exawake/exawake-debuginfo-1.1-1.i486.rpm",
+  "name": "exawake-debuginfo",
+  "rpm_version": "1.1",
+  "release": "1",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/exawake",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

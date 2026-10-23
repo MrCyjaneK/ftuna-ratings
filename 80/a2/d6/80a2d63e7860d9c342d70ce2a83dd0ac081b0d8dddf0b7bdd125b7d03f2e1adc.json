@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "80a2d63e7860d9c342d70ce2a83dd0ac081b0d8dddf0b7bdd125b7d03f2e1adc",
+  "key": "repo/ftuna-oss/5.1.0.11/armv7hl/github.com/michal-szczepaniak/exawake/exawake-1.1-1.armv7hl.rpm",
+  "name": "exawake",
+  "rpm_version": "1.1",
+  "release": "1",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/exawake.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/exawake",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

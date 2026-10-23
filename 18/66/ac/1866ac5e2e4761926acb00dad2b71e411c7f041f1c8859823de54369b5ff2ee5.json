@@ -1,0 +1,130 @@
+{
+  "version": 7,
+  "sha256": "1866ac5e2e4761926acb00dad2b71e411c7f041f1c8859823de54369b5ff2ee5",
+  "key": "mirror/openrepos/guillermoto/personal/main/h/harbour-gtgram-0.18gtgram.20261019184756.5c3c513-60.armv7hl.rpm",
+  "name": "harbour-gtgram",
+  "rpm_version": "0.18+gtgram.20261019184756.5c3c513",
+  "release": "60",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-gtgram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-gtgram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Camera",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-gtgram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Contacts",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-gtgram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Documents",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-gtgram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Downloads",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-gtgram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-gtgram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Location",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-gtgram.desktop",
+      "code": "sailjail.permission",
+      "detail": "MediaIndexing",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-gtgram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Microphone",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-gtgram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Music",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-gtgram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Phone",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-gtgram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Pictures",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-gtgram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Privileged",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-gtgram.desktop",
+      "code": "sailjail.permission",
+      "detail": "PublicDir",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-gtgram.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-gtgram.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-gtgram.desktop",
+      "code": "sailjail.permission",
+      "detail": "Videos",
+      "color": "gray"
+    }
+  ]
+}

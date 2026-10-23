@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "a65739bc54e2500a5deb5cb41da20074880e38ca9bc468b3eec62504f3e449c0",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-valuelogger2-debuginfo-1.0.23-1.12.1.bso.armv7hl.rpm",
+  "name": "harbour-valuelogger2-debuginfo",
+  "rpm_version": "1.0.23",
+  "release": "1.12.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "835a8c87b9c90af14c54fe98fc6f719efaa3be9ae9b1431e23d4a31ae0b613d9",
+  "key": "chum/5.2_i486/i486/harbour-sailtuner-debugsource-0.2.0+master.20261022170207.97d0d50-1.2.1.bso.i486.rpm",
+  "name": "harbour-sailtuner-debugsource",
+  "rpm_version": "0.2.0+master.20261022170207.97d0d50",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": []
+}

@@ -1,0 +1,32 @@
+{
+  "version": 7,
+  "sha256": "558d01db47623aae819f670fa8eb0432ac56aae61c9e39caaaf911b8e616635e",
+  "key": "repo/ftuna-oss/5.1.0.11/aarch64/github.com/michal-szczepaniak/nanofiles/nanofiles-1.4.4-1.aarch64.rpm",
+  "name": "nanofiles",
+  "rpm_version": "1.4.4",
+  "release": "1",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/nanofiles.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/nanofiles",
+      "code": "setuid",
+      "detail": "/usr/bin/nanofiles mode 0104755 user root group root file",
+      "color": "red"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/nanofiles",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

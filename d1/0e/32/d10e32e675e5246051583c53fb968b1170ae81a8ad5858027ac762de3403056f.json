@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "d10e32e675e5246051583c53fb968b1170ae81a8ad5858027ac762de3403056f",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-valuelogger2-1.0.23-1.12.1.bso.armv7hl.rpm",
+  "name": "harbour-valuelogger2",
+  "rpm_version": "1.0.23",
+  "release": "1.12.1.bso",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-valuelogger2.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    }
+  ]
+}

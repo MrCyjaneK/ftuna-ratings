@@ -1,0 +1,53 @@
+{
+  "version": 7,
+  "sha256": "e45fb74520aa513056dbd71ea082818cc51152cc556e4488c41b94c9a35fae69",
+  "key": "repo/ftuna-oss/5.1.0.11/aarch64/github.com/piggz/harbour-advanced-camera/harbour-advanced-camera-0.9.5-1.aarch64.rpm",
+  "name": "harbour-advanced-camera",
+  "rpm_version": "0.9.5",
+  "release": "1",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-advanced-camera.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-advanced-camera.desktop",
+      "code": "sailjail.permission",
+      "detail": "Location",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-advanced-camera.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-advanced-camera.desktop",
+      "code": "sailjail.permission",
+      "detail": "Pictures",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-advanced-camera.desktop",
+      "code": "sailjail.permission",
+      "detail": "Videos",
+      "color": "gray"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/piggz/harbour-advanced-camera",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

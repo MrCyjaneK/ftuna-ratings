@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "4b144c72a7b7ffb0815c68c837ecc6e2ae69574c79e3f6ab8b1d7d3dad961efa",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/davea42/libdwarf-code/libdwarf-tools-0.7.0-0.i486.rpm",
+  "name": "libdwarf-tools",
+  "rpm_version": "0.7.0",
+  "release": "0",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/davea42/libdwarf-code",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

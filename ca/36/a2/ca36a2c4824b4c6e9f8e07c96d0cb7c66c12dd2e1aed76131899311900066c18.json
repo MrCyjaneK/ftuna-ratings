@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "ca36a2c4824b4c6e9f8e07c96d0cb7c66c12dd2e1aed76131899311900066c18",
+  "key": "repo/ftuna-oss/5.1.0.11/armv7hl/github.com/yast-client/harbour-yast-client/harbour-yast-client-debuginfo-0.3.3-custom.armv7hl.rpm",
+  "name": "harbour-yast-client-debuginfo",
+  "rpm_version": "0.3.3",
+  "release": "custom",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/yast-client/harbour-yast-client",
+      "code": "ftuna.built",
+      "detail": "hooks",
+      "color": "red"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/yast-client/harbour-yast-client",
+      "code": "ftuna.image",
+      "detail": "20-tdlib.sh\n21-tg_owt.sh\n22-rnnoise-model.sh\n23-rust.sh\n24-tlottie-cargo.sh",
+      "color": "red"
+    }
+  ]
+}

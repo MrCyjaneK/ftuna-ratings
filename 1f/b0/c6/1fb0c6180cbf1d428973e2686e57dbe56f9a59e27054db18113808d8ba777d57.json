@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "1fb0c6180cbf1d428973e2686e57dbe56f9a59e27054db18113808d8ba777d57",
+  "key": "mirror/openrepos/lpr/personal/main/i/imagemagick-c-7.1.2.34-7.1.aarch64.rpm",
+  "name": "ImageMagick-c++",
+  "rpm_version": "7.1.2.34",
+  "release": "7.1",
+  "arch": "aarch64",
+  "issues": []
+}

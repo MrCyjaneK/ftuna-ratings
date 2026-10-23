@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "4d9474508bf5ef69cc30dac78a85f88a4b3877ce45b5688abc293faf5e02ed4c",
+  "key": "chum/5.2_aarch64/aarch64/harbour-valuelogger2-debuginfo-1.0.23-1.12.1.bso.aarch64.rpm",
+  "name": "harbour-valuelogger2-debuginfo",
+  "rpm_version": "1.0.23",
+  "release": "1.12.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

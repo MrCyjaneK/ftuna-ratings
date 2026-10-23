@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "33474c58d21f63ff85b013a22fff3b6d5ca788b6d716c975659b928a854ea80d",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/michal-szczepaniak/septitrac/Septitrac-1.2.2-1.i486.rpm",
+  "name": "Septitrac",
+  "rpm_version": "1.2.2",
+  "release": "1",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/Septitrac.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/septitrac",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

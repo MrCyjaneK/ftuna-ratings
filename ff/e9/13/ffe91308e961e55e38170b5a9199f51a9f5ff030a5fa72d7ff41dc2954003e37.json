@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "ffe91308e961e55e38170b5a9199f51a9f5ff030a5fa72d7ff41dc2954003e37",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-sailtuner-0.2.0+master.20261022170207.97d0d50-1.2.1.bso.armv7hl.rpm",
+  "name": "harbour-sailtuner",
+  "rpm_version": "0.2.0+master.20261022170207.97d0d50",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailtuner.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
+    }
+  ]
+}

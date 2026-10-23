@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "006f5380b84775b7795de9f95a5cb2f5f11456f2a2921c61504f481b320fb31f",
+  "key": "chum/5.1_i486/i486/harbour-valuelogger2-debugsource-1.0.23-1.12.1.bso.i486.rpm",
+  "name": "harbour-valuelogger2-debugsource",
+  "rpm_version": "1.0.23",
+  "release": "1.12.1.bso",
+  "arch": "i486",
+  "issues": []
+}

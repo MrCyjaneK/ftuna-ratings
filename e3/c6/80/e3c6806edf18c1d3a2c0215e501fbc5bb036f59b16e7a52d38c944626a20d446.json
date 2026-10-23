@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "e3c6806edf18c1d3a2c0215e501fbc5bb036f59b16e7a52d38c944626a20d446",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-fiatratio-debugsource-1.2-1.2.1.bso.armv7hl.rpm",
+  "name": "harbour-fiatratio-debugsource",
+  "rpm_version": "1.2",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

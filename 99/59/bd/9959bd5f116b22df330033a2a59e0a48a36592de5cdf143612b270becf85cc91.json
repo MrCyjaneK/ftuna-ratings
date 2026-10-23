@@ -1,0 +1,67 @@
+{
+  "version": 7,
+  "sha256": "9959bd5f116b22df330033a2a59e0a48a36592de5cdf143612b270becf85cc91",
+  "key": "chum/5.1_aarch64/noarch/harbour-happycamper-0.1.9-1.6.1.bso.noarch.rpm",
+  "name": "harbour-happycamper",
+  "rpm_version": "0.1.9",
+  "release": "1.6.1.bso",
+  "arch": "noarch",
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/de.poetaster.happycamper.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/sailfish-qml harbour-happycamper",
+      "color": "green"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-happycamper-open-url.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-happycamper.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-happycamper.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-happycamper.desktop",
+      "code": "sailjail.permission",
+      "detail": "MediaIndexing",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-happycamper.desktop",
+      "code": "sailjail.permission",
+      "detail": "Music",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-happycamper.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-happycamper.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs",
+      "color": "gray"
+    }
+  ]
+}

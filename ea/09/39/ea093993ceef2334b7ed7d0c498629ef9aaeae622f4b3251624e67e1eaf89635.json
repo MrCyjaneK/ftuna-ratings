@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "ea093993ceef2334b7ed7d0c498629ef9aaeae622f4b3251624e67e1eaf89635",
+  "key": "repo/ftuna-oss/5.1.0.11/aarch64/github.com/davea42/libdwarf-code/libdwarf-debugsource-0.7.0-0.aarch64.rpm",
+  "name": "libdwarf-debugsource",
+  "rpm_version": "0.7.0",
+  "release": "0",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/davea42/libdwarf-code",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

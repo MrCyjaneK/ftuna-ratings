@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "1e1d160acd78dc11b0fbb43b06b46e3745b7b03119c827afd037bda779548ec3",
+  "key": "repo/ftuna-oss/5.1.0.11/aarch64/github.com/michal-szczepaniak/nanofiles/nanofiles-debugsource-1.4.4-1.aarch64.rpm",
+  "name": "nanofiles-debugsource",
+  "rpm_version": "1.4.4",
+  "release": "1",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/nanofiles",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

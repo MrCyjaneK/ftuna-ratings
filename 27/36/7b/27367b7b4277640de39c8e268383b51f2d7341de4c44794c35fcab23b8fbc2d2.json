@@ -1,0 +1,46 @@
+{
+  "version": 7,
+  "sha256": "27367b7b4277640de39c8e268383b51f2d7341de4c44794c35fcab23b8fbc2d2",
+  "key": "repo/ftuna-oss/5.1.0.11/armv7hl/github.com/roundedrectangle/harbour-sshazam/harbour-sshazam-1.1.4-1.armv7hl.rpm",
+  "name": "harbour-sshazam",
+  "rpm_version": "1.1.4",
+  "release": "1",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sshazam.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sshazam.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sshazam.desktop",
+      "code": "sailjail.permission",
+      "detail": "Compatibility",
+      "color": "gray"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/roundedrectangle/harbour-sshazam",
+      "code": "ftuna.built",
+      "detail": "hooks",
+      "color": "red"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/roundedrectangle/harbour-sshazam",
+      "code": "ftuna.image",
+      "detail": "20-rust.sh\n21-python-deps.sh",
+      "color": "red"
+    }
+  ]
+}

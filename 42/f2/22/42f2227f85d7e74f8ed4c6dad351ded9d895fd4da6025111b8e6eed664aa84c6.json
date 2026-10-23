@@ -1,0 +1,32 @@
+{
+  "version": 7,
+  "sha256": "42f2227f85d7e74f8ed4c6dad351ded9d895fd4da6025111b8e6eed664aa84c6",
+  "key": "chum/5.2_armv7hl/noarch/harbour-scaler-0.2-1.2.1.bso.noarch.rpm",
+  "name": "harbour-scaler",
+  "rpm_version": "0.2",
+  "release": "1.2.1.bso",
+  "arch": "noarch",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-scaler.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-scaler.desktop",
+      "code": "sailjail.permission",
+      "detail": "WebView",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-scaler.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio",
+      "color": "gray"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "version": 7,
+  "sha256": "347f769d04eeafc65527baa7f1cd7fa53cf548f36e79aa8e60849baa5da32dc9",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-tooterb-1.5.0-1.40.1.bso.armv7hl.rpm",
+  "name": "harbour-tooterb",
+  "rpm_version": "1.5.0",
+  "release": "1.40.1.bso",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-tooterb.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-tooterb.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-tooterb.desktop",
+      "code": "sailjail.permission",
+      "detail": "MediaIndexing",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-tooterb.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-tooterb.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs",
+      "color": "gray"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "36824c9143be3bc86fcb91676f823942d485a37ce71c3ab269189cada0bdb8d7",
+  "key": "repo/ftuna-oss/5.1.0.11/aarch64/github.com/michal-szczepaniak/yottagram/yottagram-debugsource-0.7.3-1.aarch64.rpm",
+  "name": "yottagram-debugsource",
+  "rpm_version": "0.7.3",
+  "release": "1",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/yottagram",
+      "code": "ftuna.built",
+      "detail": "hooks",
+      "color": "red"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/yottagram",
+      "code": "ftuna.image",
+      "detail": "20-qt-cxx20.sh",
+      "color": "red"
+    }
+  ]
+}

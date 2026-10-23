@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "b3b370a517e90f8dc1ceb98aba8e61eb41171ea71586c9ad25ca486f27d53c0d",
+  "key": "repo/ftuna-oss/5.1.0.11/armv7hl/github.com/mrcyjanek/sfos_mullvad/harbour-mullvad-debuginfo-0.1-1.armv7hl.rpm",
+  "name": "harbour-mullvad-debuginfo",
+  "rpm_version": "0.1",
+  "release": "1",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/sfos_mullvad",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

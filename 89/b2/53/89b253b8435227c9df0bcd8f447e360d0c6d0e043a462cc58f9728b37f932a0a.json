@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "89b253b8435227c9df0bcd8f447e360d0c6d0e043a462cc58f9728b37f932a0a",
+  "key": "repo/ftuna-oss/5.1.0.11/armv7hl/github.com/michal-szczepaniak/yottagram/yottagram-voicecall-plugin-0.7.3-1.armv7hl.rpm",
+  "name": "yottagram-voicecall-plugin",
+  "rpm_version": "0.7.3",
+  "release": "1",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/yottagram",
+      "code": "ftuna.built",
+      "detail": "hooks",
+      "color": "red"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/yottagram",
+      "code": "ftuna.image",
+      "detail": "20-qt-cxx20.sh",
+      "color": "red"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "a67aa2ca189a29f00512210e27c0da9b23efde91109c1ce45ba69c8f4c8ab9b5",
+  "key": "repo/ftuna-oss/5.1.0.11/armv7hl/github.com/mrcyjanek/sfos_orangeflex/harbour-orangeflex-0.1-1.armv7hl.rpm",
+  "name": "harbour-orangeflex",
+  "rpm_version": "0.1",
+  "release": "1",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-orangeflex.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/sfos_orangeflex",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

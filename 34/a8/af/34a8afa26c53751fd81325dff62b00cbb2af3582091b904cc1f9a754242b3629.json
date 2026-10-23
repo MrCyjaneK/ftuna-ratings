@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "34a8afa26c53751fd81325dff62b00cbb2af3582091b904cc1f9a754242b3629",
+  "key": "repo/ftuna-oss/5.1.0.11/aarch64/github.com/michal-szczepaniak/outpost/outpost-debugsource-1.2-1.aarch64.rpm",
+  "name": "outpost-debugsource",
+  "rpm_version": "1.2",
+  "release": "1",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/outpost",
+      "code": "ftuna.built",
+      "detail": "hooks",
+      "color": "red"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/outpost",
+      "code": "ftuna.image",
+      "detail": "20-cpr-deps.sh",
+      "color": "red"
+    }
+  ]
+}
