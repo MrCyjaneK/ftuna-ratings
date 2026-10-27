@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "adcd36e9ea3e89076d404a4c83953fd5a1cb0a1972ee4c7c539857d474d13e93",
+  "key": "mirror/openrepos/slava/personal/main/h/harbour-foilpics-1.1.8-1.armv7hl.rpm",
+  "name": "harbour-foilpics",
+  "rpm_version": "1.1.8",
+  "release": "1",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-foilpics.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    }
+  ]
+}

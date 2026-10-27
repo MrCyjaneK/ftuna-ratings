@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "5816b40ea6c14e32af11a5c70cf60fd997a52a0207373ae0d3a5d681ce339d26",
+  "key": "mirror/openrepos/roundedrectangle/personal/main/h/harbour-dconf-explorer-1.0-1.noarch.rpm",
+  "name": "harbour-dconf-explorer",
+  "rpm_version": "1.0",
+  "release": "1",
+  "arch": "noarch",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-dconf-explorer.desktop",
+      "code": "sailjail.jailed",
+      "detail": "sandboxed",
+      "color": "green"
+    }
+  ]
+}

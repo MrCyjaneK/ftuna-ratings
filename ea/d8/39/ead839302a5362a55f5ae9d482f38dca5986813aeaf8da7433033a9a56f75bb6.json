@@ -1,0 +1,256 @@
+{
+  "version": 7,
+  "sha256": "ead839302a5362a55f5ae9d482f38dca5986813aeaf8da7433033a9a56f75bb6",
+  "key": "mirror/openrepos/birdzhang/personal/main/h/harbour-mconnect-1.5.0-7.aarch64.rpm",
+  "name": "harbour-mconnect",
+  "rpm_version": "1.5.0",
+  "release": "7",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-mconnect.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/bin/harbour-mconnect",
+      "code": "worldwrite",
+      "detail": "/usr/bin/harbour-mconnect mode 0100777 user root group root exec",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/applications/harbour-mconnect.desktop",
+      "code": "worldwrite",
+      "detail": "/usr/share/applications/harbour-mconnect.desktop mode 0100777 user root group root exec",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect mode 040777 user root group root dir",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/data",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/data mode 040777 user root group root dir",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/data/flutter_assets",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/data/flutter_assets mode 040777 user root group root dir",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/data/flutter_assets/AssetManifest.bin",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/data/flutter_assets/AssetManifest.bin mode 0100777 user root group root exec",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/data/flutter_assets/FontManifest.json",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/data/flutter_assets/FontManifest.json mode 0100777 user root group root exec",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/data/flutter_assets/NOTICES.Z",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/data/flutter_assets/NOTICES.Z mode 0100777 user root group root exec",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/data/flutter_assets/fonts",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/data/flutter_assets/fonts mode 040777 user root group root dir",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/data/flutter_assets/fonts/MaterialIcons-Regular.otf",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/data/flutter_assets/fonts/MaterialIcons-Regular.otf mode 0100777 user root group root exec",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/data/flutter_assets/packages",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/data/flutter_assets/packages mode 040777 user root group root dir",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/data/flutter_assets/packages/cupertino_icons",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/data/flutter_assets/packages/cupertino_icons mode 040777 user root group root dir",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/data/flutter_assets/packages/cupertino_icons/assets",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/data/flutter_assets/packages/cupertino_icons/assets mode 040777 user root group root dir",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf mode 0100777 user root group root exec",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/data/flutter_assets/packages/liquid_glass_widgets",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/data/flutter_assets/packages/liquid_glass_widgets mode 040777 user root group root dir",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/data/flutter_assets/packages/liquid_glass_widgets/shaders",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/data/flutter_assets/packages/liquid_glass_widgets/shaders mode 040777 user root group root dir",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/data/flutter_assets/packages/liquid_glass_widgets/shaders/interactive_indicator.frag",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/data/flutter_assets/packages/liquid_glass_widgets/shaders/interactive_indicator.frag mode 0100777 user root group root exec",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/data/flutter_assets/packages/liquid_glass_widgets/shaders/lightweight_glass.frag",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/data/flutter_assets/packages/liquid_glass_widgets/shaders/lightweight_glass.frag mode 0100777 user root group root exec",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/data/flutter_assets/packages/liquid_glass_widgets/shaders/liquid_glass_geometry_blended.frag",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/data/flutter_assets/packages/liquid_glass_widgets/shaders/liquid_glass_geometry_blended.frag mode 0100777 user root group root exec",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/data/flutter_assets/packages/liquid_glass_widgets/shaders/liquid_glass_render.frag",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/data/flutter_assets/packages/liquid_glass_widgets/shaders/liquid_glass_render.frag mode 0100777 user root group root exec",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/data/flutter_assets/packages/liquid_glass_widgets/shaders/progressive_blur.frag",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/data/flutter_assets/packages/liquid_glass_widgets/shaders/progressive_blur.frag mode 0100777 user root group root exec",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/data/flutter_assets/packages/media_kit",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/data/flutter_assets/packages/media_kit mode 040777 user root group root dir",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/data/flutter_assets/packages/media_kit/assets",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/data/flutter_assets/packages/media_kit/assets mode 040777 user root group root dir",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/data/flutter_assets/packages/media_kit/assets/web",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/data/flutter_assets/packages/media_kit/assets/web mode 040777 user root group root dir",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/data/flutter_assets/packages/media_kit/assets/web/hls1.4.10.js",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/data/flutter_assets/packages/media_kit/assets/web/hls1.4.10.js mode 0100777 user root group root exec",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/data/flutter_assets/shaders",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/data/flutter_assets/shaders mode 040777 user root group root dir",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/data/flutter_assets/shaders/ink_sparkle.frag",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/data/flutter_assets/shaders/ink_sparkle.frag mode 0100777 user root group root exec",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/data/flutter_assets/shaders/stretch_effect.frag",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/data/flutter_assets/shaders/stretch_effect.frag mode 0100777 user root group root exec",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/data/icudtl.dat",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/data/icudtl.dat mode 0100777 user root group root exec",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/harbour-mconnect",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/harbour-mconnect mode 0100777 user root group root exec",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/lib",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/lib mode 040777 user root group root dir",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/lib/libapp.so",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/lib/libapp.so mode 0100777 user root group root exec",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/harbour-mconnect/lib/libmconnect_audio.so",
+      "code": "worldwrite",
+      "detail": "/usr/share/harbour-mconnect/lib/libmconnect_audio.so mode 0100777 user root group root exec",
+      "color": "red"
+    },
+    {
+      "module": "worldwrite",
+      "path": "/usr/share/icons/hicolor/128x128/apps/harbour-mconnect.png",
+      "code": "worldwrite",
+      "detail": "/usr/share/icons/hicolor/128x128/apps/harbour-mconnect.png mode 0100777 user root group root exec",
+      "color": "red"
+    }
+  ]
+}

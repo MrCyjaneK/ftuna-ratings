@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "e9f0132cf1647c66a93e366677713f60735538481f6d004b797e33d5ea0fc921",
+  "key": "chum/5.1_i486/i486/harbour-ortolano-debuginfo-0.1.2-1.3.1.bso.i486.rpm",
+  "name": "harbour-ortolano-debuginfo",
+  "rpm_version": "0.1.2",
+  "release": "1.3.1.bso",
+  "arch": "i486",
+  "issues": []
+}

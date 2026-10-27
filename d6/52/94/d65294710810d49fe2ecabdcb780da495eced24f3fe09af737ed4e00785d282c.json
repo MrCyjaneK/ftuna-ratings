@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "d65294710810d49fe2ecabdcb780da495eced24f3fe09af737ed4e00785d282c",
+  "key": "repo/ftuna-oss/5.1.0.11/armv7hl/github.com/golang/go/go1_18/golang-18-1.18.10-0.armv7hl.rpm",
+  "name": "golang-18",
+  "rpm_version": "1.18.10",
+  "release": "0",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/golang/go/go1_18",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

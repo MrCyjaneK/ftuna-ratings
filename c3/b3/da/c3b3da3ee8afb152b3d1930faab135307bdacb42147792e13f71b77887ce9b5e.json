@@ -1,0 +1,32 @@
+{
+  "version": 7,
+  "sha256": "c3b3da3ee8afb152b3d1930faab135307bdacb42147792e13f71b77887ce9b5e",
+  "key": "mirror/openrepos/projectmoon/personal/main/f/foghorn-test-connector-0.7.1-1.armv7hl.rpm",
+  "name": "foghorn-test-connector",
+  "rpm_version": "0.7.1",
+  "release": "1",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.foghorn.TestConnector.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/env LEGHORN_PUSH_WAKE=1 /usr/bin/sailjail -p foghorn-test-connector.desktop -- /usr/bin/foghorn-test-connector",
+      "color": "green"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/foghorn-test-connector.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/foghorn-test-connector.desktop",
+      "code": "sailjail.permission",
+      "detail": "UnifiedPush",
+      "color": "gray"
+    }
+  ]
+}

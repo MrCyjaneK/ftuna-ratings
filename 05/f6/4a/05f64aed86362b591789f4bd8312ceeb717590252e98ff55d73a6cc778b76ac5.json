@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "05f64aed86362b591789f4bd8312ceeb717590252e98ff55d73a6cc778b76ac5",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/golang/go/go1_19/golang-19-1.19.13-0.i486.rpm",
+  "name": "golang-19",
+  "rpm_version": "1.19.13",
+  "release": "0",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/golang/go/go1_19",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

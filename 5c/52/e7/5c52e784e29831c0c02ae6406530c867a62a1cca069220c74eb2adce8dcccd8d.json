@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "5c52e784e29831c0c02ae6406530c867a62a1cca069220c74eb2adce8dcccd8d",
+  "key": "mirror/openrepos/ade/personal/main/h/harbour-smpc-1.3.43-1.armv7hl.rpm",
+  "name": "harbour-smpc",
+  "rpm_version": "1.3.43",
+  "release": "1",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-smpc.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    }
+  ]
+}

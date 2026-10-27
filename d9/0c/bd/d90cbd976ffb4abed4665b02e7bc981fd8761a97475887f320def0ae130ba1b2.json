@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "d90cbd976ffb4abed4665b02e7bc981fd8761a97475887f320def0ae130ba1b2",
+  "key": "chum/5.1_i486/i486/castanets-debugsource-0.3-1.2.1.bso.i486.rpm",
+  "name": "castanets-debugsource",
+  "rpm_version": "0.3",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": []
+}

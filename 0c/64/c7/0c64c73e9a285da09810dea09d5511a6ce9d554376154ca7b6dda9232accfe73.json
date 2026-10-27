@@ -1,0 +1,32 @@
+{
+  "version": 7,
+  "sha256": "0c64c73e9a285da09810dea09d5511a6ce9d554376154ca7b6dda9232accfe73",
+  "key": "chum/5.1_i486/i486/castanets-0.3-1.2.1.bso.i486.rpm",
+  "name": "castanets",
+  "rpm_version": "0.3",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/castanets.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=cd /usr/share/castanets; python3 -m venv venv; venv/bin/pip install -r requirements.txt",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=rm -rf /usr/share/castanets/venv/",
+      "color": "red"
+    }
+  ]
+}

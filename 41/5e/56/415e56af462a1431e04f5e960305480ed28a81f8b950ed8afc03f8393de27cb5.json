@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "415e56af462a1431e04f5e960305480ed28a81f8b950ed8afc03f8393de27cb5",
+  "key": "chum/5.2_armv7hl/armv7hl/castanets-debugsource-0.3-1.2.1.bso.armv7hl.rpm",
+  "name": "castanets-debugsource",
+  "rpm_version": "0.3",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

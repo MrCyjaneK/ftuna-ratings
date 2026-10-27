@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "b459069ce44941e86795e37936be40c136ba80612436126af3e8a910d9b793c9",
+  "key": "chum/5.2_aarch64/aarch64/castanets-debugsource-0.3-1.2.1.bso.aarch64.rpm",
+  "name": "castanets-debugsource",
+  "rpm_version": "0.3",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

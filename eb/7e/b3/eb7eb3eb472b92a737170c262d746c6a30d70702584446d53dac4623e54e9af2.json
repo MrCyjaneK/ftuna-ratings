@@ -1,0 +1,46 @@
+{
+  "version": 7,
+  "sha256": "eb7eb3eb472b92a737170c262d746c6a30d70702584446d53dac4623e54e9af2",
+  "key": "mirror/openrepos/projectmoon/personal/main/h/harbour-doomsday-0.2.1-1.armv7hl.rpm",
+  "name": "harbour-doomsday",
+  "rpm_version": "0.2.1",
+  "release": "1",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.unifiedpush.Connector.doomsday.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/env LEGHORN_PUSH_WAKE=1 /usr/bin/sailjail -p harbour-doomsday.desktop -- /usr/bin/harbour-doomsday",
+      "color": "green"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-doomsday.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-doomsday.desktop",
+      "code": "sailjail.permission",
+      "detail": "Location",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-doomsday.desktop",
+      "code": "sailjail.permission",
+      "detail": "Notifications",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-doomsday.desktop",
+      "code": "sailjail.permission",
+      "detail": "UnifiedPush",
+      "color": "gray"
+    }
+  ]
+}
