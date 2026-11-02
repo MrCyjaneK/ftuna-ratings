@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "7be7bc002a43f5f935db46803e79cd8e221a95ffc4cc2281a355fdba2e6e8fd5",
+  "key": "chum/5.1_aarch64/aarch64/ImageMagick-debugsource-7.1.2.34+obs1.0-1.18.1.bso.aarch64.rpm",
+  "name": "ImageMagick-debugsource",
+  "rpm_version": "7.1.2.34+obs1.0",
+  "release": "1.18.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

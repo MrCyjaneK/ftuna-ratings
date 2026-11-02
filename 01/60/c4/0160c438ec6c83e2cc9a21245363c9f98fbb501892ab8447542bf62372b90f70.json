@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "0160c438ec6c83e2cc9a21245363c9f98fbb501892ab8447542bf62372b90f70",
+  "key": "chum/5.1_aarch64/aarch64/emacs-debuginfo-30.2.0-1.6.3.bso.aarch64.rpm",
+  "name": "emacs-debuginfo",
+  "rpm_version": "30.2.0",
+  "release": "1.6.3.bso",
+  "arch": "aarch64",
+  "issues": []
+}

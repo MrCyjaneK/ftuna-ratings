@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "e530c5380a022ae4313723a5d78d10281517b2a4e5cee77fe3c91d6a397e0b9a",
+  "key": "chum/5.1_i486/i486/unbound-debuginfo-1.26.2+git1-1.2.1.bso.i486.rpm",
+  "name": "unbound-debuginfo",
+  "rpm_version": "1.26.2+git1",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": []
+}

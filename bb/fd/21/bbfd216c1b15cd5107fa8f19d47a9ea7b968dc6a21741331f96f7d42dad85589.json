@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "bbfd216c1b15cd5107fa8f19d47a9ea7b968dc6a21741331f96f7d42dad85589",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-privoxy-debuginfo-4.2.0+wolfssl2-1.4.2.bso.armv7hl.rpm",
+  "name": "harbour-privoxy-debuginfo",
+  "rpm_version": "4.2.0+wolfssl2",
+  "release": "1.4.2.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

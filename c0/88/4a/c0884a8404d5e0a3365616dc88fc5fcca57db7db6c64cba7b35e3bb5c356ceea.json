@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "c0884a8404d5e0a3365616dc88fc5fcca57db7db6c64cba7b35e3bb5c356ceea",
+  "key": "chum/5.1_armv7hl/armv7hl/tmux-3.8+git1-1.3.1.bso.armv7hl.rpm",
+  "name": "tmux",
+  "rpm_version": "3.8+git1",
+  "release": "1.3.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

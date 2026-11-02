@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "5dbb4a9e500199b49e1e28efcc5ef646740b575b2ccec784a6204d1cdb0a6fa6",
+  "key": "chum/5.2_i486/i486/tmux-debuginfo-3.8+git1-1.3.1.bso.i486.rpm",
+  "name": "tmux-debuginfo",
+  "rpm_version": "3.8+git1",
+  "release": "1.3.1.bso",
+  "arch": "i486",
+  "issues": []
+}

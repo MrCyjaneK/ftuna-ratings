@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "b44960364c4c87da277b1cfe9c3b771e09deff625b45ded10388d038695a470f",
+  "key": "chum/5.2_aarch64/aarch64/tin-2.6.5-1.1.2.bso.aarch64.rpm",
+  "name": "tin",
+  "rpm_version": "2.6.5",
+  "release": "1.1.2.bso",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -d /home/nemo ]; then; ln -sf /usr/share/tin-2.6.5/faq /home/nemo/Documents/tin.faq; elif [ -d /home/defaultuser ]; then",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; if [ -L /home/nemo/Documents/tin.faq ]; then; rm /home/nemo/Documents/tin.faq",
+      "color": "red"
+    }
+  ]
+}

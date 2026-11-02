@@ -1,0 +1,32 @@
+{
+  "version": 7,
+  "sha256": "d2a07feafa487880b270766de6ddcad09f019fb8fe0b584712b402813379737b",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-fiatimago-1.2-1.2.1.bso.armv7hl.rpm",
+  "name": "harbour-fiatimago",
+  "rpm_version": "1.2",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fiatimago.desktop",
+      "code": "sailjail.permission",
+      "detail": "Pictures",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fiatimago.desktop",
+      "code": "sailjail.permission",
+      "detail": "Downloads",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fiatimago.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia",
+      "color": "gray"
+    }
+  ]
+}

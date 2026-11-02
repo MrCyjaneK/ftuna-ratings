@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "1b80051e4597702c18377cd7cd43bef7d28bef679bd34d38e551527c93763080",
+  "key": "chum/5.1_armv7hl/armv7hl/profanity-devel-0.19.0+git2-1.4.1.bso.armv7hl.rpm",
+  "name": "profanity-devel",
+  "rpm_version": "0.19.0+git2",
+  "release": "1.4.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

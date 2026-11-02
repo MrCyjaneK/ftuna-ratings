@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "4c9af02027e0c296128776c416754018546abb7ca64866f01e41a6742501cfc2",
+  "key": "chum/5.2_i486/i486/gnutls37-debugsource-3.7.11-1.2.1.bso.i486.rpm",
+  "name": "gnutls37-debugsource",
+  "rpm_version": "3.7.11",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": []
+}

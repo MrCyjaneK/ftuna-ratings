@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "2da3c91855a49bf44fa901d11a515c8c6c2dbeed39d66f5faa827657d639303b",
+  "key": "chum/5.2_i486/i486/harbour-hauk-debuginfo-0.1.0-1.3.1.bso.i486.rpm",
+  "name": "harbour-hauk-debuginfo",
+  "rpm_version": "0.1.0",
+  "release": "1.3.1.bso",
+  "arch": "i486",
+  "issues": []
+}

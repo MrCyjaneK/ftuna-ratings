@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "4e79480628cd3616867cd4f9753cffb5164790631e1e0ba5a8cc8e4a3bd49659",
+  "key": "chum/5.2_armv7hl/armv7hl/python3-brotli-debugsource-1.2.0+py1-1.2.1.bso.armv7hl.rpm",
+  "name": "python3-brotli-debugsource",
+  "rpm_version": "1.2.0+py1",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

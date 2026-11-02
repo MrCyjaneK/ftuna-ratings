@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "9a2d6583b76fdbcec843a78711b8f72e0acc785b62b390cb44aaadfe4c0ff63f",
+  "key": "chum/5.1_aarch64/aarch64/python3-brotli-1.2.0+py1-1.2.1.bso.aarch64.rpm",
+  "name": "python3-brotli",
+  "rpm_version": "1.2.0+py1",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

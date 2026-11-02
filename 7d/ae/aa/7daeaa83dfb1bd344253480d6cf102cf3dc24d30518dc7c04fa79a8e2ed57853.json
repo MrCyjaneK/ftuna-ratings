@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "7daeaa83dfb1bd344253480d6cf102cf3dc24d30518dc7c04fa79a8e2ed57853",
+  "key": "chum/5.1_armv7hl/armv7hl/tin-debugsource-2.6.5-1.1.2.bso.armv7hl.rpm",
+  "name": "tin-debugsource",
+  "rpm_version": "2.6.5",
+  "release": "1.1.2.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

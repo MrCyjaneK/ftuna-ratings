@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "1741657d18d56679118953da08ff2a23190cb735b1901f03af2beed3575dc0ad",
+  "key": "chum/5.2_i486/i486/waypipe-debugsource-0.11.0+git1+c-1.6.1.bso.i486.rpm",
+  "name": "waypipe-debugsource",
+  "rpm_version": "0.11.0+git1+c",
+  "release": "1.6.1.bso",
+  "arch": "i486",
+  "issues": []
+}

@@ -1,0 +1,46 @@
+{
+  "version": 7,
+  "sha256": "2a824fa2d8025600361c795ac8e33b8fc560da2f0f49ed55227b773314f75ca0",
+  "key": "chum/5.1_aarch64/aarch64/unbound-1.26.2+git1-1.2.1.bso.aarch64.rpm",
+  "name": "unbound",
+  "rpm_version": "1.26.2+git1",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl --no-reload preset unbound.service \u003e/dev/null 2\u003e\u00261 || :; fi",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload disable --now unbound.service \u003e /dev/null 2\u003e\u00261 || :; fi",
+      "color": "red"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/unbound-anchor.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/sbin/unbound-anchor sandbox=none",
+      "color": "red"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/unbound.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/sbin/unbound -d -p -c /etc/unbound/sailfishos.conf sandbox=ProtectSystem=strict,ProtectHome,PrivateTmp,PrivateDevices,NoNewPrivileges,MemoryDenyWriteExecute,RestrictSUIDSGID,RestrictNamespaces,ProtectKernelModules,ProtectKernelLogs,ProtectControlGroups,ProtectClock,SystemCallFilter,CapabilityBoundingSet",
+      "color": "green"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/unbound.socket",
+      "code": "systemd.socket",
+      "detail": "scope=system activates=unbound.service",
+      "color": "red"
+    }
+  ]
+}

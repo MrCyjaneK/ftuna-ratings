@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "1565aab0e612a170781eca5285e08c38d04470826aa2d04c7020ad78ad958c8d",
+  "key": "chum/5.2_armv7hl/armv7hl/tmux-bash-completion-3.8+git1-1.3.1.bso.armv7hl.rpm",
+  "name": "tmux-bash-completion",
+  "rpm_version": "3.8+git1",
+  "release": "1.3.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

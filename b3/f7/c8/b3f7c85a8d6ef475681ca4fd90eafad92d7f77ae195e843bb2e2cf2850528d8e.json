@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "b3f7c85a8d6ef475681ca4fd90eafad92d7f77ae195e843bb2e2cf2850528d8e",
+  "key": "chum/5.2_i486/i486/profanity-devel-0.19.0+git2-1.4.1.bso.i486.rpm",
+  "name": "profanity-devel",
+  "rpm_version": "0.19.0+git2",
+  "release": "1.4.1.bso",
+  "arch": "i486",
+  "issues": []
+}

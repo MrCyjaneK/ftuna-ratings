@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "f373257287e3a4f86a3c32bc3c5fe8d816ac37781a8c2a36825a695b138bf207",
+  "key": "chum/5.2_armv7hl/noarch/harbour-privoxy-ab2p-4.2.0+wolfssl2-1.4.2.bso.noarch.rpm",
+  "name": "harbour-privoxy-ab2p",
+  "rpm_version": "4.2.0+wolfssl2",
+  "release": "1.4.2.bso",
+  "arch": "noarch",
+  "issues": []
+}

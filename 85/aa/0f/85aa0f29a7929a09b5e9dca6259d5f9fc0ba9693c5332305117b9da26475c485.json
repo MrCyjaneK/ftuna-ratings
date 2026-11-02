@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "85aa0f29a7929a09b5e9dca6259d5f9fc0ba9693c5332305117b9da26475c485",
+  "key": "chum/5.1_aarch64/aarch64/wolfssl-devel-5.9.4+git2-1.2.1.bso.aarch64.rpm",
+  "name": "wolfssl-devel",
+  "rpm_version": "5.9.4+git2",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

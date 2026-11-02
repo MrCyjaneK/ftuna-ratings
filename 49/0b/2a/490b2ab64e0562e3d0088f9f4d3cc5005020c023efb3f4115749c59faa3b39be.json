@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "490b2ab64e0562e3d0088f9f4d3cc5005020c023efb3f4115749c59faa3b39be",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-hauk-debugsource-0.1.0-1.3.1.bso.armv7hl.rpm",
+  "name": "harbour-hauk-debugsource",
+  "rpm_version": "0.1.0",
+  "release": "1.3.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

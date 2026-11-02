@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "86502068987a547a2b80c6ea8255289e253d8bdf3684f6bfcea4d6fa09c624ef",
+  "key": "chum/5.2_armv7hl/armv7hl/wolfssl-devel-5.9.4+git2-1.2.1.bso.armv7hl.rpm",
+  "name": "wolfssl-devel",
+  "rpm_version": "5.9.4+git2",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

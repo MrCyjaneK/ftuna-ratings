@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "101448fd32d394d7f83bf92962186d5a6e723ee7ed552fcaeab718b732bc0ada",
+  "key": "chum/5.1_aarch64/aarch64/tmux-debuginfo-3.8+git1-1.3.1.bso.aarch64.rpm",
+  "name": "tmux-debuginfo",
+  "rpm_version": "3.8+git1",
+  "release": "1.3.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "1f0896a155f5891be838b85e0e37c7e1a837be3e9b61ec177832664b283ba92b",
+  "key": "chum/5.2_i486/i486/PerlMagick-7.1.2.34+obs1.0-1.18.1.bso.i486.rpm",
+  "name": "PerlMagick",
+  "rpm_version": "7.1.2.34+obs1.0",
+  "release": "1.18.1.bso",
+  "arch": "i486",
+  "issues": []
+}

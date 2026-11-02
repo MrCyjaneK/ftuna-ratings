@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "339ee40d51f6ccb566d139d24b28976955e1222eb8e79af71047f48c4bcb25b0",
+  "key": "chum/5.1_armv7hl/armv7hl/PerlMagick-7.1.2.34+obs1.0-1.18.1.bso.armv7hl.rpm",
+  "name": "PerlMagick",
+  "rpm_version": "7.1.2.34+obs1.0",
+  "release": "1.18.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "b6dc2063d284917ed4ffeb3fe21a1f63384fdfbe60d06e20b4afa1222fab9900",
+  "key": "chum/5.2_armv7hl/armv7hl/gnutls37-debugsource-3.7.11-1.2.1.bso.armv7hl.rpm",
+  "name": "gnutls37-debugsource",
+  "rpm_version": "3.7.11",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

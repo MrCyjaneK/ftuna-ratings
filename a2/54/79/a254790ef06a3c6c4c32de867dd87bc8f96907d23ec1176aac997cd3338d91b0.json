@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "a254790ef06a3c6c4c32de867dd87bc8f96907d23ec1176aac997cd3338d91b0",
+  "key": "chum/5.2_aarch64/aarch64/waypipe-debugsource-0.11.0+git1+c-1.6.1.bso.aarch64.rpm",
+  "name": "waypipe-debugsource",
+  "rpm_version": "0.11.0+git1+c",
+  "release": "1.6.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

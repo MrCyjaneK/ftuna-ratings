@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "c8a693aafe2f9575f4456f79f1cdde7f62358ce23dd1b96856b986e82c46ca12",
+  "key": "chum/5.1_i486/i486/wolfssl-debuginfo-5.9.4+git2-1.2.1.bso.i486.rpm",
+  "name": "wolfssl-debuginfo",
+  "rpm_version": "5.9.4+git2",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": []
+}

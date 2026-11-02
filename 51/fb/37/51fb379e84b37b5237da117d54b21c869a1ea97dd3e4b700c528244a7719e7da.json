@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "51fb379e84b37b5237da117d54b21c869a1ea97dd3e4b700c528244a7719e7da",
+  "key": "chum/5.1_i486/i486/tmux-3.8+git1-1.3.1.bso.i486.rpm",
+  "name": "tmux",
+  "rpm_version": "3.8+git1",
+  "release": "1.3.1.bso",
+  "arch": "i486",
+  "issues": []
+}

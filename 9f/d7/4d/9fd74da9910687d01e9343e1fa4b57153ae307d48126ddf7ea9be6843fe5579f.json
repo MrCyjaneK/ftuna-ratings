@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "9fd74da9910687d01e9343e1fa4b57153ae307d48126ddf7ea9be6843fe5579f",
+  "key": "chum/5.1_i486/i486/waypipe-c-0.11.0+git1+c-1.6.1.bso.i486.rpm",
+  "name": "waypipe-c",
+  "rpm_version": "0.11.0+git1+c",
+  "release": "1.6.1.bso",
+  "arch": "i486",
+  "issues": []
+}

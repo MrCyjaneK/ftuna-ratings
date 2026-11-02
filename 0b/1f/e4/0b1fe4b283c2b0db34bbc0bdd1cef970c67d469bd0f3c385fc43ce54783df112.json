@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "0b1fe4b283c2b0db34bbc0bdd1cef970c67d469bd0f3c385fc43ce54783df112",
+  "key": "chum/5.2_armv7hl/armv7hl/ImageMagick-devel-7.1.2.34+obs1.0-1.18.1.bso.armv7hl.rpm",
+  "name": "ImageMagick-devel",
+  "rpm_version": "7.1.2.34+obs1.0",
+  "release": "1.18.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

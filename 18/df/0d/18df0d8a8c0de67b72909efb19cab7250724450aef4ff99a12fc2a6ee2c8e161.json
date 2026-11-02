@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "18df0d8a8c0de67b72909efb19cab7250724450aef4ff99a12fc2a6ee2c8e161",
+  "key": "chum/5.1_i486/i486/python3-brotli-debugsource-1.2.0+py1-1.2.1.bso.i486.rpm",
+  "name": "python3-brotli-debugsource",
+  "rpm_version": "1.2.0+py1",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": []
+}

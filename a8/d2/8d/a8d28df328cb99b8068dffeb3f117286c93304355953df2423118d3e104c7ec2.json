@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "a8d28df328cb99b8068dffeb3f117286c93304355953df2423118d3e104c7ec2",
+  "key": "chum/5.2_armv7hl/armv7hl/wolfssl-debugsource-5.9.4+git2-1.2.1.bso.armv7hl.rpm",
+  "name": "wolfssl-debugsource",
+  "rpm_version": "5.9.4+git2",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

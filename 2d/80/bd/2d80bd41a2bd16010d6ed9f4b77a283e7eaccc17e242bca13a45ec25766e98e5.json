@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "2d80bd41a2bd16010d6ed9f4b77a283e7eaccc17e242bca13a45ec25766e98e5",
+  "key": "chum/5.2_aarch64/aarch64/harbour-fahrplan2-debuginfo-2.0.59-1.24.1.bso.aarch64.rpm",
+  "name": "harbour-fahrplan2-debuginfo",
+  "rpm_version": "2.0.59",
+  "release": "1.24.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

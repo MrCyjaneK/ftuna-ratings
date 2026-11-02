@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "9f6bca7c226d736527334d67c291fcbb32eae6bc8b030e6b55d351514949b8e3",
+  "key": "chum/5.2_armv7hl/armv7hl/python3-brotli-1.2.0+py1-1.2.1.bso.armv7hl.rpm",
+  "name": "python3-brotli",
+  "rpm_version": "1.2.0+py1",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

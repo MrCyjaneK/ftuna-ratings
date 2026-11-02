@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "b4cc4655e17725ed309532c386a129d78102f43064bfcebbb5ad45e6dc69c2d8",
+  "key": "chum/5.2_i486/i486/ImageMagick-debugsource-7.1.2.34+obs1.0-1.18.1.bso.i486.rpm",
+  "name": "ImageMagick-debugsource",
+  "rpm_version": "7.1.2.34+obs1.0",
+  "release": "1.18.1.bso",
+  "arch": "i486",
+  "issues": []
+}

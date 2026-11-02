@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "aed0303f55d45531e6a661814b4008351e7aa78aa4445c66ffeefbc446fa3c54",
+  "key": "chum/5.1_i486/i486/unbound-devel-1.26.2+git1-1.2.1.bso.i486.rpm",
+  "name": "unbound-devel",
+  "rpm_version": "1.26.2+git1",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": []
+}

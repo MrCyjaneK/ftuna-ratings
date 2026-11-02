@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "017688c5c93736f785bb2999a597e5d21d5b830a481cc23a316bc140017608aa",
+  "key": "chum/5.1_i486/i486/wolfssl-libs-5.9.4+git2-1.2.1.bso.i486.rpm",
+  "name": "wolfssl-libs",
+  "rpm_version": "5.9.4+git2",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": []
+}

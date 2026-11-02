@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "08526ccb55e11e3dde0b5c6bf62e400c5528a4b4c6a0380774b2247d5ee13402",
+  "key": "chum/5.1_i486/i486/harbour-fiatimago-debugsource-1.2-1.2.1.bso.i486.rpm",
+  "name": "harbour-fiatimago-debugsource",
+  "rpm_version": "1.2",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": []
+}

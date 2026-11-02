@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "ac5ca8303f5f9c71d8ab0ff95fadc09764a0b5a0ce2c8e3dd17a5ea69d7720b1",
+  "key": "chum/5.1_i486/i486/emacs-debugsource-30.2.0-1.6.2.bso.i486.rpm",
+  "name": "emacs-debugsource",
+  "rpm_version": "30.2.0",
+  "release": "1.6.2.bso",
+  "arch": "i486",
+  "issues": []
+}

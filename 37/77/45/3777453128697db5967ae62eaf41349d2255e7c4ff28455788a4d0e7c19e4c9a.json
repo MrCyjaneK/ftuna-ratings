@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "3777453128697db5967ae62eaf41349d2255e7c4ff28455788a4d0e7c19e4c9a",
+  "key": "chum/5.2_armv7hl/armv7hl/waypipe-c-0.11.0+git1+c-1.6.1.bso.armv7hl.rpm",
+  "name": "waypipe-c",
+  "rpm_version": "0.11.0+git1+c",
+  "release": "1.6.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

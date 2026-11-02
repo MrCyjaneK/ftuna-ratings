@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "30f49b9bd802aa6fbd463b18ece57006fddf4e3e747abbc8f12babb319bb719d",
+  "key": "chum/5.2_aarch64/aarch64/gnutls37-3.7.11-1.2.1.bso.aarch64.rpm",
+  "name": "gnutls37",
+  "rpm_version": "3.7.11",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig",
+      "color": "red"
+    }
+  ]
+}

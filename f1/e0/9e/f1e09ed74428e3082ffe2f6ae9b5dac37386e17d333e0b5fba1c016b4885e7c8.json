@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "f1e09ed74428e3082ffe2f6ae9b5dac37386e17d333e0b5fba1c016b4885e7c8",
+  "key": "chum/5.1_aarch64/aarch64/unbound-debuginfo-1.26.2+git1-1.2.1.bso.aarch64.rpm",
+  "name": "unbound-debuginfo",
+  "rpm_version": "1.26.2+git1",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

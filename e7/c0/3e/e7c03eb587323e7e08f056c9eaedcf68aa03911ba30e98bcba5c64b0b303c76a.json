@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "e7c03eb587323e7e08f056c9eaedcf68aa03911ba30e98bcba5c64b0b303c76a",
+  "key": "chum/5.1_i486/i486/tin-debuginfo-2.6.5-1.1.2.bso.i486.rpm",
+  "name": "tin-debuginfo",
+  "rpm_version": "2.6.5",
+  "release": "1.1.2.bso",
+  "arch": "i486",
+  "issues": []
+}

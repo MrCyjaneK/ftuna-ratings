@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "287800b4c76adffa41d219b5626fed90f793178dff4f803108008e5064171e3e",
+  "key": "chum/5.2_armv7hl/armv7hl/emacs-debuginfo-30.2.0-1.6.3.bso.armv7hl.rpm",
+  "name": "emacs-debuginfo",
+  "rpm_version": "30.2.0",
+  "release": "1.6.3.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

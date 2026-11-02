@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "9310ab28b1b6112fdfba836b638c03b572a74a0f2c409f523a64a9a7964e1f8b",
+  "key": "chum/5.2_armv7hl/noarch/harbour-privoxy-tools-4.2.0+wolfssl2-1.4.2.bso.noarch.rpm",
+  "name": "harbour-privoxy-tools",
+  "rpm_version": "4.2.0+wolfssl2",
+  "release": "1.4.2.bso",
+  "arch": "noarch",
+  "issues": []
+}

@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "72eb96f7408680d504cd98becae1c99a57dc1124583bbf6dcd44964b3bb4698d",
+  "key": "chum/5.2_i486/i486/python3-brotli-1.2.0+py1-1.2.1.bso.i486.rpm",
+  "name": "python3-brotli",
+  "rpm_version": "1.2.0+py1",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": []
+}

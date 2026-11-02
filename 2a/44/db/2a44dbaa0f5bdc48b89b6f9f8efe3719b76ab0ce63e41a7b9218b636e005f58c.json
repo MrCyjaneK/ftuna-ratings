@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "2a44dbaa0f5bdc48b89b6f9f8efe3719b76ab0ce63e41a7b9218b636e005f58c",
+  "key": "chum/5.1_armv7hl/armv7hl/unbound-devel-1.26.2+git1-1.2.1.bso.armv7hl.rpm",
+  "name": "unbound-devel",
+  "rpm_version": "1.26.2+git1",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

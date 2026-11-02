@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "61c85dc1c66e205e2b5ea0f1f0d5e64e869d17bbdfa88264ac779b274aaffe89",
+  "key": "chum/5.1_aarch64/aarch64/profanity-debuginfo-0.19.0+git2-1.4.1.bso.aarch64.rpm",
+  "name": "profanity-debuginfo",
+  "rpm_version": "0.19.0+git2",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

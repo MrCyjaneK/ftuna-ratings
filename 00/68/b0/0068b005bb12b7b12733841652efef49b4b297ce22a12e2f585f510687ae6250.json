@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "0068b005bb12b7b12733841652efef49b4b297ce22a12e2f585f510687ae6250",
+  "key": "chum/5.1_aarch64/aarch64/libunbound8-1.26.2+git1-1.2.1.bso.aarch64.rpm",
+  "name": "libunbound8",
+  "rpm_version": "1.26.2+git1",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "54ca0d288d428e62de95a253a51f4e7aeeea1c0232164a72b70aa0254d1357ef",
+  "key": "chum/5.2_armv7hl/armv7hl/ImageMagick-debuginfo-7.1.2.34+obs1.0-1.18.1.bso.armv7hl.rpm",
+  "name": "ImageMagick-debuginfo",
+  "rpm_version": "7.1.2.34+obs1.0",
+  "release": "1.18.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "5cc3d63eb34db2dfc4eb837c6bb476729231c331141c8844f15b871ee1ce4042",
+  "key": "chum/5.2_i486/noarch/harbour-bugger-0.9.19+git2-1.23.1.bso.noarch.rpm",
+  "name": "harbour-bugger",
+  "rpm_version": "0.9.19+git2",
+  "release": "1.23.1.bso",
+  "arch": "noarch",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-bugger.desktop",
+      "code": "sailjail.jailed",
+      "detail": "sandboxed",
+      "color": "green"
+    }
+  ]
+}

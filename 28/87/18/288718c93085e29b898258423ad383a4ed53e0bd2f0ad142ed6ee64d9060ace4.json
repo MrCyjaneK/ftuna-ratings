@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "288718c93085e29b898258423ad383a4ed53e0bd2f0ad142ed6ee64d9060ace4",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-fiatimago-debugsource-1.2-1.2.1.bso.armv7hl.rpm",
+  "name": "harbour-fiatimago-debugsource",
+  "rpm_version": "1.2",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

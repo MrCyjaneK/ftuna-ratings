@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "390aadc5905e4bcaf75e849bbc9a4d8e71fd8f578896465df037413473b58efd",
+  "key": "chum/5.1_armv7hl/armv7hl/waypipe-debugsource-0.11.0+git1+c-1.6.1.bso.armv7hl.rpm",
+  "name": "waypipe-debugsource",
+  "rpm_version": "0.11.0+git1+c",
+  "release": "1.6.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

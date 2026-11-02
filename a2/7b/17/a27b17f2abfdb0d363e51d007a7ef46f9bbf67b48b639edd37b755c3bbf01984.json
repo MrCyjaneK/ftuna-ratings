@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "a27b17f2abfdb0d363e51d007a7ef46f9bbf67b48b639edd37b755c3bbf01984",
+  "key": "chum/5.2_aarch64/aarch64/ImageMagick-7.1.2.34+obs1.0-1.18.1.bso.aarch64.rpm",
+  "name": "ImageMagick",
+  "rpm_version": "7.1.2.34+obs1.0",
+  "release": "1.18.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

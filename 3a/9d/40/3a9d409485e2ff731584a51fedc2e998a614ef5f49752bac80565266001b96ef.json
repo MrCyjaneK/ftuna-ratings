@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "3a9d409485e2ff731584a51fedc2e998a614ef5f49752bac80565266001b96ef",
+  "key": "chum/5.2_armv7hl/armv7hl/unbound-debuginfo-1.26.2+git1-1.2.1.bso.armv7hl.rpm",
+  "name": "unbound-debuginfo",
+  "rpm_version": "1.26.2+git1",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

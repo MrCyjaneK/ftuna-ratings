@@ -1,0 +1,32 @@
+{
+  "version": 7,
+  "sha256": "57d0bc39e8876f81c341c6b83c3c6da32c6feb243da97086ca9be70dff469c6d",
+  "key": "chum/5.1_i486/i486/harbour-fiatimago-1.2-1.2.1.bso.i486.rpm",
+  "name": "harbour-fiatimago",
+  "rpm_version": "1.2",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fiatimago.desktop",
+      "code": "sailjail.permission",
+      "detail": "Pictures",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fiatimago.desktop",
+      "code": "sailjail.permission",
+      "detail": "Downloads",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fiatimago.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia",
+      "color": "gray"
+    }
+  ]
+}

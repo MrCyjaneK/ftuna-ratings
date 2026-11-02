@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "7ce52fb48e4b2822d2a9cdeca00bb024e7928465464f3a1f902ff6bad0439bf1",
+  "key": "chum/5.1_aarch64/aarch64/gnutls37-c++-3.7.11-1.2.1.bso.aarch64.rpm",
+  "name": "gnutls37-c++",
+  "rpm_version": "3.7.11",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig",
+      "color": "red"
+    }
+  ]
+}

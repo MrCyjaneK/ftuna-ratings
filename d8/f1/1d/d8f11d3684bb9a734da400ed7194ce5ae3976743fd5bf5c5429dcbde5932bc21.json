@@ -1,0 +1,32 @@
+{
+  "version": 7,
+  "sha256": "d8f11d3684bb9a734da400ed7194ce5ae3976743fd5bf5c5429dcbde5932bc21",
+  "key": "chum/5.2_aarch64/noarch/harbour-privoxy-httpd-4.2.0+wolfssl2-1.4.2.bso.noarch.rpm",
+  "name": "harbour-privoxy-httpd",
+  "rpm_version": "4.2.0+wolfssl2",
+  "release": "1.4.2.bso",
+  "arch": "noarch",
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl --no-reload preset harbour-privoxy-httpd.service \u003e/dev/null 2\u003e\u00261 || :; fi",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload disable --now harbour-privoxy-httpd.service \u003e /dev/null 2\u003e\u00261 || :; fi",
+      "color": "red"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/harbour-privoxy-httpd.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/bin/python3 /usr/share/harbour-privoxy/harbour-privoxy-httpd.py sandbox=ProtectSystem=strict,ProtectHome,PrivateTmp",
+      "color": "yellow"
+    }
+  ]
+}

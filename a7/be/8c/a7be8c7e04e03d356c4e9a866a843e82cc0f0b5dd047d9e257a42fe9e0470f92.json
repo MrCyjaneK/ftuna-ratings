@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "a7be8c7e04e03d356c4e9a866a843e82cc0f0b5dd047d9e257a42fe9e0470f92",
+  "key": "chum/5.1_i486/i486/gnutls37-devel-3.7.11-1.2.1.bso.i486.rpm",
+  "name": "gnutls37-devel",
+  "rpm_version": "3.7.11",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": []
+}

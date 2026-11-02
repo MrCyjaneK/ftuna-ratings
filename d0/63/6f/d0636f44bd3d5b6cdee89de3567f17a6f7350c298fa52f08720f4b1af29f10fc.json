@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "d0636f44bd3d5b6cdee89de3567f17a6f7350c298fa52f08720f4b1af29f10fc",
+  "key": "chum/5.1_armv7hl/armv7hl/libunbound8-1.26.2+git1-1.2.1.bso.armv7hl.rpm",
+  "name": "libunbound8",
+  "rpm_version": "1.26.2+git1",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

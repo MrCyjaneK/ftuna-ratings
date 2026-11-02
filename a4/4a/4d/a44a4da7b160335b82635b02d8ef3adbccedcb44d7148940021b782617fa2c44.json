@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "a44a4da7b160335b82635b02d8ef3adbccedcb44d7148940021b782617fa2c44",
+  "key": "chum/5.2_aarch64/aarch64/harbour-fiatimago-debuginfo-1.2-1.2.1.bso.aarch64.rpm",
+  "name": "harbour-fiatimago-debuginfo",
+  "rpm_version": "1.2",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "7f52d89d55b9ec8fc1f15ed433fa480c5f448e9ca33f2a1edf20310a71e3e5a8",
+  "key": "chum/5.2_aarch64/aarch64/tin-debugsource-2.6.5-1.1.2.bso.aarch64.rpm",
+  "name": "tin-debugsource",
+  "rpm_version": "2.6.5",
+  "release": "1.1.2.bso",
+  "arch": "aarch64",
+  "issues": []
+}

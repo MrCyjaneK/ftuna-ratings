@@ -1,0 +1,32 @@
+{
+  "version": 7,
+  "sha256": "fb47cae072849cdaf09e9c644fd3679b205d4d787c323e9952f9ef1d8cd15d71",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-hauk-0.1.0-1.3.1.bso.armv7hl.rpm",
+  "name": "harbour-hauk",
+  "rpm_version": "0.1.0",
+  "release": "1.3.1.bso",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-hauk.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-hauk.desktop",
+      "code": "sailjail.permission",
+      "detail": "Secrets",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-hauk.desktop",
+      "code": "sailjail.permission",
+      "detail": "Location",
+      "color": "gray"
+    }
+  ]
+}

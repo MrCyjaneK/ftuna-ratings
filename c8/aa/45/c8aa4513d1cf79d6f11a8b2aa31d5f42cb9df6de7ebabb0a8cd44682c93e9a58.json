@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "c8aa4513d1cf79d6f11a8b2aa31d5f42cb9df6de7ebabb0a8cd44682c93e9a58",
+  "key": "chum/5.1_armv7hl/armv7hl/emacs-debugsource-30.2.0-1.6.3.bso.armv7hl.rpm",
+  "name": "emacs-debugsource",
+  "rpm_version": "30.2.0",
+  "release": "1.6.3.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

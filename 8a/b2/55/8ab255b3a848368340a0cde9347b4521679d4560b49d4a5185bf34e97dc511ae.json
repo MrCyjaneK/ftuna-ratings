@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "8ab255b3a848368340a0cde9347b4521679d4560b49d4a5185bf34e97dc511ae",
+  "key": "chum/5.1_i486/i486/libunbound8-1.26.2+git1-1.2.1.bso.i486.rpm",
+  "name": "libunbound8",
+  "rpm_version": "1.26.2+git1",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": []
+}

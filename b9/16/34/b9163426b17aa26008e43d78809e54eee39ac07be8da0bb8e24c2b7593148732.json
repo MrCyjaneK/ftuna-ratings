@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "b9163426b17aa26008e43d78809e54eee39ac07be8da0bb8e24c2b7593148732",
+  "key": "chum/5.2_i486/i486/ImageMagick-devel-7.1.2.34+obs1.0-1.18.1.bso.i486.rpm",
+  "name": "ImageMagick-devel",
+  "rpm_version": "7.1.2.34+obs1.0",
+  "release": "1.18.1.bso",
+  "arch": "i486",
+  "issues": []
+}

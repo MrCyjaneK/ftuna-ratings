@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "7d9257d6d0ab7414dd2502017481620f0a560ec4f89f0d230dd9fb6815eaf256",
+  "key": "chum/5.2_armv7hl/noarch/harbour-lonewolf-tts-plugin-0.1.261031-1.4.1.bso.noarch.rpm",
+  "name": "harbour-lonewolf-tts-plugin",
+  "rpm_version": "0.1.261031",
+  "release": "1.4.1.bso",
+  "arch": "noarch",
+  "issues": []
+}

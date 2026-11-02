@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "05e6a40bae8c2d249ee5f28f2afcd18c22df5f1b456ebaa0067a952b74865b6c",
+  "key": "chum/5.1_i486/i486/ImageMagick-7.1.2.34+obs1.0-1.18.1.bso.i486.rpm",
+  "name": "ImageMagick",
+  "rpm_version": "7.1.2.34+obs1.0",
+  "release": "1.18.1.bso",
+  "arch": "i486",
+  "issues": []
+}

@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "81f2660f9b19054eae83d430ae5b7e66562a9351546bc3955b9ec3dac1ed3cd0",
+  "key": "chum/5.1_aarch64/aarch64/wolfssl-debuginfo-5.9.4+git2-1.2.1.bso.aarch64.rpm",
+  "name": "wolfssl-debuginfo",
+  "rpm_version": "5.9.4+git2",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

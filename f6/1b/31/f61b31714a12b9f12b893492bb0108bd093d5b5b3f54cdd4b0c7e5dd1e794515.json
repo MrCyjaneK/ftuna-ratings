@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "f61b31714a12b9f12b893492bb0108bd093d5b5b3f54cdd4b0c7e5dd1e794515",
+  "key": "chum/5.2_aarch64/aarch64/profanity-devel-0.19.0+git2-1.4.1.bso.aarch64.rpm",
+  "name": "profanity-devel",
+  "rpm_version": "0.19.0+git2",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

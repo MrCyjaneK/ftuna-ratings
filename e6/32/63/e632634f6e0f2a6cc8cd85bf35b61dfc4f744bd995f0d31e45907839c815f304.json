@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "e632634f6e0f2a6cc8cd85bf35b61dfc4f744bd995f0d31e45907839c815f304",
+  "key": "chum/5.1_i486/i486/profanity-debuginfo-0.19.0+git2-1.4.1.bso.i486.rpm",
+  "name": "profanity-debuginfo",
+  "rpm_version": "0.19.0+git2",
+  "release": "1.4.1.bso",
+  "arch": "i486",
+  "issues": []
+}

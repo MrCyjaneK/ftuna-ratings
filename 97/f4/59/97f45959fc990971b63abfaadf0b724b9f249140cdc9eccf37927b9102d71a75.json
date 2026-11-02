@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "97f45959fc990971b63abfaadf0b724b9f249140cdc9eccf37927b9102d71a75",
+  "key": "chum/5.1_i486/i486/gnutls37-3.7.11-1.2.1.bso.i486.rpm",
+  "name": "gnutls37",
+  "rpm_version": "3.7.11",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=/sbin/ldconfig",
+      "color": "red"
+    }
+  ]
+}

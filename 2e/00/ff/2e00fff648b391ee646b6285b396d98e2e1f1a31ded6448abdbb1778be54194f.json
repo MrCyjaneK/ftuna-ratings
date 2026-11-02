@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "2e00fff648b391ee646b6285b396d98e2e1f1a31ded6448abdbb1778be54194f",
+  "key": "chum/5.1_aarch64/aarch64/tmux-bash-completion-3.8+git1-1.3.1.bso.aarch64.rpm",
+  "name": "tmux-bash-completion",
+  "rpm_version": "3.8+git1",
+  "release": "1.3.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "090950992be2da6407143c93b4fbd9bfea21bff9b03561ff34863be5723e7f6a",
+  "key": "chum/5.2_aarch64/aarch64/python3-brotli-debugsource-1.2.0+py1-1.2.1.bso.aarch64.rpm",
+  "name": "python3-brotli-debugsource",
+  "rpm_version": "1.2.0+py1",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}
