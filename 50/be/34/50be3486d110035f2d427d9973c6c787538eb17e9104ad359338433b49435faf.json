@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "50be3486d110035f2d427d9973c6c787538eb17e9104ad359338433b49435faf",
+  "key": "chum/5.1_i486/i486/elinks-debugsource-0.19.1-1.2.2.bso.i486.rpm",
+  "name": "elinks-debugsource",
+  "rpm_version": "0.19.1",
+  "release": "1.2.2.bso",
+  "arch": "i486",
+  "issues": []
+}

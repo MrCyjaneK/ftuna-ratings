@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "f06986f2dc4e947bd071c187e7c983d0e9d79e7df581ccf458af68778b91bec7",
+  "key": "chum/5.2_i486/i486/brotli-debuginfo-1.2.1+git1-1.4.1.bso.i486.rpm",
+  "name": "brotli-debuginfo",
+  "rpm_version": "1.2.1+git1",
+  "release": "1.4.1.bso",
+  "arch": "i486",
+  "issues": []
+}

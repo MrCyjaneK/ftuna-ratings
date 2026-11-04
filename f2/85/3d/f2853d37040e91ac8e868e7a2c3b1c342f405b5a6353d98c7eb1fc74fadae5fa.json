@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "f2853d37040e91ac8e868e7a2c3b1c342f405b5a6353d98c7eb1fc74fadae5fa",
+  "key": "chum/5.2_i486/i486/brotli-1.2.1+git1-1.4.1.bso.i486.rpm",
+  "name": "brotli",
+  "rpm_version": "1.2.1+git1",
+  "release": "1.4.1.bso",
+  "arch": "i486",
+  "issues": []
+}

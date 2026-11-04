@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "5e729d65a5988cd0abba66fa57fb613d8238c0f3e789116649fad8c552693ce6",
+  "key": "repo/ftuna-oss/5.1.0.11/armv7hl/github.com/golang/go/go1_26/golang-26-1.26.10-0.armv7hl.rpm",
+  "name": "golang-26",
+  "rpm_version": "1.26.10",
+  "release": "0",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/golang/go/go1_26",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

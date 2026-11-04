@@ -1,0 +1,32 @@
+{
+  "version": 7,
+  "sha256": "2a64297b0bccd829adb03e942e1fa956ddc99989b81ccbcf371b6ef916a4b7bf",
+  "key": "chum/5.1_aarch64/noarch/plocate-service-user-1.1.25-1.2.1.bso.noarch.rpm",
+  "name": "plocate-service-user",
+  "rpm_version": "1.1.25",
+  "release": "1.2.1.bso",
+  "arch": "noarch",
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 1 ] ; then; systemctl --no-reload preset \\--user \\--global plocate-updatedb-user.service ||: \u003e/dev/null 2\u003e\u00261 || :; fi",
+      "color": "red"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/plocate-updatedb-user.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/sbin/updatedb -o %h/.cache/plocate.db -U %h sandbox=none",
+      "color": "green"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/plocate-updatedb-user.timer",
+      "code": "systemd.timer",
+      "detail": "scope=user activates=plocate-updatedb-user.service",
+      "color": "green"
+    }
+  ]
+}

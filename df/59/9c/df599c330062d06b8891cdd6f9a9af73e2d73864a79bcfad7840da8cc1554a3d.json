@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "df599c330062d06b8891cdd6f9a9af73e2d73864a79bcfad7840da8cc1554a3d",
+  "key": "chum/5.2_armv7hl/armv7hl/brotli-debuginfo-1.2.1+git1-1.4.1.bso.armv7hl.rpm",
+  "name": "brotli-debuginfo",
+  "rpm_version": "1.2.1+git1",
+  "release": "1.4.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

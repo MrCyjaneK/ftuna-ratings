@@ -1,0 +1,39 @@
+{
+  "version": 7,
+  "sha256": "ca6d08a657878e0d95c7666e4b370368207b8fc0ae61767abc18f931f97dfc28",
+  "key": "chum/5.1_i486/i486/plocate-1.1.25-1.2.1.bso.i486.rpm",
+  "name": "plocate",
+  "rpm_version": "1.1.25",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ -f /var/cache/mlocate.db ]; then; /usr/sbin/plocate-build /var/cache/mlocate.db /var/lib/plocate/plocate.db \u0026\u0026 rm -f /var/cache/mlocate.db; fi",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ] ; then; systemctl --no-reload disable --now plocate-updatedb.service \u003e /dev/null 2\u003e\u00261 || :; fi",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; fi",
+      "color": "red"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/plocate",
+      "code": "setgid",
+      "detail": "/usr/bin/plocate mode 0102711 user root group privileged file",
+      "color": "red"
+    }
+  ]
+}

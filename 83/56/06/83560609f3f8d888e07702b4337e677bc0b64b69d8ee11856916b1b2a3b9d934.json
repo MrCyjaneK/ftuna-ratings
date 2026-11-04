@@ -1,0 +1,53 @@
+{
+  "version": 7,
+  "sha256": "83560609f3f8d888e07702b4337e677bc0b64b69d8ee11856916b1b2a3b9d934",
+  "key": "chum/5.2_i486/i486/emacs-30.2.0-1.6.3.bso.i486.rpm",
+  "name": "emacs",
+  "rpm_version": "30.2.0",
+  "release": "1.6.3.bso",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "hooks",
+      "path": "/usr/share/emacs/30.2/etc/tutorials/TUTORIAL.ko",
+      "code": "hooks.module",
+      "detail": "mode 0100644 user root group root",
+      "color": "red"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/emacs-mail.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/emacsclient-mail.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/emacsclient.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=for f in ada-mode auth autotype bovine calc ccmode cl dbus dired-x ebrowse ede ediff edt efaq efaq-w32 eieio eintr elisp emacs-gnutls emacs emacs-mime epa erc e",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=for f in ada-mode auth autotype bovine calc ccmode cl dbus dired-x ebrowse ede ediff edt efaq efaq-w32 eieio eintr elisp emacs-gnutls emacs emacs-mime epa erc e",
+      "color": "red"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "5f14b82b3cf57377adb2381ee44880c9f293116d84869fb7dbb2e9b27c2ffcdd",
+  "key": "chum/5.2_aarch64/aarch64/plocate-debugsource-1.1.25-1.2.1.bso.aarch64.rpm",
+  "name": "plocate-debugsource",
+  "rpm_version": "1.1.25",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

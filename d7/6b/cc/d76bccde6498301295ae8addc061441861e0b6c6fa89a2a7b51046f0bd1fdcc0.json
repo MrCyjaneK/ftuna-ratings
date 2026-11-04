@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "d76bccde6498301295ae8addc061441861e0b6c6fa89a2a7b51046f0bd1fdcc0",
+  "key": "chum/5.2_i486/i486/harbour-sailhn-debugsource-0.11.0-1.9.1.bso.i486.rpm",
+  "name": "harbour-sailhn-debugsource",
+  "rpm_version": "0.11.0",
+  "release": "1.9.1.bso",
+  "arch": "i486",
+  "issues": []
+}

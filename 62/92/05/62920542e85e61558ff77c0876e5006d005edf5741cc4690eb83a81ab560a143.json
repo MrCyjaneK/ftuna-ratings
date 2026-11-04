@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "62920542e85e61558ff77c0876e5006d005edf5741cc4690eb83a81ab560a143",
+  "key": "chum/5.2_armv7hl/armv7hl/elinks-0.19.1-1.2.3.bso.armv7hl.rpm",
+  "name": "elinks",
+  "rpm_version": "0.19.1",
+  "release": "1.2.3.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

@@ -1,0 +1,32 @@
+{
+  "version": 7,
+  "sha256": "27697aeeed484a4106ceef6e645ae5cf3e8c1d8c67fdfabd2779334f4f5e0233",
+  "key": "chum/5.1_aarch64/aarch64/harbour-sailhn-0.11.0-1.9.1.bso.aarch64.rpm",
+  "name": "harbour-sailhn",
+  "rpm_version": "0.11.0",
+  "release": "1.9.1.bso",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailhn.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailhn.desktop",
+      "code": "sailjail.permission",
+      "detail": "Secrets",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-sailhn.desktop",
+      "code": "sailjail.permission",
+      "detail": "WebView",
+      "color": "gray"
+    }
+  ]
+}

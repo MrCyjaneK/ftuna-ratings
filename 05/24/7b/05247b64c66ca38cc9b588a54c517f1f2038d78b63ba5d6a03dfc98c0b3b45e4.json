@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "05247b64c66ca38cc9b588a54c517f1f2038d78b63ba5d6a03dfc98c0b3b45e4",
+  "key": "chum/5.2_aarch64/aarch64/emacs-debugsource-30.2.0-1.6.4.bso.aarch64.rpm",
+  "name": "emacs-debugsource",
+  "rpm_version": "30.2.0",
+  "release": "1.6.4.bso",
+  "arch": "aarch64",
+  "issues": []
+}

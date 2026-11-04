@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "29f8bdfb6f378718e1af37fac2d1ec8721e4e7fb150af8ddb4696112fdf7e877",
+  "key": "chum/5.1_armv7hl/armv7hl/owlfish-1.6.0-1.1.1.bso.armv7hl.rpm",
+  "name": "owlfish",
+  "rpm_version": "1.6.0",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if /usr/libexec/owlfish/update-env; then; echo \"owlfish: restart the home screen to load it: systemctl --user restart lipstick\"; fi",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; echo \"owlfish: restart the home screen to unload it: systemctl --user restart lipstick\"; fi",
+      "color": "red"
+    }
+  ]
+}

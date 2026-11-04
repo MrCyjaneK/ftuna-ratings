@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "1cc66ee54d630de4b7da8d108b17e114d714bef4a39ddee1a44db9abdde8191b",
+  "key": "chum/5.2_i486/i486/elinks-0.19.1-1.2.2.bso.i486.rpm",
+  "name": "elinks",
+  "rpm_version": "0.19.1",
+  "release": "1.2.2.bso",
+  "arch": "i486",
+  "issues": []
+}

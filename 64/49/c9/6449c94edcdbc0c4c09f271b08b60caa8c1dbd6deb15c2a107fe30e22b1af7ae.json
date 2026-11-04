@@ -1,0 +1,46 @@
+{
+  "version": 7,
+  "sha256": "6449c94edcdbc0c4c09f271b08b60caa8c1dbd6deb15c2a107fe30e22b1af7ae",
+  "key": "chum/5.2_aarch64/aarch64/owlfish-qualcomm-1.6.0-1.1.1.bso.aarch64.rpm",
+  "name": "owlfish-qualcomm",
+  "rpm_version": "1.6.0",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/system-services/io.github.ccontino84.owlfish.Qualcomm.service",
+      "code": "dbus.service",
+      "detail": "scope=system user=root exec=/bin/false systemd=owlfish-qualcomm.service",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :; systemctl try-restart owlfish-qualcomm.service \u003e/dev/null 2\u003e\u00261 || :; echo \"owlfish-qualcomm: restart the home scre",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; systemctl stop owlfish-qualcomm.service \u003e/dev/null 2\u003e\u00261 || :; fi",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :; exit 0",
+      "color": "red"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/owlfish-qualcomm.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=graphics group=root exec=/usr/libexec/owlfish/qualcomm-helper sandbox=ProtectSystem=full,ProtectHome,PrivateTmp,NoNewPrivileges",
+      "color": "green"
+    }
+  ]
+}

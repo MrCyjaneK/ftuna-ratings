@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "8dd9a627e69457a702397a5c46cdee538337b7e371f0165a986e6d10d949c989",
+  "key": "chum/5.2_armv7hl/armv7hl/plocate-debuginfo-1.1.25-1.2.1.bso.armv7hl.rpm",
+  "name": "plocate-debuginfo",
+  "rpm_version": "1.1.25",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

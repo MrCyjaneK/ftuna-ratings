@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "5fee9bad7a67ac3aa78f64e60f92d79d7830963d6fa8dd24b57a085cb2656b7e",
+  "key": "chum/5.1_armv7hl/armv7hl/plocate-debugsource-1.1.25-1.2.1.bso.armv7hl.rpm",
+  "name": "plocate-debugsource",
+  "rpm_version": "1.1.25",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

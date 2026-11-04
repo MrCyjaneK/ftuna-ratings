@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "54efc9d1d34e90555732f6c7a634f7d92469b941579f02eff8bb6923aa7723a8",
+  "key": "chum/5.1_aarch64/aarch64/owlfish-debugsource-1.6.0-1.1.1.bso.aarch64.rpm",
+  "name": "owlfish-debugsource",
+  "rpm_version": "1.6.0",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

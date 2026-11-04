@@ -1,0 +1,39 @@
+{
+  "version": 7,
+  "sha256": "e83210d9d402a045f2be9aaa9232059cbbef6c8b3cf045768045b5d477801f1c",
+  "key": "chum/5.1_aarch64/noarch/plocate-service-system-1.1.25-1.2.1.bso.noarch.rpm",
+  "name": "plocate-service-system",
+  "rpm_version": "1.1.25",
+  "release": "1.2.1.bso",
+  "arch": "noarch",
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl enable plocate-updatedb.timer || :; if [ $1 -eq 1 ] ; then; systemctl --no-reload preset plocate-updatedb.service ||: \u003e/dev/null 2\u003e\u00261 || :",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 = 0 ]; then; else; if [ $1 = 1 ]; then",
+      "color": "red"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/plocate-updatedb.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/sbin/updatedb sandbox=none",
+      "color": "red"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/plocate-updatedb.timer",
+      "code": "systemd.timer",
+      "detail": "scope=system activates=plocate-updatedb.service",
+      "color": "red"
+    }
+  ]
+}

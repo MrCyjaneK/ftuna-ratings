@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "c96dbf840046cceed163f4109a6bee2c4bdb3a5db31b2b9d9e585b832533d2c8",
+  "key": "chum/5.2_i486/i486/owlfish-1.6.0-1.1.1.bso.i486.rpm",
+  "name": "owlfish",
+  "rpm_version": "1.6.0",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if /usr/libexec/owlfish/update-env; then; echo \"owlfish: restart the home screen to load it: systemctl --user restart lipstick\"; fi",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ $1 -eq 0 ]; then; echo \"owlfish: restart the home screen to unload it: systemctl --user restart lipstick\"; fi",
+      "color": "red"
+    }
+  ]
+}

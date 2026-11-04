@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "2fa3ec32ccb2f7de9729fd888426cb4d1e639d01b61e6f3bc29be30e52b2ade6",
+  "key": "chum/5.2_armv7hl/armv7hl/brotli-libs-1.2.1+git1-1.4.1.bso.armv7hl.rpm",
+  "name": "brotli-libs",
+  "rpm_version": "1.2.1+git1",
+  "release": "1.4.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

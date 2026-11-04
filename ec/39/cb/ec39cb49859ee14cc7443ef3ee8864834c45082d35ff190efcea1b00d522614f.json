@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "ec39cb49859ee14cc7443ef3ee8864834c45082d35ff190efcea1b00d522614f",
+  "key": "repo/ftuna-oss/5.1.0.11/aarch64/github.com/golang/go/go1_22/golang-22-1.22.12-0.aarch64.rpm",
+  "name": "golang-22",
+  "rpm_version": "1.22.12",
+  "release": "0",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/golang/go/go1_22",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

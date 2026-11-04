@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "9b9e6538f6bf25ed58b863991f71b83ba3d7264ba04b445895c1c3fc041ad11f",
+  "key": "chum/5.1_armv7hl/noarch/keychain-2.9.8+git2-1.2.1.bso.noarch.rpm",
+  "name": "keychain",
+  "rpm_version": "2.9.8+git2",
+  "release": "1.2.1.bso",
+  "arch": "noarch",
+  "issues": []
+}

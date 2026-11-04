@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "c61558feb6aec81d19d368422a3b0cb4b0baa78f8821022cb8d57dc5916be1d1",
+  "key": "chum/5.2_aarch64/aarch64/brotli-debugsource-1.2.1+git1-1.4.1.bso.aarch64.rpm",
+  "name": "brotli-debugsource",
+  "rpm_version": "1.2.1+git1",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

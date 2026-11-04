@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "ced06fa802e3e3a7f9662a5ce3bf317f52540600473cf5c19b1c0e2529279db6",
+  "key": "chum/5.1_aarch64/aarch64/elinks-0.19.1-1.2.3.bso.aarch64.rpm",
+  "name": "elinks",
+  "rpm_version": "0.19.1",
+  "release": "1.2.3.bso",
+  "arch": "aarch64",
+  "issues": []
+}

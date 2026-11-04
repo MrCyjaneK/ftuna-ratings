@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "3bec1037717ed025e541e94939d3bb7bdd43e7b2b595a7caad0dcb0bdd4a0f2e",
+  "key": "chum/5.1_aarch64/aarch64/harbour-sailhn-debugsource-0.11.0-1.9.1.bso.aarch64.rpm",
+  "name": "harbour-sailhn-debugsource",
+  "rpm_version": "0.11.0",
+  "release": "1.9.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

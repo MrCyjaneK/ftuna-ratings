@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "0450975afa76ea6360604232c676f4417ee929b270458110d042347d81c2d6a3",
+  "key": "chum/5.1_aarch64/aarch64/elinks-debugsource-0.19.1-1.2.3.bso.aarch64.rpm",
+  "name": "elinks-debugsource",
+  "rpm_version": "0.19.1",
+  "release": "1.2.3.bso",
+  "arch": "aarch64",
+  "issues": []
+}

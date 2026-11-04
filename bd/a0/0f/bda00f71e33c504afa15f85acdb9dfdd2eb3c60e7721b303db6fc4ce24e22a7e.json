@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "bda00f71e33c504afa15f85acdb9dfdd2eb3c60e7721b303db6fc4ce24e22a7e",
+  "key": "chum/5.2_armv7hl/armv7hl/hutspot-debuginfo-0.5-1.3.1.bso.armv7hl.rpm",
+  "name": "hutspot-debuginfo",
+  "rpm_version": "0.5",
+  "release": "1.3.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

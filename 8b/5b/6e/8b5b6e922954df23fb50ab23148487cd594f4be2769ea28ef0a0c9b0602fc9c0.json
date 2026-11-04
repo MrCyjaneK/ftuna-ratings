@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "8b5b6e922954df23fb50ab23148487cd594f4be2769ea28ef0a0c9b0602fc9c0",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-sailhn-debugsource-0.11.0-1.9.1.bso.armv7hl.rpm",
+  "name": "harbour-sailhn-debugsource",
+  "rpm_version": "0.11.0",
+  "release": "1.9.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

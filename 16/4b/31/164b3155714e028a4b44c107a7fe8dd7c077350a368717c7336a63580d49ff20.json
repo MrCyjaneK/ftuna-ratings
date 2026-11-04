@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "164b3155714e028a4b44c107a7fe8dd7c077350a368717c7336a63580d49ff20",
+  "key": "chum/5.1_armv7hl/armv7hl/elinks-debugsource-0.19.1-1.2.3.bso.armv7hl.rpm",
+  "name": "elinks-debugsource",
+  "rpm_version": "0.19.1",
+  "release": "1.2.3.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

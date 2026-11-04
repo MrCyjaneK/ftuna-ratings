@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "7af9ec745b472b9476620ad937194ea4512fb31d4f32a13f2f0a7e073fec9d71",
+  "key": "chum/5.1_i486/i486/hutspot-debugsource-0.5-1.3.1.bso.i486.rpm",
+  "name": "hutspot-debugsource",
+  "rpm_version": "0.5",
+  "release": "1.3.1.bso",
+  "arch": "i486",
+  "issues": []
+}

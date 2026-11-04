@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "1eab3079c0a002f9c3de2071715f00145837c492a279a75d499237bce673dd5c",
+  "key": "chum/5.1_i486/noarch/harbour-laditdah-0.10.1+git1-1.4.1.bso.noarch.rpm",
+  "name": "harbour-laditdah",
+  "rpm_version": "0.10.1+git1",
+  "release": "1.4.1.bso",
+  "arch": "noarch",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-laditdah.desktop",
+      "code": "sailjail.permission",
+      "detail": "Camera",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-laditdah.desktop",
+      "code": "sailjail.permission",
+      "detail": "InariBlueNotifier",
+      "color": "gray"
+    }
+  ]
+}

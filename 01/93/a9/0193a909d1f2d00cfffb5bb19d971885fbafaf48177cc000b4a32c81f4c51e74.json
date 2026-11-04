@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "0193a909d1f2d00cfffb5bb19d971885fbafaf48177cc000b4a32c81f4c51e74",
+  "key": "chum/5.2_i486/i486/plocate-debugsource-1.1.25-1.2.1.bso.i486.rpm",
+  "name": "plocate-debugsource",
+  "rpm_version": "1.1.25",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": []
+}

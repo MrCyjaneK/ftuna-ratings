@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "4072c7ba87398a7088a4b2a9641993f932dab6b99bff0c06b52cb742dc232c1d",
+  "key": "chum/5.2_aarch64/aarch64/brotli-1.2.1+git1-1.4.1.bso.aarch64.rpm",
+  "name": "brotli",
+  "rpm_version": "1.2.1+git1",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}
