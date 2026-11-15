@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "49ad9cf01a08d7bad98adde3de827e10f4166f81c7fc49c278cf2e9ac644f9d2",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/mrcyjanek/ftuna-client/ftuna-0.1.0-6.i486.rpm",
+  "name": "ftuna",
+  "rpm_version": "0.1.0",
+  "release": "6",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/ftuna.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/ftuna-client",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}
