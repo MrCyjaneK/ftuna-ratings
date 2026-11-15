@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "2c766f851ae01edb8a90e95238b9ef3deaba63bcec45b02938f7804803e3a0f8",
+  "key": "repo/ftuna-oss/5.1.0.11/armv7hl/github.com/mrcyjanek/cargadgetd_app_hello/cargadgetd-plugin-helloworld-debuginfo-0.0.1-1.armv7hl.rpm",
+  "name": "cargadgetd-plugin-helloworld-debuginfo",
+  "rpm_version": "0.0.1",
+  "release": "1",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/cargadgetd_app_hello",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

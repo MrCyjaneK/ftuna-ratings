@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "6c0ca519a41e0bd966a59b8c9528fd7b8c5bf9a695d6bb5bac5ea6e4a31704eb",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-wordle-1.1.16-1.28.1.bso.armv7hl.rpm",
+  "name": "harbour-wordle",
+  "rpm_version": "1.1.16",
+  "release": "1.28.1.bso",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-wordle.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
+    }
+  ]
+}

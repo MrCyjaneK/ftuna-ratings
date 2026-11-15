@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "3cef76311a0a2e8ef84d5512b3372546d38e5f3b50493b12da3be3f75cefc4b7",
+  "key": "chum/5.2_aarch64/aarch64/libpresage-devel-2.1.0-1.4.1.bso.aarch64.rpm",
+  "name": "libpresage-devel",
+  "rpm_version": "2.1.0",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

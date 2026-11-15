@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "b5c65884dc45f34051b803dca4306b352edb73dee876eaad49b0eaff4fbc7631",
+  "key": "chum/5.1_i486/i486/presage-debuginfo-2.1.0-1.4.1.bso.i486.rpm",
+  "name": "presage-debuginfo",
+  "rpm_version": "2.1.0",
+  "release": "1.4.1.bso",
+  "arch": "i486",
+  "issues": []
+}

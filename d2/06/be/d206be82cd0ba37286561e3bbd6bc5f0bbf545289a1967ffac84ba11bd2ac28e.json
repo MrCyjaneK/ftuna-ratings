@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "d206be82cd0ba37286561e3bbd6bc5f0bbf545289a1967ffac84ba11bd2ac28e",
+  "key": "chum/5.2_i486/i486/harbour-fiatcor-1.2-1.2.1.bso.i486.rpm",
+  "name": "harbour-fiatcor",
+  "rpm_version": "1.2",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fiatcor.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio",
+      "color": "gray"
+    }
+  ]
+}

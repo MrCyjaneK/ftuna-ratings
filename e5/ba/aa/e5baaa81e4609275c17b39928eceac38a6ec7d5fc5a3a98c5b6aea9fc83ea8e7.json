@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "e5baaa81e4609275c17b39928eceac38a6ec7d5fc5a3a98c5b6aea9fc83ea8e7",
+  "key": "chum/5.2_i486/i486/donnie-1.1-1.2.1.bso.i486.rpm",
+  "name": "donnie",
+  "rpm_version": "1.1",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/donnie.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
+    }
+  ]
+}

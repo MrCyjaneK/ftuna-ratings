@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "071976827a3a7b2a43c90335838023be748296ae9fdce8e74ad165c974053cbf",
+  "key": "chum/5.1_i486/i486/fossil-2.28-1.1.1.bso.i486.rpm",
+  "name": "fossil",
+  "rpm_version": "2.28",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "issues": []
+}

@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "8bf8d7a9a438bf6c44a0cdf216752de1d109a67e947040b2ec75758fd802352f",
+  "key": "chum/5.1_i486/i486/presage-2.1.0-1.4.1.bso.i486.rpm",
+  "name": "presage",
+  "rpm_version": "2.1.0",
+  "release": "1.4.1.bso",
+  "arch": "i486",
+  "issues": []
+}

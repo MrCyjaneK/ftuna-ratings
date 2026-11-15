@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "452a663d53d0062a39e12330a8b188a8671d500a6b5cdb46900b9715d4b8355d",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-fiatratio-1.3-1.3.1.bso.armv7hl.rpm",
+  "name": "harbour-fiatratio",
+  "rpm_version": "1.3",
+  "release": "1.3.1.bso",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fiatratio.desktop",
+      "code": "sailjail.permission",
+      "detail": "Documents",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fiatratio.desktop",
+      "code": "sailjail.permission",
+      "detail": "Downloads",
+      "color": "gray"
+    }
+  ]
+}

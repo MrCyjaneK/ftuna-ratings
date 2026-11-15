@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "ad6747b446d882d736ea1a5f011fcbfbed0e18890f0922a11adfac200e1d74f5",
+  "key": "chum/5.1_i486/i486/harbour-fiatagenda-debugsource-2.1-1.2.1.bso.i486.rpm",
+  "name": "harbour-fiatagenda-debugsource",
+  "rpm_version": "2.1",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": []
+}

@@ -1,0 +1,46 @@
+{
+  "version": 7,
+  "sha256": "3ba476c442ed6a4fb6287802fdc306d2c355facef4a128b48a14071101ddd160",
+  "key": "chum/5.2_armv7hl/armv7hl/TailWind-0.3.3-1.1.1.bso.armv7hl.rpm",
+  "name": "TailWind",
+  "rpm_version": "0.3.3",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/de.poetaster.tailwind.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/bin/false systemd=tailwind.service",
+      "color": "green"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/TailWind.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user stop tailwind.service",
+      "color": "red"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/sbin/tailwind",
+      "code": "setgid",
+      "detail": "/usr/sbin/tailwind mode 0102755 user root group privileged file",
+      "color": "red"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/tailwind.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/sbin/tailwind --daemon sandbox=none",
+      "color": "green"
+    }
+  ]
+}

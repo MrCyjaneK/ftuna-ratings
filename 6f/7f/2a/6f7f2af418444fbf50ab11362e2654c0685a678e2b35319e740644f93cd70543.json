@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "6f7f2af418444fbf50ab11362e2654c0685a678e2b35319e740644f93cd70543",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-wordle-debuginfo-1.1.16-1.28.1.bso.armv7hl.rpm",
+  "name": "harbour-wordle-debuginfo",
+  "rpm_version": "1.1.16",
+  "release": "1.28.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

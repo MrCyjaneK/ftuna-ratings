@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "c1b2337e84fa6b3e394cb7a63417946780a39cc9d1633ab435147a470e5369db",
+  "key": "chum/5.1_i486/i486/harbour-fiatratio-1.3-1.3.1.bso.i486.rpm",
+  "name": "harbour-fiatratio",
+  "rpm_version": "1.3",
+  "release": "1.3.1.bso",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fiatratio.desktop",
+      "code": "sailjail.permission",
+      "detail": "Documents",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fiatratio.desktop",
+      "code": "sailjail.permission",
+      "detail": "Downloads",
+      "color": "gray"
+    }
+  ]
+}

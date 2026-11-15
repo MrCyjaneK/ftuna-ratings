@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "97708034672eddd93ff9999ec7c96f9902598b1890e47379c2580b13646d2138",
+  "key": "chum/5.1_armv7hl/armv7hl/presage-debugsource-2.1.0-1.4.1.bso.armv7hl.rpm",
+  "name": "presage-debugsource",
+  "rpm_version": "2.1.0",
+  "release": "1.4.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

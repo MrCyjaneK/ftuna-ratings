@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "532f9475c8b2deb4db6db7bab6308d1fc5a8f9cd9672eeaf6b910bedab00fd98",
+  "key": "chum/5.1_armv7hl/armv7hl/maliit-plugin-presage-debuginfo-1.4.0-1.7.1.bso.armv7hl.rpm",
+  "name": "maliit-plugin-presage-debuginfo",
+  "rpm_version": "1.4.0",
+  "release": "1.7.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

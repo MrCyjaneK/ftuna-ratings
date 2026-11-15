@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "ff590036e67f2f22018e15a9b34180daf01e69a2bc6da8f93aa615d8692bc6bd",
+  "key": "chum/5.2_i486/i486/fossil-debuginfo-2.28-1.1.1.bso.i486.rpm",
+  "name": "fossil-debuginfo",
+  "rpm_version": "2.28",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "issues": []
+}

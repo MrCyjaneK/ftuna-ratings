@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "a36ef7948770406536eb9b60e31f0e70b9065ce7d4f2ddd73c8472f43ac5da59",
+  "key": "chum/5.1_i486/i486/TailWind-debugsource-0.3.3-1.1.1.bso.i486.rpm",
+  "name": "TailWind-debugsource",
+  "rpm_version": "0.3.3",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "issues": []
+}

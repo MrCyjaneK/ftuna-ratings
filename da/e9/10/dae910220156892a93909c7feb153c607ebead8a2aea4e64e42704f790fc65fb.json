@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "dae910220156892a93909c7feb153c607ebead8a2aea4e64e42704f790fc65fb",
+  "key": "chum/5.1_i486/noarch/presage-lang-hu_HU-26.11.14-1.3.1.bso.noarch.rpm",
+  "name": "presage-lang-hu_HU",
+  "rpm_version": "26.11.14",
+  "release": "1.3.1.bso",
+  "arch": "noarch",
+  "issues": []
+}

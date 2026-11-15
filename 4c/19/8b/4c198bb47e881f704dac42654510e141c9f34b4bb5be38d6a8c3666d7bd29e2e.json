@@ -1,0 +1,32 @@
+{
+  "version": 7,
+  "sha256": "4c198bb47e881f704dac42654510e141c9f34b4bb5be38d6a8c3666d7bd29e2e",
+  "key": "chum/5.2_i486/i486/harbour-amazfish-3.0.0-1.17.1.bso.i486.rpm",
+  "name": "harbour-amazfish",
+  "rpm_version": "3.0.0",
+  "release": "1.17.1.bso",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-amazfish-ui.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/harbour-amazfishd",
+      "code": "setgid",
+      "detail": "/usr/bin/harbour-amazfishd mode 0102755 user root group privileged file",
+      "color": "red"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-amazfish.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-amazfishd sandbox=none",
+      "color": "green"
+    }
+  ]
+}

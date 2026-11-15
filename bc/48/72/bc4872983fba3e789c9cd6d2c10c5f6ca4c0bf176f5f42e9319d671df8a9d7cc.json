@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "bc4872983fba3e789c9cd6d2c10c5f6ca4c0bf176f5f42e9319d671df8a9d7cc",
+  "key": "chum/5.1_aarch64/aarch64/donnie-1.1-1.2.1.bso.aarch64.rpm",
+  "name": "donnie",
+  "rpm_version": "1.1",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/donnie.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
+    }
+  ]
+}

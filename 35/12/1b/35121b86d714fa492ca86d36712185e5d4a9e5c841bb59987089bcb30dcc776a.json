@@ -1,0 +1,53 @@
+{
+  "version": 7,
+  "sha256": "35121b86d714fa492ca86d36712185e5d4a9e5c841bb59987089bcb30dcc776a",
+  "key": "chum/5.2_i486/i486/harbour-periscope-0.2.1-1.1.1.bso.i486.rpm",
+  "name": "harbour-periscope",
+  "rpm_version": "0.2.1",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-periscope.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-periscope.desktop",
+      "code": "sailjail.permission",
+      "detail": "Secrets",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-periscope.desktop",
+      "code": "sailjail.permission",
+      "detail": "MediaIndexing",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-periscope.desktop",
+      "code": "sailjail.permission",
+      "detail": "Pictures",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-periscope.desktop",
+      "code": "sailjail.permission",
+      "detail": "Camera",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-periscope.desktop",
+      "code": "sailjail.permission",
+      "detail": "Location",
+      "color": "gray"
+    }
+  ]
+}

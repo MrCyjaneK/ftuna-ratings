@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "a6328bcdb37c4b50b58e74f07e94714232f19166af6607ccdfb80362e5a3eb35",
+  "key": "chum/5.1_aarch64/aarch64/libtree-sitter-devel-0.26.13-1.1.1.bso.aarch64.rpm",
+  "name": "libtree-sitter-devel",
+  "rpm_version": "0.26.13",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

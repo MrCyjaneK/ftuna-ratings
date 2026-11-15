@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "c65ead305cb7764e463d36f9b93b07778cf0545119c7770f25a7b41afe959286",
+  "key": "chum/5.1_armv7hl/armv7hl/owlfish-debuginfo-1.7.0-1.2.1.bso.armv7hl.rpm",
+  "name": "owlfish-debuginfo",
+  "rpm_version": "1.7.0",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

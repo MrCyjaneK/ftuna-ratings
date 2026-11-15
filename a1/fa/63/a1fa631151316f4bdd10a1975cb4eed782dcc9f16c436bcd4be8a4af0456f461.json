@@ -1,0 +1,32 @@
+{
+  "version": 7,
+  "sha256": "a1fa631151316f4bdd10a1975cb4eed782dcc9f16c436bcd4be8a4af0456f461",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-amazfish-3.0.0-1.17.1.bso.armv7hl.rpm",
+  "name": "harbour-amazfish",
+  "rpm_version": "3.0.0",
+  "release": "1.17.1.bso",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-amazfish-ui.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/harbour-amazfishd",
+      "code": "setgid",
+      "detail": "/usr/bin/harbour-amazfishd mode 0102755 user root group privileged file",
+      "color": "red"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-amazfish.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/harbour-amazfishd sandbox=none",
+      "color": "green"
+    }
+  ]
+}

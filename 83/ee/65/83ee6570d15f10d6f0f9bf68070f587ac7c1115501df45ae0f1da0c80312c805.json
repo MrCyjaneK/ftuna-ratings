@@ -1,0 +1,39 @@
+{
+  "version": 7,
+  "sha256": "83ee6570d15f10d6f0f9bf68070f587ac7c1115501df45ae0f1da0c80312c805",
+  "key": "chum/5.2_i486/i486/harbour-yubikey-1.2.5-1.14.1.bso.i486.rpm",
+  "name": "harbour-yubikey",
+  "rpm_version": "1.2.5",
+  "release": "1.14.1.bso",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/etc/dbus-1/system.d/harbour.yubikey.conf",
+      "code": "dbus.policy",
+      "detail": "context=default own",
+      "color": "red"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-yubikey.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=udevadm control --reload-rules ||:",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" == 0 ] ; then; udevadm control --reload-rules ||:; for d in $(getent passwd | cut -d: -f6) ; do",
+      "color": "red"
+    }
+  ]
+}

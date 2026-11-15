@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "7274b7c9d13bfca0925a7fe9cf12b0f3077c6c069f423f09e912944b78a6e273",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-tooterb-debugsource-1.5.2-1.42.1.bso.armv7hl.rpm",
+  "name": "harbour-tooterb-debugsource",
+  "rpm_version": "1.5.2",
+  "release": "1.42.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

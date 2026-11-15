@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "315d672a352251f2df4ff19fe58b2e89abb10bf8f6363502716ed81ede7de0b5",
+  "key": "chum/5.1_i486/i486/tree-sitter-debugsource-0.26.13-1.1.1.bso.i486.rpm",
+  "name": "tree-sitter-debugsource",
+  "rpm_version": "0.26.13",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "issues": []
+}

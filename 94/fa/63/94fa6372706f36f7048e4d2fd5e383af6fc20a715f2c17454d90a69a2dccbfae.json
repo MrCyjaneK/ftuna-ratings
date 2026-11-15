@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "94fa6372706f36f7048e4d2fd5e383af6fc20a715f2c17454d90a69a2dccbfae",
+  "key": "chum/5.2_i486/i486/owlfish-debuginfo-1.7.0-1.2.1.bso.i486.rpm",
+  "name": "owlfish-debuginfo",
+  "rpm_version": "1.7.0",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": []
+}

@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "eff1d049f12cb5cb92ef5229e5512c89573c1c69b9087eeb757fb4cbfb41c208",
+  "key": "chum/5.2_armv7hl/armv7hl/fossil-2.28-1.1.1.bso.armv7hl.rpm",
+  "name": "fossil",
+  "rpm_version": "2.28",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

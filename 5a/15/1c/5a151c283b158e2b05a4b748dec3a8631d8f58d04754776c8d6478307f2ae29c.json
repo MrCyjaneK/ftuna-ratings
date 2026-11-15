@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "5a151c283b158e2b05a4b748dec3a8631d8f58d04754776c8d6478307f2ae29c",
+  "key": "chum/5.2_armv7hl/armv7hl/tree-sitter-debugsource-0.26.13-1.1.1.bso.armv7hl.rpm",
+  "name": "tree-sitter-debugsource",
+  "rpm_version": "0.26.13",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

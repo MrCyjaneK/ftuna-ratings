@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "80de0962c02468b02a8497d85d7fbdff9277cde7e2f3c8b56a0f83259c6daa1b",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-yubikey-debugsource-1.2.5-1.14.1.bso.armv7hl.rpm",
+  "name": "harbour-yubikey-debugsource",
+  "rpm_version": "1.2.5",
+  "release": "1.14.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

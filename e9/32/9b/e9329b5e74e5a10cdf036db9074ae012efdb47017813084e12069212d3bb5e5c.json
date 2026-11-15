@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "e9329b5e74e5a10cdf036db9074ae012efdb47017813084e12069212d3bb5e5c",
+  "key": "chum/5.1_i486/i486/harbour-wordle-debuginfo-1.1.16-1.28.1.bso.i486.rpm",
+  "name": "harbour-wordle-debuginfo",
+  "rpm_version": "1.1.16",
+  "release": "1.28.1.bso",
+  "arch": "i486",
+  "issues": []
+}

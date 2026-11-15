@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "c5da4eb675d78553c02f11989fadaa2ba90eb53480c075268f2c073c7246974a",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-obdfish-0.95-1.1.1.bso.armv7hl.rpm",
+  "name": "harbour-obdfish",
+  "rpm_version": "0.95",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-obdfish.desktop",
+      "code": "sailjail.permission",
+      "detail": "Bluetooth",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-obdfish.desktop",
+      "code": "sailjail.permission",
+      "detail": "Documents",
+      "color": "gray"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "395407be57f30445cc5f9bd8d2b14bcb08a4f388e0d45832fe7f6e1d47f4d4c4",
+  "key": "chum/5.1_i486/i486/libtree-sitter-devel-0.26.13-1.1.1.bso.i486.rpm",
+  "name": "libtree-sitter-devel",
+  "rpm_version": "0.26.13",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "issues": []
+}

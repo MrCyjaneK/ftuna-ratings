@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "f6f57b886d35fe6d8ebb1fa835ce0a61ff1988d03272abe7c5bb551c99516955",
+  "key": "chum/5.1_armv7hl/armv7hl/libtree-sitter-devel-0.26.13-1.1.1.bso.armv7hl.rpm",
+  "name": "libtree-sitter-devel",
+  "rpm_version": "0.26.13",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

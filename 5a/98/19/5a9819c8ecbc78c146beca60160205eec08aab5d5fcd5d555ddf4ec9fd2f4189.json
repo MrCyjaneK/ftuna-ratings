@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "5a9819c8ecbc78c146beca60160205eec08aab5d5fcd5d555ddf4ec9fd2f4189",
+  "key": "chum/5.1_aarch64/aarch64/donnie-debugsource-1.1-1.2.1.bso.aarch64.rpm",
+  "name": "donnie-debugsource",
+  "rpm_version": "1.1",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "87448ca613c825b3ec32f471f23baf5392d0a4fc04c6e273d80215d791a130de",
+  "key": "repo/ftuna-oss/5.1.0.11/aarch64/github.com/mrcyjanek/cargadgetd_shell_basic/cargadgetd-shell-basic-0.0.1-1.aarch64.rpm",
+  "name": "cargadgetd-shell-basic",
+  "rpm_version": "0.0.1",
+  "release": "1",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/cargadgetd_shell_basic",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

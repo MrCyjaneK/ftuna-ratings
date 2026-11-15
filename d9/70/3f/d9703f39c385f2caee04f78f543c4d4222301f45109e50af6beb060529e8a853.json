@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "d9703f39c385f2caee04f78f543c4d4222301f45109e50af6beb060529e8a853",
+  "key": "chum/5.1_aarch64/aarch64/harbour-periscope-debuginfo-0.2.1-1.1.1.bso.aarch64.rpm",
+  "name": "harbour-periscope-debuginfo",
+  "rpm_version": "0.2.1",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

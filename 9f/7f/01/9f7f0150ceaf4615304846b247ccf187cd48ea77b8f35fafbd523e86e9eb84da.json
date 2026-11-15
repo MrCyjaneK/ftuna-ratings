@@ -1,0 +1,46 @@
+{
+  "version": 7,
+  "sha256": "9f7f0150ceaf4615304846b247ccf187cd48ea77b8f35fafbd523e86e9eb84da",
+  "key": "chum/5.1_i486/i486/ghosteel-1.7.1-1.11.1.bso.i486.rpm",
+  "name": "ghosteel",
+  "rpm_version": "1.7.1",
+  "release": "1.11.1.bso",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/com.zackslash.ghosteel.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/ghosteel",
+      "color": "green"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/ghosteel.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/ghosteel.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/ghosteel.desktop",
+      "code": "sailjail.permission",
+      "detail": "Secrets",
+      "color": "gray"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=runuser -u defaultuser -- env XDG_RUNTIME_DIR=/run/user/100000 \\; DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/100000/dbus/user_bus_socket \\; systemctl --user r",
+      "color": "red"
+    }
+  ]
+}

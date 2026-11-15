@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "d1f04c679131ed6047fbbe9465235c8e37e7d5ca04dfb58c1a54f1033b7d783a",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-lappu-debuginfo-0.2.1-1.2.1.bso.armv7hl.rpm",
+  "name": "harbour-lappu-debuginfo",
+  "rpm_version": "0.2.1",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

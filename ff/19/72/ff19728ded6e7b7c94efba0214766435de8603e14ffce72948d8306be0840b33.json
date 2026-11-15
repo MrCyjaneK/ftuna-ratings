@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "ff19728ded6e7b7c94efba0214766435de8603e14ffce72948d8306be0840b33",
+  "key": "chum/5.2_i486/noarch/keyboard-presage-sv_SE-1.4.0-1.5.1.bso.noarch.rpm",
+  "name": "keyboard-presage-sv_SE",
+  "rpm_version": "1.4.0",
+  "release": "1.5.1.bso",
+  "arch": "noarch",
+  "issues": []
+}

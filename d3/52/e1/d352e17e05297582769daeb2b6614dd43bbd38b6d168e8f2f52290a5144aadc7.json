@@ -1,0 +1,39 @@
+{
+  "version": 7,
+  "sha256": "d352e17e05297582769daeb2b6614dd43bbd38b6d168e8f2f52290a5144aadc7",
+  "key": "chum/5.1_i486/i486/harbour-fiatagenda-2.1-1.2.1.bso.i486.rpm",
+  "name": "harbour-fiatagenda",
+  "rpm_version": "2.1",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fiatagenda.desktop",
+      "code": "sailjail.permission",
+      "detail": "Calendar",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fiatagenda.desktop",
+      "code": "sailjail.permission",
+      "detail": "Privileged",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fiatagenda.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fiatagenda.desktop",
+      "code": "sailjail.permission",
+      "detail": "Documents",
+      "color": "gray"
+    }
+  ]
+}

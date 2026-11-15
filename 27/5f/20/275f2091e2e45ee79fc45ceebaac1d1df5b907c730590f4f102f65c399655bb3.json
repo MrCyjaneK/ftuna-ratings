@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "275f2091e2e45ee79fc45ceebaac1d1df5b907c730590f4f102f65c399655bb3",
+  "key": "chum/5.1_aarch64/aarch64/harbour-obdfish-debugsource-0.95-1.1.1.bso.aarch64.rpm",
+  "name": "harbour-obdfish-debugsource",
+  "rpm_version": "0.95",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

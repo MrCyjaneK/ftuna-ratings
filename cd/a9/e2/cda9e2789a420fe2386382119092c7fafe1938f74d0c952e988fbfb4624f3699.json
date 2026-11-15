@@ -1,0 +1,53 @@
+{
+  "version": 7,
+  "sha256": "cda9e2789a420fe2386382119092c7fafe1938f74d0c952e988fbfb4624f3699",
+  "key": "chum/5.2_armv7hl/noarch/harbour-find-my-device-daemon-2.2-1.3.1.bso.noarch.rpm",
+  "name": "harbour-find-my-device-daemon",
+  "rpm_version": "2.2",
+  "release": "1.3.1.bso",
+  "arch": "noarch",
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl --global enable harbour-find-my-device-daemon-gps.service \u003e/dev/null 2\u003e\u00261 || :; systemctl --global enable harbour-find-my-device-daemon-cmd.service \u003e/",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" = \"0\" ]; then; systemctl --global disable harbour-find-my-device-daemon-gps.service \u003e/dev/null 2\u003e\u00261 || :; systemctl --global disable harbour-find-my-d",
+      "color": "red"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/harbour-find-my-device-priv.path",
+      "code": "systemd.path",
+      "detail": "scope=system activates=harbour-find-my-device-priv.service",
+      "color": "red"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/harbour-find-my-device-priv.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/bin/python3 /usr/share/harbour-find-my-device-daemon/priv_service.py sandbox=none",
+      "color": "red"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-find-my-device-daemon-cmd.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/python3 /usr/share/harbour-find-my-device-daemon/daemon_cmd.py sandbox=none",
+      "color": "green"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-find-my-device-daemon-gps.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/python3 /usr/share/harbour-find-my-device-daemon/daemon_gps.py sandbox=none",
+      "color": "green"
+    }
+  ]
+}

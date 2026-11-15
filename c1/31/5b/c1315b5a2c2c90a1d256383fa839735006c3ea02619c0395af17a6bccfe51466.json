@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "c1315b5a2c2c90a1d256383fa839735006c3ea02619c0395af17a6bccfe51466",
+  "key": "chum/5.1_armv7hl/armv7hl/fossil-debuginfo-2.28-1.1.1.bso.armv7hl.rpm",
+  "name": "fossil-debuginfo",
+  "rpm_version": "2.28",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

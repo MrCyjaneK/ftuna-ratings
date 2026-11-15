@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "932ffba3ce8c9b5cb0b7fcea62440852cb2013ec20a34dbf87b67704365e6e9b",
+  "key": "chum/5.1_aarch64/noarch/presage-lang-es_ES-26.11.14-1.3.1.bso.noarch.rpm",
+  "name": "presage-lang-es_ES",
+  "rpm_version": "26.11.14",
+  "release": "1.3.1.bso",
+  "arch": "noarch",
+  "issues": []
+}

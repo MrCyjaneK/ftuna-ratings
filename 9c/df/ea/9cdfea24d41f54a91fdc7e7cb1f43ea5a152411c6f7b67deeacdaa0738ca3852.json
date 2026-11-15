@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "9cdfea24d41f54a91fdc7e7cb1f43ea5a152411c6f7b67deeacdaa0738ca3852",
+  "key": "chum/5.2_i486/i486/harbour-yubikey-debuginfo-1.2.5-1.14.1.bso.i486.rpm",
+  "name": "harbour-yubikey-debuginfo",
+  "rpm_version": "1.2.5",
+  "release": "1.14.1.bso",
+  "arch": "i486",
+  "issues": []
+}

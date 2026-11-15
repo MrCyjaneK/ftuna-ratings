@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "a5fbb399c5e6a322bc4c34eab40a37b571b033c23e6f02a026a8eb1c89e0f5e7",
+  "key": "chum/5.1_i486/i486/harbour-fiatcor-debuginfo-1.2-1.2.1.bso.i486.rpm",
+  "name": "harbour-fiatcor-debuginfo",
+  "rpm_version": "1.2",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": []
+}

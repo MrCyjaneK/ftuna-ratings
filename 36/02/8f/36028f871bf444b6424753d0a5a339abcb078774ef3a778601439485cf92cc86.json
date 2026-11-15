@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "36028f871bf444b6424753d0a5a339abcb078774ef3a778601439485cf92cc86",
+  "key": "chum/5.2_aarch64/aarch64/harbour-fiatratio-debugsource-1.3-1.3.1.bso.aarch64.rpm",
+  "name": "harbour-fiatratio-debugsource",
+  "rpm_version": "1.3",
+  "release": "1.3.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

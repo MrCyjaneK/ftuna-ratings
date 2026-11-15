@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "6e019cde2e8fbc9ce5601a20d61902f2673e5c7231a429ce78a0803bbf333495",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-amazfish-debugsource-3.0.0-1.17.1.bso.armv7hl.rpm",
+  "name": "harbour-amazfish-debugsource",
+  "rpm_version": "3.0.0",
+  "release": "1.17.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

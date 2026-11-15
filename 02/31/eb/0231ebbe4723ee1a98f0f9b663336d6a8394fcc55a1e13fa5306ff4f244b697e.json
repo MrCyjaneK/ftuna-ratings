@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "0231ebbe4723ee1a98f0f9b663336d6a8394fcc55a1e13fa5306ff4f244b697e",
+  "key": "chum/5.1_aarch64/aarch64/harbour-fiatagenda-debugsource-2.1-1.2.1.bso.aarch64.rpm",
+  "name": "harbour-fiatagenda-debugsource",
+  "rpm_version": "2.1",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

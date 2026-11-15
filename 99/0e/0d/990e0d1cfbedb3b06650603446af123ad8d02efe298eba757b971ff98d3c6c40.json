@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "990e0d1cfbedb3b06650603446af123ad8d02efe298eba757b971ff98d3c6c40",
+  "key": "chum/5.2_i486/i486/donnie-debugsource-1.1-1.2.1.bso.i486.rpm",
+  "name": "donnie-debugsource",
+  "rpm_version": "1.1",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": []
+}

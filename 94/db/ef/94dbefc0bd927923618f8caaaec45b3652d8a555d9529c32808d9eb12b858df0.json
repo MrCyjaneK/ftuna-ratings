@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "94dbefc0bd927923618f8caaaec45b3652d8a555d9529c32808d9eb12b858df0",
+  "key": "chum/5.2_aarch64/aarch64/maliit-plugin-presage-debuginfo-1.4.0-1.7.1.bso.aarch64.rpm",
+  "name": "maliit-plugin-presage-debuginfo",
+  "rpm_version": "1.4.0",
+  "release": "1.7.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

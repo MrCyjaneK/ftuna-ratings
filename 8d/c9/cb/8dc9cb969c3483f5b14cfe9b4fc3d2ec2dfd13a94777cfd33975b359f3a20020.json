@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "8dc9cb969c3483f5b14cfe9b4fc3d2ec2dfd13a94777cfd33975b359f3a20020",
+  "key": "chum/5.1_aarch64/aarch64/harbour-wordle-debugsource-1.1.16-1.28.1.bso.aarch64.rpm",
+  "name": "harbour-wordle-debugsource",
+  "rpm_version": "1.1.16",
+  "release": "1.28.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

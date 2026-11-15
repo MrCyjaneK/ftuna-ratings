@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "346381c3a15de89bb9f9a3049d010dc9fa8eaf4a1f7e504c43b4b7b9d10d0ffd",
+  "key": "chum/5.1_aarch64/aarch64/libpresage1-2.1.0-1.4.1.bso.aarch64.rpm",
+  "name": "libpresage1",
+  "rpm_version": "2.1.0",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "c2a7af5f1f2ccafe9588ad15c5922f8b04d91524e3275fb5e0a32b9c27b2bc60",
+  "key": "chum/5.2_aarch64/aarch64/harbour-lappu-debugsource-0.2.1-1.2.1.bso.aarch64.rpm",
+  "name": "harbour-lappu-debugsource",
+  "rpm_version": "0.2.1",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

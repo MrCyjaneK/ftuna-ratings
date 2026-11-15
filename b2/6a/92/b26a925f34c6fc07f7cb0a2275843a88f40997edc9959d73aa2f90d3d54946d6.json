@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "b26a925f34c6fc07f7cb0a2275843a88f40997edc9959d73aa2f90d3d54946d6",
+  "key": "chum/5.1_aarch64/aarch64/presage-data-2.1.0-1.4.1.bso.aarch64.rpm",
+  "name": "presage-data",
+  "rpm_version": "2.1.0",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

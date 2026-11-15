@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "6cce6410935facc4f794d9e8b044eeeab1cb22273da0f70fbbb97b4707687b59",
+  "key": "chum/5.1_i486/i486/harbour-periscope-debugsource-0.2.1-1.1.1.bso.i486.rpm",
+  "name": "harbour-periscope-debugsource",
+  "rpm_version": "0.2.1",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "issues": []
+}

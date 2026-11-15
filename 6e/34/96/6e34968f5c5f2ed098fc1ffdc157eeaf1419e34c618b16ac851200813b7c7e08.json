@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "6e34968f5c5f2ed098fc1ffdc157eeaf1419e34c618b16ac851200813b7c7e08",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-fiatcor-1.2-1.2.1.bso.armv7hl.rpm",
+  "name": "harbour-fiatcor",
+  "rpm_version": "1.2",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fiatcor.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio",
+      "color": "gray"
+    }
+  ]
+}

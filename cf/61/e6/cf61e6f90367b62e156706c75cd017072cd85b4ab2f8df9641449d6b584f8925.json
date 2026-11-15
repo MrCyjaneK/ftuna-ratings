@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "cf61e6f90367b62e156706c75cd017072cd85b4ab2f8df9641449d6b584f8925",
+  "key": "chum/5.2_aarch64/noarch/keyboard-presage-de_DE-1.4.0-1.5.1.bso.noarch.rpm",
+  "name": "keyboard-presage-de_DE",
+  "rpm_version": "1.4.0",
+  "release": "1.5.1.bso",
+  "arch": "noarch",
+  "issues": []
+}

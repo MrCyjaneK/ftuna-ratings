@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "383313d7b44e941c826a48b0622b17d2453efe9f61dfff0e33d4d2a05046a348",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-fiatagenda-debuginfo-2.1-1.2.1.bso.armv7hl.rpm",
+  "name": "harbour-fiatagenda-debuginfo",
+  "rpm_version": "2.1",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

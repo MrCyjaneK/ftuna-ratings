@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "cf15d3469ca756c5aa19d21f8c9fb36cc53e5d449452b01d47a8e28d6582e2da",
+  "key": "chum/5.1_aarch64/aarch64/TailWind-debuginfo-0.3.3-1.1.1.bso.aarch64.rpm",
+  "name": "TailWind-debuginfo",
+  "rpm_version": "0.3.3",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

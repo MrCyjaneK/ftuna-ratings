@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "141c46d82078a85bbeeb8ad0295efcac7830c994f792bded17579d705ee702b8",
+  "key": "chum/5.1_armv7hl/armv7hl/donnie-debugsource-1.1-1.2.1.bso.armv7hl.rpm",
+  "name": "donnie-debugsource",
+  "rpm_version": "1.1",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

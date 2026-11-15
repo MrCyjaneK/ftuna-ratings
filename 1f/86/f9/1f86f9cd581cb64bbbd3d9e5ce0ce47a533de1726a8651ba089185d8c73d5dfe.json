@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "1f86f9cd581cb64bbbd3d9e5ce0ce47a533de1726a8651ba089185d8c73d5dfe",
+  "key": "chum/5.2_armv7hl/armv7hl/donnie-1.1-1.2.1.bso.armv7hl.rpm",
+  "name": "donnie",
+  "rpm_version": "1.1",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/donnie.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
+    }
+  ]
+}

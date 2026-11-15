@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "941aecb6b7ed82be0183c439c4c9f2a03318bf790ce4270c82737e25fccf4e2c",
+  "key": "chum/5.1_i486/noarch/keyboard-presage-cs_CZ-1.4.0-1.5.1.bso.noarch.rpm",
+  "name": "keyboard-presage-cs_CZ",
+  "rpm_version": "1.4.0",
+  "release": "1.5.1.bso",
+  "arch": "noarch",
+  "issues": []
+}

@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "6969ba283cbaf8d7716e516781abd1d558392f3b7e986ae9d0c7f07dc75c0fad",
+  "key": "chum/5.1_aarch64/aarch64/fossil-debuginfo-2.28-1.1.1.bso.aarch64.rpm",
+  "name": "fossil-debuginfo",
+  "rpm_version": "2.28",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

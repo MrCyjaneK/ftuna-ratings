@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "19b6936b943a6122867772c2e3975984143fc1fd5e7e7d962765e4814669c9bb",
+  "key": "chum/5.1_i486/noarch/keyboard-presage-fi_FI-1.4.0-1.5.1.bso.noarch.rpm",
+  "name": "keyboard-presage-fi_FI",
+  "rpm_version": "1.4.0",
+  "release": "1.5.1.bso",
+  "arch": "noarch",
+  "issues": []
+}

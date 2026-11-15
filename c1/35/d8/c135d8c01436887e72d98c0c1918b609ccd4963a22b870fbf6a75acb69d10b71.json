@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "c135d8c01436887e72d98c0c1918b609ccd4963a22b870fbf6a75acb69d10b71",
+  "key": "chum/5.1_aarch64/aarch64/presage-debugsource-2.1.0-1.4.1.bso.aarch64.rpm",
+  "name": "presage-debugsource",
+  "rpm_version": "2.1.0",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

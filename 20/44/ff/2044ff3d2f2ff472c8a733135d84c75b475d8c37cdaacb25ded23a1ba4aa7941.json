@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "2044ff3d2f2ff472c8a733135d84c75b475d8c37cdaacb25ded23a1ba4aa7941",
+  "key": "chum/5.1_i486/i486/maliit-plugin-presage-debuginfo-1.4.0-1.7.1.bso.i486.rpm",
+  "name": "maliit-plugin-presage-debuginfo",
+  "rpm_version": "1.4.0",
+  "release": "1.7.1.bso",
+  "arch": "i486",
+  "issues": []
+}

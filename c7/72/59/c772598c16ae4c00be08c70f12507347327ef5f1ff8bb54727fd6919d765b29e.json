@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "c772598c16ae4c00be08c70f12507347327ef5f1ff8bb54727fd6919d765b29e",
+  "key": "chum/5.2_armv7hl/armv7hl/TailWind-debuginfo-0.3.3-1.1.1.bso.armv7hl.rpm",
+  "name": "TailWind-debuginfo",
+  "rpm_version": "0.3.3",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

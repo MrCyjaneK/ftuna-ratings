@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "b29ee2456f7f6218f79257b9b3bac1d7f36194bc99c565da823b3834c1a83193",
+  "key": "chum/5.1_aarch64/aarch64/harbour-fiatcor-debugsource-1.2-1.2.1.bso.aarch64.rpm",
+  "name": "harbour-fiatcor-debugsource",
+  "rpm_version": "1.2",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

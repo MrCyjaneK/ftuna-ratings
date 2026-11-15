@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "15d8e8eebbbf978a0284cd79325beea7cdd89233bf5cc79eea091945120e9f0e",
+  "key": "chum/5.1_armv7hl/armv7hl/maliit-plugin-presage-1.4.0-1.7.1.bso.armv7hl.rpm",
+  "name": "maliit-plugin-presage",
+  "rpm_version": "1.4.0",
+  "release": "1.7.1.bso",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user restart maliit-server.service || true",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user restart maliit-server.service || true",
+      "color": "red"
+    }
+  ]
+}

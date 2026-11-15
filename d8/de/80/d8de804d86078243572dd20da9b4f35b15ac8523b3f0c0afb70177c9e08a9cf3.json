@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "d8de804d86078243572dd20da9b4f35b15ac8523b3f0c0afb70177c9e08a9cf3",
+  "key": "chum/5.2_aarch64/aarch64/tree-sitter-debugsource-0.26.13-1.1.1.bso.aarch64.rpm",
+  "name": "tree-sitter-debugsource",
+  "rpm_version": "0.26.13",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

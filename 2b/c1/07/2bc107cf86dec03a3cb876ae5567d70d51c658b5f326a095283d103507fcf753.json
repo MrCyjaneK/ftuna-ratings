@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "2bc107cf86dec03a3cb876ae5567d70d51c658b5f326a095283d103507fcf753",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-fiatcor-debuginfo-1.2-1.2.1.bso.armv7hl.rpm",
+  "name": "harbour-fiatcor-debuginfo",
+  "rpm_version": "1.2",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "b02eafae35985a83295d36888965dc9d6bef00561849f98c585e3ca0ea79711b",
+  "key": "chum/5.1_armv7hl/armv7hl/presage-data-2.1.0-1.4.1.bso.armv7hl.rpm",
+  "name": "presage-data",
+  "rpm_version": "2.1.0",
+  "release": "1.4.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

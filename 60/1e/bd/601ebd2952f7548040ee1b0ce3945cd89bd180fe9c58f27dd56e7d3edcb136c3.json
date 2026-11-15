@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "601ebd2952f7548040ee1b0ce3945cd89bd180fe9c58f27dd56e7d3edcb136c3",
+  "key": "chum/5.1_aarch64/aarch64/harbour-fiatcor-1.2-1.2.1.bso.aarch64.rpm",
+  "name": "harbour-fiatcor",
+  "rpm_version": "1.2",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fiatcor.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio",
+      "color": "gray"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "a9130c9cbb88a434266634cce73873a7aa0ecb34eb987b47ef181e12280c17d9",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-obdfish-debuginfo-0.95-1.1.1.bso.armv7hl.rpm",
+  "name": "harbour-obdfish-debuginfo",
+  "rpm_version": "0.95",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

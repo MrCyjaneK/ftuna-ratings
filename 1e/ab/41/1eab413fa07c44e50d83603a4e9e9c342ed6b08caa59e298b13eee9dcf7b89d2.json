@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "1eab413fa07c44e50d83603a4e9e9c342ed6b08caa59e298b13eee9dcf7b89d2",
+  "key": "chum/5.1_i486/i486/libpresage-devel-2.1.0-1.4.1.bso.i486.rpm",
+  "name": "libpresage-devel",
+  "rpm_version": "2.1.0",
+  "release": "1.4.1.bso",
+  "arch": "i486",
+  "issues": []
+}

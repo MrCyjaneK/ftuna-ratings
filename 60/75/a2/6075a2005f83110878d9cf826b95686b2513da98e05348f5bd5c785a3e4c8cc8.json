@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "6075a2005f83110878d9cf826b95686b2513da98e05348f5bd5c785a3e4c8cc8",
+  "key": "chum/5.1_i486/i486/harbour-amazfish-debugsource-3.0.0-1.17.1.bso.i486.rpm",
+  "name": "harbour-amazfish-debugsource",
+  "rpm_version": "3.0.0",
+  "release": "1.17.1.bso",
+  "arch": "i486",
+  "issues": []
+}

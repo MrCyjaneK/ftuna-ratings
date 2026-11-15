@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "e87154e84c4710232c297c5e0e685f6e59fe374a2207f4e90c131c83de9bebaf",
+  "key": "chum/5.2_armv7hl/armv7hl/libpresage-devel-2.1.0-1.4.1.bso.armv7hl.rpm",
+  "name": "libpresage-devel",
+  "rpm_version": "2.1.0",
+  "release": "1.4.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

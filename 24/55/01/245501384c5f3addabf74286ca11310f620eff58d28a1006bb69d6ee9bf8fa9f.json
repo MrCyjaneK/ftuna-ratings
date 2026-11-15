@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "245501384c5f3addabf74286ca11310f620eff58d28a1006bb69d6ee9bf8fa9f",
+  "key": "chum/5.1_i486/i486/maliit-plugin-presage-1.4.0-1.7.1.bso.i486.rpm",
+  "name": "maliit-plugin-presage",
+  "rpm_version": "1.4.0",
+  "release": "1.7.1.bso",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user restart maliit-server.service || true",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user restart maliit-server.service || true",
+      "color": "red"
+    }
+  ]
+}

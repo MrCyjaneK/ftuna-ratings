@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "d532ac3d380d92fbf757ea3d5373fcb1360290034b0468365efd6b72ac1a0560",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-periscope-debugsource-0.2.1-1.1.1.bso.armv7hl.rpm",
+  "name": "harbour-periscope-debugsource",
+  "rpm_version": "0.2.1",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

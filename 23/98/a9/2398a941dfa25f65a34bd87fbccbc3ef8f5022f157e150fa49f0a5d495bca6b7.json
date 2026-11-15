@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "2398a941dfa25f65a34bd87fbccbc3ef8f5022f157e150fa49f0a5d495bca6b7",
+  "key": "chum/5.1_i486/i486/harbour-tooterb-debugsource-1.5.2-1.42.1.bso.i486.rpm",
+  "name": "harbour-tooterb-debugsource",
+  "rpm_version": "1.5.2",
+  "release": "1.42.1.bso",
+  "arch": "i486",
+  "issues": []
+}

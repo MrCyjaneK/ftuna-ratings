@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "035a0ae03dd72bcf6c6add4e221952c43d4077a83df374fbfd2bf21115b6cc96",
+  "key": "chum/5.1_i486/noarch/libpresage-doc-2.1.0-1.4.1.bso.noarch.rpm",
+  "name": "libpresage-doc",
+  "rpm_version": "2.1.0",
+  "release": "1.4.1.bso",
+  "arch": "noarch",
+  "issues": []
+}
