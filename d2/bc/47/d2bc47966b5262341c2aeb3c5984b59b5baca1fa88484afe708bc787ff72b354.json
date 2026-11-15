@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "d2bc47966b5262341c2aeb3c5984b59b5baca1fa88484afe708bc787ff72b354",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/mrcyjanek/cargadgetd_shell_neon/cargadgetd-shell-neon-0.0.1-1.20261115115956.1.i486.rpm",
+  "name": "cargadgetd-shell-neon",
+  "rpm_version": "0.0.1",
+  "release": "1.20261115115956.1",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/cargadgetd_shell_neon",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}
