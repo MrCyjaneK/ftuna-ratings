@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "42e2f4afe1421f5d5fec803511df339cc909b7c6b96b82a5df85369010a09425",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/mrcyjanek/cargadgetd_app_maps/cargadgetd-plugin-maps-debuginfo-0.0.1-1.20261115092131.1.i486.rpm",
+  "name": "cargadgetd-plugin-maps-debuginfo",
+  "rpm_version": "0.0.1",
+  "release": "1.20261115092131.1",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/cargadgetd_app_maps",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

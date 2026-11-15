@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "0c2f799d353ae824f6be97d5285dcaae479b8b8ed0c879b3b63e876e3f26ff4b",
+  "key": "repo/ftuna-oss/5.1.0.11/aarch64/github.com/mrcyjanek/cargadgetd_app_hello/cargadgetd-plugin-hello-0.0.1-1.20261115092923.1.aarch64.rpm",
+  "name": "cargadgetd-plugin-hello",
+  "rpm_version": "0.0.1",
+  "release": "1.20261115092923.1",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/cargadgetd_app_hello",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

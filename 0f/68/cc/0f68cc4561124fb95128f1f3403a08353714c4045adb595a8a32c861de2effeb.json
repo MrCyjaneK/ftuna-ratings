@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "0f68cc4561124fb95128f1f3403a08353714c4045adb595a8a32c861de2effeb",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/mrcyjanek/cargadgetd_app_hello/cargadgetd-plugin-hello-debugsource-0.0.1-1.20261115092923.1.i486.rpm",
+  "name": "cargadgetd-plugin-hello-debugsource",
+  "rpm_version": "0.0.1",
+  "release": "1.20261115092923.1",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/cargadgetd_app_hello",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

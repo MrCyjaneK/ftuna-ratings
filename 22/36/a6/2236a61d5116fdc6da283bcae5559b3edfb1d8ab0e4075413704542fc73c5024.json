@@ -1,0 +1,32 @@
+{
+  "version": 7,
+  "sha256": "2236a61d5116fdc6da283bcae5559b3edfb1d8ab0e4075413704542fc73c5024",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/mrcyjanek/cargadgetd_app_link/cargadgetd-plugin-link-0.0.1-1.20261115092443.1.i486.rpm",
+  "name": "cargadgetd-plugin-link",
+  "rpm_version": "0.0.1",
+  "release": "1.20261115092443.1",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "setuid",
+      "path": "/usr/share/cargadgetd/bin/cargadgetd-linkcap",
+      "code": "setuid",
+      "detail": "/usr/share/cargadgetd/bin/cargadgetd-linkcap mode 0104755 user root group root file",
+      "color": "red"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/share/cargadgetd/bin/cargadgetd-linktouch",
+      "code": "setuid",
+      "detail": "/usr/share/cargadgetd/bin/cargadgetd-linktouch mode 0104755 user root group root file",
+      "color": "red"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/cargadgetd_app_link",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}
