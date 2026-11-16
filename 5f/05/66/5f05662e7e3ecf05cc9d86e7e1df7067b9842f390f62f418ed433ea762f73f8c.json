@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "5f05662e7e3ecf05cc9d86e7e1df7067b9842f390f62f418ed433ea762f73f8c",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-immich-debuginfo-0.9.0-1.11.1.bso.armv7hl.rpm",
+  "name": "harbour-immich-debuginfo",
+  "rpm_version": "0.9.0",
+  "release": "1.11.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

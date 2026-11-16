@@ -1,0 +1,60 @@
+{
+  "version": 7,
+  "sha256": "5167c80b41863e0224444f3944a1fee5b53601201d77fd92e174ba6a0691d0aa",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/mrcyjanek/cargadgetd/cargadgetd-0.1-5.20261115161316.1.i486.rpm",
+  "name": "cargadgetd",
+  "rpm_version": "0.1",
+  "release": "5.20261115161316.1",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/cargadgetd.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :; systemctl disable --now cargadgetd-usb-mode.service \u003e/dev/null 2\u003e\u00261 || :; systemctl disable --now cargadgetd-usb-w",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; systemctl disable --now cargadgetd-usb-mode.service \u003e/dev/null 2\u003e\u00261 || :; systemctl disable --now cargadgetd-usb-whitelist.service \u003e/de",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :; systemctl try-restart usb-moded.service \u003e/dev/null 2\u003e\u00261 || :",
+      "color": "red"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/share/cargadgetd/bin/cargadgetd-gadget",
+      "code": "setuid",
+      "detail": "/usr/share/cargadgetd/bin/cargadgetd-gadget mode 0104755 user root group root file",
+      "color": "red"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/cargadgetd-aoa.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/usr/share/cargadgetd/usb-aoa-launch.sh --fg sandbox=none",
+      "color": "red"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/cargadgetd",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

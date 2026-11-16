@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "cdb3c7eeb592a25015fe4fd74d6e9e18181e024a1ef23038de9f89a5b0ae8f08",
+  "key": "repo/ftuna-oss/5.1.0.11/armv7hl/github.com/michal-szczepaniak/nanofiles/nanofiles-debugsource-1.4.4-1.20261109210702.33.armv7hl.rpm",
+  "name": "nanofiles-debugsource",
+  "rpm_version": "1.4.4",
+  "release": "1.20261109210702.33",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/nanofiles",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "ef43c602a2918d29ab6802544d9ca8391012af84d8acbb6015e509a9320621f0",
+  "key": "repo/ftuna-oss/5.1.0.11/armv7hl/github.com/mrcyjanek/cargadgetd_app_music/cargadgetd-plugin-music-debuginfo-0.0.1-1.20261115140107.1.armv7hl.rpm",
+  "name": "cargadgetd-plugin-music-debuginfo",
+  "rpm_version": "0.0.1",
+  "release": "1.20261115140107.1",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/cargadgetd_app_music",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

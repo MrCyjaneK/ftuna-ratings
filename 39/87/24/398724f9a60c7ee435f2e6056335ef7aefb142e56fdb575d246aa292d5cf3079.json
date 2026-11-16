@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "398724f9a60c7ee435f2e6056335ef7aefb142e56fdb575d246aa292d5cf3079",
+  "key": "chum/5.1_i486/i486/harbour-immich-debugsource-0.9.0-1.11.1.bso.i486.rpm",
+  "name": "harbour-immich-debugsource",
+  "rpm_version": "0.9.0",
+  "release": "1.11.1.bso",
+  "arch": "i486",
+  "issues": []
+}

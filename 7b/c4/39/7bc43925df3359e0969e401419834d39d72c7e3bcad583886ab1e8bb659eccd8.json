@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "7bc43925df3359e0969e401419834d39d72c7e3bcad583886ab1e8bb659eccd8",
+  "key": "chum/5.1_aarch64/aarch64/harbour-immich-debugsource-0.9.0-1.11.1.bso.aarch64.rpm",
+  "name": "harbour-immich-debugsource",
+  "rpm_version": "0.9.0",
+  "release": "1.11.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

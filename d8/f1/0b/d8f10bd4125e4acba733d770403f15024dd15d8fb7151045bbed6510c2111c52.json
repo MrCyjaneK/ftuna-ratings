@@ -1,0 +1,32 @@
+{
+  "version": 7,
+  "sha256": "d8f10bd4125e4acba733d770403f15024dd15d8fb7151045bbed6510c2111c52",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/michal-szczepaniak/nanofiles/nanofiles-1.4.4-1.20261109210702.33.i486.rpm",
+  "name": "nanofiles",
+  "rpm_version": "1.4.4",
+  "release": "1.20261109210702.33",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/nanofiles.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/bin/nanofiles",
+      "code": "setuid",
+      "detail": "/usr/bin/nanofiles mode 0104755 user root group root file",
+      "color": "red"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/nanofiles",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}
