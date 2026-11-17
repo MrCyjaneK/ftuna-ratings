@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "2b48efd3e18a1c67f2026c5fdbf9b4b8e193e4f7b548c3960e88b37d7e73229e",
+  "key": "chum/5.1_i486/i486/harbour-fillari-debugsource-1.0.12-1.8.1.bso.i486.rpm",
+  "name": "harbour-fillari-debugsource",
+  "rpm_version": "1.0.12",
+  "release": "1.8.1.bso",
+  "arch": "i486",
+  "issues": []
+}

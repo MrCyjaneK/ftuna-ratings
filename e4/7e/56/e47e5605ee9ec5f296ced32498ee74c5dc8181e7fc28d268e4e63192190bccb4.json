@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "e47e5605ee9ec5f296ced32498ee74c5dc8181e7fc28d268e4e63192190bccb4",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-ferry-debuginfo-0.6-1.4.1.bso.armv7hl.rpm",
+  "name": "harbour-ferry-debuginfo",
+  "rpm_version": "0.6",
+  "release": "1.4.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

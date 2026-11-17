@@ -1,0 +1,46 @@
+{
+  "version": 7,
+  "sha256": "ba585245228fea7743e5f4ae31825771576a076174fe930f52f383ae6cab33c7",
+  "key": "chum/5.2_armv7hl/armv7hl/harbour-ferry-0.6-1.4.1.bso.armv7hl.rpm",
+  "name": "harbour-ferry",
+  "rpm_version": "0.6",
+  "release": "1.4.1.bso",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-ferry.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl-user daemon-reload || :",
+      "color": "red"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-ferry-sync.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/bin/python3 /usr/share/harbour-ferry/helper/sync_helper.py sandbox=none",
+      "color": "green"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/harbour-ferry-sync.timer",
+      "code": "systemd.timer",
+      "detail": "scope=user activates=harbour-ferry-sync.service",
+      "color": "green"
+    }
+  ]
+}

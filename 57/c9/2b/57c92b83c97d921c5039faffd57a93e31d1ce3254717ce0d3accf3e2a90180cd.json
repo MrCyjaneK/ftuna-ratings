@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "57c92b83c97d921c5039faffd57a93e31d1ce3254717ce0d3accf3e2a90180cd",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-fillari-debugsource-1.0.12-1.8.1.bso.armv7hl.rpm",
+  "name": "harbour-fillari-debugsource",
+  "rpm_version": "1.0.12",
+  "release": "1.8.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

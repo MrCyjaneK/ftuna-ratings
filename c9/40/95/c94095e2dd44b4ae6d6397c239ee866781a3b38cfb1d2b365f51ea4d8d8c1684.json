@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "c94095e2dd44b4ae6d6397c239ee866781a3b38cfb1d2b365f51ea4d8d8c1684",
+  "key": "chum/5.1_aarch64/aarch64/harbour-fillari-1.0.12-1.8.1.bso.aarch64.rpm",
+  "name": "harbour-fillari",
+  "rpm_version": "1.0.12",
+  "release": "1.8.1.bso",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fillari.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fillari.desktop",
+      "code": "sailjail.permission",
+      "detail": "NFC",
+      "color": "gray"
+    }
+  ]
+}

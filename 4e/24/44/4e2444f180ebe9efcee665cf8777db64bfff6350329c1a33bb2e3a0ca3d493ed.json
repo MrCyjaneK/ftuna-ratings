@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "4e2444f180ebe9efcee665cf8777db64bfff6350329c1a33bb2e3a0ca3d493ed",
+  "key": "chum/5.2_aarch64/aarch64/harbour-ferry-debuginfo-0.6-1.4.1.bso.aarch64.rpm",
+  "name": "harbour-ferry-debuginfo",
+  "rpm_version": "0.6",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

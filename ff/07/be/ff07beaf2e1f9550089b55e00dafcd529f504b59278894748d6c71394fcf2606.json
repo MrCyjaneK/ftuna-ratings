@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "ff07beaf2e1f9550089b55e00dafcd529f504b59278894748d6c71394fcf2606",
+  "key": "chum/5.1_aarch64/aarch64/harbour-fillari-debugsource-1.0.12-1.8.1.bso.aarch64.rpm",
+  "name": "harbour-fillari-debugsource",
+  "rpm_version": "1.0.12",
+  "release": "1.8.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

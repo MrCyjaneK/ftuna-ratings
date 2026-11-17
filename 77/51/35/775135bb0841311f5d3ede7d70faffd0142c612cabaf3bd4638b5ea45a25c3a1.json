@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "775135bb0841311f5d3ede7d70faffd0142c612cabaf3bd4638b5ea45a25c3a1",
+  "key": "chum/5.2_i486/i486/harbour-ferry-debuginfo-0.6-1.4.1.bso.i486.rpm",
+  "name": "harbour-ferry-debuginfo",
+  "rpm_version": "0.6",
+  "release": "1.4.1.bso",
+  "arch": "i486",
+  "issues": []
+}
