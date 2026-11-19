@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "61f7fb51c2bf18414a9b02ee11a461a3a7b80b508541a869f2d0a96adcd9cd55",
+  "key": "chum/5.2_i486/i486/harbour-fahrplan2-debuginfo-2.1.0-1.25.1.bso.i486.rpm",
+  "name": "harbour-fahrplan2-debuginfo",
+  "rpm_version": "2.1.0",
+  "release": "1.25.1.bso",
+  "arch": "i486",
+  "issues": []
+}

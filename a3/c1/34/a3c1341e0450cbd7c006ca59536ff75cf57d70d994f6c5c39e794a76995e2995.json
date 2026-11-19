@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "a3c1341e0450cbd7c006ca59536ff75cf57d70d994f6c5c39e794a76995e2995",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-fahrplan2-debuginfo-2.1.0-1.25.1.bso.armv7hl.rpm",
+  "name": "harbour-fahrplan2-debuginfo",
+  "rpm_version": "2.1.0",
+  "release": "1.25.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

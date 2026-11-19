@@ -1,0 +1,32 @@
+{
+  "version": 7,
+  "sha256": "fb0775c35a279bc00c93fcf68686b70dde7937077567c47fa02d8cebf23f639b",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-fahrplan2-2.1.0-1.25.1.bso.armv7hl.rpm",
+  "name": "harbour-fahrplan2",
+  "rpm_version": "2.1.0",
+  "release": "1.25.1.bso",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fahrplan2.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fahrplan2.desktop",
+      "code": "sailjail.permission",
+      "detail": "Location",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fahrplan2.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs",
+      "color": "gray"
+    }
+  ]
+}

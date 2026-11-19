@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "efb9a31681f1ca341da0ce0cbbace755be3a4d4544c12289bae1cad16e881e0e",
+  "key": "chum/5.2_i486/i486/scummvm-engines-ultima-2026.4.0+git1-1.4.1.bso.i486.rpm",
+  "name": "scummvm-engines-ultima",
+  "rpm_version": "2026.4.0+git1",
+  "release": "1.4.1.bso",
+  "arch": "i486",
+  "issues": []
+}

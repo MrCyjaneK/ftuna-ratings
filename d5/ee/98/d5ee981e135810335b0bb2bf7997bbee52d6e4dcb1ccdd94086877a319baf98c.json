@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "d5ee981e135810335b0bb2bf7997bbee52d6e4dcb1ccdd94086877a319baf98c",
+  "key": "chum/5.1_aarch64/aarch64/scummvm-debugsource-2026.4.0+git1-1.4.1.bso.aarch64.rpm",
+  "name": "scummvm-debugsource",
+  "rpm_version": "2026.4.0+git1",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

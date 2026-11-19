@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "a47c5eb1a095d1a091e023697e0f0aad8816e572ae231511ce5716d9dea4b9ea",
+  "key": "chum/5.2_aarch64/noarch/scummvm-data-2026.4.0+git1-1.4.1.bso.noarch.rpm",
+  "name": "scummvm-data",
+  "rpm_version": "2026.4.0+git1",
+  "release": "1.4.1.bso",
+  "arch": "noarch",
+  "issues": []
+}

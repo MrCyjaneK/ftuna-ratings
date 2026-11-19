@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "78315ae3c55ddb68163f3e3b9da982a82056910fe34b3a3964fafef16bf0bd4a",
+  "key": "chum/5.1_i486/i486/scummvm-debuginfo-2026.4.0+git1-1.4.1.bso.i486.rpm",
+  "name": "scummvm-debuginfo",
+  "rpm_version": "2026.4.0+git1",
+  "release": "1.4.1.bso",
+  "arch": "i486",
+  "issues": []
+}

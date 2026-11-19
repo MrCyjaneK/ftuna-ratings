@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "01435c995e236d1b51afb427f35f80bbf2698416fed822946b828e865596b3ed",
+  "key": "chum/5.2_aarch64/noarch/soundfont-roland-sc55-2026.4.0+git1-1.4.1.bso.noarch.rpm",
+  "name": "soundfont-roland-sc55",
+  "rpm_version": "2026.4.0+git1",
+  "release": "1.4.1.bso",
+  "arch": "noarch",
+  "issues": []
+}

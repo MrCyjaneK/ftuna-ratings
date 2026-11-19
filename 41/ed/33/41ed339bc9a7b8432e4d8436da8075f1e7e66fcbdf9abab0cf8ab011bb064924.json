@@ -1,0 +1,32 @@
+{
+  "version": 7,
+  "sha256": "41ed339bc9a7b8432e4d8436da8075f1e7e66fcbdf9abab0cf8ab011bb064924",
+  "key": "chum/5.1_i486/i486/harbour-fahrplan2-2.1.0-1.25.1.bso.i486.rpm",
+  "name": "harbour-fahrplan2",
+  "rpm_version": "2.1.0",
+  "release": "1.25.1.bso",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fahrplan2.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fahrplan2.desktop",
+      "code": "sailjail.permission",
+      "detail": "Location",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-fahrplan2.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs",
+      "color": "gray"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "version": 7,
+  "sha256": "9ca3296ee64c8cc0bad3d9047d7771ba6983f15ba597e56444c08d133bfd5927",
+  "key": "chum/5.1_aarch64/noarch/harbour-moremahjong-2.0.3-1.10.1.bso.noarch.rpm",
+  "name": "harbour-moremahjong",
+  "rpm_version": "2.0.3",
+  "release": "1.10.1.bso",
+  "arch": "noarch",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-moremahjong.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-moremahjong.desktop",
+      "code": "sailjail.permission",
+      "detail": "WebView",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-moremahjong.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio",
+      "color": "gray"
+    }
+  ]
+}

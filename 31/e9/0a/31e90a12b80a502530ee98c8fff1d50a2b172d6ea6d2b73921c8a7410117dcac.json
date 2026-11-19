@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "31e90a12b80a502530ee98c8fff1d50a2b172d6ea6d2b73921c8a7410117dcac",
+  "key": "chum/5.1_aarch64/aarch64/scummvm-engines-iv-2026.4.0+git1-1.4.1.bso.aarch64.rpm",
+  "name": "scummvm-engines-iv",
+  "rpm_version": "2026.4.0+git1",
+  "release": "1.4.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}
