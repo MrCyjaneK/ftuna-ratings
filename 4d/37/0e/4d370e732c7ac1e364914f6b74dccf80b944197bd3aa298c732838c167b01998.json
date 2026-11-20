@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "4d370e732c7ac1e364914f6b74dccf80b944197bd3aa298c732838c167b01998",
+  "key": "repo/ftuna-oss/5.2.0.22/i486/github.com/michal-szczepaniak/exawake/exawake-1.1-1.20240228230030.4.i486.rpm",
+  "name": "exawake",
+  "rpm_version": "1.1",
+  "release": "1.20240228230030.4",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/exawake.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/exawake",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

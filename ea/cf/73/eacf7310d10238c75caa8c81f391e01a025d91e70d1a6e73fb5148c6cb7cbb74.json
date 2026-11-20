@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "eacf7310d10238c75caa8c81f391e01a025d91e70d1a6e73fb5148c6cb7cbb74",
+  "key": "repo/ftuna-oss/5.2.0.22/i486/github.com/sailfishos/gcc/gcc-go-debuginfo-13.5.0-2.20261002164208.111.i486.rpm",
+  "name": "gcc-go-debuginfo",
+  "rpm_version": "13.5.0",
+  "release": "2.20261002164208.111",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/sailfishos/gcc",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

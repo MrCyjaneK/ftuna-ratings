@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "be3169a93f747ed41695c34af183ae69988968e3bcb3bb34b7d5e4d10aa20561",
+  "key": "chum/5.1_armv7hl/armv7hl/qt56-nextcloud-client-debugsource-2.6.5+final1-1.2.1.bso.armv7hl.rpm",
+  "name": "qt56-nextcloud-client-debugsource",
+  "rpm_version": "2.6.5+final1",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

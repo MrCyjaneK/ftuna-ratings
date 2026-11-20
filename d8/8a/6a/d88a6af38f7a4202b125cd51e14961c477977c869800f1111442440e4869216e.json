@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "d88a6af38f7a4202b125cd51e14961c477977c869800f1111442440e4869216e",
+  "key": "repo/ftuna-oss/5.2.0.22/armv7hl/github.com/michal-szczepaniak/septitrac/Septitrac-debugsource-1.2.2-1.20240902161505.5.armv7hl.rpm",
+  "name": "Septitrac-debugsource",
+  "rpm_version": "1.2.2",
+  "release": "1.20240902161505.5",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/septitrac",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

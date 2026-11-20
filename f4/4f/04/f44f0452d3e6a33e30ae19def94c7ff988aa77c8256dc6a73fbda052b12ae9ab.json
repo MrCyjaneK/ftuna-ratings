@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "f44f0452d3e6a33e30ae19def94c7ff988aa77c8256dc6a73fbda052b12ae9ab",
+  "key": "repo/ftuna-oss/5.2.0.22/aarch64/github.com/michal-szczepaniak/septitrac/Septitrac-1.2.2-1.20240902161505.5.aarch64.rpm",
+  "name": "Septitrac",
+  "rpm_version": "1.2.2",
+  "release": "1.20240902161505.5",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/Septitrac.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/septitrac",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

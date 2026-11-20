@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "032a6e0cace726187b5696956b4f012f68d13a8b65b81d2093b89829ca7b0270",
+  "key": "repo/ftuna-oss/5.2.0.22/armv7hl/github.com/davea42/libdwarf-code/libdwarf-devel-0.7.0-0.20230519225153.3693.armv7hl.rpm",
+  "name": "libdwarf-devel",
+  "rpm_version": "0.7.0",
+  "release": "0.20230519225153.3693",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/davea42/libdwarf-code",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

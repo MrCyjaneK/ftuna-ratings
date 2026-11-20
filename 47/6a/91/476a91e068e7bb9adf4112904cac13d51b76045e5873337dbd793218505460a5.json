@@ -1,0 +1,32 @@
+{
+  "version": 7,
+  "sha256": "476a91e068e7bb9adf4112904cac13d51b76045e5873337dbd793218505460a5",
+  "key": "repo/ftuna-oss/5.2.0.22/i486/github.com/michal-szczepaniak/outpost/outpost-1.2-1.20240821091800.2.i486.rpm",
+  "name": "outpost",
+  "rpm_version": "1.2",
+  "release": "1.20240821091800.2",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/outpost.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/outpost",
+      "code": "ftuna.built",
+      "detail": "hooks",
+      "color": "red"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/outpost",
+      "code": "ftuna.image",
+      "detail": "20-cpr-deps.sh",
+      "color": "red"
+    }
+  ]
+}

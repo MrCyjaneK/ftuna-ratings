@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "81cd61c8e2e8eda71ccc7be9fa18343c4001e4accdb66079edcb2c3f9c830a62",
+  "key": "repo/ftuna-oss/5.2.0.22/i486/github.com/tdlib/td/tdlib-debugsource-1.8.68-1.20261008210252.18203.i486.rpm",
+  "name": "tdlib-debugsource",
+  "rpm_version": "1.8.68",
+  "release": "1.20261008210252.18203",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/tdlib/td",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

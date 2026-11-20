@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "4238f5255b270d8aed7835f5846bfed0b2a0e5a764d56eb006ffc09b4d935e2f",
+  "key": "chum/5.2_aarch64/aarch64/qt56-nextcloud-client-2.6.5+final1-1.2.1.bso.aarch64.rpm",
+  "name": "qt56-nextcloud-client",
+  "rpm_version": "2.6.5+final1",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

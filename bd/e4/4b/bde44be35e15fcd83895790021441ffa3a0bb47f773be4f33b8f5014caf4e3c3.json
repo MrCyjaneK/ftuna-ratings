@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "bde44be35e15fcd83895790021441ffa3a0bb47f773be4f33b8f5014caf4e3c3",
+  "key": "chum/5.1_armv7hl/noarch/scummvm-fonts-cjk-2026.4.0+git1-1.4.1.bso.noarch.rpm",
+  "name": "scummvm-fonts-cjk",
+  "rpm_version": "2026.4.0+git1",
+  "release": "1.4.1.bso",
+  "arch": "noarch",
+  "issues": []
+}

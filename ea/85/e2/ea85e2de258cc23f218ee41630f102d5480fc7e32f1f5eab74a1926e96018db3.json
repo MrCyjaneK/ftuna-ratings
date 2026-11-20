@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "ea85e2de258cc23f218ee41630f102d5480fc7e32f1f5eab74a1926e96018db3",
+  "key": "repo/ftuna-oss/5.2.0.22/i486/github.com/cisco/openh264/libopenh264-7-2.3.1-0.20220921005844.5185.i486.rpm",
+  "name": "libopenh264-7",
+  "rpm_version": "2.3.1",
+  "release": "0.20220921005844.5185",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/cisco/openh264",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

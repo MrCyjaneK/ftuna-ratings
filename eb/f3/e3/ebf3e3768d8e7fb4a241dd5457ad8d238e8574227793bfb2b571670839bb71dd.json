@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "ebf3e3768d8e7fb4a241dd5457ad8d238e8574227793bfb2b571670839bb71dd",
+  "key": "repo/ftuna-oss/5.2.0.22/aarch64/github.com/abseil/abseil-cpp/abseil-cpp-devel-20210324.2-0.20210601145249.694.aarch64.rpm",
+  "name": "abseil-cpp-devel",
+  "rpm_version": "20210324.2",
+  "release": "0.20210601145249.694",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/abseil/abseil-cpp",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

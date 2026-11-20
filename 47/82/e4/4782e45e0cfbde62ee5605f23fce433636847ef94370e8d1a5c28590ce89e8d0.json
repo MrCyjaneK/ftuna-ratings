@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "4782e45e0cfbde62ee5605f23fce433636847ef94370e8d1a5c28590ce89e8d0",
+  "key": "repo/ftuna-oss/5.2.0.22/armv7hl/github.com/piggz/harbour-advanced-camera/harbour-advanced-camera-debuginfo-0.9.5-1.20260912100943.293.armv7hl.rpm",
+  "name": "harbour-advanced-camera-debuginfo",
+  "rpm_version": "0.9.5",
+  "release": "1.20260912100943.293",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/piggz/harbour-advanced-camera",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

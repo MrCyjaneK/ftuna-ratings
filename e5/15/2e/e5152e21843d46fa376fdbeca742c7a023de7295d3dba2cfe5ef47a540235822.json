@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "e5152e21843d46fa376fdbeca742c7a023de7295d3dba2cfe5ef47a540235822",
+  "key": "chum/5.1_armv7hl/armv7hl/scummvm-engines-iii-2026.4.0+git1-1.4.1.bso.armv7hl.rpm",
+  "name": "scummvm-engines-iii",
+  "rpm_version": "2026.4.0+git1",
+  "release": "1.4.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

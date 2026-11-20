@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "13a32db2ff870aa4a3f975560121b5d137a0a42c15832397c1d7e9f94d022197",
+  "key": "repo/ftuna-oss/5.2.0.22/armv7hl/github.com/michal-szczepaniak/exawake/exawake-debugsource-1.1-1.20240228230030.4.armv7hl.rpm",
+  "name": "exawake-debugsource",
+  "rpm_version": "1.1",
+  "release": "1.20240228230030.4",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/exawake",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

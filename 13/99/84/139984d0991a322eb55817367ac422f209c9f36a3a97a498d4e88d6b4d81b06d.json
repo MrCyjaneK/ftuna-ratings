@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "139984d0991a322eb55817367ac422f209c9f36a3a97a498d4e88d6b4d81b06d",
+  "key": "repo/ftuna-oss/5.2.0.22/aarch64/github.com/tdlib/td/tdlib-debugsource-1.8.68-1.20261008210252.18203.aarch64.rpm",
+  "name": "tdlib-debugsource",
+  "rpm_version": "1.8.68",
+  "release": "1.20261008210252.18203",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/tdlib/td",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

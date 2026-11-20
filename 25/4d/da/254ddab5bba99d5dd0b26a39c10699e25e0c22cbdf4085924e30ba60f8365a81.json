@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "254ddab5bba99d5dd0b26a39c10699e25e0c22cbdf4085924e30ba60f8365a81",
+  "key": "repo/ftuna-oss/5.2.0.22/i486/github.com/michal-szczepaniak/septitrac/Septitrac-debuginfo-1.2.2-1.20240902161505.5.i486.rpm",
+  "name": "Septitrac-debuginfo",
+  "rpm_version": "1.2.2",
+  "release": "1.20240902161505.5",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/septitrac",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

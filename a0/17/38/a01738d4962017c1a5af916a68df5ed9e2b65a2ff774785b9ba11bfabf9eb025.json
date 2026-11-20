@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "a01738d4962017c1a5af916a68df5ed9e2b65a2ff774785b9ba11bfabf9eb025",
+  "key": "repo/ftuna-oss/5.2.0.22/aarch64/github.com/sailfishos/gcc/gcc-go-13.5.0-2.20261002164208.111.aarch64.rpm",
+  "name": "gcc-go",
+  "rpm_version": "13.5.0",
+  "release": "2.20261002164208.111",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/sailfishos/gcc",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

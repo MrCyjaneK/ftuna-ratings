@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "ba52094447d25e0bca9c521defc6f8306ea9a33990c70926ea4eeca03ab63793",
+  "key": "repo/ftuna-oss/5.2.0.22/armv7hl/github.com/sailfishos/gcc/libgo-devel-13.5.0-2.20261002164208.111.armv7hl.rpm",
+  "name": "libgo-devel",
+  "rpm_version": "13.5.0",
+  "release": "2.20261002164208.111",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/sailfishos/gcc",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

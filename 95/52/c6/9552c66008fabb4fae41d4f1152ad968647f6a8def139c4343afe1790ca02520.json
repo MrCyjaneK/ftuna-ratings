@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "9552c66008fabb4fae41d4f1152ad968647f6a8def139c4343afe1790ca02520",
+  "key": "chum/5.2_armv7hl/armv7hl/qt56-nextcloud-client-libs-2.6.5+final1-1.2.1.bso.armv7hl.rpm",
+  "name": "qt56-nextcloud-client-libs",
+  "rpm_version": "2.6.5+final1",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

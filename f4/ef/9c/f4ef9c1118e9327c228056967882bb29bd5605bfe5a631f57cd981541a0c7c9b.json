@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "f4ef9c1118e9327c228056967882bb29bd5605bfe5a631f57cd981541a0c7c9b",
+  "key": "chum/5.1_armv7hl/armv7hl/scummvm-debugsource-2026.4.0+git1-1.4.1.bso.armv7hl.rpm",
+  "name": "scummvm-debugsource",
+  "rpm_version": "2026.4.0+git1",
+  "release": "1.4.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

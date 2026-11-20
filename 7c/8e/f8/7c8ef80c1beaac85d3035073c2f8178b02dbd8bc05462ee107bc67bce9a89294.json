@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "7c8ef80c1beaac85d3035073c2f8178b02dbd8bc05462ee107bc67bce9a89294",
+  "key": "repo/ftuna-oss/5.2.0.22/armv7hl/github.com/michal-szczepaniak/septitrac/Septitrac-1.2.2-1.20240902161505.5.armv7hl.rpm",
+  "name": "Septitrac",
+  "rpm_version": "1.2.2",
+  "release": "1.20240902161505.5",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/Septitrac.desktop",
+      "code": "sailjail.absent",
+      "detail": "no [X-Sailjail] section",
+      "color": "yellow"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/septitrac",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "version": 7,
+  "sha256": "bfb53cb2e05665ea94d4ef1ceb9ee24d4ec916e1ba8e29ff994b6a23e43f0392",
+  "key": "chum/5.1_armv7hl/armv7hl/scummvm-2026.4.0+git1-1.4.1.bso.armv7hl.rpm",
+  "name": "scummvm",
+  "rpm_version": "2026.4.0+git1",
+  "release": "1.4.1.bso",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/org.scummvm.scummvm.desktop",
+      "code": "sailjail.permission",
+      "detail": "UserDirs",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/org.scummvm.scummvm.desktop",
+      "code": "sailjail.permission",
+      "detail": "RemovableMedia",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/org.scummvm.scummvm.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/org.scummvm.scummvm.desktop",
+      "code": "sailjail.permission",
+      "detail": "Audio",
+      "color": "gray"
+    }
+  ]
+}

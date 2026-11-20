@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "b214858a463af2fb58ec0d3f197432dbf7162494983aa10a23dc203590034d05",
+  "key": "chum/5.2_i486/i486/qt56-nextcloud-client-2.6.5+final1-1.2.1.bso.i486.rpm",
+  "name": "qt56-nextcloud-client",
+  "rpm_version": "2.6.5+final1",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": []
+}

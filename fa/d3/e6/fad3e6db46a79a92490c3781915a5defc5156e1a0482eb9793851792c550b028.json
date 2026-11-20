@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "fad3e6db46a79a92490c3781915a5defc5156e1a0482eb9793851792c550b028",
+  "key": "repo/ftuna-oss/5.2.0.22/armv7hl/github.com/tdlib/td/tdlib-debugsource-1.8.68-1.20261008210252.18203.armv7hl.rpm",
+  "name": "tdlib-debugsource",
+  "rpm_version": "1.8.68",
+  "release": "1.20261008210252.18203",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/tdlib/td",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

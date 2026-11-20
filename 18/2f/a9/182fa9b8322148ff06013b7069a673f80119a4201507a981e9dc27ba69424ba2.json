@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "182fa9b8322148ff06013b7069a673f80119a4201507a981e9dc27ba69424ba2",
+  "key": "repo/ftuna-oss/5.2.0.22/i486/github.com/michal-szczepaniak/nanofiles/nanofiles-debuginfo-1.4.4-1.20261109210702.33.i486.rpm",
+  "name": "nanofiles-debuginfo",
+  "rpm_version": "1.4.4",
+  "release": "1.20261109210702.33",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/michal-szczepaniak/nanofiles",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}
