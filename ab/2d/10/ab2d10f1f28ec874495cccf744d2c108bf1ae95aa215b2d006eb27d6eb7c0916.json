@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "ab2d10f1f28ec874495cccf744d2c108bf1ae95aa215b2d006eb27d6eb7c0916",
+  "key": "repo/ftuna-oss/5.2.0.22/armv7hl/github.com/cisco/openh264/openh264-debugsource-2.3.1-0.20220921005844.5185.5.2.0.22.armv7hl.rpm",
+  "name": "openh264-debugsource",
+  "rpm_version": "2.3.1",
+  "release": "0.20220921005844.5185.5.2.0.22",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/cisco/openh264",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

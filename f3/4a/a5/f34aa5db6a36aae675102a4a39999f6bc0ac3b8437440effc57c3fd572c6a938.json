@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "f34aa5db6a36aae675102a4a39999f6bc0ac3b8437440effc57c3fd572c6a938",
+  "key": "chum/5.1_armv7hl/armv7hl/nextcloud-client-libs-3.13.4+git3-1.2.1.bso.armv7hl.rpm",
+  "name": "nextcloud-client-libs",
+  "rpm_version": "3.13.4+git3",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

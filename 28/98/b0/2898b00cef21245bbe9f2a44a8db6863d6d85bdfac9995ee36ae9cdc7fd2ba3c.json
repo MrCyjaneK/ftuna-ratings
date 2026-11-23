@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "2898b00cef21245bbe9f2a44a8db6863d6d85bdfac9995ee36ae9cdc7fd2ba3c",
+  "key": "repo/ftuna-oss/5.2.0.22/aarch64/github.com/golang/go/go/golang-1.27.3-0.20261020012606.66999.5.2.0.22.aarch64.rpm",
+  "name": "golang",
+  "rpm_version": "1.27.3",
+  "release": "0.20261020012606.66999.5.2.0.22",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/golang/go/go",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

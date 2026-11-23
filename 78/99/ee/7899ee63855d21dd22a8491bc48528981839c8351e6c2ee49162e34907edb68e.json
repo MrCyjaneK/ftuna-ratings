@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "7899ee63855d21dd22a8491bc48528981839c8351e6c2ee49162e34907edb68e",
+  "key": "chum/5.1_aarch64/aarch64/nextcloud-client-3.13.4+git3-1.2.1.bso.aarch64.rpm",
+  "name": "nextcloud-client",
+  "rpm_version": "3.13.4+git3",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

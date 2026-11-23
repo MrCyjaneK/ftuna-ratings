@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "a28ee9ed31ffcfa51bd7f640f1f917e9d6011523ab50d913f0cac4871b7daecc",
+  "key": "repo/ftuna-oss/5.2.0.22/i486/github.com/golang/go/go/golang-1.27.3-0.20261020012606.66999.5.2.0.22.i486.rpm",
+  "name": "golang",
+  "rpm_version": "1.27.3",
+  "release": "0.20261020012606.66999.5.2.0.22",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/golang/go/go",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

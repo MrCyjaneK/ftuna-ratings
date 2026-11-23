@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "ad32f32deaa339dfd2efca72f03682e7f226a5464ab0ac45abb5d3d2a5433563",
+  "key": "chum/5.2_i486/i486/harbour-fiatpenus-debuginfo-1.1-1.1.1.bso.i486.rpm",
+  "name": "harbour-fiatpenus-debuginfo",
+  "rpm_version": "1.1",
+  "release": "1.1.1.bso",
+  "arch": "i486",
+  "issues": []
+}

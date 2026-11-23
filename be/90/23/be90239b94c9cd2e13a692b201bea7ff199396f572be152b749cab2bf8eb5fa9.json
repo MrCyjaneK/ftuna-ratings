@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "be90239b94c9cd2e13a692b201bea7ff199396f572be152b749cab2bf8eb5fa9",
+  "key": "chum/5.1_i486/i486/nextcloud-client-3.13.4+git3-1.2.1.bso.i486.rpm",
+  "name": "nextcloud-client",
+  "rpm_version": "3.13.4+git3",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": []
+}

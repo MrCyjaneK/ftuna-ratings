@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "f16f4fc91ab9cf672d603357c82afd2deb51c022fe1f28baa89b8f1419818bf3",
+  "key": "repo/ftuna-oss/5.2.0.22/armv7hl/github.com/mrcyjanek/cargadgetd_app_maps/cargadgetd-plugin-maps-0.0.1-1.20261115140714.1.5.2.0.22.armv7hl.rpm",
+  "name": "cargadgetd-plugin-maps",
+  "rpm_version": "0.0.1",
+  "release": "1.20261115140714.1.5.2.0.22",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/cargadgetd_app_maps",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

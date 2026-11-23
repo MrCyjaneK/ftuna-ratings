@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "0f57887ca5c01f5847f6cd4efefac0f9d82b58dbcf8dacc93d01b07009a485bd",
+  "key": "chum/5.1_armv7hl/armv7hl/nextcloud-client-debugsource-3.13.4+git3-1.2.1.bso.armv7hl.rpm",
+  "name": "nextcloud-client-debugsource",
+  "rpm_version": "3.13.4+git3",
+  "release": "1.2.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

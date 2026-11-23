@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "48c878623e820f293409267ee32fa1c8bd917eb3dbd930fc0153dbc8c6827207",
+  "key": "repo/ftuna-oss/5.2.0.22/aarch64/github.com/mrcyjanek/cargadgetd_app_sats/cargadgetd-plugin-sats-debuginfo-0.0.1-1.20261115133607.1.5.2.0.22.aarch64.rpm",
+  "name": "cargadgetd-plugin-sats-debuginfo",
+  "rpm_version": "0.0.1",
+  "release": "1.20261115133607.1.5.2.0.22",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/cargadgetd_app_sats",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

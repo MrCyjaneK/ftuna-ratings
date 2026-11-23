@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "714040d590f23c45158697d9f2e3822bf1a349bb51cc5cb7cbd269a05492781b",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-fiatpenus-debugsource-1.1-1.1.1.bso.armv7hl.rpm",
+  "name": "harbour-fiatpenus-debugsource",
+  "rpm_version": "1.1",
+  "release": "1.1.1.bso",
+  "arch": "armv7hl",
+  "issues": []
+}

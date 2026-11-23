@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "228931f9591ea80f19d6572f6f3753b5ba056fbde76fc1b5336b11e2aa6f63f1",
+  "key": "repo/ftuna-oss/5.2.0.22/aarch64/github.com/mrcyjanek/cargadgetd/cargadgetd-debuginfo-0.1-5.20261117175446.3.5.2.0.22.aarch64.rpm",
+  "name": "cargadgetd-debuginfo",
+  "rpm_version": "0.1",
+  "release": "5.20261117175446.3.5.2.0.22",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/cargadgetd",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

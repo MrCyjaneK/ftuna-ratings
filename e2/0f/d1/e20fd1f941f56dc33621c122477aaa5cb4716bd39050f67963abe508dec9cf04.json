@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "e20fd1f941f56dc33621c122477aaa5cb4716bd39050f67963abe508dec9cf04",
+  "key": "repo/ftuna-oss/5.2.0.22/i486/github.com/mrcyjanek/cargadgetd_app_shells/cargadgetd-plugin-shells-0.0.1-1.20261115132439.1.5.2.0.22.i486.rpm",
+  "name": "cargadgetd-plugin-shells",
+  "rpm_version": "0.0.1",
+  "release": "1.20261115132439.1.5.2.0.22",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/cargadgetd_app_shells",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

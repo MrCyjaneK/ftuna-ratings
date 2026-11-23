@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "be6d4a59bcc75533722fe10cd72f3845785302438284e1cec16ad797c54fa259",
+  "key": "repo/ftuna-oss/5.2.0.22/armv7hl/github.com/mrcyjanek/sfos_airpods/sfos_airpods-debuginfo-0.1.0-2.20261011181137.2.5.2.0.22.armv7hl.rpm",
+  "name": "sfos_airpods-debuginfo",
+  "rpm_version": "0.1.0",
+  "release": "2.20261011181137.2.5.2.0.22",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/sfos_airpods",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

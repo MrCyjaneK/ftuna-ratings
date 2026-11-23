@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "39de2fffa3304f13cfed9c1d009a677b64e355a7e0cfffee3250d84c9354acce",
+  "key": "repo/ftuna-oss/5.2.0.22/aarch64/github.com/mrcyjanek/gpspicturetagd/gpspicturetagd-debugsource-0.1-2.20261009231827.2.5.2.0.22.aarch64.rpm",
+  "name": "gpspicturetagd-debugsource",
+  "rpm_version": "0.1",
+  "release": "2.20261009231827.2.5.2.0.22",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/gpspicturetagd",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

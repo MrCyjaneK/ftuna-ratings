@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "a3af6adf6440169a861b4e3b7be509ef205a14238c57838f16312ee70e152090",
+  "key": "repo/ftuna-oss/5.2.0.22/armv7hl/github.com/mrcyjanek/cargadgetd_shell_neon/cargadgetd-shell-neon-debuginfo-0.0.1-1.20261115140400.1.5.2.0.22.armv7hl.rpm",
+  "name": "cargadgetd-shell-neon-debuginfo",
+  "rpm_version": "0.0.1",
+  "release": "1.20261115140400.1.5.2.0.22",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/cargadgetd_shell_neon",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

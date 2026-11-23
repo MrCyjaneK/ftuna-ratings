@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "77e316e9fbd1dce9f6db900673f4edc72ce6dfb8d4bde96fee2b20511d1a8469",
+  "key": "repo/ftuna-oss/5.2.0.22/aarch64/github.com/mrcyjanek/cargadgetd_shell_neon/cargadgetd-shell-neon-debugsource-0.0.1-1.20261115140400.1.5.2.0.22.aarch64.rpm",
+  "name": "cargadgetd-shell-neon-debugsource",
+  "rpm_version": "0.0.1",
+  "release": "1.20261115140400.1.5.2.0.22",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/cargadgetd_shell_neon",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

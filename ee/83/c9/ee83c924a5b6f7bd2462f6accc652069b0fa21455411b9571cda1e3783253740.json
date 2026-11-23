@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "ee83c924a5b6f7bd2462f6accc652069b0fa21455411b9571cda1e3783253740",
+  "key": "repo/ftuna-oss/5.2.0.22/i486/github.com/mrcyjanek/gpspicturetagd/gpspicturetagd-0.1-2.20261009231827.2.5.2.0.22.i486.rpm",
+  "name": "gpspicturetagd",
+  "rpm_version": "0.1",
+  "release": "2.20261009231827.2.5.2.0.22",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/gpspicturetagd.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/gpspicturetagd",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

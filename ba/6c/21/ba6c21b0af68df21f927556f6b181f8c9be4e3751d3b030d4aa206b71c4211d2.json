@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "ba6c21b0af68df21f927556f6b181f8c9be4e3751d3b030d4aa206b71c4211d2",
+  "key": "repo/ftuna-oss/5.2.0.22/armv7hl/github.com/mrcyjanek/cargadgetd_app_shells/cargadgetd-plugin-shells-0.0.1-1.20261115132439.1.5.2.0.22.armv7hl.rpm",
+  "name": "cargadgetd-plugin-shells",
+  "rpm_version": "0.0.1",
+  "release": "1.20261115132439.1.5.2.0.22",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/cargadgetd_app_shells",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

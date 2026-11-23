@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "54daffe375191bf05cbe7ab3d260332cab1439d82669c24726c419e989a53a90",
+  "key": "repo/ftuna-oss/5.2.0.22/aarch64/github.com/mrcyjanek/sfos_mullvad/harbour-mullvad-debugsource-0.1-1.20260925173713.1.5.2.0.22.aarch64.rpm",
+  "name": "harbour-mullvad-debugsource",
+  "rpm_version": "0.1",
+  "release": "1.20260925173713.1.5.2.0.22",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/sfos_mullvad",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

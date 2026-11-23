@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "195841f19baa178ba7ef62dbf085343c69b6b3dcf9d17c90e40287b5fa24b1cc",
+  "key": "repo/ftuna-oss/5.2.0.22/i486/github.com/mrcyjanek/cargadgetd_app_music/cargadgetd-plugin-music-debugsource-0.0.1-1.20261115140107.1.5.2.0.22.i486.rpm",
+  "name": "cargadgetd-plugin-music-debugsource",
+  "rpm_version": "0.0.1",
+  "release": "1.20261115140107.1.5.2.0.22",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/cargadgetd_app_music",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

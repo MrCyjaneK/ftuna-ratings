@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "90cc8446a6585dd9cfee44823afdb8ad5faf5372f821c26d069377bcc124113b",
+  "key": "chum/5.2_aarch64/aarch64/harbour-fiatpenus-debuginfo-1.1-1.1.1.bso.aarch64.rpm",
+  "name": "harbour-fiatpenus-debuginfo",
+  "rpm_version": "1.1",
+  "release": "1.1.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}

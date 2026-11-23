@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "dcf98a2aadd9b9df2b6eb8b2e8e39efa5997601ea94c80eba4f71beb60ba2524",
+  "key": "repo/ftuna-oss/5.2.0.22/i486/github.com/mrcyjanek/cargadgetd_app_sats/cargadgetd-plugin-sats-debugsource-0.0.1-1.20261115133607.1.5.2.0.22.i486.rpm",
+  "name": "cargadgetd-plugin-sats-debugsource",
+  "rpm_version": "0.0.1",
+  "release": "1.20261115133607.1.5.2.0.22",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/cargadgetd_app_sats",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

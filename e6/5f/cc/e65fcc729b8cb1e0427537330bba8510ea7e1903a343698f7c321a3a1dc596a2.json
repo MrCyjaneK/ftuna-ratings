@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "e65fcc729b8cb1e0427537330bba8510ea7e1903a343698f7c321a3a1dc596a2",
+  "key": "chum/5.1_aarch64/aarch64/nextcloud-client-debuginfo-3.13.4+git3-1.2.1.bso.aarch64.rpm",
+  "name": "nextcloud-client-debuginfo",
+  "rpm_version": "3.13.4+git3",
+  "release": "1.2.1.bso",
+  "arch": "aarch64",
+  "issues": []
+}
