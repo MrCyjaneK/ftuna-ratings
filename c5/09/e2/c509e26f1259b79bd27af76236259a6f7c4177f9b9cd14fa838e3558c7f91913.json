@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "c509e26f1259b79bd27af76236259a6f7c4177f9b9cd14fa838e3558c7f91913",
+  "key": "repo/ftuna-oss/5.2.0.22/aarch64/github.com/mrcyjanek/sshnotif/sshnotif-debugsource-0.1-3.20261009232728.2.5.2.0.22.aarch64.rpm",
+  "name": "sshnotif-debugsource",
+  "rpm_version": "0.1",
+  "release": "3.20261009232728.2.5.2.0.22",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/sshnotif",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

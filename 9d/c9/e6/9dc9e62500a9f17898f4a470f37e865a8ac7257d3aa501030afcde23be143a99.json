@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "9dc9e62500a9f17898f4a470f37e865a8ac7257d3aa501030afcde23be143a99",
+  "key": "repo/ftuna-oss/5.2.0.22/armv7hl/github.com/mrcyjanek/ftuna-client/ftuna-0.1.0-6.20261114214301.2.5.2.0.22.armv7hl.rpm",
+  "name": "ftuna",
+  "rpm_version": "0.1.0",
+  "release": "6.20261114214301.2.5.2.0.22",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/ftuna.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/ftuna-client",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

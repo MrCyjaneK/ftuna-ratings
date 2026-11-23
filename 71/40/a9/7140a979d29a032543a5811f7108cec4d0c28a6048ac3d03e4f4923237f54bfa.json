@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "7140a979d29a032543a5811f7108cec4d0c28a6048ac3d03e4f4923237f54bfa",
+  "key": "repo/ftuna-oss/5.2.0.22/i486/github.com/mrcyjanek/ftuna-client/ftuna-debugsource-0.1.0-6.20261114214301.2.5.2.0.22.i486.rpm",
+  "name": "ftuna-debugsource",
+  "rpm_version": "0.1.0",
+  "release": "6.20261114214301.2.5.2.0.22",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/ftuna-client",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}
