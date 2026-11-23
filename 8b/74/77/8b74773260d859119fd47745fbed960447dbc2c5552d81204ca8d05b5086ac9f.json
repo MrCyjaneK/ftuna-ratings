@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "8b74773260d859119fd47745fbed960447dbc2c5552d81204ca8d05b5086ac9f",
+  "key": "chum/5.1_i486/i486/harbour-lappu-debugsource-0.3.0-1.3.1.bso.i486.rpm",
+  "name": "harbour-lappu-debugsource",
+  "rpm_version": "0.3.0",
+  "release": "1.3.1.bso",
+  "arch": "i486",
+  "issues": []
+}

@@ -1,0 +1,32 @@
+{
+  "version": 7,
+  "sha256": "fde042a0f42dfcfe508d34a9633507d0207bb4d04e73fbe48495285402d54087",
+  "key": "chum/5.1_armv7hl/armv7hl/harbour-lappu-0.3.0-1.3.1.bso.armv7hl.rpm",
+  "name": "harbour-lappu",
+  "rpm_version": "0.3.0",
+  "release": "1.3.1.bso",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-lappu.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-lappu.desktop",
+      "code": "sailjail.permission",
+      "detail": "Secrets",
+      "color": "gray"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-lappu.desktop",
+      "code": "sailjail.permission",
+      "detail": "WebView",
+      "color": "gray"
+    }
+  ]
+}

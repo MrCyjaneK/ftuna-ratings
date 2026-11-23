@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "70b710169fa01003949f3a6cb400953bb26c4e8e1180a1280487b743c880f53b",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/mrcyjanek/sfos_orangeflex/harbour-orangeflex-debugsource-0.1-1.20260925155356.1.5.1.0.11.i486.rpm",
+  "name": "harbour-orangeflex-debugsource",
+  "rpm_version": "0.1",
+  "release": "1.20260925155356.1.5.1.0.11",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/sfos_orangeflex",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

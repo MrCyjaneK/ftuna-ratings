@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "efbb46c07a214501d1b95fab1277134a3c1956f331431c1c84cfa60e847be5df",
+  "key": "repo/ftuna-oss/5.1.0.11/armv7hl/github.com/sailfishos/sailfish-components-gallery/sailfish-components-gallery-qt5-debuginfo-1.3.0-1.20261009151855.420.5.1.0.11.armv7hl.rpm",
+  "name": "sailfish-components-gallery-qt5-debuginfo",
+  "rpm_version": "1.3.0",
+  "release": "1.20261009151855.420.5.1.0.11",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/sailfishos/sailfish-components-gallery",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

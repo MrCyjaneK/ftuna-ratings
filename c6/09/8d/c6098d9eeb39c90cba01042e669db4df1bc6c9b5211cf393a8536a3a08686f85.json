@@ -1,0 +1,39 @@
+{
+  "version": 7,
+  "sha256": "c6098d9eeb39c90cba01042e669db4df1bc6c9b5211cf393a8536a3a08686f85",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/mrcyjanek/sshnotif/sshnotif-0.1-3.20261009232728.2.5.1.0.11.i486.rpm",
+  "name": "sshnotif",
+  "rpm_version": "0.1",
+  "release": "3.20261009232728.2.5.1.0.11",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "dbus",
+      "path": "/usr/share/dbus-1/services/org.sshnotif.service",
+      "code": "dbus.service",
+      "detail": "scope=session user=session exec=/usr/bin/invoker --type=silica-qt5 -s -F /usr/share/applications/sshnotif.desktop /usr/bin/sshnotif",
+      "color": "green"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/sshnotif.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/libexec/sshnotif/pam-setup",
+      "code": "setuid",
+      "detail": "/usr/libexec/sshnotif/pam-setup mode 0104755 user root group root file",
+      "color": "red"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/sshnotif",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

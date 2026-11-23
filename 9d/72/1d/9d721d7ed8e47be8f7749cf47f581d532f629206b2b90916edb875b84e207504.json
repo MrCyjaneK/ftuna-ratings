@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "9d721d7ed8e47be8f7749cf47f581d532f629206b2b90916edb875b84e207504",
+  "key": "repo/ftuna-oss/5.1.0.11/armv7hl/github.com/mrcyjanek/gpspicturetagd/gpspicturetagd-0.1-2.20261009231827.2.5.1.0.11.armv7hl.rpm",
+  "name": "gpspicturetagd",
+  "rpm_version": "0.1",
+  "release": "2.20261009231827.2.5.1.0.11",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/gpspicturetagd.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/gpspicturetagd",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}
