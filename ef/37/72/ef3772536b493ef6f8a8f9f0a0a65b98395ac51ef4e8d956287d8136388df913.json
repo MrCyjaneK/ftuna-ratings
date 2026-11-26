@@ -1,0 +1,10 @@
+{
+  "version": 7,
+  "sha256": "ef3772536b493ef6f8a8f9f0a0a65b98395ac51ef4e8d956287d8136388df913",
+  "key": "chum/5.1_i486/i486/harbour-obdfish-debugsource-0.96-1.2.1.bso.i486.rpm",
+  "name": "harbour-obdfish-debugsource",
+  "rpm_version": "0.96",
+  "release": "1.2.1.bso",
+  "arch": "i486",
+  "issues": []
+}

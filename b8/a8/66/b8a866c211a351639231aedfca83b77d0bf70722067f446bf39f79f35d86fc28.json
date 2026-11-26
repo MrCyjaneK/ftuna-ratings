@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "b8a866c211a351639231aedfca83b77d0bf70722067f446bf39f79f35d86fc28",
+  "key": "repo/ftuna-oss/5.1.0.11/armv7hl/github.com/sailfishos/gcc/libgo-static-13.5.0-2.20261002164208.111.5.1.0.11.armv7hl.rpm",
+  "name": "libgo-static",
+  "rpm_version": "13.5.0",
+  "release": "2.20261002164208.111.5.1.0.11",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/sailfishos/gcc",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

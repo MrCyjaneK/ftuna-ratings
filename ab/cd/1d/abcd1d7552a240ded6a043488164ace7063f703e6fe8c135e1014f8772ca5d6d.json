@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "abcd1d7552a240ded6a043488164ace7063f703e6fe8c135e1014f8772ca5d6d",
+  "key": "repo/ftuna-oss/5.1.0.11/aarch64/github.com/sailfishos/gcc/gcc-go-debugsource-13.5.0-2.20261002164208.111.5.1.0.11.aarch64.rpm",
+  "name": "gcc-go-debugsource",
+  "rpm_version": "13.5.0",
+  "release": "2.20261002164208.111.5.1.0.11",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/sailfishos/gcc",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

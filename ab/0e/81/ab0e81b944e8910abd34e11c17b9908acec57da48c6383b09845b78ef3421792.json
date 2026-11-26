@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "ab0e81b944e8910abd34e11c17b9908acec57da48c6383b09845b78ef3421792",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/sailfishos/gcc/libgo-static-13.5.0-2.20261002164208.111.5.1.0.11.i486.rpm",
+  "name": "libgo-static",
+  "rpm_version": "13.5.0",
+  "release": "2.20261002164208.111.5.1.0.11",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/sailfishos/gcc",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "version": 7,
+  "sha256": "6ba3d9e30717eae1a94b578dfca5a6041858f29f9e4ffdd96333af9196bab942",
+  "key": "repo/ftuna-oss/5.1.0.11/aarch64/github.com/mrcyjanek/aliendalvik-mpris2/mpris-am-0.1.0-3.20261115103516.1.5.1.0.11.aarch64.rpm",
+  "name": "mpris-am",
+  "rpm_version": "0.1.0",
+  "release": "3.20261115103516.1.5.1.0.11",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/mpris-am.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%post",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :; if [ -e /etc/systemd/system/mpris-am-unplug.service ]; then; systemctl disable --now mpris-am-unplug.service \u003e/dev",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%preun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=if [ \"$1\" -eq 0 ]; then; /usr/libexec/mpris-am/mpris-am-priv uninstall || :; fi",
+      "color": "red"
+    },
+    {
+      "module": "scriptlet",
+      "path": "%postun",
+      "code": "scriptlet",
+      "detail": "user=root program=/bin/sh body=systemctl daemon-reload \u003e/dev/null 2\u003e\u00261 || :",
+      "color": "red"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/libexec/mpris-am/mpris-am-priv",
+      "code": "setuid",
+      "detail": "/usr/libexec/mpris-am/mpris-am-priv mode 0104755 user root group root file",
+      "color": "red"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/system/mpris-am-unplug.service",
+      "code": "systemd.service",
+      "detail": "scope=system user=root group=root exec=/bin/rm -f /usr/lib64/apkd-bridge/libmedia-mpris.so sandbox=none",
+      "color": "red"
+    },
+    {
+      "module": "systemd",
+      "path": "/usr/lib/systemd/user/mpris-am.service",
+      "code": "systemd.service",
+      "detail": "scope=user user=session group=session exec=/usr/libexec/mpris-am/mpris-am-daemon sandbox=none",
+      "color": "green"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/aliendalvik-mpris2",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

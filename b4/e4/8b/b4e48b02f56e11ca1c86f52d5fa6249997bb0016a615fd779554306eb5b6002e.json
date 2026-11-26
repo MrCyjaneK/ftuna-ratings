@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "b4e48b02f56e11ca1c86f52d5fa6249997bb0016a615fd779554306eb5b6002e",
+  "key": "repo/ftuna-oss/5.1.0.11/i486/github.com/golang/go/go1_24/golang-24-1.24.13-0.20260204154648.62224.5.1.0.11.i486.rpm",
+  "name": "golang-24",
+  "rpm_version": "1.24.13",
+  "release": "0.20260204154648.62224.5.1.0.11",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/golang/go/go1_24",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

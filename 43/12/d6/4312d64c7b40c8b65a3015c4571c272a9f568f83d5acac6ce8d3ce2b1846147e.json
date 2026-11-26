@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "4312d64c7b40c8b65a3015c4571c272a9f568f83d5acac6ce8d3ce2b1846147e",
+  "key": "repo/ftuna-oss/5.1.0.11/aarch64/github.com/golang/go/go1_21/golang-21-1.21.13-0.20240806173908.57389.5.1.0.11.aarch64.rpm",
+  "name": "golang-21",
+  "rpm_version": "1.21.13",
+  "release": "0.20240806173908.57389.5.1.0.11",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/golang/go/go1_21",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}
