@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "1e816a2bdac625780075d7545f56eec71fe2deef02f64f4b49089a9452a37afd",
+  "key": "repo/ftuna-oss/5.3.0.10/i486/github.com/mrcyjanek/sfos_mullvad/harbour-mullvad-debuginfo-0.1-1.20260925173713.1.5.3.0.10.i486.rpm",
+  "name": "harbour-mullvad-debuginfo",
+  "rpm_version": "0.1",
+  "release": "1.20260925173713.1.5.3.0.10",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/sfos_mullvad",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

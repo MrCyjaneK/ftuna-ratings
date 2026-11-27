@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "88169ca606416b2e9691b7781d92737abd257f8cf50d5725d0d289477b7b492f",
+  "key": "repo/ftuna-oss/5.3.0.10/aarch64/github.com/mrcyjanek/flutter-sailfishos/flutter-sfos-3.44.0/flutter-sfos-3.44.0-3.44.0-8.20261120132434.18.5.3.0.10.aarch64.rpm",
+  "name": "flutter-sfos-3.44.0",
+  "rpm_version": "3.44.0",
+  "release": "8.20261120132434.18.5.3.0.10",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/flutter-sailfishos/flutter-sfos-3.44.0",
+      "code": "ftuna.built",
+      "detail": "unknown",
+      "color": "yellow"
+    }
+  ]
+}

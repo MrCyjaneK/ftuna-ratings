@@ -1,0 +1,25 @@
+{
+  "version": 7,
+  "sha256": "7f1a35860f1ae8db72643a748e53b28255149ce7a356036348de310ef29f0781",
+  "key": "repo/ftuna-oss/5.3.0.10/i486/github.com/mrcyjanek/sfos_orangeflex/harbour-orangeflex-0.1-1.20260925155356.1.5.3.0.10.i486.rpm",
+  "name": "harbour-orangeflex",
+  "rpm_version": "0.1",
+  "release": "1.20260925155356.1.5.3.0.10",
+  "arch": "i486",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-orangeflex.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/sfos_orangeflex",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

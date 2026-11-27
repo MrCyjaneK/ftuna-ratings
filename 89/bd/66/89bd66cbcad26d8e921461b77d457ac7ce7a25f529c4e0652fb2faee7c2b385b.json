@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "89bd66cbcad26d8e921461b77d457ac7ce7a25f529c4e0652fb2faee7c2b385b",
+  "key": "repo/ftuna-oss/5.3.0.10/aarch64/github.com/cisco/openh264/libopenh264-devel-2.3.1-0.20220921005844.5185.5.3.0.10.aarch64.rpm",
+  "name": "libopenh264-devel",
+  "rpm_version": "2.3.1",
+  "release": "0.20220921005844.5185.5.3.0.10",
+  "arch": "aarch64",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/cisco/openh264",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

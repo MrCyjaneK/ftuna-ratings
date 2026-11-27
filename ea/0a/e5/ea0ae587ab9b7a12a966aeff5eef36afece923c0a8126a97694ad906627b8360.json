@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "ea0ae587ab9b7a12a966aeff5eef36afece923c0a8126a97694ad906627b8360",
+  "key": "repo/ftuna-oss/5.3.0.10/armv7hl/github.com/mrcyjanek/sshnotif/sshnotif-debuginfo-0.1-3.20261009232728.2.5.3.0.10.armv7hl.rpm",
+  "name": "sshnotif-debuginfo",
+  "rpm_version": "0.1",
+  "release": "3.20261009232728.2.5.3.0.10",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/sshnotif",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

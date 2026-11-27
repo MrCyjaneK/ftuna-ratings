@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "767ce022a981f0280de186f63a7e9652121dc5444e521f04b962d4b8ff5a1904",
+  "key": "repo/ftuna-oss/5.3.0.10/armv7hl/github.com/sailfishos/gcc/gcc-go-13.5.0-2.20261002164208.111.5.3.0.10.armv7hl.rpm",
+  "name": "gcc-go",
+  "rpm_version": "13.5.0",
+  "release": "2.20261002164208.111.5.3.0.10",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/sailfishos/gcc",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

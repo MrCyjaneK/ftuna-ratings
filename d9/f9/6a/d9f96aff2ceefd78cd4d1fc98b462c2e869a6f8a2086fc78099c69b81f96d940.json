@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "d9f96aff2ceefd78cd4d1fc98b462c2e869a6f8a2086fc78099c69b81f96d940",
+  "key": "repo/ftuna-oss/5.3.0.10/armv7hl/github.com/mrcyjanek/sfos_orangeflex/harbour-orangeflex-debugsource-0.1-1.20260925155356.1.5.3.0.10.armv7hl.rpm",
+  "name": "harbour-orangeflex-debugsource",
+  "rpm_version": "0.1",
+  "release": "1.20260925155356.1.5.3.0.10",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/sfos_orangeflex",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "version": 7,
+  "sha256": "e68b00463814815e1c56bb62b79dc33fa680d76882659da6551f335aad0fbb45",
+  "key": "repo/ftuna-oss/5.3.0.10/armv7hl/github.com/abseil/abseil-cpp/abseil-cpp-20210324.2-0.20210601145249.694.5.3.0.10.armv7hl.rpm",
+  "name": "abseil-cpp",
+  "rpm_version": "20210324.2",
+  "release": "0.20210601145249.694.5.3.0.10",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "ftuna",
+      "path": "github.com/abseil/abseil-cpp",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}

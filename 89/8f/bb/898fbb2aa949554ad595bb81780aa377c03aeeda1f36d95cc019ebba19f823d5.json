@@ -1,0 +1,39 @@
+{
+  "version": 7,
+  "sha256": "898fbb2aa949554ad595bb81780aa377c03aeeda1f36d95cc019ebba19f823d5",
+  "key": "repo/ftuna-oss/5.3.0.10/armv7hl/github.com/mrcyjanek/sfos_mullvad/harbour-mullvad-0.1-1.20260925173713.1.5.3.0.10.armv7hl.rpm",
+  "name": "harbour-mullvad",
+  "rpm_version": "0.1",
+  "release": "1.20260925173713.1.5.3.0.10",
+  "arch": "armv7hl",
+  "issues": [
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-mullvad.desktop",
+      "code": "sailjail.disabled",
+      "detail": "Sandboxing=Disabled",
+      "color": "yellow"
+    },
+    {
+      "module": "sailjail",
+      "path": "/usr/share/applications/harbour-mullvad.desktop",
+      "code": "sailjail.permission",
+      "detail": "Internet",
+      "color": "gray"
+    },
+    {
+      "module": "setuid",
+      "path": "/usr/libexec/harbour-mullvad-vpn",
+      "code": "setgid",
+      "detail": "/usr/libexec/harbour-mullvad-vpn mode 0102755 user root group privileged file",
+      "color": "red"
+    },
+    {
+      "module": "ftuna",
+      "path": "github.com/mrcyjanek/sfos_mullvad",
+      "code": "ftuna.built",
+      "detail": "clean",
+      "color": "green"
+    }
+  ]
+}
